@@ -47,7 +47,17 @@
   <categoryEntries>
     <categoryEntry id="33e1-d3ed-4420-3e22" name="Carapace" hidden="false">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="aa52-c7ee-35dc-777b" name="Carapace" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Some Titans carry weapons high up on their carapace usually long range support weapons with the firepower to level a hab-block in moments. Carapace weapons cannot target units
+that are within a number of inches equal to the firing unit’s Scale, unless the target is at least the same Scale as the attacker. For example, a Reaver (Scale 8) cannot attack units within 8&quot; with its
+carapace weapon, unless the target unit is of at least Scale 8.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -60,6 +70,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Ordnance weapons fire high calibre explosive shells which can cause significant damage to an unshielded target. When attacking with an Ordnance weapon, Armour rolls of 1 can be re-rolled.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -88,6 +99,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Titans are sometimes fitted with massive claws, fists or chainblades, allowing the Princeps to take matters into their own hands at close quarters. When attacking with a Melee weapon, the controlling player can always choose the target location (as though they were making a Targeted Attack, but without the To Hit modifier).</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -102,6 +114,15 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Before rolling To Hit with a Blast weapon, place the 3&quot; Blast marker or 5&quot; Blast marker (determined by the number in brackets) so that its central hole is completely over the target
+model’s base and within line of sight of the attacking weapon, and no part of the marker is touching any friendly models. Then, check to see whether the central hole is within range and arc. If it is not within arc, the shot is wasted and has no effect. If it is not within range, do not roll To Hit - each shot will scatter as follows:
+
+Once the marker has been placed, roll To Hit as normal. If the roll is successful, the marker is not moved; otherwise, roll the Scatter dice and move the Blast marker D10&quot; in the direction
+that is shown - if a Hit is rolled, use the small arrow to determine the direction of scatter. Note that the Blast marker can scatter out of the Titan’s line of sight, or out of the weapon’s range or arc this represents the shot ricocheting or blasting clear through intervening terrain. The centre of the firing Titan’s base should still be used as a reference point to determine which of the target’s arcs is hit.
+
+Whether or not the marker moves, each model that is touched by the marker is hit once. If the central hole of the Blast marker is fully over a model’s base, that model is hit twice.
+
+If a Blast weapon has a Dice value of 2 or more, make each Hit roll separately (scattering any missed shots individually). If more than one model is hit, the attacking player chooses the order in which to resolve them. Blast weapons cannot make Targeted Attacks.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -116,6 +137,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description> Quake weapons strike their target with such force that the very ground ruptures and shakes. If a unit is hit by a Quake cannon and the hit is not deflected by its shields, it is caught in the seismic blastwave. Until the end of the following Movement phase, the target’s default and boosted Speed values are halved (rounding down).</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -130,6 +152,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Sometimes, a Titan will carry a pair of weapons, slaved to fire together at the same target. Check the line of sight from each of the weapons separately; if only one has line of sight, the weapon’s Dice value is halved. If the target is obscured from the point of view of only one weapon (see page 33), half of the dice rolled suffer the To Hit modifier for an obscured target.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -144,6 +167,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>These weapons are capable of tearing clean through even the largest void shields. Any Shield saves made against Shieldbane weapons have a -1 modifier.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -158,6 +182,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Draining weapons put a great strain on the plasma reactor of the Titan that fires them. Before attacking with a Draining weapon, the Titan’s reactor must be pushed. A unit that does not have a plasma reactor cannot use a Draining weapon. Some weapons have (Draining) after another trait - this means that they do not have the trait by default, but if they push the plasma reactor before attacking with the weapon, it gains that trait for the duration of the attack.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -172,6 +197,8 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Rapid weapons spit an overpowering stream of shots, saturating the target with weapons fire. For each Hit roll of 6 when attacking with a Rapid weapon, it causes 2 hits rather than 1.
+If a roll of 6 To Hit was required, this rule has no effect.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -186,6 +213,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Some weapons, especially those such as plasma weaponry, can draw additional power from the Titan’s reactor to increase their destructive potential. Before making a Hit roll with a weapon with this trait, the controlling player can declare that it will fire on Maximal Fire mode. If they do so, the weapon’s Strength is increased by 2. However, for each Hit roll of a 1 (before any modifiers or re-rolls), increase the Titan’s Reactor level by 1.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -200,6 +228,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Rending weapons have the potential to cause horrific damage if they strike true. If the Armour roll for a Rending weapon is 6, roll a D3 and add it to the result.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -214,6 +243,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Some weapons are so enormous or power-hungry that a Titan can only carry enough ammunition for a few shots. A Limited weapon can only be used a number of times equal to the number in brackets - after this it is expended and cannot be used to make any more attacks for the rest of the battle.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -228,6 +258,13 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Warp weapons, most famously warp missiles, are fired in realspace but translate to the Warp for the majority of their flight, only returning to reality as they reach their target. If an attack made by a Warp weapon hits its target, make a Location roll (or choose a location if making a Targeted Attack). 
+
+Then, regardless of whether the target is shielded, roll a D6. 
+
+On a result of 1, the target location loses 1 Structure point. 
+On a result of 2-3, the target location loses D3 Structure points. 
+On a result of 4-6, the target location suffers Critical Damage.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -242,6 +279,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Fusion weapons generate beams of incredible heat which cause even the thickest armour to run like wax at close quarters. If the target of a Fusion weapon is within Short range, roll a D10 rather than a D6 for the Armour roll.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -291,6 +329,8 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Firestorm weapons unleash gouts of blazing promethium or some other volatile fuel. Instead of rolling To Hit with a Firestorm weapon, place the Flame template so that the narrowest part is touching the end of the firing weapon and the centre of the wide end is within the weapon’s firing arc. It cannot be placed so that it is touching any friendly units. The closest model to the firing unit that is touched by the template suffers a number of hits equal to the weapon’s Dice value; each other model that is touched by the template (except the firing model!) suffers one hit.
+Note that it is not necessary to make the Hit rolls - these hits are automatic. Firestorm weapons cannot make Targeted Attacks.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -326,9 +366,83 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Barrage weapons can fire indirectly at a target to which they do not have line of sight, as long as the target is still within range and arc. Firing indirectly confers a -z modifier on the Hit roll.</description>
         </rule>
       </rules>
       <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="ce80-524a-1913-7f68" name="Voidbreaker" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="e9a2-7824-8465-47b8" name="Voidbreaker" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Although Voidbreaker weapons are unlikely to cause any physical damage to a target, this does not matter - their purpose is the disruption of void shields, pure and simple. If a Voidbreaker weapon hits a target with active void shields, the target’s controlling player must make a number of additional saves as shown by the number in brackets after the trait.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="3ac7-c1bd-98ce-fdb8" name="Vortex" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="8a76-8edc-073a-cd65" name="Vortex" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Vortex weapons make use of bewildering technology to open an unstable warp rift at the target point. They follow use all of the rules for Blast weapons, but use the 3&quot; Vortex template
+instead. Each model that is touched by the template suffers D6 Strength IO hits, bypassing void shields.
+
+After resolving the attack, leave the Vortex template where it is.
+
+In the End phase of each turn, the marker moves D6&quot; in a random direction, hitting anything it touches as it moves. If a Hit is rolled, the template is removed instead.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="8faf-9e14-9676-2327" name="Weapon" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="bd3b-f56e-1b14-06cc" name="Dice" hidden="false" targetId="b7c8-dd3a-9b0d-730c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="9db1-0abc-cb8a-a76a" name="Firing Arc" hidden="false" targetId="099f-b1dd-9513-5d1d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6b05-e06d-b87f-65f8" name="Range and Accuracy (ACC)" hidden="false" targetId="585e-acad-2307-042d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ed85-4ab2-5008-c3fd" name="Strength (STR)" hidden="false" targetId="26e1-ebdc-e470-dd28" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="bebb-1dfd-dc9d-6250" name="Weapon Characteristics" hidden="false" targetId="c491-319b-b9b1-adac" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints/>
     </categoryEntry>
@@ -546,7 +660,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="05e2-dc43-4195-99fc" name="2" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -570,7 +686,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0cd0-b782-9904-4957" name="3" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -594,7 +712,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="abf2-dd54-b7de-1be2" name="4" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -618,7 +738,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a200-70b6-4a54-2baf" name="5" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -642,7 +764,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8a07-c9d3-7075-2381" name="6" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -666,7 +790,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="dcc9-514f-f75a-997b" name="7" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -690,7 +816,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -744,7 +872,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3e76-8fca-7869-5d9e" name="5" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -768,7 +898,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ae33-0150-64ed-6491" name="4" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -792,7 +924,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d936-4a1c-affe-0cdc" name="3" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -816,7 +950,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="102d-a96b-9379-eaea" name="2" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -840,7 +976,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="273e-85b5-a464-921f" name="1" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -864,7 +1002,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -918,7 +1058,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c1bf-d35b-1d67-e910" name="6" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -942,7 +1084,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="168b-98e3-4200-f01b" name="5" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -966,7 +1110,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a6e9-df93-948d-38c7" name="4" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -990,7 +1136,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="4e85-bd85-88a5-40cb" name="3" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1014,7 +1162,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="99f1-8c5b-694e-4f89" name="2" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1038,7 +1188,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6dbf-0f7a-4a1c-790d" name="1" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1062,7 +1214,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -1333,7 +1487,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8fba-c9d7-0b75-4545" name="2" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1357,7 +1513,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c068-6624-6d4d-8620" name="3" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1381,7 +1539,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="de9f-178c-afc7-cd81" name="4" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1405,7 +1565,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ad3a-351a-845c-41ca" name="5" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1429,7 +1591,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="754f-d540-94eb-9c54" name="6" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1453,7 +1617,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="21d3-5ebc-0135-dafd" name="8" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1477,7 +1643,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d380-0237-dc68-b6d9" name="7" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1501,7 +1669,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -1555,7 +1725,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="7611-6485-7e08-95fa" name="5" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1579,7 +1751,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="b589-49f0-729e-1080" name="4" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1603,7 +1777,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3d92-4a4a-8aee-1ea0" name="3" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1627,7 +1803,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f78e-3e58-3107-e719" name="2" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1651,7 +1829,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="951d-70d8-d5bd-8903" name="1" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1675,7 +1855,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ae52-913c-eeb3-115f" name="7" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1699,7 +1881,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -1753,7 +1937,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="da62-191c-800a-38cd" name="6" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1777,7 +1963,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d6b6-44d0-9b88-8727" name="5" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1801,7 +1989,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f2f9-cd09-4077-18e0" name="4" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1825,7 +2015,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6c19-49a9-35ad-4065" name="3" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1849,7 +2041,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="fad4-cd61-10b6-6881" name="2" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1873,7 +2067,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3363-ee9c-07e5-d4e1" name="1" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1897,7 +2093,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5bc2-bace-1606-b001" name="8" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -1921,7 +2119,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -2209,7 +2409,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8fee-c6ff-3abb-9269" name="2" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2233,7 +2435,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="380a-c32c-8171-ad1d" name="3" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2257,7 +2461,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="620c-4be5-7941-0e88" name="4" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2281,7 +2487,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="b0ab-4908-99e2-b0a8" name="5" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2305,7 +2513,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="74eb-c082-d3f1-1615" name="6" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2329,7 +2539,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -2383,7 +2595,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9fa6-b9ac-b52d-35e9" name="5" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2407,7 +2621,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6f1c-1097-1754-dc30" name="4" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2431,7 +2647,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d8bd-0825-bde4-48ab" name="3" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2455,7 +2673,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="422c-3399-49b8-aabf" name="2" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2479,7 +2699,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6bd9-e510-53fe-0491" name="1" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2503,7 +2725,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -2557,7 +2781,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="545a-8783-5056-cef3" name="4" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2581,7 +2807,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c838-c8cb-588d-ac4b" name="3" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2605,7 +2833,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d1e7-70c6-5023-e1ad" name="2" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2629,7 +2859,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="802d-84d7-600d-9d92" name="1" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -2653,7 +2885,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -2827,6 +3061,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="6254-74fe-1cf7-4a1c" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -2881,6 +3122,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="3399-5ab9-4c73-baf3" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -2929,6 +3177,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="9143-e2a7-9782-11c9" name="New CategoryLink" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e75f-e28f-1682-0d9d" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3324,7 +3579,15 @@
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="f59d-f45b-5505-2a04" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -3346,7 +3609,15 @@
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="f5ba-4fe1-240d-446f" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -3494,6 +3765,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="8653-959b-23d3-cd5a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -3551,6 +3829,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="8740-21ce-022b-68fe" name="New CategoryLink" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="b7e8-44d6-7cbd-f450" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3627,6 +3912,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="de9b-186c-462e-de11" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -3691,6 +3983,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="2c2a-7017-e7d8-646b" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e12b-9239-334b-6ac5" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3767,6 +4066,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="5974-b0ae-e61c-7fa1" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -3837,6 +4143,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="e6e2-d4cb-b0fa-d569" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -3894,6 +4207,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="9e4f-0371-376f-7c8a" name="New CategoryLink" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="99d8-7869-619e-c643" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3963,6 +4283,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="b78a-6229-583e-36cf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -4026,6 +4353,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="abfb-2be7-daf7-1c27" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -4076,6 +4410,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="8f29-6683-92ab-08fd" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="fa26-0def-9143-1e95" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4152,6 +4493,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="c1b3-6cc6-b28d-ce25" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -4216,6 +4564,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="c0f6-dc4d-43d0-250c" name="New CategoryLink" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="c21f-1609-c88a-b089" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4355,6 +4710,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="e88c-fda5-0109-909d" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -4412,6 +4774,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="8208-08af-4288-6f62" name="New CategoryLink" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="2f1e-97dc-dc89-7cd6" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4482,6 +4851,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="51f3-ce0f-0ad8-ea07" name="New CategoryLink" hidden="false" targetId="7130-bbeb-02e3-de28" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="186e-5993-6e22-fecf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4565,6 +4941,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="e152-1f07-5e91-ee59" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -4642,6 +5025,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="ef76-24da-820b-228a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -4706,6 +5096,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="c0f9-fbe8-b8a5-2432" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="decb-1557-2de8-c50e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4789,6 +5186,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="6637-327e-bf82-7190" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -4852,6 +5256,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="294a-ed52-cda5-cea6" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -4909,6 +5320,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="2aae-dc8e-b949-1104" name="New CategoryLink" hidden="false" targetId="5ad8-0ca8-4bb7-83b6" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="cafa-ef6a-f696-7e3e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4985,6 +5403,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="20c7-8b0b-9546-211b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -5035,6 +5460,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="1f47-fa17-59e4-f828" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ad18-28ce-f3ad-7e1b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5207,7 +5639,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="15dc-a57d-f1f3-41a6" name="Manifold" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -5231,7 +5665,9 @@
           <categoryLinks/>
         </entryLink>
       </entryLinks>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -5255,7 +5691,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8f94-127b-43d6-ac8a" name="3 Red" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -5269,7 +5707,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a24a-5f46-842d-37c9" name="2 Yellow" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -5283,7 +5723,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -5332,6 +5774,45 @@
       <entryLinks/>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
-  <sharedRules/>
+  <sharedRules>
+    <rule id="c491-319b-b9b1-adac" name="Weapon Characteristics" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A unit’s Command Terminal has a number of spaces for Weapon cards, which must be selected before the start of the battle. Each Weapon card shows which Class ofTitan it can be chosen for, and which slot(s) on the Command Terminal it can occupy.</description>
+    </rule>
+    <rule id="099f-b1dd-9513-5d1d" name="Firing Arc" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A weapon’s firing arc (explained on page 26) is represented by a graphic. The graphic assumes that the Titan is facing towards the top of the Command Terminal - most weapons (particularly
+arm-mounted ones) generally have the Titan’s Front arc as their firing arc.</description>
+    </rule>
+    <rule id="585e-acad-2307-042d" name="Range and Accuracy (ACC)" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>This shows the weapon’s range in inches. Weapons have two ranges: Short and Long. These are primarily used to determine the Accuracy modifier (which affects any Hit rolls made for the
+weapon), but might also be referenced by other in-game effects. </description>
+    </rule>
+    <rule id="b7c8-dd3a-9b0d-730c" name="Dice" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A weapon’s Dice value shows how many dice are rolled when attacking with it. In essence, it is a representation of how rapidly the weapon can fire - a gun with Dice 6 fires a lot more shots in
+one go than one with Dice 1.</description>
+    </rule>
+    <rule id="26e1-ebdc-e470-dd28" name="Strength (STR)" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A weapon’s Strength is a measure of its ability to punch through a target’s armour. The higher a weapon’s Strength, the more likely its attack will inflict damage on a successful hit.</description>
+    </rule>
+  </sharedRules>
   <sharedProfiles/>
 </gameSystem>
