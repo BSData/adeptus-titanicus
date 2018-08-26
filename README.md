@@ -1,6 +1,8 @@
 Adeptus Titanicus
 =================
 
+[![Join the chat at https://gitter.im/BSData/adeptus-titanicus](https://badges.gitter.im/BSData/adeptus-titanicus.svg)](https://gitter.im/BSData/adeptus-titanicus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 #### Contents ####
 
 * [Overview][]
