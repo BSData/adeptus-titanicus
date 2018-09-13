@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" book="Adeptus Titanicus 2018" revision="2" battleScribeVersion="2.01" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" book="Adeptus Titanicus 2018" revision="3" battleScribeVersion="2.01" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -31,7 +31,7 @@
         <characteristicType id="b21f-61e9-4f0d-88e6" name="Limited"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="e539-8a16-c912-c6c5" name="Damage Circle">
+    <profileType id="e539-8a16-c912-c6c5" name="Structure Points">
       <characteristicTypes>
         <characteristicType id="1e91-6224-ebeb-fec2" name="Modifer"/>
       </characteristicTypes>
@@ -41,6 +41,16 @@
         <characteristicType id="c665-cd89-936b-f2e5" name="Direct"/>
         <characteristicType id="d16c-dca6-9e62-f9aa" name="Devastating"/>
         <characteristicType id="d300-246c-10d9-f5b2" name="Critical"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="fcf7-bbb7-c944-2eb2" name="Ion Shields">
+      <characteristicTypes>
+        <characteristicType id="4788-fa46-8c0e-2db8" name="Knights in Banner"/>
+        <characteristicType id="da0b-4753-babc-ff5c" name="Attack Strength 1-6"/>
+        <characteristicType id="98f9-171c-acdd-7313" name="Attack Strength 7"/>
+        <characteristicType id="0cf0-9891-2cf4-ecbf" name="Attack Strength 8"/>
+        <characteristicType id="73b3-c9cf-ac6b-792f" name="Attack Strength 9"/>
+        <characteristicType id="ec4f-9282-64c7-c7b4" name="Attack Strength 10+"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -446,6 +456,21 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="e580-b213-3f86-c2fc" name="Agile" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="e1ee-cf92-788d-7083" name="Agile" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Not effected by Difficult of Dangerous Terrain</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -637,192 +662,213 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77f0-9e40-ee73-4630" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="2490-36de-33ac-cb07" name="1" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="8213-71dd-da22-5fd3" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+          <selectionEntries/>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9ea5-7d31-c03a-5d16" name="Body Status" hidden="false" collective="false">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="351f-7533-61d8-2572" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="05e2-dc43-4195-99fc" name="2" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="2262-d8d2-c95e-95cb" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+              <selectionEntries>
+                <selectionEntry id="59bd-5186-d156-7809" name="1" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="6958-b016-77e8-c29b" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a40-61ba-d5be-7978" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0cd0-b782-9904-4957" name="3" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="8c64-1ed6-7d04-c7a4" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3333-fe14-7042-2fe0" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c9d5-d9b7-988a-3e8f" name="2" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="bdf9-1255-7fe4-605a" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9d8-ae8f-dcaf-af43" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="abf2-dd54-b7de-1be2" name="4" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="430c-84b8-13e7-3cbb" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da72-ff95-1fb3-f96f" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5a34-3768-ba62-a8ac" name="3" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="6631-28d9-be4a-840a" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b05f-f04d-83f0-4860" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a200-70b6-4a54-2baf" name="5" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="698d-5db1-518c-64d3" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f43c-9a65-7ada-42b4" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5c5d-b7e0-27d2-9b93" name="4" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="fe1d-641c-fade-9bb3" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f5d-0aee-ee41-aab0" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8a07-c9d3-7075-2381" name="6" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="001c-2a1d-6a5e-7790" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26b3-2ff4-ecd9-5892" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="92d1-590d-0e80-1ecb" name="5" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="963f-d8f5-69b3-527f" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7de5-bdc6-97a2-afff" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="dcc9-514f-f75a-997b" name="7" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="5614-a8ac-461e-0896" name="7" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5003-0fb6-01c1-640f" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b668-4d2a-800c-05eb" name="6" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="8266-295c-fb8e-bf34" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98bf-9f8f-6702-d76e" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f7de-7fe8-f39a-b937" name="7" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="1790-7348-dac5-61ca" name="7" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a19-4989-d9ad-588c" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="d54e-9a95-cb9a-6618" name="Body Manifold" hidden="false" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="120a-a0a2-73fa-0646" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
@@ -849,166 +895,187 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4d0-c899-7754-f9ee" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="0453-9ccf-d020-914a" name="6" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="e90d-07ae-8564-b7a5" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+          <selectionEntries/>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a049-0f1c-59f2-59f9" name="Head Status" hidden="false" collective="false">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5caa-5877-0d86-6528" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3e76-8fca-7869-5d9e" name="5" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="6ce8-bd36-4814-9b9b" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+              <selectionEntries>
+                <selectionEntry id="7b4b-c92a-0650-3ba2" name="1" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="5238-3213-ec28-3811" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cd2-a287-24dc-7bc2" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ae33-0150-64ed-6491" name="4" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="1794-e64c-7128-fb3a" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee2f-40f9-6dd9-71d7" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2138-30a2-2293-0037" name="2" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="1981-827a-584a-af29" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="058f-6eee-f3fb-bd01" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d936-4a1c-affe-0cdc" name="3" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="15a1-b626-9047-6201" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3742-abfd-a05d-fb0d" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1689-a5f7-918d-ef2f" name="3" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="8302-077e-7e46-e958" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66f1-ae72-cfe6-0a84" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="102d-a96b-9379-eaea" name="2" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="4d9d-e879-f0ea-ab08" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d17d-2940-1ee9-dc39" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3ce7-9a36-49e5-42ba" name="4" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="71c3-f408-87cf-57a8" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf7d-9591-7258-0a54" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="273e-85b5-a464-921f" name="1" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="b4a0-798f-fcc4-b758" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f4c-7d0e-3636-5bd1" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8760-8659-a955-50bc" name="5" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="b9aa-c025-508a-e40b" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a14-e3e7-dcff-af89" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d9fc-c438-31f8-0802" name="6" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="7e01-a540-f4a3-79cb" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02bf-6f48-b2df-a935" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="2e25-7009-9f13-e74e" name="Head Manifold" hidden="false" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a33-7031-89ae-f1ee" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
@@ -1035,192 +1102,213 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="774c-6dcd-5799-731e" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="28c1-51e4-f503-87eb" name="7" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="f000-b7d4-12d8-e37f" name="7" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+          <selectionEntries/>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="2736-f5dc-9b2a-8866" name="Legs Status" hidden="false" collective="false">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="240d-687b-65a8-0db0" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c1bf-d35b-1d67-e910" name="6" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="e1e1-e9f9-f7a0-29a5" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+              <selectionEntries>
+                <selectionEntry id="99b4-2e5d-ce48-cf2a" name="1" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="32e4-fc75-274e-f3ff" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fcc-603e-23a7-c1d0" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="168b-98e3-4200-f01b" name="5" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="38f8-83c8-9531-d1bc" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b7-214e-7778-e384" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1456-e728-7f3b-8841" name="2" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="2144-357d-c1e8-097d" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd2d-982b-d90d-78bc" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a6e9-df93-948d-38c7" name="4" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="af76-cae9-2dbc-4bd3" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eb6-4779-e9c7-d317" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1ed5-d511-be9b-b584" name="3" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="c8d2-7ace-9c36-39da" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9bb-9419-4fe5-90a5" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4e85-bd85-88a5-40cb" name="3" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="c35d-24ab-d457-8261" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f21e-cd67-4f72-9c4a" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3b6e-b62b-82f7-5366" name="4" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="b63e-c287-43df-34f2" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7126-3fba-bafe-4de6" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="99f1-8c5b-694e-4f89" name="2" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="e4bb-ea8b-cb8c-ec3e" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b421-ee1b-45ab-0532" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5cbb-f19a-2693-ecb9" name="5" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="7d1c-43d0-1619-166d" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ccb-300f-ce7c-459b" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6dbf-0f7a-4a1c-790d" name="1" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="8d29-d967-8026-3471" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="225f-1b81-8934-bc26" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1d84-e2fd-8ea6-9840" name="6" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="1e2f-972b-647e-fe1d" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7150-85f0-025d-76a9" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="de12-3955-d463-615d" name="7" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="8acf-27e2-25c0-c1b6" name="7" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bf5-f5cb-1106-8d3e" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="6859-a04d-0179-9ab2" name="Legs Manifold" hidden="false" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8112-43a8-e637-3111" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
@@ -1341,71 +1429,159 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           </selectionEntryGroups>
           <entryLinks/>
         </selectionEntryGroup>
+        <selectionEntryGroup id="191f-a736-3607-be1a" name="Void Shields" hidden="false" collective="false" defaultSelectionEntryId="60d9-7038-3787-78d7">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="60d9-7038-3787-78d7" name="Void Shield (3+)" hidden="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="94de-edcf-88cd-b08a" name="Void Shield (4+) 2" hidden="false" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="b33b-e5e2-5af7-e184" name="Void Shield (4+)" hidden="false" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="df74-774e-4ef4-83f9" name="Void Shield (X)" hidden="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="8f57-49d5-40ef-8300" name="Void Shield (3+) 2" hidden="false" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d68a-de59-6ede-871e" name="Plasma Reactor" hidden="false" collective="false" defaultSelectionEntryId="a6ef-0420-0906-8da2">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03e8-8f76-afba-a150" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acfb-37fa-a3c9-60a4" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="7da2-b59d-aa12-c822" name="Plasma Reactor 2 Green" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be26-d51d-b3a6-db6d" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="a6ef-0420-0906-8da2" name="Plasma Reactor 1 Green" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b9a-86b5-1789-2dbe" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="d5ed-509b-9a60-55dc" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61f7-48a4-28dd-64e2" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="755c-c35b-2eba-b72e" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af75-1a12-31ce-4742" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="c001-f0e2-7127-994c" name="Plasma Reactor 5 Orange" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="366b-39e2-6477-5d2c" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="68f8-ace9-113f-e78c" name="Plasma Reactor 6 Red" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c44b-95b5-97c4-456f" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="f3d4-c660-3eef-a50b" name="Plasma Reactor" hidden="false" targetId="ae30-2066-1d64-6559" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="be05-77b8-c571-3f61" name="Void Shield (3+)" hidden="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="1c9b-b0c9-68e0-a0ed" value="2">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="8d84-966a-65f5-984f" value="2">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="2389-2a80-eca7-3e8b" name="Void Shield (4+)" hidden="false" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="e66e-039a-2576-1143" value="2">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="adb4-b511-2483-9680" value="2">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="a213-6d44-6b31-41f8" name="Void Shield (X)" hidden="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="bf3f-4f9a-6449-40f8" name="Manifold" hidden="false" targetId="15dc-a57d-f1f3-41a6" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="250.0"/>
       </costs>
@@ -1464,218 +1640,242 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f9a-730c-1767-dd01" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="9e94-6358-bc5e-b445" name="1" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="14c8-88ec-d907-6a78" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+          <selectionEntries/>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="1b3e-c78e-e4d9-c2ef" name="Body Status" hidden="false" collective="false" defaultSelectionEntryId="e562-dc55-06b1-9ac7">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adc4-daea-d332-2968" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1a7-7475-6ba5-625f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4f0-63b6-118d-16f9" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8fba-c9d7-0b75-4545" name="2" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="83c5-5bda-9eaf-f931" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+              <selectionEntries>
+                <selectionEntry id="e562-dc55-06b1-9ac7" name="1" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="a323-7e80-9040-bf45" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d07-6355-2852-729f" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c068-6624-6d4d-8620" name="3" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="4fda-e579-6e51-8553" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46f1-59ed-580e-d365" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="564b-9bb9-481c-59d9" name="2" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="2c02-74e6-e759-3ed9" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a5-22da-b30f-0b1f" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="de9f-178c-afc7-cd81" name="4" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="5b20-458f-b6ba-a96f" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7299-e280-b14f-e867" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8a9e-1116-3c49-6a33" name="3" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="c418-8893-8e4a-ae30" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="934d-1604-c06e-f177" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ad3a-351a-845c-41ca" name="5" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="13d2-7134-6fab-a793" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e27b-2741-3dda-79e1" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="33e6-110c-ca43-deaa" name="4" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="6d76-4147-c053-0933" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b55a-0eb3-5596-2531" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="754f-d540-94eb-9c54" name="6" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="054d-bb98-7c5e-f13e" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8afd-aba9-e2ce-7d59" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9f0b-7ad4-5916-91da" name="5" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="04ec-5244-60ff-ac87" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e33c-7d35-13ec-0b11" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="21d3-5ebc-0135-dafd" name="8" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="01a8-545c-e6ff-32e5" name="8" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e78d-bc98-c31e-1638" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e9f8-78bd-40a8-c0cf" name="6" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="bf3a-e647-e046-9192" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fed8-d53a-91eb-4299" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d380-0237-dc68-b6d9" name="7" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="0630-bb99-bb0b-a0d9" name="7" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b4a-c594-b95f-7bb1" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b45e-21e8-0caa-417a" name="7" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="e711-f3f1-da43-2393" name="7" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9723-a928-0ac5-3401" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cdd1-b1ef-cec5-cbf3" name="8" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="e4cd-dbc2-481f-a67a" name="8" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d2f-084d-6fe7-04ad" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="bcd7-6983-aec4-82de" name="Body Manifold" hidden="false" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b93f-2411-5bcb-a2ef" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
@@ -1702,192 +1902,216 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e05c-de89-1d9d-0b0a" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="4ed3-6446-f714-86c8" name="6" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="cadd-8545-0720-29ea" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+          <selectionEntries/>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="436f-a436-9bad-a8f3" name="Head Status" hidden="false" collective="false" defaultSelectionEntryId="47fe-9aed-faad-538e">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9960-3cb7-bef2-7c72" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fbf-ce2c-b1f4-a304" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3d2-6b93-1e28-935b" type="min"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7611-6485-7e08-95fa" name="5" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="a66b-8145-dc23-d462" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+              <selectionEntries>
+                <selectionEntry id="47fe-9aed-faad-538e" name="1" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="3661-ce55-e831-2aa4" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fa5-27cb-c11b-14a4" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b589-49f0-729e-1080" name="4" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="dd0b-af8a-746f-9773" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee66-dbb7-61bc-4fa9" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3306-2159-3e45-0bef" name="2" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="7c58-1bd2-b55e-f217" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c865-d20c-3e9f-c721" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3d92-4a4a-8aee-1ea0" name="3" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="6154-a126-7742-ec10" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4a8-c59f-32d9-12c1" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9fb4-4145-8a65-b41c" name="3" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="bd72-bc31-2049-a665" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b2e-134a-630a-bbb7" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f78e-3e58-3107-e719" name="2" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="3f82-98c0-2a0d-67f1" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cacd-c970-1dac-5edf" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e9da-f4b0-f167-081e" name="4" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="2337-aaf5-2f27-052a" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eeb-7596-d8c0-9a43" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="951d-70d8-d5bd-8903" name="1" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="1707-cfdd-1fc4-d515" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5afa-dc55-e702-561a" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9001-9bf6-34ca-7bdd" name="5" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="e3ac-1717-81e1-0686" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f704-51ef-883e-ce6f" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ae52-913c-eeb3-115f" name="7" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="2f8f-c455-7c8c-1d7c" name="7" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95d2-3bcd-92ad-ca12" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="536d-722d-5c2f-b0e5" name="6" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="5289-a19c-fb3a-7619" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1153-0575-46c0-ebf1" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b549-db59-f757-48c0" name="7" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="f8a1-e77a-6fcd-be9d" name="7" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0327-fb38-dbc4-1ca0" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="4de1-709b-c8e0-fae8" name="Head Manifold" hidden="false" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e6d-6e3e-adf4-d49f" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
@@ -1914,218 +2138,242 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf0-dce5-bd05-ba35" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="f1bd-f0c2-a54a-61bd" name="7" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="c502-738a-0da7-ebe2" name="7" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+          <selectionEntries/>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0e14-822b-8f3c-61e3" name="Legs Status" hidden="false" collective="false" defaultSelectionEntryId="dbb9-4a9e-75b9-cc09">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="901c-a933-ec9f-b8ca" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc0-d97f-aaa7-7fa0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30de-d598-0424-4321" type="min"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="da62-191c-800a-38cd" name="6" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="b4d7-8cdd-cbbc-4ae4" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+              <selectionEntries>
+                <selectionEntry id="dbb9-4a9e-75b9-cc09" name="1" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="726b-c370-f63b-e41f" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d948-315d-9128-22e7" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d6b6-44d0-9b88-8727" name="5" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="2b20-3634-4d8d-7c0a" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c1d-2e40-3a0c-b249" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="48a3-4632-38dd-c0c9" name="2" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="05ce-462a-be7f-8aff" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8499-3e5d-9b44-10a6" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f2f9-cd09-4077-18e0" name="4" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="cea0-3ec4-d249-933b" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="149e-906f-652e-cafc" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c181-1b84-ee2d-4823" name="3" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="b9e9-532d-3223-dd8f" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da59-2031-c5d8-11a6" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6c19-49a9-35ad-4065" name="3" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="94ca-b020-e154-0c02" name="3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbf0-1711-f7f3-1b37" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="411a-fc8f-a0d0-256e" name="4" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="126d-ed56-1c7d-cb48" name="4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98c1-4faa-e518-9a1e" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="fad4-cd61-10b6-6881" name="2" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="b207-aba4-aa67-44d1" name="2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0586-c28a-ae2b-7a6b" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="773f-12c8-f27a-0582" name="5" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="73f0-3283-66f5-aeca" name="5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f31-518f-2c90-3584" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3363-ee9c-07e5-d4e1" name="1" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="fb77-fac3-4df0-78a4" name="1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f703-6866-946d-a1ae" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2e23-bc7b-6ce8-d1ef" name="6" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="47a7-1f9a-7c9d-ec1e" name="6" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf00-db45-092d-ef5c" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5bc2-bace-1606-b001" name="8" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="27eb-2c15-a400-81b8" name="8" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
-                  <profiles/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a9d-22c2-214f-bee8" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a0c2-2a54-0d0d-e6ec" name="7" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="e2b8-312f-367f-f3b8" name="7" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <characteristics>
-                    <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc52-6aa5-e294-1c8a" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="04f1-a159-5efd-9aad" name="8" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="b62f-3b61-1b62-0e0c" name="8" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Location">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2" value="+3"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec4a-9b73-2e39-e316" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="9507-5626-4569-5a17" name="Legs Manifold" hidden="false" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup">
+              <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0568-aa0e-5260-984b" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
@@ -2263,71 +2511,181 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="dc78-7f26-9349-f3d6" name="Void Shields" hidden="false" collective="false" defaultSelectionEntryId="9ae4-9d52-9f27-18b5">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="1a31-62c9-06cf-677b" name="Void Shield (X)" hidden="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="e067-8567-abd7-becd" name="Void Shield (3+) 3" hidden="false" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="4ed2-f7f1-8518-5654" name="Void Shield (4+) 2" hidden="false" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="dee8-2817-f803-d4e9" name="Void Shield (3+) 2" hidden="false" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="9ae4-9d52-9f27-18b5" name="Void Shield (3+)" hidden="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="bd30-77eb-f4a2-fc88" name="Void Shield (4+)" hidden="false" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e5e8-04fc-3518-8062" name="Plasma Reactor" hidden="false" collective="false" defaultSelectionEntryId="d019-5a52-2df0-0f34">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="218f-b209-8d25-eb06" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cfe-b346-a831-ef61" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="949e-f6e1-0b38-6e7f" name="Plasma Reactor 6 Orange" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a9-9490-3950-f43c" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="e0ef-1cf8-f2df-281f" name="Plasma Reactor 2 Green" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d72d-fda4-39c3-b553" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="d019-5a52-2df0-0f34" name="Plasma Reactor 1 Green" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c36b-05e2-c988-d316" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="dfce-06cb-8de3-3bb9" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f157-d4da-ad9c-dc18" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="7bf5-230e-9594-5ee8" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00e1-b912-24a6-cf97" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="159c-5ead-c611-6c48" name="Plasma Reactor 5 Orange" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5a2-d454-dc01-93a7" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="eed8-8764-dd14-a828" name="Plasma Reactor 7 Red" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a78e-5239-ef33-27cb" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="b74c-e1a2-85a4-edcb" name="Void Shield (3+)" hidden="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="1c9b-b0c9-68e0-a0ed" value="3">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="8d84-966a-65f5-984f" value="3">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="8354-d442-2757-ae9f" name="Void Shield (4+)" hidden="false" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="e66e-039a-2576-1143" value="2">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="adb4-b511-2483-9680" value="2">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="533f-9cd3-4191-1e94" name="Void Shield (X)" hidden="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="f938-8f7b-de22-7dad" name="Plasma Reactor" hidden="false" targetId="ae30-2066-1d64-6559" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="0761-32e5-c6b4-77b0" name="Manifold" hidden="false" targetId="15dc-a57d-f1f3-41a6" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="385.0"/>
       </costs>
@@ -2545,7 +2903,16 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="1ce4-f4f0-21f3-4b4b" name="Body Manifold" hidden="false" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
@@ -2731,7 +3098,16 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="e7d5-0eb8-3b53-3154" name="Legs Manifold" hidden="false" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
@@ -2891,7 +3267,16 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="b187-2994-731b-0763" name="Head Manifold" hidden="false" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
@@ -2957,60 +3342,137 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           </selectionEntryGroups>
           <entryLinks/>
         </selectionEntryGroup>
+        <selectionEntryGroup id="ecfd-f898-b5c9-4ac5" name="Void Shields" hidden="false" collective="false" defaultSelectionEntryId="33a7-7a1b-8746-5001">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="33a7-7a1b-8746-5001" name="Void Shield (3+)" hidden="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="65c5-8298-de1c-ac2c" name="Void Shield (4+) 2" hidden="false" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="f758-56c9-43f3-ed4a" name="Void Shield (X)" hidden="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="30a3-6c5b-6094-ad78" name="Void Shield (4+)" hidden="false" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fc25-d3a5-2336-d414" name="Plasma Reactor" hidden="false" collective="false" defaultSelectionEntryId="54d8-91ce-8ec4-6e91">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ca2-f09d-5d56-a5b1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87e4-9d94-5f4c-f6db" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="094e-fb3e-6d53-74d8" name="Plasma Reactor 3 Orange" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02eb-3660-ad3c-db42" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="4c60-e648-c02f-742a" name="Plasma Reactor 2 Green" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc1a-3cc0-b1cb-df27" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="5472-be7a-6576-83a0" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb95-fb5e-616e-6c3c" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="8e13-79cd-9c07-3918" name="Plasma Reactor 5 Red" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd02-eb79-e76c-edc0" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="54d8-91ce-8ec4-6e91" name="Plasma Reactor 1 Green" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec53-a52e-df0b-38fa" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="411c-00cd-32f8-e975" name="Plasma Reactor" hidden="false" targetId="ae30-2066-1d64-6559" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="a5cf-a42b-0074-377b" name="Void Shield (4+)" hidden="false" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="e66e-039a-2576-1143" value="2">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="adb4-b511-2483-9680" value="2">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="4055-1cd6-73d5-d9e2" name="Void Shield (X)" hidden="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="d887-e82c-fbb8-63a6" name="Void Shield (3+)" hidden="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="af0c-70b5-343d-8d31" name="Manifold" hidden="false" targetId="15dc-a57d-f1f3-41a6" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="180.0"/>
       </costs>
@@ -3432,7 +3894,112 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       </costs>
     </selectionEntry>
     <selectionEntry id="2b6b-b476-bd24-8c5c" name="Questoris Support Banner" hidden="false" collective="false" type="unit">
-      <profiles/>
+      <profiles>
+        <profile id="b96b-d322-79ed-3b15" name="Questoris Knight" hidden="false" profileTypeId="f6b0-d09f-1acc-9f3e" profileTypeName="Engine">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Speed" characteristicTypeId="0ef3-ea55-7cd1-d007" value="10&quot;"/>
+            <characteristic name="Command" characteristicTypeId="e94d-33bd-da82-fd4d" value="6 (4 with Lord Scion)"/>
+            <characteristic name="Ballistic Skill" characteristicTypeId="f14c-a692-0b4a-c510" value="4+"/>
+            <characteristic name="Weapon Skill" characteristicTypeId="935c-7d79-d2fe-dcf8" value="3+"/>
+            <characteristic name="Manuever" characteristicTypeId="d9fc-a9ed-b5ab-e97c" value="ignores"/>
+            <characteristic name="Servitor Clades" characteristicTypeId="a877-9231-f92a-5538" value="-"/>
+            <characteristic name="Scale" characteristicTypeId="5359-4d2b-082b-546a" value="3 (Grandis)"/>
+          </characteristics>
+        </profile>
+        <profile id="87f9-8899-2c4c-e7e4" name="1 Questoris Support Banner Ion Shields" hidden="false" profileTypeId="fcf7-bbb7-c944-2eb2" profileTypeName="Ion Shields">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Knights in Banner" characteristicTypeId="4788-fa46-8c0e-2db8" value="1"/>
+            <characteristic name="Attack Strength 1-6" characteristicTypeId="da0b-4753-babc-ff5c" value="5+"/>
+            <characteristic name="Attack Strength 7" characteristicTypeId="98f9-171c-acdd-7313" value="6+"/>
+            <characteristic name="Attack Strength 8" characteristicTypeId="0cf0-9891-2cf4-ecbf"/>
+            <characteristic name="Attack Strength 9" characteristicTypeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" characteristicTypeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="ce38-d15f-b373-f333" name="2-3 Questoris Support Banner Ion Shields" hidden="false" profileTypeId="fcf7-bbb7-c944-2eb2" profileTypeName="Ion Shields">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Knights in Banner" characteristicTypeId="4788-fa46-8c0e-2db8" value="2"/>
+            <characteristic name="Attack Strength 1-6" characteristicTypeId="da0b-4753-babc-ff5c" value="4+"/>
+            <characteristic name="Attack Strength 7" characteristicTypeId="98f9-171c-acdd-7313" value="5+"/>
+            <characteristic name="Attack Strength 8" characteristicTypeId="0cf0-9891-2cf4-ecbf" value="6+"/>
+            <characteristic name="Attack Strength 9" characteristicTypeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" characteristicTypeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="8ce1-3302-df2b-e2af" name="4+ Questoris Support Banner Ion Shields" hidden="false" profileTypeId="fcf7-bbb7-c944-2eb2" profileTypeName="Ion Shields">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Knights in Banner" characteristicTypeId="4788-fa46-8c0e-2db8" value="4+"/>
+            <characteristic name="Attack Strength 1-6" characteristicTypeId="da0b-4753-babc-ff5c" value="3+"/>
+            <characteristic name="Attack Strength 7" characteristicTypeId="98f9-171c-acdd-7313" value="4+"/>
+            <characteristic name="Attack Strength 8" characteristicTypeId="0cf0-9891-2cf4-ecbf" value="5+"/>
+            <characteristic name="Attack Strength 9" characteristicTypeId="73b3-c9cf-ac6b-792f" value="6+"/>
+            <characteristic name="Attack Strength 10+" characteristicTypeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="769d-ba55-7054-bec5" name="Questoris Support Banner Location Table" hidden="false" profileTypeId="b72e-0b77-ebb5-507d" profileTypeName="Location Table">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Direct" characteristicTypeId="c665-cd89-936b-f2e5" value="9-12"/>
+            <characteristic name="Devastating" characteristicTypeId="d16c-dca6-9e62-f9aa" value="13-15"/>
+            <characteristic name="Critical" characteristicTypeId="d300-246c-10d9-f5b2" value="16+"/>
+          </characteristics>
+        </profile>
+        <profile id="4625-257e-3231-5e44" name="Questoris Support Banner Structure Point 4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Hull Points">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="be11-a1d8-7670-e1f4" name="Questoris Support Banner Structure Point 3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Hull Points">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="c937-db5c-296a-3382" name="Questoris Support Banner Structure Point 2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Hull Points">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="55ec-58bd-e472-cbad" name="Questoris Support Banner Structure Point 1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Hull Points">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -5496,22 +6063,13 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c9b-b0c9-68e0-a0ed" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c9b-b0c9-68e0-a0ed" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d84-966a-65f5-984f" type="max"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="80fe-c264-0bcd-6ed9" name="Status" hidden="false" targetId="6660-a657-7ae6-c494" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
@@ -5523,21 +6081,12 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e66e-039a-2576-1143" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adb4-b511-2483-9680" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adb4-b511-2483-9680" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="2612-37cd-0f64-f03a" name="Status" hidden="false" targetId="6660-a657-7ae6-c494" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
@@ -5549,21 +6098,12 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b40-26e6-b877-dca2" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d35d-e337-3329-d252" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d35d-e337-3329-d252" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="615d-a841-db93-c684" name="Status" hidden="false" targetId="6660-a657-7ae6-c494" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
@@ -5669,20 +6209,98 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-  </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="50af-0bab-a322-f02c" name="Manifold" hidden="false" collective="false">
+    <selectionEntry id="cecc-5283-0f3c-0325" name="Void Shield (3+) 2" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c91-d973-da16-e673" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3610-61ec-5651-6633" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9219-813c-9bc8-e118" name="Void Shield (4+) 2" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a882-71b1-8bfe-18ce" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db7f-90bd-3b3b-ca09" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="787b-c4a3-7cbf-d79a" name="Void Shield (4+) 3" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bea-4192-ed04-c2e6" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c07b-ca6d-4b4c-f217" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dbfc-74f9-0c2f-9ff0" name="Void Shield (3+) 3" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82a2-fa01-1b0e-5ad5" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fac-2295-e545-0c9b" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="437b-c391-1f5f-8959" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a25-4d22-ad23-5b80" type="max"/>
+      </constraints>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="8a17-7a12-7607-5131" name="1 Green" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="8a17-7a12-7607-5131" name="1 Yellow" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="57b5-9fdd-732d-eb8f" name="Stabilizers Damaged" hidden="false" targetId="17b3-c01c-7edc-82da" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5413-d4f3-a4c9-1b45" type="max"/>
@@ -5698,7 +6316,14 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         <selectionEntry id="8f94-127b-43d6-ac8a" name="3 Red" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="d8a9-4440-3e2e-7e1c" name="Immobilized" hidden="false" targetId="e8db-6948-589e-2c80" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2424-0d14-3574-1c8c" type="max"/>
@@ -5711,10 +6336,23 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a24a-5f46-842d-37c9" name="2 Yellow" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a24a-5f46-842d-37c9" name="2 Orange" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="d7cf-21af-8e1f-d17a" name="Stabilizers Damaged" hidden="false" targetId="17b3-c01c-7edc-82da" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="6c0d-2733-171e-8aca" name="Locomotors Seized" hidden="false" targetId="933b-ea98-5684-890f" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d96-83a1-3f26-8615" type="max"/>
@@ -5731,22 +6369,32 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
-    <selectionEntryGroup id="6660-a657-7ae6-c494" name="Status" hidden="false" collective="false">
+    <selectionEntryGroup id="1d49-39ff-979b-f7f0" name="Body Manifold" hidden="false" collective="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f312-7f94-d6b8-18e6" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7dc-9821-6283-78e6" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b728-848d-51c3-5848" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="c0d8-8083-e8d9-f85c" name="Bottom" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9e12-5e6a-0b22-56dc" name="1 Yellow" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="26a5-f3b8-f951-d4a7" name="Reactor Leak (1)" hidden="false" targetId="9d86-911d-7d60-3acc" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c88-34a6-4eb8-b126" type="max"/>
+          </constraints>
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -5755,12 +6403,152 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="43af-a922-818d-3aa2" name="Top" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="dbe4-d602-cd6a-ed74" name="3 Red" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="de9e-6f9a-1e8f-5fe3" name="Reactor Leak (2)" hidden="false" targetId="8243-0a90-7bc9-88ac" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="b71a-b9cd-a82f-7b71" name="VSG Burnout" hidden="false" targetId="a064-e684-d8a9-c65e" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0427-3a7f-0962-eeba" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3f8f-21b5-9196-914e" name="2 Orange" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="4de3-036f-a420-42ad" name="Reactor Leak (1)" hidden="false" targetId="9d86-911d-7d60-3acc" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="c6b6-f608-2a1b-da05" name="VSG Burnout" hidden="false" targetId="a064-e684-d8a9-c65e" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c45-fbd0-37a1-7497" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="9ba2-12fa-8d22-c505" name="Head Manifold" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36fe-b6d4-fc17-8758" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc23-0212-d54d-a48f" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="2aab-7530-eac7-1b38" name="1 Yellow" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="6271-0a80-471c-1553" name="MIU Feedback" hidden="false" targetId="c11a-edbe-0a11-00c8" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="047a-2b02-c207-4dec" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a8b4-d852-71dc-d2f0" name="3 Red" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="36fc-1991-6c88-6632" name="Moderati Wounded" hidden="false" targetId="8ca3-6877-6b64-00ef" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="3ada-d545-d743-4de8" name="Princeps Wounded" hidden="false" targetId="f645-3cac-dca4-6c01" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0125-ddc2-e691-1a41" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="57ca-22ab-6d17-bf18" name="2 Orange" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="6a59-af3c-490c-df0c" name="MIU Feedback" hidden="false" targetId="c11a-edbe-0a11-00c8" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="7c3b-7435-128d-8bec" name="Moderati Wounded" hidden="false" targetId="8ca3-6877-6b64-00ef" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb83-53bd-220c-5858" type="max"/>
+          </constraints>
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -5811,6 +6599,69 @@ one go than one with Dice 1.</description>
       <infoLinks/>
       <modifiers/>
       <description>A weapon’s Strength is a measure of its ability to punch through a target’s armour. The higher a weapon’s Strength, the more likely its attack will inflict damage on a successful hit.</description>
+    </rule>
+    <rule id="c11a-edbe-0a11-00c8" name="MIU Feedback" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>The Mind Impulse Unit has been hit, disrupting the crew&apos;s interface to the manifold. Any command Checks made for the Titan have a -2 modifier.</description>
+    </rule>
+    <rule id="8ca3-6877-6b64-00ef" name="Moderati Wounded" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>The Moderatii overseeing the gunnery crews have been hit. Any Hit rolls made for the Titan have a -1 modifier.</description>
+    </rule>
+    <rule id="f645-3cac-dca4-6c01" name="Princeps Wounded" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>The attack has grievously wounded the Princeps, who is at risk of passing out. At the start of each Strategy phase, roll a D6. On a roll of 1, the Titan takes Shutodown orders. In addition, the Titan automatically fails Command checks it makes. </description>
+    </rule>
+    <rule id="9d86-911d-7d60-3acc" name="Reactor Leak (1)" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>The Titan&apos;s reactor containment fields are failing. In each End phase, advance the Titan&apos;s Reactor Status marker a number of times as shown in the brackets.</description>
+    </rule>
+    <rule id="8243-0a90-7bc9-88ac" name="Reactor Leak (2)" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>The Titan&apos;s reactor containment fields are failing. In each End phase, advance the Titan&apos;s Reactor Status marker a number of times as shown in the brackets.</description>
+    </rule>
+    <rule id="a064-e684-d8a9-c65e" name="VSG Burnout" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>The Titan&apos;s void shield generators have burned out -  its void shields collapse immediately. The Titan cannot use &apos;Raise Shields&apos; Repair actions until this damage has been repaired.</description>
+    </rule>
+    <rule id="17b3-c01c-7edc-82da" name="Stabilizers Damaged" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>The Titan staggers as its stabilizers struggle to keep it upright. In each End phase, roll a D6 for the Titan. On a 1-3, it turns 45 degrees to the left. On a 4-6, it turns 45 degrees to the right.</description>
+    </rule>
+    <rule id="933b-ea98-5684-890f" name="Locomotors Seized" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Massive gears within the Titan&apos;s legs grind as it tries to move. The Titan&apos;s Speed and Manoeuver characteristics (both the normal and boosted values) are halved, rounding down. If this reduces a normal value to 0, the Titan must push the reactor to use the boosted value it it wishes to move/turn. </description>
+    </rule>
+    <rule id="e8db-6948-589e-2c80" name="Immobilized" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>The Titan&apos;s legs and toros are frozen in place. It cannot move or make any turns.</description>
     </rule>
   </sharedRules>
   <sharedProfiles/>
