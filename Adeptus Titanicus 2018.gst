@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" book="Adeptus Titanicus 2018" revision="3" battleScribeVersion="2.01" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" book="Adeptus Titanicus 2018" revision="5" battleScribeVersion="2.01" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1424,6 +1424,14 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
+                <entryLink id="c860-31b1-1c90-21a4" name="Vulcan Megabolter (Reaver)" hidden="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1504,7 +1512,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a6ef-0420-0906-8da2" name="Plasma Reactor 1 Green" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -1518,7 +1528,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d5ed-509b-9a60-55dc" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -1532,7 +1544,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="755c-c35b-2eba-b72e" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -1546,7 +1560,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c001-f0e2-7127-994c" name="Plasma Reactor 5 Orange" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -1560,7 +1576,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="68f8-ace9-113f-e78c" name="Plasma Reactor 6 Red" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -1574,7 +1592,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -2594,7 +2614,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e0ef-1cf8-f2df-281f" name="Plasma Reactor 2 Green" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -2608,7 +2630,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d019-5a52-2df0-0f34" name="Plasma Reactor 1 Green" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -2622,7 +2646,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="dfce-06cb-8de3-3bb9" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -2636,7 +2662,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="7bf5-230e-9594-5ee8" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -2650,7 +2678,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="159c-5ead-c611-6c48" name="Plasma Reactor 5 Orange" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -2664,7 +2694,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="eed8-8764-dd14-a828" name="Plasma Reactor 7 Red" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -2678,7 +2710,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -3409,7 +3443,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="4c60-e648-c02f-742a" name="Plasma Reactor 2 Green" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -3423,7 +3459,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5472-be7a-6576-83a0" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -3437,7 +3475,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8e13-79cd-9c07-3918" name="Plasma Reactor 5 Red" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -3451,7 +3491,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="54d8-91ce-8ec4-6e91" name="Plasma Reactor 1 Green" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -3465,7 +3507,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -3655,16 +3699,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="e83f-c553-3d9a-83f4" name="Weapon Destroyed" hidden="false" targetId="bad0-317f-20ed-813e" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="10.0"/>
       </costs>
@@ -4956,7 +4991,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="7"/>
             <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="8&quot;"/>
             <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value="+1"/>
-            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value="24"/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value="24&quot;"/>
             <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
@@ -5246,7 +5281,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value="72&quot;"/>
             <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
-            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4" value="5&quot;"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
           </characteristics>
         </profile>
@@ -5348,6 +5383,13 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <constraints/>
         </categoryLink>
         <categoryLink id="2f1e-97dc-dc89-7cd6" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="0a1d-e8c3-acb5-aa1f" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5487,13 +5529,6 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="2f98-4312-d57c-59e5" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="743b-ff9d-6a77-f201" name="New CategoryLink" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true">
           <profiles/>
           <rules/>
@@ -5509,6 +5544,13 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <constraints/>
         </categoryLink>
         <categoryLink id="e152-1f07-5e91-ee59" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="0b1d-b3d5-b057-5fec" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5695,7 +5737,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="bfee-3947-a004-3a4e" name="Paired Turbo Laser Destructor" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="08bc-a277-c2bc-9973" name="Turbo Laser Destructor" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+        <profile id="08bc-a277-c2bc-9973" name="Paired Turbo Laser Destructor" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6063,7 +6105,6 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c9b-b0c9-68e0-a0ed" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d84-966a-65f5-984f" type="max"/>
       </constraints>
       <categoryLinks/>
@@ -6081,7 +6122,6 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e66e-039a-2576-1143" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adb4-b511-2483-9680" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -6098,7 +6138,6 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b40-26e6-b877-dca2" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d35d-e337-3329-d252" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -6215,7 +6254,6 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c91-d973-da16-e673" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3610-61ec-5651-6633" type="max"/>
       </constraints>
       <categoryLinks/>
@@ -6233,7 +6271,6 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a882-71b1-8bfe-18ce" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db7f-90bd-3b3b-ca09" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -6250,7 +6287,6 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bea-4192-ed04-c2e6" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c07b-ca6d-4b4c-f217" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -6266,7 +6302,6 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82a2-fa01-1b0e-5ad5" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fac-2295-e545-0c9b" type="max"/>
       </constraints>
       <categoryLinks/>
