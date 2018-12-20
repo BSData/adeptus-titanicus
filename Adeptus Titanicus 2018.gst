@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" book="Adeptus Titanicus 2018" revision="5" battleScribeVersion="2.01" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" book="Adeptus Titanicus 2018" revision="6" battleScribeVersion="2.01" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -29,6 +29,7 @@
         <characteristicType id="02bc-8716-7743-7b16" name="Disabled Roll"/>
         <characteristicType id="f14d-88df-2e41-f0b4" name="Blast"/>
         <characteristicType id="b21f-61e9-4f0d-88e6" name="Limited"/>
+        <characteristicType id="bcd4-cb45-5d53-b7d8" name="Trait"/>
       </characteristicTypes>
     </profileType>
     <profileType id="e539-8a16-c912-c6c5" name="Structure Points">
@@ -464,10 +465,44 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Not effected by Difficult of Dangerous Terrain</description>
+          <description>Not effected by Difficult or Dangerous Terrain</description>
         </rule>
       </rules>
       <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="9b05-f144-0ae5-5d6b" name="Knight Weapon" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="35b6-29c1-0436-e595" name="Firing Arc" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Knights have a 360 Degree Front Fire Arc</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="7f98-53c7-dceb-d879" name="Dice" hidden="false" targetId="b7c8-dd3a-9b0d-730c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="2ec3-cca9-7d52-4510" name="Range and Accuracy (ACC)" hidden="false" targetId="585e-acad-2307-042d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8f10-d9c5-e4ac-9aed" name="Strength (STR)" hidden="false" targetId="26e1-ebdc-e470-dd28" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints/>
     </categoryEntry>
@@ -599,6 +634,14 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <categoryLinks/>
     </entryLink>
     <entryLink id="c4cd-e7fe-d858-9ac7" name="Myrmidon Battleline Maniple" hidden="false" targetId="740e-52e8-27ed-bf22" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="ee61-27d4-5330-1a0d" name="Cerastus Knight Banner" hidden="false" targetId="2e8d-74e3-aecf-9e11" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3538,6 +3581,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8" value="Ordnance"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3567,7 +3611,14 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="6254-74fe-1cf7-4a1c" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+        <categoryLink id="71f8-29c1-8b9c-03b6" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="48f0-6716-fe35-50f9" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3599,6 +3650,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8" value="Rapid"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3628,7 +3680,14 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="3399-5ab9-4c73-baf3" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+        <categoryLink id="730c-66e7-4d12-71b6" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="69a7-7f26-63b7-ae16" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3660,6 +3719,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8" value="Fusion"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3689,7 +3749,14 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="e75f-e28f-1682-0d9d" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+        <categoryLink id="0c3d-6b5a-820c-68fc" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="70c4-e4d1-ac10-6a2d" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3721,6 +3788,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8" value="Melee"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3744,6 +3812,20 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <constraints/>
         </categoryLink>
         <categoryLink id="f76e-7566-dbb5-e1ce" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7602-7028-7b97-daca" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="854c-5aef-6533-6561" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4047,6 +4129,20 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="05ff-68be-de5c-4d87" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="4eff-36e2-fab2-c3a1" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -4071,7 +4167,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a12e-ad09-f102-4207" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a12e-ad09-f102-4207" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="707b-ec1f-7b17-4e9e" type="min"/>
           </constraints>
           <categoryLinks/>
@@ -4128,7 +4224,15 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="c197-9e7c-0bb5-0889" name="Lord Scion" hidden="false" collective="false" type="model">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="df55-7c19-a9fc-8be8" name="Lord Scion" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>While the Lord Scion is part of the Banner, add +2 to the result of any Command checks for it.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints>
@@ -4174,6 +4278,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4182,7 +4287,21 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="f59d-f45b-5505-2a04" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+        <categoryLink id="6748-d5ba-465d-e4c3" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6a94-d12d-d143-a10c" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="8af2-de87-eba2-6fd3" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4227,13 +4346,28 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="15.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5eb2-54c8-ba72-1bcf" name="Questoris Knight" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5eb2-54c8-ba72-1bcf" name="Questoris Knight" hidden="false" collective="false" type="model">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="11b6-403d-67f2-9067" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3529-2080-e9f1-b2b2" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="1fc8-9151-c6b4-3c34" name="Arms" hidden="false" collective="false">
@@ -4241,7 +4375,10 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55bb-9170-8061-9c84" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c58-ca4e-6715-0468" type="max"/>
+          </constraints>
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -4331,6 +4468,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4408,6 +4546,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4478,6 +4617,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4" value="5&quot;"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4555,6 +4695,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4632,6 +4773,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4709,6 +4851,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4786,6 +4929,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4856,6 +5000,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4926,6 +5071,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="9+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4996,6 +5142,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5059,6 +5206,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5136,6 +5284,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5213,6 +5362,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4" value="3&quot;"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5283,6 +5433,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4" value="5&quot;"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5353,6 +5504,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="9+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4" value="3&quot;"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5430,6 +5582,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6" value="1"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5507,6 +5660,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5591,6 +5745,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5675,6 +5830,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4" value="3&quot;"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5752,6 +5908,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5836,6 +5993,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="9+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5906,6 +6064,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -5976,6 +6135,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -6053,6 +6213,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="(+"/>
             <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -6311,6 +6472,838 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="2e8d-74e3-aecf-9e11" name="Cerastus Knight Banner" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="e79e-b6d9-c469-8998" name="1 Cerastus Knight Banner Ion Shields" hidden="false" profileTypeId="fcf7-bbb7-c944-2eb2" profileTypeName="Ion Shields">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Knights in Banner" characteristicTypeId="4788-fa46-8c0e-2db8" value="1"/>
+            <characteristic name="Attack Strength 1-6" characteristicTypeId="da0b-4753-babc-ff5c" value="5+"/>
+            <characteristic name="Attack Strength 7" characteristicTypeId="98f9-171c-acdd-7313" value="6+"/>
+            <characteristic name="Attack Strength 8" characteristicTypeId="0cf0-9891-2cf4-ecbf"/>
+            <characteristic name="Attack Strength 9" characteristicTypeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" characteristicTypeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="9d38-14fc-8ec7-3673" name="2 Cerastus Knight Banner Ion Shields" hidden="false" profileTypeId="fcf7-bbb7-c944-2eb2" profileTypeName="Ion Shields">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Knights in Banner" characteristicTypeId="4788-fa46-8c0e-2db8" value="2"/>
+            <characteristic name="Attack Strength 1-6" characteristicTypeId="da0b-4753-babc-ff5c" value="4+"/>
+            <characteristic name="Attack Strength 7" characteristicTypeId="98f9-171c-acdd-7313" value="5+"/>
+            <characteristic name="Attack Strength 8" characteristicTypeId="0cf0-9891-2cf4-ecbf" value="6+"/>
+            <characteristic name="Attack Strength 9" characteristicTypeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" characteristicTypeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="0552-4e2d-8908-36ea" name="3+ Cerastus Knight Banner Ion Shields" hidden="false" profileTypeId="fcf7-bbb7-c944-2eb2" profileTypeName="Ion Shields">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Knights in Banner" characteristicTypeId="4788-fa46-8c0e-2db8" value="3+"/>
+            <characteristic name="Attack Strength 1-6" characteristicTypeId="da0b-4753-babc-ff5c" value="3+"/>
+            <characteristic name="Attack Strength 7" characteristicTypeId="98f9-171c-acdd-7313" value="4+"/>
+            <characteristic name="Attack Strength 8" characteristicTypeId="0cf0-9891-2cf4-ecbf" value="5+"/>
+            <characteristic name="Attack Strength 9" characteristicTypeId="73b3-c9cf-ac6b-792f" value="6+"/>
+            <characteristic name="Attack Strength 10+" characteristicTypeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="3b58-726c-1501-52cf" name="Cerastus Knight Banner Location Table" hidden="false" profileTypeId="b72e-0b77-ebb5-507d" profileTypeName="Location Table">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Direct" characteristicTypeId="c665-cd89-936b-f2e5" value="9-12"/>
+            <characteristic name="Devastating" characteristicTypeId="d16c-dca6-9e62-f9aa" value="13-15"/>
+            <characteristic name="Critical" characteristicTypeId="d300-246c-10d9-f5b2" value="16+"/>
+          </characteristics>
+        </profile>
+        <profile id="1a69-790d-33e9-3d07" name="Cerastus Knight Banner Structure Point 5" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Hull Points">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="64a4-a1d4-4b2d-4faa" name="Cerastus Knight Banner Structure Point 4" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Hull Points">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="41ff-a8b6-0602-362a" name="Cerastus Knight Banner Structure Point 3" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Hull Points">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="ba19-f304-f0cb-716a" name="Cerastus Knight Banner Structure Point 2" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Hull Points">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="c7e4-0a07-8452-99fa" name="Cerastus Knight Banner Structure Point 1" hidden="false" profileTypeId="e539-8a16-c912-c6c5" profileTypeName="Hull Points">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Modifer" characteristicTypeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="4cf8-05ea-ff5b-5752" name="Cerastus Knight" hidden="false" profileTypeId="f6b0-d09f-1acc-9f3e" profileTypeName="Engine">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Speed" characteristicTypeId="0ef3-ea55-7cd1-d007" value="12&quot;"/>
+            <characteristic name="Command" characteristicTypeId="e94d-33bd-da82-fd4d" value="5 (3 with Lord Scion)"/>
+            <characteristic name="Ballistic Skill" characteristicTypeId="f14c-a692-0b4a-c510" value="4+"/>
+            <characteristic name="Weapon Skill" characteristicTypeId="935c-7d79-d2fe-dcf8" value="3+"/>
+            <characteristic name="Manuever" characteristicTypeId="d9fc-a9ed-b5ab-e97c" value="ignores"/>
+            <characteristic name="Servitor Clades" characteristicTypeId="a877-9231-f92a-5538" value="-"/>
+            <characteristic name="Scale" characteristicTypeId="5359-4d2b-082b-546a" value="4 (Grandis)"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ffc9-d092-29c3-c0f7" name="Knight Lancer Ion Gauntlet Shield" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If the Banner contains one or more Cerastus Knight Lancers, improve the Banner&apos;s Ion Shield save roll by 1</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="639b-d64f-808c-3bcb" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8e7c-e717-8999-389e" name="Knight Hulls" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="8439-88cc-174b-2f1d" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e8d-74e3-aecf-9e11" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="df3a-ec88-0f9f-af0e" value="1">
+              <repeats>
+                <repeat field="selections" scope="2e8d-74e3-aecf-9e11" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8439-88cc-174b-2f1d" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3a-ec88-0f9f-af0e" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="e018-6fef-2f79-88bc" name="Cerastus Knight" hidden="false" targetId="71a1-ef51-b47e-2983" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="eebf-89ee-8c69-59a6" name="Lord Scion" hidden="false" targetId="c197-9e7c-0bb5-0889" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="a731-e220-2d8a-41bf" value="70">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="99e6-43c9-8687-531a" name="Scion Marshal" hidden="false" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="a731-e220-2d8a-41bf" value="60">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9544-c5ee-1f19-05f0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="701e-d875-87e8-b998" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5ecc-ff8d-2dcc-d06c" name="Cerastus Knight Lancer" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="85fe-f195-5aad-ae3f" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="2d10-bdd4-02b9-d2db" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="09db-78c7-a73c-46bb" name="Cerastus Shock Lance" hidden="false" targetId="c0ea-1d01-3f46-f5e2" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="038d-03a7-8e47-8032" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cc7-0ce4-8569-508d" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="c540-8b6d-3daa-243c" name="Ion Gauntlet Shield Shock Blast" hidden="false" targetId="d8a7-9b41-99fc-155f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e208-40e6-6bf9-5cae" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b51-6bca-002d-5ded" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="71a1-ef51-b47e-2983" name="Cerastus Knight" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="33c4-aa71-bc88-bf09" name="Knight Hull" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3dd-6855-6769-0b63" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87f4-e696-0645-38e0" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="3f9b-7dda-849d-ccee" name="Cerastus Knight Acheron" hidden="false" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="2895-85a1-7497-c104" name="Cerastus Knight Castigator" hidden="false" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="4c38-5159-b94b-514d" name="Cerastus Knight Lancer" hidden="false" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="6d84-11a3-b6c4-29ac" name="Cerastus Knight Acheron" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="f9cc-6376-b735-eb83" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d051-625b-2fd0-a85e" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="25b1-c54a-54b9-de4f" name="Acheron Chainfist" hidden="false" targetId="eae0-b30e-6e52-d2e1" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54fc-4acd-008e-d473" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc24-9374-b62f-83de" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="14de-bab1-06df-3890" name="Acheron Pattern Flame Cannon" hidden="false" targetId="5531-995f-5196-d469" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bc5-d116-13a0-95b9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62dd-3498-4d8b-8afb" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7c6c-6bc6-32eb-e84a" name="Cerastus Knight Castigator" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="28b6-65ba-7eb5-7323" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="260b-edae-c2e5-3f25" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="e090-7aad-2f49-a6b5" name="Castigator Pattern Bolt Cannon" hidden="false" targetId="7093-6aaa-14f1-bf95" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d139-e817-b7f9-89d4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b76a-51ea-46ca-8980" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="6f47-5fd4-3215-0d1f" name="Castigator Warblade" hidden="false" targetId="ec48-48df-5e6e-dc8e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa56-2332-9d6a-a536" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e38c-0b8a-1884-8a11" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c0ea-1d01-3f46-f5e2" name="Cerastus Shock Lance" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="4dd4-10f7-c093-e3fd" name="Cerastus Shock Lance" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Dice" characteristicTypeId="fff8-b599-3d0a-2555" value="2"/>
+            <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="8"/>
+            <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="2&quot;"/>
+            <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value="+2"/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value=""/>
+            <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c" value=""/>
+            <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16"/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8" value="Melee"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="a1c2-087e-2f2b-165e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7fa8-cde3-2bae-42bd" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="1c34-0f0b-9757-f335" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="0e7f-b9d6-184f-b71c" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e16a-b151-5af7-0f01" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="d8a7-9b41-99fc-155f" name="Ion Gauntlet Shield Shock Blast" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="58db-d2c3-4ba4-0043" name="Ion Gauntlet Shield Shock Blast" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Dice" characteristicTypeId="fff8-b599-3d0a-2555" value="2"/>
+            <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="6"/>
+            <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="4&quot;"/>
+            <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value=""/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value="12&quot;"/>
+            <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16"/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8" value="Rapid"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="b820-6c08-e890-cd6b" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="115e-1401-95cc-2f44" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="1053-1d35-5f96-abdd" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="405d-2e50-f3ec-bbf7" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="92d2-9be5-44e0-b915" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="7093-6aaa-14f1-bf95" name="Castigator Pattern Bolt Cannon" page="" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="5233-9f4d-96c6-16ad" name="Castigator Pattern Bolt Cannon" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Dice" characteristicTypeId="fff8-b599-3d0a-2555" value="7"/>
+            <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="3"/>
+            <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="8&quot;"/>
+            <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value="+1"/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value="20&quot;"/>
+            <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c" value=""/>
+            <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value=""/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4" value=""/>
+            <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6" value=""/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8" value="Rapid"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="712c-ac3a-8767-8667" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="b0c8-4ff9-7db2-b004" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ac65-6f0f-ccb8-5e8f" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e198-66c0-c0e9-4edf" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a5c8-2687-83b3-01ff" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="ec48-48df-5e6e-dc8e" name="Castigator Warblade" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="e1a2-6208-0baf-c2b3" name="Castigator Warblade" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Dice" characteristicTypeId="fff8-b599-3d0a-2555" value="2"/>
+            <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="7"/>
+            <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="2&quot;"/>
+            <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value="+1"/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27"/>
+            <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16"/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8" value="Rending, Melee"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="5b97-0c66-1f90-a39e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="4b9d-5309-c4a2-fcfa" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d547-6c87-9436-0210" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="dae4-fa97-f2b4-d61b" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="08ba-4da4-e071-a571" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="62fe-7a64-421a-1d44" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="eae0-b30e-6e52-d2e1" name="Acheron Chainfist" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="da51-e3a6-bb09-786a" name="Acheron Chainfist" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Dice" characteristicTypeId="fff8-b599-3d0a-2555" value="2"/>
+            <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="7"/>
+            <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="2&quot;"/>
+            <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value="+1"/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27"/>
+            <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16"/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8" value="Rending, Melee"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="2e6a-66ed-9712-14d8" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="eddc-554c-0a5f-704a" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f51b-e2ec-76cd-f826" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7122-ce1f-5d56-2892" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9887-7952-aabf-6230" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="5531-995f-5196-d469" name="Acheron Pattern Flame Cannon" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="193e-e62d-9813-2218" name="Acheron Pattern Flame Cannon" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Dice" characteristicTypeId="fff8-b599-3d0a-2555" value="2"/>
+            <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="7"/>
+            <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="T"/>
+            <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value=""/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value=""/>
+            <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c" value=""/>
+            <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value=""/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4" value=""/>
+            <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6" value=""/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8" value="Firestorm"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="a598-e115-9bc2-7664" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6500-ed63-eb3b-d4fd" name="Firestorm" hidden="false" targetId="8fed-c116-efe0-e973" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="b14f-903b-3d04-702b" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ad80-adbd-8ba4-2707" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="971f-2aab-2a5a-e0a1" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
