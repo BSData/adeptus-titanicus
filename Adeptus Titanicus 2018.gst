@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" book="Adeptus Titanicus 2018" revision="6" battleScribeVersion="2.01" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" book="Adeptus Titanicus 2018" revision="7" battleScribeVersion="2.01" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -4153,14 +4153,16 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <modifiers>
             <modifier type="increment" field="a12e-ad09-f102-4207" value="1">
               <repeats>
-                <repeat field="selections" scope="2b6b-b476-bd24-8c5c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="49d8-4d4f-2a74-2ae3" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c5d-25f9-3110-dad5" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
             <modifier type="increment" field="707b-ec1f-7b17-4e9e" value="1">
               <repeats>
-                <repeat field="selections" scope="2b6b-b476-bd24-8c5c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c5d-25f9-3110-dad5" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="49d8-4d4f-2a74-2ae3" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -4197,7 +4199,10 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1de-0034-f54b-71ab" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bafe-ae72-5e85-e378" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
         <entryLink id="49d8-4d4f-2a74-2ae3" name="Scion Marshal" hidden="false" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
@@ -6790,7 +6795,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6d84-11a3-b6c4-29ac" name="Cerastus Knight Acheron" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -6961,7 +6968,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d8a7-9b41-99fc-155f" name="Ion Gauntlet Shield Shock Blast" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -7028,7 +7037,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7093-6aaa-14f1-bf95" name="Castigator Pattern Bolt Cannon" page="" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -7095,7 +7106,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ec48-48df-5e6e-dc8e" name="Castigator Warblade" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -7169,7 +7182,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="eae0-b30e-6e52-d2e1" name="Acheron Chainfist" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -7236,7 +7251,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5531-995f-5196-d469" name="Acheron Pattern Flame Cannon" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -7303,7 +7320,9 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
