@@ -649,6 +649,38 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <constraints/>
       <categoryLinks/>
     </entryLink>
+    <entryLink id="a061-9137-013f-cf00" name="Corsair Battleline Maniple" hidden="false" targetId="241d-3394-9612-08c7" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="bf2f-3118-8d0b-fa4b" name="Janissary Batteline Maniple" hidden="false" targetId="56b0-f155-3635-45da" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="cea6-93b6-5d50-2f23" name="Regis Battleline Maniple" hidden="false" targetId="51b7-df68-7254-8f21" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="7e16-91e5-f646-3e5e" name="Lupercal Light Maniple" hidden="false" targetId="26ca-c6f5-04b3-10c1" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" type="model">
@@ -3840,7 +3872,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fcfd-d034-1395-9eea" name="Venator Light Maniple" hidden="false" collective="false" type="unit">
+    <selectionEntry id="fcfd-d034-1395-9eea" name="Venator Light Maniple" book="AT:Rulebook" page="61" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules>
         <rule id="2d42-3c90-4547-c5f5" name="Opportunistic Strike" book="AT2081" page="61" hidden="false">
@@ -3893,7 +3925,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="740e-52e8-27ed-bf22" name="Myrmidon Battleline Maniple" hidden="false" collective="false" type="unit">
+    <selectionEntry id="740e-52e8-27ed-bf22" name="Myrmidon Battleline Maniple" book="AT:Rulebook" page="59" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules>
         <rule id="5124-eab1-8902-5b78" name="Overwhelming Firepower" book="AT2018" page="59" hidden="false">
@@ -3946,7 +3978,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3ca3-42a8-26bb-5676" name="Axiom Battleline Maniple" hidden="false" collective="false" type="unit">
+    <selectionEntry id="3ca3-42a8-26bb-5676" name="Axiom Battleline Maniple" book="AT:Rulebook" page="57" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules>
         <rule id="a8ff-f985-efc4-9160" name="Might of the Omnissiah" book="AT2018" page="57" hidden="false">
@@ -4010,7 +4042,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b6b-b476-bd24-8c5c" name="Questoris Support Banner" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2b6b-b476-bd24-8c5c" name="Questoris Support Banner" book="" hidden="false" collective="false" type="unit">
       <profiles>
         <profile id="b96b-d322-79ed-3b15" name="Questoris Knight" hidden="false" profileTypeId="f6b0-d09f-1acc-9f3e" profileTypeName="Engine">
           <profiles/>
@@ -7320,6 +7352,156 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="241d-3394-9612-08c7" name="Corsair Battleline Maniple" book="AT:Titandeath" page="60" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="12ab-a07e-2599-714f" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="d2ae-05d2-2fcb-0798" name="Reaver Titan" hidden="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3201-7f9d-bbe4-e121" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a83-28f9-39f2-6a12" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="56b0-f155-3635-45da" name="Janissary Batteline Maniple" book="AT:Titandeath" page="62" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="62ec-6116-1ddd-3265" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="fbf6-2b08-3998-d83e" name="Reaver Titan" hidden="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3b6-c6b9-ac60-617d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db7d-8f30-ca24-e30e" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1ace-3985-55cd-6c93" name="Warhound Titan" hidden="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f37-979e-47fe-7098" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="803f-03a2-c313-9c2a" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="51b7-df68-7254-8f21" name="Regis Battleline Maniple" book="AT:Titandeath" page="64" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="bea9-0d4e-1f40-99e6" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="8bd5-b643-57b5-5c37" name="Warhound Titan" book="" hidden="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e2-8a30-036e-fa3d" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c80-07d9-8233-0331" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2b1d-c2a1-5fb1-5f26" name="Warlord Titan" hidden="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8032-04c4-538f-85ad" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5e4-a8b8-d00f-44dd" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" book="AT:Titandeath" page="66" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="888e-a4ff-c051-e2ab" name="Warhound Titan" hidden="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6a3-2c2d-9562-dac0" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1c2-3492-0032-293a" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
