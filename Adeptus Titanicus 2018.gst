@@ -513,6 +513,34 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="15bd-0b4b-5cac-dc48" name="LegioTempestus" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="0796-178c-50ce-2d1f" name="LegioGryphonicus" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="06c2-f93e-7bf5-9fd5" name="LegioAstorum" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="b539-a35c-fe3f-9c34" name="Stratagem" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -538,6 +566,13 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <constraints/>
         </categoryLink>
         <categoryLink id="0606-1d0c-defb-d6e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="4f07-d070-7d91-0291" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -716,6 +751,14 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <categoryLinks/>
     </entryLink>
     <entryLink id="f87f-52a5-0f04-ba5a" name="Fortis Battle Maniple" hidden="false" targetId="2004-6a18-7dac-156c" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="434e-537b-2fd1-eaee" name="Strategems" hidden="false" targetId="375f-b70b-7462-5d29" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1546,6 +1589,22 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="0c2b-34ac-a75d-59d0" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" targetId="08c7-5efe-0712-c420" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
@@ -7935,12 +7994,35 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus" book="AT:Rulebook" page="91" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="0e6c-1950-20a3-f0ae" name="Glory in Death" book="AT:Rulebook" page="92" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Before making a Catastrophic Damage roll for a Legio Tempestus Titan, make a Command check for it.  If the test is passed, the Titan can immediatly attack with on eof its weapons (following the Combat Sequence) or with all of its weapons if the test is passed by 3 or more.</description>
+        </rule>
+        <rule id="f9ba-465a-7aaa-e466" name="Fury of the Machine" book="AT:Rulebook" page="92" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When making an Awakened Machine Spiriti roll for a Legio Tempestus Titna, re-roll any results of 1,2 or 3.  IF the re-roll is a 1,2 or 3, the result stands
+</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
       <categoryLinks>
         <categoryLink id="cbd2-1f0e-e0af-34d8" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e403-67b1-34ab-dca2" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7957,7 +8039,25 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="0986-9b84-b734-e9c8" name="Legio Gryphonicus" book="AT:Rulebook" page="89" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="086d-6793-f939-4a7e" name="Lust for Glory" book="AT:Rulebook" page="89" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>After both sides have deployed, a player commanding a Legio Gryphonicus battlegroup can declaire that any of their Titans will claim an enemy Titan as a target.  Declare out loud which Titan is making the claim and their intended target, and write both down.
+
+If a Titan attacks its intended target, the controlling player can re-roll Hit rolls of 1 and add 1 to the result of any Armour rolls.  However, if another Titan attacks the inteded target then the claim is forfeited and this rules no longer applies
+</description>
+        </rule>
+        <rule id="e8e9-383e-580a-a954" name="Mainstay of the Titan Legion" book="AT:Rulebook" page="89" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When assembling a Legio Gryphonicus maniple, players can select up to one Reaver Titan in place of a Warlord Titan or Warhound Titan</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -7979,12 +8079,35 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="dbd6-65fd-6354-a154" name="Legio Astorum" book="AT:Titandeath" page="19" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="663e-f301-76a4-55fb" name="War March" book="AT:Titandeath" page="19" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>In the first and second round of the game, a Legio Astorum Titan can choose to add 2&quot; to it&apos;s boosted Movement characteristic.  If a Titan uses this boosted speed, then whenever it is required to roll the Reactor dice, it must roll twice and choose the least favourable result (i.e. the result which increases the Titan&apos;s Plasma Reactor Status track by the largest amount or awakens it&apos;s machine spirit)
+</description>
+        </rule>
+        <rule id="5e7b-611a-ad57-7a1f" name="Veteran Princeps" book="AT:Titandeath" page="19" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>During the Damage Control phase, or when enacting an Emergency Repairs order, a Legio Astorum Titan may re-roll one of it&apos;s repair Action dice.  If it is a Warlord Titan, it may instead re-roll two of its Repair Action Dice</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
       <categoryLinks>
         <categoryLink id="ce35-da7c-59a0-0fac" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a151-7c48-9bed-fe65" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8247,6 +8370,170 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="08c7-5efe-0712-c420" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="dd46-08dc-7ea5-12b3" name="Chasmata Pattern Turbo Laser Destructor" book="AT:Rulebook" page="92" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Dice" characteristicTypeId="fff8-b599-3d0a-2555" value="2"/>
+            <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="8"/>
+            <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="21&quot;"/>
+            <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value=""/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value="38&quot;"/>
+            <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="6ee5-cdb5-a0d8-4bf9" name="New CategoryLink" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="156b-7f7b-1520-1833" name="New CategoryLink" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="72ab-0f73-bfbc-e633" name="New CategoryLink" hidden="false" targetId="87c1-d39e-fbdf-1ae7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9db7-aecf-f77f-0736" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="fa2c-0ce1-0ed7-1514" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="c6df-3abd-589f-c90e" name="Weapon Destroyed" hidden="false" targetId="bad0-317f-20ed-813e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="375f-b70b-7462-5d29" name="Legio Specific Strategems" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="ea9b-4391-f398-d3ba" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1784-4ad0-1919-d5c0" name="Bounty of Mars (2)" book="AT:Titandeath" page="19" hidden="true" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="48be-6077-226d-c773" name="Bounty of Mars" book="AT:TitanDeath" page="19" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>This Stratagem can be purchased by any Legio Astorum player.
+Play this stratagem at the beginning of the Damage Control phase of any round.  Choose one type of critcally damaged system or disabled weapon, i.e., Head, Body, Weapon, etc  For the duration of this Damage Control phase, the dice score required to repair this system is reduced by 1, i.e., if the dice result of a 5 or 6 is normally requires then for this phase, the player can use a dice result of a 4,5, or 6.
+</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="06c2-f93e-7bf5-9fd5" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="133f-f443-cb1e-287e" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a96-3b53-96b3-9ba7" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="e466-20df-b265-7ad2" name="Machine Defiance (1)" book="AT:Titandeath" page="19" hidden="true" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="6f4e-529b-b1bc-f31c" name="Machine Defiance (1)" book="AT:Titandeath" page="19" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>This Stratagem can be purchased by an Legio Astorum player.
+Play this Stratagem when a Titan&apos;s void shields collapse.  Immediatly roll a number of D6 equal to the Titan&apos;s Servator Clades characteristic.  For each roll of a 5 or 6 restore the Titan&apos;s Void Shield level by 1.  Note, this is not a Repair roll and does not benifit from any effects which influence or modify Repair rolls.</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="06c2-f93e-7bf5-9fd5" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4cc-bf98-7efa-c890" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b7a-7785-dd74-789f" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
