@@ -506,7 +506,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
     </categoryEntry>
-    <categoryEntry id="881f-3c83-e194-c88e" name="Legio" hidden="false">
+    <categoryEntry id="d204-9898-0ffb-02f4" name="Titan Legion" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -574,6 +574,17 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e37a-c15b-7a88-b4a3" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba5f-e2c7-500d-0093" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1c3a-bf92-d432-7d2f" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c20a-50aa-9df0-4c39" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48f4-3664-b5a1-1803" type="min"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -1708,12 +1719,30 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a180-d006-c6d3-8485" name="Titan Legions" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="e7e8-b86e-8590-f289" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
-          <constraints/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadd-b45a-3473-bb9a" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffec-c86f-fff3-6d9b" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2930-4fbc-e7db-8b33" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -2835,12 +2864,30 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8087-c55b-73ba-e6c2" name="Titan Legions" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="4dcc-4217-0816-846e" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
-          <constraints/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadd-b45a-3473-bb9a" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f10-7a4d-94e4-854e" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8363-23e4-9244-93f2" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -3641,14 +3688,29 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ca94-c4ae-96af-f5b5" name="Titan Legions" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="5cf4-5897-342d-5a46" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadd-b45a-3473-bb9a" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98f0-4604-9f88-6556" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afbf-f53c-9dfe-c595" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9d7-aec6-1798-ab58" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="895d-6fe2-456c-f3da" type="min"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -3981,12 +4043,15 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           </constraints>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="645c-d3d6-d17e-4640" name="Titan Legions" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="645c-d3d6-d17e-4640" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7fc-682b-f1b2-a4f8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="585b-38ce-e35a-c13d" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -4039,6 +4104,17 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bf1-e26a-82a0-d5ba" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baf4-9b7f-f9b7-e2d9" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="740c-8755-3e18-5a7c" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a6-7fc4-677d-1bdf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93f7-1318-c1ab-ae17" type="min"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -4103,6 +4179,17 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d217-c30c-b3e5-f142" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d011-abe9-ffd9-10b6" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2dc6-c52e-3efc-5e21" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afa0-e9f7-7314-8a0c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8508-eb9b-e33b-45e1" type="min"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -7454,6 +7541,17 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           </constraints>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="398d-4c16-9860-c721" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b570-e434-172f-b4ad" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a03-26e1-7b91-83db" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -7496,6 +7594,17 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f37-979e-47fe-7098" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="803f-03a2-c313-9c2a" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="a171-901f-a75e-8ce1" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0fc-bfe1-0e38-29f0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d26-5fc3-ad8e-a5df" type="min"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -7544,6 +7653,17 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           </constraints>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="8413-0dd4-3c88-a36c" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38f9-0a28-a7bb-708d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd12-c8f5-b461-0a5b" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -7575,6 +7695,17 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6a3-2c2d-9562-dac0" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1c2-3492-0032-293a" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="b85c-47c0-195d-0d33" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5618-6159-c341-4759" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78b4-10d1-1405-d994" type="min"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -7674,6 +7805,17 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           </constraints>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="aa38-6178-61e8-ceb0" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7158-6d00-7714-6882" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a5b-0580-c68d-72e2" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -7716,6 +7858,17 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0367-10c5-5cf5-71a2" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a001-f8b7-d5de-905b" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="fce6-bfe1-e75a-19b9" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5ea-c8a7-dbe0-d372" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="213c-1b2e-1597-55e4" type="min"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -7764,6 +7917,17 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           </constraints>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="64b7-f4f0-934d-0032" name="Titan Legion" hidden="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d31-c274-d528-f841" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a595-2c07-a80b-9196" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -7776,7 +7940,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="3d8a-d7fc-6290-a317" name="Legio" hidden="false" targetId="881f-3c83-e194-c88e" primary="true">
+        <categoryLink id="cbd2-1f0e-e0af-34d8" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7798,7 +7962,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="a769-0e35-871d-bc07" name="Legio" hidden="false" targetId="881f-3c83-e194-c88e" primary="true">
+        <categoryLink id="ae93-9f57-6dbe-169b" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7820,7 +7984,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="83fa-cf41-b232-3ad8" name="Legio" hidden="false" targetId="881f-3c83-e194-c88e" primary="true">
+        <categoryLink id="ce35-da7c-59a0-0fac" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7842,7 +8006,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="db0f-6542-f2d7-4586" name="Legio" hidden="false" targetId="881f-3c83-e194-c88e" primary="true">
+        <categoryLink id="5c69-467d-eda1-07ef" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7864,7 +8028,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="69f9-97d5-9563-6fda" name="Legio" hidden="false" targetId="881f-3c83-e194-c88e" primary="true">
+        <categoryLink id="51ef-0cfe-c54e-10e7" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7886,7 +8050,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="fc06-208c-3603-895f" name="Legio" hidden="false" targetId="881f-3c83-e194-c88e" primary="true">
+        <categoryLink id="473a-1f62-94a8-3301" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7908,7 +8072,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="43ca-8abb-c58b-b121" name="Legio" hidden="false" targetId="881f-3c83-e194-c88e" primary="true">
+        <categoryLink id="8ecc-c2ba-bf48-ccdf" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7930,7 +8094,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="1da5-0450-0cfa-e3ef" name="Legio" hidden="false" targetId="881f-3c83-e194-c88e" primary="true">
+        <categoryLink id="fcc3-9ec5-1d35-6043" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7952,7 +8116,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="df6c-cf66-f462-4a88" name="Legio" hidden="false" targetId="881f-3c83-e194-c88e" primary="true">
+        <categoryLink id="f5a1-f721-ca1b-3e3d" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7967,23 +8131,30 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6202-19dc-f26f-9b64" name="Titan Legions" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6202-19dc-f26f-9b64" name="Titan Legion" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="5473-e38d-bf74-96eb" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="45f2-b1ee-23d5-1d11" name="Titan Legions" hidden="false" collective="true">
+        <selectionEntryGroup id="45f2-b1ee-23d5-1d11" name="Titan Legions" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9b6-42cf-f243-619c" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="386f-b1e6-3942-a12f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d00-c954-d909-610e" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
