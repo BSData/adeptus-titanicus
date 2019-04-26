@@ -569,6 +569,27 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="95e8-3d8e-a0ad-4ad3" name="LegioKrytos" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="561a-cb05-d4b5-94fd" name="LegioVulpa" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="72ba-4008-bf4b-fe3b" name="LegioFureans" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -8285,12 +8306,27 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
     </selectionEntry>
     <selectionEntry id="bffc-4266-a83d-cae6" name="Legio Krytos" book="AT:Titandeath" page="45" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="939f-b862-cf87-5c7b" name="Doom of Worlds" book="AT:Titandeath" page="45" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When fielding a Myrmidon maniple (see page 59 of the Adeptus Titanicus rulebook) a Legio Krytos player may take a Warlord TItan in place of a Reaver Titan as part of the maniple&apos;s mandatory components.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
       <categoryLinks>
         <categoryLink id="8ecc-c2ba-bf48-ccdf" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f02c-03f6-a7e9-caf6" name="LegioKrytos" hidden="false" targetId="95e8-3d8e-a0ad-4ad3" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8307,12 +8343,34 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
     </selectionEntry>
     <selectionEntry id="1a92-f760-bf0e-ce26" name="Legio Fureans" book="AT:Titandeath" page="50" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="ae03-90bb-549c-18cc" name="Machine Rage" book="AT:Titandeath" page="50" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When rolling the Reactor dice (see page 43 of the Adeptus Titanicus rulebook) a Tiger Eyes player counds both the Machine Spirit symbol and the blank facing on the dice as a trigger for awakening their Titan&apos;s machine spirit.  However, if a Tiger Eyes player fails the Command check to quell the machine spirit, they may choose the result from the Awakened Machine Spirit table, rather than rolling randomly</description>
+        </rule>
+        <rule id="3956-1d81-32e8-2797" name="Many Faces of the Omnissiah" book="AT:Titandeat" page="50" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>In the first round of the game, andy TIger Eyes TItan may choose to forgo its activation in either the movement phase of the Combat phase - in essence doing nothing for that phase but counting as one of the Tiger Eyes Player&apos;s activiations.  For each phase sacrificed by a Titan, either 1 or2, that Titan may re-roll any one dice later in the game.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
       <categoryLinks>
         <categoryLink id="fcc3-9ec5-1d35-6043" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="2c6f-f845-d96b-1c92" name="LegioFureans" hidden="false" targetId="72ba-4008-bf4b-fe3b" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8329,12 +8387,27 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
     </selectionEntry>
     <selectionEntry id="7093-f8b3-b5f9-d38d" name="Legio Vulpa" book="AT:Titandeath" page="55" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="36fb-e4f2-82f5-8ba3" name="Honour and Blood" book="AT:Titandeath" page="55" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A Death Stalkers Titan that is within 3&quot; of an enemy Titan increases its Weapons Skill by 1 an decreases its Ballistic Skill by 1</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
       <categoryLinks>
         <categoryLink id="f5a1-f721-ca1b-3e3d" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e1d6-7a2f-19c9-9627" name="LegioVulpa" hidden="false" targetId="561a-cb05-d4b5-94fd" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8619,7 +8692,7 @@ Play this stratagem at the beginning of the Damage Control phase of any round.  
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e466-20df-b265-7ad2" name="Machine Defiance (1)" book="AT:Titandeath" page="19" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="e466-20df-b265-7ad2" name="Machine Defiance (1)" book="" page="" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
             <rule id="6f4e-529b-b1bc-f31c" name="Machine Defiance (1)" book="AT:Titandeath" page="19" hidden="false">
@@ -8653,7 +8726,7 @@ Play this Stratagem when a Titan&apos;s void shields collapse.  Immediatly roll 
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="120b-ea0c-47a7-3132" name="Combat Drop (3)" book="AT:Rulebook" page="92" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="120b-ea0c-47a7-3132" name="Combat Drop (3)" book="" page="" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
             <rule id="a1ec-918e-4b64-0160" name="Combat Drop (3)" book="AT:Rulebook" page="91" hidden="false">
@@ -8692,10 +8765,10 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="cdfa-6187-38dc-0319" name="Blessing of the Emperor (3)" book="AT:Titandeath" page="24" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="cdfa-6187-38dc-0319" name="Blessing of the Emperor (3)" book="" page="" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
-            <rule id="e9f1-61cd-16bf-f838" name="Blessing of the Emperor (3)" hidden="false">
+            <rule id="e9f1-61cd-16bf-f838" name="Blessing of the Emperor (3)" book="AT:Titandeath" page="24" hidden="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -8727,12 +8800,13 @@ Reveal this Stratagem when a hit would result in one of your Titans rolling on t
         <selectionEntry id="6a90-5f45-4eef-04ff" name="A Day of Retribution (2)" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
-            <rule id="8a91-33d7-852b-b2ad" name="A Day of Retribution (2)" book="AT:Titandeath" page="14" hidden="false">
+            <rule id="8a91-33d7-852b-b2ad" name="A Day of Retribution (2)" book="AT:Titandeath" page="24" hidden="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>This Stratagem can be purchased by any Legio Defensor player.Play this Stratagem in the Strategy phase of the first round.
+              <description>This Stratagem can be purchased by any Legio Defensor player.
+Play this Stratagem in the Strategy phase of the first round.
 Choose one of your opponent&apos;s Titans.  Immediatly conduct a round of shooting against the Titan with one of your own Titans weapons, counting the weapon as having double its normal range.  
 Note that this does not increase the weapons Short Range.  THen advance your titan&apos;s Plasma Reactor Status track three places.  Once the effects of the attack have been worked out, begin the first game round.</description>
             </rule>
@@ -8789,7 +8863,7 @@ Reveal this Stratagem when a Firebrands Titan would be required to make a roll o
           <entryLinks/>
           <costs/>
         </selectionEntry>
-        <selectionEntry id="82be-13d1-5446-584a" name="Maniple of One (2)" book="AT:Titandeath" page="29" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="82be-13d1-5446-584a" name="Maniple of One (2)" book="" page="" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
             <rule id="cf51-7e3e-bd98-e3b9" name="Maniple of One (2)" book="AT:Titandeath" page="29" hidden="false">
@@ -8854,10 +8928,10 @@ The Imperial Hunters player may redeploy a Warhound Titan for every Titan with a
           <entryLinks/>
           <costs/>
         </selectionEntry>
-        <selectionEntry id="4239-0c38-823a-ae67" name="March of the Dead (3)" book="AT:Titandeath" page="29" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="4239-0c38-823a-ae67" name="March of the Dead (3)" book="" page="" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
-            <rule id="0bf7-ccba-80dc-e0d1" name="March of the Dead (3)" book="AT:Titandeath" page="29" hidden="false">
+            <rule id="0bf7-ccba-80dc-e0d1" name="March of the Dead (3)" book="AT:Titandeath" page="40" hidden="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -8880,6 +8954,144 @@ Play this Stratagem in the Strategy phase of the first round.  The Legio Mortis 
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac4c-3ce6-605b-34bd" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fe5-2989-4372-a78e" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="c610-8076-2dd0-8ced" name="Scorched Earth (1)" hidden="true" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="1cd9-3d4e-f9bb-d419" name="Scorched Earth (1)" book="AT:Titandeath" page="45" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>This Stratagem can be purchased by any Legio Krytos player.
+Reveal this Stratagem in any Strategy phase.
+For the duration of that round, when targeting terrain, Titans of the Legio Krytos add 2 to the Strength of their weapons
+
+</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7598-3754-ce47-8181" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fa9-3dd4-945e-dd8b" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="293d-f089-accb-a4aa" name="Iron Endures (1)" hidden="true" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="167e-fda1-27c5-06fe" name="Iron Endures (1)" book="AT:Titandeath" page="45" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>This Stratagem can be purchased by any Legio Krytos player.
+Reveal this Stratagem in any Strategy phase.
+For the duration of that round, all God Breakers TItans reduce the Strength of hits suffered as a result of Dangerous terrain by 2 (to a minimum of 0)
+
+
+</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dde4-0d06-0570-c906" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2110-d115-6ecc-5a90" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="81d8-5420-7921-d127" name="Offensive Surge (3)" hidden="true" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="685c-2d4a-79f7-a250" name="Offensive Surge (3)" book="AT:Titandeath" page="50" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>This Stratagem can be purchased by any Legio Fureans player.
+Reveal this Stratagem in any Combat  phase.
+The Tiger Eyes player cay choose one of their deployed Tiger Eyes maniples for this Combat phase, each TItan in the chosen maniple may attack twice with one of its weapons but must increase its Reactor level by 1, in addition to any other effects.
+
+</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72ba-4008-bf4b-fe3b" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e70-d94f-cfcf-40c6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bbf-19f8-ec92-80ba" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="cbdb-8c65-9d07-03b1" name="No Pity for the Vanquished (1)" hidden="true" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="a702-1d3f-5d8c-4231" name="No Pity for the Vanquished (1)" book="AT:Titandeath" page="55" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>This Stratagem can be purchased by any Legio Vulpa player
+Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the Catastrophic Damage table).  The Titan who inflicted the killing attack may immediatly make another attack with the same weapon system against a fresh target within 12&quot; of the destroyed Titan.  For all intents and purposes, this is  anew attakc requiring a dice roll, and increase to the Titan&apos;s reactor level, etc</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="561a-cb05-d4b5-94fd" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99ed-19a0-8059-eba6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e782-1bc6-ef05-ae5a" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
