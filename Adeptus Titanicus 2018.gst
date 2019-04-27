@@ -618,6 +618,13 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="9ae1-d839-f9ca-7ef5" name="VenatorLightManipleMainstayOfTheTitanLegion" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -4243,13 +4250,80 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         </categoryLink>
       </categoryLinks>
       <selectionEntries/>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4a06-c0d2-4c8d-c833" name="Legio Trait: Mainstay of the Legion" book="AT:Rulebook" page="89" hidden="true" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="a3a6-a952-ac11-511c" name="Replace 1 Warhound with a Reaver" book="AT:Rulebook" page="89" hidden="true" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f60-8d2b-022f-7892" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35e0-d29c-8f89-216b" type="min"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="59ea-e061-8156-44d5" name="VenatorLightManipleMainstayOfTheTitanLegion" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="486d-f659-0c62-2155" name="Reaver Titan" hidden="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="db35-3484-5e03-49ad" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="9434-7d69-d629-379c" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db35-3484-5e03-49ad" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9434-7d69-d629-379c" type="min"/>
@@ -4260,7 +4334,22 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="decrement" field="124a-743e-536c-5546" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="19f5-95fb-9e80-96d3" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19f5-95fb-9e80-96d3" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="124a-743e-536c-5546" type="max"/>
@@ -10420,7 +10509,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       <constraints/>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="475b-cb3a-a6b5-54ce" name="Terminus Override Mechanisms" book="AT:Doom of Molech" page="17" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="475b-cb3a-a6b5-54ce" name="Terminus Override Mechanisms" book="AT:Doom of Molech" page="17" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
             <rule id="2513-21d4-bbe7-f1ea" name="Terminus Override Mechanisms" book="AT:Doom of Molech" page="17" hidden="false">
@@ -10436,7 +10525,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <modifier type="set" field="hidden" value="false">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4501-ac6c-5b8c-1b03" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4501-ac6c-5b8c-1b03" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -10453,7 +10542,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b17b-8dc8-8e57-7ab1" name="Bi-folded Power Containment" book="AT:Doom of Molech" page="17" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b17b-8dc8-8e57-7ab1" name="Bi-folded Power Containment" book="AT:Doom of Molech" page="17" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
             <rule id="67f8-62fe-0602-04b8" name="Bi-folded Power Containment" book="AT:Doom of Molech" page="17" hidden="false">
@@ -10465,7 +10554,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </rule>
           </rules>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4501-ac6c-5b8c-1b03" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa37-41c7-3674-2229" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85d9-5f0e-38a6-2bb9" type="max"/>
@@ -10478,7 +10575,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b739-5907-0c06-2bb9" name="Twinned Machine Spirits" book="AT:Doom of Molech" page="23" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b739-5907-0c06-2bb9" name="Twinned Machine Spirits" book="AT:Doom of Molech" page="23" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
             <rule id="5c7f-86ca-78bd-87ba" name="Twinned Machine Spirits" book="AT:Doom of Molech" page="23" hidden="false">
@@ -10490,7 +10587,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </rule>
           </rules>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4225-27f8-9c8b-e56e" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49e7-060b-28f4-a7e8" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd55-411e-f963-6b15" type="min"/>
@@ -10503,7 +10608,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="74d1-d477-77b6-a9f5" name="Enhanced Auspex Replays" book="AT:Rulebook" page="89" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="74d1-d477-77b6-a9f5" name="Enhanced Auspex Replays" book="AT:Rulebook" page="89" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
             <rule id="8459-14b0-858e-096d" name="Enhanced Auspex Replays" book="AT:Rulebook" page="89" hidden="false">
@@ -10515,7 +10620,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </rule>
           </rules>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c413-93e5-cf1e-7a01" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4651-875c-3a93-f546" type="min"/>
@@ -10528,7 +10641,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="053a-81ad-afc9-86c7" name="Gravatus Plating" book="AT:Rulebook" page="89" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="053a-81ad-afc9-86c7" name="Gravatus Plating" book="AT:Rulebook" page="89" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
             <rule id="5b57-d13f-4e97-7abf" name="Gravatus Plating" book="AT:Rulebook" page="89" hidden="false">
@@ -10540,7 +10653,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </rule>
           </rules>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a159-eb39-d1fc-7b85" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3223-fcfa-9472-d56a" type="min"/>
@@ -10553,7 +10674,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="10db-4492-12d0-3ddc" name="Motive Sub-Reactor" book="AT:Rulebook" page="91" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="10db-4492-12d0-3ddc" name="Motive Sub-Reactor" book="AT:Rulebook" page="91" hidden="true" collective="false" type="upgrade">
           <profiles/>
           <rules>
             <rule id="677b-5dea-7089-ec1a" name="Motive Sub-Reactor" book="AT:Rulebook" page="91" hidden="false">
@@ -10565,7 +10686,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </rule>
           </rules>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f8b-fe3b-2962-37ff" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce11-092c-f1a2-bde1" type="max"/>
