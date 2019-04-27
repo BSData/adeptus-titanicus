@@ -8069,7 +8069,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus" book="AT:Rulebook" page="91" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus (Storm Lords)" book="AT:Rulebook" page="91" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="0e6c-1950-20a3-f0ae" name="Glory in Death" book="AT:Rulebook" page="92" hidden="false">
@@ -8114,7 +8114,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0986-9b84-b734-e9c8" name="Legio Gryphonicus" book="AT:Rulebook" page="89" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="0986-9b84-b734-e9c8" name="Legio Gryphonicus (War Griffons)" book="AT:Rulebook" page="89" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="086d-6793-f939-4a7e" name="Lust for Glory" book="AT:Rulebook" page="89" hidden="false">
@@ -8161,7 +8161,7 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dbd6-65fd-6354-a154" name="Legio Astorum" book="AT:Titandeath" page="19" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="dbd6-65fd-6354-a154" name="Legio Astorum (Warp Runners)" book="AT:Titandeath" page="19" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="663e-f301-76a4-55fb" name="War March" book="AT:Titandeath" page="19" hidden="false">
@@ -8206,7 +8206,7 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="63e1-fca8-5023-12d6" name="Legio Defensor" book="AT:Titandeath" page="24" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="63e1-fca8-5023-12d6" name="Legio Defensor (Nova Guard)" book="AT:Titandeath" page="24" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="8360-d791-861b-1740" name="Righteous Fire" book="AT:Titandeath" page="24" hidden="false">
@@ -8250,7 +8250,7 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bf14-af1e-5d72-7c8b" name="Legio Atatus" book="AT:Titandeath" page="29" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bf14-af1e-5d72-7c8b" name="Legio Atatus (Firebrands)" book="AT:Titandeath" page="29" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="e068-3696-9c94-b3cb" name="Seizing the Initiative" book="AT:Titandeath" page="29" hidden="false">
@@ -8288,7 +8288,7 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1b13-8735-b4bf-0caf" name="Legio Mortis" book="AT:Titandeath" page="40" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1b13-8735-b4bf-0caf" name="Legio Mortis (Death&apos;s Heads)" book="AT:Titandeath" page="40" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="82ab-6823-fda3-a4b8" name="Reapers Tally" book="AT:Titandeath" page="40" hidden="false">
@@ -8332,7 +8332,7 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bffc-4266-a83d-cae6" name="Legio Krytos" book="AT:Titandeath" page="45" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bffc-4266-a83d-cae6" name="Legio Krytos (God Breakers)" book="AT:Titandeath" page="45" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="939f-b862-cf87-5c7b" name="Doom of Worlds" book="AT:Titandeath" page="45" hidden="false">
@@ -8369,7 +8369,7 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1a92-f760-bf0e-ce26" name="Legio Fureans" book="AT:Titandeath" page="50" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1a92-f760-bf0e-ce26" name="Legio Fureans (Tiger Eyes)" book="AT:Titandeath" page="50" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="ae03-90bb-549c-18cc" name="Machine Rage" book="AT:Titandeath" page="50" hidden="false">
@@ -8413,7 +8413,7 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7093-f8b3-b5f9-d38d" name="Legio Vulpa" book="AT:Titandeath" page="55" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7093-f8b3-b5f9-d38d" name="Legio Vulpa (Death Stalkers)" book="AT:Titandeath" page="55" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="36fb-e4f2-82f5-8ba3" name="Honour and Blood" book="AT:Titandeath" page="55" hidden="false">
@@ -9340,7 +9340,7 @@ Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the C
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="14a9-163a-83aa-7520" name="Legio Solaria" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="14a9-163a-83aa-7520" name="Legio Solaria (Imperial Hunters)" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="1501-95cf-c617-ecc1" name="Wolf Packs" book="AT:Titandeath" page="35" hidden="false">
@@ -9377,9 +9377,24 @@ Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the C
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="da6d-e379-1848-8c31" name="Legio Crucius" book="AT:Doom of Molech" page="17" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="da6d-e379-1848-8c31" name="Legio Crucius (Warmongers)" book="AT:Doom of Molech" page="17" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="0e61-2a1f-1df0-a956" name="Forgeborn" book="AT:Doom of Molech" page="17" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>In the first and second rounds of the game, when a Legio Crucius Titan makes a Repair roll, eithe rin the Damage Control phase or as a result of being issued an Emergecy Repair Order, it may re-roll any dice results of 1.</description>
+        </rule>
+        <rule id="5417-3f5e-f95e-a348" name="Pide of Ryza" book="AT:Doom of Molech" page="17" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Durring the Damage Control phase, or when making Repair rolls as part of an Emergency Repair Order, when a Legio Crucius Titan uses a dice result of a 6 to vent plasma, decrease the Titan&apos;s Reactor level by 2 rather than 1</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -9402,11 +9417,28 @@ Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the C
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="1d02-6c17-cd84-a92f" name="Legio Vulcanum" book="AT:Doom of Molech" page="23" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1d02-6c17-cd84-a92f" name="Legio Vulcanum (Dark Fire/Lords of Ruin)" book="AT:Doom of Molech" page="23" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="54af-693f-6c06-349d" name="Two-faced God" book="AT:Doom of Molech" page="23" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When fielding a Legio Vulcanum battlegroup, a player may nominate two Legio Vulcanum Titans to be commanded by a Princeps Seniores (see page 55 of the Adeptus Titanicus rulebook).  These Titans may not be part of the same maniple.  If one of the Princeps Seniores&apos; Titans is destroyed, for the remainder of the game count the other Princeps Seniores&apos; Titan as having suffered an unrepairable Princeps Wounded damage effect.</description>
+        </rule>
+        <rule id="9edc-dbe9-0c2f-cc75" name="For the Fallan" book="AT:Doom of Molech" page="23" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>For each Legio Vulcanum Titan in the battlegroup that has been destroyed, the Legio Vulcanum player gains a single re-roll that may be used once each round.  This re-roll may be used to re-roll the result of any single dice roll made by a Vulcanum Titans.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -9429,11 +9461,29 @@ Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the C
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="02ce-a62d-4e4b-d7cc" name="Legio Fortidus" book="AT:Doom Of Molech" page="20" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="02ce-a62d-4e4b-d7cc" name="Legio Fortidus (Daultless)" book="AT:Doom Of Molech" page="20" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="41a8-f791-55f3-5ade" name="Children of Mars" book="AT:Doom of Molech" page="20" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Legio Fortidus Titans never suffer penalties to thei Command checks and may ignore effects that force them to re-roll successful Command checks.  Knight Banners bonded to Legio Fortidus may re-roll Command checks to avoid becoming Shaken provided they are within line of sight of at least one Legio Fortidus Battle Titan.</description>
+        </rule>
+        <rule id="749b-0dd5-ea9b-37ba" name="Lost Sons" book="AT:Doom of Molech" page="20" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A Legio Fortidus battlegroup may alter one of the mandatory Titan components of any of all of it&apos;s maniples.  Note that for the purposes of the maniple&apos;s rules, the replacement Titan still counts as the Titan type it replaced (i.e. if a Legio Fortidus Venator maniple replaces of the maniple&apos;s mandatory Warhound Titans with a Reaver Titan, the replacment Reaver Titan would still count as a Warhound for the Opportunistic Strike special rule and so not gain extra attacks against a Titan who shields had been collapsed by a Warhound)
+</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -9456,11 +9506,26 @@ Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the C
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="f3d0-92f8-3bf7-4799" name="Legio Interfector" book="AT:Doom Of Molech" page="26" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="f3d0-92f8-3bf7-4799" name="Legio Interfector (Murder Lords)" book="AT:Doom Of Molech" page="26" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="5124-9f90-a107-cac9" name="Creeping Madness" book="AT:Doom of Molech" page="26" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When a Legio Interfector Titan is activaed in the Movement phase, it&apos;s player may choose to allows the madness of its Princeps to take over.  When this madness takes over, roll (a D3) on the table below:
+
+1 - Dark Embrace:  The Titan gains the Charge order.  It must move toward the nearest enemy Titan of Knight Banner by the shortest route possible, stopping if it reaches base contact with another model, and then make a smash attack, or attack with a single weapon with the Melee trait
+2 - Weapon Overload:  The Titan gains the First Fire order.  When the Titan would fire in the Movement phase, randomly choose on eof ht eTitan&apos;s weapons and make an atack with this weapon against the nearest enemy Titan or Knight Banner, counting the weapon&apos;s Strength as 2 higher than normal and its Dice as 1 higher than normal.  After the attack has be resolved, disable the chosen weapon.
+3 - Static Scream: All Titans and Knight Banners, both friendly and foe, withing 12&quot;of the Titna must remove their ORders, unless they are on Shutdown orders or Emergency Repair orders.  Titans who lost their Orders before activated are not subject to any of the lost Order&apos;s restrictions
+</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -9483,7 +9548,9 @@ Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the C
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
