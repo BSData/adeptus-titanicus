@@ -7685,7 +7685,16 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
     </selectionEntry>
     <selectionEntry id="2004-6a18-7dac-156c" name="Fortis Battle Maniple" book="AT:DoomOfMolech" page="30" hidden="false" collective="false" type="unit">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="94df-2dae-9885-b47d" name="Titanic Fortress" book="DoomOfMolech" page="30" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When a Titan in a Fortis Battle maniple is in base contact with another Titan in the maniple, and neither Titan moved in the Movement phase, the Titan ignores Armour roll modifiers resulting from Structural Damage or being attacked in the flank or rear (see page 34 of the Adeptus Titanicus rulebook).  In addition, Titans in a Fortis Battle maniple may merge their void shields (see page 45 of te Adeptus Titanicus rulebook)
+</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -7730,7 +7739,15 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
     </selectionEntry>
     <selectionEntry id="365e-d892-5c42-f7a3" name="Ferrox Light Maniple" book="AT:DoomOfMolech" page="31" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="ac90-5085-5650-2ad6" name="Ferrox Light Maniple" book="DoomOfMolech" page="31" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When a Titan in a Ferrox Light maniple makes attacks against a target that is no further away than its Scale in inches (i.e. with 10&quot; of a Warlord, 8&quot; of a Reaver, etc), they add 1 to any Armour rolls they cause.  Titans in a Ferrox Light maniple may also choose to use either their EWeapons Skill or Ballistic Skill when within 2&quot; of an enemy</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
