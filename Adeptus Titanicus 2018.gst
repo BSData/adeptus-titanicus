@@ -1622,6 +1622,22 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
+                <entryLink id="064b-58f1-d5da-64a1" name="Chasmata Pattern Laser Blaster" hidden="true" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="27cf-b4d5-20b6-9032" name="Carapace" hidden="false" collective="false">
@@ -1677,7 +1693,7 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
                     <modifier type="set" field="hidden" value="false">
                       <repeats/>
                       <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="equalTo"/>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -1879,6 +1895,14 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffec-c86f-fff3-6d9b" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2930-4fbc-e7db-8b33" type="min"/>
           </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="8d8c-9755-8e12-171b" name="Wargear" hidden="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -2797,6 +2821,38 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
+                <entryLink id="12f8-fb5a-890c-e131" name="Paired Chasmata Pattern Laser Blaster" hidden="true" targetId="fe03-8e18-b108-5853" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="546f-50b5-3f74-2a5c" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="true" targetId="2699-bb53-cff4-a864" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3675,6 +3731,22 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="3ee3-eda0-0fc6-d1e0" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="true" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
@@ -9296,7 +9368,9 @@ Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the C
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e313-da99-15ee-1305" name="Tormented Machine Spirit (1)" book="AT:Doom of Molech" page="26" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -9328,38 +9402,9 @@ Reveal this Stratagem when a Legion Interfector Titan would roll on the Awaken M
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
-        </selectionEntry>
-        <selectionEntry id="7d95-8c6d-8327-0ff8" name="Twinned Machine Spirits" book="AT:Doom of Molech" page="23" hidden="true" collective="false" type="upgrade">
-          <profiles/>
-          <rules>
-            <rule id="3291-cfa8-9e8d-92ba" name="Twinned Machine Spirits" book="AT:Doom of Molech" page="23" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>Any two Legio Vulcanum Titans may take twinned machine spirits for +20 points each.  Legio Vulcanum Titans with twinned machine spirits count as being part of a squadron with each other (see page 45 of the Adpetus Titanicus rulebook).   However, should a Titan with a twinned machine spirit roll the Machine Spirit symbol on the Reactor dice, both it and its paried Titan must make a Command check to see if their Titan&apos;s machine spirit awakens.  Note that multiple pairs of Titans in a Legio Vulcanum Battlegroup may be equipped to have twinned machine spirits, each forming their onw swuadron of two.</description>
-            </rule>
-          </rules>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4225-27f8-9c8b-e56e" type="atLeast"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbf3-fde6-5004-67cd" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e748-dc30-2cbe-5eef" type="min"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="93ab-95c9-2957-dea3" name="Symbiotic Command (1)" book="AT:Doom of Molech" page="23" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -9391,7 +9436,9 @@ Play this Stratagem in the Strategy phase  after successfully issuing an Order t
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="38d4-3483-c105-d1ef" name="For the Red Planet (2)" book="AT:Doom of Molech" page="20" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -9423,7 +9470,9 @@ The Dauntless player may reveal this Stratagem when activating a Titan.  Until t
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="68bd-d77e-acbe-4bd0" name="Red Skies (1)" book="AT:Doom of Molech" page="20" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -9455,7 +9504,9 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -9742,6 +9793,325 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8fee-61b8-1c39-b9ee" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="7838-8984-7946-069e" name="Chasmata Pattern Turbo Laser Destructor" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Dice" characteristicTypeId="fff8-b599-3d0a-2555" value="2"/>
+            <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="8"/>
+            <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="21&quot;"/>
+            <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value=""/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value="38&quot;"/>
+            <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="9+"/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="9870-ee66-199c-19b9" name="New CategoryLink" hidden="false" targetId="87c1-d39e-fbdf-1ae7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9d8a-5d3a-c6f3-4a38" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7819-32e0-1340-71ef" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d0ee-2525-d24e-a70e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="b522-48c9-380c-21bf" name="Weapon Destroyed" hidden="false" targetId="bad0-317f-20ed-813e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2699-bb53-cff4-a864" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="1253-3d06-27b8-28e7" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Dice" characteristicTypeId="fff8-b599-3d0a-2555" value="4"/>
+            <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="8"/>
+            <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="21&quot;"/>
+            <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value=""/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value="38&quot;"/>
+            <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="dc06-8b36-f37b-0f86" name="New CategoryLink" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="70cf-ba3b-08d7-a318" name="New CategoryLink" hidden="false" targetId="87c1-d39e-fbdf-1ae7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="475c-09f7-37fd-16ed" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="1d67-6d77-7352-f28c" name="New CategoryLink" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="c66c-06c5-0ecf-f309" name="New CategoryLink" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="4903-48ee-1cde-1f5a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="84e0-fcbd-06f5-a4b4" name="Weapon Destroyed" hidden="false" targetId="bad0-317f-20ed-813e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fe03-8e18-b108-5853" name="Paired Chasmata Pattern Laser Blaster" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="67bd-692f-8028-ccd6" name="Paired Chasmata Pattern Laser Blaster" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Dice" characteristicTypeId="fff8-b599-3d0a-2555" value="6"/>
+            <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="8"/>
+            <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="19&quot;"/>
+            <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value=""/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value="38&quot;"/>
+            <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c" value="-1"/>
+            <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="11+"/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="7ecb-b593-02d7-916a" name="New CategoryLink" hidden="false" targetId="87c1-d39e-fbdf-1ae7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6a68-ea75-4482-f3cb" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9bc8-e09a-d233-f2ff" name="New CategoryLink" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3fb8-94a3-741b-a28d" name="New CategoryLink" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="399b-7cf9-b383-2c86" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="17d6-7ab0-862d-beb2" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="f24c-29c1-442a-c465" name="Weapon Destroyed" hidden="false" targetId="bad0-317f-20ed-813e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="01e4-e3f5-4396-d5c4" name="Chasmata Pattern Laser Blaster" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="769f-b83a-baec-2e03" name="Chasmata pattern Laser Blaster" hidden="false" profileTypeId="b054-6896-e395-0e91" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Dice" characteristicTypeId="fff8-b599-3d0a-2555" value="3"/>
+            <characteristic name="Strength" characteristicTypeId="2761-1395-aa4e-73bd" value="8"/>
+            <characteristic name="Short Range" characteristicTypeId="8320-f9a1-68a0-47c2" value="19&quot;"/>
+            <characteristic name="Short Accuracy" characteristicTypeId="68ee-0c9a-e4c2-4a34" value=""/>
+            <characteristic name="Long Range" characteristicTypeId="bdee-aca0-6c3e-cc27" value="38&quot;"/>
+            <characteristic name="Long Accuracy" characteristicTypeId="98c1-7f92-4b2c-8d4c" value="-1"/>
+            <characteristic name="Disabled Roll" characteristicTypeId="02bc-8716-7743-7b16" value="10+"/>
+            <characteristic name="Blast" characteristicTypeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" characteristicTypeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" characteristicTypeId="bcd4-cb45-5d53-b7d8"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="7ebd-0719-86c2-6786" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="16f7-59bb-0f57-c661" name="New CategoryLink" hidden="false" targetId="87c1-d39e-fbdf-1ae7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="8046-6cc3-3d4c-ca17" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a564-a87f-67a6-d6ba" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3f0e-4dac-9ffd-f629" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="b4c1-3e8f-38df-6400" name="Weapon Destroyed" hidden="false" targetId="bad0-317f-20ed-813e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="40.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold" hidden="false" collective="false">
@@ -10013,6 +10383,101 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb83-53bd-220c-5858" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Wargear" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="475b-cb3a-a6b5-54ce" name="Terminus Override Mechanisms" book="AT:Doom of Molech" page="17" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="2513-21d4-bbe7-f1ea" name="Terminus Override Mechanisms" book="AT:Doom of Molech" page="17" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Any Legio Crucius Titan may be equipped with a terminus overridemechanism for +30 points.  The first time a Legio Crucius Titan with terminus override mechaism would be required to roll on the Reactor Overload table (see page 43 of the Adpetus Titanicus rulebook), instead of rolling, give the Titan a Shutdown order instead.  Once triggered in this manner, a terminus override mechasim has no further effect on the game.</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4501-ac6c-5b8c-1b03" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d2b-79ea-75ee-6ad2" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba11-f714-5062-7bef" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b17b-8dc8-8e57-7ab1" name="Bi-folded Power Containment" book="AT:Doom of Molech" page="17" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="67f8-62fe-0602-04b8" name="Bi-folded Power Containment" book="AT:Doom of Molech" page="17" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Any Legio Crucius Titan my be equipped with a bi-folede pawer containment system for +30 points.  When firing a weapon with the Draining trait (see page 39 of the Adeptus Titanicus rulebook) A Titan equipped with a bi-folded power containment system can roll a D6 to mitigate its effect.  On a 4+, the Titan can roll the Reactor dice twice and choose the result they want.  On a 1 however, they must roll the reactor dice twice and choose the result that would advance their Reactor marker by the most or, if both results would advance it by the same amount, the result that would awaken the machine Spirit.</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa37-41c7-3674-2229" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85d9-5f0e-38a6-2bb9" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b739-5907-0c06-2bb9" name="Twinned Machine Spirits" book="AT:Doom of Molech" page="23" hidden="true" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="5c7f-86ca-78bd-87ba" name="Twinned Machine Spirits" book="AT:Doom of Molech" page="23" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Any two Legio Vulcanum Titans may take twinned machine spirits for +20 points each.  Legio Vulcanum Titans with twinned machine spirits count as being part of a squadron with each other (see page 45 of the Adpetus Titanicus rulebook).   However, should a Titan with a twinned machine spirit roll the Machine Spirit symbol on the Reactor dice, both it and its paried Titan must make a Command check to see if their Titan&apos;s machine spirit awakens.  Note that multiple pairs of Titans in a Legio Vulcanum Battlegroup may be equipped to have twinned machine spirits, each forming their onw swuadron of two.</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49e7-060b-28f4-a7e8" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd55-411e-f963-6b15" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
