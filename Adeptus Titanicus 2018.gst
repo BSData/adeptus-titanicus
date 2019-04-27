@@ -590,6 +590,34 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="4501-ac6c-5b8c-1b03" name="LegioCrucius" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="4225-27f8-9c8b-e56e" name="LegioVulcanum" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="8129-9843-a287-cd8e" name="LegioFortidus" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="f0a4-f7dc-25cf-21c8" name="LegioInterfector" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -8473,7 +8501,15 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
               <infoLinks/>
               <modifiers/>
               <constraints/>
-              <categoryLinks/>
+              <categoryLinks>
+                <categoryLink id="4356-bdee-bb43-2d3b" name="LegioAtarus" hidden="false" targetId="cfcc-e5c0-bb0b-db6f" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
             </entryLink>
             <entryLink id="e14a-e696-1044-eb8c" name="Legio Defensor" hidden="false" targetId="63e1-fca8-5023-12d6" type="selectionEntry">
               <profiles/>
@@ -8481,7 +8517,15 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
               <infoLinks/>
               <modifiers/>
               <constraints/>
-              <categoryLinks/>
+              <categoryLinks>
+                <categoryLink id="5ef2-6100-d25d-ad8d" name="LegioDefensor" hidden="false" targetId="7b17-f14f-4709-e96c" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
             </entryLink>
             <entryLink id="7a87-0de0-02e5-b83c" name="Legio Fureans" hidden="false" targetId="1a92-f760-bf0e-ce26" type="selectionEntry">
               <profiles/>
@@ -8489,7 +8533,15 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
               <infoLinks/>
               <modifiers/>
               <constraints/>
-              <categoryLinks/>
+              <categoryLinks>
+                <categoryLink id="bec6-93d4-afad-fbdc" name="LegioFureans" hidden="false" targetId="72ba-4008-bf4b-fe3b" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
             </entryLink>
             <entryLink id="4026-a032-96e6-b7e4" name="Legio Gryphonicus" hidden="false" targetId="0986-9b84-b734-e9c8" type="selectionEntry">
               <profiles/>
@@ -8513,7 +8565,15 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
               <infoLinks/>
               <modifiers/>
               <constraints/>
-              <categoryLinks/>
+              <categoryLinks>
+                <categoryLink id="6c38-7428-a4f7-2158" name="LegioKrytos" hidden="false" targetId="95e8-3d8e-a0ad-4ad3" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
             </entryLink>
             <entryLink id="85f9-7332-78ec-42d8" name="Legio Mortis" hidden="false" targetId="1b13-8735-b4bf-0caf" type="selectionEntry">
               <profiles/>
@@ -8521,7 +8581,15 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
               <infoLinks/>
               <modifiers/>
               <constraints/>
-              <categoryLinks/>
+              <categoryLinks>
+                <categoryLink id="45ed-c74d-8395-b42a" name="LegioMortis" hidden="false" targetId="f88f-e42d-38f7-bfa7" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
             </entryLink>
             <entryLink id="d7e3-7a02-9f15-da8e" name="Legio Tempestus" hidden="false" targetId="cbc6-216c-8a22-c1b4" type="selectionEntry">
               <profiles/>
@@ -8545,7 +8613,15 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
               <infoLinks/>
               <modifiers/>
               <constraints/>
-              <categoryLinks/>
+              <categoryLinks>
+                <categoryLink id="a074-fb7c-f879-1333" name="LegioVulpa" hidden="false" targetId="561a-cb05-d4b5-94fd" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
             </entryLink>
             <entryLink id="b39f-da6f-35d0-6a14" name="Legio Solaria" hidden="false" targetId="14a9-163a-83aa-7520" type="selectionEntry">
               <profiles/>
@@ -8553,7 +8629,79 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
               <infoLinks/>
               <modifiers/>
               <constraints/>
-              <categoryLinks/>
+              <categoryLinks>
+                <categoryLink id="089c-8649-fba5-d798" name="LegioSolaria" hidden="false" targetId="56c0-1162-173d-b052" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="3ee7-4a5c-d0b8-b8eb" name="Legio Crucius" hidden="false" targetId="da6d-e379-1848-8c31" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks>
+                <categoryLink id="af11-fcf3-a8ff-2b7e" name="LegioCrucius" hidden="false" targetId="4501-ac6c-5b8c-1b03" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="15c9-cacc-6a3c-cfa9" name="Legio Fortidus" hidden="false" targetId="02ce-a62d-4e4b-d7cc" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks>
+                <categoryLink id="c8a8-adfd-f9fb-aff4" name="LegioFortidus" hidden="false" targetId="8129-9843-a287-cd8e" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="c18c-9bdd-7bbc-a11c" name="Legio Vulcanum" hidden="false" targetId="1d02-6c17-cd84-a92f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks>
+                <categoryLink id="0cf4-07de-f456-6c67" name="LegioVulcanum" hidden="false" targetId="4225-27f8-9c8b-e56e" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="5768-da55-af2e-71de" name="Legio Interfector" hidden="false" targetId="f3d0-92f8-3bf7-4799" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks>
+                <categoryLink id="9c04-65c7-34d5-5330" name="LegioInterfector" hidden="false" targetId="f0a4-f7dc-25cf-21c8" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -8795,7 +8943,9 @@ Reveal this Stratagem when a hit would result in one of your Titans rolling on t
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="6a90-5f45-4eef-04ff" name="A Day of Retribution (2)" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -8829,7 +8979,9 @@ Note that this does not increase the weapons Short Range.  THen advance your tit
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8495-ff67-56d5-e918" name="Impetuous Machine Spirit (4)" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -8861,7 +9013,9 @@ Reveal this Stratagem when a Firebrands Titan would be required to make a roll o
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="82be-13d1-5446-584a" name="Maniple of One (2)" book="" page="" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -8893,7 +9047,9 @@ The Firebrands player may reveal this stratagem at the beginnin of any round.  F
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="0642-68ed-dde8-57e1" name="Fog of War" book="AT:Titandeath" page="35" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -8926,7 +9082,9 @@ The Imperial Hunters player may redeploy a Warhound Titan for every Titan with a
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4239-0c38-823a-ae67" name="March of the Dead (3)" book="" page="" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -8959,7 +9117,9 @@ Play this Stratagem in the Strategy phase of the first round.  The Legio Mortis 
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="c610-8076-2dd0-8ced" name="Scorched Earth (1)" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -8994,7 +9154,9 @@ For the duration of that round, when targeting terrain, Titans of the Legio Kryt
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="293d-f089-accb-a4aa" name="Iron Endures (1)" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -9030,7 +9192,9 @@ For the duration of that round, all God Breakers TItans reduce the Strength of h
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="81d8-5420-7921-d127" name="Offensive Surge (3)" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -9065,7 +9229,9 @@ The Tiger Eyes player cay choose one of their deployed Tiger Eyes maniples for t
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="cbdb-8c65-9d07-03b1" name="No Pity for the Vanquished (1)" hidden="true" collective="false" type="upgrade">
           <profiles/>
@@ -9097,7 +9263,9 @@ Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the C
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -9195,6 +9363,116 @@ Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the C
           <constraints/>
         </categoryLink>
         <categoryLink id="5c09-2ba3-adc5-7c13" name="LegioSolaria" hidden="false" targetId="56c0-1162-173d-b052" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da6d-e379-1848-8c31" name="Legio Crucius" book="AT:Doom of Molech" page="17" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="5b62-8735-19a4-c85a" name="LegioCrucius" hidden="false" targetId="4501-ac6c-5b8c-1b03" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="bd98-23b3-c98d-7e68" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="1d02-6c17-cd84-a92f" name="Legio Vulcanum" book="AT:Doom of Molech" page="23" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="628b-23b2-fc36-110c" name="LegioVulcanum" hidden="false" targetId="4225-27f8-9c8b-e56e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6381-1cc4-2707-b448" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="02ce-a62d-4e4b-d7cc" name="Legio Fortidus" book="AT:Doom Of Molech" page="20" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="71a1-d769-6234-9c08" name="LegioFortidus" hidden="false" targetId="8129-9843-a287-cd8e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f558-263a-d300-82d7" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="f3d0-92f8-3bf7-4799" name="Legio Interfector" book="AT:Doom Of Molech" page="26" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="f513-2cf1-1742-bb3e" name="LegioInterfector" hidden="false" targetId="f0a4-f7dc-25cf-21c8" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="fcda-0afe-29e5-3ee8" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
