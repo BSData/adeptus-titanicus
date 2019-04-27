@@ -3082,6 +3082,14 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
           </constraints>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="4994-4e39-e7fe-57d5" name="Wargear" hidden="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="385.0"/>
@@ -3920,6 +3928,14 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9d7-aec6-1798-ab58" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="895d-6fe2-456c-f3da" type="min"/>
           </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="fcd2-9d09-2af7-36de" name="Wargear" hidden="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -10445,7 +10461,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>Any Legio Crucius Titan my be equipped with a bi-folede pawer containment system for +30 points.  When firing a weapon with the Draining trait (see page 39 of the Adeptus Titanicus rulebook) A Titan equipped with a bi-folded power containment system can roll a D6 to mitigate its effect.  On a 4+, the Titan can roll the Reactor dice twice and choose the result they want.  On a 1 however, they must roll the reactor dice twice and choose the result that would advance their Reactor marker by the most or, if both results would advance it by the same amount, the result that would awaken the machine Spirit.</description>
+              <description>Any Legio Crucius Titan my be equipped with a bi-folded pawer containment system for +30 points.  When firing a weapon with the Draining trait (see page 39 of the Adeptus Titanicus rulebook) A Titan equipped with a bi-folded power containment system can roll a D6 to mitigate its effect.  On a 4+, the Titan can roll the Reactor dice twice and choose the result they want.  On a 1 however, they must roll the reactor dice twice and choose the result that would advance their Reactor marker by the most or, if both results would advance it by the same amount, the result that would awaken the machine Spirit.</description>
             </rule>
           </rules>
           <infoLinks/>
@@ -10462,7 +10478,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b739-5907-0c06-2bb9" name="Twinned Machine Spirits" book="AT:Doom of Molech" page="23" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="b739-5907-0c06-2bb9" name="Twinned Machine Spirits" book="AT:Doom of Molech" page="23" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules>
             <rule id="5c7f-86ca-78bd-87ba" name="Twinned Machine Spirits" book="AT:Doom of Molech" page="23" hidden="false">
@@ -10486,6 +10502,79 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <costs>
             <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="74d1-d477-77b6-a9f5" name="Enhanced Auspex Replays" book="AT:Rulebook" page="89" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="8459-14b0-858e-096d" name="Enhanced Auspex Replays" book="AT:Rulebook" page="89" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Any Legio Gryphonicus Warhound can be equipped with ehanced auspex relays at a cost of +10 points.  Whenever a Legio Gryphonicus Titan makes an attack, it can measure the distance to any targets that are within 12&quot; of a friendly Warhound equipped with exhanced auspex relays before declairing its target.</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c413-93e5-cf1e-7a01" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4651-875c-3a93-f546" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="053a-81ad-afc9-86c7" name="Gravatus Plating" book="AT:Rulebook" page="89" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="5b57-d13f-4e97-7abf" name="Gravatus Plating" book="AT:Rulebook" page="89" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>A Legio Gryphonicus Reaver that is chosen as part of a maniple in place of a Warlord Titan (as per the Mainstay of the Titan Legion Trait) can be fitted with Gravatus Plating at a cost of +20 points.  This increases the Armour value of the Reaver&apos;s body and legs by 1 each, but subtracts 1 from its default and boosted Speed characteristic</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a159-eb39-d1fc-7b85" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3223-fcfa-9472-d56a" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="10db-4492-12d0-3ddc" name="Motive Sub-Reactor" book="AT:Rulebook" page="91" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="677b-5dea-7089-ec1a" name="Motive Sub-Reactor" book="AT:Rulebook" page="91" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>A Legio Gryphonicus Reaver which is chosen as part of a maniple in place of a Warhound Titan (as per the Mainstay of the Titan Leagion trait) can be fitted with motive sub-reactors at a cost of +25 points.  This allows the Reaver to use its boosted Speed and Manoevre characterists without pushing its reactor.  However each time the tTitan suffers a Critical Hit to its Legs, roll a D6.  On a result of a 3 or less, its Reactor level is increased by 1</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f8b-fe3b-2962-37ff" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce11-092c-f1a2-bde1" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
