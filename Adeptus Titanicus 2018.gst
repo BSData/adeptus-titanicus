@@ -8027,7 +8027,15 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="241d-3394-9612-08c7" name="Corsair Battleline Maniple" book="AT:Titandeath" page="60" hidden="false" collective="false" type="unit">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="a5a0-3929-799d-a62b" name="Fighting Withdrawal" book="Titandeath" page="60" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Titans in this maniple can choose to move outside og their forward arc (see Sidestepping and Backing Up on p.30 of the AT2018 Rulebook) at their full movement rather then having to use 2&quot; of movement for every 1&quot; moved. Titans may not use their boosted speed with moving outside of their Front arc.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -8072,7 +8080,15 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="56b0-f155-3635-45da" name="Janissary Batteline Maniple" book="AT:Titandeath" page="62" hidden="false" collective="false" type="unit">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="dc27-d11e-d3f4-85a8" name="Close Support" book="Titandeath" page="62" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Janissary Battleline maniples learn to coordinate their actions with Household Support units, and move to support them when needed. If a Titan in this maniple activated during the Movement phase, choose a Knight Banner within 6&quot; of activated Titan. Once the Titan has finished its movement, then chosen Knight Banner may now make its activation.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -8187,9 +8203,19 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
         <cost name=" Points" costTypeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="51b7-df68-7254-8f21" name="Regis Battleline Maniple" book="AT:Titandeath" page="64" hidden="false" collective="false" type="unit">
+    <selectionEntry id="51b7-df68-7254-8f21" name="Regia Battleline Maniple" book="AT:Titandeath" page="64" hidden="false" collective="false" type="unit">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="b742-2b8a-1d8a-cfd4" name="Royal Court" book="Titandeath" page="64" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>The two Warlord Titans in this maniple represent the King and Queen, whose role it is to support each other in battle. While the King and Queen are within 12&quot; of each other, if one successfully gains an order, the other may gain same order without the need to pass Command check.
+
+The Warhounds are the Courtiers, whose role it is to shield the King and Queen. Courtiers can merge their void shields with the King and Queen as if they were part of the same squadron (see p.45 of AT2018 Rulebook). In addition, Courtiers may merge their void shields with either the King&apos;s or Queen&apos;s while within 3&quot; of them, rather than only in base contact.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -8349,7 +8375,15 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" book="AT:Titandeath" page="66" hidden="false" collective="false" type="unit">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="6068-bc44-f6a2-c418" name="Hunting Pack" book="Titandeath" page="66" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Working closely together, the Warhound Titans can surround and pick off foes many times their size. At the beggining of each round, any or all of the Warhounds within the maniple may be formed into a Squadron with other members of their maniple. These squadrons last until the end of the round. In addition, when making Coordinated Strikes (see p.45 of the AT2018 Rulebook), Warhounds in this maniple add +2 to any Armour rolls they make, rather than +1.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -8455,7 +8489,22 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="22ac-d1cf-8596-c057" name="Dominus Battleforce Maniple" book="White Dwarf:Feb2019" page="131" hidden="false" collective="false" type="unit">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="8ba2-da46-9cb7-66cf" name="Auspex Bafflers" book="WD:Feb 2019" page="131" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Knight armours tasked with the close support of Titans configure their vox arrays to foil the targeting auspexes of their enemies with an impenetrable wall of merged signals. This has the result of protecting the Titans but unfortunately broadcasts the Knights&apos; position. Knight Banner included in a Dominus Battleforce maniple cannot benefit from obscuring cover (see p.33 of the AT2018 Rulebook). If a Titan in a Dominus Battleforce maniple within 6&quot; of a Knight Banner from the same maniple, and both the Titan and Knight are visible to the attacker, attacks made from more then 2&quot; away from the Titan suffer a -1 modifier to the Hit roll. </description>
+        </rule>
+        <rule id="3b91-ef12-ce98-af5f" name="Noble Sacrifice" book="WD:Feb 2019" page="131" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When a Titan in a Dominus Battleforce maniple takes a hit from a ranged attack, it may transfer this hit to any Knight Banner from the same maniple within 6&quot;, as long as at least one Kight in the Knight Banner is visible to the attacker. The chosen Knight banner now suffers the full effects of the hit just as if it had been the original target. If the hit was from a weapon with the blast trait, the Blast marker is centered on the Knight Banner. Hits from weapons with the Firestorm trait may not de transfered in this way.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -8665,7 +8714,16 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="2004-6a18-7dac-156c" name="Fortis Battle Maniple" book="AT:DoomOfMolech" page="30" hidden="false" collective="false" type="unit">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="94df-2dae-9885-b47d" name="Titanic Fortress" book="DoomOfMolech" page="30" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When a Titan in a Fortis Battle maniple is in base contact with another Titan in the maniple, and neither Titan moved in the Movement phase, the Titan ignores Armour roll modifiers resulting from Structural Damage or being attacked in the flank or rear (see page 34 of the Adeptus Titanicus rulebook).  In addition, Titans in a Fortis Battle maniple may merge their void shields (see page 45 of te Adeptus Titanicus rulebook)
+</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -8782,7 +8840,15 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="365e-d892-5c42-f7a3" name="Ferrox Light Maniple" book="AT:DoomOfMolech" page="31" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="ac90-5085-5650-2ad6" name="Ferrox Light Maniple" book="DoomOfMolech" page="31" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When a Titan in a Ferrox Light maniple makes attacks against a target that is no further away than its Scale in inches (i.e. with 10&quot; of a Warlord, 8&quot; of a Reaver, etc), they add 1 to any Armour rolls they cause.  Titans in a Ferrox Light maniple may also choose to use either their EWeapons Skill or Ballistic Skill when within 2&quot; of an enemy</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
