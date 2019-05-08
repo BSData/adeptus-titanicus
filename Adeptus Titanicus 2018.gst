@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="9" battleScribeVersion="2.02" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="10" battleScribeVersion="2.02" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
     <publication id="975a-00f4-pubN89033" name="White Dwarf: Feb 2019"/>
     <publication id="975a-00f4-pubN89746" name="Doom Of Molech"/>
+    <publication id="7236-e1d8-c886-f5fd" name="Adeptus Titanicus 2018 Errata v1.0"/>
+    <publication id="25e8-c9ce-9330-c53b" name="Titandeath Errata v1.0"/>
   </publications>
   <costTypes>
     <costType id="a731-e220-2d8a-41bf" name=" Points" defaultCostLimit="-1.0"/>
@@ -75,7 +77,10 @@
     </categoryEntry>
     <categoryEntry id="62f0-d5ca-5ce1-596f" name="Concussive" hidden="false">
       <rules>
-        <rule id="2d03-6c51-175c-c609" name="Concussive" hidden="false"/>
+        <rule id="2d03-6c51-175c-c609" name="Concussive" page="" hidden="false">
+          <description>In the Advanced Rules, a Knight Banner that suffers any Direct, Devastating or Critical Hits from a 
+Concussive weapon is automatically Shaken instead (see page 47).</description>
+        </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="4739-6f52-a293-aa06" name="Melee" hidden="false">
@@ -158,14 +163,16 @@ If a roll of 6 To Hit was required, this rule has no effect.</description>
     </categoryEntry>
     <categoryEntry id="7130-bbeb-02e3-de28" name="Warp" hidden="false">
       <rules>
-        <rule id="c6c8-e060-ed51-a490" name="Warp" hidden="false">
+        <rule id="c6c8-e060-ed51-a490" name="Warp" publicationId="7236-e1d8-c886-f5fd" page="39" hidden="false">
           <description>Warp weapons, most famously warp missiles, are fired in realspace but translate to the Warp for the majority of their flight, only returning to reality as they reach their target. If an attack made by a Warp weapon hits its target, make a Location roll (or choose a location if making a Targeted Attack). 
 
 Then, regardless of whether the target is shielded, roll a D6. 
 
 On a result of 1, the target location loses 1 Structure point. 
 On a result of 2-3, the target location loses D3 Structure points. 
-On a result of 4-6, the target location suffers Critical Damage.</description>
+On a result of 4-6, the target location suffers Critical Damage.
+
+If the target location is a weapon, on a 1-3 the weapon is disabled. If the weapon is already disabled, it detonates. On a 4-6 the weapon is disabled and the Body loses 1 Structure point. If the weapon is already disabled, it detonates and the Body loses 1 Structure point.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -209,12 +216,10 @@ Note that it is not necessary to make the Hit rolls - these hits are automatic. 
     </categoryEntry>
     <categoryEntry id="3ac7-c1bd-98ce-fdb8" name="Vortex" hidden="false">
       <rules>
-        <rule id="8a76-8edc-073a-cd65" name="Vortex" hidden="false">
+        <rule id="8a76-8edc-073a-cd65" name="Vortex" publicationId="7236-e1d8-c886-f5fd" page="39" hidden="false">
           <description>Vortex weapons make use of bewildering technology to open an unstable warp rift at the target point. They follow use all of the rules for Blast weapons, but use the 3&quot; Vortex template instead. Each model that is touched by the template suffers D6 Strength IO hits, bypassing void shields.
 
-After resolving the attack, leave the Vortex template where it is.
-
-In the End phase of each turn, the marker moves D6&quot; in a random direction, hitting anything it touches as it moves. If a Hit is rolled, the template is removed instead.</description>
+After resolving the attack, leave the Vortex template where it is. In the End phase of each turn, the template is moved D6&quot; in a random direction, hitting anything it touches as it moves. If a Hit is rolled, the template is removed instead.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -2721,12 +2726,12 @@ In the End phase of each turn, the marker moves D6&quot; in a random direction, 
     </selectionEntry>
     <selectionEntry id="47c9-43b5-8afc-b64f" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="b627-6f89-9463-8a14" name="Vulcan Megabolter (Reaver)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="b627-6f89-9463-8a14" name="Vulcan Megabolter (Reaver)" publicationId="7236-e1d8-c886-f5fd" page="38" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">20&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
@@ -4377,8 +4382,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <rule id="ae03-90bb-549c-18cc" name="Machine Rage" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
           <description>When rolling the Reactor dice (see page 43 of the Adeptus Titanicus rulebook) a Tiger Eyes player counds both the Machine Spirit symbol and the blank facing on the dice as a trigger for awakening their Titan&apos;s machine spirit.  However, if a Tiger Eyes player fails the Command check to quell the machine spirit, they may choose the result from the Awakened Machine Spirit table, rather than rolling randomly</description>
         </rule>
-        <rule id="3956-1d81-32e8-2797" name="Many Faces of the Omnissiah" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
-          <description>In the first round of the game, andy TIger Eyes TItan may choose to forgo its activation in either the movement phase of the Combat phase - in essence doing nothing for that phase but counting as one of the Tiger Eyes Player&apos;s activiations.  For each phase sacrificed by a Titan, either 1 or2, that Titan may re-roll any one dice later in the game.</description>
+        <rule id="3956-1d81-32e8-2797" name="Many Faces of the Omnissiah" publicationId="25e8-c9ce-9330-c53b" page="50" hidden="false">
+          <description>In the first round of the game, any Tiger Eyes TItan may choose to forgo its activation in either the Movement phase and/or the Combat phase - in essence doing nothing for that phase but counting as one of the Tiger Eyes Player&apos;s activiations.  For each phase sacrificed by a Titan, either 1 or2, that Titan may re-roll any one dice later in the game.</description>
         </rule>
       </rules>
       <categoryLinks>
