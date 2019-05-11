@@ -77,8 +77,8 @@
     </categoryEntry>
     <categoryEntry id="62f0-d5ca-5ce1-596f" name="Concussive" hidden="false">
       <rules>
-        <rule id="2d03-6c51-175c-c609" name="Concussive" page="" hidden="false">
-          <description>In the Advanced Rules, a Knight Banner that suffers any Direct, Devastating or Critical Hits from a 
+        <rule id="2d03-6c51-175c-c609" name="Concussive" publicationId="7236-e1d8-c886-f5fd" page="38" hidden="false">
+          <description>Some munitions produce a concussive blast that can cause even the largest Titan to stagger. If an attack from a Concussive weapon scores any hits on a Titan that are not deflected by its shields, roll a D6. on a 1-2, the target pivots 45&#176; to the left; on a 3-4, it moves D3&quot; directly away from the attacking unit without changing its facing; on a 5-6, it pivots 45&#176; to the right. If the Titan suffers Catastrophic Damage  as a result of the hit, roll to see if the Titan is turned or moved before rolling on the Catastrophic Damage table. In the Advanced Rules, a Knight Banner that suffers any Direct, Devastating or Critical Hits from a 
 Concussive weapon is automatically Shaken instead (see page 47).</description>
         </rule>
       </rules>
