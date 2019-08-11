@@ -1,0 +1,15 @@
+# Ignore everything
+*
+
+# Don't ignore .gitignore
+!.gitignore
+
+# Don't ignore .gitattributes
+!.gitattributes
+
+# Don't ignore catalogues and game system
+!*.cat
+!*.gst
+
+# Don't ignore docs
+!*.md
