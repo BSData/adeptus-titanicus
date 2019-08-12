@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="10" battleScribeVersion="2.02" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="11" battleScribeVersion="2.02" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -78,7 +78,7 @@
     <categoryEntry id="62f0-d5ca-5ce1-596f" name="Concussive" hidden="false">
       <rules>
         <rule id="2d03-6c51-175c-c609" name="Concussive" publicationId="7236-e1d8-c886-f5fd" page="38" hidden="false">
-          <description>Some munitions produce a concussive blast that can cause even the largest Titan to stagger. If an attack from a Concussive weapon scores any hits on a Titan that are not deflected by its shields, roll a D6. on a 1-2, the target pivots 45&#176; to the left; on a 3-4, it moves D3&quot; directly away from the attacking unit without changing its facing; on a 5-6, it pivots 45&#176; to the right. If the Titan suffers Catastrophic Damage  as a result of the hit, roll to see if the Titan is turned or moved before rolling on the Catastrophic Damage table. In the Advanced Rules, a Knight Banner that suffers any Direct, Devastating or Critical Hits from a 
+          <description>Some munitions produce a concussive blast that can cause even the largest Titan to stagger. If an attack from a Concussive weapon scores any hits on a Titan that are not deflected by its shields, roll a D6. on a 1-2, the target pivots 45° to the left; on a 3-4, it moves D3&quot; directly away from the attacking unit without changing its facing; on a 5-6, it pivots 45° to the right. If the Titan suffers Catastrophic Damage  as a result of the hit, roll to see if the Titan is turned or moved before rolling on the Catastrophic Damage table. In the Advanced Rules, a Knight Banner that suffers any Direct, Devastating or Critical Hits from a 
 Concussive weapon is automatically Shaken instead (see page 47).</description>
         </rule>
       </rules>
@@ -331,6 +331,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
     <entryLink id="da16-a787-0bc8-23ed" name="Ferrox Light Maniple" hidden="false" collective="false" targetId="365e-d892-5c42-f7a3" type="selectionEntry"/>
     <entryLink id="f87f-52a5-0f04-ba5a" name="Fortis Battle Maniple" hidden="false" collective="false" targetId="2004-6a18-7dac-156c" type="selectionEntry"/>
     <entryLink id="434e-537b-2fd1-eaee" name="Strategems" hidden="false" collective="false" targetId="375f-b70b-7462-5d29" type="selectionEntry"/>
+    <entryLink id="34d0-7019-8dcc-71c5" name="Acastus Knight Banner" hidden="false" collective="false" targetId="4944-7ee2-734b-6fa5" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" type="model">
@@ -374,7 +375,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3333-fe14-7042-2fe0" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="6958-b016-77e8-c29b" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="6958-b016-77e8-c29b" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -389,7 +390,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da72-ff95-1fb3-f96f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bdf9-1255-7fe4-605a" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="bdf9-1255-7fe4-605a" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -404,7 +405,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f43c-9a65-7ada-42b4" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="6631-28d9-be4a-840a" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="6631-28d9-be4a-840a" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -419,7 +420,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26b3-2ff4-ecd9-5892" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="fe1d-641c-fade-9bb3" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="fe1d-641c-fade-9bb3" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -434,7 +435,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5003-0fb6-01c1-640f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="963f-d8f5-69b3-527f" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="963f-d8f5-69b3-527f" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -449,7 +450,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98bf-9f8f-6702-d76e" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8266-295c-fb8e-bf34" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="8266-295c-fb8e-bf34" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -464,7 +465,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a19-4989-d9ad-588c" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1790-7348-dac5-61ca" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="1790-7348-dac5-61ca" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -506,7 +507,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee2f-40f9-6dd9-71d7" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="5238-3213-ec28-3811" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="5238-3213-ec28-3811" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -521,7 +522,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3742-abfd-a05d-fb0d" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1981-827a-584a-af29" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="1981-827a-584a-af29" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -536,7 +537,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d17d-2940-1ee9-dc39" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8302-077e-7e46-e958" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="8302-077e-7e46-e958" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -551,7 +552,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f4c-7d0e-3636-5bd1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="71c3-f408-87cf-57a8" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="71c3-f408-87cf-57a8" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -566,7 +567,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a14-e3e7-dcff-af89" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b9aa-c025-508a-e40b" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="b9aa-c025-508a-e40b" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -581,7 +582,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02bf-6f48-b2df-a935" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7e01-a540-f4a3-79cb" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="7e01-a540-f4a3-79cb" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -623,7 +624,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b7-214e-7778-e384" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="32e4-fc75-274e-f3ff" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="32e4-fc75-274e-f3ff" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -638,7 +639,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eb6-4779-e9c7-d317" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2144-357d-c1e8-097d" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="2144-357d-c1e8-097d" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -653,7 +654,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f21e-cd67-4f72-9c4a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c8d2-7ace-9c36-39da" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="c8d2-7ace-9c36-39da" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -668,7 +669,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b421-ee1b-45ab-0532" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b63e-c287-43df-34f2" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="b63e-c287-43df-34f2" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -683,7 +684,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="225f-1b81-8934-bc26" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7d1c-43d0-1619-166d" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="7d1c-43d0-1619-166d" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -698,7 +699,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7150-85f0-025d-76a9" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1e2f-972b-647e-fe1d" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="1e2f-972b-647e-fe1d" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -713,7 +714,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bf5-f5cb-1106-8d3e" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8acf-27e2-25c0-c1b6" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="8acf-27e2-25c0-c1b6" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -919,7 +920,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46f1-59ed-580e-d365" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a323-7e80-9040-bf45" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="a323-7e80-9040-bf45" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -934,7 +935,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7299-e280-b14f-e867" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2c02-74e6-e759-3ed9" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="2c02-74e6-e759-3ed9" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -949,7 +950,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e27b-2741-3dda-79e1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c418-8893-8e4a-ae30" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="c418-8893-8e4a-ae30" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -964,7 +965,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8afd-aba9-e2ce-7d59" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="6d76-4147-c053-0933" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="6d76-4147-c053-0933" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -979,7 +980,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e78d-bc98-c31e-1638" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="04ec-5244-60ff-ac87" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="04ec-5244-60ff-ac87" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -994,7 +995,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b4a-c594-b95f-7bb1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bf3a-e647-e046-9192" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="bf3a-e647-e046-9192" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1009,7 +1010,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9723-a928-0ac5-3401" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e711-f3f1-da43-2393" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="e711-f3f1-da43-2393" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1024,7 +1025,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d2f-084d-6fe7-04ad" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e4cd-dbc2-481f-a67a" name="8" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="e4cd-dbc2-481f-a67a" name="8" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1070,7 +1071,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee66-dbb7-61bc-4fa9" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="3661-ce55-e831-2aa4" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="3661-ce55-e831-2aa4" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1085,7 +1086,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4a8-c59f-32d9-12c1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7c58-1bd2-b55e-f217" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="7c58-1bd2-b55e-f217" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1100,7 +1101,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cacd-c970-1dac-5edf" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bd72-bc31-2049-a665" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="bd72-bc31-2049-a665" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1115,7 +1116,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5afa-dc55-e702-561a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2337-aaf5-2f27-052a" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="2337-aaf5-2f27-052a" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1130,7 +1131,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95d2-3bcd-92ad-ca12" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e3ac-1717-81e1-0686" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="e3ac-1717-81e1-0686" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1145,7 +1146,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1153-0575-46c0-ebf1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="5289-a19c-fb3a-7619" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="5289-a19c-fb3a-7619" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1160,7 +1161,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0327-fb38-dbc4-1ca0" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="f8a1-e77a-6fcd-be9d" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="f8a1-e77a-6fcd-be9d" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1206,7 +1207,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c1d-2e40-3a0c-b249" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="726b-c370-f63b-e41f" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="726b-c370-f63b-e41f" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1221,7 +1222,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="149e-906f-652e-cafc" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="05ce-462a-be7f-8aff" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="05ce-462a-be7f-8aff" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1236,7 +1237,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbf0-1711-f7f3-1b37" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b9e9-532d-3223-dd8f" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="b9e9-532d-3223-dd8f" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1251,7 +1252,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0586-c28a-ae2b-7a6b" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="126d-ed56-1c7d-cb48" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="126d-ed56-1c7d-cb48" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1266,7 +1267,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f703-6866-946d-a1ae" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="73f0-3283-66f5-aeca" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="73f0-3283-66f5-aeca" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1281,7 +1282,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a9d-22c2-214f-bee8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="47a7-1f9a-7c9d-ec1e" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="47a7-1f9a-7c9d-ec1e" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1296,7 +1297,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc52-6aa5-e294-1c8a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e2b8-312f-367f-f3b8" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="e2b8-312f-367f-f3b8" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1311,7 +1312,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec4a-9b73-2e39-e316" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b62f-3b61-1b62-0e0c" name="8" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="b62f-3b61-1b62-0e0c" name="8" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1523,7 +1524,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eef0-5807-2c6a-0a7a" type="max"/>
               </constraints>
               <profiles>
-                <profile id="3851-772d-c979-f95a" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="3851-772d-c979-f95a" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                   </characteristics>
@@ -1538,7 +1539,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ca-ec7d-4c9b-bee0" type="max"/>
               </constraints>
               <profiles>
-                <profile id="ce97-8d0e-f042-3ee2" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="ce97-8d0e-f042-3ee2" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                   </characteristics>
@@ -1553,7 +1554,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42c9-bb05-8747-84bf" type="max"/>
               </constraints>
               <profiles>
-                <profile id="3d49-8668-b0a1-b661" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="3d49-8668-b0a1-b661" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                   </characteristics>
@@ -1568,7 +1569,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c189-1ea0-7a36-f8e3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7f8b-4431-357c-9cba" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="7f8b-4431-357c-9cba" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                   </characteristics>
@@ -1583,7 +1584,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="866c-9ba0-a048-9ed5" type="max"/>
               </constraints>
               <profiles>
-                <profile id="f888-38ea-6976-ace5" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="f888-38ea-6976-ace5" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                   </characteristics>
@@ -1598,7 +1599,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a60-a412-6d91-de15" type="max"/>
               </constraints>
               <profiles>
-                <profile id="3290-5e49-a0d5-b9e1" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="3290-5e49-a0d5-b9e1" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                   </characteristics>
@@ -1636,7 +1637,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48db-a77b-71ab-5e14" type="max"/>
               </constraints>
               <profiles>
-                <profile id="c3fa-be86-5d6f-61be" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="c3fa-be86-5d6f-61be" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                   </characteristics>
@@ -1651,7 +1652,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ec1-a8c0-f92a-8372" type="max"/>
               </constraints>
               <profiles>
-                <profile id="e5b5-9782-d0a3-0dbb" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="e5b5-9782-d0a3-0dbb" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                   </characteristics>
@@ -1666,7 +1667,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa5e-eb1f-f04e-e532" type="max"/>
               </constraints>
               <profiles>
-                <profile id="cf90-cd4d-05ea-067f" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="cf90-cd4d-05ea-067f" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                   </characteristics>
@@ -1681,7 +1682,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f46f-8c3c-9811-bfe9" type="max"/>
               </constraints>
               <profiles>
-                <profile id="6c7a-b9f2-ba8e-20cb" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="6c7a-b9f2-ba8e-20cb" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                   </characteristics>
@@ -1696,7 +1697,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7da9-af72-17b3-ab38" type="max"/>
               </constraints>
               <profiles>
-                <profile id="ce5e-6d61-ae8c-092a" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="ce5e-6d61-ae8c-092a" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                   </characteristics>
@@ -1711,7 +1712,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ecb-74eb-9ac5-c842" type="max"/>
               </constraints>
               <profiles>
-                <profile id="5d12-ba7b-677c-f927" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="5d12-ba7b-677c-f927" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                   </characteristics>
@@ -1749,7 +1750,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e7c-9518-f8fd-206a" type="max"/>
               </constraints>
               <profiles>
-                <profile id="1a4f-d840-f544-af73" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="1a4f-d840-f544-af73" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                   </characteristics>
@@ -1764,7 +1765,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="895b-7ab9-03b7-d999" type="max"/>
               </constraints>
               <profiles>
-                <profile id="beea-48d9-0ec3-f4b5" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="beea-48d9-0ec3-f4b5" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                   </characteristics>
@@ -1779,7 +1780,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b596-900f-d8b3-f6ce" type="max"/>
               </constraints>
               <profiles>
-                <profile id="8623-2a63-bea7-e0a8" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="8623-2a63-bea7-e0a8" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                   </characteristics>
@@ -1794,7 +1795,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37ef-0a8d-fb15-8b55" type="max"/>
               </constraints>
               <profiles>
-                <profile id="df0f-3402-4cfe-e02e" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="df0f-3402-4cfe-e02e" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                   </characteristics>
@@ -1809,7 +1810,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca92-5886-ad5d-96cd" type="max"/>
               </constraints>
               <profiles>
-                <profile id="c77e-cc09-fa41-bf02" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                <profile id="c77e-cc09-fa41-bf02" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                   <characteristics>
                     <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                   </characteristics>
@@ -1937,6 +1938,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </costs>
     </selectionEntry>
     <selectionEntry id="bc4c-36af-c4cd-4594" name="Rapid-Fire Battlecannon" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d488-cbf9-4931-3d80" type="min"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b56-743a-f0dc-899e" type="max"/>
+      </constraints>
       <profiles>
         <profile id="5e1f-99ec-d35a-31d4" name="Rapid-Fire Battlecannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -1965,6 +1970,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </costs>
     </selectionEntry>
     <selectionEntry id="02f3-29a7-d9a3-54ba" name="Avenger Gatling Cannon" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5199-0c9c-66ff-7376" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c54-5560-fa70-71e1" type="min"/>
+      </constraints>
       <profiles>
         <profile id="1a29-07b2-853f-94e3" name="Avenger Gatling Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -1993,6 +2002,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </costs>
     </selectionEntry>
     <selectionEntry id="908e-f9af-f0d1-a124" name="Thermal Cannon" hidden="false" collective="false" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9140-5146-543f-e209" type="min"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c302-c3f5-b5ce-c362" type="max"/>
+      </constraints>
       <profiles>
         <profile id="9428-6182-19bb-9286" name="Thermal Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2021,6 +2034,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </costs>
     </selectionEntry>
     <selectionEntry id="5be0-b49f-fc95-f499" name="Questoris Melee Weapon" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b77c-bdff-12d8-2a7c" type="min"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ea0-e862-70ac-4bf1" type="max"/>
+      </constraints>
       <profiles>
         <profile id="348c-89b0-51aa-a7e8" name="Questoris Melee Weapon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2347,22 +2364,22 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
           </characteristics>
         </profile>
-        <profile id="4625-257e-3231-5e44" name="Questoris Support Banner Structure Point 4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Hull Points">
+        <profile id="4625-257e-3231-5e44" name="Questoris Support Banner Structure Point 4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
           <characteristics>
             <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
           </characteristics>
         </profile>
-        <profile id="be11-a1d8-7670-e1f4" name="Questoris Support Banner Structure Point 3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Hull Points">
+        <profile id="be11-a1d8-7670-e1f4" name="Questoris Support Banner Structure Point 3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
           <characteristics>
             <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
           </characteristics>
         </profile>
-        <profile id="c937-db5c-296a-3382" name="Questoris Support Banner Structure Point 2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Hull Points">
+        <profile id="c937-db5c-296a-3382" name="Questoris Support Banner Structure Point 2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
           <characteristics>
             <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
           </characteristics>
         </profile>
-        <profile id="55ec-58bd-e472-cbad" name="Questoris Support Banner Structure Point 1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Hull Points">
+        <profile id="55ec-58bd-e472-cbad" name="Questoris Support Banner Structure Point 1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
           <characteristics>
             <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
           </characteristics>
@@ -2436,12 +2453,16 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5cc8-bdd5-8c3f-5bc3" name="Scion Marshal" hidden="false" collective="false" type="model">
+    <selectionEntry id="5cc8-bdd5-8c3f-5bc3" name="Scion Martial" hidden="false" collective="false" type="model">
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="82d5-4e74-6258-8be8" name="Stormspear Rocket Pod" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1bd-03aa-8ac6-1339" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="022c-10c6-d8d2-6a7e" type="max"/>
+      </constraints>
       <profiles>
         <profile id="f3fa-201d-26ce-15d3" name="Stormspear Rocket Pod" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2468,6 +2489,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </costs>
     </selectionEntry>
     <selectionEntry id="5fef-e84f-c8eb-791b" name="Meltagun" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91ee-1a14-6941-a11c" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a030-deb2-ccf8-72c5" type="max"/>
+      </constraints>
       <rules>
         <rule id="823a-c234-4f29-c04d" name="Meltagun" hidden="false">
           <description>When the banner is activated in the Combat phase, each Knight with a Meltagun upgrade can target an enemy unit within 3&quot;.That unit suffers a Strength 8 hit.</description>
@@ -3392,27 +3417,27 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
           </characteristics>
         </profile>
-        <profile id="1a69-790d-33e9-3d07" name="Cerastus Knight Banner Structure Point 5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Hull Points">
+        <profile id="1a69-790d-33e9-3d07" name="Cerastus Knight Banner Structure Point 5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
           <characteristics>
             <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
           </characteristics>
         </profile>
-        <profile id="64a4-a1d4-4b2d-4faa" name="Cerastus Knight Banner Structure Point 4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Hull Points">
+        <profile id="64a4-a1d4-4b2d-4faa" name="Cerastus Knight Banner Structure Point 4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
           <characteristics>
             <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
           </characteristics>
         </profile>
-        <profile id="41ff-a8b6-0602-362a" name="Cerastus Knight Banner Structure Point 3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Hull Points">
+        <profile id="41ff-a8b6-0602-362a" name="Cerastus Knight Banner Structure Point 3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
           <characteristics>
             <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
           </characteristics>
         </profile>
-        <profile id="ba19-f304-f0cb-716a" name="Cerastus Knight Banner Structure Point 2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Hull Points">
+        <profile id="ba19-f304-f0cb-716a" name="Cerastus Knight Banner Structure Point 2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
           <characteristics>
             <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
           </characteristics>
         </profile>
-        <profile id="c7e4-0a07-8452-99fa" name="Cerastus Knight Banner Structure Point 1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Hull Points">
+        <profile id="c7e4-0a07-8452-99fa" name="Cerastus Knight Banner Structure Point 1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
           <characteristics>
             <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
           </characteristics>
@@ -5232,7 +5257,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2230-05dc-9e1b-d40b" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="15b6-7a4a-f9d0-2d8d" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="15b6-7a4a-f9d0-2d8d" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5247,7 +5272,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec5c-1b74-aa8c-5dc8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e471-7e3f-fdac-f0ef" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="e471-7e3f-fdac-f0ef" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5262,7 +5287,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6184-c306-40e0-450c" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="5b0d-e9e1-12db-34eb" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="5b0d-e9e1-12db-34eb" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5277,7 +5302,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baa6-45f3-f972-513a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e441-772c-65e9-2cf7" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="e441-772c-65e9-2cf7" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5292,7 +5317,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a66-f66d-e703-973b" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c56d-b950-8d2e-4756" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="c56d-b950-8d2e-4756" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5307,7 +5332,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd9-8f25-f10c-4acc" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="f379-664c-82ae-d0fe" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="f379-664c-82ae-d0fe" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5322,7 +5347,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="603e-2dd8-9630-18e5" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a753-54e6-1c6c-258a" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="a753-54e6-1c6c-258a" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5364,7 +5389,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b1-ba89-6c4d-f2fb" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="25bf-faf2-6eec-29ba" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="25bf-faf2-6eec-29ba" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5379,7 +5404,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59dd-06ca-41f2-a65d" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="ee3c-9932-d9ee-9bdf" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="ee3c-9932-d9ee-9bdf" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5394,7 +5419,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a45c-8bf9-0c22-5599" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="d85b-556e-8923-c4c6" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="d85b-556e-8923-c4c6" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5409,7 +5434,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7233-f708-e663-3c2a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="3ecf-2b43-5459-3852" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="3ecf-2b43-5459-3852" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5424,7 +5449,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c73c-7381-60a5-427a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="133c-8a63-8596-e3d0" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="133c-8a63-8596-e3d0" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5439,7 +5464,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f1f-f8ca-318a-5a98" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="dcf8-270a-7c47-f5d5" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="dcf8-270a-7c47-f5d5" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5481,7 +5506,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0900-cc6d-2b19-00ad" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="71f1-199d-746d-4c1f" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="71f1-199d-746d-4c1f" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5496,7 +5521,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0299-a063-a2b8-4eb3" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="180c-442b-e288-b4e9" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="180c-442b-e288-b4e9" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5511,7 +5536,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb06-6ad5-f941-2fa4" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="095c-8d01-c6b4-ee10" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="095c-8d01-c6b4-ee10" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5526,7 +5551,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b21c-ff7a-d3ce-77e3" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="3a2e-c3df-5aa0-a27e" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="3a2e-c3df-5aa0-a27e" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5541,7 +5566,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="410f-4d94-1429-5136" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="fc47-f356-27ec-03e3" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="fc47-f356-27ec-03e3" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5556,7 +5581,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c09-7324-8c88-5ac6" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="9b20-a26b-d424-a98d" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="9b20-a26b-d424-a98d" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5571,7 +5596,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed7c-f8a9-98d7-45a5" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7270-5b96-d159-db69" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="7270-5b96-d159-db69" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5773,7 +5798,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="394f-a002-2944-5ae6" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="28e9-7b09-afef-01b7" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="28e9-7b09-afef-01b7" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5788,7 +5813,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="591b-b097-c13b-b4c8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c65f-81b5-aa11-ee43" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="c65f-81b5-aa11-ee43" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5803,7 +5828,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2840-6742-f7a0-1208" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="cd09-f502-0b6a-ca4f" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="cd09-f502-0b6a-ca4f" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5818,7 +5843,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0350-e811-9ce1-ff00" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="ae89-ce77-0e00-b7ba" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="ae89-ce77-0e00-b7ba" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5833,7 +5858,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5996-5c61-0ddc-c82f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="63a3-ba61-bb7a-4d93" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="63a3-ba61-bb7a-4d93" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5848,7 +5873,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fe3-373a-b433-7643" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2b88-0e50-eb71-e328" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="2b88-0e50-eb71-e328" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5863,7 +5888,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6806-31dd-36fb-fbc4" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1b7f-8a87-08ce-f20f" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="1b7f-8a87-08ce-f20f" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5905,7 +5930,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="101c-61ae-ab40-0686" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7d87-e581-462f-4cde" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="7d87-e581-462f-4cde" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5920,7 +5945,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ac-071b-75ec-d59f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="da99-9c17-2228-eede" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="da99-9c17-2228-eede" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5935,7 +5960,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbf1-8bd7-8117-fd8d" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="4e7d-75b2-a12d-44b2" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="4e7d-75b2-a12d-44b2" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5950,7 +5975,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fa7-2ce1-6d5c-86ae" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a151-8ec5-b7da-9739" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="a151-8ec5-b7da-9739" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5965,7 +5990,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1970-849e-25bf-aad7" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a1b7-9a89-158e-49e9" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="a1b7-9a89-158e-49e9" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5980,7 +6005,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30e5-42c9-35de-10fa" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a985-cdf7-a322-178f" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="a985-cdf7-a322-178f" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -6022,7 +6047,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9ba-c233-6908-572c" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b82b-ed34-c5b1-9563" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="b82b-ed34-c5b1-9563" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6037,7 +6062,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a662-e3df-ace0-b645" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="26c1-808b-0ea1-7112" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="26c1-808b-0ea1-7112" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6052,7 +6077,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02e8-cb1e-0005-ee4e" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bf3b-13f7-0183-dca0" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="bf3b-13f7-0183-dca0" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6067,7 +6092,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ccd-919c-78d8-5fb8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="81f6-dc90-7473-c7ce" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="81f6-dc90-7473-c7ce" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -6082,7 +6107,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="076c-19dd-8d64-fbbe" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bd2c-def9-1d79-8013" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="bd2c-def9-1d79-8013" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -6097,7 +6122,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5ff-ecdd-000f-91bb" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="50d5-86b4-1102-7ed3" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="50d5-86b4-1102-7ed3" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -6112,7 +6137,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b0-dbc4-b4d6-3e68" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8164-79a4-150a-e082" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Location">
+                    <profile id="8164-79a4-150a-e082" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -6271,6 +6296,366 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4944-7ee2-734b-6fa5" name="Acastus Knight Banner" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="0133-83bd-868b-8389" name="1 Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="1165-1062-a636-8033" name="2-3 Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-3</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="8218-38e2-f6b3-7895" name="4+ Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="8352-e0e5-dc9e-f305" name="Acastus Knight Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">10-14</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">15-16</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bea6-eb1f-1d8a-af69" name="Acastus Knight Banner Structure Point 5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+          <characteristics>
+            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="aaf1-7635-cf01-e46b" name="Acastus Knight Banner Structure Point 4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+          <characteristics>
+            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="8ea5-8611-a382-b0d6" name="Acastus Knight Banner Structure Point 3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+          <characteristics>
+            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="0a8e-f6ba-d344-b42c" name="Acastus Knight Banner Structure Point 2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+          <characteristics>
+            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="7207-11d2-e344-67e3" name="Acastus Knight Banner Structure Point 1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+          <characteristics>
+            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="858f-4f88-022b-298c" name="Acastus Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">7&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">5 (3 with Lord Scion)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">5 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d325-0937-8b14-f56e" name="Acastus Knight Banner Structure Point 6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+          <characteristics>
+            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+        <profile id="4265-d7c5-c370-a7ee" name="Acastus Knight Banner Structure Point 7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+          <characteristics>
+            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="34c7-89b7-04b7-f19e" name="Acastus Knight Artillery" hidden="false">
+          <description>If an Acastus Knight Banner is issued First Fire or Split Fire orders during the Strategy phase, their BS is increased to 3+ until the End phase</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2c98-724d-3c3d-7b5e" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2882-56f0-4672-741a" name="Knight Hulls" hidden="false" collective="false">
+          <modifiers>
+            <modifier type="increment" field="ad9b-d3b5-da90-96fd" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3a67-e9b2-7761-f362" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a67-e9b2-7761-f362" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad9b-d3b5-da90-96fd" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6ff4-90de-cfdc-bc90" name="Acastus Knight" hidden="false" collective="false" targetId="69b3-e7ac-9cec-ad72" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="592f-6dcd-a128-5453" name="Lord Scion" hidden="false" collective="false" targetId="c197-9e7c-0bb5-0889" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="a731-e220-2d8a-41bf" value="80.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="85a9-5131-d077-0c17" name="Scion Marshal" hidden="false" collective="false" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="a731-e220-2d8a-41bf" value="70.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c026-399f-57d5-3ca4" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96a3-676b-4703-3d2a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c23d-64c5-b376-ad80" name="Porphyrion Twin Magna Lascannon" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="c070-66c3-9137-f40f" name="Porphyrion Twin Magna Lascannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">6&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">48&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"></characteristic>
+            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Paired</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="927e-149b-6dc7-7ee8" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="4893-a2b7-93d6-67d9" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="2152-bc0b-0818-e465" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="d683-090e-3022-c693" name="Blast" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="ff34-3ff1-bc15-8061" name="Paired" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false"/>
+        <categoryLink id="f403-9cc3-0d70-bc32" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1d36-f2f4-4f29-5864" name="Porphyrion Ironstorm Missile Pod" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="fdab-ab17-99be-7e1e" name="Porphyrion Ironstorm Missile Pod" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">6&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">36&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"></characteristic>
+            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Rapid</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d69a-b7c6-b82d-1461" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="7cbf-79ff-8bf3-5cd3" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="6e02-8e19-52c7-058a" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="8b3f-1aff-0ecb-7af9" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="4f82-1c9f-ca79-fea3" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="76aa-5e9a-0d62-87c1" name="Acastus Knight Porhpyrion" hidden="false" collective="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6559-1688-b6f4-78a1" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="4d8b-e826-be7b-7293" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a0c0-c300-335b-c637" name="Porphyrion Twin Magna Lascannon" hidden="false" collective="false" targetId="c23d-64c5-b376-ad80" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2aa-5df7-85ff-d53b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2bc-0dec-c133-811e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b0fe-58fd-274d-6ac6" name="Porphyrion Ironstorm Missile Pod" hidden="false" collective="false" targetId="1d36-f2f4-4f29-5864" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="368c-330f-1d9d-2f9f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cdf-8f33-a959-6f54" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fd47-c688-fe2d-3467" name="Acastus Hull Weapon" hidden="false" collective="false" targetId="e060-52c1-1d31-a331" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="69b3-e7ac-9cec-ad72" name="Acastus Knight" hidden="false" collective="false" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="72a7-b423-1f4f-896d" name="Knight Hull" hidden="false" collective="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f9e-5f64-05e9-6b25" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d056-b40b-a1bc-43fb" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="793e-5fcb-118c-f908" name="Acastus Knight Porhpyrion" hidden="false" collective="false" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry"/>
+            <entryLink id="7353-9144-2106-3591" name="Acastus Knight Asterius" hidden="false" collective="false" targetId="2dee-7316-3a42-5507" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a2a3-d4b5-189a-5f63" name="Acastus Twin Lascannon" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4773-8e27-43f2-c351" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca46-ab9b-6551-5fe6" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="bc38-ad23-543a-7903" name="Acastus Twin Lascannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">6&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">12&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"></characteristic>
+            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="13fc-3899-21df-8c63" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="33bd-bd4e-9f63-3ff5" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="b0b0-a8e7-b97d-9c28" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="abac-6fdb-0228-d12a" name="Acastus Twin Autocannon" hidden="false" collective="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75db-4271-1ebb-c891" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cad-1d7b-ac96-7751" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="6c77-790b-9669-0008" name="Acastus Twin Autocannon" page="" hidden="false">
+          <description>When the Banner is activated in the Combat phase, each Knight with twin autocannon can target an enemy unit within 6&quot;. That unit suffers a Strength 4 hit</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2e65-e207-2ae4-43c2" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="93c8-d5c9-575d-d1ac" name="Asterius Twin Conversion Beam Cannon" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="f7f4-7de3-b45c-21f7" name="Asterius Twin Conversion Beam Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">*24&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">**48&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"></characteristic>
+            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4">*3&quot;/**5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Paired</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5442-860a-816e-126e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="17b9-5337-b01b-9bcc" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="a5cf-3ef5-4988-60d6" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="8b29-fd8a-1f0b-90be" name="Blast" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="3d93-d4c6-df8d-31e8" name="Paired" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false"/>
+        <categoryLink id="6785-be3c-a55a-f205" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5893-d4c8-461e-ea79" name="Asterius Karacnos Mortar Battery" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="8abb-9507-2164-dcff" name="Asterius Karacnos Mortar Battery" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">36&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"></characteristic>
+            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Rending</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="238f-c4bf-8ea1-f0af" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="c78e-6c60-2b3f-1b49" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="aa34-15ec-ff9e-225d" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="2bc1-b309-d13e-78f8" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="0699-b532-2eba-4bbc" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2dee-7316-3a42-5507" name="Acastus Knight Asterius" hidden="false" collective="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="bf56-58f3-1547-e5d9" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="b9ca-01e0-3b09-566f" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="df5d-9150-bc98-b375" name="Asterius Twin Conversion Beam Cannon" hidden="false" collective="false" targetId="93c8-d5c9-575d-d1ac" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87da-39d1-af6e-9897" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a14-33bf-eefa-1d98" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e76c-8e08-b7fd-b82c" name="Asterius Karacnos Mortar Battery" hidden="false" collective="false" targetId="5893-d4c8-461e-ea79" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b1f-7cd6-59da-f4cc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6fe-e9ae-dff4-5038" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7bc2-34b3-b54b-e8c0" name="Acastus Hull Weapon" hidden="false" collective="false" targetId="e060-52c1-1d31-a331" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -6539,6 +6924,16 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e060-52c1-1d31-a331" name="Acastus Hull Weapon" hidden="false" collective="false" defaultSelectionEntryId="c750-04b1-5a96-6e07">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d314-4f47-50ee-231e" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a335-733f-c91e-960a" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="c750-04b1-5a96-6e07" name="Acastus Twin Autocannon" hidden="false" collective="false" targetId="abac-6fdb-0228-d12a" type="selectionEntry"/>
+        <entryLink id="3ea6-1bed-f54a-c10f" name="Acastus Twin Lascannon" hidden="false" collective="false" targetId="a2a3-d4b5-189a-5f63" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
