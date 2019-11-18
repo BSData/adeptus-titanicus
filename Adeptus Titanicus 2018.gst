@@ -1024,11 +1024,31 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85be-a2a7-1d55-bcb4" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="60d9-7038-3787-78d7" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry"/>
-            <entryLink id="94de-edcf-88cd-b08a" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry"/>
-            <entryLink id="b33b-e5e2-5af7-e184" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry"/>
-            <entryLink id="df74-774e-4ef4-83f9" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry"/>
-            <entryLink id="8f57-49d5-40ef-8300" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry"/>
+            <entryLink id="60d9-7038-3787-78d7" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦾⦾⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8f57-49d5-40ef-8300" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦾⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="b33b-e5e2-5af7-e184" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="94de-edcf-88cd-b08a" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦿⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="df74-774e-4ef4-83f9" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦿⦿"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="d68a-de59-6ede-871e" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6ef-0420-0906-8da2">
@@ -1037,7 +1057,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acfb-37fa-a3c9-60a4" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7da2-b59d-aa12-c822" name="Plasma Reactor 2 Green" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7da2-b59d-aa12-c822" name="Plasma Reactor ⦿⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be26-d51d-b3a6-db6d" type="max"/>
               </constraints>
@@ -1046,7 +1066,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a6ef-0420-0906-8da2" name="Plasma Reactor 1 Green" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="a6ef-0420-0906-8da2" name="Plasma Reactor ⦿⦿⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b9a-86b5-1789-2dbe" type="max"/>
               </constraints>
@@ -1055,7 +1075,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d5ed-509b-9a60-55dc" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d5ed-509b-9a60-55dc" name="Plasma Reactor ⦿⦿⦿⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61f7-48a4-28dd-64e2" type="max"/>
               </constraints>
@@ -1064,7 +1084,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="755c-c35b-2eba-b72e" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="755c-c35b-2eba-b72e" name="Plasma Reactor ⦿⦿⦿⦿⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af75-1a12-31ce-4742" type="max"/>
               </constraints>
@@ -1073,7 +1093,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c001-f0e2-7127-994c" name="Plasma Reactor ⦿⦿⦿⦿⦿ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c001-f0e2-7127-994c" name="Plasma Reactor ⦿⦿⦿⦿⦿⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="366b-39e2-6477-5d2c" type="max"/>
               </constraints>
@@ -1160,12 +1180,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4f0-63b6-118d-16f9" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="e562-dc55-06b1-9ac7" name="Body ⦿⦾⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="e562-dc55-06b1-9ac7" name="Body ⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46f1-59ed-580e-d365" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a323-7e80-9040-bf45" name="Body ⦿⦾⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="a323-7e80-9040-bf45" name="Body ⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1676,12 +1696,36 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bd4-158d-960a-db6f" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="1a31-62c9-06cf-677b" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry"/>
-            <entryLink id="e067-8567-abd7-becd" name="Void Shield (3+) 3" hidden="false" collective="false" import="true" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry"/>
-            <entryLink id="4ed2-f7f1-8518-5654" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry"/>
-            <entryLink id="dee8-2817-f803-d4e9" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry"/>
-            <entryLink id="9ae4-9d52-9f27-18b5" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry"/>
-            <entryLink id="bd30-77eb-f4a2-fc88" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry"/>
+            <entryLink id="9ae4-9d52-9f27-18b5" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="dee8-2817-f803-d4e9" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="e067-8567-abd7-becd" name="Void Shield (3+) 3" hidden="false" collective="false" import="true" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="bd30-77eb-f4a2-fc88" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="4ed2-f7f1-8518-5654" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="1a31-62c9-06cf-677b" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="e5e8-04fc-3518-8062" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="d019-5a52-2df0-0f34">
@@ -1690,16 +1734,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cfe-b346-a831-ef61" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="949e-f6e1-0b38-6e7f" name="Plasma Reactor 6 Orange" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a9-9490-3950-f43c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e0ef-1cf8-f2df-281f" name="Plasma Reactor 2 Green" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e0ef-1cf8-f2df-281f" name="Plasma Reactor ⦿⦾⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d72d-fda4-39c3-b553" type="max"/>
               </constraints>
@@ -1708,7 +1743,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d019-5a52-2df0-0f34" name="Plasma Reactor 1 Green" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d019-5a52-2df0-0f34" name="Plasma Reactor ⦿⦿⦾⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c36b-05e2-c988-d316" type="max"/>
               </constraints>
@@ -1717,7 +1752,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dfce-06cb-8de3-3bb9" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="dfce-06cb-8de3-3bb9" name="Plasma Reactor ⦿⦿⦿⦾⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f157-d4da-ad9c-dc18" type="max"/>
               </constraints>
@@ -1726,7 +1761,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7bf5-230e-9594-5ee8" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7bf5-230e-9594-5ee8" name="Plasma Reactor ⦿⦿⦿⦿⦾⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00e1-b912-24a6-cf97" type="max"/>
               </constraints>
@@ -1735,9 +1770,18 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="159c-5ead-c611-6c48" name="Plasma Reactor ⦿⦿⦿⦿⦿ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="159c-5ead-c611-6c48" name="Plasma Reactor ⦿⦿⦿⦿⦿⦾⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5a2-d454-dc01-93a7" type="max"/>
+              </constraints>
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="949e-f6e1-0b38-6e7f" name="Plasma Reactor ⦿⦿⦿⦿⦿⦿⦾ Orange(6)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a9-9490-3950-f43c" type="max"/>
               </constraints>
               <costs>
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -2209,10 +2253,26 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c62-54b2-1332-00dc" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="33a7-7a1b-8746-5001" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry"/>
-            <entryLink id="65c5-8298-de1c-ac2c" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry"/>
-            <entryLink id="f758-56c9-43f3-ed4a" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry"/>
-            <entryLink id="30a3-6c5b-6094-ad78" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry"/>
+            <entryLink id="33a7-7a1b-8746-5001" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦾⦾⦾"/>
+              </modifiers>
+            </entryLink>
+          <entryLink id="30a3-6c5b-6094-ad78" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="65c5-8298-de1c-ac2c" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                <modifiers>
+                  <modifier type="append" field="name" value="⦿⦿⦿⦾"/>
+                </modifiers>
+            </entryLink>
+            <entryLink id="f758-56c9-43f3-ed4a" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦿"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="fc25-d3a5-2336-d414" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="54d8-91ce-8ec4-6e91">
@@ -2221,16 +2281,16 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87e4-9d94-5f4c-f6db" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="094e-fb3e-6d53-74d8" name="Plasma Reactor 3 Orange" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="54d8-91ce-8ec4-6e91" name="Plasma Reactor ⦿⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02eb-3660-ad3c-db42" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec53-a52e-df0b-38fa" type="max"/>
               </constraints>
               <costs>
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4c60-e648-c02f-742a" name="Plasma Reactor 2 Green" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4c60-e648-c02f-742a" name="Plasma Reactor ⦿⦿⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc1a-3cc0-b1cb-df27" type="max"/>
               </constraints>
@@ -2239,7 +2299,16 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5472-be7a-6576-83a0" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="094e-fb3e-6d53-74d8" name="Plasma Reactor ⦿⦿⦿⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02eb-3660-ad3c-db42" type="max"/>
+              </constraints>
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5472-be7a-6576-83a0" name="Plasma Reactor ⦿⦿⦿⦿⦾ Orange(4)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb95-fb5e-616e-6c3c" type="max"/>
               </constraints>
@@ -2251,15 +2320,6 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <selectionEntry id="8e13-79cd-9c07-3918" name="Plasma Reactor ⦿⦿⦿⦿⦿ Red(5)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd02-eb79-e76c-edc0" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="54d8-91ce-8ec4-6e91" name="Plasma Reactor 1 Green" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec53-a52e-df0b-38fa" type="max"/>
               </constraints>
               <costs>
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -3737,7 +3797,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="15dc-a57d-f1f3-41a6" name=" Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="15dc-a57d-f1f3-41a6" name="Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec0f-c79f-18dd-ff5b" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="381a-291f-d6e9-dfe5" type="min"/>
@@ -6159,11 +6219,31 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         </selectionEntryGroup>
         <selectionEntryGroup id="75b3-312e-2026-816e" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="d009-44d1-0f3c-1f3c">
           <entryLinks>
-            <entryLink id="d009-44d1-0f3c-1f3c" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry"/>
-            <entryLink id="bf9c-e660-65ad-f45d" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry"/>
-            <entryLink id="7061-97a9-664f-f98d" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry"/>
-            <entryLink id="cac5-0ec7-9f08-e52d" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry"/>
-            <entryLink id="d80c-4e52-45a5-7bef" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry"/>
+            <entryLink id="d009-44d1-0f3c-1f3c" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="d80c-4e52-45a5-7bef" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="7061-97a9-664f-f98d" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="bf9c-e660-65ad-f45d" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="cac5-0ec7-9f08-e52d" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="156b-66ab-2b21-a8a8" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="35ff-94df-2fde-3ad0">
@@ -6172,7 +6252,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62c4-46cd-75d9-4d8c" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2fe8-1ad3-b95c-7876" name="Plasma Reactor 2 Green" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2fe8-1ad3-b95c-7876" name="Plasma Reactor ⦿⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62d5-0e90-5d72-5563" type="max"/>
               </constraints>
@@ -6181,7 +6261,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="35ff-94df-2fde-3ad0" name="Plasma Reactor 1 Green" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="35ff-94df-2fde-3ad0" name="Plasma Reactor ⦿⦿⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39a2-11cf-9e81-008e" type="max"/>
               </constraints>
@@ -6190,7 +6270,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bcc8-04dc-2df1-02a1" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="bcc8-04dc-2df1-02a1" name="Plasma Reactor ⦿⦿⦿⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0315-9911-2793-fbc0" type="max"/>
               </constraints>
@@ -6199,7 +6279,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fd95-9834-bb42-9dac" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="fd95-9834-bb42-9dac" name="Plasma Reactor ⦿⦿⦿⦿⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb3f-e021-6a0c-fc6d" type="max"/>
               </constraints>
@@ -6208,7 +6288,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e78b-c4d8-d524-e5ee" name="Plasma Reactor ⦿⦿⦿⦿⦿ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e78b-c4d8-d524-e5ee" name="Plasma Reactor ⦿⦿⦿⦿⦿⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84dc-c437-39dc-410d" type="max"/>
               </constraints>
@@ -6730,11 +6810,31 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         </selectionEntryGroup>
         <selectionEntryGroup id="350b-2560-959c-a3ed" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="bc2d-5d9c-83e9-e16a">
           <entryLinks>
-            <entryLink id="bc2d-5d9c-83e9-e16a" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry"/>
-            <entryLink id="5e6e-ef3b-cf57-fce1" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry"/>
-            <entryLink id="87e8-be32-8233-2399" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry"/>
-            <entryLink id="abdd-6787-ccab-95f8" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry"/>
-            <entryLink id="be1b-c780-0b2e-1c79" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry"/>
+          <entryLink id="bc2d-5d9c-83e9-e16a" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦾⦾⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="be1b-c780-0b2e-1c79" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦾⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="87e8-be32-8233-2399" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦾⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="5e6e-ef3b-cf57-fce1" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦿⦾"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="abdd-6787-ccab-95f8" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦿⦿"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="6d28-12a3-66b9-5c9b" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6d5-5c43-28f8-318b">
@@ -6743,7 +6843,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9b8-45f5-597f-6a51" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="97bf-b8f8-f143-58ae" name="Plasma Reactor 2 Green" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="97bf-b8f8-f143-58ae" name="Plasma Reactor ⦿⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a9-d3fa-e9df-e5b4" type="max"/>
               </constraints>
@@ -6752,7 +6852,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a6d5-5c43-28f8-318b" name="Plasma Reactor 1 Green" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="a6d5-5c43-28f8-318b" name="Plasma Reactor ⦿⦿⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79d9-2cb4-e01f-c5e4" type="max"/>
               </constraints>
@@ -6761,7 +6861,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7d3c-6e69-392f-8444" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7d3c-6e69-392f-8444" name="Plasma Reactor ⦿⦿⦿⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4008-8d35-a1bf-7fd8" type="max"/>
               </constraints>
@@ -6770,7 +6870,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cbed-1aa2-f302-0534" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="cbed-1aa2-f302-0534" name="Plasma Reactor ⦿⦿⦿⦿⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a3b-9a80-fdb0-6841" type="max"/>
               </constraints>
@@ -6779,7 +6879,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="23a5-a82e-ecac-4867" name="Plasma Reactor ⦿⦿⦿⦿⦿ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="23a5-a82e-ecac-4867" name="Plasma Reactor ⦿⦿⦿⦿⦿⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cea-6cf6-ce43-7fe5" type="max"/>
               </constraints>
