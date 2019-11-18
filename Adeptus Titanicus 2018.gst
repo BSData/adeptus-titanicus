@@ -198,7 +198,53 @@ Note that it is not necessary to make the Hit rolls - these hits are automatic. 
       </rules>
     </categoryEntry>
     <categoryEntry id="6982-2d18-55cb-61e5" name="Maniple" hidden="false"/>
-    <categoryEntry id="917a-77ef-30e4-b812" name="Banner" hidden="false"/>
+    <categoryEntry id="917a-77ef-30e4-b812" name="Banner" hidden="false">
+      <rules>
+        <rule id="59fb-73c8-478f-68c9" name="Banner" publicationId="975a-00f4-pubN65537" hidden="false">
+          <description>Composition of a Banner
+A Banner is made up of a number of Knights acting as a single unit. The reverse of a Banner&apos;s Command Terminal describes its exact composition, along with any options. When a Banner is activated, all of the Knights within it act; individual Knights cannot be activated.
+
+Banners in the Movement Phase
+When a Banner is activated in the Movement phase, each Knight can move up to the Banner&apos;s Speed characteristic in inches. Knights are considered to have a 360° Front arc, and can make
+as many turns as they wish as they move. When the Banner has finished moving, each must be within 3&quot; of another Knight in the Banner - Knight Banners operate in much closer proximity than Titan Squadrons, especially when facing larger war engines. If any of the Knights are outside of this range, the Banner is Shaken - see page 47.
+
+Banners in the Combat Phase
+When a Banner is activated in the Combat phase, it follows the Combat Sequence as if it were a Titan. Instead of attacking with each Knight individually, make an attack with each different weapon in tum. For each weapon, multiply the Dice characteristic by the number of Knights in the Banner that are equipped with that weapon, and which are within range and line of sight of the target. For example,ifa Banner has two Knights armed with rapid fire battle cannon (Dice 2) and one Knight armed with a thermal cannon (Dicer),it would roll four dice when attacking with the battle cannon and one dice when attacking with the thermal cannon.IfsomeKnightsarewithin2&quot; ofthetargetandothersare further away, roll using Ballistic Skill for those that are further, and Weapon Skill for those that are within 2&quot;.
+
+When determining line of sight for a Banner, Knights within the Banner do not block the view of others. Also, remember that Knights have a 360° Front arc,so their weapons can fire in any direction. All of the weapons in a Banner must be fired at the same target, unless the Banner has Split Fire orders, at which point each weapon can be directed at a different target.
+
+Banners cannot make Smash Attacks.
+
+ATTACKING BANNERS. When attacking a Banner, pick a single Knight in the Banner to be the target of the attack. This model is used for purposes ofrange,line ofsight and so on. However, any damage that is caused is applied to the Banner as a whole. As Banners
+do not have Side or Rear arcs, these do not cause modifiers to the Damage roll.
+
+ION SHIELDS. When fighting in a Banner, Knights align their Ion shields, granting them greater protection as a group than individually. Ion shields are different to void shields;ifa rule refers specifically to void shields, it does not affect ion shields, but ifit refers to Shield saves, it will affect both. Note that, unlike void shields, ion shields can be used against attacks that originate from within 2&quot;.
+If a Banner is hit by a shooting attack, hits are resolved (at Step 5 of the Combat Sequence) as follows:
+• Target&apos;s controlling player makes Ion Shield saves.
+• The attacking player makes Armour rolls for any remaining hits.
+To make an Ion Shield save, look up the Ion Shield level on the Banner&apos;s Command Terminal, which varies depending on the number of Knights currently in the Banner and the Strength of the attack. Then roll a D6 for each hit that was scored. For each dice that equals or beats the Ion Shield level, the hit is discarded. Then for each remaining hit, the attacking player makes an Armour roll as described on page 34.
+
+DAMAGING BANNERS. Direct Hits, Devastating Hits and Critical Hits affect Banners differently to Titans, as follows:
+
+Direct Hit: When a Banner suffers a Direct Hit,it loses a Structure point. If it has no Structure points left to lose, one Knight in the Banner is desttoyed instead.
+
+Devastating Hit: When a Banner suffers a Devastating Hit, it loses two Structure points. If the Banner has one Structure point or no Structure points left when it suffers a Devastating Hit, one Knight in the Banner is destroyed instead.
+
+Critical Hit: When a Banner suffers a Critical Hit, it loses two Structure points, then one Knight in the Banner is destroyed.
+If the Banner has one Structure point or no Structure points j left when it suffers a Critical Hit, two Knights in the Banner are destroyed instead.
+
+When a Knight is destroyed, the controlling player chooses one model to remove. The Banner&apos;s Structure Points marker is then immediately reset to the first hole of the track. If a Targeted Attack destroys a Knight, the attacking player can choose which model to remove instead of the controlling player.
+
+BLAST MARKERS, FLAME TEMPLATES AND AREA EFFECTS. When a Banner is hit by a Blast marker or Flame template, total the number of hits scored on the models in the Banner, then apply that many hits to the Banner as a whole. This also applies to attack~with an area effect - catastrophic reactor overloads, environmental effects and so on.
+
+Shaken Banners
+Each time a Knight is removed from a Banner, the Banner must make a Command check. If it is failed, the Banner is Shaken. It immediately loses any orders and an Order dice showing the Shutdown symbol is placed on its Command Terminal to show that it is Shaken. Shaken Banners subtract 3&quot; from their Speed and will suffer a -1 modifier to all Hit rolls.
+When the Banner is activated in the Issue Orders step of the next Strategy phase, make a Command roll for the Shaken Banner. If it is passed, remove the dice. Otherwise, it stays where it is. In either case, the Banner cannot be issued orders.
+
+</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry id="44b5-8770-ea8e-2401" name="Arm" hidden="false"/>
     <categoryEntry id="a499-678c-ed35-c0e8" name="Barrage" hidden="false">
       <rules>
@@ -954,6 +1000,47 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="ca96-66a7-2466-4553" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8e2-83d4-ec0a-c383" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ef8-44e3-d596-adc5" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="71a5-9388-870c-25e1" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="052b-4a86-88ac-055c">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf25-32ff-a17b-4767" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea37-b3c5-efb5-5fe9" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="052b-4a86-88ac-055c" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="e2e8-9366-ee53-f276" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="3a09-c502-7ec2-19fa" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="af60-3449-7734-5ed1" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="4e55-7dd1-c317-c8f9" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="360a-34ac-766d-69f2" name="Weapons" hidden="false" collective="false" import="true">
@@ -1017,39 +1104,6 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="191f-a736-3607-be1a" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="60d9-7038-3787-78d7">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e20-e3c0-09ba-add5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85be-a2a7-1d55-bcb4" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="60d9-7038-3787-78d7" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦾⦾⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="8f57-49d5-40ef-8300" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦾⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="b33b-e5e2-5af7-e184" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="94de-edcf-88cd-b08a" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦿⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="df74-774e-4ef4-83f9" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦿⦿"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="d68a-de59-6ede-871e" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6ef-0420-0906-8da2">
           <constraints>
@@ -1623,6 +1677,52 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="a1f0-d644-e812-a244" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9df1-4051-4014-1f2a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d890-d5b3-8f4c-073d" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="40e8-5105-f3b8-40a9" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="8e67-15f3-cc86-e5cd">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88fa-3bc1-150c-7fb6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e176-c75a-1d66-5442" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="8e67-15f3-cc86-e5cd" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="2279-a993-a72b-b5bc" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="163c-10e2-5ef1-b5fa" name="Void Shield (3+) 3" hidden="false" collective="false" import="true" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="9829-426f-220f-2e28" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="ffb1-446c-a334-a4be" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="85ae-6a60-9e49-bba9" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="2c49-32dd-c032-07ff" name="Weapons" hidden="false" collective="false" import="true">
@@ -1688,44 +1788,6 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="0c27-288f-504a-2110" name="Ardex Defensor Cannon" hidden="false" collective="false" import="true" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="dc78-7f26-9349-f3d6" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ae4-9d52-9f27-18b5">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df83-344b-649e-9250" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bd4-158d-960a-db6f" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="9ae4-9d52-9f27-18b5" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="dee8-2817-f803-d4e9" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="e067-8567-abd7-becd" name="Void Shield (3+) 3" hidden="false" collective="false" import="true" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="bd30-77eb-f4a2-fc88" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="4ed2-f7f1-8518-5654" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="1a31-62c9-06cf-677b" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
-              </modifiers>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="e5e8-04fc-3518-8062" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="d019-5a52-2df0-0f34">
@@ -2213,6 +2275,42 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="33bf-049a-2e61-89c2" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca0e-8422-18ab-97fd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ae3-20a5-cb19-9524" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="74ac-8b96-f42c-3a28" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="b3cb-9e84-6181-37dd">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b022-895b-f89f-f3f4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4138-0823-20cd-3dca" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="b3cb-9e84-6181-37dd" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="67d3-d39f-143d-fc66" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="795b-6359-9dad-83ec" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="ce1e-aa24-fc32-fa61" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="f4dd-18ef-5ac0-0de0" name="Weapons" hidden="false" collective="false" import="true">
@@ -2246,34 +2344,6 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ecfd-f898-b5c9-4ac5" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="33a7-7a1b-8746-5001">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec13-b867-4514-efe4" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c62-54b2-1332-00dc" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="33a7-7a1b-8746-5001" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦾⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="30a3-6c5b-6094-ad78" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="65c5-8298-de1c-ac2c" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="f758-56c9-43f3-ed4a" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦿"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="fc25-d3a5-2336-d414" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="54d8-91ce-8ec4-6e91">
           <constraints>
@@ -2791,6 +2861,48 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <categoryLink id="05ff-68be-de5c-4d87" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="4eff-36e2-fab2-c3a1" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d869-27b8-7b88-6333" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abb1-91f0-f0b9-5755" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c815-9759-dc7c-cc36" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0956-f482-59b4-8265" name="Questoris Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="700e-13e6-6c97-657e">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a935-944a-ab49-ed6c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0026-f5c4-dbc8-734b" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="700e-13e6-6c97-657e" name="Structure Point 1" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a712-8c19-e062-7614" name="Structure Point 2" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e020-4319-68e6-437a" name="Structure Point 3" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ac92-b9dc-c522-468b" name="Structure Point 4" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="23a9-0bb7-ac82-8ed2" name="Knight Hulls" hidden="false" collective="false" import="true">
           <modifiers>
@@ -2814,18 +2926,6 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
           <entryLinks>
             <entryLink id="8371-c1b8-3c6e-1174" name="Questoris Knight" hidden="false" collective="false" import="true" targetId="5eb2-54c8-ba72-1bcf" type="selectionEntry"/>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d4fc-61c1-687d-ef3b" name="Questoris Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="c92c-03ca-ea67-c68c">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b93-2ee7-e5dd-a0e1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c0e-ef37-9d70-8dcd" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="c92c-03ca-ea67-c68c" name="Structure Point 1" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="bf14-92b1-8c93-327f" name="Structure Point 2" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="0835-e548-8387-4d7e" name="Structure Point 3" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="48a6-fd85-cc48-a9ea" name="Structure Point 4" hidden="false" collective="false" import="true" type="upgrade"/>
-          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -3897,6 +3997,54 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
       <categoryLinks>
         <categoryLink id="639b-d64f-808c-3bcb" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0734-5864-c482-92c1" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9505-f315-81f5-e2cf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d9e-0f31-d622-be6c" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="822f-6d2d-bf03-3180" name="Cersastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="4c60-d929-fad1-abd8">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a32b-f614-3278-30ce" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2e-9dbe-f88a-a1cc" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="4c60-d929-fad1-abd8" name="Structure Point 1" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9b2f-be3a-7c01-c097" name="Structure Point 2" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7e61-486c-d3ea-bbf0" name="Structure Point 3" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7fd1-ee6d-6642-1e52" name="Structure Point 5" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b90a-0eb5-0e35-7047" name="Structure Point 4" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="8e7c-e717-8999-389e" name="Knight Hulls" hidden="false" collective="false" import="true">
           <modifiers>
@@ -3918,19 +4066,6 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
           <entryLinks>
             <entryLink id="e018-6fef-2f79-88bc" name="Cerastus Knight" hidden="false" collective="false" import="true" targetId="71a1-ef51-b47e-2983" type="selectionEntry"/>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="13f3-285e-c46d-8ad4" name="Cersastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="f514-6cf9-d3d3-392e">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d068-dba5-3669-d7c3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ee6-d32a-378a-4fa4" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="f514-6cf9-d3d3-392e" name="Structure Point 1" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="20a7-88cd-2cff-ccc0" name="Structure Point 2" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="5d71-4108-0176-bb64" name="Structure Point 3" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="c1ef-869a-1b92-a241" name="Structure Point 5" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="2d01-d649-0c50-e59f" name="Structure Point 4" hidden="false" collective="false" import="true" type="upgrade"/>
-          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -6147,6 +6282,43 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="915c-f54f-b791-a7ca" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7589-29c8-2b40-0360" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9e8-36a0-a5eb-9744" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9fc4-c5f1-aeb9-2ecd" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="3c56-fc90-17b3-e3a1">
+              <entryLinks>
+                <entryLink id="3c56-fc90-17b3-e3a1" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="6666-6749-d87f-1dad" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="fd15-d3e8-4de9-0e7f" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="1ef2-6101-f731-90a6" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="82a7-5a91-3aa7-5b84" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="9fdc-6d46-4162-4abe" name="Weapons" hidden="false" collective="false" import="true">
@@ -6196,35 +6368,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="75b3-312e-2026-816e" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="d009-44d1-0f3c-1f3c">
-          <entryLinks>
-            <entryLink id="d009-44d1-0f3c-1f3c" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="d80c-4e52-45a5-7bef" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="7061-97a9-664f-f98d" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="bf9c-e660-65ad-f45d" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="cac5-0ec7-9f08-e52d" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="156b-66ab-2b21-a8a8" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="35ff-94df-2fde-3ad0">
           <constraints>
@@ -6738,6 +6881,43 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="4604-8f3c-441a-4747" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a221-a1fe-938e-b101" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e047-a7fc-e90a-717d" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="d780-076a-52a4-c0e1" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="1b08-b1f7-c03c-802a">
+              <entryLinks>
+                <entryLink id="1b08-b1f7-c03c-802a" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="7414-a5fd-6c2b-7e4f" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="cb52-3556-d192-886a" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="855a-31f2-4328-5fb8" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="b72a-3b5d-1124-68b3" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="4b56-5f30-cda0-99fa" name="Weapons" hidden="false" collective="false" import="true">
@@ -6787,35 +6967,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="350b-2560-959c-a3ed" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="bc2d-5d9c-83e9-e16a">
-          <entryLinks>
-            <entryLink id="bc2d-5d9c-83e9-e16a" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦾⦾⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="be1b-c780-0b2e-1c79" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦾⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="87e8-be32-8233-2399" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦾⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="5e6e-ef3b-cf57-fce1" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦿⦾"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="abdd-6787-ccab-95f8" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-              <modifiers>
-                <modifier type="append" field="name" value="⦿⦿⦿⦿⦿"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="6d28-12a3-66b9-5c9b" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6d5-5c43-28f8-318b">
           <constraints>
@@ -6945,31 +7096,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
           </characteristics>
         </profile>
-        <profile id="bea6-eb1f-1d8a-af69" name="Acastus Knight Banner Structure Point 5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="aaf1-7635-cf01-e46b" name="Acastus Knight Banner Structure Point 4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="8ea5-8611-a382-b0d6" name="Acastus Knight Banner Structure Point 3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="0a8e-f6ba-d344-b42c" name="Acastus Knight Banner Structure Point 2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="7207-11d2-e344-67e3" name="Acastus Knight Banner Structure Point 1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
         <profile id="858f-4f88-022b-298c" name="Acastus Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
             <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">7&quot;</characteristic>
@@ -6981,16 +7107,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <characteristic name="Scale" typeId="5359-4d2b-082b-546a">5 (Grandis)</characteristic>
           </characteristics>
         </profile>
-        <profile id="d325-0937-8b14-f56e" name="Acastus Knight Banner Structure Point 6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="4265-d7c5-c370-a7ee" name="Acastus Knight Banner Structure Point 7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
       </profiles>
       <rules>
         <rule id="34c7-89b7-04b7-f19e" name="Acastus Knight Artillery" hidden="false">
@@ -7000,6 +7116,66 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       <categoryLinks>
         <categoryLink id="2c98-724d-3c3d-7b5e" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9c3d-0584-6da5-52c5" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bda7-f7bb-3968-79c7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2b3-2058-9a2b-95be" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="41e4-7ede-0b3e-1f19" name="Acastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="900b-24b9-ffb0-c1b8">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf01-ab6d-486c-3c30" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5229-4318-9c58-3d84" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="900b-24b9-ffb0-c1b8" name="Structure Point 1" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5568-e90e-38da-1821" name="Structure Point 2" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f1dc-d4ad-c6ea-e08c" name="Structure Point 3" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="744d-a247-fb4a-1238" name="Structure Point 5" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4d0c-7caf-e22d-8172" name="Structure Point 4" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8fbe-b276-6c95-09b7" name="Structure Point 7" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="03ee-6575-fd66-a3c9" name="Structure Point 5" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="2882-56f0-4672-741a" name="Knight Hulls" hidden="false" collective="false" import="true">
           <modifiers>
@@ -7021,21 +7197,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <entryLinks>
             <entryLink id="6ff4-90de-cfdc-bc90" name="Acastus Knight" hidden="false" collective="false" import="true" targetId="69b3-e7ac-9cec-ad72" type="selectionEntry"/>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d029-b8e9-d6db-bd4b" name="Acastus Structure Point" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d65-8bcc-2b5b-8611" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dabe-42cd-ae72-e89e" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="aa98-7bfb-9baa-c2a6" name="Structure Point 1" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="310c-6f3e-aaaf-c7a4" name="Structure Point 2" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="ede8-4994-f66f-9375" name="Structure Point 3" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="d5c0-4a06-7cf2-7304" name="Structure Point 5" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="5a05-d487-abd6-6d13" name="Structure Point 4" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="e15a-feea-6a6e-6f0d" name="Structure Point 7" hidden="false" collective="false" import="true" type="upgrade"/>
-            <selectionEntry id="cf70-57cd-55ad-438c" name="Structure Point 5" hidden="false" collective="false" import="true" type="upgrade"/>
-          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
