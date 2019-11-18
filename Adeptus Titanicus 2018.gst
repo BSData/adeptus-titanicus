@@ -2258,15 +2258,15 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <modifier type="append" field="name" value="⦿⦾⦾⦾"/>
               </modifiers>
             </entryLink>
-          <entryLink id="30a3-6c5b-6094-ad78" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+            <entryLink id="30a3-6c5b-6094-ad78" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
               <modifiers>
                 <modifier type="append" field="name" value="⦿⦿⦾⦾"/>
               </modifiers>
             </entryLink>
             <entryLink id="65c5-8298-de1c-ac2c" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-                <modifiers>
-                  <modifier type="append" field="name" value="⦿⦿⦿⦾"/>
-                </modifiers>
+              <modifiers>
+                <modifier type="append" field="name" value="⦿⦿⦿⦾"/>
+              </modifiers>
             </entryLink>
             <entryLink id="f758-56c9-43f3-ed4a" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
               <modifiers>
@@ -2785,26 +2785,6 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
           </characteristics>
         </profile>
-        <profile id="4625-257e-3231-5e44" name="Questoris Support Banner Structure Point 4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="be11-a1d8-7670-e1f4" name="Questoris Support Banner Structure Point 3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="c937-db5c-296a-3382" name="Questoris Support Banner Structure Point 2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="55ec-58bd-e472-cbad" name="Questoris Support Banner Structure Point 1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="8231-1078-b345-f9de" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
@@ -2834,6 +2814,18 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
           <entryLinks>
             <entryLink id="8371-c1b8-3c6e-1174" name="Questoris Knight" hidden="false" collective="false" import="true" targetId="5eb2-54c8-ba72-1bcf" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d4fc-61c1-687d-ef3b" name="Questoris Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="c92c-03ca-ea67-c68c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b93-2ee7-e5dd-a0e1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c0e-ef37-9d70-8dcd" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c92c-03ca-ea67-c68c" name="Structure Point 1" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="bf14-92b1-8c93-327f" name="Structure Point 2" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="0835-e548-8387-4d7e" name="Structure Point 3" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="48a6-fd85-cc48-a9ea" name="Structure Point 4" hidden="false" collective="false" import="true" type="upgrade"/>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -3885,31 +3877,6 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
           </characteristics>
         </profile>
-        <profile id="1a69-790d-33e9-3d07" name="Cerastus Knight Banner Structure Point 5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="64a4-a1d4-4b2d-4faa" name="Cerastus Knight Banner Structure Point 4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="41ff-a8b6-0602-362a" name="Cerastus Knight Banner Structure Point 3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="ba19-f304-f0cb-716a" name="Cerastus Knight Banner Structure Point 2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="c7e4-0a07-8452-99fa" name="Cerastus Knight Banner Structure Point 1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
         <profile id="4cf8-05ea-ff5b-5752" name="Cerastus Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
             <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">12&quot;</characteristic>
@@ -3951,6 +3918,19 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
           <entryLinks>
             <entryLink id="e018-6fef-2f79-88bc" name="Cerastus Knight" hidden="false" collective="false" import="true" targetId="71a1-ef51-b47e-2983" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="13f3-285e-c46d-8ad4" name="Cersastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="f514-6cf9-d3d3-392e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d068-dba5-3669-d7c3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ee6-d32a-378a-4fa4" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f514-6cf9-d3d3-392e" name="Structure Point 1" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="20a7-88cd-2cff-ccc0" name="Structure Point 2" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="5d71-4108-0176-bb64" name="Structure Point 3" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="c1ef-869a-1b92-a241" name="Structure Point 5" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="2d01-d649-0c50-e59f" name="Structure Point 4" hidden="false" collective="false" import="true" type="upgrade"/>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -6810,7 +6790,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         </selectionEntryGroup>
         <selectionEntryGroup id="350b-2560-959c-a3ed" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="bc2d-5d9c-83e9-e16a">
           <entryLinks>
-          <entryLink id="bc2d-5d9c-83e9-e16a" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+            <entryLink id="bc2d-5d9c-83e9-e16a" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
               <modifiers>
                 <modifier type="append" field="name" value="⦿⦾⦾⦾⦾"/>
               </modifiers>
@@ -7041,6 +7021,21 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <entryLinks>
             <entryLink id="6ff4-90de-cfdc-bc90" name="Acastus Knight" hidden="false" collective="false" import="true" targetId="69b3-e7ac-9cec-ad72" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d029-b8e9-d6db-bd4b" name="Acastus Structure Point" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d65-8bcc-2b5b-8611" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dabe-42cd-ae72-e89e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="aa98-7bfb-9baa-c2a6" name="Structure Point 1" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="310c-6f3e-aaaf-c7a4" name="Structure Point 2" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="ede8-4994-f66f-9375" name="Structure Point 3" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="d5c0-4a06-7cf2-7304" name="Structure Point 5" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="5a05-d487-abd6-6d13" name="Structure Point 4" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="e15a-feea-6a6e-6f0d" name="Structure Point 7" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="cf70-57cd-55ad-438c" name="Structure Point 5" hidden="false" collective="false" import="true" type="upgrade"/>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
