@@ -553,14 +553,18 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="9ea5-7d31-c03a-5d16" name="Body Status" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="9ea5-7d31-c03a-5d16" name="Body Status" hidden="false" collective="false" import="true" defaultSelectionEntryId="59bd-5186-d156-7809">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54d2-0d1c-ce79-7952" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a16-4dfc-d88d-af02" type="min"/>
+              </constraints>
               <selectionEntries>
-                <selectionEntry id="59bd-5186-d156-7809" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="59bd-5186-d156-7809" name="Body ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3333-fe14-7042-2fe0" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="6958-b016-77e8-c29b" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="6958-b016-77e8-c29b" name="Body ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -571,12 +575,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c9d5-d9b7-988a-3e8f" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c9d5-d9b7-988a-3e8f" name="Body ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da72-ff95-1fb3-f96f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bdf9-1255-7fe4-605a" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="bdf9-1255-7fe4-605a" name="Body ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -587,12 +591,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5a34-3768-ba62-a8ac" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="5a34-3768-ba62-a8ac" name="Body ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f43c-9a65-7ada-42b4" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="6631-28d9-be4a-840a" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="6631-28d9-be4a-840a" name="Body ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -603,12 +607,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5c5d-b7e0-27d2-9b93" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="5c5d-b7e0-27d2-9b93" name="Body ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26b3-2ff4-ecd9-5892" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="fe1d-641c-fade-9bb3" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="fe1d-641c-fade-9bb3" name="Body ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -619,12 +623,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="92d1-590d-0e80-1ecb" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="92d1-590d-0e80-1ecb" name="Body ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5003-0fb6-01c1-640f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="963f-d8f5-69b3-527f" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="963f-d8f5-69b3-527f" name="Body ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -635,12 +639,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b668-4d2a-800c-05eb" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="b668-4d2a-800c-05eb" name="Body ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98bf-9f8f-6702-d76e" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8266-295c-fb8e-bf34" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="8266-295c-fb8e-bf34" name="Body ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -651,12 +655,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f7de-7fe8-f39a-b937" name="7" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="f7de-7fe8-f39a-b937" name="Body ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a19-4989-d9ad-588c" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1790-7348-dac5-61ca" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="1790-7348-dac5-61ca" name="Body ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -671,7 +675,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="d54e-9a95-cb9a-6618" name="Body Manifold" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
+            <entryLink id="d54e-9a95-cb9a-6618" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -693,14 +697,18 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="a049-0f1c-59f2-59f9" name="Head Status" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="a049-0f1c-59f2-59f9" name="Head Status" hidden="false" collective="false" import="true" defaultSelectionEntryId="7b4b-c92a-0650-3ba2">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43d7-a27f-55b0-e3fa" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de7d-5452-1e88-a300" type="min"/>
+              </constraints>
               <selectionEntries>
-                <selectionEntry id="7b4b-c92a-0650-3ba2" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="7b4b-c92a-0650-3ba2" name="Head ⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee2f-40f9-6dd9-71d7" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="5238-3213-ec28-3811" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="5238-3213-ec28-3811" name="Head ⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -711,12 +719,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2138-30a2-2293-0037" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2138-30a2-2293-0037" name="Head ⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3742-abfd-a05d-fb0d" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1981-827a-584a-af29" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="1981-827a-584a-af29" name="Head ⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -727,12 +735,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1689-a5f7-918d-ef2f" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1689-a5f7-918d-ef2f" name="Head ⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d17d-2940-1ee9-dc39" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8302-077e-7e46-e958" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="8302-077e-7e46-e958" name="Head ⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -743,12 +751,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3ce7-9a36-49e5-42ba" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3ce7-9a36-49e5-42ba" name="Head ⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f4c-7d0e-3636-5bd1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="71c3-f408-87cf-57a8" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="71c3-f408-87cf-57a8" name="Head ⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -759,12 +767,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="8760-8659-a955-50bc" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="8760-8659-a955-50bc" name="Head ⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a14-e3e7-dcff-af89" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b9aa-c025-508a-e40b" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="b9aa-c025-508a-e40b" name="Head ⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -775,12 +783,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d9fc-c438-31f8-0802" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="d9fc-c438-31f8-0802" name="Head ⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02bf-6f48-b2df-a935" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7e01-a540-f4a3-79cb" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="7e01-a540-f4a3-79cb" name="Head ⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -795,7 +803,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="2e25-7009-9f13-e74e" name="Head Manifold" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
+            <entryLink id="2e25-7009-9f13-e74e" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -817,14 +825,18 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="2736-f5dc-9b2a-8866" name="Legs Status" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="2736-f5dc-9b2a-8866" name="Legs Status" hidden="false" collective="false" import="true" defaultSelectionEntryId="99b4-2e5d-ce48-cf2a">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9318-dd92-9d62-00a8" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dae9-adba-bbcf-b7b8" type="max"/>
+              </constraints>
               <selectionEntries>
-                <selectionEntry id="99b4-2e5d-ce48-cf2a" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="99b4-2e5d-ce48-cf2a" name="Legs ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b7-214e-7778-e384" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="32e4-fc75-274e-f3ff" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="32e4-fc75-274e-f3ff" name="Legs ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -835,12 +847,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1456-e728-7f3b-8841" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1456-e728-7f3b-8841" name="Legs ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eb6-4779-e9c7-d317" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2144-357d-c1e8-097d" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="2144-357d-c1e8-097d" name="Legs ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -851,12 +863,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1ed5-d511-be9b-b584" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1ed5-d511-be9b-b584" name="Legs ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f21e-cd67-4f72-9c4a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c8d2-7ace-9c36-39da" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="c8d2-7ace-9c36-39da" name="Legs ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -867,12 +879,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3b6e-b62b-82f7-5366" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3b6e-b62b-82f7-5366" name="Legs ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b421-ee1b-45ab-0532" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b63e-c287-43df-34f2" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="b63e-c287-43df-34f2" name="Legs ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -883,12 +895,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5cbb-f19a-2693-ecb9" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="5cbb-f19a-2693-ecb9" name="Legs ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="225f-1b81-8934-bc26" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7d1c-43d0-1619-166d" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="7d1c-43d0-1619-166d" name="Legs ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -899,12 +911,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1d84-e2fd-8ea6-9840" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1d84-e2fd-8ea6-9840" name="Legs ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7150-85f0-025d-76a9" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1e2f-972b-647e-fe1d" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="1e2f-972b-647e-fe1d" name="Legs ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -915,12 +927,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="de12-3955-d463-615d" name="7" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="de12-3955-d463-615d" name="Legs ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bf5-f5cb-1106-8d3e" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8acf-27e2-25c0-c1b6" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="8acf-27e2-25c0-c1b6" name="Legs ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -935,7 +947,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="6859-a04d-0179-9ab2" name="Legs Manifold" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+            <entryLink id="6859-a04d-0179-9ab2" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -1061,7 +1073,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c001-f0e2-7127-994c" name="Plasma Reactor 5 Orange" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c001-f0e2-7127-994c" name="Plasma Reactor ⦿⦿⦿⦿⦿ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="366b-39e2-6477-5d2c" type="max"/>
               </constraints>
@@ -1070,7 +1082,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="68f8-ace9-113f-e78c" name="Plasma Reactor 6 Red" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="68f8-ace9-113f-e78c" name="Plasma Reactor ⦿⦿⦿⦿⦿⦿ Red(6)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c44b-95b5-97c4-456f" type="max"/>
               </constraints>
@@ -1142,18 +1154,18 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="1b3e-c78e-e4d9-c2ef" name="Body Status" hidden="false" collective="false" import="true" defaultSelectionEntryId="e562-dc55-06b1-9ac7">
+            <selectionEntryGroup id="1b3e-c78e-e4d9-c2ef" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="e562-dc55-06b1-9ac7">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1a7-7475-6ba5-625f" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4f0-63b6-118d-16f9" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="e562-dc55-06b1-9ac7" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="e562-dc55-06b1-9ac7" name="Body ⦿⦾⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46f1-59ed-580e-d365" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a323-7e80-9040-bf45" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="a323-7e80-9040-bf45" name="Body ⦿⦾⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1164,12 +1176,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="564b-9bb9-481c-59d9" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="564b-9bb9-481c-59d9" name="Body ⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7299-e280-b14f-e867" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2c02-74e6-e759-3ed9" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="2c02-74e6-e759-3ed9" name="Body ⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1180,12 +1192,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="8a9e-1116-3c49-6a33" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="8a9e-1116-3c49-6a33" name="Body ⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e27b-2741-3dda-79e1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c418-8893-8e4a-ae30" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="c418-8893-8e4a-ae30" name="Body ⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1196,12 +1208,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="33e6-110c-ca43-deaa" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="33e6-110c-ca43-deaa" name="Body ⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8afd-aba9-e2ce-7d59" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="6d76-4147-c053-0933" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="6d76-4147-c053-0933" name="Body ⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1212,12 +1224,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9f0b-7ad4-5916-91da" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9f0b-7ad4-5916-91da" name="Body ⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e78d-bc98-c31e-1638" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="04ec-5244-60ff-ac87" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="04ec-5244-60ff-ac87" name="Body ⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1228,12 +1240,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e9f8-78bd-40a8-c0cf" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="e9f8-78bd-40a8-c0cf" name="Body ⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b4a-c594-b95f-7bb1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bf3a-e647-e046-9192" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="bf3a-e647-e046-9192" name="Body ⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1244,12 +1256,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b45e-21e8-0caa-417a" name="7" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="b45e-21e8-0caa-417a" name="Body ⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9723-a928-0ac5-3401" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e711-f3f1-da43-2393" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e711-f3f1-da43-2393" name="Body ⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1260,12 +1272,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="cdd1-b1ef-cec5-cbf3" name="8" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="cdd1-b1ef-cec5-cbf3" name="Body ⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d2f-084d-6fe7-04ad" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e4cd-dbc2-481f-a67a" name="8" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e4cd-dbc2-481f-a67a" name="Body ⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1280,7 +1292,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="bcd7-6983-aec4-82de" name="Body Manifold" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
+            <entryLink id="bcd7-6983-aec4-82de" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -1302,18 +1314,18 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="436f-a436-9bad-a8f3" name="Head Status" hidden="false" collective="false" import="true" defaultSelectionEntryId="47fe-9aed-faad-538e">
+            <selectionEntryGroup id="436f-a436-9bad-a8f3" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="47fe-9aed-faad-538e">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fbf-ce2c-b1f4-a304" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3d2-6b93-1e28-935b" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="47fe-9aed-faad-538e" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="47fe-9aed-faad-538e" name="Head ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee66-dbb7-61bc-4fa9" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="3661-ce55-e831-2aa4" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="3661-ce55-e831-2aa4" name="Head ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1324,12 +1336,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3306-2159-3e45-0bef" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3306-2159-3e45-0bef" name="Head ⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4a8-c59f-32d9-12c1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7c58-1bd2-b55e-f217" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="7c58-1bd2-b55e-f217" name="Head ⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1340,12 +1352,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9fb4-4145-8a65-b41c" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9fb4-4145-8a65-b41c" name="Head ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cacd-c970-1dac-5edf" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bd72-bc31-2049-a665" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="bd72-bc31-2049-a665" name="Head ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1356,12 +1368,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e9da-f4b0-f167-081e" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="e9da-f4b0-f167-081e" name="Head ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5afa-dc55-e702-561a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2337-aaf5-2f27-052a" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="2337-aaf5-2f27-052a" name="Head ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1372,12 +1384,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9001-9bf6-34ca-7bdd" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9001-9bf6-34ca-7bdd" name="Head ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95d2-3bcd-92ad-ca12" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e3ac-1717-81e1-0686" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e3ac-1717-81e1-0686" name="Head ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1388,12 +1400,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="536d-722d-5c2f-b0e5" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="536d-722d-5c2f-b0e5" name="Head ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1153-0575-46c0-ebf1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="5289-a19c-fb3a-7619" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="5289-a19c-fb3a-7619" name="Head ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1404,12 +1416,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b549-db59-f757-48c0" name="7" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="b549-db59-f757-48c0" name="Head ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0327-fb38-dbc4-1ca0" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="f8a1-e77a-6fcd-be9d" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="f8a1-e77a-6fcd-be9d" name="Head ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1424,7 +1436,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="4de1-709b-c8e0-fae8" name="Head Manifold" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
+            <entryLink id="4de1-709b-c8e0-fae8" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -1446,18 +1458,18 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="0e14-822b-8f3c-61e3" name="Legs Status" hidden="false" collective="false" import="true" defaultSelectionEntryId="dbb9-4a9e-75b9-cc09">
+            <selectionEntryGroup id="0e14-822b-8f3c-61e3" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="dbb9-4a9e-75b9-cc09">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc0-d97f-aaa7-7fa0" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30de-d598-0424-4321" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="dbb9-4a9e-75b9-cc09" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="dbb9-4a9e-75b9-cc09" name="Legs ⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c1d-2e40-3a0c-b249" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="726b-c370-f63b-e41f" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="726b-c370-f63b-e41f" name="Legs ⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1468,12 +1480,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="48a3-4632-38dd-c0c9" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="48a3-4632-38dd-c0c9" name="Legs ⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="149e-906f-652e-cafc" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="05ce-462a-be7f-8aff" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="05ce-462a-be7f-8aff" name="Legs ⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1484,12 +1496,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c181-1b84-ee2d-4823" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c181-1b84-ee2d-4823" name="Legs ⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbf0-1711-f7f3-1b37" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b9e9-532d-3223-dd8f" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="b9e9-532d-3223-dd8f" name="Legs ⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1500,12 +1512,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="411a-fc8f-a0d0-256e" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="411a-fc8f-a0d0-256e" name="Legs ⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0586-c28a-ae2b-7a6b" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="126d-ed56-1c7d-cb48" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="126d-ed56-1c7d-cb48" name="Legs ⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1516,12 +1528,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="773f-12c8-f27a-0582" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="773f-12c8-f27a-0582" name="Legs ⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f703-6866-946d-a1ae" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="73f0-3283-66f5-aeca" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="73f0-3283-66f5-aeca" name="Legs ⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1532,12 +1544,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2e23-bc7b-6ce8-d1ef" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2e23-bc7b-6ce8-d1ef" name="Legs ⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a9d-22c2-214f-bee8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="47a7-1f9a-7c9d-ec1e" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="47a7-1f9a-7c9d-ec1e" name="Legs ⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1548,12 +1560,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a0c2-2a54-0d0d-e6ec" name="7" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="a0c2-2a54-0d0d-e6ec" name="Legs ⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc52-6aa5-e294-1c8a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e2b8-312f-367f-f3b8" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e2b8-312f-367f-f3b8" name="Legs ⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1564,12 +1576,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="04f1-a159-5efd-9aad" name="8" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="04f1-a159-5efd-9aad" name="Legs ⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec4a-9b73-2e39-e316" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b62f-3b61-1b62-0e0c" name="8" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="b62f-3b61-1b62-0e0c" name="Legs ⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1584,7 +1596,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="9507-5626-4569-5a17" name="Legs Manifold" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+            <entryLink id="9507-5626-4569-5a17" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -1723,7 +1735,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="159c-5ead-c611-6c48" name="Plasma Reactor 5 Orange" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="159c-5ead-c611-6c48" name="Plasma Reactor ⦿⦿⦿⦿⦿ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5a2-d454-dc01-93a7" type="max"/>
               </constraints>
@@ -1732,7 +1744,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="eed8-8764-dd14-a828" name="Plasma Reactor 7 Red" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="eed8-8764-dd14-a828" name="Plasma Reactor ⦿⦿⦿⦿⦿⦿⦿ Red(7)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a78e-5239-ef33-27cb" type="max"/>
               </constraints>
@@ -1803,106 +1815,114 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntries>
-            <selectionEntry id="18df-96b6-5f64-c368" name="1" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="6af1-2245-c637-6ede" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="f11f-d438-e068-55b0">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eef0-5807-2c6a-0a7a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c7e-dd7a-3105-5f09" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7af3-c5aa-d85f-821b" type="min"/>
               </constraints>
-              <profiles>
-                <profile id="3851-772d-c979-f95a" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8fee-c6ff-3abb-9269" name="2" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ca-ec7d-4c9b-bee0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="ce97-8d0e-f042-3ee2" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="380a-c32c-8171-ad1d" name="3" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42c9-bb05-8747-84bf" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="3d49-8668-b0a1-b661" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="620c-4be5-7941-0e88" name="4" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c189-1ea0-7a36-f8e3" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7f8b-4431-357c-9cba" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b0ab-4908-99e2-b0a8" name="5" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="866c-9ba0-a048-9ed5" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f888-38ea-6976-ace5" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="74eb-c082-d3f1-1615" name="6" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a60-a412-6d91-de15" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="3290-5e49-a0d5-b9e1" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="f11f-d438-e068-55b0" name="Body ⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b47-4b4b-c619-9406" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="87e2-3a49-fab7-bd12" name="Body ⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6fc2-0e16-5827-24fd" name="Body ⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f03-3a88-ad84-4f4b" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="6a94-98cf-58ae-fcdd" name="Body ⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="999b-f262-59d6-e572" name="Body ⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e787-611f-73d2-fe93" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="6f83-8152-1e48-9c39" name="Body ⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="990f-f186-8e07-541f" name="Body ⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a13c-adc0-c84d-9e05" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="a181-252e-6db6-d75b" name="Body ⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="75d0-aa01-b501-e230" name="Body ⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc62-ffa5-6ba4-bbfc" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="bc46-4c24-f5af-7335" name="Body ⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3113-ca44-56db-08e8" name="Body ⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6379-0b41-a783-680e" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="4542-e51b-c823-6d03" name="Body ⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="1ce4-f4f0-21f3-4b4b" name="Body Manifold" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
+            <entryLink id="1ce4-f4f0-21f3-4b4b" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -1923,106 +1943,114 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntries>
-            <selectionEntry id="03c9-c285-d5ef-8a6e" name="6" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9f02-2f8d-abb8-3805" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="d606-2a1c-8c9c-5471">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48db-a77b-71ab-5e14" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ad7-3499-e3e1-d1f3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10df-41b2-4ad2-40ff" type="min"/>
               </constraints>
-              <profiles>
-                <profile id="c3fa-be86-5d6f-61be" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9fa6-b9ac-b52d-35e9" name="5" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ec1-a8c0-f92a-8372" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="e5b5-9782-d0a3-0dbb" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6f1c-1097-1754-dc30" name="4" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa5e-eb1f-f04e-e532" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="cf90-cd4d-05ea-067f" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d8bd-0825-bde4-48ab" name="3" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f46f-8c3c-9811-bfe9" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="6c7a-b9f2-ba8e-20cb" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="422c-3399-49b8-aabf" name="2" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7da9-af72-17b3-ab38" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="ce5e-6d61-ae8c-092a" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6bd9-e510-53fe-0491" name="1" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ecb-74eb-9ac5-c842" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="5d12-ba7b-677c-f927" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="d606-2a1c-8c9c-5471" name="Legs ⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a85-6431-9191-b213" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="5249-a13b-4fe1-91d7" name="Legs ⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f344-b4ed-fc30-4196" name="Legs ⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fd8-4db5-9456-89fc" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="e0c9-2995-1236-4f36" name="Legs ⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fdf1-4ae7-29ee-27bd" name="Legs ⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8492-812f-45c6-e896" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="76e5-349f-a6f1-3a3b" name="Legs ⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f78e-5af2-caf9-7ad1" name="Legs ⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3636-6a8e-c673-7348" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="9615-e12b-7505-8bf2" name="Legs ⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e4a7-e63d-a8cd-3418" name="Legs ⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abb9-db1d-d63c-759a" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="475f-7384-b99a-339c" name="Legs ⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e3ad-a50d-b730-4057" name="Legs ⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="686f-4be2-0a3f-5426" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="7fb4-81ea-7881-6d72" name="Legs ⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="e7d5-0eb8-3b53-3154" name="Legs Manifold" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+            <entryLink id="e7d5-0eb8-3b53-3154" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -2043,90 +2071,98 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntries>
-            <selectionEntry id="1c15-8d26-27d9-fee4" name="5" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="54e3-a1e1-034a-f2c2" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="3271-618c-4f38-ecc0">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e7c-9518-f8fd-206a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2304-f1cd-8c40-9e8b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e76d-19f7-900e-5426" type="min"/>
               </constraints>
-              <profiles>
-                <profile id="1a4f-d840-f544-af73" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="545a-8783-5056-cef3" name="4" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="895b-7ab9-03b7-d999" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="beea-48d9-0ec3-f4b5" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c838-c8cb-588d-ac4b" name="3" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b596-900f-d8b3-f6ce" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="8623-2a63-bea7-e0a8" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d1e7-70c6-5023-e1ad" name="2" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37ef-0a8d-fb15-8b55" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="df0f-3402-4cfe-e02e" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="802d-84d7-600d-9d92" name="1" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca92-5886-ad5d-96cd" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c77e-cc09-fa41-bf02" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="3271-618c-4f38-ecc0" name="Head ⦿⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b22-9671-6112-ee98" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="95d4-96cf-8696-9dc0" name="Head ⦿⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a9c4-637c-a072-bda6" name="Head ⦿⦿⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73d1-e614-9d2d-b24e" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="d01a-b0ab-ece0-c5e8" name="Head ⦿⦿⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4c76-dfa7-e70b-0458" name="Head ⦿⦿⦿⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b89-2942-07e1-f4e3" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="e8b8-850d-63fd-f0c9" name="Head ⦿⦿⦿⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="41fe-b19b-c785-862f" name="Head ⦿⦿⦿⦿⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a9b-fa8c-b6fc-3fe5" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="f21b-c6c3-b834-ee19" name="Head ⦿⦿⦿⦿⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="23ac-b10a-9fc0-b0cd" name="Head ⦿⦿⦿⦿⦿(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="731e-cd94-068f-3488" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="54d1-98b0-e30c-dad3" name="Head ⦿⦿⦿⦿⦿(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="b187-2994-731b-0763" name="Head Manifold" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
+            <entryLink id="b187-2994-731b-0763" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -2212,7 +2248,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8e13-79cd-9c07-3918" name="Plasma Reactor 5 Red" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="8e13-79cd-9c07-3918" name="Plasma Reactor ⦿⦿⦿⦿⦿ Red(5)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd02-eb79-e76c-edc0" type="max"/>
               </constraints>
@@ -3701,13 +3737,13 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="15dc-a57d-f1f3-41a6" name="Manifold" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="15dc-a57d-f1f3-41a6" name=" Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec0f-c79f-18dd-ff5b" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="381a-291f-d6e9-dfe5" type="min"/>
       </constraints>
       <entryLinks>
-        <entryLink id="68db-6514-a4ed-8e2d" name="Manifold" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+        <entryLink id="68db-6514-a4ed-8e2d" name=" Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -5684,12 +5720,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <selectionEntryGroups>
             <selectionEntryGroup id="a12f-82fd-dda8-e6a1" name="Body Status" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="7aa2-8e28-1878-9c34" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="7aa2-8e28-1878-9c34" name="Body ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2230-05dc-9e1b-d40b" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="15b6-7a4a-f9d0-2d8d" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="15b6-7a4a-f9d0-2d8d" name="Body ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5700,12 +5736,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="170d-6ebf-be21-a92f" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="170d-6ebf-be21-a92f" name="Body ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec5c-1b74-aa8c-5dc8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e471-7e3f-fdac-f0ef" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e471-7e3f-fdac-f0ef" name="Body ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5716,12 +5752,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e53c-5baa-ca96-abf6" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="e53c-5baa-ca96-abf6" name="Body ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6184-c306-40e0-450c" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="5b0d-e9e1-12db-34eb" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="5b0d-e9e1-12db-34eb" name="Body ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5732,12 +5768,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d1ed-0daf-37ff-6f6c" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="d1ed-0daf-37ff-6f6c" name="Body ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baa6-45f3-f972-513a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e441-772c-65e9-2cf7" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e441-772c-65e9-2cf7" name="Body ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5748,12 +5784,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5b59-d7ae-daea-4673" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="5b59-d7ae-daea-4673" name="Body ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a66-f66d-e703-973b" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c56d-b950-8d2e-4756" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="c56d-b950-8d2e-4756" name="Body ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5764,12 +5800,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f8cc-bbe5-2d1d-e348" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="f8cc-bbe5-2d1d-e348" name="Body ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd9-8f25-f10c-4acc" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="f379-664c-82ae-d0fe" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="f379-664c-82ae-d0fe" name="Body ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5780,12 +5816,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b043-7ada-badd-5191" name="7" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="b043-7ada-badd-5191" name="Body ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="603e-2dd8-9630-18e5" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a753-54e6-1c6c-258a" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="a753-54e6-1c6c-258a" name="Body ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5800,7 +5836,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="8071-8056-ff80-a61b" name="Body Manifold" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
+            <entryLink id="8071-8056-ff80-a61b" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -5824,12 +5860,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <selectionEntryGroups>
             <selectionEntryGroup id="16cb-44c2-a52f-c6cd" name="Head Status" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="7b10-0d8a-ddb5-752d" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="7b10-0d8a-ddb5-752d" name="Head ⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b1-ba89-6c4d-f2fb" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="25bf-faf2-6eec-29ba" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="25bf-faf2-6eec-29ba" name="Head ⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5840,12 +5876,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="db0c-8d34-5696-21a8" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="db0c-8d34-5696-21a8" name="Head ⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59dd-06ca-41f2-a65d" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="ee3c-9932-d9ee-9bdf" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="ee3c-9932-d9ee-9bdf" name="Head ⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5856,12 +5892,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c5be-327a-d3e0-1529" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c5be-327a-d3e0-1529" name="Head ⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a45c-8bf9-0c22-5599" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="d85b-556e-8923-c4c6" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="d85b-556e-8923-c4c6" name="Head ⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5872,12 +5908,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1ab7-9726-329d-447d" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1ab7-9726-329d-447d" name="Head ⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7233-f708-e663-3c2a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="3ecf-2b43-5459-3852" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="3ecf-2b43-5459-3852" name="Head ⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5888,12 +5924,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="df99-c6d1-538a-5bcf" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="df99-c6d1-538a-5bcf" name="Head ⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c73c-7381-60a5-427a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="133c-8a63-8596-e3d0" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="133c-8a63-8596-e3d0" name="Head ⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5904,12 +5940,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1801-950d-3f80-0b4d" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1801-950d-3f80-0b4d" name="Head ⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f1f-f8ca-318a-5a98" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="dcf8-270a-7c47-f5d5" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="dcf8-270a-7c47-f5d5" name="Head ⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5924,7 +5960,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="a7cb-5909-9c38-e05f" name="Head Manifold" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
+            <entryLink id="a7cb-5909-9c38-e05f" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -5948,12 +5984,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <selectionEntryGroups>
             <selectionEntryGroup id="86fc-736f-4efc-c373" name="Legs Status" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="2dab-55f1-270e-cea2" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2dab-55f1-270e-cea2" name="Legs ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0900-cc6d-2b19-00ad" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="71f1-199d-746d-4c1f" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="71f1-199d-746d-4c1f" name="Legs ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5964,12 +6000,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="86f6-cb80-7f75-cbfd" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="86f6-cb80-7f75-cbfd" name="Legs ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0299-a063-a2b8-4eb3" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="180c-442b-e288-b4e9" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="180c-442b-e288-b4e9" name="Legs ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5980,12 +6016,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c4a6-8a81-480d-c391" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c4a6-8a81-480d-c391" name="Legs ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb06-6ad5-f941-2fa4" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="095c-8d01-c6b4-ee10" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="095c-8d01-c6b4-ee10" name="Legs ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5996,12 +6032,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="280a-80fd-b32d-dd97" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="280a-80fd-b32d-dd97" name="Legs ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b21c-ff7a-d3ce-77e3" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="3a2e-c3df-5aa0-a27e" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="3a2e-c3df-5aa0-a27e" name="Legs ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -6012,12 +6048,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2bb2-c21a-9fa7-7de6" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2bb2-c21a-9fa7-7de6" name="Legs ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="410f-4d94-1429-5136" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="fc47-f356-27ec-03e3" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="fc47-f356-27ec-03e3" name="Legs ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -6028,12 +6064,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="53a5-54c2-399a-df50" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="53a5-54c2-399a-df50" name="Legs ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c09-7324-8c88-5ac6" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="9b20-a26b-d424-a98d" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="9b20-a26b-d424-a98d" name="Legs ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -6044,12 +6080,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ce74-dc8e-b7b1-8836" name="7" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="ce74-dc8e-b7b1-8836" name="Legs ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed7c-f8a9-98d7-45a5" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7270-5b96-d159-db69" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="7270-5b96-d159-db69" name="Legs ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -6064,7 +6100,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="2aa1-e161-4e5b-c510" name="Legs Manifold" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+            <entryLink id="2aa1-e161-4e5b-c510" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -6172,7 +6208,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e78b-c4d8-d524-e5ee" name="Plasma Reactor 5 Orange" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e78b-c4d8-d524-e5ee" name="Plasma Reactor ⦿⦿⦿⦿⦿ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84dc-c437-39dc-410d" type="max"/>
               </constraints>
@@ -6181,7 +6217,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d3dd-32b7-b9e6-e8c3" name="Plasma Reactor 6 Red" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d3dd-32b7-b9e6-e8c3" name="Plasma Reactor ⦿⦿⦿⦿⦿⦿ Red(6)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e230-002e-9212-f929" type="max"/>
               </constraints>
@@ -6255,12 +6291,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <selectionEntryGroups>
             <selectionEntryGroup id="3168-160a-17bd-8805" name="Body Status" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="de2e-c221-a52a-a8cb" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="de2e-c221-a52a-a8cb" name="Body ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="394f-a002-2944-5ae6" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="28e9-7b09-afef-01b7" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="28e9-7b09-afef-01b7" name="Body ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6271,12 +6307,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2b54-b1cf-7122-447f" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2b54-b1cf-7122-447f" name="Body ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="591b-b097-c13b-b4c8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c65f-81b5-aa11-ee43" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="c65f-81b5-aa11-ee43" name="Body ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6287,12 +6323,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="452d-5fb3-1728-094e" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="452d-5fb3-1728-094e" name="Body ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2840-6742-f7a0-1208" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="cd09-f502-0b6a-ca4f" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="cd09-f502-0b6a-ca4f" name="Body ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6303,12 +6339,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="92af-ae70-2071-9420" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="92af-ae70-2071-9420" name="Body ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0350-e811-9ce1-ff00" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="ae89-ce77-0e00-b7ba" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="ae89-ce77-0e00-b7ba" name="Body ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -6319,12 +6355,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e1fd-d09d-f535-034a" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="e1fd-d09d-f535-034a" name="Body ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5996-5c61-0ddc-c82f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="63a3-ba61-bb7a-4d93" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="63a3-ba61-bb7a-4d93" name="Body ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -6335,12 +6371,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c72b-0902-ce26-10c5" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c72b-0902-ce26-10c5" name="Body ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fe3-373a-b433-7643" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2b88-0e50-eb71-e328" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="2b88-0e50-eb71-e328" name="Body ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -6351,12 +6387,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="929d-0b90-113a-6f19" name="7" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="929d-0b90-113a-6f19" name="Body ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6806-31dd-36fb-fbc4" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1b7f-8a87-08ce-f20f" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="1b7f-8a87-08ce-f20f" name="Body ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -6371,7 +6407,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="f18b-a806-70e9-1f74" name="Body Manifold" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
+            <entryLink id="f18b-a806-70e9-1f74" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -6395,12 +6431,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <selectionEntryGroups>
             <selectionEntryGroup id="331c-41f1-93f5-fb12" name="Head Status" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="eb54-81e0-3808-9adc" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="eb54-81e0-3808-9adc" name="Head ⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="101c-61ae-ab40-0686" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7d87-e581-462f-4cde" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="7d87-e581-462f-4cde" name="Head ⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6411,12 +6447,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f975-347d-1639-fa9e" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="f975-347d-1639-fa9e" name="Head ⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ac-071b-75ec-d59f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="da99-9c17-2228-eede" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="da99-9c17-2228-eede" name="Head ⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6427,12 +6463,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9ad6-d9e5-0953-ebfd" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9ad6-d9e5-0953-ebfd" name="Head ⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbf1-8bd7-8117-fd8d" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="4e7d-75b2-a12d-44b2" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="4e7d-75b2-a12d-44b2" name="Head ⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6443,12 +6479,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b465-d0d7-b183-4374" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="b465-d0d7-b183-4374" name="Head ⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fa7-2ce1-6d5c-86ae" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a151-8ec5-b7da-9739" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="a151-8ec5-b7da-9739" name="Head ⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -6459,12 +6495,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="507e-a157-b3cb-c164" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="507e-a157-b3cb-c164" name="Head ⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1970-849e-25bf-aad7" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a1b7-9a89-158e-49e9" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="a1b7-9a89-158e-49e9" name="Head ⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -6475,12 +6511,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="535b-ff77-73e5-e5ab" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="535b-ff77-73e5-e5ab" name="Head ⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30e5-42c9-35de-10fa" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a985-cdf7-a322-178f" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="a985-cdf7-a322-178f" name="Head ⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -6495,7 +6531,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="1772-05f9-b122-cfde" name="Head Manifold" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
+            <entryLink id="1772-05f9-b122-cfde" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -6519,12 +6555,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <selectionEntryGroups>
             <selectionEntryGroup id="68b7-5c89-6e3d-86fc" name="Legs Status" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="0db1-4d4b-dc1e-3ede" name="1" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="0db1-4d4b-dc1e-3ede" name="Legs ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9ba-c233-6908-572c" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b82b-ed34-c5b1-9563" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="b82b-ed34-c5b1-9563" name="Legs ⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6535,12 +6571,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="8e61-4220-fb3c-672c" name="2" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="8e61-4220-fb3c-672c" name="Legs ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a662-e3df-ace0-b645" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="26c1-808b-0ea1-7112" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="26c1-808b-0ea1-7112" name="Legs ⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6551,12 +6587,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1218-689d-e653-91fb" name="3" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1218-689d-e653-91fb" name="Legs ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02e8-cb1e-0005-ee4e" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bf3b-13f7-0183-dca0" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="bf3b-13f7-0183-dca0" name="Legs ⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6567,12 +6603,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="27bb-9348-a145-6612" name="4" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="27bb-9348-a145-6612" name="Legs ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ccd-919c-78d8-5fb8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="81f6-dc90-7473-c7ce" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="81f6-dc90-7473-c7ce" name="Legs ⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -6583,12 +6619,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="691f-3383-93d1-0834" name="5" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="691f-3383-93d1-0834" name="Legs ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="076c-19dd-8d64-fbbe" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bd2c-def9-1d79-8013" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="bd2c-def9-1d79-8013" name="Legs ⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -6599,12 +6635,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ab7d-30a5-0744-be33" name="6" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="ab7d-30a5-0744-be33" name="Legs ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5ff-ecdd-000f-91bb" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="50d5-86b4-1102-7ed3" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="50d5-86b4-1102-7ed3" name="Legs ⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -6615,12 +6651,12 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="632b-0b5d-d7b1-88ed" name="7" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="632b-0b5d-d7b1-88ed" name="Legs ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b0-dbc4-b4d6-3e68" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8164-79a4-150a-e082" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="8164-79a4-150a-e082" name="Legs ⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -6635,7 +6671,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="2292-7c49-11c4-921d" name="Legs Manifold" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+            <entryLink id="2292-7c49-11c4-921d" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -6743,7 +6779,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="23a5-a82e-ecac-4867" name="Plasma Reactor 5 Orange" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="23a5-a82e-ecac-4867" name="Plasma Reactor ⦿⦿⦿⦿⦿ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cea-6cf6-ce43-7fe5" type="max"/>
               </constraints>
@@ -6752,7 +6788,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4d10-bb74-7652-04dd" name="Plasma Reactor 6 Red" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4d10-bb74-7652-04dd" name="Plasma Reactor ⦿⦿⦿⦿⦿⦿ Red(6)" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69be-a310-ec59-7398" type="max"/>
               </constraints>
@@ -7715,6 +7751,7 @@ If a player&apos;s battlegroup contains any Squadrons (see page 45), they can ch
       </selectionEntryGroups>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a0b2-b8fc-58d2-90f3" name="Artillery Bombardment" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
@@ -8008,13 +8045,13 @@ is reduced by D3.</description>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="437b-c391-1f5f-8959" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a25-4d22-ad23-5b80" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="8a17-7a12-7607-5131" name="1 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8a17-7a12-7607-5131" name="1 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5413-d4f3-a4c9-1b45" type="max"/>
           </constraints>
@@ -8026,7 +8063,7 @@ is reduced by D3.</description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8f94-127b-43d6-ac8a" name="3 Red" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8f94-127b-43d6-ac8a" name="3 Red Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2424-0d14-3574-1c8c" type="max"/>
           </constraints>
@@ -8038,7 +8075,7 @@ is reduced by D3.</description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a24a-5f46-842d-37c9" name="2 Orange" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a24a-5f46-842d-37c9" name="2 Orange Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d96-83a1-3f26-8615" type="max"/>
           </constraints>
@@ -8053,13 +8090,13 @@ is reduced by D3.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="1d49-39ff-979b-f7f0" name="Body Manifold" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="1d49-39ff-979b-f7f0" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7dc-9821-6283-78e6" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b728-848d-51c3-5848" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="9e12-5e6a-0b22-56dc" name="1 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9e12-5e6a-0b22-56dc" name="1 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c88-34a6-4eb8-b126" type="max"/>
           </constraints>
@@ -8071,7 +8108,7 @@ is reduced by D3.</description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="dbe4-d602-cd6a-ed74" name="3 Red" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="dbe4-d602-cd6a-ed74" name="3 Red Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0427-3a7f-0962-eeba" type="max"/>
           </constraints>
@@ -8084,7 +8121,7 @@ is reduced by D3.</description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3f8f-21b5-9196-914e" name="2 Orange" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3f8f-21b5-9196-914e" name="2 Orange Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c45-fbd0-37a1-7497" type="max"/>
           </constraints>
@@ -8099,13 +8136,13 @@ is reduced by D3.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="9ba2-12fa-8d22-c505" name="Head Manifold" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="9ba2-12fa-8d22-c505" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36fe-b6d4-fc17-8758" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc23-0212-d54d-a48f" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="2aab-7530-eac7-1b38" name="1 Yellow" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2aab-7530-eac7-1b38" name="1 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="047a-2b02-c207-4dec" type="max"/>
           </constraints>
@@ -8117,7 +8154,7 @@ is reduced by D3.</description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a8b4-d852-71dc-d2f0" name="3 Red" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a8b4-d852-71dc-d2f0" name="3 Red Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0125-ddc2-e691-1a41" type="max"/>
           </constraints>
@@ -8130,7 +8167,7 @@ is reduced by D3.</description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="57ca-22ab-6d17-bf18" name="2 Orange" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="57ca-22ab-6d17-bf18" name="2 Orange Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb83-53bd-220c-5858" type="max"/>
           </constraints>
