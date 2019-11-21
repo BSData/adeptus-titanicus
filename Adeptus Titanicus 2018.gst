@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="11" battleScribeVersion="2.02" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="12" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -10,6 +10,7 @@
   </publications>
   <costTypes>
     <costType id="a731-e220-2d8a-41bf" name=" Points" defaultCostLimit="-1.0"/>
+    <costType id="efbf-52f7-fd08-f329" name=" Stratagem Points" defaultCostLimit="-1.0"/>
   </costTypes>
   <profileTypes>
     <profileType id="f6b0-d09f-1acc-9f3e" name="Engine">
@@ -163,12 +164,12 @@ If a roll of 6 To Hit was required, this rule has no effect.</description>
     <categoryEntry id="7130-bbeb-02e3-de28" name="Warp" hidden="false">
       <rules>
         <rule id="c6c8-e060-ed51-a490" name="Warp" publicationId="7236-e1d8-c886-f5fd" page="39" hidden="false">
-          <description>Warp weapons, most famously warp missiles, are fired in realspace but translate to the Warp for the majority of their flight, only returning to reality as they reach their target. If an attack made by a Warp weapon hits its target, make a Location roll (or choose a location if making a Targeted Attack). 
+          <description>Warp weapons, most famously warp missiles, are fired in realspace but translate to the Warp for the majority of their flight, only returning to reality as they reach their target. If an attack made by a Warp weapon hits its target, make a Location roll (or choose a location if making a Targeted Attack).
 
-Then, regardless of whether the target is shielded, roll a D6. 
+Then, regardless of whether the target is shielded, roll a D6.
 
-On a result of 1, the target location loses 1 Structure point. 
-On a result of 2-3, the target location loses D3 Structure points. 
+On a result of 1, the target location loses 1 Structure point.
+On a result of 2-3, the target location loses D3 Structure points.
 On a result of 4-6, the target location suffers Critical Damage.
 
 If the target location is a weapon, on a 1-3 the weapon is disabled. If the weapon is already disabled, it detonates. On a 4-6 the weapon is disabled and the Body loses 1 Structure point. If the weapon is already disabled, it detonates and the Body loses 1 Structure point.</description>
@@ -197,7 +198,53 @@ Note that it is not necessary to make the Hit rolls - these hits are automatic. 
       </rules>
     </categoryEntry>
     <categoryEntry id="6982-2d18-55cb-61e5" name="Maniple" hidden="false"/>
-    <categoryEntry id="917a-77ef-30e4-b812" name="Banner" hidden="false"/>
+    <categoryEntry id="917a-77ef-30e4-b812" name="Banner" hidden="false">
+      <rules>
+        <rule id="59fb-73c8-478f-68c9" name="Banner" publicationId="975a-00f4-pubN65537" hidden="false">
+          <description>Composition of a Banner
+A Banner is made up of a number of Knights acting as a single unit. The reverse of a Banner&apos;s Command Terminal describes its exact composition, along with any options. When a Banner is activated, all of the Knights within it act; individual Knights cannot be activated.
+
+Banners in the Movement Phase
+When a Banner is activated in the Movement phase, each Knight can move up to the Banner&apos;s Speed characteristic in inches. Knights are considered to have a 360° Front arc, and can make
+as many turns as they wish as they move. When the Banner has finished moving, each must be within 3&quot; of another Knight in the Banner - Knight Banners operate in much closer proximity than Titan Squadrons, especially when facing larger war engines. If any of the Knights are outside of this range, the Banner is Shaken - see page 47.
+
+Banners in the Combat Phase
+When a Banner is activated in the Combat phase, it follows the Combat Sequence as if it were a Titan. Instead of attacking with each Knight individually, make an attack with each different weapon in tum. For each weapon, multiply the Dice characteristic by the number of Knights in the Banner that are equipped with that weapon, and which are within range and line of sight of the target. For example,ifa Banner has two Knights armed with rapid fire battle cannon (Dice 2) and one Knight armed with a thermal cannon (Dicer),it would roll four dice when attacking with the battle cannon and one dice when attacking with the thermal cannon.IfsomeKnightsarewithin2&quot; ofthetargetandothersare further away, roll using Ballistic Skill for those that are further, and Weapon Skill for those that are within 2&quot;.
+
+When determining line of sight for a Banner, Knights within the Banner do not block the view of others. Also, remember that Knights have a 360° Front arc,so their weapons can fire in any direction. All of the weapons in a Banner must be fired at the same target, unless the Banner has Split Fire orders, at which point each weapon can be directed at a different target.
+
+Banners cannot make Smash Attacks.
+
+ATTACKING BANNERS. When attacking a Banner, pick a single Knight in the Banner to be the target of the attack. This model is used for purposes ofrange,line ofsight and so on. However, any damage that is caused is applied to the Banner as a whole. As Banners
+do not have Side or Rear arcs, these do not cause modifiers to the Damage roll.
+
+ION SHIELDS. When fighting in a Banner, Knights align their Ion shields, granting them greater protection as a group than individually. Ion shields are different to void shields;ifa rule refers specifically to void shields, it does not affect ion shields, but ifit refers to Shield saves, it will affect both. Note that, unlike void shields, ion shields can be used against attacks that originate from within 2&quot;.
+If a Banner is hit by a shooting attack, hits are resolved (at Step 5 of the Combat Sequence) as follows:
+• Target&apos;s controlling player makes Ion Shield saves.
+• The attacking player makes Armour rolls for any remaining hits.
+To make an Ion Shield save, look up the Ion Shield level on the Banner&apos;s Command Terminal, which varies depending on the number of Knights currently in the Banner and the Strength of the attack. Then roll a D6 for each hit that was scored. For each dice that equals or beats the Ion Shield level, the hit is discarded. Then for each remaining hit, the attacking player makes an Armour roll as described on page 34.
+
+DAMAGING BANNERS. Direct Hits, Devastating Hits and Critical Hits affect Banners differently to Titans, as follows:
+
+Direct Hit: When a Banner suffers a Direct Hit,it loses a Structure point. If it has no Structure points left to lose, one Knight in the Banner is desttoyed instead.
+
+Devastating Hit: When a Banner suffers a Devastating Hit, it loses two Structure points. If the Banner has one Structure point or no Structure points left when it suffers a Devastating Hit, one Knight in the Banner is destroyed instead.
+
+Critical Hit: When a Banner suffers a Critical Hit, it loses two Structure points, then one Knight in the Banner is destroyed.
+If the Banner has one Structure point or no Structure points j left when it suffers a Critical Hit, two Knights in the Banner are destroyed instead.
+
+When a Knight is destroyed, the controlling player chooses one model to remove. The Banner&apos;s Structure Points marker is then immediately reset to the first hole of the track. If a Targeted Attack destroys a Knight, the attacking player can choose which model to remove instead of the controlling player.
+
+BLAST MARKERS, FLAME TEMPLATES AND AREA EFFECTS. When a Banner is hit by a Blast marker or Flame template, total the number of hits scored on the models in the Banner, then apply that many hits to the Banner as a whole. This also applies to attack~with an area effect - catastrophic reactor overloads, environmental effects and so on.
+
+Shaken Banners
+Each time a Knight is removed from a Banner, the Banner must make a Command check. If it is failed, the Banner is Shaken. It immediately loses any orders and an Order dice showing the Shutdown symbol is placed on its Command Terminal to show that it is Shaken. Shaken Banners subtract 3&quot; from their Speed and will suffer a -1 modifier to all Hit rolls.
+When the Banner is activated in the Issue Orders step of the next Strategy phase, make a Command roll for the Shaken Banner. If it is passed, remove the dice. Otherwise, it stays where it is. In either case, the Banner cannot be issued orders.
+
+</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry id="44b5-8770-ea8e-2401" name="Arm" hidden="false"/>
     <categoryEntry id="a499-678c-ed35-c0e8" name="Barrage" hidden="false">
       <rules>
@@ -254,7 +301,44 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
     <categoryEntry id="15bd-0b4b-5cac-dc48" name="LegioTempestus" hidden="false"/>
     <categoryEntry id="0796-178c-50ce-2d1f" name="LegioGryphonicus" hidden="false"/>
     <categoryEntry id="06c2-f93e-7bf5-9fd5" name="LegioAstorum" hidden="false"/>
-    <categoryEntry id="b539-a35c-fe3f-9c34" name="Stratagem" hidden="false"/>
+    <categoryEntry id="b539-a35c-fe3f-9c34" name="Stratagem" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="916e-a7f5-ea1f-c24e" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="a731-e220-2d8a-41bf" scope="roster" value="700.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="unit" type="atLeast"/>
+                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1250.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="unit" type="atMost"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="916e-a7f5-ea1f-c24e" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1250.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="unit" type="greaterThan"/>
+                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1750.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="unit" type="atMost"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="916e-a7f5-ea1f-c24e" value="4.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1750.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="unit" type="greaterThan"/>
+                <condition field="a731-e220-2d8a-41bf" scope="roster" value="2500.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="unit" type="atMost"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="efbf-52f7-fd08-f329" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="916e-a7f5-ea1f-c24e" type="max"/>
+        <constraint field="efbf-52f7-fd08-f329" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="db22-9e54-c120-3e5c" type="min"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="7b17-f14f-4709-e96c" name="LegioDefensor" hidden="false"/>
     <categoryEntry id="cfcc-e5c0-bb0b-db6f" name="LegioAtarus" hidden="false"/>
     <categoryEntry id="56c0-1162-173d-b052" name="LegioSolaria" hidden="false"/>
@@ -271,6 +355,25 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
     <categoryEntry id="223f-6e71-9e4f-939e" name="WarhoundTitan" hidden="false"/>
     <categoryEntry id="7103-9316-d4a5-8caa" name="WarlordTitan" hidden="false"/>
     <categoryEntry id="dd70-1324-743e-7dfe" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false"/>
+    <categoryEntry id="2841-67b5-15d0-8908" name="Allegiance" hidden="false"/>
+    <categoryEntry id="0b8b-755a-cabc-6d70" name="Battlefield Assets" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
+      <profiles>
+        <profile id="2e0d-6258-e5ac-3907" name="Battlefield Assets" publicationId="975a-00f4-pubN65537" page="65" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">Roll a d6. On a 5 or 6, the Battlefield Asset is destroyed.</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa"/>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+ Roll a d6. On a 3 or more, the Battlefield Asset is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8746-c417-9782-3eeb" name="Battlefield Asset" hidden="false">
+          <description>Battlefield Assets can be targeted by attacks, and are hit by Blast markers, Flame templates and area effects (such as exploding reactors) in the same way as a unit. Hit rolls against Battlefield Assets have a -1 penalty at Short range and a -2 penalty at Long range.
+            Units can move across Battlefield Assets without penalty. If
+a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance it will crush it underfoot. Ifit does so, roll a Dro,or a D6 if the Titan&apos;s move ends with its base over the Battlefield Asset. If the result is lower than the Titan&apos;s Scale, the Battlefield Asset is destroyed.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -279,22 +382,28 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="7a3b-42f9-f60d-696a" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink id="0606-1d0c-defb-d6e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="4f07-d070-7d91-0291" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+        <categoryLink id="f372-1970-b16d-17a5" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42d9-cf94-91d9-2571" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70d7-a543-a930-24fe" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="fadd-b45a-3473-bb9a" name="Warhound Squadron" hidden="false" collective="false" type="unit">
+    <selectionEntry id="fadd-b45a-3473-bb9a" name="Warhound Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="4ecd-3664-14f9-f4b9" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5d08-9f18-366e-1827" name="Warhound Titan" hidden="false" collective="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+        <entryLink id="5d08-9f18-366e-1827" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e37a-c15b-7a88-b4a3" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba5f-e2c7-500d-0093" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="1c3a-bf92-d432-7d2f" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="1c3a-bf92-d432-7d2f" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c20a-50aa-9df0-4c39" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48f4-3664-b5a1-1803" type="min"/>
@@ -303,37 +412,160 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="9992-64af-f770-acd6" name="Reaver Titan" hidden="false" collective="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+    <entryLink id="9992-64af-f770-acd6" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="0237-b896-cf2d-fd8c" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="667a-5227-d5ef-a3be" name="Warlord Titan" hidden="false" collective="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+    <entryLink id="667a-5227-d5ef-a3be" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="fd7f-32e2-ba13-32eb" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f800-8048-0564-7b73" name="Questoris Support Banner" hidden="false" collective="false" targetId="2b6b-b476-bd24-8c5c" type="selectionEntry"/>
-    <entryLink id="d63c-4bb8-d8a9-b777" name="Axiom Battleline Maniple" hidden="false" collective="false" targetId="3ca3-42a8-26bb-5676" type="selectionEntry"/>
-    <entryLink id="5192-e107-566f-52c7" name="Venator Light Maniple" hidden="false" collective="false" targetId="fcfd-d034-1395-9eea" type="selectionEntry"/>
-    <entryLink id="c4cd-e7fe-d858-9ac7" name="Myrmidon Battleline Maniple" hidden="false" collective="false" targetId="740e-52e8-27ed-bf22" type="selectionEntry"/>
-    <entryLink id="ee61-27d4-5330-1a0d" name="Cerastus Knight Banner" hidden="false" collective="false" targetId="2e8d-74e3-aecf-9e11" type="selectionEntry"/>
-    <entryLink id="a061-9137-013f-cf00" name="Corsair Battleline Maniple" hidden="false" collective="false" targetId="241d-3394-9612-08c7" type="selectionEntry"/>
-    <entryLink id="bf2f-3118-8d0b-fa4b" name="Janissary Batteline Maniple" hidden="false" collective="false" targetId="56b0-f155-3635-45da" type="selectionEntry"/>
-    <entryLink id="cea6-93b6-5d50-2f23" name="Regis Battleline Maniple" hidden="false" collective="false" targetId="51b7-df68-7254-8f21" type="selectionEntry"/>
-    <entryLink id="7e16-91e5-f646-3e5e" name="Lupercal Light Maniple" hidden="false" collective="false" targetId="26ca-c6f5-04b3-10c1" type="selectionEntry"/>
-    <entryLink id="a9ee-6217-2e69-f7f6" name="Dominus Battleforce Maniple" hidden="false" collective="false" targetId="22ac-d1cf-8596-c057" type="selectionEntry"/>
-    <entryLink id="da16-a787-0bc8-23ed" name="Ferrox Light Maniple" hidden="false" collective="false" targetId="365e-d892-5c42-f7a3" type="selectionEntry"/>
-    <entryLink id="f87f-52a5-0f04-ba5a" name="Fortis Battle Maniple" hidden="false" collective="false" targetId="2004-6a18-7dac-156c" type="selectionEntry"/>
-    <entryLink id="434e-537b-2fd1-eaee" name="Strategems" hidden="false" collective="false" targetId="375f-b70b-7462-5d29" type="selectionEntry"/>
-    <entryLink id="34d0-7019-8dcc-71c5" name="Acastus Knight Banner" hidden="false" collective="false" targetId="4944-7ee2-734b-6fa5" type="selectionEntry"/>
+    <entryLink id="f800-8048-0564-7b73" name="Questoris Support Banner" hidden="false" collective="false" import="true" targetId="2b6b-b476-bd24-8c5c" type="selectionEntry"/>
+    <entryLink id="d63c-4bb8-d8a9-b777" name="Axiom Battleline Maniple" hidden="false" collective="false" import="true" targetId="3ca3-42a8-26bb-5676" type="selectionEntry"/>
+    <entryLink id="5192-e107-566f-52c7" name="Venator Light Maniple" hidden="false" collective="false" import="true" targetId="fcfd-d034-1395-9eea" type="selectionEntry"/>
+    <entryLink id="c4cd-e7fe-d858-9ac7" name="Myrmidon Battleline Maniple" hidden="false" collective="false" import="true" targetId="740e-52e8-27ed-bf22" type="selectionEntry"/>
+    <entryLink id="ee61-27d4-5330-1a0d" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="2e8d-74e3-aecf-9e11" type="selectionEntry"/>
+    <entryLink id="a061-9137-013f-cf00" name="Corsair Battleline Maniple" hidden="false" collective="false" import="true" targetId="241d-3394-9612-08c7" type="selectionEntry"/>
+    <entryLink id="bf2f-3118-8d0b-fa4b" name="Janissary Batteline Maniple" hidden="false" collective="false" import="true" targetId="56b0-f155-3635-45da" type="selectionEntry"/>
+    <entryLink id="cea6-93b6-5d50-2f23" name="Regis Battleline Maniple" hidden="false" collective="false" import="true" targetId="51b7-df68-7254-8f21" type="selectionEntry"/>
+    <entryLink id="7e16-91e5-f646-3e5e" name="Lupercal Light Maniple" hidden="false" collective="false" import="true" targetId="26ca-c6f5-04b3-10c1" type="selectionEntry"/>
+    <entryLink id="a9ee-6217-2e69-f7f6" name="Dominus Battleforce Maniple" hidden="false" collective="false" import="true" targetId="22ac-d1cf-8596-c057" type="selectionEntry"/>
+    <entryLink id="da16-a787-0bc8-23ed" name="Ferrox Light Maniple" hidden="false" collective="false" import="true" targetId="365e-d892-5c42-f7a3" type="selectionEntry"/>
+    <entryLink id="f87f-52a5-0f04-ba5a" name="Fortis Battle Maniple" hidden="false" collective="false" import="true" targetId="2004-6a18-7dac-156c" type="selectionEntry"/>
+    <entryLink id="434e-537b-2fd1-eaee" name="Strategems" hidden="false" collective="false" import="true" targetId="375f-b70b-7462-5d29" type="selectionEntry"/>
+    <entryLink id="34d0-7019-8dcc-71c5" name="Acastus Knight Banner" hidden="false" collective="false" import="true" targetId="4944-7ee2-734b-6fa5" type="selectionEntry"/>
+    <entryLink id="4ef2-2fba-7456-a7f7" name="Auspex Bafflers" hidden="false" collective="false" import="true" targetId="92b5-e290-3859-ee00" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="10ed-ff38-f212-f9e9" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b738-85bb-1e85-c066" name="Ablative Armour" hidden="false" collective="false" import="true" targetId="1911-abf3-ac1a-dc24" type="selectionEntry"/>
+    <entryLink id="bc2e-e78d-5f9c-9bf7" name="Bloodthirst" hidden="false" collective="false" import="true" targetId="7d57-58b8-78e2-ef41" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0ec2-f2ee-4666-54ab" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f9c0-e186-04d6-567e" name="Cursed Earth" hidden="false" collective="false" import="true" targetId="1de7-d898-28ca-df04" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8768-5ac8-78c9-a191" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5d91-7c03-b695-d546" name="Dawn Attack" hidden="false" collective="false" import="true" targetId="25d9-b5e3-6243-ba14" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="383f-5a54-47c3-01c9" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f38b-5cfd-e337-36c6" name="Endurance of Terra" hidden="false" collective="false" import="true" targetId="7d4f-7971-bacc-d50e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b8a6-b31d-32fc-5165" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2f4c-8dfe-c9aa-f6e1" name="Experimental Weapon" hidden="false" collective="false" import="true" targetId="cb69-65f4-f95f-62d3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3dd4-f65c-1502-7635" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1afe-606b-3a7c-66eb" name="Gifts of the Dark Mechanicum" hidden="false" collective="false" import="true" targetId="9ed4-ecf1-c67b-b64e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6350-b80c-03ee-8315" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e29b-1aad-06e7-6c39" name="Great Crusade Titans" hidden="false" collective="false" import="true" targetId="b8c9-6ea9-db00-80ad" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c259-1db2-5c81-5a5f" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="12d7-e855-5c7d-8585" name="Living Armour" hidden="false" collective="false" import="true" targetId="63e5-c3bf-0f5b-a8ae" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1d70-08c3-e587-2bbd" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f5ef-713a-72ed-ec43" name="Martian Servitor Clades" hidden="false" collective="false" import="true" targetId="9c4a-cc01-9454-b339" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="662a-dc0a-d670-156f" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e24c-6eb3-56f6-e47d" name="Overcharged Cannon" hidden="false" collective="false" import="true" targetId="2f53-6658-d606-ad5c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e484-825c-5faa-4652" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="37aa-360e-4388-691d" name="Sabotage" hidden="false" collective="false" import="true" targetId="c88b-b85f-1703-59c7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a65a-8c3e-45fd-dfec" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9b56-1358-c725-e4cc" name="Secutarii Battalion" hidden="false" collective="false" import="true" targetId="82dc-135c-6241-dcca" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1da1-678a-a035-1da3" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b3bb-4292-f19e-6e43" name="The Long Retreat" hidden="false" collective="false" import="true" targetId="68a2-d06c-8ad8-9ea0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5b26-685c-bfe0-bb64" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e299-9701-63d5-7b4b" name="Thermal Mines" hidden="false" collective="false" import="true" targetId="3195-2ce6-0ecc-7d2e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ab77-734b-771c-798e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="049f-63a2-6a3a-7481" name="Voidbreaker Field" hidden="false" collective="false" import="true" targetId="b9c7-8740-586c-af80" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f353-0733-fed7-e13a" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="089f-e3d9-41de-5f56" name="Wages of Betrayal" hidden="false" collective="false" import="true" targetId="3ef1-098e-a603-9111" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c085-583b-4ee2-9613" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c0af-5409-60f5-a02a" name="Vox Blackout" hidden="false" collective="false" import="true" targetId="211c-5c02-080a-eeb4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="11f0-6de5-b655-fa29" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e853-ad80-9567-e560" name="War Lust" hidden="false" collective="false" import="true" targetId="19e6-b0cc-5b61-4583" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f9af-c89e-f98a-baf2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="44b5-d3c5-280a-b351" name="War of Fates" hidden="false" collective="false" import="true" targetId="5fff-7fff-159a-06b8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="66d0-2ff2-2051-d272" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8aee-29e2-f85b-f0e3" name="Warmaster&apos;s Petition" hidden="false" collective="false" import="true" targetId="6f84-544d-c82b-ae95" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c7b6-19f8-a5be-cf3e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a8fa-2809-75a8-6e64" name="Loyalist" hidden="false" collective="false" import="true" targetId="43fb-83e1-2c6b-100c" type="selectionEntry"/>
+    <entryLink id="7da7-ab94-74dc-4f0b" name="Traitor" hidden="false" collective="false" import="true" targetId="d634-d27a-fd9c-3f8f" type="selectionEntry"/>
+    <entryLink id="a1bd-5e44-b104-e557" name="Noble Sacrifice" hidden="false" collective="false" import="true" targetId="b450-3a86-ecdf-39fc" type="selectionEntry"/>
+    <entryLink id="6455-c5b2-c05a-ea5e" name="Outflank" hidden="false" collective="false" import="true" targetId="8d52-2df6-feda-18f8" type="selectionEntry"/>
+    <entryLink id="c2a7-5563-41a6-3773" name="Artillery Bombardment" hidden="false" collective="false" import="true" targetId="a0b2-b8fc-58d2-90f3" type="selectionEntry"/>
+    <entryLink id="d8da-22c7-bf43-da0a" name="Orbital Lance Strike" hidden="false" collective="false" import="true" targetId="4537-cab6-8147-aebe" type="selectionEntry"/>
+    <entryLink id="9834-d118-4faf-9fb7" name="Blind Barage" hidden="false" collective="false" import="true" targetId="1fc1-6634-8b70-9b23" type="selectionEntry"/>
+    <entryLink id="c48a-5599-f126-6ba8" name="Cripple the Foe" hidden="false" collective="false" import="true" targetId="2536-756b-a090-24dd" type="selectionEntry"/>
+    <entryLink id="0449-348d-a1eb-91f4" name="Decapitating Strike" hidden="false" collective="false" import="true" targetId="f752-af34-e90c-eb00" type="selectionEntry"/>
+    <entryLink id="d9de-ca48-43ab-7e97" name="Break Through" hidden="false" collective="false" import="true" targetId="45d2-33d8-2a8c-321a" type="selectionEntry"/>
+    <entryLink id="ff53-9af3-8863-fdde" name="Score to Settle" hidden="false" collective="false" import="true" targetId="1505-ad33-6414-78ff" type="selectionEntry"/>
+    <entryLink id="25e1-31f1-f29f-5b32" name="Apocalypse Missile Strongpoint" hidden="false" collective="false" import="true" targetId="2aaf-da08-f744-14f6" type="selectionEntry"/>
+    <entryLink id="9562-ac8d-0e47-78b4" name="Plasma Generator" hidden="false" collective="false" import="true" targetId="43a6-b634-7e41-d6c9" type="selectionEntry"/>
+    <entryLink id="00f9-13d0-2a6f-f152" name="Communications Relay" hidden="false" collective="false" import="true" targetId="2ce9-9861-420c-d8e8" type="selectionEntry"/>
+    <entryLink id="317a-6c79-0415-2f60" name="Macro Cannon Battery" hidden="false" collective="false" import="true" targetId="0e1f-c7a0-8a50-0e5e" type="selectionEntry"/>
+    <entryLink id="d91d-3b38-7ded-3de9" name="Void Shield Relay" hidden="false" collective="false" import="true" targetId="2cb4-be64-ab48-66fb" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" type="model">
+    <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="7ff1-9cf5-3d51-6ff7" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -352,7 +584,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="c161-c1d8-f789-0f47" name="New CategoryLink" hidden="false" targetId="d36f-5e44-2150-3428" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1dcd-1615-5634-3ac7" name="Body" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1dcd-1615-5634-3ac7" name="Body" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73d1-59e5-c5c3-3e76" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77f0-9e40-ee73-4630" type="max"/>
@@ -367,14 +599,18 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="9ea5-7d31-c03a-5d16" name="Body Status" hidden="false" collective="false">
+            <selectionEntryGroup id="9ea5-7d31-c03a-5d16" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="59bd-5186-d156-7809">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54d2-0d1c-ce79-7952" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a16-4dfc-d88d-af02" type="min"/>
+              </constraints>
               <selectionEntries>
-                <selectionEntry id="59bd-5186-d156-7809" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="59bd-5186-d156-7809" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3333-fe14-7042-2fe0" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="6958-b016-77e8-c29b" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="6958-b016-77e8-c29b" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -382,14 +618,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c9d5-d9b7-988a-3e8f" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="c9d5-d9b7-988a-3e8f" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da72-ff95-1fb3-f96f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bdf9-1255-7fe4-605a" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="bdf9-1255-7fe4-605a" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -397,14 +634,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5a34-3768-ba62-a8ac" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="5a34-3768-ba62-a8ac" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f43c-9a65-7ada-42b4" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="6631-28d9-be4a-840a" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="6631-28d9-be4a-840a" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -412,14 +650,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5c5d-b7e0-27d2-9b93" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="5c5d-b7e0-27d2-9b93" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26b3-2ff4-ecd9-5892" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="fe1d-641c-fade-9bb3" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="fe1d-641c-fade-9bb3" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -427,14 +666,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="92d1-590d-0e80-1ecb" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="92d1-590d-0e80-1ecb" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5003-0fb6-01c1-640f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="963f-d8f5-69b3-527f" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="963f-d8f5-69b3-527f" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -442,14 +682,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b668-4d2a-800c-05eb" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="b668-4d2a-800c-05eb" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98bf-9f8f-6702-d76e" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8266-295c-fb8e-bf34" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="8266-295c-fb8e-bf34" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -457,14 +698,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f7de-7fe8-f39a-b937" name="7" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="f7de-7fe8-f39a-b937" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a19-4989-d9ad-588c" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1790-7348-dac5-61ca" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="1790-7348-dac5-61ca" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -472,19 +714,21 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="d54e-9a95-cb9a-6618" name="Body Manifold" hidden="false" collective="false" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
+            <entryLink id="d54e-9a95-cb9a-6618" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e785-b175-8850-4890" name="Head" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e785-b175-8850-4890" name="Head" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a50-cb7c-5e8c-ab4c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4d0-c899-7754-f9ee" type="max"/>
@@ -499,14 +743,18 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="a049-0f1c-59f2-59f9" name="Head Status" hidden="false" collective="false">
+            <selectionEntryGroup id="a049-0f1c-59f2-59f9" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="7b4b-c92a-0650-3ba2">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43d7-a27f-55b0-e3fa" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de7d-5452-1e88-a300" type="min"/>
+              </constraints>
               <selectionEntries>
-                <selectionEntry id="7b4b-c92a-0650-3ba2" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="7b4b-c92a-0650-3ba2" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee2f-40f9-6dd9-71d7" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="5238-3213-ec28-3811" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="5238-3213-ec28-3811" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -514,14 +762,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2138-30a2-2293-0037" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="2138-30a2-2293-0037" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3742-abfd-a05d-fb0d" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1981-827a-584a-af29" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="1981-827a-584a-af29" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -529,14 +778,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1689-a5f7-918d-ef2f" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="1689-a5f7-918d-ef2f" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d17d-2940-1ee9-dc39" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8302-077e-7e46-e958" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="8302-077e-7e46-e958" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -544,14 +794,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3ce7-9a36-49e5-42ba" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="3ce7-9a36-49e5-42ba" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f4c-7d0e-3636-5bd1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="71c3-f408-87cf-57a8" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="71c3-f408-87cf-57a8" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -559,14 +810,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="8760-8659-a955-50bc" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="8760-8659-a955-50bc" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a14-e3e7-dcff-af89" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b9aa-c025-508a-e40b" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="b9aa-c025-508a-e40b" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -574,14 +826,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d9fc-c438-31f8-0802" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="d9fc-c438-31f8-0802" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02bf-6f48-b2df-a935" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7e01-a540-f4a3-79cb" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="7e01-a540-f4a3-79cb" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -589,19 +842,21 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="2e25-7009-9f13-e74e" name="Head Manifold" hidden="false" collective="false" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
+            <entryLink id="2e25-7009-9f13-e74e" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="de93-8bdc-dd8d-3c91" name="Legs" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="de93-8bdc-dd8d-3c91" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a828-5f71-7d97-508b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="774c-6dcd-5799-731e" type="max"/>
@@ -616,14 +871,18 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="2736-f5dc-9b2a-8866" name="Legs Status" hidden="false" collective="false">
+            <selectionEntryGroup id="2736-f5dc-9b2a-8866" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="99b4-2e5d-ce48-cf2a">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9318-dd92-9d62-00a8" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dae9-adba-bbcf-b7b8" type="max"/>
+              </constraints>
               <selectionEntries>
-                <selectionEntry id="99b4-2e5d-ce48-cf2a" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="99b4-2e5d-ce48-cf2a" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b7-214e-7778-e384" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="32e4-fc75-274e-f3ff" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="32e4-fc75-274e-f3ff" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -631,14 +890,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1456-e728-7f3b-8841" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="1456-e728-7f3b-8841" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eb6-4779-e9c7-d317" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2144-357d-c1e8-097d" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="2144-357d-c1e8-097d" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -646,14 +906,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1ed5-d511-be9b-b584" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="1ed5-d511-be9b-b584" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f21e-cd67-4f72-9c4a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c8d2-7ace-9c36-39da" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="c8d2-7ace-9c36-39da" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -661,14 +922,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3b6e-b62b-82f7-5366" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="3b6e-b62b-82f7-5366" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b421-ee1b-45ab-0532" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b63e-c287-43df-34f2" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="b63e-c287-43df-34f2" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -676,14 +938,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5cbb-f19a-2693-ecb9" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="5cbb-f19a-2693-ecb9" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="225f-1b81-8934-bc26" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7d1c-43d0-1619-166d" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="7d1c-43d0-1619-166d" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -691,14 +954,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1d84-e2fd-8ea6-9840" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="1d84-e2fd-8ea6-9840" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7150-85f0-025d-76a9" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1e2f-972b-647e-fe1d" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="1e2f-972b-647e-fe1d" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -706,14 +970,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="de12-3955-d463-615d" name="7" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="de12-3955-d463-615d" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bf5-f5cb-1106-8d3e" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8acf-27e2-25c0-c1b6" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="8acf-27e2-25c0-c1b6" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -721,35 +986,155 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="6859-a04d-0179-9ab2" name="Legs Manifold" hidden="false" collective="false" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+            <entryLink id="6859-a04d-0179-9ab2" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="ca96-66a7-2466-4553" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8e2-83d4-ec0a-c383" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ef8-44e3-d596-adc5" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="71a5-9388-870c-25e1" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="052b-4a86-88ac-055c">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf25-32ff-a17b-4767" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea37-b3c5-efb5-5fe9" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="052b-4a86-88ac-055c" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="e2e8-9366-ee53-f276" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="3a09-c502-7ec2-19fa" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="af60-3449-7734-5ed1" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="4e55-7dd1-c317-c8f9" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry id="5c91-fa9e-ab6b-d54c" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d96-63a2-1923-0b79" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d9e-3894-e564-e9da" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9bdf-f064-c87f-19ce" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="0822-47ae-0621-86a4">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d6d-2ba1-5694-0e65" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d68-ae90-10a1-6d7f" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0822-47ae-0621-86a4" name="⦿⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e432-f8c8-ca0a-b4b7" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2283-8753-65d9-9cb4" name="⦿⦿⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="236b-4f5c-40e4-4c0c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="eb24-8673-da12-211d" name="⦿⦿⦿⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="139d-2543-f50c-db93" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a249-5714-bb48-9458" name="⦿⦿⦿⦿⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e20-99d4-2f2f-8240" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="40e8-9e80-f296-4383" name="⦿⦿⦿⦿⦿⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="872b-a450-b3a4-20f3" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c886-17e7-e297-38af" name="⦿⦿⦿⦿⦿⦿ Red(6)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dff-0673-91fb-575a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="360a-34ac-766d-69f2" name="Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="360a-34ac-766d-69f2" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
-            <selectionEntryGroup id="7087-f431-ad06-6061" name="Arms" hidden="false" collective="false">
+            <selectionEntryGroup id="7087-f431-ad06-6061" name="Arms" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="ee72-8907-e3d9-69de" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee72-8907-e3d9-69de" type="min"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b4c-e005-e9be-59b4" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="ffc4-7867-fadc-12d2" name="Gatling Blaster" hidden="false" collective="false" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
-                <entryLink id="834c-1d9b-ca95-b3de" name="Laser Blaster" hidden="false" collective="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
-                <entryLink id="aa0f-65f8-494d-1c21" name="Melta Cannon" hidden="false" collective="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
-                <entryLink id="efad-f00d-3202-591f" name="Reaver Titan Chainfist" hidden="false" collective="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
-                <entryLink id="b8f6-c8f4-a641-e19c" name="Reaver Titan Power Fist" hidden="false" collective="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
-                <entryLink id="5b29-3b36-2460-e090" name="Volcano Cannon" hidden="false" collective="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
-                <entryLink id="064b-58f1-d5da-64a1" name="Chasmata Pattern Laser Blaster" hidden="true" collective="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
+                <entryLink id="ffc4-7867-fadc-12d2" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
+                <entryLink id="834c-1d9b-ca95-b3de" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
+                <entryLink id="aa0f-65f8-494d-1c21" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
+                <entryLink id="efad-f00d-3202-591f" name="Reaver Titan Chainfist" hidden="false" collective="false" import="true" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
+                <entryLink id="b8f6-c8f4-a641-e19c" name="Reaver Titan Power Fist" hidden="false" collective="false" import="true" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
+                <entryLink id="5b29-3b36-2460-e090" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
+                <entryLink id="064b-58f1-d5da-64a1" name="Chasmata Pattern Laser Blaster" hidden="true" collective="false" import="true" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -760,17 +1145,24 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="27cf-b4d5-20b6-9032" name="Carapace" hidden="false" collective="false">
+            <selectionEntryGroup id="27cf-b4d5-20b6-9032" name="Carapace" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="b048-c539-2ebf-4e14" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b048-c539-2ebf-4e14" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54c6-0602-6717-a4a5" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="1ebf-4601-0b5e-b765" name="Apocalypse Missile Launcher" hidden="false" collective="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
-                <entryLink id="b0db-882e-0d36-f524" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
-                <entryLink id="73f2-7386-528b-89a6" name="Warp Missile Support Rack" hidden="false" collective="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
-                <entryLink id="c860-31b1-1c90-21a4" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
-                <entryLink id="0c2b-34ac-a75d-59d0" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" targetId="08c7-5efe-0712-c420" type="selectionEntry">
+                <entryLink id="1ebf-4601-0b5e-b765" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="true" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
+                <entryLink id="b0db-882e-0d36-f524" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="true" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
+                <entryLink id="73f2-7386-528b-89a6" name="Warp Missile Support Rack" hidden="false" collective="false" import="true" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
+                <entryLink id="c860-31b1-1c90-21a4" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" import="true" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink id="0c2b-34ac-a75d-59d0" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" import="true" targetId="08c7-5efe-0712-c420" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -783,74 +1175,9 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="191f-a736-3607-be1a" name="Void Shields" hidden="false" collective="false" defaultSelectionEntryId="60d9-7038-3787-78d7">
-          <entryLinks>
-            <entryLink id="60d9-7038-3787-78d7" name="Void Shield (3+)" hidden="false" collective="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry"/>
-            <entryLink id="94de-edcf-88cd-b08a" name="Void Shield (4+) 2" hidden="false" collective="false" targetId="9219-813c-9bc8-e118" type="selectionEntry"/>
-            <entryLink id="b33b-e5e2-5af7-e184" name="Void Shield (4+)" hidden="false" collective="false" targetId="c621-87a7-709b-daa0" type="selectionEntry"/>
-            <entryLink id="df74-774e-4ef4-83f9" name="Void Shield (X)" hidden="false" collective="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry"/>
-            <entryLink id="8f57-49d5-40ef-8300" name="Void Shield (3+) 2" hidden="false" collective="false" targetId="cecc-5283-0f3c-0325" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d68a-de59-6ede-871e" name="Plasma Reactor" hidden="false" collective="false" defaultSelectionEntryId="a6ef-0420-0906-8da2">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03e8-8f76-afba-a150" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acfb-37fa-a3c9-60a4" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="7da2-b59d-aa12-c822" name="Plasma Reactor 2 Green" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be26-d51d-b3a6-db6d" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a6ef-0420-0906-8da2" name="Plasma Reactor 1 Green" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b9a-86b5-1789-2dbe" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d5ed-509b-9a60-55dc" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61f7-48a4-28dd-64e2" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="755c-c35b-2eba-b72e" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af75-1a12-31ce-4742" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c001-f0e2-7127-994c" name="Plasma Reactor 5 Orange" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="366b-39e2-6477-5d2c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="68f8-ace9-113f-e78c" name="Plasma Reactor 6 Red" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c44b-95b5-97c4-456f" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e7e8-b86e-8590-f289" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="e7e8-b86e-8590-f289" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -868,13 +1195,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2930-4fbc-e7db-8b33" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="8d8c-9755-8e12-171b" name="Wargear" hidden="false" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="8d8c-9755-8e12-171b" name="Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5122-cb02-8703-ce88" name="Warlord Titan" hidden="false" collective="false" type="model">
+    <selectionEntry id="5122-cb02-8703-ce88" name="Warlord Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="f4bc-0277-b973-df55" name="Warlord Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -893,7 +1221,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="e9d5-d649-c246-8d73" name="New CategoryLink" hidden="false" targetId="7103-9316-d4a5-8caa" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="b743-b038-6f73-515a" name="Body" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b743-b038-6f73-515a" name="Body" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4538-2e74-2d3c-5f9b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f9a-730c-1767-dd01" type="max"/>
@@ -908,18 +1236,18 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="1b3e-c78e-e4d9-c2ef" name="Body Status" hidden="false" collective="false" defaultSelectionEntryId="e562-dc55-06b1-9ac7">
+            <selectionEntryGroup id="1b3e-c78e-e4d9-c2ef" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="e562-dc55-06b1-9ac7">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1a7-7475-6ba5-625f" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4f0-63b6-118d-16f9" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="e562-dc55-06b1-9ac7" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="e562-dc55-06b1-9ac7" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46f1-59ed-580e-d365" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a323-7e80-9040-bf45" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="a323-7e80-9040-bf45" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -927,14 +1255,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="564b-9bb9-481c-59d9" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="564b-9bb9-481c-59d9" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7299-e280-b14f-e867" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2c02-74e6-e759-3ed9" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="2c02-74e6-e759-3ed9" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -942,14 +1271,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="8a9e-1116-3c49-6a33" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="8a9e-1116-3c49-6a33" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e27b-2741-3dda-79e1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c418-8893-8e4a-ae30" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="c418-8893-8e4a-ae30" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -957,14 +1287,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="33e6-110c-ca43-deaa" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="33e6-110c-ca43-deaa" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8afd-aba9-e2ce-7d59" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="6d76-4147-c053-0933" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="6d76-4147-c053-0933" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -972,14 +1303,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9f0b-7ad4-5916-91da" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="9f0b-7ad4-5916-91da" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e78d-bc98-c31e-1638" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="04ec-5244-60ff-ac87" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="04ec-5244-60ff-ac87" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -987,14 +1319,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e9f8-78bd-40a8-c0cf" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="e9f8-78bd-40a8-c0cf" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b4a-c594-b95f-7bb1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bf3a-e647-e046-9192" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="bf3a-e647-e046-9192" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1002,14 +1335,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b45e-21e8-0caa-417a" name="7" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="b45e-21e8-0caa-417a" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9723-a928-0ac5-3401" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e711-f3f1-da43-2393" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e711-f3f1-da43-2393" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1017,14 +1351,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="cdd1-b1ef-cec5-cbf3" name="8" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="cdd1-b1ef-cec5-cbf3" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d2f-084d-6fe7-04ad" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e4cd-dbc2-481f-a67a" name="8" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e4cd-dbc2-481f-a67a" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1032,19 +1367,21 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="bcd7-6983-aec4-82de" name="Body Manifold" hidden="false" collective="false" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
+            <entryLink id="bcd7-6983-aec4-82de" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="781d-322e-2d97-9cdc" name="Head" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="781d-322e-2d97-9cdc" name="Head" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80eb-0e6a-f5b8-1b6f" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e05c-de89-1d9d-0b0a" type="max"/>
@@ -1059,18 +1396,18 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="436f-a436-9bad-a8f3" name="Head Status" hidden="false" collective="false" defaultSelectionEntryId="47fe-9aed-faad-538e">
+            <selectionEntryGroup id="436f-a436-9bad-a8f3" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="47fe-9aed-faad-538e">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fbf-ce2c-b1f4-a304" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3d2-6b93-1e28-935b" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="47fe-9aed-faad-538e" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="47fe-9aed-faad-538e" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee66-dbb7-61bc-4fa9" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="3661-ce55-e831-2aa4" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="3661-ce55-e831-2aa4" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1078,14 +1415,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3306-2159-3e45-0bef" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="3306-2159-3e45-0bef" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4a8-c59f-32d9-12c1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7c58-1bd2-b55e-f217" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="7c58-1bd2-b55e-f217" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1093,14 +1431,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9fb4-4145-8a65-b41c" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="9fb4-4145-8a65-b41c" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cacd-c970-1dac-5edf" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bd72-bc31-2049-a665" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="bd72-bc31-2049-a665" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1108,14 +1447,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e9da-f4b0-f167-081e" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="e9da-f4b0-f167-081e" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5afa-dc55-e702-561a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2337-aaf5-2f27-052a" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="2337-aaf5-2f27-052a" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1123,14 +1463,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9001-9bf6-34ca-7bdd" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="9001-9bf6-34ca-7bdd" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95d2-3bcd-92ad-ca12" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e3ac-1717-81e1-0686" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e3ac-1717-81e1-0686" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1138,14 +1479,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="536d-722d-5c2f-b0e5" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="536d-722d-5c2f-b0e5" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1153-0575-46c0-ebf1" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="5289-a19c-fb3a-7619" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="5289-a19c-fb3a-7619" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1153,14 +1495,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b549-db59-f757-48c0" name="7" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="b549-db59-f757-48c0" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0327-fb38-dbc4-1ca0" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="f8a1-e77a-6fcd-be9d" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="f8a1-e77a-6fcd-be9d" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1168,19 +1511,21 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="4de1-709b-c8e0-fae8" name="Head Manifold" hidden="false" collective="false" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
+            <entryLink id="4de1-709b-c8e0-fae8" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f42b-6054-3a6a-35a0" name="Legs" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f42b-6054-3a6a-35a0" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a6a-71ba-a23b-232d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf0-dce5-bd05-ba35" type="max"/>
@@ -1195,18 +1540,18 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="0e14-822b-8f3c-61e3" name="Legs Status" hidden="false" collective="false" defaultSelectionEntryId="dbb9-4a9e-75b9-cc09">
+            <selectionEntryGroup id="0e14-822b-8f3c-61e3" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="dbb9-4a9e-75b9-cc09">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc0-d97f-aaa7-7fa0" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30de-d598-0424-4321" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="dbb9-4a9e-75b9-cc09" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="dbb9-4a9e-75b9-cc09" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c1d-2e40-3a0c-b249" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="726b-c370-f63b-e41f" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="726b-c370-f63b-e41f" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1214,14 +1559,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="48a3-4632-38dd-c0c9" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="48a3-4632-38dd-c0c9" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="149e-906f-652e-cafc" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="05ce-462a-be7f-8aff" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="05ce-462a-be7f-8aff" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1229,14 +1575,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c181-1b84-ee2d-4823" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="c181-1b84-ee2d-4823" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbf0-1711-f7f3-1b37" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b9e9-532d-3223-dd8f" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="b9e9-532d-3223-dd8f" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -1244,14 +1591,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="411a-fc8f-a0d0-256e" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="411a-fc8f-a0d0-256e" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0586-c28a-ae2b-7a6b" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="126d-ed56-1c7d-cb48" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="126d-ed56-1c7d-cb48" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1259,14 +1607,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="773f-12c8-f27a-0582" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="773f-12c8-f27a-0582" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f703-6866-946d-a1ae" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="73f0-3283-66f5-aeca" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="73f0-3283-66f5-aeca" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -1274,14 +1623,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2e23-bc7b-6ce8-d1ef" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="2e23-bc7b-6ce8-d1ef" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a9d-22c2-214f-bee8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="47a7-1f9a-7c9d-ec1e" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="47a7-1f9a-7c9d-ec1e" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1289,14 +1639,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a0c2-2a54-0d0d-e6ec" name="7" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="a0c2-2a54-0d0d-e6ec" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc52-6aa5-e294-1c8a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e2b8-312f-367f-f3b8" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e2b8-312f-367f-f3b8" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -1304,14 +1655,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="04f1-a159-5efd-9aad" name="8" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="04f1-a159-5efd-9aad" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec4a-9b73-2e39-e316" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b62f-3b61-1b62-0e0c" name="8" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="b62f-3b61-1b62-0e0c" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -1319,47 +1671,188 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="9507-5626-4569-5a17" name="Legs Manifold" hidden="false" collective="false" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+            <entryLink id="9507-5626-4569-5a17" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="a1f0-d644-e812-a244" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9df1-4051-4014-1f2a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d890-d5b3-8f4c-073d" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="40e8-5105-f3b8-40a9" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="8e67-15f3-cc86-e5cd">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88fa-3bc1-150c-7fb6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e176-c75a-1d66-5442" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="8e67-15f3-cc86-e5cd" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="2279-a993-a72b-b5bc" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="163c-10e2-5ef1-b5fa" name="Void Shield (3+) 3" hidden="false" collective="false" import="true" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="9829-426f-220f-2e28" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="ffb1-446c-a334-a4be" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="85ae-6a60-9e49-bba9" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry id="eca7-019e-997f-88e2" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cc7-dcf5-4e90-9d8f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2247-eb3c-f654-47c4" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="5be1-a81f-984c-f327" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="b63f-68eb-52c0-a02f">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7bf-8cb4-4730-7a74" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91e0-c20d-5c95-4ec6" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="b63f-68eb-52c0-a02f" name="⦿⦾⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b372-7884-4c5b-3478" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ff03-1117-d5b2-1359" name="⦿⦿⦾⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4de9-96f0-c27d-b886" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4d6e-caa0-7c54-ba4c" name="⦿⦿⦿⦾⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5d2-22aa-6a67-6e18" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="698f-b71d-89d0-2830" name="⦿⦿⦿⦿⦾⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e80-26b0-d4cd-0299" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0174-c32f-58f5-3565" name="⦿⦿⦿⦿⦿⦾⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d63-bf05-5f08-a241" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3d8a-f2e5-74b4-42c0" name="⦿⦿⦿⦿⦿⦿⦾ Orange(6)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09ac-8048-8fcc-3e71" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="158c-26da-952d-efd5" name="⦿⦿⦿⦿⦿⦿⦿ Red(7)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e4-9f48-e238-87b1" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2c49-32dd-c032-07ff" name="Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="2c49-32dd-c032-07ff" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
-            <selectionEntryGroup id="a1a4-28d9-f4b1-8620" name="Arms" hidden="false" collective="false">
+            <selectionEntryGroup id="a1a4-28d9-f4b1-8620" name="Arms" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="c052-ca12-9ada-bf1a" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8af3-82c5-52c2-dcd9" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c052-ca12-9ada-bf1a" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="3899-13d5-8233-f210" name="Arioch Titan Power Claw" hidden="false" collective="false" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry"/>
-                <entryLink id="02c3-1211-25b7-2063" name="Bellicosa Volcano Cannon" hidden="false" collective="false" targetId="fee8-4996-06cd-64bc" type="selectionEntry"/>
-                <entryLink id="3faa-da51-4eee-2221" name="Mori Quake Cannon" hidden="false" collective="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
-                <entryLink id="ad41-83a1-d41d-dd34" name="Sunfury Plasma Annihilator" hidden="false" collective="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
-                <entryLink id="b4ae-a574-74b8-b907" name="Macro Gatling Blaster" hidden="false" collective="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
+                <entryLink id="3899-13d5-8233-f210" name="Arioch Titan Power Claw" hidden="false" collective="false" import="true" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry"/>
+                <entryLink id="02c3-1211-25b7-2063" name="Bellicosa Volcano Cannon" hidden="false" collective="false" import="true" targetId="fee8-4996-06cd-64bc" type="selectionEntry"/>
+                <entryLink id="3faa-da51-4eee-2221" name="Mori Quake Cannon" hidden="false" collective="false" import="true" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
+                <entryLink id="ad41-83a1-d41d-dd34" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="true" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
+                <entryLink id="b4ae-a574-74b8-b907" name="Macro Gatling Blaster" hidden="false" collective="false" import="true" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="fd46-9b21-ec00-bd85" name="Carapace" hidden="false" collective="false">
+            <selectionEntryGroup id="fd46-9b21-ec00-bd85" name="Carapace" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="6977-5166-19eb-114c" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6977-5166-19eb-114c" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ef1-768f-25de-0f88" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="fa6c-a6e7-3460-7b1c" name="Apocalypse Missile Launchers" hidden="false" collective="false" targetId="bd33-0564-6277-6dc1" type="selectionEntry"/>
-                <entryLink id="2035-b042-8826-fdbc" name="Paired Gatling Blasters" hidden="false" collective="false" targetId="bfdb-4953-f838-7d21" type="selectionEntry"/>
-                <entryLink id="6ec1-2cea-cca2-ad48" name="Paired Laser Blaster" hidden="false" collective="false" targetId="5fc7-120d-623b-8b5a" type="selectionEntry"/>
-                <entryLink id="86cd-7a25-7463-7bf6" name="Paired Turbo Laser Destructor (Warlord)" hidden="false" collective="false" targetId="bfee-3947-a004-3a4e" type="selectionEntry"/>
-                <entryLink id="1ece-bd9a-ec7c-6f25" name="Vulcan Megabolter Array" hidden="false" collective="false" targetId="f2ae-e883-28c4-dbcc" type="selectionEntry"/>
-                <entryLink id="12f8-fb5a-890c-e131" name="Paired Chasmata Pattern Laser Blaster" hidden="true" collective="false" targetId="fe03-8e18-b108-5853" type="selectionEntry">
+                <entryLink id="fa6c-a6e7-3460-7b1c" name="Apocalypse Missile Launchers" hidden="false" collective="false" import="true" targetId="bd33-0564-6277-6dc1" type="selectionEntry"/>
+                <entryLink id="2035-b042-8826-fdbc" name="Paired Gatling Blasters" hidden="false" collective="false" import="true" targetId="bfdb-4953-f838-7d21" type="selectionEntry"/>
+                <entryLink id="6ec1-2cea-cca2-ad48" name="Paired Laser Blaster" hidden="false" collective="false" import="true" targetId="5fc7-120d-623b-8b5a" type="selectionEntry"/>
+                <entryLink id="86cd-7a25-7463-7bf6" name="Paired Turbo Laser Destructor (Warlord)" hidden="false" collective="false" import="true" targetId="bfee-3947-a004-3a4e" type="selectionEntry"/>
+                <entryLink id="1ece-bd9a-ec7c-6f25" name="Vulcan Megabolter Array" hidden="false" collective="false" import="true" targetId="f2ae-e883-28c4-dbcc" type="selectionEntry"/>
+                <entryLink id="12f8-fb5a-890c-e131" name="Paired Chasmata Pattern Laser Blaster" hidden="true" collective="false" import="true" targetId="fe03-8e18-b108-5853" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -1368,7 +1861,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink id="546f-50b5-3f74-2a5c" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="true" collective="false" targetId="2699-bb53-cff4-a864" type="selectionEntry">
+                <entryLink id="546f-50b5-3f74-2a5c" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="true" collective="false" import="true" targetId="2699-bb53-cff4-a864" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -1381,86 +1874,12 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="0c27-288f-504a-2110" name="Ardex Defensor Cannon" hidden="false" collective="false" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
+            <entryLink id="0c27-288f-504a-2110" name="Ardex Defensor Cannon" hidden="false" collective="false" import="true" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="dc78-7f26-9349-f3d6" name="Void Shields" hidden="false" collective="false" defaultSelectionEntryId="9ae4-9d52-9f27-18b5">
-          <entryLinks>
-            <entryLink id="1a31-62c9-06cf-677b" name="Void Shield (X)" hidden="false" collective="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry"/>
-            <entryLink id="e067-8567-abd7-becd" name="Void Shield (3+) 3" hidden="false" collective="false" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry"/>
-            <entryLink id="4ed2-f7f1-8518-5654" name="Void Shield (4+) 2" hidden="false" collective="false" targetId="9219-813c-9bc8-e118" type="selectionEntry"/>
-            <entryLink id="dee8-2817-f803-d4e9" name="Void Shield (3+) 2" hidden="false" collective="false" targetId="cecc-5283-0f3c-0325" type="selectionEntry"/>
-            <entryLink id="9ae4-9d52-9f27-18b5" name="Void Shield (3+)" hidden="false" collective="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry"/>
-            <entryLink id="bd30-77eb-f4a2-fc88" name="Void Shield (4+)" hidden="false" collective="false" targetId="c621-87a7-709b-daa0" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="e5e8-04fc-3518-8062" name="Plasma Reactor" hidden="false" collective="false" defaultSelectionEntryId="d019-5a52-2df0-0f34">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="218f-b209-8d25-eb06" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cfe-b346-a831-ef61" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="949e-f6e1-0b38-6e7f" name="Plasma Reactor 6 Orange" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a9-9490-3950-f43c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e0ef-1cf8-f2df-281f" name="Plasma Reactor 2 Green" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d72d-fda4-39c3-b553" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d019-5a52-2df0-0f34" name="Plasma Reactor 1 Green" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c36b-05e2-c988-d316" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="dfce-06cb-8de3-3bb9" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f157-d4da-ad9c-dc18" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7bf5-230e-9594-5ee8" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00e1-b912-24a6-cf97" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="159c-5ead-c611-6c48" name="Plasma Reactor 5 Orange" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5a2-d454-dc01-93a7" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="eed8-8764-dd14-a828" name="Plasma Reactor 7 Red" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a78e-5239-ef33-27cb" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4dcc-4217-0816-846e" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="4dcc-4217-0816-846e" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -1478,13 +1897,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8363-23e4-9244-93f2" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4994-4e39-e7fe-57d5" name="Wargear" hidden="false" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="4994-4e39-e7fe-57d5" name="Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="385.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3ad7-cd10-8d6e-8c2e" name="Warhound Titan" hidden="false" collective="false" type="model">
+    <selectionEntry id="3ad7-cd10-8d6e-8c2e" name="Warhound Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="6a50-23dd-224f-f8c3" name="Warhound Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -1503,7 +1923,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="e12e-1619-83e6-4a5c" name="New CategoryLink" hidden="false" targetId="223f-6e71-9e4f-939e" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="2e08-5e77-3e6c-0875" name="Body" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2e08-5e77-3e6c-0875" name="Body" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="492d-1373-1e22-90a4" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37fb-6d05-2188-4703" type="max"/>
@@ -1517,106 +1937,121 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntries>
-            <selectionEntry id="18df-96b6-5f64-c368" name="1" hidden="false" collective="false" type="upgrade">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="6af1-2245-c637-6ede" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="f11f-d438-e068-55b0">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eef0-5807-2c6a-0a7a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c7e-dd7a-3105-5f09" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7af3-c5aa-d85f-821b" type="min"/>
               </constraints>
-              <profiles>
-                <profile id="3851-772d-c979-f95a" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8fee-c6ff-3abb-9269" name="2" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ca-ec7d-4c9b-bee0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="ce97-8d0e-f042-3ee2" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="380a-c32c-8171-ad1d" name="3" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42c9-bb05-8747-84bf" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="3d49-8668-b0a1-b661" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="620c-4be5-7941-0e88" name="4" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c189-1ea0-7a36-f8e3" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7f8b-4431-357c-9cba" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b0ab-4908-99e2-b0a8" name="5" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="866c-9ba0-a048-9ed5" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f888-38ea-6976-ace5" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="74eb-c082-d3f1-1615" name="6" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a60-a412-6d91-de15" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="3290-5e49-a0d5-b9e1" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="f11f-d438-e068-55b0" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b47-4b4b-c619-9406" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="87e2-3a49-fab7-bd12" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6fc2-0e16-5827-24fd" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f03-3a88-ad84-4f4b" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="6a94-98cf-58ae-fcdd" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="999b-f262-59d6-e572" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e787-611f-73d2-fe93" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="6f83-8152-1e48-9c39" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="990f-f186-8e07-541f" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a13c-adc0-c84d-9e05" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="a181-252e-6db6-d75b" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="75d0-aa01-b501-e230" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc62-ffa5-6ba4-bbfc" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="bc46-4c24-f5af-7335" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3113-ca44-56db-08e8" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6379-0b41-a783-680e" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="4542-e51b-c823-6d03" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="1ce4-f4f0-21f3-4b4b" name="Body Manifold" hidden="false" collective="false" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
+            <entryLink id="1ce4-f4f0-21f3-4b4b" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="713c-28fb-4137-ebaa" name="Legs" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="713c-28fb-4137-ebaa" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad9e-3837-22e8-54b7" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f645-4500-b0bd-8d41" type="max"/>
@@ -1630,106 +2065,121 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntries>
-            <selectionEntry id="03c9-c285-d5ef-8a6e" name="6" hidden="false" collective="false" type="upgrade">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9f02-2f8d-abb8-3805" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="d606-2a1c-8c9c-5471">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48db-a77b-71ab-5e14" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ad7-3499-e3e1-d1f3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10df-41b2-4ad2-40ff" type="min"/>
               </constraints>
-              <profiles>
-                <profile id="c3fa-be86-5d6f-61be" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9fa6-b9ac-b52d-35e9" name="5" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ec1-a8c0-f92a-8372" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="e5b5-9782-d0a3-0dbb" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6f1c-1097-1754-dc30" name="4" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa5e-eb1f-f04e-e532" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="cf90-cd4d-05ea-067f" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d8bd-0825-bde4-48ab" name="3" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f46f-8c3c-9811-bfe9" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="6c7a-b9f2-ba8e-20cb" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="422c-3399-49b8-aabf" name="2" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7da9-af72-17b3-ab38" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="ce5e-6d61-ae8c-092a" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6bd9-e510-53fe-0491" name="1" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ecb-74eb-9ac5-c842" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="5d12-ba7b-677c-f927" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="d606-2a1c-8c9c-5471" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a85-6431-9191-b213" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="5249-a13b-4fe1-91d7" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f344-b4ed-fc30-4196" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fd8-4db5-9456-89fc" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="e0c9-2995-1236-4f36" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fdf1-4ae7-29ee-27bd" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8492-812f-45c6-e896" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="76e5-349f-a6f1-3a3b" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f78e-5af2-caf9-7ad1" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3636-6a8e-c673-7348" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="9615-e12b-7505-8bf2" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e4a7-e63d-a8cd-3418" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abb9-db1d-d63c-759a" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="475f-7384-b99a-339c" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e3ad-a50d-b730-4057" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="686f-4be2-0a3f-5426" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="7fb4-81ea-7881-6d72" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="e7d5-0eb8-3b53-3154" name="Legs Manifold" hidden="false" collective="false" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+            <entryLink id="e7d5-0eb8-3b53-3154" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9ac5-a8f1-414a-71f6" name="Head" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9ac5-a8f1-414a-71f6" name="Head" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df34-d31b-604b-0d76" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b078-2d2a-890c-7fa3" type="max"/>
@@ -1743,105 +2193,223 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntries>
-            <selectionEntry id="1c15-8d26-27d9-fee4" name="5" hidden="false" collective="false" type="upgrade">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="54e3-a1e1-034a-f2c2" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="3271-618c-4f38-ecc0">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e7c-9518-f8fd-206a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2304-f1cd-8c40-9e8b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e76d-19f7-900e-5426" type="min"/>
               </constraints>
-              <profiles>
-                <profile id="1a4f-d840-f544-af73" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="545a-8783-5056-cef3" name="4" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="895b-7ab9-03b7-d999" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="beea-48d9-0ec3-f4b5" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c838-c8cb-588d-ac4b" name="3" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b596-900f-d8b3-f6ce" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="8623-2a63-bea7-e0a8" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d1e7-70c6-5023-e1ad" name="2" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37ef-0a8d-fb15-8b55" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="df0f-3402-4cfe-e02e" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="802d-84d7-600d-9d92" name="1" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca92-5886-ad5d-96cd" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c77e-cc09-fa41-bf02" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                  <characteristics>
-                    <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="3271-618c-4f38-ecc0" name="⦿⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b22-9671-6112-ee98" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="95d4-96cf-8696-9dc0" name="⦿⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a9c4-637c-a072-bda6" name="⦿⦿⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73d1-e614-9d2d-b24e" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="d01a-b0ab-ece0-c5e8" name="⦿⦿⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4c76-dfa7-e70b-0458" name="⦿⦿⦿⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b89-2942-07e1-f4e3" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="e8b8-850d-63fd-f0c9" name="⦿⦿⦿⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="41fe-b19b-c785-862f" name="⦿⦿⦿⦿⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a9b-fa8c-b6fc-3fe5" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="f21b-c6c3-b834-ee19" name="⦿⦿⦿⦿⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="23ac-b10a-9fc0-b0cd" name="⦿⦿⦿⦿⦿(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="731e-cd94-068f-3488" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="54d1-98b0-e30c-dad3" name="⦿⦿⦿⦿⦿(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                      <characteristics>
+                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="b187-2994-731b-0763" name="Head Manifold" hidden="false" collective="false" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
+            <entryLink id="b187-2994-731b-0763" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="33bf-049a-2e61-89c2" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca0e-8422-18ab-97fd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ae3-20a5-cb19-9524" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="74ac-8b96-f42c-3a28" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="b3cb-9e84-6181-37dd">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b022-895b-f89f-f3f4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4138-0823-20cd-3dca" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="b3cb-9e84-6181-37dd" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="67d3-d39f-143d-fc66" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="795b-6359-9dad-83ec" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="ce1e-aa24-fc32-fa61" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry id="e9f6-5f0a-f3a7-456b" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af26-abc8-9925-4b6c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e35-b341-5873-1b43" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a729-d6f9-299f-a129" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="796b-1378-14f8-3eb3">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7eb-5e9c-fda0-2787" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffb7-ba57-0a4f-b9df" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="796b-1378-14f8-3eb3" name="⦿⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3908-a64b-3b32-344e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0705-e4cf-a0c1-30a5" name="⦿⦿⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbd2-85bd-e967-9107" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f351-23f3-def4-45c6" name="⦿⦿⦿⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3144-d33f-896d-fd3f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="21f2-4235-a155-8dcc" name="⦿⦿⦿⦿⦾ Orange(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="162b-50cf-0dbc-1cbe" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4382-8fea-de84-72a4" name="⦿⦿⦿⦿⦿ Red(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="492a-b9f5-59dc-5811" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f4dd-18ef-5ac0-0de0" name="Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="f4dd-18ef-5ac0-0de0" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
-            <selectionEntryGroup id="dee5-7afd-4f12-6e20" name="Arms" hidden="false" collective="false">
+            <selectionEntryGroup id="dee5-7afd-4f12-6e20" name="Arms" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="05cc-de3c-d852-dfd2" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05cc-de3c-d852-dfd2" type="min"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e13-803f-1d74-381b" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="dd37-25ca-a5a0-a04a" name="Inferno Gun" hidden="false" collective="false" targetId="c7aa-80e5-43d2-0cfd" type="selectionEntry"/>
-                <entryLink id="23f0-ce15-158e-d8f5" name="Plasma Blast Gun" hidden="false" collective="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
-                <entryLink id="fc86-6790-bf6c-3f0a" name="Turbo Laser Destructor (Warhound)" hidden="false" collective="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
-                <entryLink id="1524-5b2a-1e79-12e8" name="Vulcan Megabolter (Warhound)" hidden="false" collective="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
-                <entryLink id="3ee3-eda0-0fc6-d1e0" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="true" collective="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry">
+                <entryLink id="dd37-25ca-a5a0-a04a" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="c7aa-80e5-43d2-0cfd" type="selectionEntry"/>
+                <entryLink id="23f0-ce15-158e-d8f5" name="Plasma Blast Gun" hidden="false" collective="false" import="true" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
+                <entryLink id="fc86-6790-bf6c-3f0a" name="Turbo Laser Destructor (Warhound)" hidden="false" collective="false" import="true" targetId="2165-2206-85af-b273" type="selectionEntry"/>
+                <entryLink id="1524-5b2a-1e79-12e8" name="Vulcan Megabolter (Warhound)" hidden="false" collective="false" import="true" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
+                <entryLink id="3ee3-eda0-0fc6-d1e0" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="true" collective="false" import="true" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -1854,65 +2422,9 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ecfd-f898-b5c9-4ac5" name="Void Shields" hidden="false" collective="false" defaultSelectionEntryId="33a7-7a1b-8746-5001">
-          <entryLinks>
-            <entryLink id="33a7-7a1b-8746-5001" name="Void Shield (3+)" hidden="false" collective="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry"/>
-            <entryLink id="65c5-8298-de1c-ac2c" name="Void Shield (4+) 2" hidden="false" collective="false" targetId="9219-813c-9bc8-e118" type="selectionEntry"/>
-            <entryLink id="f758-56c9-43f3-ed4a" name="Void Shield (X)" hidden="false" collective="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry"/>
-            <entryLink id="30a3-6c5b-6094-ad78" name="Void Shield (4+)" hidden="false" collective="false" targetId="c621-87a7-709b-daa0" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="fc25-d3a5-2336-d414" name="Plasma Reactor" hidden="false" collective="false" defaultSelectionEntryId="54d8-91ce-8ec4-6e91">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ca2-f09d-5d56-a5b1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87e4-9d94-5f4c-f6db" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="094e-fb3e-6d53-74d8" name="Plasma Reactor 3 Orange" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02eb-3660-ad3c-db42" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4c60-e648-c02f-742a" name="Plasma Reactor 2 Green" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc1a-3cc0-b1cb-df27" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5472-be7a-6576-83a0" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb95-fb5e-616e-6c3c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8e13-79cd-9c07-3918" name="Plasma Reactor 5 Red" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd02-eb79-e76c-edc0" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="54d8-91ce-8ec4-6e91" name="Plasma Reactor 1 Green" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec53-a52e-df0b-38fa" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="5cf4-5897-342d-5a46" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="5cf4-5897-342d-5a46" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -1930,15 +2442,15 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="895d-6fe2-456c-f3da" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="fcd2-9d09-2af7-36de" name="Wargear" hidden="false" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="fcd2-9d09-2af7-36de" name="Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="180.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bc4c-36af-c4cd-4594" name="Rapid-Fire Battlecannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bc4c-36af-c4cd-4594" name="Rapid-Fire Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d488-cbf9-4931-3d80" type="min"/>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b56-743a-f0dc-899e" type="max"/>
       </constraints>
       <profiles>
@@ -1966,12 +2478,12 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="02f3-29a7-d9a3-54ba" name="Avenger Gatling Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="02f3-29a7-d9a3-54ba" name="Avenger Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5199-0c9c-66ff-7376" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c54-5560-fa70-71e1" type="min"/>
       </constraints>
       <profiles>
         <profile id="1a29-07b2-853f-94e3" name="Avenger Gatling Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
@@ -1998,11 +2510,11 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="908e-f9af-f0d1-a124" name="Thermal Cannon" hidden="false" collective="false" type="model">
+    <selectionEntry id="908e-f9af-f0d1-a124" name="Thermal Cannon" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9140-5146-543f-e209" type="min"/>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c302-c3f5-b5ce-c362" type="max"/>
       </constraints>
       <profiles>
@@ -2030,11 +2542,11 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5be0-b49f-fc95-f499" name="Questoris Melee Weapon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5be0-b49f-fc95-f499" name="Questoris Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b77c-bdff-12d8-2a7c" type="min"/>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ea0-e862-70ac-4bf1" type="max"/>
       </constraints>
       <profiles>
@@ -2062,9 +2574,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fcfd-d034-1395-9eea" name="Venator Light Maniple" publicationId="975a-00f4-pubN65537" page="61" hidden="false" collective="false" type="unit">
+    <selectionEntry id="fcfd-d034-1395-9eea" name="Venator Light Maniple" publicationId="975a-00f4-pubN65537" page="61" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="2d42-3c90-4547-c5f5" name="Opportunistic Strike" publicationId="975a-00f4-pubN65537" page="61" hidden="false">
           <description>If an enemy unit&apos;s shiles are collapsed by an attack made by a Warhound Titan from this maniple, the Reaver Titan in this maniple can immediately make an attack against it with one of its weapons, following the Combat Sequence on page 33. This means that the Reaver can potentially attack several times in same phase, as well as attacking normally when it is activated. However, if the Reaver is preventd from attacking in the Combat phase - it has Striking Speed of Shutdown orders, for example - it cannot make these bonus attacks.</description>
@@ -2074,7 +2587,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="52f9-a6d3-d9e0-1655" name="New CategoryLink" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4a06-c0d2-4c8d-c833" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false">
+        <selectionEntryGroup id="4a06-c0d2-4c8d-c833" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -2083,7 +2596,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink id="f702-1c9a-19d8-0d38" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+            <entryLink id="f702-1c9a-19d8-0d38" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -2099,13 +2612,13 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="486d-f659-0c62-2155" name="Reaver Titan" hidden="false" collective="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+        <entryLink id="486d-f659-0c62-2155" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db35-3484-5e03-49ad" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9434-7d69-d629-379c" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="50fe-fac4-704d-2dde" name="Warhound Titan" hidden="false" collective="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+        <entryLink id="50fe-fac4-704d-2dde" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="124a-743e-536c-5546" value="1">
               <conditions>
@@ -2123,7 +2636,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="124a-743e-536c-5546" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="645c-d3d6-d17e-4640" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="645c-d3d6-d17e-4640" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7fc-682b-f1b2-a4f8" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="585b-38ce-e35a-c13d" type="min"/>
@@ -2132,9 +2645,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="740e-52e8-27ed-bf22" name="Myrmidon Battleline Maniple" publicationId="975a-00f4-pubN65537" page="59" hidden="false" collective="false" type="unit">
+    <selectionEntry id="740e-52e8-27ed-bf22" name="Myrmidon Battleline Maniple" publicationId="975a-00f4-pubN65537" page="59" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="5124-eab1-8902-5b78" name="Overwhelming Firepower" publicationId="975a-00f4-pubN65537" page="59" hidden="false">
           <description>When issuing a First Fire or Split Fire order to Titans from this maniple, the Command check will always succeed on a rolle of 2+, regardless of modifiers.</description>
@@ -2144,7 +2658,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="e03b-a90d-6e11-ab17" name="New CategoryLink" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9453-bdad-d052-32d6" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false">
+        <selectionEntryGroup id="9453-bdad-d052-32d6" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -2153,7 +2667,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink id="0fd2-00e1-22b9-f037" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+            <entryLink id="0fd2-00e1-22b9-f037" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="true" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -2169,13 +2683,13 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a8b3-26d1-dd09-ab68" name="Reaver Titan" hidden="false" collective="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+        <entryLink id="a8b3-26d1-dd09-ab68" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fd0-95a1-c784-b348" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c65-d0ef-485b-6d2e" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="d020-5fd1-a571-ddf2" name="Warlord Titan" hidden="false" collective="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+        <entryLink id="d020-5fd1-a571-ddf2" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="baf4-9b7f-f9b7-e2d9" value="1">
               <conditions>
@@ -2193,7 +2707,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baf4-9b7f-f9b7-e2d9" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="740c-8755-3e18-5a7c" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="740c-8755-3e18-5a7c" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a6-7fc4-677d-1bdf" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93f7-1318-c1ab-ae17" type="min"/>
@@ -2202,9 +2716,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3ca3-42a8-26bb-5676" name="Axiom Battleline Maniple" publicationId="975a-00f4-pubN65537" page="57" hidden="false" collective="false" type="unit">
+    <selectionEntry id="3ca3-42a8-26bb-5676" name="Axiom Battleline Maniple" publicationId="975a-00f4-pubN65537" page="57" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="a8ff-f985-efc4-9160" name="Might of the Omnissiah" publicationId="975a-00f4-pubN65537" page="57" hidden="false">
           <description>If a Titan from this maniple fails a Command check when an order is issued to it in the Issue Orders step of the Strategy phase, orders can still be issued to the rest of the Titans in the maniple. Command checks must still be made for each.</description>
@@ -2214,7 +2729,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="7be4-8f1d-0d71-b70f" name="New CategoryLink" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5bd4-87b0-2dd4-35b7" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false">
+        <selectionEntryGroup id="5bd4-87b0-2dd4-35b7" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -2227,7 +2742,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a02-8d5e-e18e-8215" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="2580-6e3c-ce91-dda1" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+            <entryLink id="2580-6e3c-ce91-dda1" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -2239,7 +2754,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
                 <categoryLink id="98da-f116-35d7-618e" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="1401-aa72-5974-496c" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+            <entryLink id="1401-aa72-5974-496c" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="true" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -2255,13 +2770,13 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="228f-f7a7-d85a-c515" name="Reaver Titan" hidden="false" collective="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+        <entryLink id="228f-f7a7-d85a-c515" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a16-e37f-de62-e329" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aa0-2e76-da99-3f1a" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="430c-0860-5432-11ea" name="Warlord Titan" hidden="false" collective="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+        <entryLink id="430c-0860-5432-11ea" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="72f4-ef46-bd95-4ba9" value="0">
               <conditions>
@@ -2284,7 +2799,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08e6-4218-264a-812c" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="6922-4409-37e6-3201" name="Warhound Titan" hidden="false" collective="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+        <entryLink id="6922-4409-37e6-3201" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="d217-c30c-b3e5-f142" value="1">
               <conditions>
@@ -2302,7 +2817,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d011-abe9-ffd9-10b6" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="2dc6-c52e-3efc-5e21" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="2dc6-c52e-3efc-5e21" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afa0-e9f7-7314-8a0c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8508-eb9b-e33b-45e1" type="min"/>
@@ -2311,9 +2826,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b6b-b476-bd24-8c5c" name="Questoris Support Banner" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2b6b-b476-bd24-8c5c" name="Questoris Support Banner" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="b96b-d322-79ed-3b15" name="Questoris Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -2363,34 +2879,56 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
           </characteristics>
         </profile>
-        <profile id="4625-257e-3231-5e44" name="Questoris Support Banner Structure Point 4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="be11-a1d8-7670-e1f4" name="Questoris Support Banner Structure Point 3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="c937-db5c-296a-3382" name="Questoris Support Banner Structure Point 2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="55ec-58bd-e472-cbad" name="Questoris Support Banner Structure Point 1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="8231-1078-b345-f9de" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
         <categoryLink id="05ff-68be-de5c-4d87" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="4eff-36e2-fab2-c3a1" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d869-27b8-7b88-6333" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abb1-91f0-f0b9-5755" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c815-9759-dc7c-cc36" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0956-f482-59b4-8265" name="Questoris Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="700e-13e6-6c97-657e">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a935-944a-ab49-ed6c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0026-f5c4-dbc8-734b" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="700e-13e6-6c97-657e" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a712-8c19-e062-7614" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e020-4319-68e6-437a" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ac92-b9dc-c522-468b" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="23a9-0bb7-ac82-8ed2" name="Knight Hulls" hidden="false" collective="false">
+        <selectionEntryGroup id="23a9-0bb7-ac82-8ed2" name="Knight Hulls" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="a12e-ad09-f102-4207" value="1">
               <repeats>
@@ -2410,12 +2948,12 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="707b-ec1f-7b17-4e9e" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="8371-c1b8-3c6e-1174" name="Questoris Knight" hidden="false" collective="false" targetId="5eb2-54c8-ba72-1bcf" type="selectionEntry"/>
+            <entryLink id="8371-c1b8-3c6e-1174" name="Questoris Knight" hidden="false" collective="false" import="true" targetId="5eb2-54c8-ba72-1bcf" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6c5d-25f9-3110-dad5" name="Lord Scion" hidden="false" collective="false" targetId="c197-9e7c-0bb5-0889" type="selectionEntry">
+        <entryLink id="6c5d-25f9-3110-dad5" name="Lord Scion" hidden="false" collective="false" import="true" targetId="c197-9e7c-0bb5-0889" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="a731-e220-2d8a-41bf" value="50"/>
           </modifiers>
@@ -2424,7 +2962,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bafe-ae72-5e85-e378" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="49d8-4d4f-2a74-2ae3" name="Scion Marshal" hidden="false" collective="false" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
+        <entryLink id="49d8-4d4f-2a74-2ae3" name="Scion Marshal" hidden="false" collective="false" import="true" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="a731-e220-2d8a-41bf" value="35"/>
           </modifiers>
@@ -2436,9 +2974,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c197-9e7c-0bb5-0889" name="Lord Scion" hidden="false" collective="false" type="model">
+    <selectionEntry id="c197-9e7c-0bb5-0889" name="Lord Scion" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fae-8413-da6d-a43b" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95e0-a28b-5140-3b29" type="min"/>
@@ -2450,16 +2989,17 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5cc8-bdd5-8c3f-5bc3" name="Scion Martial" hidden="false" collective="false" type="model">
+    <selectionEntry id="5cc8-bdd5-8c3f-5bc3" name="Scion Martial" hidden="false" collective="false" import="true" type="model">
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="82d5-4e74-6258-8be8" name="Stormspear Rocket Pod" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="82d5-4e74-6258-8be8" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1bd-03aa-8ac6-1339" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="022c-10c6-d8d2-6a7e" type="max"/>
       </constraints>
       <profiles>
@@ -2485,11 +3025,11 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5fef-e84f-c8eb-791b" name="Meltagun" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5fef-e84f-c8eb-791b" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91ee-1a14-6941-a11c" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a030-deb2-ccf8-72c5" type="max"/>
       </constraints>
       <rules>
@@ -2502,38 +3042,47 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5eb2-54c8-ba72-1bcf" name="Questoris Knight" hidden="false" collective="false" type="model">
+    <selectionEntry id="5eb2-54c8-ba72-1bcf" name="Questoris Knight" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="11b6-403d-67f2-9067" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="3529-2080-e9f1-b2b2" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1fc8-9151-c6b4-3c34" name="Arms" hidden="false" collective="false">
+        <selectionEntryGroup id="1fc8-9151-c6b4-3c34" name="Arms" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="4c58-ca4e-6715-0468" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55bb-9170-8061-9c84" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c58-ca4e-6715-0468" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7009-126a-39d7-e9e6" name="Avenger Gatling Cannon" hidden="false" collective="false" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry"/>
-            <entryLink id="d3f0-6fc6-5d76-7528" name="Questoris Melee Weapon" hidden="false" collective="false" targetId="5be0-b49f-fc95-f499" type="selectionEntry"/>
-            <entryLink id="1f9c-b6a2-e506-3657" name="Rapid-Fire Battlecannon" hidden="false" collective="false" targetId="bc4c-36af-c4cd-4594" type="selectionEntry"/>
-            <entryLink id="0acf-0708-927b-3356" name="Thermal Cannon" hidden="false" collective="false" targetId="908e-f9af-f0d1-a124" type="selectionEntry"/>
+            <entryLink id="7009-126a-39d7-e9e6" name="Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry"/>
+            <entryLink id="d3f0-6fc6-5d76-7528" name="Questoris Melee Weapon" hidden="false" collective="false" import="true" targetId="5be0-b49f-fc95-f499" type="selectionEntry"/>
+            <entryLink id="1f9c-b6a2-e506-3657" name="Rapid-Fire Battlecannon" hidden="false" collective="false" import="true" targetId="bc4c-36af-c4cd-4594" type="selectionEntry"/>
+            <entryLink id="0acf-0708-927b-3356" name="Thermal Cannon" hidden="false" collective="false" import="true" targetId="908e-f9af-f0d1-a124" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="963d-2b41-1b12-98ea" name="Upgrades" hidden="false" collective="false">
+        <selectionEntryGroup id="963d-2b41-1b12-98ea" name="Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="f805-bde2-090e-d957" name="Stormspear Rocket Pod" hidden="false" collective="false" targetId="82d5-4e74-6258-8be8" type="selectionEntry"/>
-            <entryLink id="945b-6924-0242-b1b3" name="Meltagun" hidden="false" collective="false" targetId="5fef-e84f-c8eb-791b" type="selectionEntry"/>
+            <entryLink id="f805-bde2-090e-d957" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="82d5-4e74-6258-8be8" type="selectionEntry"/>
+            <entryLink id="945b-6924-0242-b1b3" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4e23-1ac3-bb9b-14b5" name="Arioch Titan Power Claw" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="4e23-1ac3-bb9b-14b5" name="Arioch Titan Power Claw" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="92de-72a0-ca66-d332" name="Arioch Titan Power Claw" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2558,13 +3107,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="8653-959b-23d3-cd5a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9fdf-0495-68b4-07cb" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="9fdf-0495-68b4-07cb" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e89d-64cd-eb26-e165" name="Reaver Titan Power Fist" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="e89d-64cd-eb26-e165" name="Reaver Titan Power Fist" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="6ce8-b18f-1346-3973" name="Reaver Titan Power Fist" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2588,13 +3138,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="b7e8-44d6-7cbd-f450" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6167-9d9f-9f79-3867" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="6167-9d9f-9f79-3867" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fee8-4996-06cd-64bc" name="Bellicosa Volcano Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="fee8-4996-06cd-64bc" name="Bellicosa Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="a82d-e28b-fcfa-38c1" name="Bellicosa Volcano Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2619,13 +3170,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="de9b-186c-462e-de11" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5e93-1c88-a70c-fc1b" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="5e93-1c88-a70c-fc1b" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="375a-7b78-8edd-71d5" name="Laser Blaster" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="375a-7b78-8edd-71d5" name="Laser Blaster" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="b62c-bcc4-d519-bc32" name="Laser Blaster" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2650,13 +3202,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="e12b-9239-334b-6ac5" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f188-d23d-d7e1-1c3f" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="f188-d23d-d7e1-1c3f" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bfdb-4953-f838-7d21" name="Paired Gatling Blasters" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bfdb-4953-f838-7d21" name="Paired Gatling Blasters" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="0510-f2fd-9e12-db18" name="Paired Gatling Blasters" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2681,13 +3234,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="5974-b0ae-e61c-7fa1" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b5df-841b-210b-a0a4" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="b5df-841b-210b-a0a4" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0b27-6d01-57d3-0e9d" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="0b27-6d01-57d3-0e9d" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="d790-65c0-7f6c-708f" name="Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2712,13 +3266,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="e6e2-d4cb-b0fa-d569" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5d09-d8ed-7360-0d4a" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="5d09-d8ed-7360-0d4a" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5960-ee8c-3107-46c4" name="Sunfury Plasma Annihilator" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5960-ee8c-3107-46c4" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="349e-1d9b-a206-18f5" name="Sunfury Plasma Annihilator" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2742,13 +3297,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="99d8-7869-619e-c643" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="57a3-180b-0f7d-7ffd" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="57a3-180b-0f7d-7ffd" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="47c9-43b5-8afc-b64f" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="47c9-43b5-8afc-b64f" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="b627-6f89-9463-8a14" name="Vulcan Megabolter (Reaver)" publicationId="7236-e1d8-c886-f5fd" page="38" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2772,13 +3328,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="b78a-6229-583e-36cf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="558c-ae48-6cc0-ebf6" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="558c-ae48-6cc0-ebf6" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2165-2206-85af-b273" name="Turbo Laser Destructor (Warhound)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2165-2206-85af-b273" name="Turbo Laser Destructor (Warhound)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="46f4-f06b-9149-ebca" name="Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2802,13 +3359,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="abfb-2be7-daf7-1c27" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="ef15-4c97-4ef7-9c43" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="ef15-4c97-4ef7-9c43" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2cea-d272-fa57-5553" name="Macro Gatling Blaster" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2cea-d272-fa57-5553" name="Macro Gatling Blaster" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="b708-2870-24cd-7be2" name="Macro Gatling Blaster" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2831,13 +3389,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="fa26-0def-9143-1e95" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f73b-291c-5e1a-f3ad" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="f73b-291c-5e1a-f3ad" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="73bc-c1cd-03b3-bedf" name="Reaver Titan Chainfist" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="73bc-c1cd-03b3-bedf" name="Reaver Titan Chainfist" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="9fa2-abe8-fb2e-709e" name="Reaver Titan Chainfist" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2862,13 +3421,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="c1b3-6cc6-b28d-ce25" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2623-4f1a-6a29-25af" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="2623-4f1a-6a29-25af" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bd33-0564-6277-6dc1" name="Apocalypse Missile Launchers" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bd33-0564-6277-6dc1" name="Apocalypse Missile Launchers" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="700d-80b3-00d0-091b" name="Apocalypse Missile Launchers" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2893,13 +3453,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="c21f-1609-c88a-b089" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6303-cfd0-6a1a-c9ee" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="6303-cfd0-6a1a-c9ee" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8bd4-e1ff-d447-389e" name="Volcano Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="8bd4-e1ff-d447-389e" name="Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="ace0-55a3-8828-3d1a" name="Volcano Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2923,13 +3484,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="1e8e-830d-91dc-42be" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3b7a-76d2-d1eb-7257" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="3b7a-76d2-d1eb-7257" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1904-506f-6b2d-0843" name="Mori Quake Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1904-506f-6b2d-0843" name="Mori Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="9b69-ddb5-1640-7409" name="Mori Quake Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2953,13 +3515,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="e88c-fda5-0109-909d" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b747-4979-9ec0-5205" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="b747-4979-9ec0-5205" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bd35-3f71-8bea-7e42" name="Plasma Blast Gun" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bd35-3f71-8bea-7e42" name="Plasma Blast Gun" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="f969-ff69-e466-aa5f" name="Plasma Blast Gun" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -2984,13 +3547,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="0a1d-e8c3-acb5-aa1f" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="1da7-b1ca-378b-6d13" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="1da7-b1ca-378b-6d13" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="be6b-8894-c7d1-bdba" name="Warp Missile Support Rack" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="be6b-8894-c7d1-bdba" name="Warp Missile Support Rack" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="daea-6b05-7a54-7156" name="Warp Missile Support Rack" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3015,13 +3579,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="186e-5993-6e22-fecf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="38ed-3d00-a5ec-8a60" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="38ed-3d00-a5ec-8a60" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5fc7-120d-623b-8b5a" name="Paired Laser Blaster" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5fc7-120d-623b-8b5a" name="Paired Laser Blaster" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="2c94-2b36-0482-f108" name="Paired Laser Blaster" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3047,13 +3612,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="0b1d-b3d5-b057-5fec" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3ce4-21dc-baa0-9567" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="3ce4-21dc-baa0-9567" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="54d9-e1d5-30b0-c357" name="Apocalypse Missile Launcher" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="54d9-e1d5-30b0-c357" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="531c-4242-6420-d01e" name="Apocalypse Missile Launcher" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3079,13 +3645,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="ef76-24da-820b-228a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5fa1-9b8c-18ec-c87c" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="5fa1-9b8c-18ec-c87c" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="087a-abff-3ffe-f488" name="Melta Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="087a-abff-3ffe-f488" name="Melta Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="d10f-9630-c104-eb62" name="Melta Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3110,13 +3677,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="decb-1557-2de8-c50e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3142-627e-de68-5a41" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="3142-627e-de68-5a41" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bfee-3947-a004-3a4e" name="Paired Turbo Laser Destructor" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bfee-3947-a004-3a4e" name="Paired Turbo Laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="08bc-a277-c2bc-9973" name="Paired Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3142,13 +3710,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="6637-327e-bf82-7190" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e993-7231-9458-b05d" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="e993-7231-9458-b05d" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c7aa-80e5-43d2-0cfd" name="Inferno Gun" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="c7aa-80e5-43d2-0cfd" name="Inferno Gun" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="9501-9bd3-1519-158a" name="Inferno Gun" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3172,13 +3741,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="294a-ed52-cda5-cea6" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="cd2f-c7a0-0f89-8198" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="cd2f-c7a0-0f89-8198" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aa7a-74f4-180e-3b5e" name="Gatling Blaster" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="aa7a-74f4-180e-3b5e" name="Gatling Blaster" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="7296-c9a2-e9db-34b5" name="Gatling Blasters" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3202,13 +3772,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="cafa-ef6a-f696-7e3e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0487-6aac-5294-3b10" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="0487-6aac-5294-3b10" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f2ae-e883-28c4-dbcc" name="Vulcan Megabolter Array" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="f2ae-e883-28c4-dbcc" name="Vulcan Megabolter Array" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="a5ef-5826-f9cf-6c41" name="Vulcan Megabolter Array" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3233,13 +3804,14 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="20c7-8b0b-9546-211b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9ec9-aebc-d6ca-d60d" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="9ec9-aebc-d6ca-d60d" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="edcd-f43d-10ba-7f60" name="Vulcan Megabolter (Warhound)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="edcd-f43d-10ba-7f60" name="Vulcan Megabolter (Warhound)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="9e0d-d5fd-c251-904b" name="Vulcan Megabolter (Warhound)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3262,56 +3834,62 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="ad18-28ce-f3ad-7e1b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b36b-f4ee-e2a9-f796" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="b36b-f4ee-e2a9-f796" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e7f3-4f09-8dc2-5b18" name="Void Shield (3+)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="e7f3-4f09-8dc2-5b18" name="Void Shield (3+)" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d84-966a-65f5-984f" type="max"/>
       </constraints>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c621-87a7-709b-daa0" name="Void Shield (4+)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="c621-87a7-709b-daa0" name="Void Shield (4+)" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e66e-039a-2576-1143" type="max"/>
       </constraints>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fb11-17c8-3ecb-3006" name="Void Shield (X)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="fb11-17c8-3ecb-3006" name="Void Shield (X)" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b40-26e6-b877-dca2" type="max"/>
       </constraints>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ae30-2066-1d64-6559" name="Plasma Reactor" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="ae30-2066-1d64-6559" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8125-55fc-f770-d875" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6558-d04c-f748-04dd" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="2d8a-bd6d-028a-9113" name="Ticked" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2d8a-bd6d-028a-9113" name="Ticked" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b582-0e19-a858-a4f1" type="max"/>
           </constraints>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ebc6-2029-ceb3-f43b" name="Ardex Defensor Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="ebc6-2029-ceb3-f43b" name="Ardex Defensor Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9a3-e790-5e42-7cfa" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb67-6f88-ca10-e8b3" type="max"/>
@@ -3323,61 +3901,68 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bad0-317f-20ed-813e" name="Weapon Destroyed" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bad0-317f-20ed-813e" name="Weapon Destroyed" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7459-5184-5cda-9065" type="max"/>
       </constraints>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="15dc-a57d-f1f3-41a6" name="Manifold" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="15dc-a57d-f1f3-41a6" name="Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec0f-c79f-18dd-ff5b" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="381a-291f-d6e9-dfe5" type="min"/>
       </constraints>
       <entryLinks>
-        <entryLink id="68db-6514-a4ed-8e2d" name="Manifold" hidden="false" collective="false" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+        <entryLink id="68db-6514-a4ed-8e2d" name=" Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cecc-5283-0f3c-0325" name="Void Shield (3+) 2" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="cecc-5283-0f3c-0325" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3610-61ec-5651-6633" type="max"/>
       </constraints>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9219-813c-9bc8-e118" name="Void Shield (4+) 2" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="9219-813c-9bc8-e118" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a882-71b1-8bfe-18ce" type="max"/>
       </constraints>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="787b-c4a3-7cbf-d79a" name="Void Shield (4+) 3" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="787b-c4a3-7cbf-d79a" name="Void Shield (4+) 3" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bea-4192-ed04-c2e6" type="max"/>
       </constraints>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dbfc-74f9-0c2f-9ff0" name="Void Shield (3+) 3" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="dbfc-74f9-0c2f-9ff0" name="Void Shield (3+) 3" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fac-2295-e545-0c9b" type="max"/>
       </constraints>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2e8d-74e3-aecf-9e11" name="Cerastus Knight Banner" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2e8d-74e3-aecf-9e11" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="e79e-b6d9-c469-8998" name="1 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
@@ -3416,31 +4001,6 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
           </characteristics>
         </profile>
-        <profile id="1a69-790d-33e9-3d07" name="Cerastus Knight Banner Structure Point 5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="64a4-a1d4-4b2d-4faa" name="Cerastus Knight Banner Structure Point 4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="41ff-a8b6-0602-362a" name="Cerastus Knight Banner Structure Point 3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="ba19-f304-f0cb-716a" name="Cerastus Knight Banner Structure Point 2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="c7e4-0a07-8452-99fa" name="Cerastus Knight Banner Structure Point 1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
         <profile id="4cf8-05ea-ff5b-5752" name="Cerastus Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
             <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">12&quot;</characteristic>
@@ -3461,8 +4021,56 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       <categoryLinks>
         <categoryLink id="639b-d64f-808c-3bcb" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0734-5864-c482-92c1" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9505-f315-81f5-e2cf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d9e-0f31-d622-be6c" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="822f-6d2d-bf03-3180" name="Cersastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="4c60-d929-fad1-abd8">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a32b-f614-3278-30ce" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2e-9dbe-f88a-a1cc" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="4c60-d929-fad1-abd8" name="⦿⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9b2f-be3a-7c01-c097" name="⦿⦿⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7e61-486c-d3ea-bbf0" name="⦿⦿⦿⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b90a-0eb5-0e35-7047" name="⦿⦿⦿⦿⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7fd1-ee6d-6642-1e52" name="⦿⦿⦿⦿⦿(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8e7c-e717-8999-389e" name="Knight Hulls" hidden="false" collective="false">
+        <selectionEntryGroup id="8e7c-e717-8999-389e" name="Knight Hulls" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="8439-88cc-174b-2f1d" value="1">
               <repeats>
@@ -3480,17 +4088,17 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3a-ec88-0f9f-af0e" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="e018-6fef-2f79-88bc" name="Cerastus Knight" hidden="false" collective="false" targetId="71a1-ef51-b47e-2983" type="selectionEntry"/>
+            <entryLink id="e018-6fef-2f79-88bc" name="Cerastus Knight" hidden="false" collective="false" import="true" targetId="71a1-ef51-b47e-2983" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="eebf-89ee-8c69-59a6" name="Lord Scion" hidden="false" collective="false" targetId="c197-9e7c-0bb5-0889" type="selectionEntry">
+        <entryLink id="eebf-89ee-8c69-59a6" name="Lord Scion" hidden="false" collective="false" import="true" targetId="c197-9e7c-0bb5-0889" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="a731-e220-2d8a-41bf" value="70"/>
           </modifiers>
         </entryLink>
-        <entryLink id="99e6-43c9-8687-531a" name="Scion Marshal" hidden="false" collective="false" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
+        <entryLink id="99e6-43c9-8687-531a" name="Scion Marshal" hidden="false" collective="false" import="true" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="a731-e220-2d8a-41bf" value="60"/>
           </modifiers>
@@ -3502,21 +4110,22 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5ecc-ff8d-2dcc-d06c" name="Cerastus Knight Lancer" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5ecc-ff8d-2dcc-d06c" name="Cerastus Knight Lancer" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="85fe-f195-5aad-ae3f" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="2d10-bdd4-02b9-d2db" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="09db-78c7-a73c-46bb" name="Cerastus Shock Lance" hidden="false" collective="false" targetId="c0ea-1d01-3f46-f5e2" type="selectionEntry">
+        <entryLink id="09db-78c7-a73c-46bb" name="Cerastus Shock Lance" hidden="false" collective="false" import="true" targetId="c0ea-1d01-3f46-f5e2" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="038d-03a7-8e47-8032" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cc7-0ce4-8569-508d" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="c540-8b6d-3daa-243c" name="Ion Gauntlet Shield Shock Blast" hidden="false" collective="false" targetId="d8a7-9b41-99fc-155f" type="selectionEntry">
+        <entryLink id="c540-8b6d-3daa-243c" name="Ion Gauntlet Shield Shock Blast" hidden="false" collective="false" import="true" targetId="d8a7-9b41-99fc-155f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e208-40e6-6bf9-5cae" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b51-6bca-002d-5ded" type="min"/>
@@ -3525,39 +4134,41 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="71a1-ef51-b47e-2983" name="Cerastus Knight" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="71a1-ef51-b47e-2983" name="Cerastus Knight" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="33c4-aa71-bc88-bf09" name="Knight Hull" hidden="false" collective="false">
+        <selectionEntryGroup id="33c4-aa71-bc88-bf09" name="Knight Hull" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3dd-6855-6769-0b63" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87f4-e696-0645-38e0" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="3f9b-7dda-849d-ccee" name="Cerastus Knight Acheron" hidden="false" collective="false" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
-            <entryLink id="2895-85a1-7497-c104" name="Cerastus Knight Castigator" hidden="false" collective="false" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
-            <entryLink id="4c38-5159-b94b-514d" name="Cerastus Knight Lancer" hidden="false" collective="false" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
+            <entryLink id="3f9b-7dda-849d-ccee" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
+            <entryLink id="2895-85a1-7497-c104" name="Cerastus Knight Castigator" hidden="false" collective="false" import="true" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
+            <entryLink id="4c38-5159-b94b-514d" name="Cerastus Knight Lancer" hidden="false" collective="false" import="true" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6d84-11a3-b6c4-29ac" name="Cerastus Knight Acheron" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6d84-11a3-b6c4-29ac" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="f9cc-6376-b735-eb83" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="d051-625b-2fd0-a85e" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="25b1-c54a-54b9-de4f" name="Acheron Chainfist" hidden="false" collective="false" targetId="eae0-b30e-6e52-d2e1" type="selectionEntry">
+        <entryLink id="25b1-c54a-54b9-de4f" name="Acheron Chainfist" hidden="false" collective="false" import="true" targetId="eae0-b30e-6e52-d2e1" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54fc-4acd-008e-d473" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc24-9374-b62f-83de" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="14de-bab1-06df-3890" name="Acheron Pattern Flame Cannon" hidden="false" collective="false" targetId="5531-995f-5196-d469" type="selectionEntry">
+        <entryLink id="14de-bab1-06df-3890" name="Acheron Pattern Flame Cannon" hidden="false" collective="false" import="true" targetId="5531-995f-5196-d469" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bc5-d116-13a0-95b9" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62dd-3498-4d8b-8afb" type="min"/>
@@ -3566,21 +4177,22 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7c6c-6bc6-32eb-e84a" name="Cerastus Knight Castigator" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7c6c-6bc6-32eb-e84a" name="Cerastus Knight Castigator" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="28b6-65ba-7eb5-7323" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="260b-edae-c2e5-3f25" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e090-7aad-2f49-a6b5" name="Castigator Pattern Bolt Cannon" hidden="false" collective="false" targetId="7093-6aaa-14f1-bf95" type="selectionEntry">
+        <entryLink id="e090-7aad-2f49-a6b5" name="Castigator Pattern Bolt Cannon" hidden="false" collective="false" import="true" targetId="7093-6aaa-14f1-bf95" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d139-e817-b7f9-89d4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b76a-51ea-46ca-8980" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="6f47-5fd4-3215-0d1f" name="Castigator Warblade" hidden="false" collective="false" targetId="ec48-48df-5e6e-dc8e" type="selectionEntry">
+        <entryLink id="6f47-5fd4-3215-0d1f" name="Castigator Warblade" hidden="false" collective="false" import="true" targetId="ec48-48df-5e6e-dc8e" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa56-2332-9d6a-a536" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e38c-0b8a-1884-8a11" type="min"/>
@@ -3589,9 +4201,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c0ea-1d01-3f46-f5e2" name="Cerastus Shock Lance" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="c0ea-1d01-3f46-f5e2" name="Cerastus Shock Lance" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="4dd4-10f7-c093-e3fd" name="Cerastus Shock Lance" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3617,9 +4230,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d8a7-9b41-99fc-155f" name="Ion Gauntlet Shield Shock Blast" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="d8a7-9b41-99fc-155f" name="Ion Gauntlet Shield Shock Blast" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="58db-d2c3-4ba4-0043" name="Ion Gauntlet Shield Shock Blast" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3645,9 +4259,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7093-6aaa-14f1-bf95" name="Castigator Pattern Bolt Cannon" page="" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7093-6aaa-14f1-bf95" name="Castigator Pattern Bolt Cannon" page="" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="5233-9f4d-96c6-16ad" name="Castigator Pattern Bolt Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3673,9 +4288,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ec48-48df-5e6e-dc8e" name="Castigator Warblade" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="ec48-48df-5e6e-dc8e" name="Castigator Warblade" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="e1a2-6208-0baf-c2b3" name="Castigator Warblade" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3702,9 +4318,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="eae0-b30e-6e52-d2e1" name="Acheron Chainfist" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="eae0-b30e-6e52-d2e1" name="Acheron Chainfist" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="da51-e3a6-bb09-786a" name="Acheron Chainfist" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3730,9 +4347,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5531-995f-5196-d469" name="Acheron Pattern Flame Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5531-995f-5196-d469" name="Acheron Pattern Flame Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="193e-e62d-9813-2218" name="Acheron Pattern Flame Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3758,9 +4376,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="241d-3394-9612-08c7" name="Corsair Battleline Maniple" publicationId="975a-00f4-pubN87630" page="60" hidden="false" collective="false" type="unit">
+    <selectionEntry id="241d-3394-9612-08c7" name="Corsair Battleline Maniple" publicationId="975a-00f4-pubN87630" page="60" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="a5a0-3929-799d-a62b" name="Fighting Withdrawal" publicationId="975a-00f4-pubN87630" page="60" hidden="false">
           <description>Titans in this maniple can choose to move outside og their forward arc (see Sidestepping and Backing Up on p.30 of the AT2018 Rulebook) at their full movement rather then having to use 2&quot; of movement for every 1&quot; moved. Titans may not use their boosted speed with moving outside of their Front arc.</description>
@@ -3770,13 +4389,13 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="12ab-a07e-2599-714f" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d2ae-05d2-2fcb-0798" name="Reaver Titan" hidden="false" collective="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+        <entryLink id="d2ae-05d2-2fcb-0798" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3201-7f9d-bbe4-e121" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a83-28f9-39f2-6a12" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="398d-4c16-9860-c721" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="398d-4c16-9860-c721" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b570-e434-172f-b4ad" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a03-26e1-7b91-83db" type="min"/>
@@ -3785,9 +4404,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="56b0-f155-3635-45da" name="Janissary Batteline Maniple" publicationId="975a-00f4-pubN87630" page="62" hidden="false" collective="false" type="unit">
+    <selectionEntry id="56b0-f155-3635-45da" name="Janissary Batteline Maniple" publicationId="975a-00f4-pubN87630" page="62" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="dc27-d11e-d3f4-85a8" name="Close Support" publicationId="975a-00f4-pubN87630" page="62" hidden="false">
           <description>Janissary Battleline maniples learn to coordinate their actions with Household Support units, and move to support them when needed. If a Titan in this maniple activated during the Movement phase, choose a Knight Banner within 6&quot; of activated Titan. Once the Titan has finished its movement, then chosen Knight Banner may now make its activation.</description>
@@ -3797,7 +4417,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         <categoryLink id="62ec-6116-1ddd-3265" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="53ba-f48a-5449-1853" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false">
+        <selectionEntryGroup id="53ba-f48a-5449-1853" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -3806,7 +4426,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink id="079f-7edd-53c0-2ba0" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+            <entryLink id="079f-7edd-53c0-2ba0" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -3822,13 +4442,13 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="fbf6-2b08-3998-d83e" name="Reaver Titan" hidden="false" collective="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+        <entryLink id="fbf6-2b08-3998-d83e" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3b6-c6b9-ac60-617d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db7d-8f30-ca24-e30e" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="1ace-3985-55cd-6c93" name="Warhound Titan" hidden="false" collective="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+        <entryLink id="1ace-3985-55cd-6c93" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="803f-03a2-c313-9c2a" value="1">
               <conditions>
@@ -3846,7 +4466,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="803f-03a2-c313-9c2a" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="a171-901f-a75e-8ce1" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="a171-901f-a75e-8ce1" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0fc-bfe1-0e38-29f0" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d26-5fc3-ad8e-a5df" type="min"/>
@@ -3855,9 +4475,10 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="51b7-df68-7254-8f21" name="Regia Battleline Maniple" publicationId="975a-00f4-pubN87630" page="64" hidden="false" collective="false" type="unit">
+    <selectionEntry id="51b7-df68-7254-8f21" name="Regia Battleline Maniple" publicationId="975a-00f4-pubN87630" page="64" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="b742-2b8a-1d8a-cfd4" name="Royal Court" publicationId="975a-00f4-pubN87630" page="64" hidden="false">
           <description>The two Warlord Titans in this maniple represent the King and Queen, whose role it is to support each other in battle. While the King and Queen are within 12&quot; of each other, if one successfully gains an order, the other may gain same order without the need to pass Command check.
@@ -3869,7 +4490,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         <categoryLink id="bea9-0d4e-1f40-99e6" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8e19-9416-cb87-10e5" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false">
+        <selectionEntryGroup id="8e19-9416-cb87-10e5" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -3882,7 +4503,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5023-c360-3cd0-a9e3" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="02cb-6efe-41a7-abd1" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+            <entryLink id="02cb-6efe-41a7-abd1" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -3894,7 +4515,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
                 <categoryLink id="2bf0-6592-9ac7-bf7b" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="0ee9-f77b-20dc-c09d" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+            <entryLink id="0ee9-f77b-20dc-c09d" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="true" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -3910,7 +4531,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8bd5-b643-57b5-5c37" name="Warhound Titan" hidden="false" collective="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+        <entryLink id="8bd5-b643-57b5-5c37" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="9c80-07d9-8233-0331" value="1">
               <conditions>
@@ -3928,7 +4549,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c80-07d9-8233-0331" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="2b1d-c2a1-5fb1-5f26" name="Warlord Titan" hidden="false" collective="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+        <entryLink id="2b1d-c2a1-5fb1-5f26" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="c5e4-a8b8-d00f-44dd" value="1">
               <conditions>
@@ -3946,7 +4567,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5e4-a8b8-d00f-44dd" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="8413-0dd4-3c88-a36c" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="8413-0dd4-3c88-a36c" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38f9-0a28-a7bb-708d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd12-c8f5-b461-0a5b" type="min"/>
@@ -3955,9 +4576,10 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" publicationId="975a-00f4-pubN87630" page="66" hidden="false" collective="false" type="unit">
+    <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" publicationId="975a-00f4-pubN87630" page="66" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="6068-bc44-f6a2-c418" name="Hunting Pack" publicationId="975a-00f4-pubN87630" page="66" hidden="false">
           <description>Working closely together, the Warhound Titans can surround and pick off foes many times their size. At the beggining of each round, any or all of the Warhounds within the maniple may be formed into a Squadron with other members of their maniple. These squadrons last until the end of the round. In addition, when making Coordinated Strikes (see p.45 of the AT2018 Rulebook), Warhounds in this maniple add +2 to any Armour rolls they make, rather than +1.</description>
@@ -3967,7 +4589,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         <categoryLink id="2ee6-bf96-8195-ea69" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7ac7-231c-3870-4295" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false">
+        <selectionEntryGroup id="7ac7-231c-3870-4295" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -3976,7 +4598,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink id="4454-8649-f807-58ed" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+            <entryLink id="4454-8649-f807-58ed" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -3992,7 +4614,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="888e-a4ff-c051-e2ab" name="Warhound Titan" hidden="false" collective="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+        <entryLink id="888e-a4ff-c051-e2ab" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="e1c2-3492-0032-293a" value="1">
               <conditions>
@@ -4010,7 +4632,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1c2-3492-0032-293a" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="b85c-47c0-195d-0d33" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="b85c-47c0-195d-0d33" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5618-6159-c341-4759" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78b4-10d1-1405-d994" type="min"/>
@@ -4019,9 +4641,10 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="22ac-d1cf-8596-c057" name="Dominus Battleforce Maniple" publicationId="975a-00f4-pubN89033" page="131" hidden="false" collective="false" type="unit">
+    <selectionEntry id="22ac-d1cf-8596-c057" name="Dominus Battleforce Maniple" publicationId="975a-00f4-pubN89033" page="131" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="8ba2-da46-9cb7-66cf" name="Auspex Bafflers" publicationId="975a-00f4-pubN89033" page="131" hidden="false">
           <description>Knight armours tasked with the close support of Titans configure their vox arrays to foil the targeting auspexes of their enemies with an impenetrable wall of merged signals. This has the result of protecting the Titans but unfortunately broadcasts the Knights&apos; position. Knight Banner included in a Dominus Battleforce maniple cannot benefit from obscuring cover (see p.33 of the AT2018 Rulebook). If a Titan in a Dominus Battleforce maniple within 6&quot; of a Knight Banner from the same maniple, and both the Titan and Knight are visible to the attacker, attacks made from more then 2&quot; away from the Titan suffer a -1 modifier to the Hit roll. </description>
@@ -4034,7 +4657,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         <categoryLink id="fdef-22bc-a01d-eb85" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a96a-c9d7-8aca-75c9" name="Household Support" hidden="false" collective="false">
+        <selectionEntryGroup id="a96a-c9d7-8aca-75c9" name="Household Support" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a351-5862-b35d-6a24" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5471-fa8e-d383-99e5" type="min"/>
@@ -4043,11 +4666,11 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <categoryLink id="a2f6-c3bf-01d3-ea50" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink id="b436-4279-e2cd-3a2c" name="Cerastus Knight Banner" hidden="false" collective="false" targetId="2e8d-74e3-aecf-9e11" type="selectionEntry"/>
-            <entryLink id="38bb-4276-eafd-63b6" name="Questoris Support Banner" hidden="false" collective="false" targetId="2b6b-b476-bd24-8c5c" type="selectionEntry"/>
+            <entryLink id="b436-4279-e2cd-3a2c" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="2e8d-74e3-aecf-9e11" type="selectionEntry"/>
+            <entryLink id="38bb-4276-eafd-63b6" name="Questoris Support Banner" hidden="false" collective="false" import="true" targetId="2b6b-b476-bd24-8c5c" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="96fc-f52e-c501-659e" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false">
+        <selectionEntryGroup id="96fc-f52e-c501-659e" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4060,7 +4683,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a98-77b6-1207-96c4" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="d581-29e1-d1a3-0823" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+            <entryLink id="d581-29e1-d1a3-0823" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -4072,7 +4695,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
                 <categoryLink id="e445-8421-bb61-4671" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="7ef8-368d-cd7d-3f32" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+            <entryLink id="7ef8-368d-cd7d-3f32" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="true" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -4088,7 +4711,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6703-2cd9-77b8-bded" name="Warhound Titan" hidden="false" collective="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+        <entryLink id="6703-2cd9-77b8-bded" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="4450-239e-952e-b8e9" value="1">
               <conditions>
@@ -4101,7 +4724,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78e6-e56f-6e3d-30ad" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="1557-41db-9051-3271" name="Warlord Titan" hidden="false" collective="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+        <entryLink id="1557-41db-9051-3271" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -4124,13 +4747,13 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3578-3bfa-02f4-09e0" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="09fb-74c1-051c-8094" name="Reaver Titan" hidden="false" collective="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+        <entryLink id="09fb-74c1-051c-8094" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ce4-9226-0a1a-3f99" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c052-2f9b-24c5-16bb" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="aa38-6178-61e8-ceb0" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="aa38-6178-61e8-ceb0" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7158-6d00-7714-6882" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a5b-0580-c68d-72e2" type="min"/>
@@ -4139,9 +4762,10 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2004-6a18-7dac-156c" name="Fortis Battle Maniple" publicationId="975a-00f4-pubN89746" page="30" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2004-6a18-7dac-156c" name="Fortis Battle Maniple" publicationId="975a-00f4-pubN89746" page="30" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="94df-2dae-9885-b47d" name="Titanic Fortress" publicationId="975a-00f4-pubN89746" page="30" hidden="false">
           <description>When a Titan in a Fortis Battle maniple is in base contact with another Titan in the maniple, and neither Titan moved in the Movement phase, the Titan ignores Armour roll modifiers resulting from Structural Damage or being attacked in the flank or rear (see page 34 of the Adeptus Titanicus rulebook).  In addition, Titans in a Fortis Battle maniple may merge their void shields (see page 45 of te Adeptus Titanicus rulebook)
@@ -4152,7 +4776,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         <categoryLink id="1a5c-8f5e-c5be-2c5f" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="349a-3677-34e3-2c89" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false">
+        <selectionEntryGroup id="349a-3677-34e3-2c89" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4161,7 +4785,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink id="b84d-101d-f6e2-db06" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+            <entryLink id="b84d-101d-f6e2-db06" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="true" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -4177,7 +4801,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="2276-d58d-a919-6ecc" name="Warlord Titan" hidden="false" collective="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+        <entryLink id="2276-d58d-a919-6ecc" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="54a7-7b7a-7e79-fd2e" value="1">
               <conditions>
@@ -4195,13 +4819,13 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97f2-88f1-367e-4aee" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="9187-74a9-9d6f-2f7e" name="Reaver Titan" hidden="false" collective="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+        <entryLink id="9187-74a9-9d6f-2f7e" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0367-10c5-5cf5-71a2" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a001-f8b7-d5de-905b" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="fce6-bfe1-e75a-19b9" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="fce6-bfe1-e75a-19b9" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5ea-c8a7-dbe0-d372" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="213c-1b2e-1597-55e4" type="min"/>
@@ -4210,9 +4834,10 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="365e-d892-5c42-f7a3" name="Ferrox Light Maniple" publicationId="975a-00f4-pubN89746" page="31" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="365e-d892-5c42-f7a3" name="Ferrox Light Maniple" publicationId="975a-00f4-pubN89746" page="31" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="ac90-5085-5650-2ad6" name="Ferrox Light Maniple" publicationId="975a-00f4-pubN89746" page="31" hidden="false">
           <description>When a Titan in a Ferrox Light maniple makes attacks against a target that is no further away than its Scale in inches (i.e. with 10&quot; of a Warlord, 8&quot; of a Reaver, etc), they add 1 to any Armour rolls they cause.  Titans in a Ferrox Light maniple may also choose to use either their EWeapons Skill or Ballistic Skill when within 2&quot; of an enemy</description>
@@ -4222,7 +4847,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         <categoryLink id="db9c-f5f1-1fcf-62a9" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4d55-6345-b8f4-ad5b" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false">
+        <selectionEntryGroup id="4d55-6345-b8f4-ad5b" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4231,7 +4856,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink id="6d2d-b6b7-027c-782c" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+            <entryLink id="6d2d-b6b7-027c-782c" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -4247,7 +4872,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e55d-c4aa-9307-146d" name="Warhound Titan" hidden="false" collective="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+        <entryLink id="e55d-c4aa-9307-146d" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="7d26-0a5d-3cbd-4c28" value="1">
               <conditions>
@@ -4265,13 +4890,13 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e65-1872-3677-b75a" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="f5a4-35c2-f497-ef23" name="Reaver Titan" hidden="false" collective="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+        <entryLink id="f5a4-35c2-f497-ef23" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="997f-69f2-59b5-a4e2" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0be-9463-3ea5-50b7" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="64b7-f4f0-934d-0032" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="64b7-f4f0-934d-0032" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d31-c274-d528-f841" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a595-2c07-a80b-9196" type="min"/>
@@ -4280,9 +4905,10 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus (Storm Lords)" publicationId="975a-00f4-pubN65537" page="91" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus (Storm Lords)" publicationId="975a-00f4-pubN65537" page="91" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="0e6c-1950-20a3-f0ae" name="Glory in Death" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
           <description>Before making a Catastrophic Damage roll for a Legio Tempestus Titan, make a Command check for it.  If the test is passed, the Titan can immediatly attack with on eof its weapons (following the Combat Sequence) or with all of its weapons if the test is passed by 3 or more.</description>
@@ -4298,9 +4924,10 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0986-9b84-b734-e9c8" name="Legio Gryphonicus (War Griffons)" publicationId="975a-00f4-pubN65537" page="89" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="0986-9b84-b734-e9c8" name="Legio Gryphonicus (War Griffons)" publicationId="975a-00f4-pubN65537" page="89" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="086d-6793-f939-4a7e" name="Lust for Glory" publicationId="975a-00f4-pubN65537" page="89" hidden="false">
           <description>After both sides have deployed, a player commanding a Legio Gryphonicus battlegroup can declaire that any of their Titans will claim an enemy Titan as a target.  Declare out loud which Titan is making the claim and their intended target, and write both down.
@@ -4318,9 +4945,10 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dbd6-65fd-6354-a154" name="Legio Astorum (Warp Runners)" publicationId="975a-00f4-pubN87630" page="19" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="dbd6-65fd-6354-a154" name="Legio Astorum (Warp Runners)" publicationId="975a-00f4-pubN87630" page="19" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="663e-f301-76a4-55fb" name="War March" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
           <description>In the first and second round of the game, a Legio Astorum Titan can choose to add 2&quot; to it&apos;s boosted Movement characteristic.  If a Titan uses this boosted speed, then whenever it is required to roll the Reactor dice, it must roll twice and choose the least favourable result (i.e. the result which increases the Titan&apos;s Plasma Reactor Status track by the largest amount or awakens it&apos;s machine spirit)
@@ -4336,9 +4964,10 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="63e1-fca8-5023-12d6" name="Legio Defensor (Nova Guard)" publicationId="975a-00f4-pubN87630" page="24" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="63e1-fca8-5023-12d6" name="Legio Defensor (Nova Guard)" publicationId="975a-00f4-pubN87630" page="24" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="8360-d791-861b-1740" name="Righteous Fire" publicationId="975a-00f4-pubN87630" page="24" hidden="false">
           <description>In the first round of the game, a Legio Defensor Titan may fire one of its weapon twice durring its activation.  If they do so, advance the Titan&apos;s Plasma Reactor status track by two places, in addition to any advances associated with firing the weapon</description>
@@ -4353,9 +4982,10 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bf14-af1e-5d72-7c8b" name="Legio Atatus (Firebrands)" publicationId="975a-00f4-pubN87630" page="29" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bf14-af1e-5d72-7c8b" name="Legio Atatus (Firebrands)" publicationId="975a-00f4-pubN87630" page="29" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="e068-3696-9c94-b3cb" name="Seizing the Initiative" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
           <description>In the first round of the battle, a force that contains at least one Firebrands maniple may re-roll the dice roll to deterine who will choose the First Player, but only if they rolled lower than their opponent.  If they win this roll-off then they must nominate themselfs as the First Player
@@ -4368,9 +4998,10 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1b13-8735-b4bf-0caf" name="Legio Mortis (Death&apos;s Heads)" publicationId="975a-00f4-pubN87630" page="40" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1b13-8735-b4bf-0caf" name="Legio Mortis (Death&apos;s Heads)" publicationId="975a-00f4-pubN87630" page="40" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="82ab-6823-fda3-a4b8" name="Reapers Tally" publicationId="975a-00f4-pubN87630" page="40" hidden="false">
           <description>Each time a Titan of the Legio Mortis destroys and enemy Titan, it gains the ability to re-roll a single dice roll of 1 each time it makes a shooting attach, These effects are cumulative, and for every enemy Titan destroyed, and additional1 1 may be re-rolled.</description>
@@ -4385,9 +5016,10 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bffc-4266-a83d-cae6" name="Legio Krytos (God Breakers)" publicationId="975a-00f4-pubN87630" page="45" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="bffc-4266-a83d-cae6" name="Legio Krytos (God Breakers)" publicationId="975a-00f4-pubN87630" page="45" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="939f-b862-cf87-5c7b" name="Doom of Worlds" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
           <description>When fielding a Myrmidon maniple (see page 59 of the Adeptus Titanicus rulebook) a Legio Krytos player may take a Warlord TItan in place of a Reaver Titan as part of the maniple&apos;s mandatory components.</description>
@@ -4399,9 +5031,10 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1a92-f760-bf0e-ce26" name="Legio Fureans (Tiger Eyes)" publicationId="975a-00f4-pubN87630" page="50" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1a92-f760-bf0e-ce26" name="Legio Fureans (Tiger Eyes)" publicationId="975a-00f4-pubN87630" page="50" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="ae03-90bb-549c-18cc" name="Machine Rage" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
           <description>When rolling the Reactor dice (see page 43 of the Adeptus Titanicus rulebook) a Tiger Eyes player counds both the Machine Spirit symbol and the blank facing on the dice as a trigger for awakening their Titan&apos;s machine spirit.  However, if a Tiger Eyes player fails the Command check to quell the machine spirit, they may choose the result from the Awakened Machine Spirit table, rather than rolling randomly</description>
@@ -4416,9 +5049,10 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7093-f8b3-b5f9-d38d" name="Legio Vulpa (Death Stalkers)" publicationId="975a-00f4-pubN87630" page="55" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7093-f8b3-b5f9-d38d" name="Legio Vulpa (Death Stalkers)" publicationId="975a-00f4-pubN87630" page="55" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="36fb-e4f2-82f5-8ba3" name="Honour and Blood" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
           <description>A Death Stalkers Titan that is within 3&quot; of an enemy Titan increases its Weapons Skill by 1 an decreases its Ballistic Skill by 1</description>
@@ -4430,84 +5064,85 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6202-19dc-f26f-9b64" name="Titan Legion" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6202-19dc-f26f-9b64" name="Titan Legion" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="5473-e38d-bf74-96eb" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="45f2-b1ee-23d5-1d11" name="Titan Legions" hidden="false" collective="false">
+        <selectionEntryGroup id="45f2-b1ee-23d5-1d11" name="Titan Legions" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d00-c954-d909-610e" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c040-29dd-6042-3b8d" name="Legio Astorum" hidden="false" collective="false" targetId="dbd6-65fd-6354-a154" type="selectionEntry">
+            <entryLink id="c040-29dd-6042-3b8d" name="Legio Astorum" hidden="false" collective="false" import="true" targetId="dbd6-65fd-6354-a154" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="9ab2-6533-23c4-dde6" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="0bee-465c-7167-a46a" name="Legio Atatus" hidden="false" collective="false" targetId="bf14-af1e-5d72-7c8b" type="selectionEntry">
+            <entryLink id="0bee-465c-7167-a46a" name="Legio Atatus" hidden="false" collective="false" import="true" targetId="bf14-af1e-5d72-7c8b" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="4356-bdee-bb43-2d3b" name="LegioAtarus" hidden="false" targetId="cfcc-e5c0-bb0b-db6f" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="e14a-e696-1044-eb8c" name="Legio Defensor" hidden="false" collective="false" targetId="63e1-fca8-5023-12d6" type="selectionEntry">
+            <entryLink id="e14a-e696-1044-eb8c" name="Legio Defensor" hidden="false" collective="false" import="true" targetId="63e1-fca8-5023-12d6" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="5ef2-6100-d25d-ad8d" name="LegioDefensor" hidden="false" targetId="7b17-f14f-4709-e96c" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="7a87-0de0-02e5-b83c" name="Legio Fureans" hidden="false" collective="false" targetId="1a92-f760-bf0e-ce26" type="selectionEntry">
+            <entryLink id="7a87-0de0-02e5-b83c" name="Legio Fureans" hidden="false" collective="false" import="true" targetId="1a92-f760-bf0e-ce26" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="bec6-93d4-afad-fbdc" name="LegioFureans" hidden="false" targetId="72ba-4008-bf4b-fe3b" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="4026-a032-96e6-b7e4" name="Legio Gryphonicus" hidden="false" collective="false" targetId="0986-9b84-b734-e9c8" type="selectionEntry">
+            <entryLink id="4026-a032-96e6-b7e4" name="Legio Gryphonicus" hidden="false" collective="false" import="true" targetId="0986-9b84-b734-e9c8" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="5cc5-3a34-7b7a-417b" name="LegioGryphonicus" hidden="false" targetId="0796-178c-50ce-2d1f" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="51ab-885d-ea81-e623" name="Legio Krytos" hidden="false" collective="false" targetId="bffc-4266-a83d-cae6" type="selectionEntry">
+            <entryLink id="51ab-885d-ea81-e623" name="Legio Krytos" hidden="false" collective="false" import="true" targetId="bffc-4266-a83d-cae6" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="6c38-7428-a4f7-2158" name="LegioKrytos" hidden="false" targetId="95e8-3d8e-a0ad-4ad3" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="85f9-7332-78ec-42d8" name="Legio Mortis" hidden="false" collective="false" targetId="1b13-8735-b4bf-0caf" type="selectionEntry">
+            <entryLink id="85f9-7332-78ec-42d8" name="Legio Mortis" hidden="false" collective="false" import="true" targetId="1b13-8735-b4bf-0caf" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="45ed-c74d-8395-b42a" name="LegioMortis" hidden="false" targetId="f88f-e42d-38f7-bfa7" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="d7e3-7a02-9f15-da8e" name="Legio Tempestus" hidden="false" collective="false" targetId="cbc6-216c-8a22-c1b4" type="selectionEntry">
+            <entryLink id="d7e3-7a02-9f15-da8e" name="Legio Tempestus" hidden="false" collective="false" import="true" targetId="cbc6-216c-8a22-c1b4" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="691d-b655-d68c-1227" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="8f64-8c3a-89f5-7945" name="Legio Vulpa" hidden="false" collective="false" targetId="7093-f8b3-b5f9-d38d" type="selectionEntry">
+            <entryLink id="8f64-8c3a-89f5-7945" name="Legio Vulpa" hidden="false" collective="false" import="true" targetId="7093-f8b3-b5f9-d38d" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="a074-fb7c-f879-1333" name="LegioVulpa" hidden="false" targetId="561a-cb05-d4b5-94fd" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="b39f-da6f-35d0-6a14" name="Legio Solaria" hidden="false" collective="false" targetId="14a9-163a-83aa-7520" type="selectionEntry">
+            <entryLink id="b39f-da6f-35d0-6a14" name="Legio Solaria" hidden="false" collective="false" import="true" targetId="14a9-163a-83aa-7520" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="089c-8649-fba5-d798" name="LegioSolaria" hidden="false" targetId="56c0-1162-173d-b052" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="3ee7-4a5c-d0b8-b8eb" name="Legio Crucius" hidden="false" collective="false" targetId="da6d-e379-1848-8c31" type="selectionEntry">
+            <entryLink id="3ee7-4a5c-d0b8-b8eb" name="Legio Crucius" hidden="false" collective="false" import="true" targetId="da6d-e379-1848-8c31" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="af11-fcf3-a8ff-2b7e" name="LegioCrucius" hidden="false" targetId="4501-ac6c-5b8c-1b03" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="15c9-cacc-6a3c-cfa9" name="Legio Fortidus" hidden="false" collective="false" targetId="02ce-a62d-4e4b-d7cc" type="selectionEntry">
+            <entryLink id="15c9-cacc-6a3c-cfa9" name="Legio Fortidus" hidden="false" collective="false" import="true" targetId="02ce-a62d-4e4b-d7cc" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="c8a8-adfd-f9fb-aff4" name="LegioFortidus" hidden="false" targetId="8129-9843-a287-cd8e" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="c18c-9bdd-7bbc-a11c" name="Legio Vulcanum" hidden="false" collective="false" targetId="1d02-6c17-cd84-a92f" type="selectionEntry">
+            <entryLink id="c18c-9bdd-7bbc-a11c" name="Legio Vulcanum" hidden="false" collective="false" import="true" targetId="1d02-6c17-cd84-a92f" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="0cf4-07de-f456-6c67" name="LegioVulcanum" hidden="false" targetId="4225-27f8-9c8b-e56e" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="5768-da55-af2e-71de" name="Legio Interfector" hidden="false" collective="false" targetId="f3d0-92f8-3bf7-4799" type="selectionEntry">
+            <entryLink id="5768-da55-af2e-71de" name="Legio Interfector" hidden="false" collective="false" import="true" targetId="f3d0-92f8-3bf7-4799" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="9c04-65c7-34d5-5330" name="LegioInterfector" hidden="false" targetId="f0a4-f7dc-25cf-21c8" primary="false"/>
               </categoryLinks>
@@ -4517,9 +5152,10 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
       </selectionEntryGroups>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="08c7-5efe-0712-c420" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="08c7-5efe-0712-c420" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="dd46-08dc-7ea5-12b3" name="Chasmata Pattern Turbo Laser Destructor" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -4544,18 +5180,19 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="fa2c-0ce1-0ed7-1514" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c6df-3abd-589f-c90e" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="c6df-3abd-589f-c90e" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="375f-b70b-7462-5d29" name="Legio Specific Strategems" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="375f-b70b-7462-5d29" name="Legio Specific Strategems" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="ea9b-4391-f398-d3ba" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1784-4ad0-1919-d5c0" name="Bounty of Mars (2)" publicationId="975a-00f4-pubN87630" page="19" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="1784-4ad0-1919-d5c0" name="Bounty of Mars" publicationId="975a-00f4-pubN87630" page="19" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4576,9 +5213,10 @@ Play this stratagem at the beginning of the Damage Control phase of any round.  
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e466-20df-b265-7ad2" name="Machine Defiance (1)" page="" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="e466-20df-b265-7ad2" name="Machine Defiance" page="" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4591,16 +5229,17 @@ Play this stratagem at the beginning of the Damage Control phase of any round.  
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b7a-7785-dd74-789f" type="max"/>
           </constraints>
           <rules>
-            <rule id="6f4e-529b-b1bc-f31c" name="Machine Defiance (1)" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
+            <rule id="6f4e-529b-b1bc-f31c" name="Machine Defiance" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
               <description>This Stratagem can be purchased by an Legio Astorum player.
 Play this Stratagem when a Titan&apos;s void shields collapse.  Immediatly roll a number of D6 equal to the Titan&apos;s Servator Clades characteristic.  For each roll of a 5 or 6 restore the Titan&apos;s Void Shield level by 1.  Note, this is not a Repair roll and does not benifit from any effects which influence or modify Repair rolls.</description>
             </rule>
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="120b-ea0c-47a7-3132" name="Combat Drop (3)" page="" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="120b-ea0c-47a7-3132" name="Combat Drop" page="" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4613,7 +5252,7 @@ Play this Stratagem when a Titan&apos;s void shields collapse.  Immediatly roll 
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4314-db40-41c9-dac9" type="min"/>
           </constraints>
           <rules>
-            <rule id="a1ec-918e-4b64-0160" name="Combat Drop (3)" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
+            <rule id="a1ec-918e-4b64-0160" name="Combat Drop" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
               <description>When a player chooses this Stratagem, they must secretly write down the name of one of their Titans which has a Scale of 6 or lower.  Play this Stratagem at the start of deployment to set that unit to one side and state that it is being held in orbit (it is not deployed with the rest of the battlegroup).  Declare (and write down) a round between rounds 2-4 - this is the round in which its dropshop is aiming to deploy the Titan to the battlefield
 
 At the begining of the Movement phase of the chosen rouind, roll a D10.  If the result is lower than the Titans Scale, it arrives Otherwise the Titan is delayed and will arrive at the start of the following Movement phase.
@@ -4625,9 +5264,10 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="cdfa-6187-38dc-0319" name="Blessing of the Emperor (3)" page="" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="cdfa-6187-38dc-0319" name="Blessing of the Emperor" page="" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4640,16 +5280,17 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aefc-54d0-b79f-52e2" type="max"/>
           </constraints>
           <rules>
-            <rule id="e9f1-61cd-16bf-f838" name="Blessing of the Emperor (3)" publicationId="975a-00f4-pubN87630" page="24" hidden="false">
+            <rule id="e9f1-61cd-16bf-f838" name="Blessing of the Emperor" publicationId="975a-00f4-pubN87630" page="24" hidden="false">
               <description>This Stratagem can be purchased by an Legio Defensor player.
 Reveal this Stratagem when a hit would result in one of your Titans rolling on the Catastrphic Damage table.  The his is ignored and this Stratagem has no further effect.</description>
             </rule>
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6a90-5f45-4eef-04ff" name="A Day of Retribution (2)" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="6a90-5f45-4eef-04ff" name="A Day of Retribution" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4662,18 +5303,19 @@ Reveal this Stratagem when a hit would result in one of your Titans rolling on t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e729-3153-c9e6-a159" type="max"/>
           </constraints>
           <rules>
-            <rule id="8a91-33d7-852b-b2ad" name="A Day of Retribution (2)" publicationId="975a-00f4-pubN87630" page="24" hidden="false">
+            <rule id="8a91-33d7-852b-b2ad" name="A Day of Retribution" publicationId="975a-00f4-pubN87630" page="24" hidden="false">
               <description>This Stratagem can be purchased by any Legio Defensor player.
 Play this Stratagem in the Strategy phase of the first round.
-Choose one of your opponent&apos;s Titans.  Immediatly conduct a round of shooting against the Titan with one of your own Titans weapons, counting the weapon as having double its normal range.  
+Choose one of your opponent&apos;s Titans.  Immediatly conduct a round of shooting against the Titan with one of your own Titans weapons, counting the weapon as having double its normal range.
 Note that this does not increase the weapons Short Range.  THen advance your titan&apos;s Plasma Reactor Status track three places.  Once the effects of the attack have been worked out, begin the first game round.</description>
             </rule>
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8495-ff67-56d5-e918" name="Impetuous Machine Spirit (4)" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="8495-ff67-56d5-e918" name="Impetuous Machine Spirit" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4686,16 +5328,17 @@ Note that this does not increase the weapons Short Range.  THen advance your tit
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="299b-ffd9-1a4d-4000" type="min"/>
           </constraints>
           <rules>
-            <rule id="250b-cff6-a194-1f00" name="Impetuous Machine Spirit (4)" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
+            <rule id="250b-cff6-a194-1f00" name="Impetuous Machine Spirit" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
               <description>This Stratagem can be purchased by any Legio Astus player.
 Reveal this Stratagem when a Firebrands Titan would be required to make a roll on the Awakened Machine Spirit table (see page 44 of the Adeptus Titanicus rulebook).  Rather than rolling, the Firebrands player may instead choose to autmatically apply the Impetuous result, rolling d6+2 rather than D6 to determine the distance moved.</description>
             </rule>
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="4.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="82be-13d1-5446-584a" name="Maniple of One (2)" page="" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="82be-13d1-5446-584a" name="Maniple of One`" page="" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4708,16 +5351,17 @@ Reveal this Stratagem when a Firebrands Titan would be required to make a roll o
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a37-d6e4-9b57-9aa2" type="min"/>
           </constraints>
           <rules>
-            <rule id="cf51-7e3e-bd98-e3b9" name="Maniple of One (2)" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
+            <rule id="cf51-7e3e-bd98-e3b9" name="Maniple of One" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
               <description>This Stratagem can be purchased by an Legio Atarus player.
 The Firebrands player may reveal this stratagem at the beginnin of any round.  Fo rht eduration of that round, one Titan in their froce may gain the benifits of any Maniple trait normally available to the Firebrands.  Note that while thie Stratagem is in effect, the chosen Titan loses any other Maniple trait it might have and does not count as being part of any other maniple</description>
             </rule>
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0642-68ed-dde8-57e1" name="Fog of War" publicationId="975a-00f4-pubN87630" page="35" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="0642-68ed-dde8-57e1" name="Fog of War" publicationId="975a-00f4-pubN87630" page="35" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4738,9 +5382,10 @@ The Imperial Hunters player may redeploy a Warhound Titan for every Titan with a
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4239-0c38-823a-ae67" name="March of the Dead (3)" page="" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="4239-0c38-823a-ae67" name="March of the Dead" page="" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4753,7 +5398,7 @@ The Imperial Hunters player may redeploy a Warhound Titan for every Titan with a
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fe5-2989-4372-a78e" type="min"/>
           </constraints>
           <rules>
-            <rule id="0bf7-ccba-80dc-e0d1" name="March of the Dead (3)" publicationId="975a-00f4-pubN87630" page="40" hidden="false">
+            <rule id="0bf7-ccba-80dc-e0d1" name="March of the Dead" publicationId="975a-00f4-pubN87630" page="40" hidden="false">
               <description>This Stratagem can be purchased by an Legio Mortis player.
 Play this Stratagem in the Strategy phase of the first round.  The Legio Mortis play may immediatly move each of thei Titans just as if it was the Movement phase.  This special movement cannot be boosted.  If the player uses this Stratagem, their opponent automatically becomes the First Player for the remainder of the first game round.
 </description>
@@ -4761,9 +5406,10 @@ Play this Stratagem in the Strategy phase of the first round.  The Legio Mortis 
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c610-8076-2dd0-8ced" name="Scorched Earth (1)" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="c610-8076-2dd0-8ced" name="Scorched Earth" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4776,7 +5422,7 @@ Play this Stratagem in the Strategy phase of the first round.  The Legio Mortis 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fa9-3dd4-945e-dd8b" type="max"/>
           </constraints>
           <rules>
-            <rule id="1cd9-3d4e-f9bb-d419" name="Scorched Earth (1)" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
+            <rule id="1cd9-3d4e-f9bb-d419" name="Scorched Earth" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
               <description>This Stratagem can be purchased by any Legio Krytos player.
 Reveal this Stratagem in any Strategy phase.
 For the duration of that round, when targeting terrain, Titans of the Legio Krytos add 2 to the Strength of their weapons
@@ -4786,9 +5432,10 @@ For the duration of that round, when targeting terrain, Titans of the Legio Kryt
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="293d-f089-accb-a4aa" name="Iron Endures (1)" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="293d-f089-accb-a4aa" name="Iron Endures" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4801,7 +5448,7 @@ For the duration of that round, when targeting terrain, Titans of the Legio Kryt
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2110-d115-6ecc-5a90" type="max"/>
           </constraints>
           <rules>
-            <rule id="167e-fda1-27c5-06fe" name="Iron Endures (1)" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
+            <rule id="167e-fda1-27c5-06fe" name="Iron Endures" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
               <description>This Stratagem can be purchased by any Legio Krytos player.
 Reveal this Stratagem in any Strategy phase.
 For the duration of that round, all God Breakers TItans reduce the Strength of hits suffered as a result of Dangerous terrain by 2 (to a minimum of 0)
@@ -4812,9 +5459,10 @@ For the duration of that round, all God Breakers TItans reduce the Strength of h
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="81d8-5420-7921-d127" name="Offensive Surge (3)" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="81d8-5420-7921-d127" name="Offensive Surge" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4827,7 +5475,7 @@ For the duration of that round, all God Breakers TItans reduce the Strength of h
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bbf-19f8-ec92-80ba" type="max"/>
           </constraints>
           <rules>
-            <rule id="685c-2d4a-79f7-a250" name="Offensive Surge (3)" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
+            <rule id="685c-2d4a-79f7-a250" name="Offensive Surge" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
               <description>This Stratagem can be purchased by any Legio Fureans player.
 Reveal this Stratagem in any Combat  phase.
 The Tiger Eyes player cay choose one of their deployed Tiger Eyes maniples for this Combat phase, each TItan in the chosen maniple may attack twice with one of its weapons but must increase its Reactor level by 1, in addition to any other effects.
@@ -4837,9 +5485,10 @@ The Tiger Eyes player cay choose one of their deployed Tiger Eyes maniples for t
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="cbdb-8c65-9d07-03b1" name="No Pity for the Vanquished (1)" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="cbdb-8c65-9d07-03b1" name="No Pity for the Vanquished" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4852,16 +5501,17 @@ The Tiger Eyes player cay choose one of their deployed Tiger Eyes maniples for t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e782-1bc6-ef05-ae5a" type="max"/>
           </constraints>
           <rules>
-            <rule id="a702-1d3f-5d8c-4231" name="No Pity for the Vanquished (1)" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
+            <rule id="a702-1d3f-5d8c-4231" name="No Pity for the Vanquished" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
               <description>This Stratagem can be purchased by any Legio Vulpa player
 Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the Catastrophic Damage table).  The Titan who inflicted the killing attack may immediatly make another attack with the same weapon system against a fresh target within 12&quot; of the destroyed Titan.  For all intents and purposes, this is  anew attakc requiring a dice roll, and increase to the Titan&apos;s reactor level, etc</description>
             </rule>
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9409-e584-f50c-3b9c" name="Portents of Doom (2)" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="9409-e584-f50c-3b9c" name="Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4874,15 +5524,16 @@ Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the C
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e21-20f6-9a78-d3fd" type="min"/>
           </constraints>
           <rules>
-            <rule id="2211-e2e5-c37d-a86d" name="Portents of Doom (2)" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
+            <rule id="2211-e2e5-c37d-a86d" name="Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
               <description>This Stratagem can be purchased by any Legio Interfector player.Reveal this Stratagem durring the Strate3gy phase.  Any enemy Titan or Knight Banner within 12&quot; of a Legio Interfector Titan may not be issued Orders this round.</description>
             </rule>
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e313-da99-15ee-1305" name="Tormented Machine Spirit (1)" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="e313-da99-15ee-1305" name="Tormented Machine Spirit" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4895,16 +5546,17 @@ Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the C
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b33f-e305-c668-7c57" type="max"/>
           </constraints>
           <rules>
-            <rule id="6749-e8ff-b52e-c7df" name="Tormented Machine Spirit (1)" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
+            <rule id="6749-e8ff-b52e-c7df" name="Tormented Machine Spirit" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
               <description>This Stratagem can be purchased by any Legio Interfector player.
 Reveal this Stratagem when a Legion Interfector Titan would roll on the Awaken Machine Spirit table (see page 44 of the Adeptus Titanicus rulebook).  Instead of rolling on the table, make an attack weith each of the Titan&apos;s weapons.  These attacks must be made against the closest model, wheather it is friend or foe.</description>
             </rule>
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="93ab-95c9-2957-dea3" name="Symbiotic Command (1)" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="93ab-95c9-2957-dea3" name="Symbiotic Command" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4917,16 +5569,17 @@ Reveal this Stratagem when a Legion Interfector Titan would roll on the Awaken M
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="955e-dccf-e7aa-5a78" type="max"/>
           </constraints>
           <rules>
-            <rule id="6177-d8d8-e3c8-8bf1" name="Symbiotic Command (1)" hidden="false">
+            <rule id="6177-d8d8-e3c8-8bf1" name="Symbiotic Command" hidden="false">
               <description>This Stratagem can be purchased by any Legio Vulcanum player.
 Play this Stratagem in the Strategy phase  after successfully issuing an Order to a Legio Vulcanum Titan.  The player may, if they choose, immediatly issue this same Order to any or all of the Legio Vulcanum Titans in the battlegroup without the need to make further Command checks.</description>
             </rule>
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="38d4-3483-c105-d1ef" name="For the Red Planet (2)" publicationId="975a-00f4-pubN89746" page="20" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="38d4-3483-c105-d1ef" name="For the Red Planet" publicationId="975a-00f4-pubN89746" page="20" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4939,16 +5592,17 @@ Play this Stratagem in the Strategy phase  after successfully issuing an Order t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86dc-7abe-7838-271e" type="max"/>
           </constraints>
           <rules>
-            <rule id="e2bc-90ed-fe0d-52b3" name="For the Red Planet (2)" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
+            <rule id="e2bc-90ed-fe0d-52b3" name="For the Red Planet" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
               <description>This Stratagem can be purchased by any Legio Fortus player.
 The Dauntless player may reveal this Stratagem when activating a Titan.  Until the beginning of the following game round, the Titan ignores the damage effect of Critical Damage to its Head, Body, or Legs, as chosen by the player when the Stratagem is revealed.</description>
             </rule>
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="68bd-d77e-acbe-4bd0" name="Red Skies (1)" publicationId="975a-00f4-pubN89746" page="20" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="68bd-d77e-acbe-4bd0" name="Red Skies" publicationId="975a-00f4-pubN89746" page="20" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -4961,21 +5615,23 @@ The Dauntless player may reveal this Stratagem when activating a Titan.  Until t
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6618-0888-ae88-3e31" type="min"/>
           </constraints>
           <rules>
-            <rule id="fa6d-7c14-2f9a-3bb3" name="Red Skies (1)" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
+            <rule id="fa6d-7c14-2f9a-3bb3" name="Red Skies" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
               <description>This Stratagem can be purchased by any Legio Fortidus player.
 The Dauntless player may reveal this Stratagem when one of their Titans suffers a Magazine Detonation or Catastrophic Meltdown result on the Catastrophic Damage table (see page 36 of the Adeptus Titanicus rulebook).  When resolving the Catastrophic Damage effects, add 5 to the Titans Scale.</description>
             </rule>
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6646-91ea-1418-5c89" name="Gravatus Plating (Legio Gryphonicus)" publicationId="975a-00f4-pubN65537" page="89" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6646-91ea-1418-5c89" name="Gravatus Plating (Legio Gryphonicus)" publicationId="975a-00f4-pubN65537" page="89" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="8323-86d7-e9d0-4242" name="Gravatus Plating" publicationId="975a-00f4-pubN65537" page="89" hidden="false">
           <description>A Legio Gryphonicus Reaver that is chosen as part of a maniple in place of a Warlord Titan (as per the Mainstay of the Titan Legion, rule above) can be fitted with Gravatus plating at a cost of +20 points.  This increases the Armour value of the Reaver&apos;s body and legs by 1 point each, but subtracts 1 from its default and boosted Speed characteristic.</description>
@@ -4983,9 +5639,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="46c7-de03-c901-4ecc" name="Enhanced Auspex Relay (Legio Gryphonicus)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="46c7-de03-c901-4ecc" name="Enhanced Auspex Relay (Legio Gryphonicus)" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="6c0f-cc14-446d-5a5b" name="Enhanced Auspex Relay (Legio Gryphonicus)" publicationId="975a-00f4-pubN65537" page="89" hidden="false">
           <description>Any Legio Gryphonicus Warhound can be equipped with ehnanced auspex relays at a cost of +10 points.  Whenever a Legio Gryphonicus Titan makes an attack, it can meausre the distance to  any targets that are withing 12&quot; of a friendly Warhound equipped with enhanced auspex relays before declairing its target.</description>
@@ -4993,9 +5650,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b486-104f-536e-87f6" name="Motive sub-reactor" publicationId="975a-00f4-pubN65537" page="91" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b486-104f-536e-87f6" name="Motive sub-reactor" publicationId="975a-00f4-pubN65537" page="91" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="4e7c-5d96-85c6-98ce" name="Motive sub-reactor" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
           <description>A Legio Gryphonicus Reaver which is chosen as part of a maniple in place of a Warhound Titan (as per the Mainstay of the Titan Legion found on page 89) can be fitted with motive sub-reactors at a cost of +25 points.  This allows the Reaver to use its boosted Speed and Manoeuvre characteristics without pushing its reactor.  However each time the Titan suffers a Critical Hit to its Legs, roll a D6, On a result of 3 or less, it&apos;s Reactor level increases by 1</description>
@@ -5003,9 +5661,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="14a9-163a-83aa-7520" name="Legio Solaria (Imperial Hunters)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="14a9-163a-83aa-7520" name="Legio Solaria (Imperial Hunters)" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="1501-95cf-c617-ecc1" name="Wolf Packs" publicationId="975a-00f4-pubN87630" page="35" hidden="false">
           <description>Warhound squadrons in the Legio Solaria maniple can contain up to four Warhound Titans.  In addition, any Legio Solaria maniple can select a Warhound Titan in place of any Reaver Titans as part of its mandatory components</description>
@@ -5017,9 +5676,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="da6d-e379-1848-8c31" name="Legio Crucius (Warmongers)" publicationId="975a-00f4-pubN89746" page="17" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="da6d-e379-1848-8c31" name="Legio Crucius (Warmongers)" publicationId="975a-00f4-pubN89746" page="17" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="0e61-2a1f-1df0-a956" name="Forgeborn" publicationId="975a-00f4-pubN89746" page="17" hidden="false">
           <description>In the first and second rounds of the game, when a Legio Crucius Titan makes a Repair roll, eithe rin the Damage Control phase or as a result of being issued an Emergecy Repair Order, it may re-roll any dice results of 1.</description>
@@ -5034,9 +5694,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1d02-6c17-cd84-a92f" name="Legio Vulcanum (Dark Fire/Lords of Ruin)" publicationId="975a-00f4-pubN89746" page="23" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1d02-6c17-cd84-a92f" name="Legio Vulcanum (Dark Fire/Lords of Ruin)" publicationId="975a-00f4-pubN89746" page="23" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="54af-693f-6c06-349d" name="Two-faced God" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
           <description>When fielding a Legio Vulcanum battlegroup, a player may nominate two Legio Vulcanum Titans to be commanded by a Princeps Seniores (see page 55 of the Adeptus Titanicus rulebook).  These Titans may not be part of the same maniple.  If one of the Princeps Seniores&apos; Titans is destroyed, for the remainder of the game count the other Princeps Seniores&apos; Titan as having suffered an unrepairable Princeps Wounded damage effect.</description>
@@ -5051,9 +5712,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="02ce-a62d-4e4b-d7cc" name="Legio Fortidus (Daultless)" publicationId="975a-00f4-pubN89746" page="20" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="02ce-a62d-4e4b-d7cc" name="Legio Fortidus (Daultless)" publicationId="975a-00f4-pubN89746" page="20" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="41a8-f791-55f3-5ade" name="Children of Mars" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
           <description>Legio Fortidus Titans never suffer penalties to thei Command checks and may ignore effects that force them to re-roll successful Command checks.  Knight Banners bonded to Legio Fortidus may re-roll Command checks to avoid becoming Shaken provided they are within line of sight of at least one Legio Fortidus Battle Titan.</description>
@@ -5069,9 +5731,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f3d0-92f8-3bf7-4799" name="Legio Interfector (Murder Lords)" publicationId="975a-00f4-pubN89746" page="26" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="f3d0-92f8-3bf7-4799" name="Legio Interfector (Murder Lords)" publicationId="975a-00f4-pubN89746" page="26" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="5124-9f90-a107-cac9" name="Creeping Madness" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
           <description>When a Legio Interfector Titan is activaed in the Movement phase, it&apos;s player may choose to allows the madness of its Princeps to take over.  When this madness takes over, roll (a D3) on the table below:
@@ -5088,9 +5751,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8fee-61b8-1c39-b9ee" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="8fee-61b8-1c39-b9ee" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="7838-8984-7946-069e" name="Chasmata Pattern Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -5114,13 +5778,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="d0ee-2525-d24e-a70e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b522-48c9-380c-21bf" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="b522-48c9-380c-21bf" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2699-bb53-cff4-a864" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2699-bb53-cff4-a864" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="1253-3d06-27b8-28e7" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -5146,13 +5811,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="4903-48ee-1cde-1f5a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="84e0-fcbd-06f5-a4b4" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="84e0-fcbd-06f5-a4b4" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fe03-8e18-b108-5853" name="Paired Chasmata Pattern Laser Blaster" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="fe03-8e18-b108-5853" name="Paired Chasmata Pattern Laser Blaster" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="67bd-692f-8028-ccd6" name="Paired Chasmata Pattern Laser Blaster" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -5178,13 +5844,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="17d6-7ab0-862d-beb2" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f24c-29c1-442a-c465" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="f24c-29c1-442a-c465" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="80.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="01e4-e3f5-4396-d5c4" name="Chasmata Pattern Laser Blaster" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="01e4-e3f5-4396-d5c4" name="Chasmata Pattern Laser Blaster" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="769f-b83a-baec-2e03" name="Chasmata pattern Laser Blaster" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -5209,13 +5876,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="3f0e-4dac-9ffd-f629" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b4c1-3e8f-38df-6400" name="Weapon Destroyed" hidden="false" collective="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="b4c1-3e8f-38df-6400" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c07c-f050-45e2-1376" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" type="model">
+    <selectionEntry id="c07c-f050-45e2-1376" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="fd15-1beb-af88-6378" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -5234,7 +5902,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="4fc4-a9c2-3fd9-2d80" name="New CategoryLink" hidden="false" targetId="d36f-5e44-2150-3428" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="7d4c-4be2-8f6f-ae94" name="Body" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="7d4c-4be2-8f6f-ae94" name="Body" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="864e-0139-85fa-309d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9273-0788-899b-12bb" type="max"/>
@@ -5249,14 +5917,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="a12f-82fd-dda8-e6a1" name="Body Status" hidden="false" collective="false">
+            <selectionEntryGroup id="a12f-82fd-dda8-e6a1" name="Body Structure Point Damage" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="7aa2-8e28-1878-9c34" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="7aa2-8e28-1878-9c34" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2230-05dc-9e1b-d40b" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="15b6-7a4a-f9d0-2d8d" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="15b6-7a4a-f9d0-2d8d" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5264,14 +5932,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="170d-6ebf-be21-a92f" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="170d-6ebf-be21-a92f" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec5c-1b74-aa8c-5dc8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e471-7e3f-fdac-f0ef" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e471-7e3f-fdac-f0ef" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5279,14 +5948,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e53c-5baa-ca96-abf6" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="e53c-5baa-ca96-abf6" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6184-c306-40e0-450c" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="5b0d-e9e1-12db-34eb" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="5b0d-e9e1-12db-34eb" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5294,14 +5964,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d1ed-0daf-37ff-6f6c" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="d1ed-0daf-37ff-6f6c" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baa6-45f3-f972-513a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="e441-772c-65e9-2cf7" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="e441-772c-65e9-2cf7" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5309,14 +5980,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5b59-d7ae-daea-4673" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="5b59-d7ae-daea-4673" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a66-f66d-e703-973b" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c56d-b950-8d2e-4756" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="c56d-b950-8d2e-4756" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5324,14 +5996,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f8cc-bbe5-2d1d-e348" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="f8cc-bbe5-2d1d-e348" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd9-8f25-f10c-4acc" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="f379-664c-82ae-d0fe" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="f379-664c-82ae-d0fe" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5339,14 +6012,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b043-7ada-badd-5191" name="7" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="b043-7ada-badd-5191" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="603e-2dd8-9630-18e5" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a753-54e6-1c6c-258a" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="a753-54e6-1c6c-258a" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5354,19 +6028,21 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="8071-8056-ff80-a61b" name="Body Manifold" hidden="false" collective="false" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
+            <entryLink id="8071-8056-ff80-a61b" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="22be-c4e5-c2ee-ba8a" name="Head" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="22be-c4e5-c2ee-ba8a" name="Head" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e06-9eba-b8b9-7fd2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eda8-8228-23a3-b52a" type="max"/>
@@ -5381,14 +6057,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="16cb-44c2-a52f-c6cd" name="Head Status" hidden="false" collective="false">
+            <selectionEntryGroup id="16cb-44c2-a52f-c6cd" name="Head Structure Point Damage" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="7b10-0d8a-ddb5-752d" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="7b10-0d8a-ddb5-752d" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b1-ba89-6c4d-f2fb" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="25bf-faf2-6eec-29ba" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="25bf-faf2-6eec-29ba" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5396,14 +6072,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="db0c-8d34-5696-21a8" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="db0c-8d34-5696-21a8" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59dd-06ca-41f2-a65d" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="ee3c-9932-d9ee-9bdf" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="ee3c-9932-d9ee-9bdf" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5411,14 +6088,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c5be-327a-d3e0-1529" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="c5be-327a-d3e0-1529" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a45c-8bf9-0c22-5599" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="d85b-556e-8923-c4c6" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="d85b-556e-8923-c4c6" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5426,14 +6104,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1ab7-9726-329d-447d" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="1ab7-9726-329d-447d" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7233-f708-e663-3c2a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="3ecf-2b43-5459-3852" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="3ecf-2b43-5459-3852" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5441,14 +6120,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="df99-c6d1-538a-5bcf" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="df99-c6d1-538a-5bcf" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c73c-7381-60a5-427a" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="133c-8a63-8596-e3d0" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="133c-8a63-8596-e3d0" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5456,14 +6136,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1801-950d-3f80-0b4d" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="1801-950d-3f80-0b4d" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f1f-f8ca-318a-5a98" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="dcf8-270a-7c47-f5d5" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="dcf8-270a-7c47-f5d5" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5471,19 +6152,21 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="a7cb-5909-9c38-e05f" name="Head Manifold" hidden="false" collective="false" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
+            <entryLink id="a7cb-5909-9c38-e05f" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8855-5912-1bd4-e880" name="Legs" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="8855-5912-1bd4-e880" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab51-a999-785f-c401" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d57f-149c-e9ea-c2c4" type="max"/>
@@ -5498,14 +6181,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="86fc-736f-4efc-c373" name="Legs Status" hidden="false" collective="false">
+            <selectionEntryGroup id="86fc-736f-4efc-c373" name="Legs Structure Point Damage" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="2dab-55f1-270e-cea2" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="2dab-55f1-270e-cea2" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0900-cc6d-2b19-00ad" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="71f1-199d-746d-4c1f" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="71f1-199d-746d-4c1f" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5513,14 +6196,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="86f6-cb80-7f75-cbfd" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="86f6-cb80-7f75-cbfd" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0299-a063-a2b8-4eb3" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="180c-442b-e288-b4e9" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="180c-442b-e288-b4e9" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5528,14 +6212,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c4a6-8a81-480d-c391" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="c4a6-8a81-480d-c391" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb06-6ad5-f941-2fa4" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="095c-8d01-c6b4-ee10" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="095c-8d01-c6b4-ee10" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5543,14 +6228,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="280a-80fd-b32d-dd97" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="280a-80fd-b32d-dd97" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b21c-ff7a-d3ce-77e3" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="3a2e-c3df-5aa0-a27e" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="3a2e-c3df-5aa0-a27e" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5558,14 +6244,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2bb2-c21a-9fa7-7de6" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="2bb2-c21a-9fa7-7de6" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="410f-4d94-1429-5136" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="fc47-f356-27ec-03e3" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="fc47-f356-27ec-03e3" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5573,14 +6260,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="53a5-54c2-399a-df50" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="53a5-54c2-399a-df50" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c09-7324-8c88-5ac6" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="9b20-a26b-d424-a98d" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="9b20-a26b-d424-a98d" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5588,14 +6276,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ce74-dc8e-b7b1-8836" name="7" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="ce74-dc8e-b7b1-8836" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed7c-f8a9-98d7-45a5" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7270-5b96-d159-db69" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="7270-5b96-d159-db69" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5603,35 +6292,144 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="2aa1-e161-4e5b-c510" name="Legs Manifold" hidden="false" collective="false" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+            <entryLink id="2aa1-e161-4e5b-c510" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="915c-f54f-b791-a7ca" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7589-29c8-2b40-0360" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9e8-36a0-a5eb-9744" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9fc4-c5f1-aeb9-2ecd" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="3c56-fc90-17b3-e3a1">
+              <entryLinks>
+                <entryLink id="3c56-fc90-17b3-e3a1" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="6666-6749-d87f-1dad" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="fd15-d3e8-4de9-0e7f" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="1ef2-6101-f731-90a6" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="82a7-5a91-3aa7-5b84" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry id="79bd-0517-6ee5-357f" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a7e-8c6e-1335-cd5b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9678-bc13-c348-9e9c" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3286-3ec4-8173-f29a" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="42ab-55e1-c606-ac82">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39ef-c897-32bd-d245" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aff-9737-3a07-3bad" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="42ab-55e1-c606-ac82" name="⦿⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ef-0425-835f-ee99" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a50f-880e-9a58-bea8" name="⦿⦿⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf76-d77f-d780-89f5" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5dd0-a842-5e5d-9a13" name="⦿⦿⦿⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6326-8bf0-863c-85ea" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b313-668f-af80-2aea" name="⦿⦿⦿⦿⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="063d-a093-edec-6daa" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="abac-9573-2847-47d4" name="⦿⦿⦿⦿⦿⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df89-0acf-c1a3-470a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5e92-e066-632c-36f6" name="⦿⦿⦿⦿⦿⦿ Red(6)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab1f-4a10-1059-b4e2" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9fdc-6d46-4162-4abe" name="Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="9fdc-6d46-4162-4abe" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
-            <selectionEntryGroup id="0170-4341-5ae8-473c" name="Arms" hidden="false" collective="false">
+            <selectionEntryGroup id="0170-4341-5ae8-473c" name="Arms" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f461-0891-3f02-d548" type="min"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a734-4563-7ecc-6677" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="0957-3041-9446-efc1" name="Gatling Blaster" hidden="false" collective="false" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
-                <entryLink id="5864-dd5a-c36d-82cd" name="Laser Blaster" hidden="false" collective="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
-                <entryLink id="9d4d-fa92-bd4e-dfec" name="Melta Cannon" hidden="false" collective="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
-                <entryLink id="5465-3a83-08aa-2b85" name="Reaver Titan Chainfist" hidden="false" collective="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
-                <entryLink id="1874-d868-c73d-92d4" name="Reaver Titan Power Fist" hidden="false" collective="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
-                <entryLink id="a50e-0a96-bb92-4745" name="Volcano Cannon" hidden="false" collective="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
-                <entryLink id="a53a-b1e5-49c1-f824" name="Chasmata Pattern Laser Blaster" hidden="true" collective="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
+                <entryLink id="0957-3041-9446-efc1" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
+                <entryLink id="5864-dd5a-c36d-82cd" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
+                <entryLink id="9d4d-fa92-bd4e-dfec" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
+                <entryLink id="5465-3a83-08aa-2b85" name="Reaver Titan Chainfist" hidden="false" collective="false" import="true" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
+                <entryLink id="1874-d868-c73d-92d4" name="Reaver Titan Power Fist" hidden="false" collective="false" import="true" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
+                <entryLink id="a50e-0a96-bb92-4745" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
+                <entryLink id="a53a-b1e5-49c1-f824" name="Chasmata Pattern Laser Blaster" hidden="true" collective="false" import="true" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -5642,17 +6440,17 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="735a-5759-2182-7746" name="Carapace" hidden="false" collective="false">
+            <selectionEntryGroup id="735a-5759-2182-7746" name="Carapace" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cc3-682c-ea41-d203" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5851-3fb0-8639-2354" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="a258-a802-b086-39da" name="Apocalypse Missile Launcher" hidden="false" collective="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
-                <entryLink id="532b-1b8a-fff7-cba3" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
-                <entryLink id="e707-da89-dcec-fdac" name="Warp Missile Support Rack" hidden="false" collective="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
-                <entryLink id="502b-4f5d-28bb-14ca" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
-                <entryLink id="34ef-ca64-2072-04f8" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" targetId="08c7-5efe-0712-c420" type="selectionEntry">
+                <entryLink id="a258-a802-b086-39da" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="true" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
+                <entryLink id="532b-1b8a-fff7-cba3" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="true" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
+                <entryLink id="e707-da89-dcec-fdac" name="Warp Missile Support Rack" hidden="false" collective="false" import="true" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
+                <entryLink id="502b-4f5d-28bb-14ca" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" import="true" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink id="34ef-ca64-2072-04f8" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" import="true" targetId="08c7-5efe-0712-c420" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -5665,74 +6463,9 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="75b3-312e-2026-816e" name="Void Shields" hidden="false" collective="false" defaultSelectionEntryId="d009-44d1-0f3c-1f3c">
-          <entryLinks>
-            <entryLink id="d009-44d1-0f3c-1f3c" name="Void Shield (3+)" hidden="false" collective="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry"/>
-            <entryLink id="bf9c-e660-65ad-f45d" name="Void Shield (4+) 2" hidden="false" collective="false" targetId="9219-813c-9bc8-e118" type="selectionEntry"/>
-            <entryLink id="7061-97a9-664f-f98d" name="Void Shield (4+)" hidden="false" collective="false" targetId="c621-87a7-709b-daa0" type="selectionEntry"/>
-            <entryLink id="cac5-0ec7-9f08-e52d" name="Void Shield (X)" hidden="false" collective="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry"/>
-            <entryLink id="d80c-4e52-45a5-7bef" name="Void Shield (3+) 2" hidden="false" collective="false" targetId="cecc-5283-0f3c-0325" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="156b-66ab-2b21-a8a8" name="Plasma Reactor" hidden="false" collective="false" defaultSelectionEntryId="35ff-94df-2fde-3ad0">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd55-f8fe-cfe7-7a56" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62c4-46cd-75d9-4d8c" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="2fe8-1ad3-b95c-7876" name="Plasma Reactor 2 Green" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62d5-0e90-5d72-5563" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="35ff-94df-2fde-3ad0" name="Plasma Reactor 1 Green" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39a2-11cf-9e81-008e" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="bcc8-04dc-2df1-02a1" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0315-9911-2793-fbc0" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="fd95-9834-bb42-9dac" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb3f-e021-6a0c-fc6d" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e78b-c4d8-d524-e5ee" name="Plasma Reactor 5 Orange" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84dc-c437-39dc-410d" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d3dd-32b7-b9e6-e8c3" name="Plasma Reactor 6 Red" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e230-002e-9212-f929" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="48cb-e20b-1a01-b012" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="48cb-e20b-1a01-b012" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -5750,13 +6483,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ed-43b4-4284-9375" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="11e8-a64a-ce3a-37d8" name="Wargear" hidden="false" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="11e8-a64a-ce3a-37d8" name="Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2c74-3aeb-1a28-d45e" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" type="model">
+    <selectionEntry id="2c74-3aeb-1a28-d45e" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="2a72-55d8-fc95-9058" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -5775,7 +6509,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="f229-35c5-d1e0-f7fb" name="New CategoryLink" hidden="false" targetId="d36f-5e44-2150-3428" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="2564-a66a-41ae-c711" name="Body" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2564-a66a-41ae-c711" name="Body" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6b1-f6d1-139f-8cc2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9adb-18a9-d3ac-7f75" type="max"/>
@@ -5790,14 +6524,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="3168-160a-17bd-8805" name="Body Status" hidden="false" collective="false">
+            <selectionEntryGroup id="3168-160a-17bd-8805" name="Body Structure Point Damage" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="de2e-c221-a52a-a8cb" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="de2e-c221-a52a-a8cb" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="394f-a002-2944-5ae6" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="28e9-7b09-afef-01b7" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="28e9-7b09-afef-01b7" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5805,14 +6539,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2b54-b1cf-7122-447f" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="2b54-b1cf-7122-447f" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="591b-b097-c13b-b4c8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="c65f-81b5-aa11-ee43" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="c65f-81b5-aa11-ee43" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5820,14 +6555,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="452d-5fb3-1728-094e" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="452d-5fb3-1728-094e" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2840-6742-f7a0-1208" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="cd09-f502-0b6a-ca4f" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="cd09-f502-0b6a-ca4f" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5835,14 +6571,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="92af-ae70-2071-9420" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="92af-ae70-2071-9420" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0350-e811-9ce1-ff00" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="ae89-ce77-0e00-b7ba" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="ae89-ce77-0e00-b7ba" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5850,14 +6587,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e1fd-d09d-f535-034a" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="e1fd-d09d-f535-034a" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5996-5c61-0ddc-c82f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="63a3-ba61-bb7a-4d93" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="63a3-ba61-bb7a-4d93" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5865,14 +6603,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c72b-0902-ce26-10c5" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="c72b-0902-ce26-10c5" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fe3-373a-b433-7643" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="2b88-0e50-eb71-e328" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="2b88-0e50-eb71-e328" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5880,14 +6619,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="929d-0b90-113a-6f19" name="7" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="929d-0b90-113a-6f19" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6806-31dd-36fb-fbc4" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="1b7f-8a87-08ce-f20f" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="1b7f-8a87-08ce-f20f" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -5895,19 +6635,21 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="f18b-a806-70e9-1f74" name="Body Manifold" hidden="false" collective="false" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
+            <entryLink id="f18b-a806-70e9-1f74" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b91f-db36-7dc9-dd3c" name="Head" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b91f-db36-7dc9-dd3c" name="Head" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ee3-24c8-f589-de47" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0706-3558-075b-8d96" type="max"/>
@@ -5922,14 +6664,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="331c-41f1-93f5-fb12" name="Head Status" hidden="false" collective="false">
+            <selectionEntryGroup id="331c-41f1-93f5-fb12" name="Head Structure Point Damage" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="eb54-81e0-3808-9adc" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="eb54-81e0-3808-9adc" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="101c-61ae-ab40-0686" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7d87-e581-462f-4cde" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="7d87-e581-462f-4cde" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5937,14 +6679,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f975-347d-1639-fa9e" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="f975-347d-1639-fa9e" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ac-071b-75ec-d59f" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="da99-9c17-2228-eede" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="da99-9c17-2228-eede" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5952,14 +6695,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9ad6-d9e5-0953-ebfd" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="9ad6-d9e5-0953-ebfd" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbf1-8bd7-8117-fd8d" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="4e7d-75b2-a12d-44b2" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="4e7d-75b2-a12d-44b2" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -5967,14 +6711,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b465-d0d7-b183-4374" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="b465-d0d7-b183-4374" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fa7-2ce1-6d5c-86ae" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a151-8ec5-b7da-9739" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="a151-8ec5-b7da-9739" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -5982,14 +6727,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="507e-a157-b3cb-c164" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="507e-a157-b3cb-c164" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1970-849e-25bf-aad7" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a1b7-9a89-158e-49e9" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="a1b7-9a89-158e-49e9" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -5997,14 +6743,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="535b-ff77-73e5-e5ab" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="535b-ff77-73e5-e5ab" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30e5-42c9-35de-10fa" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="a985-cdf7-a322-178f" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="a985-cdf7-a322-178f" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -6012,19 +6759,21 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="1772-05f9-b122-cfde" name="Head Manifold" hidden="false" collective="false" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
+            <entryLink id="1772-05f9-b122-cfde" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c3ec-2b04-2ed1-9c20" name="Legs" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c3ec-2b04-2ed1-9c20" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb57-dbfc-751e-85cc" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0471-2660-ce71-1306" type="max"/>
@@ -6039,14 +6788,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="68b7-5c89-6e3d-86fc" name="Legs Status" hidden="false" collective="false">
+            <selectionEntryGroup id="68b7-5c89-6e3d-86fc" name="Legs Structure Point Damage" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="0db1-4d4b-dc1e-3ede" name="1" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="0db1-4d4b-dc1e-3ede" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9ba-c233-6908-572c" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="b82b-ed34-c5b1-9563" name="1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="b82b-ed34-c5b1-9563" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6054,14 +6803,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="8e61-4220-fb3c-672c" name="2" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="8e61-4220-fb3c-672c" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a662-e3df-ace0-b645" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="26c1-808b-0ea1-7112" name="2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="26c1-808b-0ea1-7112" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6069,14 +6819,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1218-689d-e653-91fb" name="3" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="1218-689d-e653-91fb" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02e8-cb1e-0005-ee4e" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bf3b-13f7-0183-dca0" name="3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="bf3b-13f7-0183-dca0" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
                       </characteristics>
@@ -6084,14 +6835,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="27bb-9348-a145-6612" name="4" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="27bb-9348-a145-6612" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ccd-919c-78d8-5fb8" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="81f6-dc90-7473-c7ce" name="4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="81f6-dc90-7473-c7ce" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -6099,14 +6851,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="691f-3383-93d1-0834" name="5" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="691f-3383-93d1-0834" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="076c-19dd-8d64-fbbe" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="bd2c-def9-1d79-8013" name="5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="bd2c-def9-1d79-8013" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
                       </characteristics>
@@ -6114,14 +6867,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ab7d-30a5-0744-be33" name="6" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="ab7d-30a5-0744-be33" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5ff-ecdd-000f-91bb" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="50d5-86b4-1102-7ed3" name="6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="50d5-86b4-1102-7ed3" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
                       </characteristics>
@@ -6129,14 +6883,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="632b-0b5d-d7b1-88ed" name="7" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="632b-0b5d-d7b1-88ed" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b0-dbc4-b4d6-3e68" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="8164-79a4-150a-e082" name="7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
+                    <profile id="8164-79a4-150a-e082" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
                       <characteristics>
                         <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
                       </characteristics>
@@ -6144,35 +6899,144 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                   </profiles>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="2292-7c49-11c4-921d" name="Legs Manifold" hidden="false" collective="false" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+            <entryLink id="2292-7c49-11c4-921d" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="4604-8f3c-441a-4747" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a221-a1fe-938e-b101" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e047-a7fc-e90a-717d" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="d780-076a-52a4-c0e1" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="1b08-b1f7-c03c-802a">
+              <entryLinks>
+                <entryLink id="1b08-b1f7-c03c-802a" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="7414-a5fd-6c2b-7e4f" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="cb52-3556-d192-886a" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="855a-31f2-4328-5fb8" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="b72a-3b5d-1124-68b3" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry id="ae9b-67a9-e2d1-aa22" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e33d-73c8-e85f-bb69" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eea9-23bc-6964-587e" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="81cd-59d2-3957-66a1" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="3773-c51a-d6a7-a9b8">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="302b-343e-0a9b-5e44" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9430-3bf1-331a-493b" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="3773-c51a-d6a7-a9b8" name="⦿⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39b5-5f69-561d-dd43" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="135a-95f3-1d18-c8ec" name="⦿⦿⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e649-b9a3-3b83-eb92" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6270-2655-5a8c-66b4" name="⦿⦿⦿⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf5d-ac30-9e8d-6f1f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="05f1-c9a8-6cce-0627" name="⦿⦿⦿⦿⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b092-0dbe-6276-eaf8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5db6-e0d4-4484-473f" name="⦿⦿⦿⦿⦿⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c41-9c78-648d-ac38" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="bb6b-026c-1e6f-d24e" name="⦿⦿⦿⦿⦿⦿ Red(6)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4cc-f8be-4dd4-171a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4b56-5f30-cda0-99fa" name="Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="4b56-5f30-cda0-99fa" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
-            <selectionEntryGroup id="093f-d072-0b5f-dc9f" name="Arms" hidden="false" collective="false">
+            <selectionEntryGroup id="093f-d072-0b5f-dc9f" name="Arms" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91b6-6401-d8a6-4dd1" type="min"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bc3-3ece-cb03-a155" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="4933-260f-d3eb-b3b7" name="Gatling Blaster" hidden="false" collective="false" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
-                <entryLink id="8a88-24cb-f6ee-9b4b" name="Laser Blaster" hidden="false" collective="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
-                <entryLink id="88d3-d4b3-73b8-82b5" name="Melta Cannon" hidden="false" collective="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
-                <entryLink id="eff4-4fdf-b1a2-b4e3" name="Reaver Titan Chainfist" hidden="false" collective="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
-                <entryLink id="b2ca-2aae-a8f9-8805" name="Reaver Titan Power Fist" hidden="false" collective="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
-                <entryLink id="67b3-4848-0715-94c7" name="Volcano Cannon" hidden="false" collective="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
-                <entryLink id="a0c6-f768-021c-d060" name="Chasmata Pattern Laser Blaster" hidden="true" collective="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
+                <entryLink id="4933-260f-d3eb-b3b7" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
+                <entryLink id="8a88-24cb-f6ee-9b4b" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
+                <entryLink id="88d3-d4b3-73b8-82b5" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
+                <entryLink id="eff4-4fdf-b1a2-b4e3" name="Reaver Titan Chainfist" hidden="false" collective="false" import="true" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
+                <entryLink id="b2ca-2aae-a8f9-8805" name="Reaver Titan Power Fist" hidden="false" collective="false" import="true" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
+                <entryLink id="67b3-4848-0715-94c7" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
+                <entryLink id="a0c6-f768-021c-d060" name="Chasmata Pattern Laser Blaster" hidden="true" collective="false" import="true" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -6183,17 +7047,17 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="46bd-2854-e7e6-55ff" name="Carapace" hidden="false" collective="false">
+            <selectionEntryGroup id="46bd-2854-e7e6-55ff" name="Carapace" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8164-2e3d-5598-85ed" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="438b-e69d-a2ef-69ff" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="2c73-2ddc-198e-4658" name="Apocalypse Missile Launcher" hidden="false" collective="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
-                <entryLink id="8c3c-aab5-c5cd-d6df" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
-                <entryLink id="05e9-76ee-0844-dbeb" name="Warp Missile Support Rack" hidden="false" collective="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
-                <entryLink id="7eb9-5d3b-0d1e-5f2b" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
-                <entryLink id="e199-f670-3556-139b" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" targetId="08c7-5efe-0712-c420" type="selectionEntry">
+                <entryLink id="2c73-2ddc-198e-4658" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="true" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
+                <entryLink id="8c3c-aab5-c5cd-d6df" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="true" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
+                <entryLink id="05e9-76ee-0844-dbeb" name="Warp Missile Support Rack" hidden="false" collective="false" import="true" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
+                <entryLink id="7eb9-5d3b-0d1e-5f2b" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" import="true" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink id="e199-f670-3556-139b" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" import="true" targetId="08c7-5efe-0712-c420" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -6206,74 +7070,9 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="350b-2560-959c-a3ed" name="Void Shields" hidden="false" collective="false" defaultSelectionEntryId="bc2d-5d9c-83e9-e16a">
-          <entryLinks>
-            <entryLink id="bc2d-5d9c-83e9-e16a" name="Void Shield (3+)" hidden="false" collective="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry"/>
-            <entryLink id="5e6e-ef3b-cf57-fce1" name="Void Shield (4+) 2" hidden="false" collective="false" targetId="9219-813c-9bc8-e118" type="selectionEntry"/>
-            <entryLink id="87e8-be32-8233-2399" name="Void Shield (4+)" hidden="false" collective="false" targetId="c621-87a7-709b-daa0" type="selectionEntry"/>
-            <entryLink id="abdd-6787-ccab-95f8" name="Void Shield (X)" hidden="false" collective="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry"/>
-            <entryLink id="be1b-c780-0b2e-1c79" name="Void Shield (3+) 2" hidden="false" collective="false" targetId="cecc-5283-0f3c-0325" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="6d28-12a3-66b9-5c9b" name="Plasma Reactor" hidden="false" collective="false" defaultSelectionEntryId="a6d5-5c43-28f8-318b">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e080-8d83-b344-29e4" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9b8-45f5-597f-6a51" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="97bf-b8f8-f143-58ae" name="Plasma Reactor 2 Green" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a9-d3fa-e9df-e5b4" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a6d5-5c43-28f8-318b" name="Plasma Reactor 1 Green" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79d9-2cb4-e01f-c5e4" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7d3c-6e69-392f-8444" name="Plasma Reactor 4 Yellow" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4008-8d35-a1bf-7fd8" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="cbed-1aa2-f302-0534" name="Plasma Reactor 3 Yellow" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a3b-9a80-fdb0-6841" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="23a5-a82e-ecac-4867" name="Plasma Reactor 5 Orange" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cea-6cf6-ce43-7fe5" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4d10-bb74-7652-04dd" name="Plasma Reactor 6 Red" hidden="false" collective="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69be-a310-ec59-7398" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="bdb5-169d-1379-91b7" name="Titan Legion" hidden="false" collective="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="bdb5-169d-1379-91b7" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -6291,13 +7090,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46d1-cd25-c00d-3e61" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="f4fa-d534-2066-eeaa" name="Wargear" hidden="false" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="f4fa-d534-2066-eeaa" name="Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4944-7ee2-734b-6fa5" name="Acastus Knight Banner" hidden="false" collective="false" type="unit">
+    <selectionEntry id="4944-7ee2-734b-6fa5" name="Acastus Knight Banner" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="0133-83bd-868b-8389" name="1 Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
@@ -6336,31 +7136,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
           </characteristics>
         </profile>
-        <profile id="bea6-eb1f-1d8a-af69" name="Acastus Knight Banner Structure Point 5" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="aaf1-7635-cf01-e46b" name="Acastus Knight Banner Structure Point 4" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="8ea5-8611-a382-b0d6" name="Acastus Knight Banner Structure Point 3" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="0a8e-f6ba-d344-b42c" name="Acastus Knight Banner Structure Point 2" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="7207-11d2-e344-67e3" name="Acastus Knight Banner Structure Point 1" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
         <profile id="858f-4f88-022b-298c" name="Acastus Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
             <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">7&quot;</characteristic>
@@ -6372,16 +7147,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <characteristic name="Scale" typeId="5359-4d2b-082b-546a">5 (Grandis)</characteristic>
           </characteristics>
         </profile>
-        <profile id="d325-0937-8b14-f56e" name="Acastus Knight Banner Structure Point 6" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
-        <profile id="4265-d7c5-c370-a7ee" name="Acastus Knight Banner Structure Point 7" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-          <characteristics>
-            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-          </characteristics>
-        </profile>
       </profiles>
       <rules>
         <rule id="34c7-89b7-04b7-f19e" name="Acastus Knight Artillery" hidden="false">
@@ -6391,8 +7156,68 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       <categoryLinks>
         <categoryLink id="2c98-724d-3c3d-7b5e" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9c3d-0584-6da5-52c5" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bda7-f7bb-3968-79c7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2b3-2058-9a2b-95be" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="41e4-7ede-0b3e-1f19" name="Acastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="900b-24b9-ffb0-c1b8">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf01-ab6d-486c-3c30" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5229-4318-9c58-3d84" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="900b-24b9-ffb0-c1b8" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5568-e90e-38da-1821" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f1dc-d4ad-c6ea-e08c" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4d0c-7caf-e22d-8172" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="744d-a247-fb4a-1238" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="03ee-6575-fd66-a3c9" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8fbe-b276-6c95-09b7" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2882-56f0-4672-741a" name="Knight Hulls" hidden="false" collective="false">
+        <selectionEntryGroup id="2882-56f0-4672-741a" name="Knight Hulls" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="ad9b-d3b5-da90-96fd" value="1.0">
               <repeats>
@@ -6410,17 +7235,17 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad9b-d3b5-da90-96fd" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6ff4-90de-cfdc-bc90" name="Acastus Knight" hidden="false" collective="false" targetId="69b3-e7ac-9cec-ad72" type="selectionEntry"/>
+            <entryLink id="6ff4-90de-cfdc-bc90" name="Acastus Knight" hidden="false" collective="false" import="true" targetId="69b3-e7ac-9cec-ad72" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="592f-6dcd-a128-5453" name="Lord Scion" hidden="false" collective="false" targetId="c197-9e7c-0bb5-0889" type="selectionEntry">
+        <entryLink id="592f-6dcd-a128-5453" name="Lord Scion" hidden="false" collective="false" import="true" targetId="c197-9e7c-0bb5-0889" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="a731-e220-2d8a-41bf" value="80.0"/>
           </modifiers>
         </entryLink>
-        <entryLink id="85a9-5131-d077-0c17" name="Scion Marshal" hidden="false" collective="false" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
+        <entryLink id="85a9-5131-d077-0c17" name="Scion Marshal" hidden="false" collective="false" import="true" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="a731-e220-2d8a-41bf" value="70.0"/>
           </modifiers>
@@ -6432,9 +7257,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c23d-64c5-b376-ad80" name="Porphyrion Twin Magna Lascannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="c23d-64c5-b376-ad80" name="Porphyrion Twin Magna Lascannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="c070-66c3-9137-f40f" name="Porphyrion Twin Magna Lascannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -6443,10 +7269,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">6&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">48&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"></characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
             <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Paired</characteristic>
           </characteristics>
         </profile>
@@ -6461,21 +7287,22 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1d36-f2f4-4f29-5864" name="Porphyrion Ironstorm Missile Pod" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1d36-f2f4-4f29-5864" name="Porphyrion Ironstorm Missile Pod" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="fdab-ab17-99be-7e1e" name="Porphyrion Ironstorm Missile Pod" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">6&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">36&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"></characteristic>
-            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"></characteristic>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Rapid</characteristic>
           </characteristics>
         </profile>
@@ -6489,52 +7316,54 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="76aa-5e9a-0d62-87c1" name="Acastus Knight Porhpyrion" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="76aa-5e9a-0d62-87c1" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="6559-1688-b6f4-78a1" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="4d8b-e826-be7b-7293" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a0c0-c300-335b-c637" name="Porphyrion Twin Magna Lascannon" hidden="false" collective="false" targetId="c23d-64c5-b376-ad80" type="selectionEntry">
+        <entryLink id="a0c0-c300-335b-c637" name="Porphyrion Twin Magna Lascannon" hidden="false" collective="false" import="true" targetId="c23d-64c5-b376-ad80" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2aa-5df7-85ff-d53b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2bc-0dec-c133-811e" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="b0fe-58fd-274d-6ac6" name="Porphyrion Ironstorm Missile Pod" hidden="false" collective="false" targetId="1d36-f2f4-4f29-5864" type="selectionEntry">
+        <entryLink id="b0fe-58fd-274d-6ac6" name="Porphyrion Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="1d36-f2f4-4f29-5864" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="368c-330f-1d9d-2f9f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cdf-8f33-a959-6f54" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="fd47-c688-fe2d-3467" name="Acastus Hull Weapon" hidden="false" collective="false" targetId="e060-52c1-1d31-a331" type="selectionEntryGroup"/>
+        <entryLink id="fd47-c688-fe2d-3467" name="Acastus Hull Weapon" hidden="false" collective="false" import="true" targetId="e060-52c1-1d31-a331" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="69b3-e7ac-9cec-ad72" name="Acastus Knight" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="69b3-e7ac-9cec-ad72" name="Acastus Knight" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="72a7-b423-1f4f-896d" name="Knight Hull" hidden="false" collective="false">
+        <selectionEntryGroup id="72a7-b423-1f4f-896d" name="Knight Hull" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f9e-5f64-05e9-6b25" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d056-b40b-a1bc-43fb" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="793e-5fcb-118c-f908" name="Acastus Knight Porhpyrion" hidden="false" collective="false" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry"/>
-            <entryLink id="7353-9144-2106-3591" name="Acastus Knight Asterius" hidden="false" collective="false" targetId="2dee-7316-3a42-5507" type="selectionEntry"/>
+            <entryLink id="793e-5fcb-118c-f908" name="Acastus Knight Porhpyrion" hidden="false" collective="false" import="true" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry"/>
+            <entryLink id="7353-9144-2106-3591" name="Acastus Knight Asterius" hidden="false" collective="false" import="true" targetId="2dee-7316-3a42-5507" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a2a3-d4b5-189a-5f63" name="Acastus Twin Lascannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="a2a3-d4b5-189a-5f63" name="Acastus Twin Lascannon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4773-8e27-43f2-c351" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca46-ab9b-6551-5fe6" type="max"/>
       </constraints>
       <profiles>
@@ -6543,13 +7372,13 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">6&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">12&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"></characteristic>
-            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"></characteristic>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"></characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -6560,11 +7389,11 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="abac-6fdb-0228-d12a" name="Acastus Twin Autocannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="abac-6fdb-0228-d12a" name="Acastus Twin Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75db-4271-1ebb-c891" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cad-1d7b-ac96-7751" type="max"/>
       </constraints>
       <rules>
@@ -6575,20 +7404,24 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       <categoryLinks>
         <categoryLink id="2e65-e207-2ae4-43c2" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="93c8-d5c9-575d-d1ac" name="Asterius Twin Conversion Beam Cannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="93c8-d5c9-575d-d1ac" name="Asterius Twin Conversion Beam Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="f7f4-7de3-b45c-21f7" name="Asterius Twin Conversion Beam Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">*24&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">**48&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"></characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
             <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4">*3&quot;/**5&quot;</characteristic>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Paired</characteristic>
           </characteristics>
         </profile>
@@ -6603,21 +7436,22 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5893-d4c8-461e-ea79" name="Asterius Karacnos Mortar Battery" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5893-d4c8-461e-ea79" name="Asterius Karacnos Mortar Battery" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="8abb-9507-2164-dcff" name="Asterius Karacnos Mortar Battery" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">36&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"></characteristic>
-            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"></characteristic>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Rending</characteristic>
           </characteristics>
         </profile>
@@ -6631,41 +7465,889 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2dee-7316-3a42-5507" name="Acastus Knight Asterius" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2dee-7316-3a42-5507" name="Acastus Knight Asterius" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="bf56-58f3-1547-e5d9" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="b9ca-01e0-3b09-566f" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="df5d-9150-bc98-b375" name="Asterius Twin Conversion Beam Cannon" hidden="false" collective="false" targetId="93c8-d5c9-575d-d1ac" type="selectionEntry">
+        <entryLink id="df5d-9150-bc98-b375" name="Asterius Twin Conversion Beam Cannon" hidden="false" collective="false" import="true" targetId="93c8-d5c9-575d-d1ac" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87da-39d1-af6e-9897" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a14-33bf-eefa-1d98" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="e76c-8e08-b7fd-b82c" name="Asterius Karacnos Mortar Battery" hidden="false" collective="false" targetId="5893-d4c8-461e-ea79" type="selectionEntry">
+        <entryLink id="e76c-8e08-b7fd-b82c" name="Asterius Karacnos Mortar Battery" hidden="false" collective="false" import="true" targetId="5893-d4c8-461e-ea79" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b1f-7cd6-59da-f4cc" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6fe-e9ae-dff4-5038" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="7bc2-34b3-b54b-e8c0" name="Acastus Hull Weapon" hidden="false" collective="false" targetId="e060-52c1-1d31-a331" type="selectionEntryGroup"/>
+        <entryLink id="7bc2-34b3-b54b-e8c0" name="Acastus Hull Weapon" hidden="false" collective="false" import="true" targetId="e060-52c1-1d31-a331" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="92b5-e290-3859-ee00" name="Auspex Bafflers" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9475-954d-9bc0-bee5" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="3b5a-cbb2-e42b-3ead" name="Auspex Bafflers" hidden="false">
+          <description>Play in any Strategy phase. Pick a Knight Banner or Titan - the for the rest of the round, incoming attacks have an extra -1 to hit that unit.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="fe05-2ae0-6d29-56e8" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1911-abf3-ac1a-dc24" name="Ablative Armour" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e92b-03d7-ddeb-9e5f" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="d289-a08c-7084-5177" name="Ablative Armour" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in any Strategy phase. Pick a Titan. Ignore the first Direct, Devastating, or Critical hit against that unit, then discard this strategem.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f6e5-39f6-fcfb-d2d7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d57-58b8-78e2-ef41" name="Bloodthirst" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="e190-0e76-863b-13e8" name="Bloodthirst" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in an Strategy phase. This round, your Titans add +2 to hit enemies within 2&quot; and add +2 to Command checks when issuing Charge orders.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6c7b-33e6-e037-f88c" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1de7-d898-28ca-df04" name="Cursed Earth" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="961e-00a1-1f79-b536" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="c5fd-928f-6592-7f3e" name="Cursed Earth" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in the first Strategy phase of the game. Radioactive battlefield - Titans rolle on extra dive when making Void Shield svaes, Knight banners count the strength of incoming attacks as 1 higher when working out their Ion Shield saves.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ee24-d8e3-b68e-d64f" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="25d9-b5e3-6243-ba14" name="Dawn Attack" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="323e-0fb9-3fd0-a676" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="90ee-05f6-621a-1b33" name="Dawn Attack" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in the first Strategy phase of hte game. For the first 2 rounds, Titans must roll d6x10 to determine hoe far away the can target enemies. Enemy usnits that have fired earlier in the round can always be targeted.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2fdb-45f6-8f5e-be64" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d4f-7971-bacc-d50e" name="Endurance of Terra" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43fb-83e1-2c6b-100c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6444-c60f-2ed7-c3bf" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="90e8-b136-e796-658d" name="Endurance of Terra" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play hwen a Titan suffers Critical damage. Rolle a d6 - if you rolle equal or less than the amount of damage, that damage is ignored. Otherwise, take damage as normal and retain this card.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2d14-fe00-fbcf-d121" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cb69-65f4-f95f-62d3" name="Experimental Weapon" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="93f0-6127-7745-5f27" name="Experimental Weapon" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in the Strategy phase of the first round. Pick a Titan, then randomly select one of its weapons. That weapon gains the Maximal Fire trait, but must always fire on Maximal. If the weapon already has that trait, pick another weapon.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2d07-dca9-7891-14c7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9ed4-ecf1-c67b-b64e" name="Gifts of the Dark Mechanicum" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab55-2470-271f-1b8a" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8486-7526-90c4-40bb" name="Gifts of the Dark Mechanicum" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in an Strategy phase. Pick a Titan. Each time that Titan pushes its reactor, you may put a token on thsi card instead of rolling a Reactor die. Once this card has 3 tokens, it is discarded.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f2bb-75b2-ac63-ed25" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b8c9-6ea9-db00-80ad" name="Great Crusade Titans" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43fb-83e1-2c6b-100c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7500-77e3-927a-4b5a" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="c679-501a-4c2e-d9fc" name="Great Crusade Titans" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in any Strategy phase. Add +2 to Command checks when issuing Charge orders this round. Titans also count as having moved 6&quot; furhter for hte purposes of their additional Charge attacks.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="8165-a347-ab06-4f1f" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="63e5-c3bf-0f5b-a8ae" name="Living Armour" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99eb-58fb-1c17-d40c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="df4e-a0e3-9e1f-63b9" name="Living Armour" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in any Strategy phase. Pick a Titan, and a location that has suffered damage. Roll a d10. If your roll equal or higher than the amount of Structural damage, all damage to that location is repaired. Otherwise, there&apos;s no effect, but you retain the card for subsequent rounds.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="74ad-b7d8-e91e-f9ec" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9c4a-cc01-9454-b339" name="Martian Servitor Clades" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43fb-83e1-2c6b-100c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a169-694f-a412-42ce" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="52e0-9a76-6894-5abd" name="Martian Servitor Clades" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play at the start of any Damage Control phase. Each of your Titans adds 2 reapir dice to their Servitor clades. If your opponent is fielding any Legio Mortis or Tempestus Titans, you can also re-roll 1s on repair dice.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="214a-d9c4-724c-1943" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f53-6658-d606-ad5c" name="Overcharged Cannon" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="c4b1-aa1f-4b50-92b0" name="Overcharged Cannon" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in the Strategy phase of the first round. Pick a Titan that has a weapon with Maximal Fire. One weapon with that trait gains Super Maximal Fire - like regular Maximal, but at +4 Strength instead.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6d30-67eb-dcbd-bae7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c88b-b85f-1703-59c7" name="Sabotage" publicationId="975a-00f4-pubN65537" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e844-5a81-9b8e-57f6" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="141c-9df4-b519-6fe0" name="Sabotage" publicationId="975a-00f4-pubN65537" hidden="false">
+          <description>Play at the start of any phase. Pick a Titan that doesn&apos;t have Shutdown orders. Replace their order with a random one.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a5d0-0356-0cd7-ba2e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="82dc-135c-6241-dcca" name="Secutarii Battalion" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43fb-83e1-2c6b-100c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12ef-5ea6-76b4-56b9" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="1007-6826-61f3-4bc1" name="Secutarii Batallion" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in each Strategy phase. Any enemy units with Scale 3 or less take d6 Strength 3 hits, if they are within 2&quot; of one of the player&apos;s Titans.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a6e9-5337-2ec8-f9a8" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="68a2-d06c-8ad8-9ea0" name="The Long Retreat" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43fb-83e1-2c6b-100c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b3-21ef-690b-2c7d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e5f4-6ba8-2b91-1faf" name="The Long Retreat" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in an Strategy phase. Pick a Titan. This round, your Titans don&apos;t move at half speed when moving outside their Front arc.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3195-2ce6-0ecc-7d2e" name="Thermal Mines" publicationId="975a-00f4-pubN65537" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcbc-42ad-d9c4-cf8e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5877-a1c6-d33d-c69c" name="Thermal Mines" publicationId="7236-e1d8-c886-f5fd" hidden="false">
+          <description>Play after an enemy unit finishes moving or making a turn. That unit takes d3 S10 hits to the legs, ignoring shields.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b9c7-8740-586c-af80" name="Voidbreaker Field" publicationId="975a-00f4-pubN65537" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="747e-a475-fc09-3272" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="7974-7395-36fe-c3ac" name="Voidbreaker Field" publicationId="975a-00f4-pubN65537" hidden="false">
+          <description>Play this Stratagem immediately after an enemy unit with active void shields finishes moving or making a turn. Roll a D6. On a 2 or more, the opposing player must immediately make a number of Shield saves equal to the number rolled on the D6. On a 1, the Stratagem can be used a second time, in a subsequent turn.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="211c-5c02-080a-eeb4" name="Vox Blackout" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eaa-461f-d419-461e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="1c9e-d57d-35be-80f5" name="Vox Blackout" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in any Strategy phase. All non-Shutdown orders are discarded, and the phase immediately ends.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3ef1-098e-a603-9111" name="Wages of Betrayal" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43fb-83e1-2c6b-100c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3383-9672-08e4-8986" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="7721-0e26-60a5-66e6" name="Wages of Betrayal" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in any Strategy phase. Enemy Titans suffer -2 to Command checks this phase; the enemy Princeps Seniores suffers -3 to Command checks instead.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c803-e008-a3f9-dc88" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="19e6-b0cc-5b61-4583" name="War Lust" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0c5-d94c-134a-8b3c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="697b-958d-7a0a-0201" name="War Lust" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in any Strategy phase. This round, your tians add +2&quot; to their Boosted Speed. Also, add +2 to Command checks when issuing Full Stride orders.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5fff-7fff-159a-06b8" name="War of Fates" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40c8-9465-4c5b-f98c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="c0de-a421-ac8a-a9ec" name="War of Fates" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in any Strategy phase. Beofre the Movement, Damage Control, and Combat phases, roll a d10. If the result is ODD, during that phase any 6 on a d6 (or 10 on a d10) counts as a 1. If the result is EVEN, any 1 rolled on a d6 or d10 counts as having the maximum for that die.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6f84-544d-c82b-ae95" name="Warmaster&apos;s Petition" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b49e-50e3-b319-8a11" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="55a1-5d0b-5744-c20f" name="Warmaster&apos;s Petition" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Play in the Strategy phase of the first round. During the Movement and Combat phases this round, your Titans can re-roll 1s to hit.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="43fb-83e1-2c6b-100c" name="Loyalist" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1569-473a-20ca-0868" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f5a6-21b4-9932-495c" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d634-d27a-fd9c-3f8f" name="Traitor" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf9-b0c8-f280-b8be" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="dcbc-8b47-27e8-eaff" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b450-3a86-ecdf-39fc" name="Noble Sacrifice" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cff2-5040-7160-7812" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="9a92-3879-479c-dcb3" name="Noble Sacrifice" hidden="false">
+          <description>A player can enact this Stratagem during the Strategy phase. To do so, they pick a Titan from their force whose strucrure has been compromised and roll a D6. Add I to the result if its Reactor Starus marker is in a hole with an orange indicator, or add 3 to the result if it is in a hole with a red indicator. The Titan suffers a Magazine Detonation on a result of 1-4, or a Catastrophic Meltdown on a result of 5-6 (see the Catastrophic Damage table on page 36). At the end of the battle, the player loses a number of Victory points equal to the Titan&apos;s Scale.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="225f-44de-db0f-58bd" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8d52-2df6-feda-18f8" name="Outflank" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="efbf-52f7-fd08-f329" value="4.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ff1-81bc-203d-620c" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="efbf-52f7-fd08-f329" value="5.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5122-cb02-8703-ce88" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="efbf-52f7-fd08-f329" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3ad7-cd10-8d6e-8c2e" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ff4-90de-cfdc-bc90" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="efbf-52f7-fd08-f329" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e018-6fef-2f79-88bc" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8371-c1b8-3c6e-1174" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="cfb3-d62f-5b05-0a9f" name="Outflank" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>When this Stratagem is chosen, the player secretly writes down one of their units. The cost of the Stratagem is equal to half the unit&apos;s Scale, rounding up. Play this Stratagem at the start of deployment to set that unit to one side and state that it is outflanking (it is not deployed with the rest ofits battlegroup). Write down which of the battlefield&apos;s neutral flanks it will arrive on, but do not reveal this to the opposing player. While the unit is not on the board, it cannot be activated, and so cannot be issued orders.
+At the start of the Movement phase of the first round, the unit appears on long range auspex - reveal to the opposing player which neutral flank was chosen. During the Movement phase of the second round, the outflanking unit can be activated. When it is, it is set up so that the Rear arc ofits base is touching the chosen flank. It cannot move any further during the phase.
+If a player&apos;s battlegroup contains any Squadrons (see page 45), they can choose this Stratagem more than once, as long as each outflanking unit is part of the same Squadron.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="5be7-22e3-8e33-d122" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1927-d3c6-f613-8b16" name="Selected Unit" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2380-bf64-9d4b-f8d0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91a8-16ce-be56-df7e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="77cf-648d-5060-1857" name="Acastus Knight" hidden="false" collective="false" import="true" targetId="69b3-e7ac-9cec-ad72" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="5cd2-6379-ef36-e9bb" name="Cerastus Knight" hidden="false" collective="false" import="true" targetId="71a1-ef51-b47e-2983" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="ac45-f47a-a53d-536d" name="Questoris Knight" hidden="false" collective="false" import="true" targetId="5eb2-54c8-ba72-1bcf" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="eb5b-948f-fceb-eaa8" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="1097-d625-df16-f139" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="e9f5-3227-c482-9785" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a0b2-b8fc-58d2-90f3" name="Artillery Bombardment" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b63-0a44-5c20-e32d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5154-fe72-cab6-0525" name="Artillery Bombardment" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>Artillery Bombardment. Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield, then scatter it D10&apos;&apos;. Any unit touched by the marker where it evenrually lands suffers a Strength 8 hit, or two Strength 8 hits if the cenrral hole of the Blast marker is entirely over its base.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="9281-1e2a-9d46-9b5c" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4537-cab6-8147-aebe" name="Orbital Lance Strike" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4576-c93d-63e3-9fdf" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="d780-0b5c-9bed-dda0" name="Orbital Lance Strike" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>Once per battle, play this during the Strategy phase. Place the 3&quot; Blast marker anywhere on the battlefield, then scatter it D6&quot;. Any unit touched by the marker where it evenrually lands suffers D3 Strength 10 hits, or 2D3 Strength 10 hits ifthe central hole ofthe Blast marker is entirely over its base.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="34db-650d-be3b-6981" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1fc1-6634-8b70-9b23" name="Blind Barage" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a952-0638-9e96-d99e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="a4be-3ed9-4bfa-cb1e" name="Blind Barage" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>Once per battle,play this during the Strategy phase. Pick a unit on the battlefield. Any attacks that target it or are made by it suffer a -2 To Hit penalty for the duration of the round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="634e-325b-b8ab-a59b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2536-756b-a090-24dd" name="Cripple the Foe" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6752-8fe2-8b90-3690" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="c105-9635-a632-a34e" name="Cripple the Foe" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>Play this at the end of the battle. Score 2 Victory points for each enemy Titan that has not been destroyed, but which is Strucrurally Compromised. In addition, score 2 Victory points for each enemy Battlefield Asset (see page 65) that has been destroyed.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="250a-c923-df82-0701" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f752-af34-e90c-eb00" name="Decapitating Strike" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d619-ed45-d713-1be4" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="209c-e5c3-4270-aba0" name="Decapitating Strike" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>Play this at the end of the battle. If the opposing player&apos;s Princeps Seniores&apos; Titan has been destroyed, score Victory points equal to half its Scale (rounding down).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0796-92e4-538b-f148" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="45d2-33d8-2a8c-321a" name="Break Through" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df77-e183-d49c-165e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="77d6-6997-d50b-379c" name="Break Through" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>The player can enact this at the end of the battle to score I Victory point for each of their units with a Scale of 5 or more that is within 9&quot; of their opponent&apos;s edge of the battlefield.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d56f-7018-2baf-bfb3" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1505-ad33-6414-78ff" name="A Score to Settle" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4502-986c-5361-c9e2" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="bcb5-3853-b95a-c96e" name="A Score to Settle" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>Play this at the end of the battle. Score 1 additional Victory point for each enemy unit that has been destroyed.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="74cd-7809-7c02-0211" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6d49-58e1-e625-0ceb" name="Command Bastion" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9774-450a-5fbc-a9a4" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="3f88-a505-7495-f00d" name="Command Bastion" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>A command bastion allows the owning player to issue one more order after they fail a Command check when issuing orders in the Strategy phase. The order must be issued to a unit within 18&quot; of the command bastion. Note that this does not allow more than one order to be issued to a unit.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="22b4-d75a-fd07-c7a9" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="b2ca-d9cb-fe9e-3b61" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2aaf-da08-f744-14f6" name="Apocalypse Missile Strongpoint" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ee-dd35-881e-2b1f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8b1e-3ae0-9913-720d" name="Apocalypse Missile Strongpoint" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">5</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7efe-9340-fe59-9462" name="Apocalypse Missile Strongpoint" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007"/>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d"/>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8"/>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c"/>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538"/>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="652a-29df-1102-97fd" name="Apocalypse Missile Strongpoint" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
+          <description>In the &apos;Enact Stratagems&apos; step of the Strategy phase, the owning player can make an attack with the strongpoint&apos;s apocalypse missile launcher, using the profile which follows. The strongpoint has a Ballistic Skill/ I Weapon Skill of 4+ and a 360° firing arc.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6b39-a326-4ead-0ba6" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="21af-31a5-96b4-0557" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="7629-a5dd-93d0-203d" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="2bb8-0dba-675e-a2e0" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="566c-1953-0d59-d04b" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2ce9-9861-420c-d8e8" name="Communications Relay" publicationId="975a-00f4-pubN65537" page="65" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9def-cfbe-720b-1039" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="2818-6dc4-11ca-8e15" name="Communications Relay" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>Subtract 1 from the result of any Command checks for units that are within 18&quot; of a communications relay that is owned by the enemy.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ab5b-c2ff-b72c-ff69" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="807c-9f65-846d-e358" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e1f-c7a0-8a50-0e5e" name="Macro Cannon Battery" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e68-aa1b-6b3c-c622" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4345-5ac7-9cc6-1311" name="Macro Cannon Battery" publicationId="975a-00f4-pubN65537" page="65" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Ordnance</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b0b5-6887-7d40-3259" name="Macro Cannon Battery" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007"/>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d"/>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8"/>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c"/>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538"/>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="06ea-eb68-3868-211c" name="Macro Cannon Battery" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>In the &apos;Enact Stratagems&apos; step of the Strategy phase, the owning player can make an attack with the battery&apos;s macro cannon, using the profile that follows. The battery has a Ballistic Skill/ Weapon Skill of 4+ and a 360°firing arc.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="136e-fe04-aaca-70fb" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="9f7e-ae73-aca4-6914" name="Ordnance" hidden="false" targetId="5ad8-0ca8-4bb7-83b6" primary="false"/>
+        <categoryLink id="cb54-4f5d-ad21-eaec" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="4186-5075-d3f9-7a5b" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="ae91-23e0-18a8-f20d" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2cb4-be64-ab48-66fb" name="Void Shield Relay" publicationId="975a-00f4-pubN65537" page="65" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1784-b884-65b0-6b6a" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="22e4-7086-ff36-598b" name="Void Shield Relay" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+          <description>Failed Void Shield saves can be re-rolled for units that are within 2&quot; of a friendly void shield relay, and which have not moved (voluntarily or involuntarily) this round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="58f2-88e0-ce3e-b753" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="3f9a-6ae0-1d05-8a8a" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="43a6-b634-7e41-d6c9" name="Plasma Generator" publicationId="975a-00f4-pubN65537" page="65" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7490-7aae-460b-4829" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="dedd-2b03-80eb-d110" name="Plasma Generator" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
+          <description>When the owning player activates a unit within l&quot; of the plasma generator in the Movement phase, they can declare that it will draw power instead of moving
+or making turns (or attacking, if it has First Fire orders). The unit does nothing when it is activated, but its Reactor level
+is reduced by D3.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ebc9-0e9e-1d3a-cbb0" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="83a5-fc27-68ea-a748" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold" hidden="false" collective="false">
+    <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="437b-c391-1f5f-8959" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a25-4d22-ad23-5b80" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="8a17-7a12-7607-5131" name="1 Yellow" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="8a17-7a12-7607-5131" name="1 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5413-d4f3-a4c9-1b45" type="max"/>
           </constraints>
@@ -6674,9 +8356,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8f94-127b-43d6-ac8a" name="3 Red" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="8f94-127b-43d6-ac8a" name="3 Red Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2424-0d14-3574-1c8c" type="max"/>
           </constraints>
@@ -6685,9 +8368,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a24a-5f46-842d-37c9" name="2 Orange" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a24a-5f46-842d-37c9" name="2 Orange Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d96-83a1-3f26-8615" type="max"/>
           </constraints>
@@ -6697,17 +8381,18 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="1d49-39ff-979b-f7f0" name="Body Manifold" hidden="false" collective="false">
+    <selectionEntryGroup id="1d49-39ff-979b-f7f0" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7dc-9821-6283-78e6" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b728-848d-51c3-5848" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="9e12-5e6a-0b22-56dc" name="1 Yellow" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9e12-5e6a-0b22-56dc" name="1 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c88-34a6-4eb8-b126" type="max"/>
           </constraints>
@@ -6716,9 +8401,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="dbe4-d602-cd6a-ed74" name="3 Red" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="dbe4-d602-cd6a-ed74" name="3 Red Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0427-3a7f-0962-eeba" type="max"/>
           </constraints>
@@ -6728,9 +8414,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3f8f-21b5-9196-914e" name="2 Orange" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="3f8f-21b5-9196-914e" name="2 Orange Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c45-fbd0-37a1-7497" type="max"/>
           </constraints>
@@ -6740,17 +8427,18 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="9ba2-12fa-8d22-c505" name="Head Manifold" hidden="false" collective="false">
+    <selectionEntryGroup id="9ba2-12fa-8d22-c505" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36fe-b6d4-fc17-8758" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc23-0212-d54d-a48f" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="2aab-7530-eac7-1b38" name="1 Yellow" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2aab-7530-eac7-1b38" name="1 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="047a-2b02-c207-4dec" type="max"/>
           </constraints>
@@ -6759,9 +8447,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a8b4-d852-71dc-d2f0" name="3 Red" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a8b4-d852-71dc-d2f0" name="3 Red Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0125-ddc2-e691-1a41" type="max"/>
           </constraints>
@@ -6771,9 +8460,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="57ca-22ab-6d17-bf18" name="2 Orange" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="57ca-22ab-6d17-bf18" name="2 Orange Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb83-53bd-220c-5858" type="max"/>
           </constraints>
@@ -6783,13 +8473,14 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Wargear" hidden="false" collective="false">
+    <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Wargear" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="475b-cb3a-a6b5-54ce" name="Terminus Override Mechanisms" publicationId="975a-00f4-pubN89746" page="17" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="475b-cb3a-a6b5-54ce" name="Terminus Override Mechanisms" publicationId="975a-00f4-pubN89746" page="17" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6808,9 +8499,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b17b-8dc8-8e57-7ab1" name="Bi-folded Power Containment" publicationId="975a-00f4-pubN89746" page="17" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="b17b-8dc8-8e57-7ab1" name="Bi-folded Power Containment" publicationId="975a-00f4-pubN89746" page="17" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6829,9 +8521,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b739-5907-0c06-2bb9" name="Twinned Machine Spirits" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="b739-5907-0c06-2bb9" name="Twinned Machine Spirits" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6850,9 +8543,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="74d1-d477-77b6-a9f5" name="Enhanced Auspex Replays" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="74d1-d477-77b6-a9f5" name="Enhanced Auspex Replays" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6878,9 +8572,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="053a-81ad-afc9-86c7" name="Gravatus Plating" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="053a-81ad-afc9-86c7" name="Gravatus Plating" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6899,9 +8594,10 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="10db-4492-12d0-3ddc" name="Motive Sub-Reactor" publicationId="975a-00f4-pubN65537" page="91" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="10db-4492-12d0-3ddc" name="Motive Sub-Reactor" publicationId="975a-00f4-pubN65537" page="91" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6920,18 +8616,19 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="e060-52c1-1d31-a331" name="Acastus Hull Weapon" hidden="false" collective="false" defaultSelectionEntryId="c750-04b1-5a96-6e07">
+    <selectionEntryGroup id="e060-52c1-1d31-a331" name="Acastus Hull Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c750-04b1-5a96-6e07">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d314-4f47-50ee-231e" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a335-733f-c91e-960a" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="c750-04b1-5a96-6e07" name="Acastus Twin Autocannon" hidden="false" collective="false" targetId="abac-6fdb-0228-d12a" type="selectionEntry"/>
-        <entryLink id="3ea6-1bed-f54a-c10f" name="Acastus Twin Lascannon" hidden="false" collective="false" targetId="a2a3-d4b5-189a-5f63" type="selectionEntry"/>
+        <entryLink id="c750-04b1-5a96-6e07" name="Acastus Twin Autocannon" hidden="false" collective="false" import="true" targetId="abac-6fdb-0228-d12a" type="selectionEntry"/>
+        <entryLink id="3ea6-1bed-f54a-c10f" name="Acastus Twin Lascannon" hidden="false" collective="false" import="true" targetId="a2a3-d4b5-189a-5f63" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
