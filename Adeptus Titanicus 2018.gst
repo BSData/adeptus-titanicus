@@ -8454,6 +8454,20 @@ is reduced by D3.</description>
         <categoryLink id="804b-e033-649d-24b3" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry id="4e6f-c618-89f4-d690" name="Legio Mordaxis (Deathdealers)" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="89f3-4f85-0d2f-455f" name="Inured to Pain" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
+          <description>Legio Mordaxis do not halve their speed when they suffer a hit from a Quake weapon that I not deflected by their shields, nor do they pivot when they suffer a Hit from a Concussive weapon that is not deflected by their shields. However, a Legio Mordaxis Titan cannot declare Power to Locomotors or Power to Stabilisers.</description>
+        </rule>
+        <rule id="2ebe-35b3-fcaf-7fc4" name="Techno-toxin" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
+          <description>During the end phase, any unit (friend or foe) within 2” of a Legio Mordaxis Titan suffers D3 S4 hits. A unit can only be affected by this rule once per round. Legio Mordaxis Titans are not affected by this rule.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="edf3-81ab-1a4a-3288" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
+        <categoryLink id="5085-792a-ed73-349d" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true">
