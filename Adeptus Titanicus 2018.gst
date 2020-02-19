@@ -8398,6 +8398,23 @@ is reduced by D3.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e6da-1530-1bdd-276a" name="Legio Praesagius (True Messengers)" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="c416-1bf9-7dcb-7d6e" name="Pinpoint Accuracy" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
+          <description>A Legio Praesagius player may re-roll the Location dice for attacks made by Legio Praesagius Titans when using a weapon’s Long range - they must accept the second roll. They may not re-roll the Location dice if the attack was made with a Blast weapon that subsequently missed.</description>
+        </rule>
+        <rule id="ec4b-ea3d-c5a0-f1a3" name="Fluid Command Structure" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
+          <description>If the Princeps Seniores of a Legio Praesagius maniple is destroyed, the player may choose another Titan from that maniple to designate as the new Princeps Seniores. The new Princeps Seniores follows all the rules for being a Princeps Seniores but has not Personal Trait. Only a Princeps Seniores chosen during battlegroup selection counts for the purpose of determining Victory points and other scenario effects.</description>
+        </rule>
+        <rule id="ca99-e926-5cc5-1c8b" name="Against the Impossible" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
+          <description>Once per battle, when any Legio Praesagius Titan takes Critical Damage from a weapon attack, after the weapon attack has been resolved, it may immediately undergo an Emergency Repair as if it had been issued the Emergency Repairs Order. This cannot be used if the Titan has suffered Catastrophic Damage.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a4ea-47f7-6626-2879" name="LegioPraesagius" hidden="false" targetId="4e62-72e2-a04f-9b86" primary="false"/>
+        <categoryLink id="8cf6-9728-725b-ef35" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true">
