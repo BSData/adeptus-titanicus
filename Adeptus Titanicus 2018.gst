@@ -8429,6 +8429,20 @@ is reduced by D3.</description>
         <categoryLink id="4803-993f-9586-20e7" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry id="f808-ec75-4a31-8a29" name="Legio Lysanda (Sentinels of the Edge)" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="1f25-4d8e-c714-52c3" name="Stillness of Mind" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false">
+          <description>Add 2 to the result when rolling to see if a Shutdown order is removed from a Legio Lysanda Titan.</description>
+        </rule>
+        <rule id="d8f1-dac2-9524-8dbc" name="Patience Beyond Measure" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false">
+          <description>Before any units are deployed, a force that contains at least one Legio Lysanda maniple may choose to deploy all their units at once at the start of deployment, before their opponent deploys any unit. If they do so, the Legio Lysanda player does not roll to determine the First Player in the first round, instead allowing their opponent to win the roll-off. If they do so, all Legio Lysanda Titans add 1 to the result of any Hit tolls and Command checks made during the first round. Patience Beyond Measure has not effect in Narrative missions unless otherwise stated.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f090-9d61-d50b-2617" name="LegioLysanda" hidden="false" targetId="7ada-d471-345c-f8a4" primary="false"/>
+        <categoryLink id="cb49-a814-6ba0-4306" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true">
