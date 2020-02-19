@@ -8468,6 +8468,20 @@ is reduced by D3.</description>
         <categoryLink id="5085-792a-ed73-349d" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry id="e9a0-229e-7cfb-4def" name="Legio Audax (Ember Wolves)" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="bf30-a997-26e1-4d0f" name="Stalk Unseen" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
+          <description>For the duration of the first round, attacks made against Legio Audax Titans of Scale 6 or lower suffer a -2 modifier to Hit roll if the Titan is at least 25% obscured, rather than the usual -1.</description>
+        </rule>
+        <rule id="4944-52b2-9a41-b0a2" name="Wolves Among Prey" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
+          <description>A Legio Audax maniple can consist only of Titans of Scale 6 or lower; any maniple which has a Mandatory or Optional components containing Titans of Scale 7 or higher cannot contain Legio Audax Titans. Any reinforcement Titans declared as Legio Audax must be of Scale 6 or lower. Legio Audax Titans can always form Squadrons with other Legio Audax Titans, even Titans that belong to another Legio Audax maniple or Legio Audax reinforcement Titans. Legio Audax Squadrons can contain up to 5 Titans, unless they can normally contain more.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3a41-2e4e-d5ae-a5a1" name="LegioAudax" hidden="false" targetId="4f76-34ac-3cf7-34c6" primary="false"/>
+        <categoryLink id="663f-274b-b9cc-2ce7" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true">
