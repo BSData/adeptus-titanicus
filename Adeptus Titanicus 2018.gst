@@ -8415,6 +8415,20 @@ is reduced by D3.</description>
         <categoryLink id="8cf6-9728-725b-ef35" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry id="dee5-885d-fc38-08ce" name="Legio Oberon (Death Bolts II)" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="a6b7-af5d-0923-4ad6" name="Armoured Phalanx" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
+          <description>Subtract 1 from the result of any Armour roll made against a Legio Oberon Titan within 2” of one or more friendly Legio Oberon Titan.</description>
+        </rule>
+        <rule id="0345-2c2d-42ea-a3fd" name="Efficient Planners" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
+          <description>When issuing an order to any friendly Legio Oberon Titan, add 1 to the result of the Command check for each Legio Oberon Titan that has already been successfully issued with the same order during this round, to a maximum of 3+.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6c72-e515-5d05-abe9" name="LegioOberon" hidden="false" targetId="7dc9-a722-55be-5f42" primary="false"/>
+        <categoryLink id="4803-993f-9586-20e7" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true">
