@@ -7,6 +7,7 @@
     <publication id="975a-00f4-pubN89746" name="Doom Of Molech"/>
     <publication id="7236-e1d8-c886-f5fd" name="Adeptus Titanicus 2018 Errata v1.0"/>
     <publication id="25e8-c9ce-9330-c53b" name="Titandeath Errata v1.0"/>
+    <publication id="3265-f408-cc9b-bfa3" name="Shadow and Iron"/>
   </publications>
   <costTypes>
     <costType id="a731-e220-2d8a-41bf" name=" Points" defaultCostLimit="-1.0"/>
@@ -374,6 +375,12 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry id="4e62-72e2-a04f-9b86" name="LegioPraesagius" hidden="false"/>
+    <categoryEntry id="7dc9-a722-55be-5f42" name="LegioOberon" hidden="false"/>
+    <categoryEntry id="7ada-d471-345c-f8a4" name="LegioLysanda" hidden="false"/>
+    <categoryEntry id="99b7-5e2f-9ea4-bbdf" name="LegioInfernus" hidden="false"/>
+    <categoryEntry id="9d14-f4fb-5868-1b62" name="LegioMordaxis" hidden="false"/>
+    <categoryEntry id="4f76-34ac-3cf7-34c6" name="LegioAudax" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
