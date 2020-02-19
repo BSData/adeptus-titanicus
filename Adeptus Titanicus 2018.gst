@@ -8443,6 +8443,17 @@ is reduced by D3.</description>
         <categoryLink id="cb49-a814-6ba0-4306" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry id="bd79-8c5d-3949-d89d" name="Legio Infernus (Fire Masters)" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="bd9d-832a-2eb6-b358" name="Masters of Flame" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+          <description>When making an attack with a Firestorm weapon, a Legio Infernus Titan may place the narrowest end of the Flame template within 2” of the firing weapon instead of just touching it. Both the narrowest end and the centre of the wide end must be within the weapon’s firing arc.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4056-9f4a-7366-e733" name="LegioInfernus" hidden="false" targetId="99b7-5e2f-9ea4-bbdf" primary="false"/>
+        <categoryLink id="804b-e033-649d-24b3" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true">
