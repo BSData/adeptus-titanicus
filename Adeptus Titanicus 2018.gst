@@ -384,6 +384,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
     <categoryEntry id="4f76-34ac-3cf7-34c6" name="LegioAudax" hidden="false"/>
     <categoryEntry id="fb16-4d89-30b7-fbb8" name="Squadron" hidden="false"/>
     <categoryEntry id="c37f-5ca9-9d98-5cf0" name="WarbringerNemesisTitan" hidden="false"/>
+    <categoryEntry id="91bd-c88a-f6bb-bb3d" name="LegioSpecificWargear" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -438,11 +439,10 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <categoryLink id="fd7f-32e2-ba13-32eb" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f800-8048-0564-7b73" name="Questoris Support Banner" hidden="false" collective="false" import="true" targetId="2b6b-b476-bd24-8c5c" type="selectionEntry"/>
     <entryLink id="d63c-4bb8-d8a9-b777" name="Axiom Battleline Maniple" hidden="false" collective="false" import="true" targetId="3ca3-42a8-26bb-5676" type="selectionEntry"/>
     <entryLink id="5192-e107-566f-52c7" name="Venator Light Maniple" hidden="false" collective="false" import="true" targetId="fcfd-d034-1395-9eea" type="selectionEntry"/>
     <entryLink id="c4cd-e7fe-d858-9ac7" name="Myrmidon Battleline Maniple" hidden="false" collective="false" import="true" targetId="740e-52e8-27ed-bf22" type="selectionEntry"/>
-    <entryLink id="ee61-27d4-5330-1a0d" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="2e8d-74e3-aecf-9e11" type="selectionEntry"/>
+    <entryLink id="ee61-27d4-5330-1a0d" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry"/>
     <entryLink id="a061-9137-013f-cf00" name="Corsair Battleline Maniple" hidden="false" collective="false" import="true" targetId="241d-3394-9612-08c7" type="selectionEntry"/>
     <entryLink id="bf2f-3118-8d0b-fa4b" name="Janissary Batteline Maniple" hidden="false" collective="false" import="true" targetId="56b0-f155-3635-45da" type="selectionEntry"/>
     <entryLink id="cea6-93b6-5d50-2f23" name="Regis Battleline Maniple" hidden="false" collective="false" import="true" targetId="51b7-df68-7254-8f21" type="selectionEntry"/>
@@ -451,7 +451,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
     <entryLink id="da16-a787-0bc8-23ed" name="Ferrox Light Maniple" hidden="false" collective="false" import="true" targetId="365e-d892-5c42-f7a3" type="selectionEntry"/>
     <entryLink id="f87f-52a5-0f04-ba5a" name="Fortis Battle Maniple" hidden="false" collective="false" import="true" targetId="2004-6a18-7dac-156c" type="selectionEntry"/>
     <entryLink id="434e-537b-2fd1-eaee" name="Strategems" hidden="false" collective="false" import="true" targetId="375f-b70b-7462-5d29" type="selectionEntry"/>
-    <entryLink id="34d0-7019-8dcc-71c5" name="Acastus Knight Banner" hidden="false" collective="false" import="true" targetId="4944-7ee2-734b-6fa5" type="selectionEntry"/>
+    <entryLink id="34d0-7019-8dcc-71c5" name="Acastus Knight Banner" hidden="false" collective="false" import="true" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry"/>
     <entryLink id="4ef2-2fba-7456-a7f7" name="Auspex Bafflers" hidden="false" collective="false" import="true" targetId="92b5-e290-3859-ee00" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="10ed-ff38-f212-f9e9" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
@@ -584,6 +584,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <categoryLink id="adde-353e-0207-cfb6" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="cf4c-ca4b-995f-ecfc" name="Questoris Knight Banner" hidden="false" collective="false" import="true" targetId="812b-786b-9435-cd20" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
@@ -2878,158 +2879,6 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b6b-b476-bd24-8c5c" name="Questoris Support Banner" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="b96b-d322-79ed-3b15" name="Questoris Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
-          <characteristics>
-            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">10&quot;</characteristic>
-            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">6 (4 with Lord Scion)</characteristic>
-            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
-            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
-            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
-            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
-            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">3 (Grandis)</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="87f9-8899-2c4c-e7e4" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
-          </characteristics>
-        </profile>
-        <profile id="ce38-d15f-b373-f333" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
-          </characteristics>
-        </profile>
-        <profile id="8ce1-3302-df2b-e2af" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
-          </characteristics>
-        </profile>
-        <profile id="769d-ba55-7054-bec5" name="Questoris Support Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-          <characteristics>
-            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-12</characteristic>
-            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-15</characteristic>
-            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="8231-1078-b345-f9de" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
-        <categoryLink id="05ff-68be-de5c-4d87" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
-        <categoryLink id="4eff-36e2-fab2-c3a1" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="d869-27b8-7b88-6333" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abb1-91f0-f0b9-5755" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c815-9759-dc7c-cc36" type="min"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="0956-f482-59b4-8265" name="Questoris Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="700e-13e6-6c97-657e">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a935-944a-ab49-ed6c" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0026-f5c4-dbc8-734b" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="700e-13e6-6c97-657e" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a712-8c19-e062-7614" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="e020-4319-68e6-437a" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ac92-b9dc-c522-468b" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="23a9-0bb7-ac82-8ed2" name="Knight Hulls" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="a12e-ad09-f102-4207" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="49d8-4d4f-2a74-2ae3" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c5d-25f9-3110-dad5" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="707b-ec1f-7b17-4e9e" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c5d-25f9-3110-dad5" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="49d8-4d4f-2a74-2ae3" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a12e-ad09-f102-4207" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="707b-ec1f-7b17-4e9e" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="8371-c1b8-3c6e-1174" name="Questoris Knight" hidden="false" collective="false" import="true" targetId="5eb2-54c8-ba72-1bcf" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="6c5d-25f9-3110-dad5" name="Lord Scion" hidden="false" collective="false" import="true" targetId="c197-9e7c-0bb5-0889" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="a731-e220-2d8a-41bf" value="50"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1de-0034-f54b-71ab" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bafe-ae72-5e85-e378" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="49d8-4d4f-2a74-2ae3" name="Scion Marshal" hidden="false" collective="false" import="true" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="a731-e220-2d8a-41bf" value="35"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47cb-f237-3f76-ca5b" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="707c-f64f-2819-c3ce" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="c197-9e7c-0bb5-0889" name="Lord Scion" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fae-8413-da6d-a43b" type="max"/>
@@ -3099,43 +2948,6 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5eb2-54c8-ba72-1bcf" name="Questoris Knight" hidden="false" collective="false" import="true" type="model">
-      <categoryLinks>
-        <categoryLink id="11b6-403d-67f2-9067" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
-        <categoryLink id="3529-2080-e9f1-b2b2" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1fc8-9151-c6b4-3c34" name="Arms" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="4c58-ca4e-6715-0468" value="0.0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55bb-9170-8061-9c84" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c58-ca4e-6715-0468" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="7009-126a-39d7-e9e6" name="Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry"/>
-            <entryLink id="d3f0-6fc6-5d76-7528" name="Questoris Melee Weapon" hidden="false" collective="false" import="true" targetId="5be0-b49f-fc95-f499" type="selectionEntry"/>
-            <entryLink id="1f9c-b6a2-e506-3657" name="Rapid-Fire Battlecannon" hidden="false" collective="false" import="true" targetId="bc4c-36af-c4cd-4594" type="selectionEntry"/>
-            <entryLink id="0acf-0708-927b-3356" name="Thermal Cannon" hidden="false" collective="false" import="true" targetId="908e-f9af-f0d1-a124" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="963d-2b41-1b12-98ea" name="Upgrades" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="f805-bde2-090e-d957" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="82d5-4e74-6258-8be8" type="selectionEntry"/>
-            <entryLink id="945b-6924-0242-b1b3" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="4e23-1ac3-bb9b-14b5" name="Arioch Titan Power Claw" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="92de-72a0-ca66-d332" name="Arioch Titan Power Claw" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
@@ -3201,7 +3013,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fee8-4996-06cd-64bc" name="Bellicosa Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="fee8-4996-06cd-64bc" name="Bellicosa Volcano Cannon [WLD]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="a82d-e28b-fcfa-38c1" name="Bellicosa Volcano Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3300,7 +3112,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0b27-6d01-57d3-0e9d" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0b27-6d01-57d3-0e9d" name="Turbo Laser Destructor [RVR]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="d790-65c0-7f6c-708f" name="Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3365,7 +3177,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="47c9-43b5-8afc-b64f" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="47c9-43b5-8afc-b64f" name="Vulcan Megabolter [RVR]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="b627-6f89-9463-8a14" name="Vulcan Megabolter (Reaver)" publicationId="7236-e1d8-c886-f5fd" page="38" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3397,7 +3209,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2165-2206-85af-b273" name="Turbo Laser Destructor (Warhound)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2165-2206-85af-b273" name="Turbo Laser Destructor [WHD]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="46f4-f06b-9149-ebca" name="Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3558,7 +3370,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1904-506f-6b2d-0843" name="Mori Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1904-506f-6b2d-0843" name="Mori Quake Cannon [WLD]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="9b69-ddb5-1640-7409" name="Mori Quake Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -3889,7 +3701,7 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="edcd-f43d-10ba-7f60" name="Vulcan Megabolter (Warhound)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="edcd-f43d-10ba-7f60" name="Vulcan Megabolter [WHD]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="9e0d-d5fd-c251-904b" name="Vulcan Megabolter (Warhound)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -4036,161 +3848,6 @@ a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance i
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fac-2295-e545-0c9b" type="max"/>
       </constraints>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="2e8d-74e3-aecf-9e11" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="e79e-b6d9-c469-8998" name="1 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
-          </characteristics>
-        </profile>
-        <profile id="9d38-14fc-8ec7-3673" name="2 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
-          </characteristics>
-        </profile>
-        <profile id="0552-4e2d-8908-36ea" name="3+ Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">3+</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
-          </characteristics>
-        </profile>
-        <profile id="3b58-726c-1501-52cf" name="Cerastus Knight Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-          <characteristics>
-            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-12</characteristic>
-            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-15</characteristic>
-            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4cf8-05ea-ff5b-5752" name="Cerastus Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
-          <characteristics>
-            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">12&quot;</characteristic>
-            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">5 (3 with Lord Scion)</characteristic>
-            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
-            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
-            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
-            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
-            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">4 (Grandis)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="ffc9-d092-29c3-c0f7" name="Knight Lancer Ion Gauntlet Shield" hidden="false">
-          <description>If the Banner contains one or more Cerastus Knight Lancers, improve the Banner&apos;s Ion Shield save roll by 1</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="639b-d64f-808c-3bcb" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="0734-5864-c482-92c1" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9505-f315-81f5-e2cf" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d9e-0f31-d622-be6c" type="min"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="822f-6d2d-bf03-3180" name="Cersastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="4c60-d929-fad1-abd8">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a32b-f614-3278-30ce" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2e-9dbe-f88a-a1cc" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="4c60-d929-fad1-abd8" name="⦿⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9b2f-be3a-7c01-c097" name="⦿⦿⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7e61-486c-d3ea-bbf0" name="⦿⦿⦿⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b90a-0eb5-0e35-7047" name="⦿⦿⦿⦿⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7fd1-ee6d-6642-1e52" name="⦿⦿⦿⦿⦿(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="8e7c-e717-8999-389e" name="Knight Hulls" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="8439-88cc-174b-2f1d" value="1">
-              <repeats>
-                <repeat field="selections" scope="2e8d-74e3-aecf-9e11" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="df3a-ec88-0f9f-af0e" value="1">
-              <repeats>
-                <repeat field="selections" scope="2e8d-74e3-aecf-9e11" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8439-88cc-174b-2f1d" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3a-ec88-0f9f-af0e" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="e018-6fef-2f79-88bc" name="Cerastus Knight" hidden="false" collective="false" import="true" targetId="71a1-ef51-b47e-2983" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="eebf-89ee-8c69-59a6" name="Lord Scion" hidden="false" collective="false" import="true" targetId="c197-9e7c-0bb5-0889" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="a731-e220-2d8a-41bf" value="70"/>
-          </modifiers>
-        </entryLink>
-        <entryLink id="99e6-43c9-8687-531a" name="Scion Marshal" hidden="false" collective="false" import="true" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="a731-e220-2d8a-41bf" value="60"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9544-c5ee-1f19-05f0" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="701e-d875-87e8-b998" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -4755,8 +4412,8 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <categoryLink id="a2f6-c3bf-01d3-ea50" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink id="b436-4279-e2cd-3a2c" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="2e8d-74e3-aecf-9e11" type="selectionEntry"/>
-            <entryLink id="38bb-4276-eafd-63b6" name="Questoris Support Banner" hidden="false" collective="false" import="true" targetId="2b6b-b476-bd24-8c5c" type="selectionEntry"/>
+            <entryLink id="b436-4279-e2cd-3a2c" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry"/>
+            <entryLink id="38bb-4276-eafd-63b6" name="Questoris Knight Banner" hidden="false" collective="false" import="true" targetId="812b-786b-9435-cd20" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="96fc-f52e-c501-659e" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
@@ -5244,9 +4901,9 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="08c7-5efe-0712-c420" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="08c7-5efe-0712-c420" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="dd46-08dc-7ea5-12b3" name="Chasmata Pattern Turbo Laser Destructor" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="dd46-08dc-7ea5-12b3" name="Chasmata Turbo Laser Destructor" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -5268,6 +4925,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="72ab-0f73-bfbc-e633" name="New CategoryLink" hidden="false" targetId="87c1-d39e-fbdf-1ae7" primary="false"/>
         <categoryLink id="9db7-aecf-f77f-0736" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
         <categoryLink id="fa2c-0ce1-0ed7-1514" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="e0d2-8557-62bf-935d" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="0860-bcbf-6fa9-175b" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c6df-3abd-589f-c90e" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -5721,34 +5380,46 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6646-91ea-1418-5c89" name="Gravatus Plating (Legio Gryphonicus)" publicationId="975a-00f4-pubN65537" page="89" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6646-91ea-1418-5c89" name="=Gryphonicus= Gravatus Plating" publicationId="975a-00f4-pubN65537" page="89" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="8323-86d7-e9d0-4242" name="Gravatus Plating" publicationId="975a-00f4-pubN65537" page="89" hidden="false">
           <description>A Legio Gryphonicus Reaver that is chosen as part of a maniple in place of a Warlord Titan (as per the Mainstay of the Titan Legion, rule above) can be fitted with Gravatus plating at a cost of +20 points.  This increases the Armour value of the Reaver&apos;s body and legs by 1 point each, but subtracts 1 from its default and boosted Speed characteristic.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="461c-bed4-7c26-48de" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="9bc4-7de3-71dd-d729" name="LegioGryphonicus" hidden="false" targetId="0796-178c-50ce-2d1f" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="46c7-de03-c901-4ecc" name="Enhanced Auspex Relay (Legio Gryphonicus)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="46c7-de03-c901-4ecc" name="=Gryphonicus= Enhanced Auspex Relay" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="6c0f-cc14-446d-5a5b" name="Enhanced Auspex Relay (Legio Gryphonicus)" publicationId="975a-00f4-pubN65537" page="89" hidden="false">
           <description>Any Legio Gryphonicus Warhound can be equipped with ehnanced auspex relays at a cost of +10 points.  Whenever a Legio Gryphonicus Titan makes an attack, it can meausre the distance to  any targets that are withing 12&quot; of a friendly Warhound equipped with enhanced auspex relays before declairing its target.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="0aed-4468-8b45-fc40" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="7918-0b4b-7fe0-f5be" name="LegioGryphonicus" hidden="false" targetId="0796-178c-50ce-2d1f" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b486-104f-536e-87f6" name="Motive sub-reactor" publicationId="975a-00f4-pubN65537" page="91" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b486-104f-536e-87f6" name="=Gryphonicus= Motive Sub-reactor" publicationId="975a-00f4-pubN65537" page="91" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="4e7c-5d96-85c6-98ce" name="Motive sub-reactor" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
           <description>A Legio Gryphonicus Reaver which is chosen as part of a maniple in place of a Warhound Titan (as per the Mainstay of the Titan Legion found on page 89) can be fitted with motive sub-reactors at a cost of +25 points.  This allows the Reaver to use its boosted Speed and Manoeuvre characteristics without pushing its reactor.  However each time the Titan suffers a Critical Hit to its Legs, roll a D6, On a result of 3 or less, it&apos;s Reactor level increases by 1</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="5615-7e45-50c7-0905" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="ae61-527b-5b0e-b4c5" name="LegioGryphonicus" hidden="false" targetId="0796-178c-50ce-2d1f" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -5844,13 +5515,13 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8fee-61b8-1c39-b9ee" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8fee-61b8-1c39-b9ee" name="=Tempestus= Chasmata Turbo Laser Destructor [WHD]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="7838-8984-7946-069e" name="Chasmata Pattern Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="7838-8984-7946-069e" name="Chasmata Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">21&quot;</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">19&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">38&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
@@ -5867,6 +5538,8 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="9d8a-5d3a-c6f3-4a38" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
         <categoryLink id="7819-32e0-1340-71ef" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="d0ee-2525-d24e-a70e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="6496-65c9-c5fb-4ae3" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="b4ac-e296-2579-a493" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b522-48c9-380c-21bf" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -5876,7 +5549,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2699-bb53-cff4-a864" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2699-bb53-cff4-a864" name="=Tempestus= Paired Chasmata Pattern Turbo Laser Destructors" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="1253-3d06-27b8-28e7" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -5886,7 +5559,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">38&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
             <characteristic name="Blast" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"/>
@@ -5901,6 +5574,8 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="1d67-6d77-7352-f28c" name="New CategoryLink" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false"/>
         <categoryLink id="c66c-06c5-0ecf-f309" name="New CategoryLink" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
         <categoryLink id="4903-48ee-1cde-1f5a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="7f78-d27b-e23a-fa98" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="e9d3-ce0a-60fc-44a1" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="84e0-fcbd-06f5-a4b4" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -5910,9 +5585,9 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fe03-8e18-b108-5853" name="Paired Chasmata Pattern Laser Blaster" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="fe03-8e18-b108-5853" name="=Tempestus= Paired Chasmata Pattern Laser Blaster" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="67bd-692f-8028-ccd6" name="Paired Chasmata Pattern Laser Blaster" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="67bd-692f-8028-ccd6" name="Paired Chasmata Pattern Laser Blasters" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -5935,6 +5610,8 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="3fb8-94a3-741b-a28d" name="New CategoryLink" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false"/>
         <categoryLink id="399b-7cf9-b383-2c86" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="17d6-7ab0-862d-beb2" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
+        <categoryLink id="69fe-1832-c88e-6c52" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="3869-edca-ad10-4c32" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f24c-29c1-442a-c465" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -5944,9 +5621,9 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="01e4-e3f5-4396-d5c4" name="Chasmata Pattern Laser Blaster" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="01e4-e3f5-4396-d5c4" name="=Tempestus= Chasmata Laser Blaster" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="769f-b83a-baec-2e03" name="Chasmata pattern Laser Blaster" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="769f-b83a-baec-2e03" name="Chasmata Laser Blaster" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -5968,6 +5645,8 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="8046-6cc3-3d4c-ca17" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
         <categoryLink id="a564-a87f-67a6-d6ba" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="3f0e-4dac-9ffd-f629" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="5bd4-eb3b-b033-1206" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="761b-052c-8de7-2d14" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b4c1-3e8f-38df-6400" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -5977,7 +5656,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c07c-f050-45e2-1376" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="c07c-f050-45e2-1376" name="=Gryphonicus= Warhound replacement Reaver" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="fd15-1beb-af88-6378" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -6592,7 +6271,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2c74-3aeb-1a28-d45e" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="2c74-3aeb-1a28-d45e" name="=Gryphonicus= Warlord replacement Reaver" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="2a72-55d8-fc95-9058" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -6626,7 +6305,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="3168-160a-17bd-8805" name="Body Structure Point Damage" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="3168-160a-17bd-8805" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="de2e-c221-a52a-a8cb">
               <selectionEntries>
                 <selectionEntry id="de2e-c221-a52a-a8cb" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -6766,7 +6445,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="331c-41f1-93f5-fb12" name="Head Structure Point Damage" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="331c-41f1-93f5-fb12" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="eb54-81e0-3808-9adc">
               <selectionEntries>
                 <selectionEntry id="eb54-81e0-3808-9adc" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -6890,7 +6569,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="68b7-5c89-6e3d-86fc" name="Legs Structure Point Damage" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="68b7-5c89-6e3d-86fc" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="0db1-4d4b-dc1e-3ede">
               <selectionEntries>
                 <selectionEntry id="0db1-4d4b-dc1e-3ede" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -7207,173 +6886,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4944-7ee2-734b-6fa5" name="Acastus Knight Banner" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="0133-83bd-868b-8389" name="1 Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
-          </characteristics>
-        </profile>
-        <profile id="1165-1062-a636-8033" name="2-3 Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-3</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
-          </characteristics>
-        </profile>
-        <profile id="8218-38e2-f6b3-7895" name="4+ Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
-          </characteristics>
-        </profile>
-        <profile id="8352-e0e5-dc9e-f305" name="Acastus Knight Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-          <characteristics>
-            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">10-14</characteristic>
-            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">15-16</characteristic>
-            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="858f-4f88-022b-298c" name="Acastus Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
-          <characteristics>
-            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">7&quot;</characteristic>
-            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">5 (3 with Lord Scion)</characteristic>
-            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
-            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
-            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
-            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
-            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">5 (Grandis)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="34c7-89b7-04b7-f19e" name="Acastus Knight Artillery" hidden="false">
-          <description>If an Acastus Knight Banner is issued First Fire or Split Fire orders during the Strategy phase, their BS is increased to 3+ until the End phase</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="2c98-724d-3c3d-7b5e" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="9c3d-0584-6da5-52c5" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bda7-f7bb-3968-79c7" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2b3-2058-9a2b-95be" type="min"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="41e4-7ede-0b3e-1f19" name="Acastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="900b-24b9-ffb0-c1b8">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf01-ab6d-486c-3c30" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5229-4318-9c58-3d84" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="900b-24b9-ffb0-c1b8" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5568-e90e-38da-1821" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f1dc-d4ad-c6ea-e08c" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4d0c-7caf-e22d-8172" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="744d-a247-fb4a-1238" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="03ee-6575-fd66-a3c9" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="8fbe-b276-6c95-09b7" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="2882-56f0-4672-741a" name="Knight Hulls" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="ad9b-d3b5-da90-96fd" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="3a67-e9b2-7761-f362" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a67-e9b2-7761-f362" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad9b-d3b5-da90-96fd" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="6ff4-90de-cfdc-bc90" name="Acastus Knight" hidden="false" collective="false" import="true" targetId="69b3-e7ac-9cec-ad72" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="592f-6dcd-a128-5453" name="Lord Scion" hidden="false" collective="false" import="true" targetId="c197-9e7c-0bb5-0889" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="a731-e220-2d8a-41bf" value="80.0"/>
-          </modifiers>
-        </entryLink>
-        <entryLink id="85a9-5131-d077-0c17" name="Scion Marshal" hidden="false" collective="false" import="true" targetId="5cc8-bdd5-8c3f-5bc3" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="a731-e220-2d8a-41bf" value="70.0"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c026-399f-57d5-3ca4" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96a3-676b-4703-3d2a" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="c23d-64c5-b376-ad80" name="Porphyrion Twin Magna Lascannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="c070-66c3-9137-f40f" name="Porphyrion Twin Magna Lascannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
@@ -7460,7 +6972,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="69b3-e7ac-9cec-ad72" name="Acastus Knight" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="69b3-e7ac-9cec-ad72" name="Acastus Knight Scion Martial" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
         <selectionEntryGroup id="72a7-b423-1f4f-896d" name="Knight Hull" hidden="false" collective="false" import="true">
           <constraints>
@@ -7474,7 +6986,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="70.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -8089,16 +7601,21 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           </conditions>
         </modifier>
         <modifier type="set" field="efbf-52f7-fd08-f329" value="5.0">
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5122-cb02-8703-ce88" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5122-cb02-8703-ce88" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" field="efbf-52f7-fd08-f329" value="3.0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3ad7-cd10-8d6e-8c2e" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ff4-90de-cfdc-bc90" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67a4-f743-3594-f541" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8107,8 +7624,8 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e018-6fef-2f79-88bc" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8371-c1b8-3c6e-1174" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71a1-ef51-b47e-2983" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73a9-ef96-145a-a25e" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8131,7 +7648,7 @@ If a player&apos;s battlegroup contains any Squadrons (see page 45), they can ch
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91a8-16ce-be56-df7e" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="77cf-648d-5060-1857" name="Acastus Knight" hidden="false" collective="false" import="true" targetId="69b3-e7ac-9cec-ad72" type="selectionEntry">
+            <entryLink id="77cf-648d-5060-1857" name="Acastus Knight" hidden="false" collective="false" import="true" targetId="67a4-f743-3594-f541" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
@@ -8141,7 +7658,7 @@ If a player&apos;s battlegroup contains any Squadrons (see page 45), they can ch
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="ac45-f47a-a53d-536d" name="Questoris Knight" hidden="false" collective="false" import="true" targetId="5eb2-54c8-ba72-1bcf" type="selectionEntry">
+            <entryLink id="ac45-f47a-a53d-536d" name="Questoris Knight" hidden="false" collective="false" import="true" targetId="73a9-ef96-145a-a25e" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
@@ -8157,6 +7674,11 @@ If a player&apos;s battlegroup contains any Squadrons (see page 45), they can ch
               </modifiers>
             </entryLink>
             <entryLink id="e9f5-3227-c482-9785" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="a913-17d7-83b7-e321" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
@@ -9262,9 +8784,10 @@ is reduced by D3.</description>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="325.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="02fe-12bb-3cc6-2dcf" name="Bellicosa Volcano Cannon (Warbringer)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="02fe-12bb-3cc6-2dcf" name="Bellicosa Volcano Cannon [WBG]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="98aa-359a-a806-1c29" name="Bellicosa Volcano Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -9297,7 +8820,7 @@ is reduced by D3.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="304a-a91b-5b0f-116e" name="Mori Quake Cannon (Warbringer)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="304a-a91b-5b0f-116e" name="Mori Quake Cannon [WBG]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="a6bd-b87c-7168-6a4f" name="Mori Quake Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -9327,6 +8850,588 @@ is reduced by D3.</description>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9570-2851-584c-62e9" name="Questoris Knight Lord Scion" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="fb14-0a63-faa9-a52a" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="e8ef-1423-ad7c-bbd8" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6e43-6b1b-8d69-8fb3" name="Arms" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="99a0-8949-d4a9-39a2" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99a0-8949-d4a9-39a2" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58a8-a1f5-2e1f-8898" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a2e2-8861-796c-f301" name="Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry"/>
+            <entryLink id="a436-ad46-7044-5602" name="Questoris Melee Weapon" hidden="false" collective="false" import="true" targetId="5be0-b49f-fc95-f499" type="selectionEntry"/>
+            <entryLink id="583b-120a-3d8f-7319" name="Rapid-Fire Battlecannon" hidden="false" collective="false" import="true" targetId="bc4c-36af-c4cd-4594" type="selectionEntry"/>
+            <entryLink id="0602-729f-5874-3aa9" name="Thermal Cannon" hidden="false" collective="false" import="true" targetId="908e-f9af-f0d1-a124" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="245a-f4e8-0ab7-849f" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="7d38-ed67-08ee-d92c" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="82d5-4e74-6258-8be8" type="selectionEntry"/>
+            <entryLink id="8c2b-77ed-a66c-a7a5" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="73a9-ef96-145a-a25e" name="Questoris Knight" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="e803-9e81-05da-a0c9" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="c10b-22e5-2848-2ebd" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b533-0f7c-68e9-edc2" name="Arms" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="066c-b802-af42-d4b9" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="066c-b802-af42-d4b9" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aa6-1b1f-d696-b080" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5385-987b-8053-a6b3" name="Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry"/>
+            <entryLink id="3b47-f764-2eae-cf5c" name="Questoris Melee Weapon" hidden="false" collective="false" import="true" targetId="5be0-b49f-fc95-f499" type="selectionEntry"/>
+            <entryLink id="cbdb-ff90-b067-c4af" name="Rapid-Fire Battlecannon" hidden="false" collective="false" import="true" targetId="bc4c-36af-c4cd-4594" type="selectionEntry"/>
+            <entryLink id="b949-0d6c-a742-9e1a" name="Thermal Cannon" hidden="false" collective="false" import="true" targetId="908e-f9af-f0d1-a124" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0de7-1508-1fe8-9738" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="5dad-1dd6-368b-60a5" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="82d5-4e74-6258-8be8" type="selectionEntry"/>
+            <entryLink id="72b7-84bd-6d72-19f0" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f87-1543-1c08-5dcf" name="Questoris Knight Scion Martial" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="d8b2-148f-8c91-d5ba" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="66e0-a560-760a-0589" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9076-e9cf-5dcd-8b8b" name="Arms" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="8f3e-1a25-9306-e34d" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f3e-1a25-9306-e34d" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f09-8671-4b8e-da4b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="de33-6e38-7858-b2b2" name="Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry"/>
+            <entryLink id="7cbe-8587-1d92-5b54" name="Questoris Melee Weapon" hidden="false" collective="false" import="true" targetId="5be0-b49f-fc95-f499" type="selectionEntry"/>
+            <entryLink id="ba71-5499-ea4d-f169" name="Rapid-Fire Battlecannon" hidden="false" collective="false" import="true" targetId="bc4c-36af-c4cd-4594" type="selectionEntry"/>
+            <entryLink id="7492-c5d6-eaf7-ca64" name="Thermal Cannon" hidden="false" collective="false" import="true" targetId="908e-f9af-f0d1-a124" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b041-c8fc-1ba1-b71c" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="4be7-0086-5123-cf33" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="82d5-4e74-6258-8be8" type="selectionEntry"/>
+            <entryLink id="1876-bb8a-0ccd-70e1" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="812b-786b-9435-cd20" name="Questoris Knight Banner" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="cd29-3032-7b80-a74d" name="Questoris Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">10&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">6 (4 with Lord Scion)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">3 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ab4-7179-abb3-348c" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="ccef-22b6-9408-67e9" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="bc98-ffb7-65c1-a975" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="eeb0-3698-eef3-875a" name="Questoris Support Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-12</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-15</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a271-bbde-1b23-fd30" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="a0c0-49c1-1633-3848" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="c58e-22a5-8294-f8ec" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d48d-406a-7a52-5616" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="269e-7c4b-6dd3-70ce" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="687b-4541-896f-56e4" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="5e0e-b82a-6656-0fa1" name="Questoris Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="c946-0901-871d-7b2d">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c3d-dcd5-19f5-41a8" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a0-a084-8b71-9469" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="c946-0901-871d-7b2d" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0e15-65f6-ae22-6839" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5d51-c870-db7d-fe19" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0bfe-4537-48d8-081c" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="af24-dd9d-cfa8-fdbf" name="Questoris Knight Lord Scion" hidden="false" collective="false" import="true" targetId="9570-2851-584c-62e9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85a6-21d7-2800-08c5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4b2-9420-fc91-97c5" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="be8e-e238-af50-a42b" name="Questoris Knight Scion Martial" hidden="false" collective="false" import="true" targetId="2f87-1543-1c08-5dcf" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7a9-0ac6-4501-e53f" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7f5-dd6f-f885-41bb" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3900-cfb6-52f2-c83c" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="c8ca-e8a8-d4c8-eea0" name="Cerastus Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">12&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">5 (3 with Lord Scion)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">4 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c7df-476b-a3d8-04d6" name="1 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="93dc-58d1-9e8d-16e9" name="2 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="1761-df48-4769-c8a1" name="3+ Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">3+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="907d-a6b8-dd1e-816e" name="Cerastus Knight Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-12</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-15</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ed83-0d2d-7bbe-479e" name="Knight Lancer Ion Gauntlet Shield" hidden="false">
+          <description>If the Banner contains one or more Cerastus Knight Lancers, improve the Banner&apos;s Ion Shield save roll by 1</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3a1f-4bc7-37d6-a705" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="0167-368b-e85d-bd03" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="f23c-e700-3731-4a85" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f6ac-4700-4294-8f61" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05c2-6379-eb22-9015" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8b3-a6c5-2395-3959" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="48f3-6c02-8773-28a4" name="Cerastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="5acb-caad-2f9a-3c77">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8649-3261-4611-4211" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f510-fe9e-cb04-a073" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="5acb-caad-2f9a-3c77" name="⦿⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="96c7-b751-b050-4cfd" name="⦿⦿⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2d2a-b467-87a3-9a53" name="⦿⦿⦿⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f996-a21f-7b86-1923" name="⦿⦿⦿⦿⦿(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d1aa-3cb1-69ae-d22b" name="⦿⦿⦿⦿⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="fb37-5a63-8e4b-45de" name="Cerastus Knight Lord Scion" hidden="false" collective="false" import="true" targetId="7d97-998e-da08-a298" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2d1-65f1-f526-1f6a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d0b-56c9-3008-d54b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d347-4977-be77-635e" name="Cerastus Knight Scion Martial" hidden="false" collective="false" import="true" targetId="8f63-919a-9591-ecd2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8491-0b11-f59f-6105" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2b6-ea4d-534a-4489" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d97-998e-da08-a298" name="Cerastus Knight Lord Scion" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3c76-7de8-7ad6-7681" name="Knight Hull" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aea-c6d7-e221-0781" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2115-1b22-9fa8-62f5" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1d50-244f-2c4a-d063" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
+            <entryLink id="54dd-da5d-c4ed-dbd2" name="Cerastus Knight Castigator" hidden="false" collective="false" import="true" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
+            <entryLink id="697b-e89f-105c-2a4a" name="Cerastus Knight Lancer" hidden="false" collective="false" import="true" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="70.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8f63-919a-9591-ecd2" name="Cerastus Knight Scion Martial" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="323d-05e9-d28c-6d12" name="Knight Hull" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14a4-9100-5808-6d1a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7493-60f0-5e25-4f0f" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="cc58-0ba1-67a3-aab5" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
+            <entryLink id="135c-87a4-773f-eb85" name="Cerastus Knight Castigator" hidden="false" collective="false" import="true" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
+            <entryLink id="d06d-c78c-32d6-2b12" name="Cerastus Knight Lancer" hidden="false" collective="false" import="true" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7448-fdbe-6fda-c7f6" name="Acastus Knight Lord Scion" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d88a-edca-de81-e71a" name="Knight Hull" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe67-5c0b-c1cb-6085" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c43f-7db6-59e3-66c2" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="da9c-6b24-1899-466a" name="Acastus Knight Porhpyrion" hidden="false" collective="false" import="true" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry"/>
+            <entryLink id="4d4d-f6df-c9aa-161c" name="Acastus Knight Asterius" hidden="false" collective="false" import="true" targetId="2dee-7316-3a42-5507" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="80.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="67a4-f743-3594-f541" name="Acastus Knight" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5bcd-6521-cb63-daa7" name="Knight Hull" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b76-ec14-0b6b-e1f3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32a4-abe3-1bb6-4a2e" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="32df-b93e-dde1-2706" name="Acastus Knight Porhpyrion" hidden="false" collective="false" import="true" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry"/>
+            <entryLink id="7885-c4e2-0e63-3140" name="Acastus Knight Asterius" hidden="false" collective="false" import="true" targetId="2dee-7316-3a42-5507" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b77-15d2-9ca8-5cf7" name="Acastus Knight Banner" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="0842-8600-a01c-ad38" name="Acastus Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">7&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">5 (3 with Lord Scion)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">5 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="62f0-ae02-aff9-8c0d" name="1 Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="d39b-b1d9-2b45-1910" name="2-3 Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-3</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="faef-c4b7-b375-4a09" name="4+ Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="12d5-624c-c777-479a" name="Acastus Knight Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">10-14</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">15-16</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5fc8-3571-bc88-ce38" name="Acastus Knight Artillery" hidden="false">
+          <description>If an Acastus Knight Banner is issued First Fire or Split Fire orders during the Strategy phase, their BS is increased to 3+ until the End phase</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3d8f-b7cc-548a-f877" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="418b-8a01-5ad1-7065" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="108a-4a65-bea8-c57e" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f1c4-1d42-a7d3-9287" name="Structure Points" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2570-de34-d985-19cc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bfc-79b9-4540-ec81" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="af9c-d02f-895d-6c7d" name="Acastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="9694-ce3c-bb4d-6635">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6580-66e1-8b0d-8077" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4602-64cd-fc39-9975" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="9694-ce3c-bb4d-6635" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="066e-da4b-c22e-a925" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1306-90aa-8af3-b340" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4d1f-0c21-a08d-9aa0" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ac77-05f8-0156-123d" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="643f-aec0-635e-54d3" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d159-7a24-1886-b37b" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="a220-9945-dec5-1453" name="Acastus Knight Lord Scion" hidden="false" collective="false" import="true" targetId="7448-fdbe-6fda-c7f6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a45-376f-5b80-540f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24c8-62b5-db9c-c499" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="dc51-c463-c333-395e" name="Acastus Knight Scion Martial" hidden="false" collective="false" import="true" targetId="69b3-e7ac-9cec-ad72" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c7c-9e5c-c69d-5ea7" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee64-9e86-51df-d75d" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
