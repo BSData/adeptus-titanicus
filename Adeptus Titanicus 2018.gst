@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="13" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="14" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -638,6 +638,8 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <entryLink id="00f9-13d0-2a6f-f152" name="Communications Relay" hidden="false" collective="false" import="true" targetId="2ce9-9861-420c-d8e8" type="selectionEntry"/>
     <entryLink id="317a-6c79-0415-2f60" name="Macro Cannon Battery" hidden="false" collective="false" import="true" targetId="0e1f-c7a0-8a50-0e5e" type="selectionEntry"/>
     <entryLink id="d91d-3b38-7ded-3de9" name="Void Shield Relay" hidden="false" collective="false" import="true" targetId="2cb4-be64-ab48-66fb" type="selectionEntry"/>
+    <entryLink id="0842-f564-d817-f9be" name="Arcus Battleline Maniple" hidden="false" collective="false" import="true" targetId="ff4b-fa85-f846-e378" type="selectionEntry"/>
+    <entryLink id="9320-eb20-eb33-deca" name="Ruptura Battleline Maniple" hidden="false" collective="false" import="true" targetId="719e-13a7-d3cd-19bc" type="selectionEntry"/>
     <entryLink id="aebf-4a76-813a-494e" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a24d-4887-5c00-01a9" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
@@ -654,6 +656,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <categoryLink id="3542-a0f1-8d51-4ad7" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="2bf7-b386-a4ee-2043" name="Mandatum Battleline Maniple" hidden="false" collective="false" import="true" targetId="f969-b5c4-4b5d-1723" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
@@ -11557,9 +11560,9 @@ is reduced by D3.</description>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">1</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
@@ -11580,6 +11583,196 @@ is reduced by D3.</description>
         <entryLink id="5c3b-0ff4-ed3e-6672" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ff4b-fa85-f846-e378" name="Arcus Battleline Maniple" publicationId="" page="TODO" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="2011-bdc2-3ad4-371d" name="Coordiante Relay" publicationId="" page="TODO" hidden="false">
+          <description>A Warbringer-Nemesis Titan from this maniple can attack enemy units indirectly if they do not have line of sight to that unit, so long as the target is within line of sight of a Warhound Titan from this maniple. Firing indirectly in this manner confers a -2 modifier on the Hit roll. In addition, an attack with a Blast weapon from the Warbringer-Nemesis Titan that misses scatters D6&quot; instead of D10&quot; when the target is in line of sight of a Warhound Titan from this maniple.
+                      Firing indirectly in this manner confers a -2 modifier on the Hit roll. In addition, an attack with a Blast weapon from the Warbringer-Nemesis Titan that misses scatters D6&quot; instead of D10&quot; when the target is in line of sight of a Warhound Titan from this maniple.
+                  </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="24fe-93a2-450b-2dbc" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6531-42fc-b968-0c58" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="5dde-9f31-c9b1-5513" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="358d-efb1-9efb-a509" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff58-a796-7389-7049" type="min"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="2dbe-5f3c-abc5-c86d" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ae58-fccd-53f3-e7d5" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a10c-04b0-24c7-38cf" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c4-9670-0378-b53e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3c16-6bb9-edcf-8cb4" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85f4-c643-f29c-b9fd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5006-a64c-3608-b4cd" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8f2b-3305-bc4d-c259" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bc7-c484-7b00-d2cb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e0b-858e-9d1a-1fdf" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="719e-13a7-d3cd-19bc" name="Ruptura Battleline Maniple" publicationId="" page="TODO" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="517f-c0a3-8933-9b01" name="Artillery Bastion" publicationId="" page="TODO" hidden="false">
+          <description>Once per round, a Reaver Titan in this maniple can declare Power to Locomotives without pushing their reactor. In addition, when an enemy unit suffers Catastrophic Damage as a result of an attack made by a Warbringer-Nemesis Titan from this maniple, each Reaver Titan from this maniple can immediately make a move as if it was the Movement phase.
+                      A Reaver Titan cannot benefit from this ability if it is prevented from moving this turn – for example, due to Emergency Repair orders or the Immobilised Damage Effect.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d30c-c977-21ff-4248" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ece9-d720-9039-e293" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d049-710a-cfe3-2097" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="201c-0e6d-752f-9f44" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="00a0-5512-ec45-7c71" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfae-06af-c6f8-a60a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02a2-05a6-3b09-b6f1" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f969-b5c4-4b5d-1723" name="Mandatum Battleline Maniple" publicationId="" page="43" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="774d-4d39-2180-66fb" name="Pack Master" publicationId="" page="64" hidden="false">
+          <description>As long as a Warlord Titan from this maniple is on the battlefield, Warhound Titans from this maniple add 2 to the result of any Command check made when issuing Orders. In addition, Warhound Titans from this maniple add +1 to the Hit rolls for attacks made against units within 12&quot; of a Warlord Titan from this maniple.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6696-3c27-0c55-6180" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a667-9667-d0cf-cc0b" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd7-1b6d-197e-7dfd" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c006-978f-6f46-886f" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="158e-3ad5-eddb-43e6" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbab-6dd4-f146-c2ba" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75ab-b868-fdfc-e2cf" type="min"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="0900-771c-86ff-2c06" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="20de-0a07-ab34-ebd0" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="true" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52ec-b618-6717-fe7c" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee36-ef68-4833-75a1" type="min"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="fc30-336e-4ebf-9dc1" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false" targetId="dd70-1324-743e-7dfe" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8366-f454-1d97-b4f0" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="9c21-219f-eb16-73a0" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="dcd4-8604-cbc2-2e44" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcd4-8604-cbc2-2e44" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c21-219f-eb16-73a0" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9ff5-3f81-977e-5db1" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="373a-02ba-7869-caa9" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="41de-b58c-83df-e3f8" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="373a-02ba-7869-caa9" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41de-b58c-83df-e3f8" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f487-54d8-671d-63d6" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9654-834b-bdd0-f9a8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aa4-8bf5-9cd9-519d" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
