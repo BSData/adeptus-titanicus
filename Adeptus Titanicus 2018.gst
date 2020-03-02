@@ -657,6 +657,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </categoryLinks>
     </entryLink>
     <entryLink id="2bf7-b386-a4ee-2043" name="Mandatum Battleline Maniple" hidden="false" collective="false" import="true" targetId="f969-b5c4-4b5d-1723" type="selectionEntry"/>
+    <entryLink id="dcf6-6569-c080-e2ea" name="Canis Light Maniple" hidden="false" collective="false" import="true" targetId="3a41-59a8-581b-0498" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
@@ -11587,12 +11588,10 @@ is reduced by D3.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ff4b-fa85-f846-e378" name="Arcus Battleline Maniple" publicationId="" page="TODO" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ff4b-fa85-f846-e378" name="Arcus Battleline Maniple" publicationId="3265-f408-cc9b-bfa3" page="41" hidden="false" collective="false" import="true" type="unit">
       <rules>
-        <rule id="2011-bdc2-3ad4-371d" name="Coordiante Relay" publicationId="" page="TODO" hidden="false">
-          <description>A Warbringer-Nemesis Titan from this maniple can attack enemy units indirectly if they do not have line of sight to that unit, so long as the target is within line of sight of a Warhound Titan from this maniple. Firing indirectly in this manner confers a -2 modifier on the Hit roll. In addition, an attack with a Blast weapon from the Warbringer-Nemesis Titan that misses scatters D6&quot; instead of D10&quot; when the target is in line of sight of a Warhound Titan from this maniple.
-                      Firing indirectly in this manner confers a -2 modifier on the Hit roll. In addition, an attack with a Blast weapon from the Warbringer-Nemesis Titan that misses scatters D6&quot; instead of D10&quot; when the target is in line of sight of a Warhound Titan from this maniple.
-                  </description>
+        <rule id="2011-bdc2-3ad4-371d" name="Coordinate Relay" publicationId="3265-f408-cc9b-bfa3" page="41" hidden="false">
+          <description>A Warbringer-Nemesis Titan from this maniple can attack enemy units indirectly if they do not have line of sight to that unit, so long as the target is within line of sight of a Warhound Titan from this maniple. Firing indirectly in this manner confers a -2 modifier on the Hit roll. In addition, an attack with a Blast weapon from the Warbringer-Nemesis Titan that misses scatters D6&quot; instead of D10&quot; when the target is in line of sight of a Warhound Titan from this maniple.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -11648,11 +11647,11 @@ is reduced by D3.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="719e-13a7-d3cd-19bc" name="Ruptura Battleline Maniple" publicationId="" page="TODO" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="719e-13a7-d3cd-19bc" name="Ruptura Battleline Maniple" publicationId="3265-f408-cc9b-bfa3" page="42" hidden="false" collective="false" import="true" type="unit">
       <rules>
-        <rule id="517f-c0a3-8933-9b01" name="Artillery Bastion" publicationId="" page="TODO" hidden="false">
+        <rule id="517f-c0a3-8933-9b01" name="Artillery Bastion" publicationId="3265-f408-cc9b-bfa3" page="42" hidden="false">
           <description>Once per round, a Reaver Titan in this maniple can declare Power to Locomotives without pushing their reactor. In addition, when an enemy unit suffers Catastrophic Damage as a result of an attack made by a Warbringer-Nemesis Titan from this maniple, each Reaver Titan from this maniple can immediately make a move as if it was the Movement phase.
-                      A Reaver Titan cannot benefit from this ability if it is prevented from moving this turn – for example, due to Emergency Repair orders or the Immobilised Damage Effect.</description>
+A Reaver Titan cannot benefit from this ability if it is prevented from moving this turn – for example, due to Emergency Repair orders or the Immobilised Damage Effect.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -11671,15 +11670,20 @@ is reduced by D3.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02a2-05a6-3b09-b6f1" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="dfab-de0a-7560-01c3" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d19-e17c-9d1a-e7ad" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f969-b5c4-4b5d-1723" name="Mandatum Battleline Maniple" publicationId="" page="43" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="f969-b5c4-4b5d-1723" name="Mandatum Battleline Maniple" publicationId="3265-f408-cc9b-bfa3" page="43" hidden="false" collective="false" import="true" type="unit">
       <rules>
-        <rule id="774d-4d39-2180-66fb" name="Pack Master" publicationId="" page="64" hidden="false">
+        <rule id="774d-4d39-2180-66fb" name="Pack Master" publicationId="3265-f408-cc9b-bfa3" page="43" hidden="false">
           <description>As long as a Warlord Titan from this maniple is on the battlefield, Warhound Titans from this maniple add 2 to the result of any Command check made when issuing Orders. In addition, Warhound Titans from this maniple add +1 to the Hit rolls for attacks made against units within 12&quot; of a Warlord Titan from this maniple.</description>
         </rule>
       </rules>
@@ -11760,14 +11764,44 @@ is reduced by D3.</description>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="373a-02ba-7869-caa9" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41de-b58c-83df-e3f8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="373a-02ba-7869-caa9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41de-b58c-83df-e3f8" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="f487-54d8-671d-63d6" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9654-834b-bdd0-f9a8" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aa4-8bf5-9cd9-519d" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3a41-59a8-581b-0498" name="Canis Light Maniple" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="e70f-0805-8c7e-5971" name="Hunting Pack" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="false">
+          <description>Canis Light Maniples can only include Legio Audax Titans. Warhound Titans within this maniple do not deploy as normal. Instead, at the start of the deployment phase, after arranging Titans into squadrons, the controlling player places a number of markers equal to the number of Warhounds in this maniple. These markers can be placed anywhere on the battlefield more than 6” from the enemy deployment zone. Titans from this maniple count as deployed for the purposes of determining which player finished deploying first. When both players have finished deploying as normal, Warhounds from this maniple can be deployed anywhere within 3” of a Pack Ambush marker. Any Warhound deployed in this manner outside of the controlling player’s deployment zone must be at least 50% obscured from any enemy unit within line of sight of that Warhound. If a Warhound cannot be placed within 3” of a Pack Ambush marker in this way, they must be deployed in the controlling player’s deployment zone, following all of the normal rules.
+
+If a player has more than one Canis Light Maniple, each maniple beyond the first gives only one extra Pack Ambush marker. Pack Ambush markers are shared between maniples.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ea65-18ba-f409-ef14" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="226f-2919-9fde-63ff" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a948-9bb4-d5a9-0974" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97d8-7862-8d1b-798d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1e80-74d0-477d-2cef" name="Legio Audax (Ember Wolves)" hidden="false" collective="false" import="true" targetId="e9a0-229e-7cfb-4def" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05f0-53f5-e72b-edb3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="def7-08d1-5a2e-bfb4" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
