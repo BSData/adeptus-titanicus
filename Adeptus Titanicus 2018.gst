@@ -2582,6 +2582,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="6a38-658a-3b64-348d" name="Natrix Shock Lance" hidden="false" collective="false" import="true" targetId="59e1-0284-05e3-4c67" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
