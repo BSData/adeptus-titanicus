@@ -11661,7 +11661,7 @@ A Reaver Titan cannot benefit from this ability if it is prevented from moving t
         <entryLink id="ece9-d720-9039-e293" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d049-710a-cfe3-2097" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="201c-0e6d-752f-9f44" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="201c-0e6d-752f-9f44" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="00a0-5512-ec45-7c71" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
@@ -11746,8 +11746,8 @@ A Reaver Titan cannot benefit from this ability if it is prevented from moving t
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcd4-8604-cbc2-2e44" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c21-219f-eb16-73a0" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcd4-8604-cbc2-2e44" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c21-219f-eb16-73a0" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="9ff5-3f81-977e-5db1" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
@@ -11780,7 +11780,7 @@ A Reaver Titan cannot benefit from this ability if it is prevented from moving t
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3a41-59a8-581b-0498" name="Canis Light Maniple" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3a41-59a8-581b-0498" name="=Audax= Canis Light Maniple" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="e70f-0805-8c7e-5971" name="Hunting Pack" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="false">
           <description>Canis Light Maniples can only include Legio Audax Titans. Warhound Titans within this maniple do not deploy as normal. Instead, at the start of the deployment phase, after arranging Titans into squadrons, the controlling player places a number of markers equal to the number of Warhounds in this maniple. These markers can be placed anywhere on the battlefield more than 6” from the enemy deployment zone. Titans from this maniple count as deployed for the purposes of determining which player finished deploying first. When both players have finished deploying as normal, Warhounds from this maniple can be deployed anywhere within 3” of a Pack Ambush marker. Any Warhound deployed in this manner outside of the controlling player’s deployment zone must be at least 50% obscured from any enemy unit within line of sight of that Warhound. If a Warhound cannot be placed within 3” of a Pack Ambush marker in this way, they must be deployed in the controlling player’s deployment zone, following all of the normal rules.
