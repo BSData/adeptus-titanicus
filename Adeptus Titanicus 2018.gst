@@ -6,7 +6,7 @@
     <publication id="975a-00f4-pubN89033" name="White Dwarf: Feb 2019"/>
     <publication id="975a-00f4-pubN89746" name="Doom Of Molech"/>
     <publication id="7236-e1d8-c886-f5fd" name="Adeptus Titanicus 2018 Errata v1.0"/>
-    <publication id="25e8-c9ce-9330-c53b" name="Titandeath Errata v1.0"/>
+    <publication id="25e8-c9ce-9330-c53b" name="Adeptus Titanicus 2018 Errata v1.1"/>
     <publication id="3265-f408-cc9b-bfa3" name="Shadow and Iron"/>
   </publications>
   <costTypes>
@@ -95,13 +95,13 @@
     <categoryEntry id="a8cf-34fb-66af-763c" name="Blast (X)" hidden="false">
       <rules>
         <rule id="e6cb-1739-3d22-76d9" name="Blast (X)" publicationId="975a-00f4-pubN65537" hidden="false">
-          <description>Before rolling To Hit with a Blast weapon, place the 3&quot; Blast marker or 5&quot; Blast marker (determined by the number in brackets) so that its central hole is completely over the target model’s base and within line of sight of the attacking weapon, and no part of the marker is touching any friendly models. Then, check to see whether the central hole is within range and arc. If it is not within arc, the shot is wasted and has no effect. If it is not within range, do not roll To Hit - each shot will scatter as follows:
+          <description>Before rolling To Hit with a Blast weapon, place the 3&quot; Blast marker or 5&quot; Blast marker (determined by the number in brackets) so that its central hole is completely over the target model’s base and within line of sight of the attacking weapon, and no part of the marker is touching any friendly models. Then, check to see whether the central hole is within range and arc. If it is not within arc, the shot is wasted and has no effect. If it is not within range, do not roll To Hit. Instead, draw an imaginary 1&quot; wide line between the chosen target and the attacking unit, placing the central hole of the Blast marker along this line a number of inches away from the attacking unit equal to the weapon’s Long range characteristic – each shot scatters as follows:
 
 Once the marker has been placed, roll To Hit as normal. If the roll is successful, the marker is not moved; otherwise, roll the Scatter dice and move the Blast marker D10&quot; in the direction that is shown - if a Hit is rolled, use the small arrow to determine the direction of scatter. Note that the Blast marker can scatter out of the Titan’s line of sight, or out of the weapon’s range or arc this represents the shot ricocheting or blasting clear through intervening terrain. The centre of the firing Titan’s base should still be used as a reference point to determine which of the target’s arcs is hit.
 
 Whether or not the marker moves, each model that is touched by the marker is hit once. If the central hole of the Blast marker is fully over a model’s base, that model is hit twice.
 
-If a Blast weapon has a Dice value of 2 or more, make each Hit roll separately (scattering any missed shots individually). If more than one model is hit, the attacking player chooses the order in which to resolve them. Blast weapons cannot make Targeted Attacks.</description>
+If a Blast weapon has a Dice value of 2 or more, make each Hit roll separately (scattering any missed shots individually). If more than one model is hit, the attacking player chooses the order in which to resolve them. Blast weapons cannot make Targeted Attacks. [FAQ - 1.1]</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -128,7 +128,7 @@ If a Blast weapon has a Dice value of 2 or more, make each Hit roll separately (
     </categoryEntry>
     <categoryEntry id="8ab9-d312-06e4-8ba0" name="Draining" hidden="false">
       <rules>
-        <rule id="b8dd-e91b-501f-2666" name="Draining" hidden="false">
+        <rule id="b8dd-e91b-501f-2666" name="Draining" publicationId="975a-00f4-pubN65537" hidden="false">
           <description>Draining weapons put a great strain on the plasma reactor of the Titan that fires them. Before attacking with a Draining weapon, the Titan’s reactor must be pushed. A unit that does not have a plasma reactor cannot use a Draining weapon. Some weapons have (Draining) after another trait - this means that they do not have the trait by default, but if they push the plasma reactor before attacking with the weapon, it gains that trait for the duration of the attack.</description>
         </rule>
       </rules>
@@ -410,13 +410,8 @@ Attacks made by Impale weapon bypass void shields.
     </categoryEntry>
     <categoryEntry id="719c-7b89-a08d-4acc" name="Bypass" hidden="false">
       <rules>
-        <rule id="4b4b-fa00-e23f-3960" name="Bypass" publicationId="3265-f408-cc9b-bfa3" page="95" hidden="false">
-          <description>++ WARNING ++
-Rule missing from official documentation
-
-Many commnetators suggest that bypass is a mirror to a clause in Impale thus the following is suggested until offical comment is made:
-
-Attacks by Bypass weapons bypass void shields.</description>
+        <rule id="4b4b-fa00-e23f-3960" name="Bypass" publicationId="25e8-c9ce-9330-c53b" page="4" hidden="false">
+          <description>When resolving an attack caused by a Bypass weapon, any hits caused will completely bypass Void Shields and Ion Shields (i.e., no Save rolls can be made against these attacks). Some weapons have a Bypass (X) trait, where X is either Void Shield or Ion Shield. These weapons only bypass the shield type named in brackets.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -450,7 +445,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="d9b5-b91c-0693-fc39" name="Taxing" hidden="false">
       <rules>
         <rule id="d05a-2768-3ecb-918e" name="Taxing" publicationId="3265-f408-cc9b-bfa3" page="95" hidden="false">
-          <description>After resolving the effects of an attack with Taxing weapon, roll a Reactor dice for the Titan and apply the result as normal. If the Reactor roll shows the Machine Spirit symbol, the Titan&apos;s Machine Spirit is not Awakened. instead, roll on the Psychic Manifestation table.</description>
+          <description>After resolving the effects of an attack with Taxing weapon, roll a Reactor dice for the Titan and apply the result as normal. If the Reactor roll shows the Machine Spirit symbol, the Titan&apos;s Machine Spirit is not Awakened. Instead, roll a D6 on the Psychic Manifestation table, or a D10 if the Titan has suffered Critical Damage or is within 6&quot; of a Corrupted Titan. [FAQ - 1.1]</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -4868,7 +4863,7 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
     <selectionEntry id="dbd6-65fd-6354-a154" name="Legio Astorum (Warp Runners)" publicationId="975a-00f4-pubN87630" page="19" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="663e-f301-76a4-55fb" name="War March" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
-          <description>In the first and second round of the game, a Legio Astorum Titan can choose to add 2&quot; to it&apos;s boosted Movement characteristic.  If a Titan uses this boosted speed, then whenever it is required to roll the Reactor dice, it must roll twice and choose the least favourable result (i.e. the result which increases the Titan&apos;s Plasma Reactor Status track by the largest amount or awakens it&apos;s machine spirit)
+          <description>In the first and second round of the game, a Legio Astorum Titan can choose to add 2&quot; to it&apos;s boosted Movement characteristic. If a Titan uses this boosted speed then whenever it is required to roll a Reactor dice during the first and second round of the game, it must roll twice and choose the least favourable result (i.e., the result which increases the Titan’s Plasma Reactor Status track by the largest amount or awakens its machine spirit). [FAQ - 1.1]
 </description>
         </rule>
         <rule id="5e7b-611a-ad57-7a1f" name="Veteran Princeps" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
@@ -5280,7 +5275,7 @@ Reveal this Stratagem when a Firebrands Titan would be required to make a roll o
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="4.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="82be-13d1-5446-584a" name="Maniple of One`" page="" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="82be-13d1-5446-584a" name="Maniple of One" page="" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -5654,7 +5649,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
     <selectionEntry id="1d02-6c17-cd84-a92f" name="Legio Vulcanum (Dark Fire/Lords of Ruin)" publicationId="975a-00f4-pubN89746" page="23" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="54af-693f-6c06-349d" name="Two-faced God" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
-          <description>When fielding a Legio Vulcanum battlegroup, a player may nominate two Legio Vulcanum Titans to be commanded by a Princeps Seniores (see page 55 of the Adeptus Titanicus rulebook).  These Titans may not be part of the same maniple.  If one of the Princeps Seniores&apos; Titans is destroyed, for the remainder of the game count the other Princeps Seniores&apos; Titan as having suffered an unrepairable Princeps Wounded damage effect.</description>
+          <description>When fielding a Legio Vulcanum battlegroup, a player may nominate two Legio Vulcanum Titans to be commanded by a Princeps Seniores (see page 55 of the Adeptus Titanicus rulebook). If one of the Princeps Seniores&apos; Titans is destroyed, for the remainder of the game count the other Princeps Seniores&apos; Titan as having suffered an unrepairable Princeps Wounded damage effect. [FAQ - 1.1]</description>
         </rule>
         <rule id="9edc-dbe9-0c2f-cc75" name="For the Fallan" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
           <description>For each Legio Vulcanum Titan in the battlegroup that has been destroyed, the Legio Vulcanum player gains a single re-roll that may be used once each round.  This re-roll may be used to re-roll the result of any single dice roll made by a Vulcanum Titans.</description>
@@ -5674,9 +5669,8 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <rule id="41a8-f791-55f3-5ade" name="Children of Mars" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
           <description>Legio Fortidus Titans never suffer penalties to thei Command checks and may ignore effects that force them to re-roll successful Command checks.  Knight Banners bonded to Legio Fortidus may re-roll Command checks to avoid becoming Shaken provided they are within line of sight of at least one Legio Fortidus Battle Titan.</description>
         </rule>
-        <rule id="749b-0dd5-ea9b-37ba" name="Lost Sons" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
-          <description>A Legio Fortidus battlegroup may alter one of the mandatory Titan components of any of all of it&apos;s maniples.  Note that for the purposes of the maniple&apos;s rules, the replacement Titan still counts as the Titan type it replaced (i.e. if a Legio Fortidus Venator maniple replaces of the maniple&apos;s mandatory Warhound Titans with a Reaver Titan, the replacment Reaver Titan would still count as a Warhound for the Opportunistic Strike special rule and so not gain extra attacks against a Titan who shields had been collapsed by a Warhound)
-</description>
+        <rule id="749b-0dd5-ea9b-37ba" name="Lost Sons" publicationId="25e8-c9ce-9330-c53b" page="3" hidden="false">
+          <description>A Legio Fortidus battlegroup may alter one of the mandatory Titan components of any of its maniples, exchanging this mandatory component for a Warhound, Reaver or Warlord Titan. Note that for the purposes of the maniple’s rules, the replacement Titan does not count as the Titan type it is replacing.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -7163,7 +7157,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <entryLink id="fd47-c688-fe2d-3467" name="Acastus Hull Weapon" hidden="false" collective="false" import="true" targetId="e060-52c1-1d31-a331" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7181,7 +7175,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="70.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="130.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7315,7 +7309,7 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <entryLink id="7bc2-34b3-b54b-e8c0" name="Acastus Hull Weapon" hidden="false" collective="false" import="true" targetId="e060-52c1-1d31-a331" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9482,7 +9476,7 @@ is reduced by D3.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="80.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="150.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9558,6 +9552,9 @@ is reduced by D3.</description>
       <rules>
         <rule id="5fc8-3571-bc88-ce38" name="Acastus Knight Artillery" hidden="false">
           <description>If an Acastus Knight Banner is issued First Fire or Split Fire orders during the Strategy phase, their BS is increased to 3+ until the End phase</description>
+        </rule>
+        <rule id="3ef4-e452-b5b7-159a" name="Auxilliary Knight Banner" publicationId="25e8-c9ce-9330-c53b" page="5" hidden="false">
+          <description>A Battlegroup can include a maximum of one Acastus Knight Banner per maniple as reinforcements. A Knight Household Force can include a maximum of one Auxiliary Knight Banner per Lance as reinforcements. No Knight Banner within a Lance may be an Auxiliary Knight Banner</description>
         </rule>
       </rules>
       <categoryLinks>
