@@ -450,6 +450,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </rules>
     </categoryEntry>
     <categoryEntry id="f54f-c26d-3d2a-2749" name="WarlordSinisterPsiTitan" hidden="false"/>
+    <categoryEntry id="eb21-0dae-9a3d-863a" name="Legio Specific Stratagem" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -465,6 +466,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
           </constraints>
         </categoryLink>
         <categoryLink id="8870-d6d8-5519-9eb0" name="Squadron" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="false"/>
+        <categoryLink id="b789-e317-99d6-5b8e" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -653,6 +655,12 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     </entryLink>
     <entryLink id="2bf7-b386-a4ee-2043" name="Mandatum Battleline Maniple" hidden="false" collective="false" import="true" targetId="f969-b5c4-4b5d-1723" type="selectionEntry"/>
     <entryLink id="dcf6-6569-c080-e2ea" name="Canis Light Maniple" hidden="false" collective="false" import="true" targetId="3a41-59a8-581b-0498" type="selectionEntry"/>
+    <entryLink id="00f5-8d82-bcc2-9188" name="=Mordaxis= Unstoppable" hidden="false" collective="false" import="true" targetId="3426-e19b-771f-0d15" type="selectionEntry"/>
+    <entryLink id="cf67-1865-82d1-2564" name="=Infernus= Burned Ones" hidden="false" collective="false" import="true" targetId="4cf8-2cc7-a7fc-085e" type="selectionEntry"/>
+    <entryLink id="2057-fe4e-c273-b652" name="=Lysanda= Frontier Guard" hidden="false" collective="false" import="true" targetId="117e-1150-d95c-0c61" type="selectionEntry"/>
+    <entryLink id="418d-8284-b516-cbaf" name="=Oberon= Decisive Action" hidden="false" collective="false" import="true" targetId="4db9-d3f5-c9e7-63b2" type="selectionEntry"/>
+    <entryLink id="14c2-77f4-4acb-2bf2" name="=Praesagius= Precision Volley" hidden="false" collective="false" import="true" targetId="fa21-d04e-c23a-9d6a" type="selectionEntry"/>
+    <entryLink id="358f-5483-de43-cf14" name="=Oberon= Stratagiser" hidden="false" collective="false" import="true" targetId="86f7-1a40-382b-ae4b" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
@@ -1216,6 +1224,10 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1949,6 +1961,10 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -2543,6 +2559,10 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -8926,6 +8946,10 @@ is reduced by D3.</description>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -10754,6 +10778,10 @@ is reduced by D3.</description>
           <description>Any Legio Mordaxis Titan armed with a Blast (3”) weapon may take Toxin Nodes for +20 points. Decrease the Strength value of the weapon by 1 (to a minimum of 4) and replace the Blast (3”) trait with the Blast (5”) trait.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="1734-3837-436c-a138" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="72be-66c2-2efc-befa" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -11498,6 +11526,10 @@ is reduced by D3.</description>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -11846,6 +11878,111 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3426-e19b-771f-0d15" name="=Mordaxis= Unstoppable" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c69-5d32-c31d-9f64" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5436-c2a4-839c-47c6" name="Unstoppable" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
+          <description>Play this Stratagem at the start of the Damage Control phase, before any Repair rolls are made. Until the end of the phase, add 2 to the Servitor Clades of every Legio Mordaxis Titan</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3173-de32-14fd-e620" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="c1e8-1659-eb79-7b08" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4cf8-2cc7-a7fc-085e" name="=Infernus= Burned Ones" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="58ef-c3dc-5473-01f0" name="Burned Ones" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+          <description>Reveal this Stratagem in any Combat phase. Choose any piece of Blocking terrain withing 12” of a friendly Legio Infernus Titan and remove it, replacing it with an area of Difficult Terrain of roughly the same size. This stratagem can be purchased multiple times.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="39dd-a123-fcca-d330" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="5769-7d67-e82f-69ce" name="LegioInfernus" hidden="false" targetId="99b7-5e2f-9ea4-bbdf" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="117e-1150-d95c-0c61" name="=Lysanda= Frontier Guard" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be34-a671-1633-9bbd" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="d084-8920-f843-b458" name="Frontier Guard" publicationId="3265-f408-cc9b-bfa3" page="29" hidden="false">
+          <description>Play this Stratagem during the Strategy phase of any round. Until the end of the round, the BS and WS of any Legio Lysanda Titan that is within 6” of an objective marker (for their own victory conditions) when this Stratagem is played is increased by 1, to maximum of 2+.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="040d-fc25-44e0-e023" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="6b19-9892-f014-61a6" name="LegioLysanda" hidden="false" targetId="7ada-d471-345c-f8a4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4db9-d3f5-c9e7-63b2" name="=Oberon= Decisive Action" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd7c-70fa-f953-ef8f" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="3069-1ca0-27b0-c6c3" name="Decisive Action" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
+          <description>Play this Stratagem at the start of any Strategy phase. If played during the first round, until the end of the phase, Legio Oberon Titans may be issued with Full Stride or First Fire orders without needing a Command check. If played during in any subsequent phase, until the end of the phase, Legio Oberon Titans may be issued with Full Stride or Split Fire order without needing a Command check. All Legio Oberon Titans issued orders via this Stratagem must be issued with the same order.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3a99-f4c1-3279-663e" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="60f0-2c87-9186-7af5" name="LegioOberon" hidden="false" targetId="7dc9-a722-55be-5f42" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fa21-d04e-c23a-9d6a" name="=Praesagius= Precision Volley" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7298-6f53-82aa-ccf1" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="a95e-6b88-2aca-102d" name="Precision Volley" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
+          <description>Play this Stratagem at the start of any Strategy phase, before any orders are issued. Until the tart of the next round, add 1 to the Hit rolls of all attacks made by Legio Praesagius Titans when using a weapon’s long range.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="9e56-5993-aafd-fc5f" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="3b48-a06f-7463-1f7f" name="LegioPraesagius" hidden="false" targetId="4e62-72e2-a04f-9b86" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="86f7-1a40-382b-ae4b" name="=Oberon= Strategiser" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d3c-c2f6-8e33-043b" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="27b8-2aa1-e19e-1aa0" name="Strategiser" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
+          <description>Play this Stratagem when an Opponent plays a Stratagem that costs 2 or fewer Stratagem points. Before resolving its effects, this Stratagem is discarded and its effect ignored.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="005e-8bb2-8019-fbed" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="696e-4ad5-5c10-2b4c" name="LegioOberon" hidden="false" targetId="7dc9-a722-55be-5f42" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
