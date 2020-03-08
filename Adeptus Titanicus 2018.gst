@@ -661,6 +661,12 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <entryLink id="418d-8284-b516-cbaf" name="=Oberon= Decisive Action" hidden="false" collective="false" import="true" targetId="4db9-d3f5-c9e7-63b2" type="selectionEntry"/>
     <entryLink id="14c2-77f4-4acb-2bf2" name="=Praesagius= Precision Volley" hidden="false" collective="false" import="true" targetId="fa21-d04e-c23a-9d6a" type="selectionEntry"/>
     <entryLink id="358f-5483-de43-cf14" name="=Oberon= Stratagiser" hidden="false" collective="false" import="true" targetId="86f7-1a40-382b-ae4b" type="selectionEntry"/>
+    <entryLink id="3cc2-eabb-9018-b76b" name="Localised Warp Storm" hidden="false" collective="false" import="true" targetId="4ca2-15c0-5ded-18d4" type="selectionEntry"/>
+    <entryLink id="ded3-1fde-114c-273e" name="Wails of the Damned" hidden="false" collective="false" import="true" targetId="9aff-f954-d10d-1a6b" type="selectionEntry"/>
+    <entryLink id="d83c-04f9-69a0-a5c6" name="Warp Displacement" hidden="false" collective="false" import="true" targetId="076f-49cf-0bc3-d5b0" type="selectionEntry"/>
+    <entryLink id="f51a-8ed5-b314-aabc" name="Profane Blessing" hidden="false" collective="false" import="true" targetId="74cc-351e-33ce-fd95" type="selectionEntry"/>
+    <entryLink id="94ef-8461-c91e-b59d" name="Unholy Ground" hidden="false" collective="false" import="true" targetId="c00f-99e1-ceee-6ab8" type="selectionEntry"/>
+    <entryLink id="36ee-b38b-303e-963b" name="Aetheric Infusion" hidden="false" collective="false" import="true" targetId="5ab8-ac68-cbd2-18e7" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
@@ -11982,6 +11988,147 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4ca2-15c0-5ded-18d4" name="Localised Warp Storm" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b823-0d1d-5375-782f" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="d74e-0cf6-7851-54fa" name="Localised Warp Storm" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
+          <description>Play this Stratagem in any Strategy phase. Place the 3&quot; Blast marker anywhere on the battlefield, then scatter it D10&quot;. Any unit touched by the marker after it has scattered takes D3 Hits as if attacked by a Warp weapon that has successfully hit</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3f49-2b03-056a-20e1" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5ab8-ac68-cbd2-18e7" name="Aetheric Infusion" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d28d-2c01-7253-652f" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="9f21-4171-3ff8-708c" name="Aetheric Infusion" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
+          <description>Play this Stratagem in any phase. The player chooses one of their Titans and rolls a D10. On a 3+, immediately make a Repair roll for the Titan, adding 2 to their Servitor Clades for that roll. On a 2, the Titan takes D3 Devastating Hits to its Body. On a 1, the Titan immediately suffers Catastrophic Damage</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="bcfe-608f-5a1e-1a5e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="74cc-351e-33ce-fd95" name="Profane Blessing" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="44c5-1432-9260-9194" name="Profane Blessing" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans or Knight Banners and places a marker of some kind next to its Command Terminal. That unit may choose to re-roll one or more dice for a single roll; for example, they may re-roll a Command check or all failed Hit rolls from a single weapon attack. Discard the marker after the re-rolls have been resolved. This Stratagem can be taken multiple times.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2cac-822e-c470-eae2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9aff-f954-d10d-1a6b" name="Wails of the Damned" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d19-2ff1-4e73-3484" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="532a-a833-6c0a-082b" name="Wails of the Damned" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
+          <description>Play this Stratagem during any Strategy phase. For the remainder of that round, subtract 2 from the result of any Command checks made by enemy units when issuing orders</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="046f-ba13-38c7-dd1b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="076f-49cf-0bc3-d5b0" name="Warp Displacement" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3565-dec3-386d-047b" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="0166-0c24-3c0b-1b8c" name="Warp Displacement" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
+          <description>The player chooses one of their units and rolls 2D6. Models within the chosen unit move that many inches in a straight line in a direction chosen by the player, ignoring any rules for movement such as Dangerous or Blocking terrain when moving. If the unit would be placed in a piece of terrain, other than Blocking terrain, the unit suffers D3 S7 hits to its Body, bypassing void shields, and the terrain is destroyed. If the unit would be placed in a piece of Blocking terrain, the unit is destroyed. If the unit would be placed overlapping the base of another unit, the unit stops at its base and suffers a collision. This does not change the unit’s facing and a unit cannot move off the battlefield – if it would, place the unit at the battlefield’s edge.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a5eb-8eb0-b90d-5577" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c00f-99e1-ceee-6ab8" name="Unhallowed Ground" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f72-2e74-86b6-bace" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5788-7295-5726-fd2c" name="Unhallowed Ground" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in the first Strategy phase of the game. The battlefield is infused with tainted Warp energies harmful to any who linger upon it. At the end of each Movement phase, any unit that has not moved, voluntarily or involuntarily, in the Movement phase suffers D3 S6 Hits, ignoring void shields and ion shields. Titans suffer these Hits to their Legs</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4d34-8151-9fdb-fcb7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
