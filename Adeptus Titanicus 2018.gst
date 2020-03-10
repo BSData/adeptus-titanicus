@@ -689,6 +689,11 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <entryLink id="9534-0eaa-8f14-3310" name="=Mortis= March of the Dead" hidden="false" collective="false" import="true" targetId="4699-f903-0c50-1e80" type="selectionEntry"/>
     <entryLink id="ae8d-c57e-44ea-9093" name="=Solaria= Fog of War" hidden="false" collective="false" import="true" targetId="63d6-80e8-e266-00b0" type="selectionEntry"/>
     <entryLink id="8867-35a8-38be-ee71" name="=Vulpa= No Pity for the Vanquished" hidden="false" collective="false" import="true" targetId="12c2-179b-3e38-04d0" type="selectionEntry"/>
+    <entryLink id="cd7b-5bcd-a82c-a220" name="=Fortidus= For the Red Planet" hidden="false" collective="false" import="true" targetId="c88c-e5de-39a8-a14c" type="selectionEntry"/>
+    <entryLink id="0862-be2c-943f-9090" name="=Fortidus= Red Skies" hidden="false" collective="false" import="true" targetId="77b5-8263-66f7-7c67" type="selectionEntry"/>
+    <entryLink id="ee62-96c9-e7fa-813a" name="=Interfector= Tormented Machine Spirit" hidden="false" collective="false" import="true" targetId="8f50-2bbe-22c7-c81e" type="selectionEntry"/>
+    <entryLink id="5552-c44d-7a80-8fb8" name="=Tempestus= Combat Drop" hidden="false" collective="false" import="true" targetId="a325-71b4-799f-daa1" type="selectionEntry"/>
+    <entryLink id="b247-402c-24c1-9186" name="=Vulcanum= Symbiotic Commands" hidden="false" collective="false" import="true" targetId="da32-bf28-85d1-9f9d" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
@@ -12580,6 +12585,99 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
       <categoryLinks>
         <categoryLink id="1682-efcb-68d5-f971" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
         <categoryLink id="022a-a8a1-63eb-ef07" name="LegioFureans" hidden="false" targetId="72ba-4008-bf4b-fe3b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a325-71b4-799f-daa1" name="=Tempestus= Combat Drop" publicationId="975a-00f4-pubN65537" page="92" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="229d-552f-009a-61f5" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="eb20-0124-4019-ea50" name="Combat Drop" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
+          <description>When chosen by a player they must write the name of one of their Titan&apos;s whose scale is 6 or lower. 
+Play this Stratagem at the start of deployment to set the named Titan to one side and state that it is being held in orbit. Declare and record a round between 2 and 4 - this is the round in which its dropship will aim to deploy the Titan. 
+At the beginning of the Movement phase of the chosen round, roll a D10. If the result is lower than the Titan&apos;s scale, it arrives. Otherwise the Titan is delayed and will arrive at the start of the following Movement phase instead.
+When the Titan arrives, it may be placed anywhere on the battlefield that is 1&quot; or more from any model or terrain feature, then scatter D6&quot;. Choose it&apos;s facing then roll a D3. On a 1-2, it makes a 45° turn to the left. On a 3-4, it keeps the chosen facing. On a 5-6, it turns 45° to the right. If the Titan scatters or turns into any terrain, it stops before moving into it and the suffers D6 S9 Hits. The Titan cannot be activated in any of the remaining phases of this round. It can still be targeted and attacked as normal.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d6ef-01ec-3bb1-1b70" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="639f-2f93-b346-225d" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c88c-e5de-39a8-a14c" name="=Fortidus= For the Red Planet" publicationId="975a-00f4-pubN89746" page="20" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fdc-a411-0d19-422c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e4ec-79d7-d9dd-1924" name="For the Red Planet" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
+          <description>The Legio Fortidus Player may reveal this Stratagem when activating a Titan. Until the beginning of the following game round, the Titan ignores the damage effects of Critical Damage to its Head, Body or Legs, as chosen by the player when the Stratagem is revealed.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="57c3-e9fa-f8f0-b772" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="8c78-f8b6-fcee-508f" name="LegioFortidus" hidden="false" targetId="8129-9843-a287-cd8e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="77b5-8263-66f7-7c67" name="=Fortidus= Red Skies" publicationId="975a-00f4-pubN89746" page="20" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59cd-ea6f-e1a9-a09e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8593-357d-0c57-fca0" name="Red Skies" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
+          <description>The Legio Fortidus Player may reveal this Stratagem when one of their Titans suffers a Magazine Detonation or Catastrophic Meltdown result on the Catestrophic Damage table. When resolving the Catestrophic Damage effects, add 5 to the Titan&apos;s scale.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="edae-b5ab-12af-7768" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="7d74-3e61-eb64-5915" name="LegioFortidus" hidden="false" targetId="8129-9843-a287-cd8e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da32-bf28-85d1-9f9d" name="=Vulcanum= Symbiotic Commands" publicationId="975a-00f4-pubN89746" page="23" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e85c-535b-73f1-1564" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e1d2-ea6a-9a73-548b" name="Symbiotic Commands" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
+          <description>Play this Stratagem in the Strategy phase after successfully issuing an order to a Legio Vulcanum Titan. The Player may, if the choose, issue the same Order to any or all of the Legio Vulcanum Titans in their battlegroup without needing to make any further Command checks.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="05b7-6e32-5deb-6bb9" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="4bbe-ed93-db90-d937" name="LegioVulcanum" hidden="false" targetId="4225-27f8-9c8b-e56e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8f50-2bbe-22c7-c81e" name="=Interfector= Tormented Machine Spirit" publicationId="975a-00f4-pubN89746" page="26" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24e8-17cc-6315-398c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="6803-8ebb-8728-241b" name="Tormented Machine Spirit" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
+          <description>Reveal this Stratagem when a Legio Interfector Titan would roll on the Awakened Machine Spirit table. Instead of rolling on the table, make an attack with each of the Titan&apos;s weapons. These attacks must be made on the closest model, whether it is friend or foe.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="9815-dfb5-41aa-8894" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="ad36-7885-ea62-752d" name="LegioVulcanum" hidden="false" targetId="4225-27f8-9c8b-e56e" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
