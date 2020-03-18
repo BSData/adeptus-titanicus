@@ -451,6 +451,34 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     </categoryEntry>
     <categoryEntry id="f54f-c26d-3d2a-2749" name="WarlordSinisterPsiTitan" hidden="false"/>
     <categoryEntry id="eb21-0dae-9a3d-863a" name="Legio Specific Stratagem" hidden="false"/>
+    <categoryEntry id="1c43-76ab-b5e5-6baf" name="Structure" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5c42-e68b-ce2b-3a92" value="0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="7df6-870f-702a-5f7d" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c42-e68b-ce2b-3a92" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7df6-870f-702a-5f7d" type="min"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -487,6 +515,12 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="1b82-8c99-c3c3-ad32" name="Show Structure" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15d2-08ff-8b71-7414" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="904c-abe6-7912-58c5" type="min"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -715,11 +749,21 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <categoryLink id="c161-c1d8-f789-0f47" name="New CategoryLink" hidden="false" targetId="d36f-5e44-2150-3428" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ff82-d3e7-e39f-4700" name="Structure" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ff82-d3e7-e39f-4700" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4996-9775-cdf0-151f" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9814-f3d2-1d8a-e8d6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="309c-e12a-af55-c81b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a61c-c66a-701a-9c2b" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="8f8e-0b82-adec-c7e1" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="ce60-5657-c368-460a" name="Body" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1390,11 +1434,21 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <categoryLink id="e9d5-d649-c246-8d73" name="New CategoryLink" hidden="false" targetId="7103-9316-d4a5-8caa" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="46bb-a965-6f49-c8ee" name="Structure" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="46bb-a965-6f49-c8ee" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b5c-5ed6-089f-b558" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3983-b075-33f1-9d7f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cadf-a9ab-206c-2982" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="549c-b972-95dd-878b" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="c9fc-05d6-b611-241b" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="aa49-c623-c57b-73bb" name="Body" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -2112,11 +2166,21 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <categoryLink id="e12e-1619-83e6-4a5c" name="New CategoryLink" hidden="false" targetId="223f-6e71-9e4f-939e" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="139d-39eb-08c0-175c" name="Structure" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="139d-39eb-08c0-175c" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c910-b115-e1ce-720c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ce7-c357-e9a7-f2d8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2700-70b7-8b4a-101f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb8a-5a6b-4d63-c7bd" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="b63d-d452-dd14-8f23" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="2e95-41ff-648a-c613" name="Body" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -8375,11 +8439,21 @@ is reduced by D3.</description>
         <categoryLink id="e5dd-4763-2ead-cde7" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="c2af-b052-95b6-51e6" name="Structure" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c2af-b052-95b6-51e6" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55cc-3e0b-87ea-2315" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="607b-c8bd-f914-1bd4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69a6-a881-0bfb-5a36" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a07-b35c-819a-082c" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="b9e0-3d0d-247c-bb72" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="fd4f-5d94-5aa8-27c2" name="Body" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -9317,11 +9391,21 @@ is reduced by D3.</description>
         <categoryLink id="c58e-22a5-8294-f8ec" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="d48d-406a-7a52-5616" name="Structure" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d48d-406a-7a52-5616" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="269e-7c4b-6dd3-70ce" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="687b-4541-896f-56e4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0389-4d2c-cec3-6d2f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13de-24dc-a360-d981" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="0382-db03-db89-dc30" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
+          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="5e0e-b82a-6656-0fa1" name="Questoris Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="c946-0901-871d-7b2d">
               <constraints>
@@ -9443,11 +9527,21 @@ is reduced by D3.</description>
         <categoryLink id="f23c-e700-3731-4a85" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="f6ac-4700-4294-8f61" name="Structure" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f6ac-4700-4294-8f61" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05c2-6379-eb22-9015" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8b3-a6c5-2395-3959" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e49c-7af0-6a71-9918" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d689-8e1e-266f-75ca" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="31ae-a5f5-f841-0687" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
+          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="48f3-6c02-8773-28a4" name="Cerastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="5acb-caad-2f9a-3c77">
               <constraints>
@@ -9652,11 +9746,21 @@ is reduced by D3.</description>
         <categoryLink id="108a-4a65-bea8-c57e" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="f1c4-1d42-a7d3-9287" name="Structure" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f1c4-1d42-a7d3-9287" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2570-de34-d985-19cc" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bfc-79b9-4540-ec81" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ad3-3f76-5c45-e6b6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c26-25aa-178d-cc95" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="0434-fabb-5e41-4289" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
+          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="af9c-d02f-895d-6c7d" name="Acastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="9694-ce3c-bb4d-6635">
               <constraints>
@@ -10955,11 +11059,21 @@ is reduced by D3.</description>
         <categoryLink id="d7dd-e3aa-4ba1-e5a6" name="WarlordTitan" hidden="false" targetId="7103-9316-d4a5-8caa" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="54d2-8732-7748-4ad6" name="Structure" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="54d2-8732-7748-4ad6" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="397d-731d-4225-2fa2" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3df3-8cc9-90a8-cbae" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9917-188a-1207-f805" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f089-9d61-3e28-724d" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="ced9-b70c-4d19-3e69" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="a1be-00eb-5111-49dd" name="Body" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
