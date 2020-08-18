@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="16" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="17" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -8,10 +8,11 @@
     <publication id="7236-e1d8-c886-f5fd" name="Adeptus Titanicus 2018 Errata v1.0"/>
     <publication id="25e8-c9ce-9330-c53b" name="Adeptus Titanicus 2018 Errata v1.1"/>
     <publication id="3265-f408-cc9b-bfa3" name="Shadow and Iron"/>
+    <publication id="2988-f24d-39ef-352e" name="Defense of Ryza"/>
   </publications>
   <costTypes>
-    <costType id="a731-e220-2d8a-41bf" name=" Points" defaultCostLimit="-1.0"/>
-    <costType id="efbf-52f7-fd08-f329" name=" Stratagem Points" defaultCostLimit="-1.0"/>
+    <costType id="a731-e220-2d8a-41bf" name=" Points" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="efbf-52f7-fd08-f329" name=" Stratagem Points" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="f6b0-d09f-1acc-9f3e" name="Engine">
@@ -479,6 +480,11 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7df6-870f-702a-5f7d" type="min"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="fc8c-656d-ffe8-69b6" name="LegioOsedax" hidden="false"/>
+    <categoryEntry id="4cad-18cf-5711-5331" name="LegioMagna" hidden="false"/>
+    <categoryEntry id="5a98-05b4-ed38-bbc4" name="LegioVulturum" hidden="false"/>
+    <categoryEntry id="86f0-9cae-9ece-4b64" name="Experimental Warfare" publicationId="2988-f24d-39ef-352e" page="107" hidden="false"/>
+    <categoryEntry id="9e2e-c35f-34a4-d245" name="Tricks and Tactics" publicationId="2988-f24d-39ef-352e" page="107" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -697,7 +703,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <entryLink id="2057-fe4e-c273-b652" name="=Lysanda= Frontier Guard" hidden="false" collective="false" import="true" targetId="117e-1150-d95c-0c61" type="selectionEntry"/>
     <entryLink id="418d-8284-b516-cbaf" name="=Oberon= Decisive Action" hidden="false" collective="false" import="true" targetId="4db9-d3f5-c9e7-63b2" type="selectionEntry"/>
     <entryLink id="14c2-77f4-4acb-2bf2" name="=Praesagius= Precision Volley" hidden="false" collective="false" import="true" targetId="fa21-d04e-c23a-9d6a" type="selectionEntry"/>
-    <entryLink id="358f-5483-de43-cf14" name="=Oberon= Stratagiser" hidden="false" collective="false" import="true" targetId="86f7-1a40-382b-ae4b" type="selectionEntry"/>
+    <entryLink id="358f-5483-de43-cf14" name="=Oberon= Strategiser" hidden="false" collective="false" import="true" targetId="86f7-1a40-382b-ae4b" type="selectionEntry"/>
     <entryLink id="3cc2-eabb-9018-b76b" name="Localised Warp Storm" hidden="false" collective="false" import="true" targetId="4ca2-15c0-5ded-18d4" type="selectionEntry"/>
     <entryLink id="ded3-1fde-114c-273e" name="Wails of the Damned" hidden="false" collective="false" import="true" targetId="9aff-f954-d10d-1a6b" type="selectionEntry"/>
     <entryLink id="d83c-04f9-69a0-a5c6" name="Warp Displacement" hidden="false" collective="false" import="true" targetId="076f-49cf-0bc3-d5b0" type="selectionEntry"/>
@@ -732,6 +738,25 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <entryLink id="ee62-96c9-e7fa-813a" name="=Interfector= Tormented Machine Spirit" hidden="false" collective="false" import="true" targetId="8f50-2bbe-22c7-c81e" type="selectionEntry"/>
     <entryLink id="5552-c44d-7a80-8fb8" name="=Tempestus= Combat Drop" hidden="false" collective="false" import="true" targetId="a325-71b4-799f-daa1" type="selectionEntry"/>
     <entryLink id="b247-402c-24c1-9186" name="=Vulcanum= Symbiotic Commands" hidden="false" collective="false" import="true" targetId="da32-bf28-85d1-9f9d" type="selectionEntry"/>
+    <entryLink id="5da6-82f5-7541-1024" name="=Osedax= Relentless March" hidden="false" collective="false" import="true" targetId="2807-7c6c-a62b-6732" type="selectionEntry"/>
+    <entryLink id="fbca-90bf-d58c-53de" name="=Osedax= Blood Begets Blood" hidden="false" collective="false" import="true" targetId="99e9-5b47-5d7a-f6f7" type="selectionEntry"/>
+    <entryLink id="4254-bf37-74eb-4aa4" name="Perpetua Battleline Maniple" hidden="false" collective="false" import="true" targetId="fd1f-e255-c7bd-442b" type="selectionEntry"/>
+    <entryLink id="4a69-59bf-2150-1e88" name="Extergimus Battleline Maniple" hidden="false" collective="false" import="true" targetId="9d50-e86f-4613-3e07" type="selectionEntry"/>
+    <entryLink id="9612-b592-813b-8af5" name="Firmus Light Maniple" hidden="false" collective="false" import="true" targetId="7fa2-9af4-1b60-8a28" type="selectionEntry"/>
+    <entryLink id="c9f0-312a-a594-5b21" name="Blackshield" hidden="false" collective="false" import="true" targetId="e8cc-e33c-46ed-058d" type="selectionEntry"/>
+    <entryLink id="7ec5-91c0-8dc0-7cfa" name="Homing Warheads" hidden="false" collective="false" import="true" targetId="1904-0d73-fd65-ff15" type="selectionEntry"/>
+    <entryLink id="d084-3374-18b2-d5b7" name="Enhanced Coolant" hidden="false" collective="false" import="true" targetId="0f18-d5cf-2e7e-2fe7" type="selectionEntry"/>
+    <entryLink id="19b9-40a9-ef58-d3ff" name="Redundant Systems" hidden="false" collective="false" import="true" targetId="bc92-e509-916e-4e39" type="selectionEntry"/>
+    <entryLink id="e58d-63c3-650e-7f60" name="Experimental Locomotors" hidden="false" collective="false" import="true" targetId="689b-0672-ff8e-6eab" type="selectionEntry"/>
+    <entryLink id="76a7-2eb1-6c5d-fff2" name="Override Signal" hidden="false" collective="false" import="true" targetId="b042-847a-2bf2-9266" type="selectionEntry"/>
+    <entryLink id="cf78-e0c7-7924-d2e5" name="Dusk Attack" hidden="false" collective="false" import="true" targetId="5bf8-0983-e8e3-bdf8" type="selectionEntry"/>
+    <entryLink id="a267-bbf8-5aea-f83a" name="False Intel" hidden="false" collective="false" import="true" targetId="2cfc-dc41-7148-0a77" type="selectionEntry"/>
+    <entryLink id="b9a0-1191-06e2-7b8f" name="Reactor Surge" hidden="false" collective="false" import="true" targetId="47d7-d3dc-14f4-bf68" type="selectionEntry"/>
+    <entryLink id="6738-c35d-f956-9de6" name="Partial Shutdown" hidden="false" collective="false" import="true" targetId="e450-d58f-c711-7be7" type="selectionEntry"/>
+    <entryLink id="c793-a821-ef0d-c817" name="Tactical Assessment" hidden="false" collective="false" import="true" targetId="5fe5-58cd-143f-df0e" type="selectionEntry"/>
+    <entryLink id="7740-08d6-29c3-9a3b" name="Last Ditch Effort" hidden="false" collective="false" import="true" targetId="a6f0-9aff-9834-89c7" type="selectionEntry"/>
+    <entryLink id="de16-e3b4-01e5-1e6d" name="=Vulturum= Cull the Weak" hidden="false" collective="false" import="true" targetId="f805-d25f-6ece-e62a" type="selectionEntry"/>
+    <entryLink id="027a-da58-97db-3df9" name="=Vulturum= Scent of Blood" hidden="false" collective="false" import="true" targetId="0942-9568-cbd3-aec6" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
@@ -3484,8 +3509,22 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </costs>
     </selectionEntry>
     <selectionEntry id="47c9-43b5-8afc-b64f" name="Vulcan Megabolter [RVR]" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="12b5-203d-86d9-3e60">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="b627-6f89-9463-8a14" name="Vulcan Megabolter (Reaver)" publicationId="7236-e1d8-c886-f5fd" page="38" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <modifiers>
+            <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
+              <conditions>
+                <condition field="selections" scope="47c9-43b5-8afc-b64f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
@@ -3510,6 +3549,11 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </categoryLinks>
       <entryLinks>
         <entryLink id="558c-ae48-6cc0-ebf6" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="c49c-97f7-5e62-6d41" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="true" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -3849,6 +3893,13 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <selectionEntry id="087a-abff-3ffe-f488" name="Melta Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="d10f-9630-c104-eb62" name="Melta Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <modifiers>
+            <modifier type="set" field="8320-f9a1-68a0-47c2" value="15&apos;&apos;">
+              <conditions>
+                <condition field="selections" scope="087a-abff-3ffe-f488" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f488-be0f-7490-948b" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">11</characteristic>
@@ -3873,6 +3924,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </categoryLinks>
       <entryLinks>
         <entryLink id="3142-627e-de68-5a41" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="f488-be0f-7490-948b" name="=Magna= Directed Pressure Outlet" hidden="false" collective="false" import="true" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
@@ -3978,8 +4030,22 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </costs>
     </selectionEntry>
     <selectionEntry id="f2ae-e883-28c4-dbcc" name="Vulcan Megabolter Array" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="12b5-203d-86d9-3e60">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="a5ef-5826-f9cf-6c41" name="Vulcan Megabolter Array" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <modifiers>
+            <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
+              <conditions>
+                <condition field="selections" scope="f2ae-e883-28c4-dbcc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">12</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
@@ -4005,6 +4071,11 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </categoryLinks>
       <entryLinks>
         <entryLink id="9ec9-aebc-d6ca-d60d" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="5b8e-af29-b85a-e157" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="true" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -4012,8 +4083,22 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </costs>
     </selectionEntry>
     <selectionEntry id="edcd-f43d-10ba-7f60" name="Vulcan Megabolter [WHD]" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="12b5-203d-86d9-3e60">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9e0d-d5fd-c251-904b" name="Vulcan Megabolter (Warhound)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <modifiers>
+            <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
+              <conditions>
+                <condition field="selections" scope="edcd-f43d-10ba-7f60" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
@@ -4037,6 +4122,11 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </categoryLinks>
       <entryLinks>
         <entryLink id="b36b-f4ee-e2a9-f796" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="1e76-599c-c07e-26b7" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="true" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -4701,13 +4791,13 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="22ac-d1cf-8596-c057" name="Dominus Battleforce Maniple" publicationId="975a-00f4-pubN89033" page="131" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="22ac-d1cf-8596-c057" name="Dominus Battleforce Maniple" publicationId="2988-f24d-39ef-352e" page="53" hidden="false" collective="false" import="true" type="unit">
       <rules>
-        <rule id="8ba2-da46-9cb7-66cf" name="Auspex Bafflers" publicationId="975a-00f4-pubN89033" page="131" hidden="false">
-          <description>Knight armours tasked with the close support of Titans configure their vox arrays to foil the targeting auspexes of their enemies with an impenetrable wall of merged signals. This has the result of protecting the Titans but unfortunately broadcasts the Knights&apos; position. Knight Banner included in a Dominus Battleforce maniple cannot benefit from obscuring cover (see p.33 of the AT2018 Rulebook). If a Titan in a Dominus Battleforce maniple within 6&quot; of a Knight Banner from the same maniple, and both the Titan and Knight are visible to the attacker, attacks made from more then 2&quot; away from the Titan suffer a -1 modifier to the Hit roll. </description>
+        <rule id="8ba2-da46-9cb7-66cf" name="Auspex Bafflers" publicationId="2988-f24d-39ef-352e" page="53" hidden="false">
+          <description>Knight Banners included in a Dominus Battleforce maniple cannot benefit from obscuring cover (see the Adeptus Titanicus rulebook). If a Knight Banner from a Dominus Battleforce maniple is wholly within 6&quot; of a Titan from the same maniple (i.e., all Knights from the Banner are within 6&quot; of the Titan), and both the Titan and at least one Knight from that Banner is visible to the attacker, attacks made against the Titan from more than 2&quot; away from the Titan suffer a -1 modifier to the Hit roll.</description>
         </rule>
-        <rule id="3b91-ef12-ce98-af5f" name="Noble Sacrifice" publicationId="975a-00f4-pubN89033" page="131" hidden="false">
-          <description>When a Titan in a Dominus Battleforce maniple takes a hit from a ranged attack, it may transfer this hit to any Knight Banner from the same maniple within 6&quot;, as long as at least one Kight in the Knight Banner is visible to the attacker. The chosen Knight banner now suffers the full effects of the hit just as if it had been the original target. If the hit was from a weapon with the blast trait, the Blast marker is centered on the Knight Banner. Hits from weapons with the Firestorm trait may not de transfered in this way.</description>
+        <rule id="3b91-ef12-ce98-af5f" name="Noble Sacrifice" publicationId="2988-f24d-39ef-352e" page="53" hidden="false">
+          <description>When a Titan in a Dominus Battleforce maniple takes a hit from an attack originating from more than 2&quot; away from the Titan, it may transfer the hit to any Knight model from the same maniple within 6&quot;, as long as that model is visible to the attacker – you must transfer the hit before making any Armour rolls. The chosen Knight suffers the full effects of the hit as if it had been the original target. If the hit was from a weapon with the Blast trait, centre the Blast marker over the Knight. Hits from weapons with the Firestorm or Beam traits may not be transferred in this way.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4740,7 +4830,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a98-77b6-1207-96c4" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="d581-29e1-d1a3-0823" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+            <entryLink id="d581-29e1-d1a3-0823" name="=Gryphonicus= Warhound replacement Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
               </modifiers>
@@ -4782,23 +4872,18 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
           </constraints>
         </entryLink>
         <entryLink id="1557-41db-9051-3271" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
+          <modifierGroups>
+            <modifierGroup>
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
               </conditions>
-            </modifier>
-            <modifier type="set" field="ca1b-bd28-2557-a917" value="0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="3578-3bfa-02f4-09e0" value="0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+              <modifiers>
+                <modifier type="decrement" field="3578-3bfa-02f4-09e0" value="1.0"/>
+                <modifier type="decrement" field="ca1b-bd28-2557-a917" value="1.0"/>
+                <modifier type="set" field="hidden" value="true"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca1b-bd28-2557-a917" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3578-3bfa-02f4-09e0" type="min"/>
@@ -5061,7 +5146,7 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
     <selectionEntry id="1b13-8735-b4bf-0caf" name="Legio Mortis (Death&apos;s Heads)" publicationId="975a-00f4-pubN87630" page="39" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="82ab-6823-fda3-a4b8" name="Reapers Tally" publicationId="975a-00f4-pubN87630" page="40" hidden="false">
-          <description>Each time a Titan of the Legio Mortis destroys and enemy Titan, it gains the ability to re-roll a single dice roll of 1 each time it makes a shooting attach, These effects are cumulative, and for every enemy Titan destroyed, and additional1 1 may be re-rolled.</description>
+          <description>Each time a Titan of the Legio Mortis destroys an enemy Titan, it gains the ability to re-roll a single dice roll of 1 each time it makes a shooting attack. These effects are cumulative, and for every enemy Titan destroyed, an additional 1 may be re-rolled.</description>
         </rule>
         <rule id="1497-f496-0508-beec" name="State of Decay" publicationId="975a-00f4-pubN87630" page="40" hidden="false">
           <description>Once per game, any Legio Mortis Titan may ignore the effects of MIU Feedback, Moderati Wounded and Princeps Wounded for a round.  In a round that the Titan ignores these Critical Damage effects, it may not allocate any Repair dice to its Head.</description>
@@ -5134,12 +5219,12 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d00-c954-d909-610e" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c040-29dd-6042-3b8d" name="Legio Astorum" hidden="false" collective="false" import="true" targetId="dbd6-65fd-6354-a154" type="selectionEntry">
+            <entryLink id="c040-29dd-6042-3b8d" name="Legio Astorum (Warp Runners)" hidden="false" collective="false" import="true" targetId="dbd6-65fd-6354-a154" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="9ab2-6533-23c4-dde6" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="0bee-465c-7167-a46a" name="Legio Atatus" hidden="false" collective="false" import="true" targetId="bf14-af1e-5d72-7c8b" type="selectionEntry">
+            <entryLink id="0bee-465c-7167-a46a" name="Legio Atatus (Firebrands)" hidden="false" collective="false" import="true" targetId="bf14-af1e-5d72-7c8b" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="4356-bdee-bb43-2d3b" name="LegioAtarus" hidden="false" targetId="cfcc-e5c0-bb0b-db6f" primary="false"/>
               </categoryLinks>
@@ -5184,7 +5269,7 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
                 <categoryLink id="089c-8649-fba5-d798" name="LegioSolaria" hidden="false" targetId="56c0-1162-173d-b052" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="3ee7-4a5c-d0b8-b8eb" name="Legio Crucius" hidden="false" collective="false" import="true" targetId="da6d-e379-1848-8c31" type="selectionEntry">
+            <entryLink id="3ee7-4a5c-d0b8-b8eb" name="Legio Crucius (Warmongers)" hidden="false" collective="false" import="true" targetId="da6d-e379-1848-8c31" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="af11-fcf3-a8ff-2b7e" name="LegioCrucius" hidden="false" targetId="4501-ac6c-5b8c-1b03" primary="false"/>
               </categoryLinks>
@@ -5224,6 +5309,21 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
             <entryLink id="fa1d-ffc7-fbe8-4235" name="Legio Audax (Ember Wolves)" hidden="false" collective="false" import="true" targetId="e9a0-229e-7cfb-4def" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="b238-b6cd-2242-3f59" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="66c8-bfd3-3495-8a80" name="Legio Osedax (The Cockatrices)" hidden="false" collective="false" import="true" targetId="f2ca-fd65-b60e-4dca" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="1290-447e-42c4-6fb8" name="LegioOsedax" hidden="false" targetId="fc8c-656d-ffe8-69b6" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="09da-a1eb-3886-c979" name="Legio Magna (Flaming Skulls)" hidden="false" collective="false" import="true" targetId="3009-299d-5b6d-7a0e" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="e29e-0555-d363-90a4" name="LegioMagna" hidden="false" targetId="4cad-18cf-5711-5331" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="8896-ad3d-822c-b4a4" name="Legio Vulturum (Gore Crows)" hidden="false" collective="false" import="true" targetId="5c80-4c19-098e-4775" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="61f9-4e72-3af2-cf36" name="LegioVulturum" hidden="false" targetId="5a98-05b4-ed38-bbc4" primary="false"/>
               </categoryLinks>
             </entryLink>
           </entryLinks>
@@ -5773,13 +5873,13 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="da6d-e379-1848-8c31" name="Legio Crucius (Warmongers)" publicationId="975a-00f4-pubN89746" page="17" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="da6d-e379-1848-8c31" name="Legio Crucius (Warmongers)" publicationId="2988-f24d-39ef-352e" page="36" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
-        <rule id="0e61-2a1f-1df0-a956" name="Forgeborn" publicationId="975a-00f4-pubN89746" page="17" hidden="false">
-          <description>In the first and second rounds of the game, when a Legio Crucius Titan makes a Repair roll, eithe rin the Damage Control phase or as a result of being issued an Emergecy Repair Order, it may re-roll any dice results of 1.</description>
+        <rule id="0e61-2a1f-1df0-a956" name="Forgeborn" publicationId="2988-f24d-39ef-352e" page="36" hidden="false">
+          <description>In the first and second rounds of the game, when a Legio Crucius Titan makes a Repair roll, either in the Damage Control phase or as a result of being issued an Emergency Repairs order, it may re-roll any dice results of 1.</description>
         </rule>
-        <rule id="5417-3f5e-f95e-a348" name="Pide of Ryza" publicationId="975a-00f4-pubN89746" page="17" hidden="false">
-          <description>Durring the Damage Control phase, or when making Repair rolls as part of an Emergency Repair Order, when a Legio Crucius Titan uses a dice result of a 6 to vent plasma, decrease the Titan&apos;s Reactor level by 2 rather than 1</description>
+        <rule id="5417-3f5e-f95e-a348" name="Pride of Ryza" publicationId="2988-f24d-39ef-352e" page="36" hidden="false">
+          <description>During the Damage Control phase, or when making Repair rolls as part of an Emergency Repairs order, when a Legio Crucius Titan uses a dice result of 6 to Vent Plasma, decrease the Titan’s Reactor level by 2 rather than 1.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -7890,6 +7990,11 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1569-473a-20ca-0868" type="max"/>
       </constraints>
+      <rules>
+        <rule id="9d9a-ce7f-b3e5-f6a4" name="Adaptive Tactics" publicationId="2988-f24d-39ef-352e" page="83" hidden="false">
+          <description>Once per game, at the end of the Damage Control phase, a single Loyalist Titan that has successfully been issued an Order (other than an Emergency Repair order) that round can immediately be issued a different Order (other than Emergency Repair), without the need to make a Command check. This Order replaces any Order previously given. Titans within a Squadron that have been issued Orders via Squadron orders that round can all benefit from this rule, so long as all Titans are issued the new Order.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="f5a6-21b4-9932-495c" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
       </categoryLinks>
@@ -7902,6 +8007,11 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf9-b0c8-f280-b8be" type="max"/>
       </constraints>
+      <rules>
+        <rule id="083d-5e82-a8b4-9d86" name="Unbridled Hatred" publicationId="2988-f24d-39ef-352e" page="84" hidden="false">
+          <description>Once per game, during the Movement phase, a single Traitor Titan can add 2&quot; to both their default and boosted Speed characteristic and add 1 to the Dice value of all weapons with the Melee trait that the Titan is equipped with. This lasts until the end of the round.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="dcbc-8b47-27e8-eaff" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
       </categoryLinks>
@@ -9858,9 +9968,31 @@ is reduced by D3.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="1c7b-4247-5715-1d18" name="=Crucius= Bi-folded Power Containment" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="atLeast"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ee0-6284-c475-0f16" type="max"/>
+      </constraints>
       <rules>
-        <rule id="e185-e37d-8ed8-63d9" name="Bi-folded Power Containment" publicationId="975a-00f4-pubN89746" page="17" hidden="false">
-          <description>Any Legio Crucius Titan my be equipped with a bi-folded pawer containment system for +30 points.  When firing a weapon with the Draining trait (see page 39 of the Adeptus Titanicus rulebook) A Titan equipped with a bi-folded power containment system can roll a D6 to mitigate its effect.  On a 4+, the Titan can roll the Reactor dice twice and choose the result they want.  On a 1 however, they must roll the reactor dice twice and choose the result that would advance their Reactor marker by the most or, if both results would advance it by the same amount, the result that would awaken the machine Spirit.</description>
+        <rule id="e185-e37d-8ed8-63d9" name="Bi-folded Power Containment" publicationId="2988-f24d-39ef-352e" page="36" hidden="false">
+          <description>Any Legio Crucius Titan may be equipped with a Bi-folded Power Containment system for +30 points. When firing a weapon with the Draining trait (see the Adeptus Titanicus rulebook), a Titan equipped with a Bi-folded Power Containment system can roll a D6 to mitigate its effect. On a 4+, the Titan can roll the Reactor dice twice and choose the result they want. On a 1, however, they must roll the Reactor dice twice and choose the result that would advance their Reactor marker by the most or, if both results would advance it by the same amount, the result that would Awaken the Machine Spirit.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -9872,10 +10004,32 @@ is reduced by D3.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d169-c82c-a137-bb35" name="=Crucius= Terminus Override Mechanisms" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d169-c82c-a137-bb35" name="=Crucius= Terminus Override Mechanisms" publicationId="2988-f24d-39ef-352e" page="36" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="atLeast"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1efd-3308-5b47-84cd" type="max"/>
+      </constraints>
       <rules>
-        <rule id="fe76-9ecd-5abb-5e2c" name="Terminus Override Mechanisms" publicationId="975a-00f4-pubN89746" page="17" hidden="false">
-          <description>Any Legio Crucius Titan may be equipped with a terminus overridemechanism for +30 points.  The first time a Legio Crucius Titan with terminus override mechaism would be required to roll on the Reactor Overload table (see page 43 of the Adpetus Titanicus rulebook), instead of rolling, give the Titan a Shutdown order instead.  Once triggered in this manner, a terminus override mechasim has no further effect on the game.</description>
+        <rule id="fe76-9ecd-5abb-5e2c" name="Terminus Override Mechanisms" publicationId="2988-f24d-39ef-352e" page="36" hidden="false">
+          <description>Any Legio Crucius Titan may be equipped with a Terminus Override Mechanism for +30 points. The first time a Legio Crucius Titan with a Terminus Override Mechanism would be required to roll on the Reactor Overload table (see the Adeptus Titanicus rulebook), instead of rolling, give the Titan a Shutdown order instead. Once triggered in this manner, a Terminus Override Mechanism has no further effect on the game.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -10689,8 +10843,30 @@ is reduced by D3.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="f8aa-6108-4447-0e90" name="=Mortis= Remains of the Fallen" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="atLeast"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a06c-86bf-4269-41b3" type="max"/>
+      </constraints>
       <rules>
-        <rule id="f1ca-7438-e47a-6e56" name="Remains of the Fallen" hidden="false">
+        <rule id="f1ca-7438-e47a-6e56" name="Remains of the Fallen" publicationId="975a-00f4-pubN87630" page="39" hidden="false">
           <description>Any Legio Mortis Titan may be upgraded to have Remains of the Fallen for +20 points. Enemy units within 8&quot; of a Titan with this upgrade must increase their Command characteristic by 1 to a maximum of 10.</description>
         </rule>
       </rules>
@@ -10704,9 +10880,31 @@ is reduced by D3.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f5a-dccf-63ea-17ba" name="=Mortis= The Warmaster&apos;s Beneficence" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="atLeast"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2197-e5be-b183-3068" type="max"/>
+      </constraints>
       <rules>
-        <rule id="f0d8-d46c-f7c1-248e" name="The Warmaster&apos;s Beneficence" hidden="false">
-          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster&apos;s Beneficence for +20 points. The first time a Titan with this upgrade fire, it adds 1 to the strength of any of its bolter or missile weapons, and may ignore the effects of the Draining trait. </description>
+        <rule id="f0d8-d46c-f7c1-248e" name="The Warmaster&apos;s Beneficence" publicationId="2988-f24d-39ef-352e" page="46" hidden="false">
+          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +20 points. Until the end of the phase in which a Titan with this upgrade first makes an attack during a battle, it adds 1 to the Strength of any of its bolter or missile weapons, and may ignore the effects of the Draining trait.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -12619,13 +12817,20 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4699-f903-0c50-1e80" name="=Mortis= March of the Dead" publicationId="975a-00f4-pubN87630" page="39" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="4699-f903-0c50-1e80" name="=Mortis= March of the Dead" publicationId="975a-00f4-pubN87630" page="39" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f88f-e42d-38f7-bfa7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8baa-1931-3688-54f6" type="max"/>
       </constraints>
       <rules>
-        <rule id="965d-3824-b77e-e387" name="March of the Dead" publicationId="975a-00f4-pubN87630" page="39" hidden="false">
-          <description>Play this Strategem int he Strategy phase of the first round. The Legio Mortis player may immediately moce each of their Titans just as i it was the Movement phase. This special movement cannot be boosted. If the player uses this Strategem, their opponent automatically becomes the First Player for the remainder of the first game round.</description>
+        <rule id="965d-3824-b77e-e387" name="March of the Dead" publicationId="2988-f24d-39ef-352e" page="46" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Mortis player. Play this Stratagem in the Strategy phase of the first round. The Legio Mortis player may immediately move each of their Titans just as if it was the Movement phase. This special movement cannot be boosted. If the player uses this Stratagem, their opponent automatically becomes the First Player for the remainder of the first game round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -12796,6 +13001,720 @@ When the Titan arrives, it may be placed anywhere on the battlefield that is 1&q
       <categoryLinks>
         <categoryLink id="9815-dfb5-41aa-8894" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
         <categoryLink id="ad36-7885-ea62-752d" name="LegioVulcanum" hidden="false" targetId="4225-27f8-9c8b-e56e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f2ca-fd65-b60e-4dca" name="Legio Osedax (The Cockatrices)" publicationId="2988-f24d-39ef-352e" page="32" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="fcce-439f-0bdc-2577" name="Reforged in War" publicationId="2988-f24d-39ef-352e" page="32" hidden="false">
+          <description>Legio Osedax Titans never suffer penalties to Command checks and may ignore effects that force them to re-roll successful Command checks.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="54bf-0cd9-3cc4-126a" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="7c20-0979-20b6-84f1" name="LegioOsedax" hidden="false" targetId="fc8c-656d-ffe8-69b6" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="99e9-5b47-5d7a-f6f7" name="=Osedax= Blood Begets Blood" publicationId="2988-f24d-39ef-352e" page="32" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02fe-8da6-6ac0-77cc" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="297e-3a6a-6c0e-6d96" name="Blood Begets Blood" publicationId="2988-f24d-39ef-352e" page="32" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Osedax player. Play this Stratagem when a friendly Legio Osedax Titan suffers Catastrophic Damage. After resolving the effects of the Catastrophic Damage, every friendly Legio Osedax Titan may immediately make a single weapon attack. This attack must be made against the closest visible enemy unit. Increase the Plasma Reactor level of any Titan that makes an attack in this way by 2, in addition to any other advances associated with weapon fire.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="fe83-7faa-3442-224a" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="3326-0fa1-ba65-553a" name="LegioOsedax" hidden="false" targetId="fc8c-656d-ffe8-69b6" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2807-7c6c-a62b-6732" name="=Osedax= Relentless March" publicationId="2988-f24d-39ef-352e" page="32" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcb6-5ea6-f5ce-8ef3" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="646d-c2fb-d70c-4cd5" name="Relentless March" publicationId="2988-f24d-39ef-352e" page="32" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Osedax player. Play this Stratagem during any Strategy phase. For the remainder of the round, friendly Legio Osedax Titans may be issued Full Stride orders without the need to make a Command check and are not affected by Difficult terrain and Dangerous terrain.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d325-818a-7ede-ffbf" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="4216-3faf-8577-1be8" name="LegioOsedax" hidden="false" targetId="fc8c-656d-ffe8-69b6" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eb8b-95ca-bf92-b3f9" name="=Osedax= Plasma Channels" publicationId="2988-f24d-39ef-352e" page="32" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="atLeast"/>
+                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cbd-9e24-e114-a34c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="b4ed-efcb-7d7a-9d08" name="Plasma Channels" publicationId="2988-f24d-39ef-352e" page="32" hidden="false">
+          <description>Any Legio Osedax Titan may be equipped with Plasma Channels for +20 points. Once per game, during the Movement phase, a Titan equipped with Plasma Channels can activate them. If they do so, decrease the Reactor Level of that Titan by D3+1. This counts as the Titan’s activation for that phase.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6727-f2da-033d-69c3" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="2399-d97b-c53e-d3d5" name="LegioOsedax" hidden="false" targetId="fc8c-656d-ffe8-69b6" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3009-299d-5b6d-7a0e" name="Legio Magna (Flaming Skulls)" publicationId="2988-f24d-39ef-352e" page="38" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="3833-32f9-04d3-0557" name="Howls of the Damned" publicationId="2988-f24d-39ef-352e" page="38" hidden="false">
+          <description>Subtract 1 from the result of all Command checks made by Titans within 8&quot; of a Legio Magna Titan. In addition, Titans within 8&quot; of a Legio Magna Titan can never re-roll failed Command checks. Legio Magna Titans are not affected by this Legio Trait.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0736-61b9-1d54-af67" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="8e8f-cc66-152d-2153" name="LegioMagna" hidden="false" targetId="4cad-18cf-5711-5331" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cd33-541d-dc04-9ee4" name="=Magna= Battle Fervour" publicationId="2988-f24d-39ef-352e" page="38" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3009-299d-5b6d-7a0e" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f758-7549-f1f2-d7e7" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="1b83-e3ad-a51d-84ed" name="Battle Fervour" publicationId="2988-f24d-39ef-352e" page="38" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Magna player. Play this Stratagem during any Strategy phase. For the remainder of the phase, friendly Legio Magna Titans may be issued Charge orders without the need to make a Command check. In addition, for the remainder of the round, friendly Legio Magna Titans may re-roll Hit rolls of a 1 for attacks made with a weapon with the Melee trait.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="bd9f-2533-d447-7b13" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="6b3e-2681-9679-2150" name="LegioMagna" hidden="false" targetId="4cad-18cf-5711-5331" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a0e1-b0c5-c4a3-ac4e" name="=Magna= Spearhead Assault" publicationId="2988-f24d-39ef-352e" page="38" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3009-299d-5b6d-7a0e" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d10-aad8-a788-ac37" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="f866-ed34-3e29-8ecb" name="Spearhead Assault" publicationId="2988-f24d-39ef-352e" page="38" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Magna player. Play this Stratagem during any Strategy phase. For the remainder of the round, friendly Legio Magna Titans add 1 to all Hit rolls and Armour rolls made as a result of an attack against a target within 8&quot; of the attacking Titan, in addition to any other modifiers. However, enemy Titans add 1 to all Armour rolls made as a result of an attack against a Legio Magna Titan originating from its Side or Rear arc, in addition to any other modifiers.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="aa1a-da5b-1daa-946e" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="1514-ed0c-b3fb-5206" name="LegioMagna" hidden="false" targetId="4cad-18cf-5711-5331" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f84-f656-4fde-4bd6" name="=Magna= Directed Pressure Outlet" publicationId="2988-f24d-39ef-352e" page="38" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3009-299d-5b6d-7a0e" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c96-92ba-b07c-d53c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="47ad-2879-2551-f015" name="Directed Pressure Outlet" publicationId="2988-f24d-39ef-352e" page="38" hidden="false">
+          <description>Any Legio Magna Titan armed with a weapon with the Melta trait may be equipped with a Directed Pressure Outlet for +20 points. Each Melta weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3035-0815-56cd-152f" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="5348-c078-f694-802e" name="LegioMagna" hidden="false" targetId="4cad-18cf-5711-5331" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5c80-4c19-098e-4775" name="Legio Vulturum (Gore Crows)" publicationId="2988-f24d-39ef-352e" page="42" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="7d1b-6216-c577-b26e" name="Relentless Killers" publicationId="2988-f24d-39ef-352e" page="42" hidden="false">
+          <description>During the Combat phase, friendly Legio Vulturum Titans add 1 to all Hit rolls if, during the same round, an enemy Titan has suffered Catastrophic Damage, regardless of the source.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2479-0b49-6d35-5c4e" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="1cad-37ed-9b32-68ab" name="LegioVulturum" hidden="false" targetId="5a98-05b4-ed38-bbc4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f805-d25f-6ece-e62a" name="=Vulturum= Cull the Weak" publicationId="2988-f24d-39ef-352e" page="42" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9953-2eb8-288f-b6b7" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="0721-c717-b09c-7dd3" name="Cull the Weak" publicationId="2988-f24d-39ef-352e" page="42" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Vulturum player. Play this Stratagem when an enemy Titan moves outside of its Front arc (see Sidestepping and Backing Up in the Adeptus Titanicus rulebook), whether voluntarily or involuntarily. A friendly Legio Vulturum Titan can immediately make an attack with one of their weapon systems against that target, increasing its Reactor Level by 1 to do so. For all intents and purposes, this is a new attack requiring an Attack roll, any additional increases to the Titan’s reactor level, etc.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f835-6ea6-cfc2-e53f" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="1676-30e0-23f4-9de5" name="LegioVulturum" hidden="false" targetId="5a98-05b4-ed38-bbc4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0942-9568-cbd3-aec6" name="=Vulturum= Scent of Blood" publicationId="2988-f24d-39ef-352e" page="42" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4bb-4f78-260b-bbb9" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="dfd5-ee89-bb4b-2319" name="Scent of Blood" publicationId="2988-f24d-39ef-352e" page="42" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Vulturum player. Play this Stratagem when an enemy Titan suffers Critical Damage in the Combat phase as a result of damage from an attack made by a friendly Legio Vulturum Titan. After the attacking Titan’s activation has ended, you can immediately activate another friendly Legio Vulturum Titan that hasn’t yet been activated this Combat phase, increasing the chosen Titan’s reactor level by 2 to do so. This counts as that Titan’s activation this Combat phase.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="631f-2527-dcad-5bf3" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="e565-8cf9-8f0e-3e66" name="LegioVulturum" hidden="false" targetId="5a98-05b4-ed38-bbc4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4b31-816a-2c3d-cb9d" name="=Vulturum= Storm Frag Shells" publicationId="2988-f24d-39ef-352e" page="42" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8fc-2696-ade9-039e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="1920-b72e-b265-c21b" name="Storm Frag Shells" publicationId="2988-f24d-39ef-352e" page="42" hidden="false">
+          <description>Any Legio Vulturum Titan that is equipped with a vulcan mega-bolter or vulcan mega-bolter array can be upgraded with Storm Frag shells at a cost of +25 points for a vulcan megabolter and +45 points for a vulcan mega-bolter array. Each weapon a Titan is armed with must be upgraded separately. A weapon with this upgrade gains the Maximal Fire trait and increases the negative Acc modifier for the weapon’s Long range by 1 (i.e., a 0 becomes a -1, a -1 becomes a -2).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c25f-d0f7-ac30-772a" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="1e9b-4e31-4421-c3a2" name="LegioVulturum" hidden="false" targetId="5a98-05b4-ed38-bbc4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd1f-e255-c7bd-442b" name="Perpetua Battleline Maniple" publicationId="2988-f24d-39ef-352e" page="50" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="3b77-6274-420c-4319" name="Stand Firm" publicationId="2988-f24d-39ef-352e" page="50" hidden="false">
+          <description>When issuing an Emergency Repairs order to Titans from this maniple, the Command check will always succeed on a roll of 2+, regardless of modifiers. In addition, during the Damage Control phase, Titans from this maniple roll an additional Repair dice if they have not moved yet this round (voluntarily or involuntarily).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c0a0-a8b2-5ccc-f853" name="New CategoryLink" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9b55-2f2e-0071-cf51" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6da-a480-bf2e-2edd" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c81-fb62-23e4-76f9" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e4a4-6db7-a219-312a" name="=Gryphonicus= Warlord replacement Reaver" hidden="false" collective="false" import="true" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="114b-4d67-ad6c-5f3d" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f995-fd67-7bdd-e4f0" type="min"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="aa98-7b96-b7cf-3cb6" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false" targetId="dd70-1324-743e-7dfe" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6222-235f-9835-8d12" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="167c-6a89-dc59-6767" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c2d-787c-08a8-1612" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6bc0-66ae-032b-448a" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
+              <modifiers>
+                <modifier type="decrement" field="e28f-47ce-7c9c-e45a" value="1.0"/>
+                <modifier type="decrement" field="10e3-d657-4ea1-db2f" value="1.0"/>
+                <modifier type="set" field="hidden" value="true"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e28f-47ce-7c9c-e45a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e3-d657-4ea1-db2f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c8f7-588c-d32c-51ec" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeb5-826c-2be3-7ffb" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="079a-2edc-cbc9-fb63" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9d50-e86f-4613-3e07" name="Extergimus Battleline Maniple" publicationId="2988-f24d-39ef-352e" page="51" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="5ae5-4b4b-d4ce-5a30" name="Scorched Earth" publicationId="2988-f24d-39ef-352e" page="51" hidden="false">
+          <description>During the Combat phase, when a Titan from this maniple makes an attack with a weapon without the Melee trait, it may increase the Strength value of the weapon by 2 for the duration of the attack. This must be declared before rolling to Hit. If it does so, increase the Titan’s Reactor level by 1 (or 2 if the weapon has a Dice value of 5 or greater), in addition to any other advances associated with weapon fire.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e087-0bce-37de-cff7" name="New CategoryLink" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4318-a74c-b496-8902" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f92-5103-2640-a23d" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd1e-d1ce-63cf-7d47" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="072c-59f3-9173-4047" name="=Gryphonicus= Warlord replacement Reaver" hidden="false" collective="false" import="true" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03f3-c90f-c77c-332d" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="442f-ed08-3b68-b461" type="min"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="a7e0-61ed-7d2b-a419" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false" targetId="dd70-1324-743e-7dfe" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a70c-0891-bbb2-0c0d" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fe5-618e-970a-9049" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0855-232e-6cd3-05a2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fc56-35c1-3e51-cc81" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="fed8-b66a-4f3c-c863" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fed8-b66a-4f3c-c863" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fac-1855-976e-8b33" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1210-246a-0686-6e7c" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bdc-ca5c-ae75-5b1c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e79e-ea17-2ea0-9992" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7fa2-9af4-1b60-8a28" name="Firmus Light Maniple" publicationId="2988-f24d-39ef-352e" page="52" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="3a97-59a1-c3d4-5353" name="Defensive Engagement" publicationId="2988-f24d-39ef-352e" page="52" hidden="false">
+          <description>When a Titan within a Firmus Light Maniple is chosen as the target of an attack, the controlling player may nominate a different Titan from this maniple to be the target instead. The nominated Titan must be closer to the attacking unit than the original target, and must be at least 50% visible to the attacking unit. If the attacking unit wishes to, they may make a Command check. If they pass, they may attack their original target. If they fail, they must target the nominated Titan, and can only attack the nominated Titan that round even if they could normally attack more than one unit.
+
+A unit can only be forced to take this check once per round, i.e., if they pass, they can target units as normal and are unaffected by this ability for the remainder of the round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d2ed-4c16-f792-b0c3" name="New CategoryLink" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9de5-0528-69f6-c719" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b004-4aa4-602a-171e" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74fa-c22a-41c4-3a8f" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="347e-4272-f795-999c" name="=Gryphonicus= Warhound replacement Reaver" hidden="false" collective="false" import="true" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1113-b711-c880-4d36" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f1e-65cd-ea39-6f0d" type="min"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="c3d7-e523-a24f-91e4" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="eb2a-0169-6eb0-e0cd" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b7e-4168-1db5-64c2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a87-e91f-da3a-4f7f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4f57-1c05-ef91-4322" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68d8-bb12-3a46-32ad" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fc1-f430-7854-6e63" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b22b-b7c2-6ded-3736" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="1eb0-8515-9f97-8f1a" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eb0-8515-9f97-8f1a" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bb3-7b3b-ed32-c8f7" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e8cc-e33c-46ed-058d" name="Blackshield" publicationId="2988-f24d-39ef-352e" page="85" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0ed5-95eb-8f14-4a05" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="9208-a667-72ad-5043" name="Decentralised Command" publicationId="2988-f24d-39ef-352e" page="85" hidden="false">
+          <description>Once per game, when a Blackshield Titan fails a Command check when being issued Orders, Blackshield Titans not part of a maniple may still be issued Orders.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d43d-d488-dbfc-d558" name="New CategoryLink" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1904-0d73-fd65-ff15" name="Homing Warheads" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e715-7f20-6fd4-885d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="1450-d517-7d5b-aa1a" name="Homing Warheads" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans armed with an Apocalypse missile launcher or paired Apocalypse missile launchers, so long as that Titan does not already have an upgrade affecting that weapon. Subtract 3 from the Dice Value of the weapon (to a minimum of 1). For the remainder of the game, attacks with that weapon do not suffer negative modifiers when attacking an obscured target or when attacking a target out of line of sight via the Barrage trait.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="cce6-c61c-8964-42d1" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="3ecb-2179-0d89-fec7" name="Experimental Warfare" hidden="false" targetId="86f0-9cae-9ece-4b64" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0f18-d5cf-2e7e-2fe7" name="Enhanced Coolant" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9b4-0f94-920d-e2f8" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="f76b-09cd-3179-412e" name="Enhanced Coolant" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+          <description>Play this Stratagem during any Strategy phase. The player chooses one of their Titans; for the remainder of the game, roll a D6 each time that Titan would increase its Reactor level. On a 5+, increase the Reactor level by one less hole than normal, to a minimum of zero holes (e.g., if two symbols were rolled on the Reactor dice, a 5+ would increase the Reactor level by one, not two). If an effect results in multiple increases, such as rolling multiple 1s while using the Maximal Fire trait, roll individually for each increase.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d22a-ef13-e901-f0c4" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="14e0-253d-6d6d-6eba" name="Experimental Warfare" hidden="false" targetId="86f0-9cae-9ece-4b64" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bc92-e509-916e-4e39" name="Redundant Systems" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16fe-0c69-19a8-2c7a" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="568a-e234-41b8-3f88" name="Redundant Systems" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+          <description>Play this Stratagem in any Strategy phase. The player chooses one of their Titans; the first time Critical Damage is suffered by that Titan it is ignored – do not move the marker up the tracker. Any other effect, such as loss of Structure points, still occurs. If a Titan is forced to move the Critical Damage marker more than once for an attack, move it one fewer space. Then, discard this Stratagem.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="9d77-bbe9-7e89-8e16" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="538e-4477-7cc3-0c6a" name="Experimental Warfare" hidden="false" targetId="86f0-9cae-9ece-4b64" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="689b-0672-ff8e-6eab" name="Experimental Locomotors" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e170-db8c-97e8-d9b0" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="435c-1365-b315-c51e" name="Experimental Locomotors" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans; for the remainder of the battle the Titan may use its boosted Speed characteristic without pushing its reactor. During every End phase roll a D10 for this Titan. On a 1, the Titan suffers a Devastating Hit to its Legs and this Stratagem is discarded.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="7d7d-40d6-2258-5587" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="d9bf-30c7-a8a9-b374" name="Experimental Warfare" hidden="false" targetId="86f0-9cae-9ece-4b64" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b042-847a-2bf2-9266" name="Override Signal" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6f3-f239-8914-aca8" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="b490-d581-64f3-d05a" name="Override Signal" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+          <description>Play this Stratagem when a Titan (friend or foe) within 12&quot; of a friendly Titan suffers Catastrophic Damage, before rolling on the Catastrophic Damage table. When rolling on the Catastrophic Damage table for the chosen Titan, add 4 to the result.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="bb38-57c3-c932-2306" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="35c8-1bb9-399d-015e" name="Experimental Warfare" hidden="false" targetId="86f0-9cae-9ece-4b64" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5bf8-0983-e8e3-bdf8" name="Dusk Attack" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a87f-a93e-5f04-f53a" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="d218-9f34-fb70-0322" name="Dusk Attack" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. During the End phase of Turn 3, the First Player must roll (D6+1)x5 to determine how many inches every unit on the battlefield can see for the remainder of the battle – only enemies within this range can be targeted by an attack. Units that have made an attack with a weapon without the Melee Trait previously in a round can be targeted, regardless of the distance a unit can see.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="70d2-07d1-5f49-c2ea" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="7b90-2438-daac-83ce" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2cfc-dc41-7148-0a77" name="False Intel" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3b4-5949-a145-e654" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="0ed3-a314-17c1-9a31" name="False Intel" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+          <description>Play this Stratagem after all objectives have been deployed. Pick any objective on the battlefield. Move that objective D6&quot; in any direction – this can take it outside its normal deployment area. The objective cannot be moved off the board, nor can it overlap with a piece of Blocking terrain.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="39e3-c34c-bf6a-76ee" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="d482-96fa-2025-9d8d" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47d7-d3dc-14f4-bf68" name="Reactor Surge" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4512-7867-86f4-6194" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="b5ed-557a-15f3-8604" name="Reactor Surge" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+          <description>Play this Stratagem when activating a Titan in the Combat phase. If the chosen Titan has a Shield level of X, this Stratagem is immediately discarded. Otherwise, increase the Titan’s Reactor Status level by any number of holes – you cannot voluntarily advance it further than the end of the Status tracker. For each hole the marker is moved along the Reactor Status level, repair the Titan’s Void Shield level by 1. This counts as the Titan’s activation for this round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="cf8b-ce5b-f040-553f" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="4d51-ed64-e194-86e5" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e450-d58f-c711-7be7" name="Partial Shutdown" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad6b-b185-f229-fbbc" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="f43d-03c1-904c-5bca" name="Partial Shutdown" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+          <description>Play this Stratagem at the start of any Movement phase. Choose a friendly Titan to initiate Partial Shutdown. The chosen Titan is immediately issued Shutdown orders, replacing any Order previously given. The void shields of a Titan that has initiated a Partial Shutdown do not collapse. In addition, a Titan issued Shutdown orders as part of the Partial Shutdown Stratagem reduces its Reactor level by 1 instead of 2 during the Damage Control phase and Reactor rolls can be made for the Titan if forced to do so. Barring these exceptions, a Partially Shutdown Titan follows all other normal rules for the Shutdown order as described in the Adeptus Titanicus rulebook.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="af85-9771-47b0-26b4" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="0d88-eadb-e48f-955e" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5fe5-58cd-143f-df0e" name="Tactical Assessment" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ec7-52da-ce88-6d76" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="a7bc-e89e-a030-cefc" name="Tactical Assessment" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+          <description>Play this at the end of the deployment phase, before rolling to see who is the First Player. The player may immediately discard their current objective and determine a new one by rolling two D6 on the Mission Objective table as described in the Adeptus Titanicus rulebook.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e09e-949a-9dce-196c" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="ffad-bc55-51fd-ab96" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a6f0-9aff-9834-89c7" name="Last Ditch Effort" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ce-fa94-8413-3107" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e2a8-7313-5620-c525" name="Last Ditch Effort" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+          <description>Play this Stratagem when a friendly Titan falls due to the Laid Low or Wild Fire Catastrophic Damage effect. The controlling player may choose the direction the Titan falls, rather than determining it by rolling a Scatter dice. If, for whatever reason, both players are allowed to choose the direction the Titan falls, randomly determine the direction as normal and discard this Stratagem.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a665-1904-1926-1646" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="ad61-ff0e-0069-a24c" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -12989,32 +13908,8 @@ When the Titan arrives, it may be placed anywhere on the battlefield that is 1&q
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33e5-a40c-3e62-acd3" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="953c-dcfa-224e-58fd" name="=Crucius= Terminus Override Mechanisms" hidden="true" collective="false" import="true" targetId="d169-c82c-a137-bb35" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4501-ac6c-5b8c-1b03" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb48-164d-810a-c0a7" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b73-daf3-0337-484f" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="a6b9-74a0-12c3-4ab9" name="=Crucius= Bi-folded Power Containment" hidden="true" collective="false" import="true" targetId="1c7b-4247-5715-1d18" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4501-ac6c-5b8c-1b03" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88a6-9151-d588-7b1a" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba89-617c-4c13-df06" type="min"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="953c-dcfa-224e-58fd" name="=Crucius= Terminus Override Mechanisms" hidden="true" collective="false" import="true" targetId="d169-c82c-a137-bb35" type="selectionEntry"/>
+        <entryLink id="a6b9-74a0-12c3-4ab9" name="=Crucius= Bi-folded Power Containment" hidden="true" collective="false" import="true" targetId="1c7b-4247-5715-1d18" type="selectionEntry"/>
         <entryLink id="57d8-eb61-62ff-370a" name="=Vulvcanum= Twinned Machine Spirits" hidden="true" collective="false" import="true" targetId="f9a9-0ee9-960e-960b" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -13139,32 +14034,8 @@ When the Titan arrives, it may be placed anywhere on the battlefield that is 1&q
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a49-7701-43f8-948d" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="2292-032b-7b1a-5570" name="=Mortis= Remains of the Fallen" hidden="false" collective="false" import="true" targetId="f8aa-6108-4447-0e90" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f88f-e42d-38f7-bfa7" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09c3-f7ba-7263-a371" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04ab-cddc-ccaf-f704" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="6d89-f6d5-b0ab-86d9" name="=Mortis= The Warmaster&apos;s Beneficence" hidden="false" collective="false" import="true" targetId="2f5a-dccf-63ea-17ba" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f88f-e42d-38f7-bfa7" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56cf-2913-00cc-9bf9" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2112-818d-80ed-0808" type="min"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="2292-032b-7b1a-5570" name="=Mortis= Remains of the Fallen" hidden="false" collective="false" import="true" targetId="f8aa-6108-4447-0e90" type="selectionEntry"/>
+        <entryLink id="6d89-f6d5-b0ab-86d9" name="=Mortis= The Warmaster&apos;s Beneficence" hidden="false" collective="false" import="true" targetId="2f5a-dccf-63ea-17ba" type="selectionEntry"/>
         <entryLink id="f302-c072-c072-82ea" name="=Vulpa= Disruption Emitters" hidden="false" collective="false" import="true" targetId="ac1f-504e-5a1c-6a95" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -13283,6 +14154,7 @@ When the Titan arrives, it may be placed anywhere on the battlefield that is 1&q
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dbd-fe5b-1bc0-1862" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="ecde-54c8-cd51-7c3b" name="=Osedax= Plasma Channels" hidden="false" collective="false" import="true" targetId="eb8b-95ca-bf92-b3f9" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="e060-52c1-1d31-a331" name="Acastus Hull Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c750-04b1-5a96-6e07">
