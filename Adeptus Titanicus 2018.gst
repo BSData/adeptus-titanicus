@@ -136,7 +136,7 @@ If a Blast weapon has a Dice value of 2 or more, make each Hit roll separately (
     </categoryEntry>
     <categoryEntry id="a421-ff94-44cf-2eb8" name="Rapid" hidden="false">
       <rules>
-        <rule id="6d36-18ba-c400-471c" name="Rapid" hidden="false">
+        <rule id="6d36-18ba-c400-471c" name="Rapid" publicationId="975a-00f4-pubN65537" hidden="false">
           <description>Rapid weapons spit an overpowering stream of shots, saturating the target with weapons fire. For each Hit roll of 6 when attacking with a Rapid weapon, it causes 2 hits rather than 1.
 
 If a roll of 6 To Hit was required, this rule has no effect.</description>
