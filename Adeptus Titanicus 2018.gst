@@ -67,14 +67,14 @@
   <categoryEntries>
     <categoryEntry id="33e1-d3ed-4420-3e22" name="Carapace" hidden="false">
       <rules>
-        <rule id="aa52-c7ee-35dc-777b" name="Carapace" hidden="false">
+        <rule id="aa52-c7ee-35dc-777b" name="Carapace" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
           <description>Some Titans carry weapons high up on their carapace usually long range support weapons with the firepower to level a hab-block in moments. Carapace weapons cannot target units that are within a number of inches equal to the firing unit’s Scale, unless the target is at least the same Scale as the attacker. For example, a Reaver (Scale 8) cannot attack units within 8&quot; with its carapace weapon, unless the target unit is of at least Scale 8.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="5ad8-0ca8-4bb7-83b6" name="Ordnance" hidden="false">
       <rules>
-        <rule id="2be6-663d-d95b-9992" name="Ordnance" hidden="false">
+        <rule id="2be6-663d-d95b-9992" name="Ordnance" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Ordnance weapons fire high calibre explosive shells which can cause significant damage to an unshielded target. When attacking with an Ordnance weapon, Armour rolls of 1 can be re-rolled.</description>
         </rule>
       </rules>
@@ -88,14 +88,14 @@
     </categoryEntry>
     <categoryEntry id="4739-6f52-a293-aa06" name="Melee" hidden="false">
       <rules>
-        <rule id="6d19-7595-2da7-b52a" name="Melee" hidden="false">
+        <rule id="6d19-7595-2da7-b52a" name="Melee" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Titans are sometimes fitted with massive claws, fists or chainblades, allowing the Princeps to take matters into their own hands at close quarters. When attacking with a Melee weapon, the controlling player can always choose the target location (as though they were making a Targeted Attack, but without the To Hit modifier).</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="a8cf-34fb-66af-763c" name="Blast (X)" hidden="false">
       <rules>
-        <rule id="e6cb-1739-3d22-76d9" name="Blast (X)" publicationId="975a-00f4-pubN65537" hidden="false">
+        <rule id="e6cb-1739-3d22-76d9" name="Blast (X)" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
           <description>Before rolling To Hit with a Blast weapon, place the 3&quot; Blast marker or 5&quot; Blast marker (determined by the number in brackets) so that its central hole is completely over the target model’s base and within line of sight of the attacking weapon, and no part of the marker is touching any friendly models. Then, check to see whether the central hole is within range and arc. If it is not within arc, the shot is wasted and has no effect. If it is not within range, do not roll To Hit. Instead, draw an imaginary 1&quot; wide line between the chosen target and the attacking unit, placing the central hole of the Blast marker along this line a number of inches away from the attacking unit equal to the weapon’s Long range characteristic – each shot scatters as follows:
 
 Once the marker has been placed, roll To Hit as normal. If the roll is successful, the marker is not moved; otherwise, roll the Scatter dice and move the Blast marker D10&quot; in the direction that is shown - if a Hit is rolled, use the small arrow to determine the direction of scatter. Note that the Blast marker can scatter out of the Titan’s line of sight, or out of the weapon’s range or arc this represents the shot ricocheting or blasting clear through intervening terrain. The centre of the firing Titan’s base should still be used as a reference point to determine which of the target’s arcs is hit.
@@ -108,35 +108,35 @@ If a Blast weapon has a Dice value of 2 or more, make each Hit roll separately (
     </categoryEntry>
     <categoryEntry id="27c5-bdc6-5cc3-ec66" name="Quake" hidden="false">
       <rules>
-        <rule id="0991-274d-8c53-e57b" name="Quake" hidden="false">
+        <rule id="0991-274d-8c53-e57b" name="Quake" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description> Quake weapons strike their target with such force that the very ground ruptures and shakes. If a unit is hit by a Quake cannon and the hit is not deflected by its shields, it is caught in the seismic blastwave. Until the end of the following Movement phase, the target’s default and boosted Speed values are halved (rounding down).</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="b8e5-fe94-7842-e1b4" name="Paired" hidden="false">
       <rules>
-        <rule id="d893-6e8f-dc10-0f75" name="Paired" hidden="false">
+        <rule id="d893-6e8f-dc10-0f75" name="Paired" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Sometimes, a Titan will carry a pair of weapons, slaved to fire together at the same target. Check the line of sight from each of the weapons separately; if only one has line of sight, the weapon’s Dice value is halved. If the target is obscured from the point of view of only one weapon (see page 33), half of the dice rolled suffer the To Hit modifier for an obscured target.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="87c1-d39e-fbdf-1ae7" name="Shieldbane" hidden="false">
       <rules>
-        <rule id="ceca-05e5-c98b-fd59" name="Shieldbane" hidden="false">
+        <rule id="ceca-05e5-c98b-fd59" name="Shieldbane" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>These weapons are capable of tearing clean through even the largest void shields. Any Shield saves made against Shieldbane weapons have a -1 modifier.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="8ab9-d312-06e4-8ba0" name="Draining" hidden="false">
       <rules>
-        <rule id="b8dd-e91b-501f-2666" name="Draining" publicationId="975a-00f4-pubN65537" hidden="false">
+        <rule id="b8dd-e91b-501f-2666" name="Draining" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Draining weapons put a great strain on the plasma reactor of the Titan that fires them. Before attacking with a Draining weapon, the Titan’s reactor must be pushed. A unit that does not have a plasma reactor cannot use a Draining weapon. Some weapons have (Draining) after another trait - this means that they do not have the trait by default, but if they push the plasma reactor before attacking with the weapon, it gains that trait for the duration of the attack.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="a421-ff94-44cf-2eb8" name="Rapid" hidden="false">
       <rules>
-        <rule id="6d36-18ba-c400-471c" name="Rapid" hidden="false">
+        <rule id="6d36-18ba-c400-471c" name="Rapid" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Rapid weapons spit an overpowering stream of shots, saturating the target with weapons fire. For each Hit roll of 6 when attacking with a Rapid weapon, it causes 2 hits rather than 1.
 
 If a roll of 6 To Hit was required, this rule has no effect.</description>
@@ -145,21 +145,21 @@ If a roll of 6 To Hit was required, this rule has no effect.</description>
     </categoryEntry>
     <categoryEntry id="12b5-203d-86d9-3e60" name="Maximal Fire" hidden="false">
       <rules>
-        <rule id="7e30-21e6-4b3d-351a" name="Maximal Fire" hidden="false">
+        <rule id="7e30-21e6-4b3d-351a" name="Maximal Fire" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Some weapons, especially those such as plasma weaponry, can draw additional power from the Titan’s reactor to increase their destructive potential. Before making a Hit roll with a weapon with this trait, the controlling player can declare that it will fire on Maximal Fire mode. If they do so, the weapon’s Strength is increased by 2. However, for each Hit roll of a 1 (before any modifiers or re-rolls), increase the Titan’s Reactor level by 1.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="511f-4690-c2b7-9996" name="Rending" hidden="false">
       <rules>
-        <rule id="fdf6-16fa-e6d0-e2a6" name="Rending" hidden="false">
+        <rule id="fdf6-16fa-e6d0-e2a6" name="Rending" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Rending weapons have the potential to cause horrific damage if they strike true. If the Armour roll for a Rending weapon is 6, roll a D3 and add it to the result.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="4f0a-1f44-e3b2-5d17" name="Limited" hidden="false">
       <rules>
-        <rule id="3144-388f-8ea7-d437" name="Limited" hidden="false">
+        <rule id="3144-388f-8ea7-d437" name="Limited" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Some weapons are so enormous or power-hungry that a Titan can only carry enough ammunition for a few shots. A Limited weapon can only be used a number of times equal to the number in brackets - after this it is expended and cannot be used to make any more attacks for the rest of the battle.</description>
         </rule>
       </rules>
@@ -181,7 +181,7 @@ If the target location is a weapon, on a 1-3 the weapon is disabled. If the weap
     </categoryEntry>
     <categoryEntry id="2e59-3e13-7382-4fac" name="Fusion" hidden="false">
       <rules>
-        <rule id="0c87-7d40-25af-4535" name="Fusion" publicationId="975a-00f4-pubN65537" hidden="false">
+        <rule id="0c87-7d40-25af-4535" name="Fusion" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Fusion weapons generate beams of incredible heat which cause even the thickest armour to run like wax at close quarters. If the target of a Fusion weapon is within Short range, roll a D10 rather than a D6 for the Armour roll.</description>
         </rule>
       </rules>
@@ -193,7 +193,7 @@ If the target location is a weapon, on a 1-3 the weapon is disabled. If the weap
     <categoryEntry id="3f71-3a59-3b75-4ecf" name="Titan" hidden="false"/>
     <categoryEntry id="8fed-c116-efe0-e973" name="Firestorm" hidden="false">
       <rules>
-        <rule id="c7a1-ea93-5049-17dc" name="Firestorm" publicationId="975a-00f4-pubN65537" hidden="false">
+        <rule id="c7a1-ea93-5049-17dc" name="Firestorm" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Firestorm weapons unleash gouts of blazing promethium or some other volatile fuel. Instead of rolling To Hit with a Firestorm weapon, place the Flame template so that the narrowest part is touching the end of the firing weapon and the centre of the wide end is within the weapon’s firing arc. It cannot be placed so that it is touching any friendly units. The closest model to the firing unit that is touched by the template suffers a number of hits equal to the weapon’s Dice value; each other model that is touched by the template (except the firing model!) suffers one hit.
 
 Note that it is not necessary to make the Hit rolls - these hits are automatic. Firestorm weapons cannot make Targeted Attacks.</description>
@@ -203,7 +203,7 @@ Note that it is not necessary to make the Hit rolls - these hits are automatic. 
     <categoryEntry id="6982-2d18-55cb-61e5" name="Maniple" hidden="false"/>
     <categoryEntry id="917a-77ef-30e4-b812" name="Banner" hidden="false">
       <rules>
-        <rule id="59fb-73c8-478f-68c9" name="Banner" publicationId="975a-00f4-pubN65537" hidden="false">
+        <rule id="59fb-73c8-478f-68c9" name="Banner" publicationId="975a-00f4-pubN65537" page="46" hidden="false">
           <description>Composition of a Banner
 A Banner is made up of a number of Knights acting as a single unit. The reverse of a Banner&apos;s Command Terminal describes its exact composition, along with any options. When a Banner is activated, all of the Knights within it act; individual Knights cannot be activated.
 
@@ -251,14 +251,14 @@ When the Banner is activated in the Issue Orders step of the next Strategy phase
     <categoryEntry id="44b5-8770-ea8e-2401" name="Arm" hidden="false"/>
     <categoryEntry id="a499-678c-ed35-c0e8" name="Barrage" hidden="false">
       <rules>
-        <rule id="ac4a-d92e-dac5-bdc7" name="Barrage" hidden="false">
-          <description>Barrage weapons can fire indirectly at a target to which they do not have line of sight, as long as the target is still within range and arc. Firing indirectly confers a -z modifier on the Hit roll.</description>
+        <rule id="ac4a-d92e-dac5-bdc7" name="Barrage" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
+          <description>Barrage weapons can fire indirectly at a target to which they do not have line of sight, as long as the target is still within range and arc. Firing indirectly confers a -2 modifier on the Hit roll.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="ce80-524a-1913-7f68" name="Voidbreaker" hidden="false">
       <rules>
-        <rule id="e9a2-7824-8465-47b8" name="Voidbreaker" hidden="false">
+        <rule id="e9a2-7824-8465-47b8" name="Voidbreaker" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Although Voidbreaker weapons are unlikely to cause any physical damage to a target, this does not matter - their purpose is the disruption of void shields, pure and simple. If a Voidbreaker weapon hits a target with active void shields, the target’s controlling player must make a number of additional saves as shown by the number in brackets after the trait.</description>
         </rule>
       </rules>
@@ -284,13 +284,13 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
     <categoryEntry id="e580-b213-3f86-c2fc" name="Agile" hidden="false">
       <rules>
         <rule id="e1ee-cf92-788d-7083" name="Agile" hidden="false">
-          <description>Not effected by Difficult or Dangerous Terrain</description>
+          <description>Not affected by Difficult or Dangerous Terrain</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="9b05-f144-0ae5-5d6b" name="Knight Weapon" hidden="false">
       <rules>
-        <rule id="35b6-29c1-0436-e595" name="Firing Arc" hidden="false">
+        <rule id="35b6-29c1-0436-e595" name="Firing Arc" publicationId="975a-00f4-pubN65537" page="46" hidden="false">
           <description>Knights have a 360 Degree Front Fire Arc</description>
         </rule>
       </rules>
@@ -370,7 +370,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         </profile>
       </profiles>
       <rules>
-        <rule id="8746-c417-9782-3eeb" name="Battlefield Asset" hidden="false">
+        <rule id="8746-c417-9782-3eeb" name="Battlefield Asset" publicationId="975a-00f4-pubN65537" page="65"  hidden="false">
           <description>Battlefield Assets can be targeted by attacks, and are hit by Blast markers, Flame templates and area effects (such as exploding reactors) in the same way as a unit. Hit rolls against Battlefield Assets have a -1 penalty at Short range and a -2 penalty at Long range.
             Units can move across Battlefield Assets without penalty. If
 a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance it will crush it underfoot. Ifit does so, roll a Dro,or a D6 if the Titan&apos;s move ends with its base over the Battlefield Asset. If the result is lower than the Titan&apos;s Scale, the Battlefield Asset is destroyed.</description>
@@ -426,7 +426,7 @@ Attacks made by Impale weapon bypass void shields.
     <categoryEntry id="1875-e91f-1789-465f" name="Beam (X)" hidden="false">
       <rules>
         <rule id="3882-2805-b80e-d019" name="Beam (X)" publicationId="3265-f408-cc9b-bfa3" page="94" hidden="false">
-          <description>When resolving an attack from a Beam weapon, do not roll To Hit. Instead, pick a target and draw an imaginary, 1mm wide, straight line from the weapon to its maximum range; the line must cross the base of the target at the point closest to the firing model. The closes unit to the firing unit whose base is under the line suffers a number of hits equal to the weapon&apos;s Dice value. If that unit is destroyed, the next closest unit suffers aa number of hits equal to the weapon&apos;s Dice value minus the number in brackets after the trait, to a minimum of 0. 
+          <description>When resolving an attack from a Beam weapon, do not roll To Hit. Instead, pick a target and draw an imaginary, 1mm wide, straight line from the weapon to its maximum range; the line must cross the base of the target at the point closest to the firing model. The closes unit to the firing unit whose base is under the line suffers a number of hits equal to the weapon&apos;s Dice value. If that unit is destroyed, the next closest unit suffers aa number of hits equal to the weapon&apos;s Dice value minus the number in brackets after the trait, to a minimum of 0.
 
 Continue these steps until a unit is not destroyed, there are no units left underneath the line, or the weapon&apos;s Dice value has been reduced to 0. Beam weapons can only make Targeted Attacks against the closest unit - randomly determine the location for any subsequent unit hit by a Beam weapon.
 
@@ -2914,7 +2914,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <selectionEntry id="fcfd-d034-1395-9eea" name="Venator Light Maniple" publicationId="975a-00f4-pubN65537" page="61" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="2d42-3c90-4547-c5f5" name="Opportunistic Strike" publicationId="975a-00f4-pubN65537" page="61" hidden="false">
-          <description>If an enemy unit&apos;s shiles are collapsed by an attack made by a Warhound Titan from this maniple, the Reaver Titan in this maniple can immediately make an attack against it with one of its weapons, following the Combat Sequence on page 33. This means that the Reaver can potentially attack several times in same phase, as well as attacking normally when it is activated. However, if the Reaver is preventd from attacking in the Combat phase - it has Striking Speed of Shutdown orders, for example - it cannot make these bonus attacks.</description>
+          <description>If an enemy unit&apos;s shields are collapsed by an attack made by a Warhound Titan from this maniple, the Reaver Titan in this maniple can immediately make an attack against it with one of its weapons, following the Combat Sequence on page 33. This means that the Reaver can potentially attack several times in same phase, as well as attacking normally when it is activated. However, if the Reaver is preventd from attacking in the Combat phase - it has Striking Speed of Shutdown orders, for example - it cannot make these bonus attacks.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -12920,8 +12920,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
       </constraints>
       <rules>
         <rule id="eb20-0124-4019-ea50" name="Combat Drop" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
-          <description>When chosen by a player they must write the name of one of their Titan&apos;s whose scale is 6 or lower. 
-Play this Stratagem at the start of deployment to set the named Titan to one side and state that it is being held in orbit. Declare and record a round between 2 and 4 - this is the round in which its dropship will aim to deploy the Titan. 
+          <description>When chosen by a player they must write the name of one of their Titan&apos;s whose scale is 6 or lower.
+Play this Stratagem at the start of deployment to set the named Titan to one side and state that it is being held in orbit. Declare and record a round between 2 and 4 - this is the round in which its dropship will aim to deploy the Titan.
 At the beginning of the Movement phase of the chosen round, roll a D10. If the result is lower than the Titan&apos;s scale, it arrives. Otherwise the Titan is delayed and will arrive at the start of the following Movement phase instead.
 When the Titan arrives, it may be placed anywhere on the battlefield that is 1&quot; or more from any model or terrain feature, then scatter D6&quot;. Choose it&apos;s facing then roll a D3. On a 1-2, it makes a 45° turn to the left. On a 3-4, it keeps the chosen facing. On a 5-6, it turns 45° to the right. If the Titan scatters or turns into any terrain, it stops before moving into it and the suffers D6 S9 Hits. The Titan cannot be activated in any of the remaining phases of this round. It can still be targeted and attacked as normal.</description>
         </rule>
