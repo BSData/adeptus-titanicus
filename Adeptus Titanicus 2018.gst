@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="18" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="19" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -9,6 +9,7 @@
     <publication id="25e8-c9ce-9330-c53b" name="Adeptus Titanicus 2018 Errata v1.1"/>
     <publication id="3265-f408-cc9b-bfa3" name="Shadow and Iron"/>
     <publication id="2988-f24d-39ef-352e" name="Defense of Ryza"/>
+    <publication id="53a8-d512-369e-e3b8" name="Crucible of Retribution" publisherUrl="https://www.warhammerdigital.com/all-products/adeptus-titanicus-crucible-of-retribution-epub-2020.html"/>
   </publications>
   <costTypes>
     <costType id="a731-e220-2d8a-41bf" name=" Points" defaultCostLimit="-1.0" hidden="false"/>
@@ -370,7 +371,7 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
         </profile>
       </profiles>
       <rules>
-        <rule id="8746-c417-9782-3eeb" name="Battlefield Asset" publicationId="975a-00f4-pubN65537" page="65"  hidden="false">
+        <rule id="8746-c417-9782-3eeb" name="Battlefield Asset" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
           <description>Battlefield Assets can be targeted by attacks, and are hit by Blast markers, Flame templates and area effects (such as exploding reactors) in the same way as a unit. Hit rolls against Battlefield Assets have a -1 penalty at Short range and a -2 penalty at Long range.
             Units can move across Battlefield Assets without penalty. If
 a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance it will crush it underfoot. Ifit does so, roll a Dro,or a D6 if the Titan&apos;s move ends with its base over the Battlefield Asset. If the result is lower than the Titan&apos;s Scale, the Battlefield Asset is destroyed.</description>
@@ -14169,46 +14170,46 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="c491-319b-b9b1-adac" name="Weapon Characteristics" hidden="false">
+    <rule id="c491-319b-b9b1-adac" name="Weapon Characteristics" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
       <description>A unit’s Command Terminal has a number of spaces for Weapon cards, which must be selected before the start of the battle. Each Weapon card shows which Class of Titan it can be chosen for, and which slot(s) on the Command Terminal it can occupy.</description>
     </rule>
-    <rule id="099f-b1dd-9513-5d1d" name="Firing Arc" hidden="false">
+    <rule id="099f-b1dd-9513-5d1d" name="Firing Arc" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
       <description>A weapon’s firing arc (explained on page 26) is represented by a graphic. The graphic assumes that the Titan is facing towards the top of the Command Terminal - most weapons (particularly arm-mounted ones) generally have the Titan’s Front arc as their firing arc.</description>
     </rule>
-    <rule id="585e-acad-2307-042d" name="Range and Accuracy (ACC)" hidden="false">
+    <rule id="585e-acad-2307-042d" name="Range and Accuracy (ACC)" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
       <description>This shows the weapon’s range in inches. Weapons have two ranges: Short and Long. These are primarily used to determine the Accuracy modifier (which affects any Hit rolls made for the weapon), but might also be referenced by other in-game effects. </description>
     </rule>
-    <rule id="b7c8-dd3a-9b0d-730c" name="Dice" hidden="false">
+    <rule id="b7c8-dd3a-9b0d-730c" name="Dice" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
       <description>A weapon’s Dice value shows how many dice are rolled when attacking with it. In essence, it is a representation of how rapidly the weapon can fire - a gun with Dice 6 fires a lot more shots in one go than one with Dice 1.</description>
     </rule>
-    <rule id="26e1-ebdc-e470-dd28" name="Strength (STR)" hidden="false">
+    <rule id="26e1-ebdc-e470-dd28" name="Strength (STR)" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
       <description>A weapon’s Strength is a measure of its ability to punch through a target’s armour. The higher a weapon’s Strength, the more likely its attack will inflict damage on a successful hit.</description>
     </rule>
-    <rule id="c11a-edbe-0a11-00c8" name="MIU Feedback" hidden="false">
+    <rule id="c11a-edbe-0a11-00c8" name="MIU Feedback" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
       <description>The Mind Impulse Unit has been hit, disrupting the crew&apos;s interface to the manifold. Any command Checks made for the Titan have a -2 modifier.</description>
     </rule>
-    <rule id="8ca3-6877-6b64-00ef" name="Moderati Wounded" hidden="false">
+    <rule id="8ca3-6877-6b64-00ef" name="Moderati Wounded" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
       <description>The Moderatii overseeing the gunnery crews have been hit. Any Hit rolls made for the Titan have a -1 modifier.</description>
     </rule>
-    <rule id="f645-3cac-dca4-6c01" name="Princeps Wounded" hidden="false">
+    <rule id="f645-3cac-dca4-6c01" name="Princeps Wounded" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
       <description>The attack has grievously wounded the Princeps, who is at risk of passing out. At the start of each Strategy phase, roll a D6. On a roll of 1, the Titan takes Shutodown orders. In addition, the Titan automatically fails Command checks it makes. </description>
     </rule>
-    <rule id="9d86-911d-7d60-3acc" name="Reactor Leak (1)" hidden="false">
+    <rule id="9d86-911d-7d60-3acc" name="Reactor Leak (1)" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
       <description>The Titan&apos;s reactor containment fields are failing. In each End phase, advance the Titan&apos;s Reactor Status marker a number of times as shown in the brackets.</description>
     </rule>
-    <rule id="8243-0a90-7bc9-88ac" name="Reactor Leak (2)" hidden="false">
+    <rule id="8243-0a90-7bc9-88ac" name="Reactor Leak (2)" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
       <description>The Titan&apos;s reactor containment fields are failing. In each End phase, advance the Titan&apos;s Reactor Status marker a number of times as shown in the brackets.</description>
     </rule>
-    <rule id="a064-e684-d8a9-c65e" name="VSG Burnout" hidden="false">
+    <rule id="a064-e684-d8a9-c65e" name="VSG Burnout" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
       <description>The Titan&apos;s void shield generators have burned out -  its void shields collapse immediately. The Titan cannot use &apos;Raise Shields&apos; Repair actions until this damage has been repaired.</description>
     </rule>
-    <rule id="17b3-c01c-7edc-82da" name="Stabilizers Damaged" hidden="false">
+    <rule id="17b3-c01c-7edc-82da" name="Stabilizers Damaged" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
       <description>The Titan staggers as its stabilizers struggle to keep it upright. In each End phase, roll a D6 for the Titan. On a 1-3, it turns 45 degrees to the left. On a 4-6, it turns 45 degrees to the right.</description>
     </rule>
-    <rule id="933b-ea98-5684-890f" name="Locomotors Seized" hidden="false">
+    <rule id="933b-ea98-5684-890f" name="Locomotors Seized" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
       <description>Massive gears within the Titan&apos;s legs grind as it tries to move. The Titan&apos;s Speed and Manoeuver characteristics (both the normal and boosted values) are halved, rounding down. If this reduces a normal value to 0, the Titan must push the reactor to use the boosted value it it wishes to move/turn. </description>
     </rule>
-    <rule id="e8db-6948-589e-2c80" name="Immobilized" hidden="false">
+    <rule id="e8db-6948-589e-2c80" name="Immobilized" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
       <description>The Titan&apos;s legs and toros are frozen in place. It cannot move or make any turns.</description>
     </rule>
   </sharedRules>
