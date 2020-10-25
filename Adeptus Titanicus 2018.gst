@@ -305,6 +305,13 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
     <categoryEntry id="15bd-0b4b-5cac-dc48" name="LegioTempestus" hidden="false"/>
     <categoryEntry id="0796-178c-50ce-2d1f" name="LegioGryphonicus" hidden="false"/>
     <categoryEntry id="06c2-f93e-7bf5-9fd5" name="LegioAstorum" hidden="false"/>
+    <categoryEntry id="324b-8404-7509-9b36" name="LegioAstraman" hidden="false"/>
+    <categoryEntry id="5f7b-2051-3935-7637" name="LegioIgnatum" hidden="false"/>
+    <categoryEntry id="43b6-60b3-8111-290c" name="LegioVenator" hidden="false"/>
+    <categoryEntry id="4a24-73e7-556c-1bfd" name="LegioLaniaskara" hidden="false"/>
+    <categoryEntry id="6740-1e8a-8e25-88fd" name="LegioKulisaetai" hidden="false"/>
+    <categoryEntry id="ccee-936e-87d6-bf29" name="LegioTritonis" hidden="false"/>
+    <categoryEntry id="ae2e-5751-1800-545a" name="LegioDamicium" hidden="false"/>
     <categoryEntry id="b539-a35c-fe3f-9c34" name="Stratagem" hidden="false">
       <modifiers>
         <modifier type="increment" field="916e-a7f5-ea1f-c24e" value="2.0">
@@ -13720,6 +13727,76 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a436-1e48-b733-a9e2" name="Legio Astraman (Morning Stars)" publicationId="53a8-d512-369e-e3b8" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="aaac-58c0-df6e-b02d" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="e692-8442-8ca4-653b" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ca38-2cca-dca0-e47e" name="Legio Ignatum (Fire Wasps)" publicationId="53a8-d512-369e-e3b8" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="aaac-58c0-df6e-b02e" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="cf97-4f92-6e83-4d5e" name="LegioIgnatum" hidden="false" targetId="5f7b-2051-3935-7637" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a42b-bec0-624f-f658" name="Legio Venator (Iron Spiders)" publicationId="53a8-d512-369e-e3b8" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="aaac-58c0-df6e-b02f" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="cfbb-9606-ee39-f0cc" name="LegioVenator" hidden="false" targetId="43b6-60b3-8111-290c" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4dea-b09c-4462-defa" name="Legio Laniaskara (Impalers)" publicationId="53a8-d512-369e-e3b8" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="aaac-58c0-df6e-b030" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="1cf5-68b1-289a-291d" name="LegioLaniaskara" hidden="false" targetId="4a24-73e7-556c-1bfd" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f40-0b7f-9cdd-317d" name="Legio Kulisaetai (Gatekeepers)" publicationId="53a8-d512-369e-e3b8" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="aaac-58c0-df6e-b031" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="5db6-47c4-3e29-f45a" name="LegioKulisaetai" hidden="false" targetId="6740-1e8a-8e25-88fd" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7751-a98e-fccd-bcdb" name="Legio Tritonis (Dark Tide)" publicationId="53a8-d512-369e-e3b8" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="aaac-58c0-df6e-b032" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="d1b4-b741-62b6-2943" name="LegioTritonis" hidden="false" targetId="ccee-936e-87d6-bf29" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="faaa-535a-cc19-7467" name="Legio Damicium (Unbroken Lords)" publicationId="53a8-d512-369e-e3b8" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="aaac-58c0-df6e-b033" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="b673-2612-0a29-38d0" name="LegioDamicium" hidden="false" targetId="ae2e-5751-1800-545a" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
