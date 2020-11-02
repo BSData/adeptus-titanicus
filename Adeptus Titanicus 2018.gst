@@ -13730,6 +13730,11 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </costs>
     </selectionEntry>
     <selectionEntry id="a436-1e48-b733-a9e2" name="Legio Astraman (Morning Stars)" publicationId="53a8-d512-369e-e3b8" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="f0e1-b181-b532-83fa" name="Unyielding" publicationId="53a8-d512-369e-e3b8" page="33" hidden="false">
+          <description>When activated during the Movement phase, a Legio Astraman Titan can choose to voluntarily Awaken their Machine Spirit – this counts as the Titan’s activation. If they do this, advance their Reactor Status marker by 2. The Titan automatically fails their Command check to quell the Machine Spirit and applies the Stalwart result from the Awakened Machine Spirit table instead of rolling. The chosen Titan cannot be activated in the subsequent Combat phase.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="aaac-58c0-df6e-b02d" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
         <categoryLink id="e692-8442-8ca4-653b" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
@@ -13796,6 +13801,55 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dcb1-08b0-03e1-2819" name="=Astraman= Strength and Resolve" publicationId="53a8-d512-369e-e3b8" page="33" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2405-5f98-33aa-5ab3" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8329-eada-edfd-a87a" name="Strength and Resolve" publicationId="53a8-d512-369e-e3b8" page="33" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Astraman player. The Morning Stars player may reveal this Stratagem when activating a Titan during the Strategy phase. Until the beginning of the following round, attacks made against that Titan gain no bonus to Armour rolls as a result of damage already inflicted as indicated by the Command Terminal (see the Adeptus Titanicus rulebook). This counts as the Titan’s activation for that phase.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3db5-96f0-0fa2-f8fc" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="acfa-7cc5-50e1-a332" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="762f-0602-4cff-7c25" name="=Astraman= Stand Firm" publicationId="53a8-d512-369e-e3b8" page="33" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="223a-0377-3522-e11d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e9a0-2a7d-d282-7884" name="Stand Firm" publicationId="53a8-d512-369e-e3b8" page="33" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Astraman player. The Morning Stars player may reveal this Stratagem at the beginning of any round. For the duration of that round, any friendly Legio Astraman Titan can merge void shields with any other friendly Legio Astraman Titans as if they were part of the same Squadron, so long as none of the Titans sharing void shields have moved this round (voluntarily or involuntarily).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e678-fef4-74c3-bd69" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="3d02-63e8-316d-320c" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e596-f3f8-9b80-5e62" name="=Astraman= Maglock Shells" hidden="true" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="deea-727b-87df-12cd" name="Maglock Shells" publicationId="53a8-d512-369e-e3b8" page="33" hidden="false">
+          <description>Any Legio Astraman Titan armed with a weapon with the Ordnance trait may take Maglock Shells so long as that Titan does not already have an upgrade affecting that weapon at a cost of +5 points multiplied by each weapon’s Dice value; for example a Reaver Gatling Blaster would have a cost of +30 points. Each weapon a Titan is armed with must be upgraded separately. Add 1 to the result of all Armour rolls made by a weapon with this upgrade when resolving an attack made with an Ordnance weapon. Rolls of a natural 1 are still a Superficial Hit.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="7ee7-375d-762f-a18d" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="63c0-3561-11e5-c38c" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
