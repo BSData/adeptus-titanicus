@@ -14369,7 +14369,7 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="cd5e-cdac-6768-2f2d" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
+                <entryLink id="cd5e-cdac-6768-2f2d" name="Body Manifold Critical Damage (12+)" hidden="false" collective="false" import="true" targetId="0be1-9d7b-05c5-827a" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -14513,7 +14513,7 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="7a37-36ab-26d5-c421" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
+                <entryLink id="7a37-36ab-26d5-c421" name="Head Manifold Critical Damage (12+)" hidden="false" collective="false" import="true" targetId="6d2c-f809-6c49-0338" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -14673,7 +14673,7 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="7e4b-c9db-4296-580a" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
+                <entryLink id="7e4b-c9db-4296-580a" name="Legs Manifold Critical Damage (12+)" hidden="false" collective="false" import="true" targetId="0ead-520e-7fa9-f863" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -15667,6 +15667,179 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
         <entryLink id="c750-04b1-5a96-6e07" name="Acastus Twin Autocannon" hidden="false" collective="false" import="true" targetId="abac-6fdb-0228-d12a" type="selectionEntry"/>
         <entryLink id="3ea6-1bed-f54a-c10f" name="Acastus Twin Lascannon" hidden="false" collective="false" import="true" targetId="a2a3-d4b5-189a-5f63" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0be1-9d7b-05c5-827a" name="Body Manifold Critical Damage (12+)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdeb-d985-a76a-7c76" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f069-6335-8fcc-ee60" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="acbf-0be8-e38c-7de8" name="1 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c47-250e-2143-ed0e" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="42bd-304b-4efb-1d22" name="Reactor Leak (1)" hidden="false" targetId="9d86-911d-7d60-3acc" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f8d4-f4fb-9bf7-f131" name="4 Red Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb00-74cc-a487-4c77" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2717-03db-2b71-360a" name="Reactor Leak (2)" hidden="false" targetId="8243-0a90-7bc9-88ac" type="rule"/>
+            <infoLink id="359b-8210-513b-daf4" name="VSG Burnout" hidden="false" targetId="a064-e684-d8a9-c65e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6553-e639-72f7-ef9b" name="3 Orange Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fc1-e53b-d8c3-0940" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="86d5-1368-fdee-6c4e" name="Reactor Leak (1)" hidden="false" targetId="9d86-911d-7d60-3acc" type="rule"/>
+            <infoLink id="76fb-e18f-5a4a-7cda" name="VSG Burnout" hidden="false" targetId="a064-e684-d8a9-c65e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4f7a-e501-5b1f-3ff4" name="2 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="458a-efce-6bf5-f6d0" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8799-3f3d-2096-dc64" name="Reactor Leak (1)" hidden="false" targetId="9d86-911d-7d60-3acc" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="6d2c-f809-6c49-0338" name="Head Manifold Critical Damage (12+)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c828-f4bd-5315-9012" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14d3-a082-3a15-6efd" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="b260-eaaa-5156-bf6c" name="1 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5527-e2ae-fcc7-b1dc" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c133-fc4e-7093-51d6" name="MIU Feedback" hidden="false" targetId="c11a-edbe-0a11-00c8" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3ec7-7599-483f-a298" name="4 Red Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="864c-9f7e-ed17-b789" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6c9a-832d-706f-bbb7" name="Moderati Wounded" hidden="false" targetId="8ca3-6877-6b64-00ef" type="rule"/>
+            <infoLink id="ef81-558d-aebd-a1bd" name="Princeps Wounded" hidden="false" targetId="f645-3cac-dca4-6c01" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="63cb-8c1a-527b-ef69" name="3 Orange Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24da-0691-a6bb-82d2" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ea1b-5469-3217-8952" name="MIU Feedback" hidden="false" targetId="c11a-edbe-0a11-00c8" type="rule"/>
+            <infoLink id="aa9c-7f2e-3905-3071" name="Moderati Wounded" hidden="false" targetId="8ca3-6877-6b64-00ef" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0ab1-30f7-8b51-e568" name="2 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b608-6b42-3930-8dc7" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b89d-1453-e21c-d312" name="MIU Feedback" hidden="false" targetId="c11a-edbe-0a11-00c8" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0ead-520e-7fa9-f863" name="Legs Manifold Critical Damage (12+)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dda0-47d7-aa2e-5442" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6978-4ad0-0194-4e4d" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="2b0c-d3e1-5b18-0838" name="1 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5fb-5ad9-a2c1-c866" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="31ae-3886-a5a6-fa19" name="Stabilizers Damaged" hidden="false" targetId="17b3-c01c-7edc-82da" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="397d-b097-ae71-9028" name="4 Red Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d29-3e33-88e8-bba5" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1ed3-3921-00e7-ec4c" name="Immobilized" hidden="false" targetId="e8db-6948-589e-2c80" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ee34-5405-b680-ac91" name="3 Orange Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d520-6037-7108-1bff" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3693-27d5-4f05-0f6d" name="Stabilizers Damaged" hidden="false" targetId="17b3-c01c-7edc-82da" type="rule"/>
+            <infoLink id="d2e8-24d0-f66b-7c90" name="Locomotors Seized" hidden="false" targetId="933b-ea98-5684-890f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="28d0-e241-80a0-1518" name="2 Yellow Manifold Critical Damage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="561e-0e97-5db5-61e1" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4502-b728-fb35-581b" name="Stabilizers Damaged" hidden="false" targetId="17b3-c01c-7edc-82da" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
