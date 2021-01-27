@@ -498,6 +498,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="86f0-9cae-9ece-4b64" name="Experimental Warfare" publicationId="2988-f24d-39ef-352e" page="107" hidden="false"/>
     <categoryEntry id="9e2e-c35f-34a4-d245" name="Tricks and Tactics" publicationId="2988-f24d-39ef-352e" page="107" hidden="false"/>
     <categoryEntry id="e37e-10e6-accd-329d" name="Shoulder" hidden="false"/>
+    <categoryEntry id="3b8b-38d1-147a-f99d" name="Ancillary Reactor System" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -14886,6 +14887,16 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
             <entryLink id="b310-fb35-9127-0eb2" name="Ardex Defensor Cannon" hidden="false" collective="false" import="true" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="9b84-a1e8-d7ba-74b2" name="Ancillary Reactor System" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd3b-5c2f-6651-1ec8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c33b-179f-b606-fea7" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="739e-6a76-044d-acca" name="Plasmatic Locomotors" hidden="false" collective="false" import="true" targetId="d152-f92c-fa32-dcfd" type="selectionEntry"/>
+            <entryLink id="2447-db21-193b-6fe0" name="Infusive Supercoolant" hidden="false" collective="false" import="true" targetId="9850-b19f-11e0-2b54" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c80e-97e4-8ebb-3a55" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
@@ -15165,7 +15176,7 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">24&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">48&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
@@ -15190,6 +15201,26 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="d152-f92c-fa32-dcfd" name="Plasmatic Locomotors" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="e357-3d99-04e0-fa85" name="Plasmatic Locomotors" hidden="false">
+          <description>A Titan with this upgrade increases its default and boosted Movement characteristic by 1&quot;. However, after declaring Power to Locomotors! Or Power to Stabalizers!, it suffers a -2 modifier to all Hit rolls for attacks mode by the Titan with a weapon without the Melee trait until the end of the round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="7e16-5b67-6c0c-be88" name="New CategoryLink" hidden="false" targetId="3b8b-38d1-147a-f99d" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="9850-b19f-11e0-2b54" name="Infusive Supercoolant" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="eaa0-c7b6-d9d0-1ab4" name="Infusive Supercoolant" hidden="false">
+          <description>When activated in the Damage Control phase, a Titan may engage this Reactor System. If they do so, until the end of the round the Titan can Vent Plasma on a 2+ instead of a 4+. At the end of the round, flip the card - the Reactor System is disabled and has no effect for the remainder of the battle.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="1fe8-c63e-4860-4a4e" name="New CategoryLink" hidden="false" targetId="3b8b-38d1-147a-f99d" primary="true"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
