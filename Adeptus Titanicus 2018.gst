@@ -3772,15 +3772,15 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     </selectionEntry>
     <selectionEntry id="bd35-3f71-8bea-7e42" name="Plasma Blast Gun (WH)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="f969-ff69-e466-aa5f" name="Plasma Blast Gun" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="f969-ff69-e466-aa5f" name="Plasma Blast Gun (WH)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Maximal Fire</characteristic>
@@ -3799,7 +3799,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <entryLink id="1da7-b1ca-378b-6d13" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -15043,15 +15043,15 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
     </selectionEntry>
     <selectionEntry id="0f5d-e59f-3d5f-21c3" name="Plasma Blast Gun (WM)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="135f-3527-5519-5011" name="Plasma Blast Gun" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="135f-3527-5519-5011" name="Plasma Blast Gun (WM)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Maximal Fire</characteristic>
@@ -15070,7 +15070,7 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
         <entryLink id="abb1-a002-5836-d4b8" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
