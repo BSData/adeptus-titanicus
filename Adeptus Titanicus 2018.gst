@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="20" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="21" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Crucible of Retribution update:
 
 All CoR content added
@@ -14180,9 +14180,6 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
       </costs>
     </selectionEntry>
     <selectionEntry id="0f6c-856d-c4d3-13e3" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0289-6976-44f4-717e" type="max"/>
-      </constraints>
       <rules>
         <rule id="249e-51ed-5f66-e322" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false">
           <description>Play this stratagem in the first Strategy phase of the battle. The player chooses one of their Titans that is not a Titan of Legend or Psi Titan; for the remainder of the battle that Titan increases its WS and BS value by 1 (to a maximum of 2+). In addition, it may be issued Emergency Repair and Charge orders without the need to make a Command check. However, reduce the Titan&apos;s Command characteristic by 3 (to a maximum of 10+). If, at any point during the battle, the Titan fails its command check to quell the Machine Spirit the Belligerent result is automatically applied; do not roll on the Awakened Machine Spirit table.</description>
@@ -14193,6 +14190,7 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
