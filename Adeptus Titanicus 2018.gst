@@ -814,9 +814,9 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
               <profiles>
                 <profile id="f0e4-6eea-a1a2-d04c" name="Body" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
                   <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">11-13</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-16</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
+                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">10-12</characteristic>
+                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
+                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -958,9 +958,9 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
               <profiles>
                 <profile id="d37d-2bd0-dfcc-ee2d" name="Head" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
                   <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">10-12</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
+                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">11-13</characteristic>
+                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-16</characteristic>
+                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
