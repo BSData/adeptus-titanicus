@@ -1659,8 +1659,8 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
               <profiles>
                 <profile id="11b4-3e8a-4b18-745d" name="Head" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
                   <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">12-13</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-15</characteristic>
+                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">13-14</characteristic>
+                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">15-16</characteristic>
                     <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
                   </characteristics>
                 </profile>
@@ -13744,7 +13744,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="f02a-37e1-1b7a-54ff" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-        <categoryLink id="bd40-2589-1f9d-e30a" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -13759,7 +13758,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="160d-314e-4d7e-7258" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-        <categoryLink id="52c9-6fc2-a263-7166" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
@@ -13774,7 +13772,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="eb6f-48f1-7363-103d" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-        <categoryLink id="c9eb-3740-741a-5ebe" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -13791,7 +13788,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="9a8a-87a7-c2e3-41e2" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-        <categoryLink id="0045-7a6f-b5e2-5292" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -13804,9 +13800,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
           <description>Play at start of any strategy phase.  For that phase Laniaskara titans gain charge orders without having to make a command check</description>
         </rule>
       </rules>
-      <categoryLinks>
-        <categoryLink id="c697-e873-2c87-cca4" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
-      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13820,7 +13813,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="2d20-871a-7077-6cfb" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-        <categoryLink id="029e-e259-fc56-53a5" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -13835,7 +13827,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="6d62-d708-e5d3-7c2f" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-        <categoryLink id="9716-bc0e-6199-9133" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -13850,7 +13841,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="5fe7-093f-b82b-1091" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-        <categoryLink id="4099-59c5-c97c-4a60" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -13867,7 +13857,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="5b16-a9b5-983f-d3fe" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
         <categoryLink id="d6ed-9390-2a0a-4f9c" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
       </categoryLinks>
       <costs>
@@ -13883,7 +13872,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="8b7c-ad51-e7d4-20d8" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="076e-e445-f63a-8a03" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13898,7 +13886,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="e383-6349-b3aa-6a9c" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="c156-4375-0c4d-2877" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13919,7 +13906,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="6a9f-abfb-e397-7ffb" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="57f1-8fd7-14fe-c848" name="LegioVenator" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13937,7 +13923,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="44ed-5e7d-6f58-e3e1" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="f1fa-3dd6-b7b2-95dc" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13952,7 +13937,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="4462-7806-fa4d-b50b" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="ad52-2e3b-c08b-3a53" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13970,7 +13954,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="7618-c1eb-3eef-eb24" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="5788-689c-bd4f-f1dd" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13988,7 +13971,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="5992-f48d-e889-e56f" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="22e5-bc97-c768-b417" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -14003,7 +13985,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="0e13-ad19-c3ee-69f9" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="6ee1-ce9c-ed40-327c" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
@@ -14018,7 +13999,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="5832-b2dc-b9cb-38ad" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="9f60-1051-b719-c89e" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
@@ -14033,7 +14013,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="fd0c-375a-7b5f-6bc7" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="9c29-3da1-24b3-e36f" name="LegioVenator" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -14048,7 +14027,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="5711-74c9-d8e1-38cc" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="0963-7a46-bec0-3925" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -14063,7 +14041,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="202e-662b-2b0b-ad36" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="6dd9-4f26-7b40-c0d0" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -14078,7 +14055,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="39cf-0545-73f6-f32d" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="1261-4ba7-0f88-ba90" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
@@ -14093,7 +14069,6 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="9242-3eff-654c-b313" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="f424-c956-8580-90db" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -14197,7 +14172,6 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
       </rules>
       <categoryLinks>
         <categoryLink id="79b7-fd71-d457-ffe0" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="1989-e08d-dfd5-793e" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
