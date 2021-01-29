@@ -3,6 +3,9 @@ Adeptus Titanicus
 
 [![Join the chat at https://gitter.im/BSData/adeptus-titanicus](https://badges.gitter.im/BSData/adeptus-titanicus.svg)](https://gitter.im/BSData/adeptus-titanicus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+#### Code of Conduct ####
+Deleting repository content will be considered misconduct and is grounds to ban.
+
 #### Contents ####
 
 * [Overview][]
@@ -33,3 +36,4 @@ Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][
 [BattleScribe homepage]: http://www.battlescribe.net/
 [BattleScribe Data on Appspot]: http://battlescribedata.appspot.com/#/repos
 [Getting Started wiki]: https://github.com/BSData/catalogue-development/wiki/Getting-Started#contributing
+ne
