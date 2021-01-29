@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="21" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <readme>Crucible of Retribution update:
-
-All CoR content added
-Structure points removed</readme>
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -500,6 +496,13 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="9e2e-c35f-34a4-d245" name="Tricks and Tactics" publicationId="2988-f24d-39ef-352e" page="107" hidden="false"/>
     <categoryEntry id="e37e-10e6-accd-329d" name="Shoulder" hidden="false"/>
     <categoryEntry id="3b8b-38d1-147a-f99d" name="Ancillary Reactor System" hidden="false"/>
+      <categoryEntry id="f13e-f477-7652-0e1c" name="LegioAstraman" hidden="false"/>
+        <categoryEntry id="f986-f640-3cb3-478a" name="LegioKulisaetai" hidden="false"/>
+        <categoryEntry id="f778-49fb-1bfd-4838" name="LegioDamicium" hidden="false"/>
+        <categoryEntry id="83db-4337-737c-1db8" name="LegioIgnatum" hidden="false"/>
+        <categoryEntry id="753b-9e36-a10c-7961" name="LegioTritonis" hidden="false"/>
+        <categoryEntry id="b4cb-2809-41b4-6d83" name="LegioLaniaskara" hidden="false"/>
+        <categoryEntry id="a768-815b-17bf-6136" name="LegioVenator" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -518,6 +521,18 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <categoryLink id="b789-e317-99d6-5b8e" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
       </categoryLinks>
     </forceEntry>
+     <forceEntry id="5334-72bf-3cf7-d361" name="Knight Household" hidden="false">
+          <categoryLinks>
+            <categoryLink id="d03c-074c-d4b8-76e9" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56e6-2748-dadd-469d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="562d-f1e2-dae2-9aa5" type="max"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink id="6be4-4fef-6141-1819" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
+            <categoryLink id="0a38-cede-a93a-d6ce" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+          </categoryLinks>
+        </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="fadd-b45a-3473-bb9a" name="Warhound Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -565,7 +580,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <entryLink id="ee61-27d4-5330-1a0d" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry"/>
     <entryLink id="a061-9137-013f-cf00" name="Corsair Battleline Maniple" hidden="false" collective="false" import="true" targetId="241d-3394-9612-08c7" type="selectionEntry"/>
     <entryLink id="bf2f-3118-8d0b-fa4b" name="Janissary Batteline Maniple" hidden="false" collective="false" import="true" targetId="56b0-f155-3635-45da" type="selectionEntry"/>
-    <entryLink id="cea6-93b6-5d50-2f23" name="Regis Battleline Maniple" hidden="false" collective="false" import="true" targetId="51b7-df68-7254-8f21" type="selectionEntry"/>
+    <entryLink id="cea6-93b6-5d50-2f23" name="Regia Battleline Maniple" hidden="false" collective="false" import="true" targetId="51b7-df68-7254-8f21" type="selectionEntry"/>
     <entryLink id="7e16-91e5-f646-3e5e" name="Lupercal Light Maniple" hidden="false" collective="false" import="true" targetId="26ca-c6f5-04b3-10c1" type="selectionEntry"/>
     <entryLink id="a9ee-6217-2e69-f7f6" name="Dominus Battleforce Maniple" hidden="false" collective="false" import="true" targetId="22ac-d1cf-8596-c057" type="selectionEntry"/>
     <entryLink id="da16-a787-0bc8-23ed" name="Ferrox Light Maniple" hidden="false" collective="false" import="true" targetId="365e-d892-5c42-f7a3" type="selectionEntry"/>
@@ -687,7 +702,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <entryLink id="c48a-5599-f126-6ba8" name="Cripple the Foe" hidden="false" collective="false" import="true" targetId="2536-756b-a090-24dd" type="selectionEntry"/>
     <entryLink id="0449-348d-a1eb-91f4" name="Decapitating Strike" hidden="false" collective="false" import="true" targetId="f752-af34-e90c-eb00" type="selectionEntry"/>
     <entryLink id="d9de-ca48-43ab-7e97" name="Break Through" hidden="false" collective="false" import="true" targetId="45d2-33d8-2a8c-321a" type="selectionEntry"/>
-    <entryLink id="ff53-9af3-8863-fdde" name="Score to Settle" hidden="false" collective="false" import="true" targetId="1505-ad33-6414-78ff" type="selectionEntry"/>
+    <entryLink id="ff53-9af3-8863-fdde" name="A Score to Settle" hidden="false" collective="false" import="true" targetId="1505-ad33-6414-78ff" type="selectionEntry"/>
     <entryLink id="25e1-31f1-f29f-5b32" name="Apocalypse Missile Strongpoint" hidden="false" collective="false" import="true" targetId="2aaf-da08-f744-14f6" type="selectionEntry"/>
     <entryLink id="9562-ac8d-0e47-78b4" name="Plasma Generator" hidden="false" collective="false" import="true" targetId="43a6-b634-7e41-d6c9" type="selectionEntry"/>
     <entryLink id="00f9-13d0-2a6f-f152" name="Communications Relay" hidden="false" collective="false" import="true" targetId="2ce9-9861-420c-d8e8" type="selectionEntry"/>
@@ -712,7 +727,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </categoryLinks>
     </entryLink>
     <entryLink id="2bf7-b386-a4ee-2043" name="Mandatum Battleline Maniple" hidden="false" collective="false" import="true" targetId="f969-b5c4-4b5d-1723" type="selectionEntry"/>
-    <entryLink id="dcf6-6569-c080-e2ea" name="Canis Light Maniple" hidden="false" collective="false" import="true" targetId="3a41-59a8-581b-0498" type="selectionEntry"/>
+    <entryLink id="dcf6-6569-c080-e2ea" name="=Audax= Canis Light Maniple" hidden="false" collective="false" import="true" targetId="3a41-59a8-581b-0498" type="selectionEntry"/>
     <entryLink id="00f5-8d82-bcc2-9188" name="=Mordaxis= Unstoppable" hidden="false" collective="false" import="true" targetId="3426-e19b-771f-0d15" type="selectionEntry"/>
     <entryLink id="cf67-1865-82d1-2564" name="=Infernus= Burned Ones" hidden="false" collective="false" import="true" targetId="4cf8-2cc7-a7fc-085e" type="selectionEntry"/>
     <entryLink id="2057-fe4e-c273-b652" name="=Lysanda= Frontier Guard" hidden="false" collective="false" import="true" targetId="117e-1150-d95c-0c61" type="selectionEntry"/>
@@ -778,7 +793,63 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <categoryLink id="1af2-716e-33ec-2f87" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
-  </entryLinks>
+   <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="true" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
+      <entryLink id="dbb1-ed4f-4c95-7c91" name="=Astraman= Stand Firm" hidden="false" collective="false" import="true" targetId="ab6a-2fba-dc15-e2ef" type="selectionEntry"/>
+      <entryLink id="0156-e161-1f34-4cab" name="=Astraman= Strength and Resolve" hidden="false" collective="false" import="true" targetId="8f31-0e84-26f0-f2af" type="selectionEntry"/>
+      <entryLink id="dde0-a580-6658-e1cc" name="=Damicium= Endurance Beyond Limit" hidden="false" collective="false" import="false" targetId="43ed-3dab-833c-e085" type="selectionEntry">
+        <categoryLinks>
+          <categoryLink id="6428-64e1-91f5-80dc" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+          <categoryLink id="1e07-d102-4de5-7273" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
+        </categoryLinks>
+        <costs>
+          <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        </costs>
+      </entryLink>
+      <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="false" collective="false" import="true" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
+        <categoryLinks>
+          <categoryLink id="44ba-d4da-ccb1-640e" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+          <categoryLink id="1816-e9d6-db43-44ad" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
+        </categoryLinks>
+        <costs>
+          <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        </costs>
+      </entryLink>
+      <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="false" collective="false" import="true" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry"/>
+      <entryLink id="16c3-2c70-04ae-4df3" name="=Ignatum= Guard the Gates" hidden="false" collective="false" import="true" targetId="087c-a203-d1d4-bfcd" type="selectionEntry"/>
+      <entryLink id="2aa6-80ce-5c35-a605" name="=Ignatum= Punish their Folly" hidden="false" collective="false" import="true" targetId="ced4-b0c7-5d0f-3c30" type="selectionEntry"/>
+      <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders " hidden="false" collective="false" import="true" targetId="7c51-55b9-4942-4061" type="selectionEntry"/>
+      <entryLink id="1182-1545-6fc1-e75e" name="=Kulisaetai= Methodical Advance" hidden="false" collective="false" import="true" targetId="88d4-a5e8-4929-8037" type="selectionEntry"/>
+      <entryLink id="4736-4fef-8991-fe87" name="=Kulisaetai= Steadfast Bastion " hidden="false" collective="false" import="true" targetId="cf5b-8f2e-8df3-7539" type="selectionEntry"/>
+      <entryLink id="8a6c-b6fe-d912-ad44" name="=Laniaskara= Heedless Charge" hidden="false" collective="false" import="true" targetId="5dd2-5a20-9a7a-c000" type="selectionEntry">
+        <categoryLinks>
+          <categoryLink id="9543-1e7c-2624-3ae8" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+          <categoryLink id="9c5c-00d9-c76c-f7f5" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
+        </categoryLinks>
+      </entryLink>
+      <entryLink id="f865-1276-736a-80df" name="=Laniaskara= Mordantised Ceramite" hidden="false" collective="false" import="true" targetId="170d-3f13-f670-3cc6" type="selectionEntry"/>
+      <entryLink id="621c-b697-04b8-7517" name="=Tritonis= Radiative Warheads" hidden="false" collective="false" import="true" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry"/>
+      <entryLink id="0332-6f07-e3d8-ecfd" name="=Tritonis= Stygian Veil" hidden="false" collective="false" import="true" targetId="ad64-ba43-1e95-87ca" type="selectionEntry"/>
+      <entryLink id="e0d5-c856-00c2-92c4" name="=Venator= Blind Launchers" hidden="false" collective="false" import="true" targetId="1582-9f6b-0e82-c228" type="selectionEntry"/>
+      <entryLink id="f902-8a56-8c96-4c3c" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="true" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
+      <entryLink id="e895-90c4-04af-92e7" name="Precept Battleline Maniple" hidden="false" collective="false" import="true" targetId="6e74-335d-5467-0907" type="selectionEntry"/>
+      <entryLink id="3516-5d57-8e42-97f0" name="Ignus Light Maniple" hidden="false" collective="false" import="true" targetId="ab5b-9a2c-91b9-35a2" type="selectionEntry"/>
+      <entryLink id="bf58-e1b7-8ac6-933b" name="A Quick Kill" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" targetId="6f6c-982d-c8ed-5fb8" type="selectionEntry"/>
+      <entryLink id="6617-7324-c72a-e622" name="Earthshaker Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" targetId="eb24-c12a-7f9c-d4c1" type="selectionEntry"/>
+      <entryLink id="b694-6cd4-5db8-8d88" name="Even in Death" hidden="false" collective="false" import="true" targetId="fc25-6786-d24b-0cc8" type="selectionEntry"/>
+      <entryLink id="b47e-f0ce-71b0-d62c" name="Haywire Barrage" hidden="false" collective="false" import="true" targetId="e862-2a40-3c8f-1fd9" type="selectionEntry"/>
+      <entryLink id="23b8-0155-7c30-3169" name="Justice for the Fallen" hidden="false" collective="false" import="true" targetId="14a6-fc52-9fa3-8a97" type="selectionEntry"/>
+      <entryLink id="b900-44e7-a947-4500" name="Hold the Centre" hidden="false" collective="false" import="true" targetId="fce9-f583-2d42-26bd" type="selectionEntry"/>
+      <entryLink id="a57d-be5b-8200-5153" name="No Prisoners" hidden="false" collective="false" import="true" targetId="78ac-538a-0de3-c8d9" type="selectionEntry"/>
+      <entryLink id="b9d4-f9c7-26ec-9191" name="Penance" hidden="false" collective="false" import="true" targetId="10a5-6174-a6f3-0344" type="selectionEntry"/>
+      <entryLink id="eb2d-2ee1-3fc1-3975" name="Scatterable Mines" hidden="false" collective="false" import="true" targetId="8738-12fd-ab3d-5ad5" type="selectionEntry"/>
+      <entryLink id="d5b0-29d4-ddfc-14c9" name="Static Rain" hidden="false" collective="false" import="true" targetId="33df-1682-cf66-5255" type="selectionEntry"/>
+      <entryLink id="284c-caeb-2b2d-83b6" name="Strafing Run" hidden="false" collective="false" import="true" targetId="a3f1-5763-016d-21d3" type="selectionEntry"/>
+      <entryLink id="d69f-4382-fafd-1e9a" name="Titan Hunter Infantry" page="" hidden="false" collective="false" import="true" targetId="af36-a2ad-3abf-2f12" type="selectionEntry"/>
+      <entryLink id="7494-d040-547c-1a78" name="Titanic Decapitation" hidden="false" collective="false" import="true" targetId="a9b7-3d50-1282-ecb3" type="selectionEntry"/>
+      <entryLink id="4512-fd8f-08c9-1ec3" name="Venerable Machine Spirit" hidden="false" collective="false" import="true" targetId="dac1-7045-afdb-e4e6" type="selectionEntry"/>
+      <entryLink id="a76b-b826-3647-8c35" name="The Miracle of Mars" hidden="false" collective="false" import="true" targetId="dee9-1ba4-819a-306d" type="selectionEntry"/>
+      <entryLink id="2065-a689-35f6-52c3" name="Forward Observers" hidden="false" collective="false" import="true" targetId="17f0-a74f-027f-c827" type="selectionEntry"/>
+    </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -4311,6 +4382,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
             <entryLink id="3f9b-7dda-849d-ccee" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
             <entryLink id="2895-85a1-7497-c104" name="Cerastus Knight Castigator" hidden="false" collective="false" import="true" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
             <entryLink id="4c38-5159-b94b-514d" name="Cerastus Knight Lancer" hidden="false" collective="false" import="true" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
+            <entryLink id="2134-c88b-f873-a067" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" targetId="aed6-0705-b201-ff96" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4967,7 +5039,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
       <entryLinks>
         <entryLink id="2276-d58d-a919-6ecc" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="54a7-7b7a-7e79-fd2e" value="1">
+            <modifier type="decrement" field="54a7-7b7a-7e79-fd2e" value="1.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
               </conditions>
@@ -5149,9 +5221,9 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bf14-af1e-5d72-7c8b" name="Legio Atatus (Firebrands)" publicationId="975a-00f4-pubN87630" page="28" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bf14-af1e-5d72-7c8b" name="Legio Atarus (Firebrands)" publicationId="ce02-a882-fdad-dd36" page="36" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
-        <rule id="e068-3696-9c94-b3cb" name="Seizing the Initiative" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
+        <rule id="e068-3696-9c94-b3cb" name="Seizing the Initiative" publicationId="ce02-a882-fdad-dd36" page="36" hidden="false">
           <description>In the first round of the battle, a force that contains at least one Firebrands maniple may re-roll the dice roll to deterine who will choose the First Player, but only if they rolled lower than their opponent.  If they win this roll-off then they must nominate themselves as the First Player.
 </description>
         </rule>
@@ -5348,6 +5420,13 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
                 <categoryLink id="61f9-4e72-3af2-cf36" name="LegioVulturum" hidden="false" targetId="5a98-05b4-ed38-bbc4" primary="false"/>
               </categoryLinks>
             </entryLink>
+            <entryLink id="3d47-581b-de11-2989" name="Legio Astraman (Morning Stars)" hidden="false" collective="false" import="true" targetId="dd39-c2b7-a515-da8a" type="selectionEntry"/>
+            <entryLink id="d513-ddb4-c33e-70aa" name="Legio Damicium (Unbroken Lords) " hidden="false" collective="false" import="true" targetId="0fb5-613c-cbb2-90df" type="selectionEntry"/>
+            <entryLink id="38a2-81f9-a087-d692" name="Legio Ignatum (Fire Wasps)" hidden="false" collective="false" import="true" targetId="4a11-763b-6a82-bc29" type="selectionEntry"/>
+            <entryLink id="d2b7-bf8f-f1a7-6111" name="Legio Kulisaetai (Gatekeepers)" hidden="false" collective="false" import="true" targetId="621d-d3d2-41c9-5052" type="selectionEntry"/>
+            <entryLink id="5467-d0bf-0128-5742" name="Legio Laniaskara (Impalers)" hidden="false" collective="false" import="true" targetId="8d2d-07be-eb8c-6cce" type="selectionEntry"/>
+            <entryLink id="71c1-8633-c2e6-9666" name="Legio Tritonis (Dark Tide)" hidden="false" collective="false" import="true" targetId="dddd-cc44-e662-51a6" type="selectionEntry"/>
+            <entryLink id="8d87-8772-b11d-8d92" name="Legio Venator (Iron Spiders) " hidden="false" collective="false" import="true" targetId="2acb-2c7d-5ba6-77ff" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -9754,6 +9833,7 @@ is reduced by D3.</description>
             <entryLink id="1d50-244f-2c4a-d063" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
             <entryLink id="54dd-da5d-c4ed-dbd2" name="Cerastus Knight Castigator" hidden="false" collective="false" import="true" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
             <entryLink id="697b-e89f-105c-2a4a" name="Cerastus Knight Lancer" hidden="false" collective="false" import="true" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
+            <entryLink id="cf4f-000e-0eeb-cd7e" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" targetId="aed6-0705-b201-ff96" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -9773,6 +9853,7 @@ is reduced by D3.</description>
             <entryLink id="cc58-0ba1-67a3-aab5" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
             <entryLink id="135c-87a4-773f-eb85" name="Cerastus Knight Castigator" hidden="false" collective="false" import="true" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
             <entryLink id="d06d-c78c-32d6-2b12" name="Cerastus Knight Lancer" hidden="false" collective="false" import="true" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
+            <entryLink id="c9b6-ca3b-c09e-a2ce" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" targetId="aed6-0705-b201-ff96" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -10108,7 +10189,7 @@ is reduced by D3.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ba6a-6565-fd40-3645" name="=Atarus= Infernus Missiles" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ba6a-6565-fd40-3645" name="=Atarus= Infernus Missiles" publicationId="ce02-a882-fdad-dd36" page="36" hidden="true" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="4527-5dce-6630-39c6" name="Infernus Missiles" hidden="false">
           <description>Any Legio Atarus Titan may take Infernus Missiles as an upgrade to their Apocalypse Missile Launchers for +15 points. If a unit takes at least one hit from an Apocalypse Missile Launcher armed with Infernus Missiles, place a 5” Blast Marker under the unit. In the End Phase, any model with at least part of its base in the marker takes a Strength 4 hit, ignoring void and ion shields. Titans suffer this hit on their legs. In addition Blocking terrain touched by the template takes a Strength 4 Hit (see p52 of rulebook for Damaging and destroying terrain) and, if not destroyed, is set alight. In the end phase, burning terrain sufferers a Strength 4 Hit, and deals a Strength 4 hit to any models in it, as detailed above, until the terrain is destroyed and the fire goes out.</description>
@@ -10116,7 +10197,7 @@ is reduced by D3.</description>
       </rules>
       <categoryLinks>
         <categoryLink id="955d-7945-2c6f-99fe" name="LegioAtarus" hidden="false" targetId="cfcc-e5c0-bb0b-db6f" primary="false"/>
-        <categoryLink id="0218-8358-88b5-6d5b" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="0218-8358-88b5-6d5b" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
@@ -12542,7 +12623,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="174d-8530-d7b6-ff8e" name="Weapons on Full" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="174d-8530-d7b6-ff8e" name="Weapons to Full" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -12785,7 +12866,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b7bc-1a39-1fa8-bde4" name="=Atarus= Impetuous Machine Spirit" publicationId="975a-00f4-pubN87630" page="28" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b7bc-1a39-1fa8-bde4" name="=Atarus= Impetuous Machine Spirit" publicationId="ce02-a882-fdad-dd36" page="36" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7079-4c5f-e443-da4a" type="max"/>
       </constraints>
@@ -13545,7 +13626,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1904-0d73-fd65-ff15" name="Homing Warheads" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1904-0d73-fd65-ff15" name="Homing Missiles " publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e715-7f20-6fd4-885d" type="max"/>
       </constraints>
@@ -13754,6 +13835,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="f02a-37e1-1b7a-54ff" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="bd40-2589-1f9d-e30a" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -13768,6 +13850,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="160d-314e-4d7e-7258" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="52c9-6fc2-a263-7166" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
@@ -13782,6 +13865,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="eb6f-48f1-7363-103d" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="c9eb-3740-741a-5ebe" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -13798,6 +13882,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="9a8a-87a7-c2e3-41e2" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="0045-7a6f-b5e2-5292" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -13810,6 +13895,9 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
           <description>Play at start of any strategy phase.  For that phase Laniaskara titans gain charge orders without having to make a command check</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="c697-e873-2c87-cca4" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13823,6 +13911,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="2d20-871a-7077-6cfb" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="029e-e259-fc56-53a5" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -13837,6 +13926,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="6d62-d708-e5d3-7c2f" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="9716-bc0e-6199-9133" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -13851,6 +13941,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="5fe7-093f-b82b-1091" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="4099-59c5-c97c-4a60" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -13867,6 +13958,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </rule>
       </rules>
       <categoryLinks>
+        <categoryLink id="5b16-a9b5-983f-d3fe" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
         <categoryLink id="d6ed-9390-2a0a-4f9c" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
       </categoryLinks>
       <costs>
@@ -13882,6 +13974,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="8b7c-ad51-e7d4-20d8" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="076e-e445-f63a-8a03" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13896,6 +13989,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="e383-6349-b3aa-6a9c" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="c156-4375-0c4d-2877" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13916,6 +14010,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="6a9f-abfb-e397-7ffb" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="57f1-8fd7-14fe-c848" name="LegioVenator" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13933,6 +14028,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="44ed-5e7d-6f58-e3e1" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="f1fa-3dd6-b7b2-95dc" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13947,6 +14043,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="4462-7806-fa4d-b50b" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="ad52-2e3b-c08b-3a53" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13964,6 +14061,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="7618-c1eb-3eef-eb24" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="5788-689c-bd4f-f1dd" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13981,6 +14079,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="5992-f48d-e889-e56f" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="22e5-bc97-c768-b417" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13995,6 +14094,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="0e13-ad19-c3ee-69f9" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="6ee1-ce9c-ed40-327c" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
@@ -14009,6 +14109,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="5832-b2dc-b9cb-38ad" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="9f60-1051-b719-c89e" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
@@ -14023,6 +14124,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="fd0c-375a-7b5f-6bc7" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="9c29-3da1-24b3-e36f" name="LegioVenator" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -14037,6 +14139,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="5711-74c9-d8e1-38cc" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="0963-7a46-bec0-3925" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -14051,6 +14154,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="202e-662b-2b0b-ad36" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="6dd9-4f26-7b40-c0d0" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -14065,6 +14169,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="39cf-0545-73f6-f32d" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="1261-4ba7-0f88-ba90" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
@@ -14079,6 +14184,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       </rules>
       <categoryLinks>
         <categoryLink id="9242-3eff-654c-b313" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="f424-c956-8580-90db" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -14160,6 +14266,7 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
         <entryLink id="1047-a812-0fd2-21d4" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b23f-b6bf-9428-b19d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c36-7b31-6b55-bbe7" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="7616-e76b-3d0d-5ce2" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -14182,12 +14289,53 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
       </rules>
       <categoryLinks>
         <categoryLink id="79b7-fd71-d457-ffe0" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="1989-e08d-dfd5-793e" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+     <selectionEntry id="8738-12fd-ab3d-5ad5" name="Scatterable Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="5dd2-0ea9-7f01-7e61" name="Scatterable Mines" publicationId="975a-00f4-pubN89746" hidden="false">
+              <description>Every Strat phase. mark a point and scatter d10. 12&quot; area from point is dangerous terrain. </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="8105-be73-9f8c-2226" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+          </costs>
+        </selectionEntry>
+  <selectionEntry id="a3f1-5763-016d-21d3" name="Strafing Run" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+        <rules>
+          <rule id="e0f3-d1af-fa51-e08c" name="Strafing Run" hidden="false">
+            <description>Every Strat phase. Mark a point on two board edge and draw a line between them.  everything with 2&quot; of that line takes d3 S5 hits. Counts as hitting the facing that the strafing run is coming from. </description>
+          </rule>
+        </rules>
+        <categoryLinks>
+          <categoryLink id="7d60-7bd8-0fc0-19b4" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        </categoryLinks>
+        <costs>
+          <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        </costs>
+      </selectionEntry>
+        <selectionEntry id="2bd2-e1b7-69b5-b739" name="Quake Shells" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+            <rules>
+              <rule id="e7ea-a719-fe23-3fb8" name="Quake Shells" hidden="false">
+                <description>Every Strat phase. place 5&quot; marker and scatter d10. touched take d3S6 hits or d6 under hole. Unit then scatters d6&quot;, this may cause a collision.
+      </description>
+              </rule>
+            </rules>
+            <categoryLinks>
+              <categoryLink id="ecb8-68cf-c474-7d3b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+            </categoryLinks>
+            <costs>
+              <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+            </costs>
+          </selectionEntry>
     <selectionEntry id="0f6c-856d-c4d3-13e3" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="249e-51ed-5f66-e322" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false">
@@ -14202,6 +14350,162 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+      <selectionEntry id="fce9-f583-2d42-26bd" name="Hold the Centre" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="b29f-074e-3a90-9d97" name="Hold the Centre" hidden="false">
+              <description>End of Battle  Score 2Vp for each friendly titan within 12&quot; of centre. Score 5Vp if no enemy are within 12&quot; of centre.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="f666-358a-5279-abf1" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="33df-1682-cf66-5255" name="Static Rain" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="8b06-4144-20ce-1ec1" name="Static Rain" hidden="false">
+              <description>Any Strat phase. Place a marker. Any titan within 2d10&quot; takes d3 void saves. Knights within range cannot make ion saves for entire round.
+    </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="33f8-0425-927b-9c4e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="af36-a2ad-3abf-2f12" name="Titan Hunter Infantry" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="7e35-af3b-ac34-7abc" name="Titan Hunter Infantry" hidden="false">
+              <description>Battlefield Asset. Every Strat phase. Place two markers wholly within terrain. These can be activated as if they were units.
+    If two players place markers in the same terrain, both are removed.
+    BS 5+ Short 6 long 12&quot; S+1 Dice 4 Str 5.
+    Remove Marker after activating</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="71d1-1e7d-c6f7-0aae" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+            <categoryLink id="e27e-5784-03f2-f590" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e862-2a40-3c8f-1fd9" name="Haywire Barrage" publicationId="975a-00f4-pubN89746" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="96b1-8b12-36ba-55ad" name="Haywire Barrage" hidden="false">
+              <description>Any Strat phase. Place a marker and scatter d10. 6&quot; range, roll 2d6 for titans hit. Equal or greater than scale, take 1 point of critical damage to random location. If weapon, disabled. no effect if already fully damaged. Knight banners take d3S7 hits ignoring shields.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="dc3d-a511-0d62-20ae" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="10a5-6174-a6f3-0344" name="Penance" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="fc45-c29e-e364-578d" name="Penance" hidden="false">
+              <description>End of Battle. Score 3 VP for each structurally compromised but not destroyed friendly titan. Score 3VP if the Princeps Senioris has critical damage </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="324a-2e53-c322-9dad" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="17f0-a74f-027f-c827" name="Forward Observers" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="b696-effb-e43a-3cd9" name="Forward Observers" hidden="false">
+              <description>Battlefield Asset. Play before making a barrage attack. Place a marker anywhere on the board.  Barrage weapons may draw line of sight from this marker, ignoring the -2 for indirect fire.
+    </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="3f4f-781c-d66c-d797" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+            <categoryLink id="fb5f-80af-e881-94f2" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a9b7-3d50-1282-ecb3" name="Titanic Decapitation" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ed48-a252-a0ba-2d5d" name="Titanic Decapitation" hidden="false">
+              <description>any End phase. Score 5Vp if an enemy titan was destroyed due to critical damage to the head.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="2ab1-905c-c9c1-5f01" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="eb24-c12a-7f9c-d4c1" name="Earthshaker Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="5df9-8096-97b7-6685" name="Earthshaker Mines" hidden="false">
+              <description>Play after enemy finishes a move or turn. it takes d3 S6 hits to legs, no void saves. Unit then scatters D6&quot; which can cause a collision.
+    </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="6370-1861-e007-ca00" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="78ac-538a-0de3-c8d9" name="No Prisoners" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="bd0b-b01d-077d-1c7e" name="No Prisoners" hidden="false">
+              <description>End of Battle  Score 5 VP if all enemy titans are destroyed. For 2500+ games score 10VP.
+    </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="adf0-7369-7dc4-f171" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6f6c-982d-c8ed-5fb8" name="A Quick Kill" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="6489-9a96-a7ac-d327" name="A Quick Kill" hidden="false">
+              <description>End phase of 1st or 2nd round. Score 5VP if you have destroyed a titan of at least scale 8. </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="c057-b46c-acd5-ea50" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dee9-1ba4-819a-306d" name="The Miracle of Mars" publicationId="975a-00f4-pubN89033" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="8eb9-ea55-75f3-3b1b" name="The Miracle of Mars" hidden="false">
+              <description>Start of damage control.  Place next to a titan. At any time, discard to cool reactor.
+    Roll d10+5
+    7-15 reduce reator by d3
+    16-24 reduce by d6
+    25, lose all heat</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="12f0-caca-5395-b265" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+          </costs>
+        </selectionEntry>
     <selectionEntry id="2062-8f97-c49e-abe2" name="Warmaster Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="4bcb-5174-b9ac-cafd" name="Warmaster Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
@@ -15250,6 +15554,112 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+     <selectionEntry id="1260-8d1f-16f7-75ad" name="=Astrorum= Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c8-2b67-3fdb-ac96" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="ad4d-abd4-2b1b-bfd7" name="Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false">
+              <description>Legio Astorum.Play when a titans void shields collapse. Roll repair dice using number of servitor clades. 5 or 6 restore void shields by 1 (not a repair roll).
+    </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="bdfe-1cd2-460a-7f3c" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+            <categoryLink id="92b1-64b6-4adc-cb84" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="14a6-fc52-9fa3-8a97" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43fb-83e1-2c6b-100c" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="974b-19a6-ce5c-4bfa" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="3780-37a9-4520-2c89" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" hidden="false">
+              <description>End of Battle. If you have destroyed at least as many titans as you have lost, gain 5VP.
+    </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="0474-ebed-47c2-dbf2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aed6-0705-b201-ff96" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="e84d-2d70-0070-5894" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+            <categoryLink id="0389-4be5-248f-be4f" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink id="7f96-a00e-cf44-5c6f" name="Atrapos Graviton Singularity Cannon" hidden="false" collective="false" import="true" targetId="8f75-8c57-ffd7-06c8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc5-d2d4-5d40-104c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3dc-9cbd-6f43-0253" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="322d-51b4-40ac-eddd" name="Atrapos Lascutter" hidden="false" collective="false" import="true" targetId="fd74-2b68-7a5f-28cc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae0e-43b2-eff0-1ea3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8960-c683-634e-bfa8" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8f75-8c57-ffd7-06c8" name="Atrapos Graviton Singularity Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="3bd7-fb3b-6de3-d3d2" name="Atrapos Graviton Singularity Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+                <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+                <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+                <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+                <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">20&quot;</characteristic>
+                <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+                <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+                <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+                <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+                <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (3&quot;), Concussive</characteristic>
+                <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="fd74-2b68-7a5f-28cc" name="Atrapos Lascutter" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="3bda-2578-547f-3ce9" name="Atrapos Lascutter" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+                <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+                <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
+                <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+                <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
+                <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+                <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+                <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+                <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+                <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion, Melee</characteristic>
+                <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true">
