@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="19" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <readme>Crucible of Retribution update:
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018 " revision="21" battleScribeVersion="2.03" authorName="Deviltree" authorContact="Find me on the Battlescribe Discord @Deviltree  ***** Mdforehand@gmail.com ******" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <readme>Version 21 Update:
 
-All CoR content added
-Structure points removed</readme>
+*All Strategms and Wargear Up to Date (including WD cards)
+*Atrapos Knights now selectable under Cerastus Banners
+*Knight Households selectable as Battleforce (Still have a ton of work to do here)
+*Removed Warhound Squadron
+*Removed More Structure Points Code
+*Precept Maniple Error Fixed
+
+Future Goals:
+*Crusade Legios
+*Princeps Traits
+*Knight Households
+*Maniple Subs for Venator and Tritonis
+</readme>
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -13,7 +24,7 @@ Structure points removed</readme>
     <publication id="25e8-c9ce-9330-c53b" name="Adeptus Titanicus 2018 Errata v1.1"/>
     <publication id="3265-f408-cc9b-bfa3" name="Shadow and Iron"/>
     <publication id="2988-f24d-39ef-352e" name="Defense of Ryza"/>
-    <publication id="ce02-a882-fdad-dd36" name="Crucible of Retribution" publisherUrl="https://www.warhammerdigital.com/all-products/adeptus-titanicus-crucible-of-retribution-epub-2020.html"/>
+    <publication id="ce02-a882-fdad-dd36" name="Crucible of Retribution"/>
   </publications>
   <costTypes>
     <costType id="a731-e220-2d8a-41bf" name=" Points" defaultCostLimit="-1.0" hidden="false"/>
@@ -44,11 +55,6 @@ Structure points removed</readme>
         <characteristicType id="b21f-61e9-4f0d-88e6" name="Limited"/>
         <characteristicType id="bcd4-cb45-5d53-b7d8" name="Trait"/>
         <characteristicType id="2a6c-74d9-5a61-04bf" name="Critically Disabled Roll"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="e539-8a16-c912-c6c5" name="Structure Points">
-      <characteristicTypes>
-        <characteristicType id="1e91-6224-ebeb-fec2" name="Modifer"/>
       </characteristicTypes>
     </profileType>
     <profileType id="b72e-0b77-ebb5-507d" name="Location Table">
@@ -309,13 +315,6 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
     <categoryEntry id="15bd-0b4b-5cac-dc48" name="LegioTempestus" hidden="false"/>
     <categoryEntry id="0796-178c-50ce-2d1f" name="LegioGryphonicus" hidden="false"/>
     <categoryEntry id="06c2-f93e-7bf5-9fd5" name="LegioAstorum" hidden="false"/>
-    <categoryEntry id="324b-8404-7509-9b36" name="LegioAstraman" hidden="false"/>
-    <categoryEntry id="5f7b-2051-3935-7637" name="LegioIgnatum" hidden="false"/>
-    <categoryEntry id="43b6-60b3-8111-290c" name="LegioVenator" hidden="false"/>
-    <categoryEntry id="4a24-73e7-556c-1bfd" name="LegioLaniaskara" hidden="false"/>
-    <categoryEntry id="6740-1e8a-8e25-88fd" name="LegioKulisaetai" hidden="false"/>
-    <categoryEntry id="ccee-936e-87d6-bf29" name="LegioTritonis" hidden="false"/>
-    <categoryEntry id="ae2e-5751-1800-545a" name="LegioDamicium" hidden="false"/>
     <categoryEntry id="b539-a35c-fe3f-9c34" name="Stratagem" hidden="false">
       <modifiers>
         <modifier type="increment" field="916e-a7f5-ea1f-c24e" value="2.0">
@@ -464,39 +463,18 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     </categoryEntry>
     <categoryEntry id="f54f-c26d-3d2a-2749" name="WarlordSinisterPsiTitan" hidden="false"/>
     <categoryEntry id="eb21-0dae-9a3d-863a" name="Legio Specific Stratagem" hidden="false"/>
-    <categoryEntry id="1c43-76ab-b5e5-6baf" name="Structure" hidden="false">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="5c42-e68b-ce2b-3a92" value="0">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="7df6-870f-702a-5f7d" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c42-e68b-ce2b-3a92" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7df6-870f-702a-5f7d" type="min"/>
-      </constraints>
-    </categoryEntry>
     <categoryEntry id="fc8c-656d-ffe8-69b6" name="LegioOsedax" hidden="false"/>
     <categoryEntry id="4cad-18cf-5711-5331" name="LegioMagna" hidden="false"/>
     <categoryEntry id="5a98-05b4-ed38-bbc4" name="LegioVulturum" hidden="false"/>
     <categoryEntry id="86f0-9cae-9ece-4b64" name="Experimental Warfare" publicationId="2988-f24d-39ef-352e" page="107" hidden="false"/>
     <categoryEntry id="9e2e-c35f-34a4-d245" name="Tricks and Tactics" publicationId="2988-f24d-39ef-352e" page="107" hidden="false"/>
+    <categoryEntry id="f13e-f477-7652-0e1c" name="LegioAstraman" hidden="false"/>
+    <categoryEntry id="f986-f640-3cb3-478a" name="LegioKulisaetai" hidden="false"/>
+    <categoryEntry id="f778-49fb-1bfd-4838" name="LegioDamicium" hidden="false"/>
+    <categoryEntry id="83db-4337-737c-1db8" name="LegioIgnatum" hidden="false"/>
+    <categoryEntry id="753b-9e36-a10c-7961" name="LegioTritonis" hidden="false"/>
+    <categoryEntry id="b4cb-2809-41b4-6d83" name="LegioLaniaskara" hidden="false"/>
+    <categoryEntry id="a768-815b-17bf-6136" name="LegioVenator" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -511,40 +489,22 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70d7-a543-a930-24fe" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="8870-d6d8-5519-9eb0" name="Squadron" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="false"/>
         <categoryLink id="b789-e317-99d6-5b8e" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
       </categoryLinks>
     </forceEntry>
-  </forceEntries>
-  <selectionEntries>
-    <selectionEntry id="fadd-b45a-3473-bb9a" name="Warhound Squadron" hidden="false" collective="false" import="true" type="unit">
+    <forceEntry id="5334-72bf-3cf7-d361" name="Knight Household" hidden="false">
       <categoryLinks>
-        <categoryLink id="faa0-2f96-a453-ca5e" name="New CategoryLink" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="5d08-9f18-366e-1827" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+        <categoryLink id="d03c-074c-d4b8-76e9" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e37a-c15b-7a88-b4a3" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba5f-e2c7-500d-0093" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56e6-2748-dadd-469d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="562d-f1e2-dae2-9aa5" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1b82-8c99-c3c3-ad32" name="Show Structure" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15d2-08ff-8b71-7414" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="904c-abe6-7912-58c5" type="min"/>
-      </constraints>
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
+        </categoryLink>
+        <categoryLink id="6be4-4fef-6141-1819" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
+        <categoryLink id="0a38-cede-a93a-d6ce" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
   <entryLinks>
     <entryLink id="9992-64af-f770-acd6" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
       <categoryLinks>
@@ -562,7 +522,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <entryLink id="ee61-27d4-5330-1a0d" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry"/>
     <entryLink id="a061-9137-013f-cf00" name="Corsair Battleline Maniple" hidden="false" collective="false" import="true" targetId="241d-3394-9612-08c7" type="selectionEntry"/>
     <entryLink id="bf2f-3118-8d0b-fa4b" name="Janissary Batteline Maniple" hidden="false" collective="false" import="true" targetId="56b0-f155-3635-45da" type="selectionEntry"/>
-    <entryLink id="cea6-93b6-5d50-2f23" name="Regis Battleline Maniple" hidden="false" collective="false" import="true" targetId="51b7-df68-7254-8f21" type="selectionEntry"/>
+    <entryLink id="cea6-93b6-5d50-2f23" name="Regia Battleline Maniple" hidden="false" collective="false" import="true" targetId="51b7-df68-7254-8f21" type="selectionEntry"/>
     <entryLink id="7e16-91e5-f646-3e5e" name="Lupercal Light Maniple" hidden="false" collective="false" import="true" targetId="26ca-c6f5-04b3-10c1" type="selectionEntry"/>
     <entryLink id="a9ee-6217-2e69-f7f6" name="Dominus Battleforce Maniple" hidden="false" collective="false" import="true" targetId="22ac-d1cf-8596-c057" type="selectionEntry"/>
     <entryLink id="da16-a787-0bc8-23ed" name="Ferrox Light Maniple" hidden="false" collective="false" import="true" targetId="365e-d892-5c42-f7a3" type="selectionEntry"/>
@@ -684,7 +644,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <entryLink id="c48a-5599-f126-6ba8" name="Cripple the Foe" hidden="false" collective="false" import="true" targetId="2536-756b-a090-24dd" type="selectionEntry"/>
     <entryLink id="0449-348d-a1eb-91f4" name="Decapitating Strike" hidden="false" collective="false" import="true" targetId="f752-af34-e90c-eb00" type="selectionEntry"/>
     <entryLink id="d9de-ca48-43ab-7e97" name="Break Through" hidden="false" collective="false" import="true" targetId="45d2-33d8-2a8c-321a" type="selectionEntry"/>
-    <entryLink id="ff53-9af3-8863-fdde" name="Score to Settle" hidden="false" collective="false" import="true" targetId="1505-ad33-6414-78ff" type="selectionEntry"/>
+    <entryLink id="ff53-9af3-8863-fdde" name="A Score to Settle" hidden="false" collective="false" import="true" targetId="1505-ad33-6414-78ff" type="selectionEntry"/>
     <entryLink id="25e1-31f1-f29f-5b32" name="Apocalypse Missile Strongpoint" hidden="false" collective="false" import="true" targetId="2aaf-da08-f744-14f6" type="selectionEntry"/>
     <entryLink id="9562-ac8d-0e47-78b4" name="Plasma Generator" hidden="false" collective="false" import="true" targetId="43a6-b634-7e41-d6c9" type="selectionEntry"/>
     <entryLink id="00f9-13d0-2a6f-f152" name="Communications Relay" hidden="false" collective="false" import="true" targetId="2ce9-9861-420c-d8e8" type="selectionEntry"/>
@@ -709,7 +669,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </categoryLinks>
     </entryLink>
     <entryLink id="2bf7-b386-a4ee-2043" name="Mandatum Battleline Maniple" hidden="false" collective="false" import="true" targetId="f969-b5c4-4b5d-1723" type="selectionEntry"/>
-    <entryLink id="dcf6-6569-c080-e2ea" name="Canis Light Maniple" hidden="false" collective="false" import="true" targetId="3a41-59a8-581b-0498" type="selectionEntry"/>
+    <entryLink id="dcf6-6569-c080-e2ea" name="=Audax= Canis Light Maniple" hidden="false" collective="false" import="true" targetId="3a41-59a8-581b-0498" type="selectionEntry"/>
     <entryLink id="00f5-8d82-bcc2-9188" name="=Mordaxis= Unstoppable" hidden="false" collective="false" import="true" targetId="3426-e19b-771f-0d15" type="selectionEntry"/>
     <entryLink id="cf67-1865-82d1-2564" name="=Infernus= Burned Ones" hidden="false" collective="false" import="true" targetId="4cf8-2cc7-a7fc-085e" type="selectionEntry"/>
     <entryLink id="2057-fe4e-c273-b652" name="=Lysanda= Frontier Guard" hidden="false" collective="false" import="true" targetId="117e-1150-d95c-0c61" type="selectionEntry"/>
@@ -769,6 +729,62 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <entryLink id="7740-08d6-29c3-9a3b" name="Last Ditch Effort" hidden="false" collective="false" import="true" targetId="a6f0-9aff-9834-89c7" type="selectionEntry"/>
     <entryLink id="de16-e3b4-01e5-1e6d" name="=Vulturum= Cull the Weak" hidden="false" collective="false" import="true" targetId="f805-d25f-6ece-e62a" type="selectionEntry"/>
     <entryLink id="027a-da58-97db-3df9" name="=Vulturum= Scent of Blood" hidden="false" collective="false" import="true" targetId="0942-9568-cbd3-aec6" type="selectionEntry"/>
+    <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="true" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
+    <entryLink id="dbb1-ed4f-4c95-7c91" name="=Astraman= Stand Firm" hidden="false" collective="false" import="true" targetId="ab6a-2fba-dc15-e2ef" type="selectionEntry"/>
+    <entryLink id="0156-e161-1f34-4cab" name="=Astraman= Strength and Resolve" hidden="false" collective="false" import="true" targetId="8f31-0e84-26f0-f2af" type="selectionEntry"/>
+    <entryLink id="dde0-a580-6658-e1cc" name="=Damicium= Endurance Beyond Limit" hidden="false" collective="false" import="false" targetId="43ed-3dab-833c-e085" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6428-64e1-91f5-80dc" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="1e07-d102-4de5-7273" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="false" collective="false" import="true" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="44ba-d4da-ccb1-640e" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="1816-e9d6-db43-44ad" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="false" collective="false" import="true" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry"/>
+    <entryLink id="16c3-2c70-04ae-4df3" name="=Ignatum= Guard the Gates" hidden="false" collective="false" import="true" targetId="087c-a203-d1d4-bfcd" type="selectionEntry"/>
+    <entryLink id="2aa6-80ce-5c35-a605" name="=Ignatum= Punish their Folly" hidden="false" collective="false" import="true" targetId="ced4-b0c7-5d0f-3c30" type="selectionEntry"/>
+    <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders " hidden="false" collective="false" import="true" targetId="7c51-55b9-4942-4061" type="selectionEntry"/>
+    <entryLink id="1182-1545-6fc1-e75e" name="=Kulisaetai= Methodical Advance" hidden="false" collective="false" import="true" targetId="88d4-a5e8-4929-8037" type="selectionEntry"/>
+    <entryLink id="4736-4fef-8991-fe87" name="=Kulisaetai= Steadfast Bastion " hidden="false" collective="false" import="true" targetId="cf5b-8f2e-8df3-7539" type="selectionEntry"/>
+    <entryLink id="8a6c-b6fe-d912-ad44" name="=Laniaskara= Heedless Charge" hidden="false" collective="false" import="true" targetId="5dd2-5a20-9a7a-c000" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9543-1e7c-2624-3ae8" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="9c5c-00d9-c76c-f7f5" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f865-1276-736a-80df" name="=Laniaskara= Mordantised Ceramite" hidden="false" collective="false" import="true" targetId="170d-3f13-f670-3cc6" type="selectionEntry"/>
+    <entryLink id="621c-b697-04b8-7517" name="=Tritonis= Radiative Warheads" hidden="false" collective="false" import="true" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry"/>
+    <entryLink id="0332-6f07-e3d8-ecfd" name="=Tritonis= Stygian Veil" hidden="false" collective="false" import="true" targetId="ad64-ba43-1e95-87ca" type="selectionEntry"/>
+    <entryLink id="e0d5-c856-00c2-92c4" name="=Venator= Blind Launchers" hidden="false" collective="false" import="true" targetId="1582-9f6b-0e82-c228" type="selectionEntry"/>
+    <entryLink id="f902-8a56-8c96-4c3c" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="true" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
+    <entryLink id="e895-90c4-04af-92e7" name="Precept Battleline Maniple" hidden="false" collective="false" import="true" targetId="6e74-335d-5467-0907" type="selectionEntry"/>
+    <entryLink id="3516-5d57-8e42-97f0" name="Ignus Light Maniple" hidden="false" collective="false" import="true" targetId="ab5b-9a2c-91b9-35a2" type="selectionEntry"/>
+    <entryLink id="bf58-e1b7-8ac6-933b" name="A Quick Kill" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" targetId="6f6c-982d-c8ed-5fb8" type="selectionEntry"/>
+    <entryLink id="6617-7324-c72a-e622" name="Earthshaker Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" targetId="eb24-c12a-7f9c-d4c1" type="selectionEntry"/>
+    <entryLink id="b694-6cd4-5db8-8d88" name="Even in Death" hidden="false" collective="false" import="true" targetId="fc25-6786-d24b-0cc8" type="selectionEntry"/>
+    <entryLink id="b47e-f0ce-71b0-d62c" name="Haywire Barrage" hidden="false" collective="false" import="true" targetId="e862-2a40-3c8f-1fd9" type="selectionEntry"/>
+    <entryLink id="23b8-0155-7c30-3169" name="Justice for the Fallen" hidden="false" collective="false" import="true" targetId="14a6-fc52-9fa3-8a97" type="selectionEntry"/>
+    <entryLink id="b900-44e7-a947-4500" name="Hold the Centre" hidden="false" collective="false" import="true" targetId="fce9-f583-2d42-26bd" type="selectionEntry"/>
+    <entryLink id="a57d-be5b-8200-5153" name="No Prisoners" hidden="false" collective="false" import="true" targetId="78ac-538a-0de3-c8d9" type="selectionEntry"/>
+    <entryLink id="b9d4-f9c7-26ec-9191" name="Penance" hidden="false" collective="false" import="true" targetId="10a5-6174-a6f3-0344" type="selectionEntry"/>
+    <entryLink id="eb2d-2ee1-3fc1-3975" name="Scatterable Mines" hidden="false" collective="false" import="true" targetId="8738-12fd-ab3d-5ad5" type="selectionEntry"/>
+    <entryLink id="d5b0-29d4-ddfc-14c9" name="Static Rain" hidden="false" collective="false" import="true" targetId="33df-1682-cf66-5255" type="selectionEntry"/>
+    <entryLink id="284c-caeb-2b2d-83b6" name="Strafing Run" hidden="false" collective="false" import="true" targetId="a3f1-5763-016d-21d3" type="selectionEntry"/>
+    <entryLink id="d69f-4382-fafd-1e9a" name="Titan Hunter Infantry" page="" hidden="false" collective="false" import="true" targetId="af36-a2ad-3abf-2f12" type="selectionEntry"/>
+    <entryLink id="7494-d040-547c-1a78" name="Titanic Decapitation" hidden="false" collective="false" import="true" targetId="a9b7-3d50-1282-ecb3" type="selectionEntry"/>
+    <entryLink id="4512-fd8f-08c9-1ec3" name="Venerable Machine Spirit" hidden="false" collective="false" import="true" targetId="dac1-7045-afdb-e4e6" type="selectionEntry"/>
+    <entryLink id="a76b-b826-3647-8c35" name="The Miracle of Mars" hidden="false" collective="false" import="true" targetId="dee9-1ba4-819a-306d" type="selectionEntry"/>
+    <entryLink id="2065-a689-35f6-52c3" name="Forward Observers" hidden="false" collective="false" import="true" targetId="17f0-a74f-027f-c827" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
@@ -789,565 +805,6 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <categoryLink id="17c4-13fd-4cef-2987" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink id="c161-c1d8-f789-0f47" name="New CategoryLink" hidden="false" targetId="d36f-5e44-2150-3428" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="ff82-d3e7-e39f-4700" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="309c-e12a-af55-c81b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a61c-c66a-701a-9c2b" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="8f8e-0b82-adec-c7e1" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="ce60-5657-c368-460a" name="Body" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d4e-d754-4b94-3323" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6f9-c822-1d53-04c0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f0e4-6eea-a1a2-d04c" name="Body" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">11-13</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-16</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="82f9-6dd7-e7d4-82cb" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="59c7-993b-9c03-c877">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="738f-539a-c675-f21d" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e63b-754d-5877-c33f" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="59c7-993b-9c03-c877" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eba-bec1-76c7-0f0e" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="1041-dd3b-abc9-9e4b" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="7749-9b6d-8c4c-d222" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0759-55e5-ff3e-929e" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="98a7-e609-3450-5ee4" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="c720-58f0-4061-0eb5" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cc1-8506-73d1-4945" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="137c-544a-675a-5ab8" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="f943-ce91-2546-4cb3" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd27-e04a-117b-d842" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="4fd8-76b6-0f25-fa9d" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="5969-86c7-1d37-18aa" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e39c-a832-2f52-c15c" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="dfe7-16b6-4dc6-3afe" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="2cba-a8c1-20e3-35b4" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ae8-e055-8892-bbfc" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="e432-f209-04e3-eb40" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="cbdf-0200-b5a8-2881" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b37-f85f-01f9-927a" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="a31c-0232-6bc0-f135" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="42b2-f10a-4222-852e" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8ef8-4f5d-57a9-f47a" name="Head" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30c6-c9ce-50eb-648a" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3e2-e28a-be15-31d7" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="d37d-2bd0-dfcc-ee2d" name="Head" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">10-12</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="440e-2dfa-8e20-8064" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="8611-c4b9-610c-1333">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8db-d429-4193-b7c4" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cac5-b52b-3a0b-1002" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="8611-c4b9-610c-1333" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="448a-280d-f308-f352" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="d093-d005-924b-f755" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8a8a-9f35-f410-eeb9" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d37-cb42-6143-6bbd" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="2d1b-a369-3f14-4eee" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="e2b1-41cb-6b96-a022" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d642-fed2-8f14-97d0" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="3e0d-dda6-66c7-8a46" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="b273-f29b-48e9-7293" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0f3-d8dd-af34-9f92" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="eb06-4ff1-e3c0-6074" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="02e6-b3c4-1f8f-01aa" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7328-1f84-999d-5d8b" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="77b9-1c7d-7bad-3fc0" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="0530-f70a-2f6a-cd62" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fef8-6c48-6ce1-a065" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="339e-d87a-4b5b-c175" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="38fd-5f77-e951-c211" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="de3a-7adc-1fb8-e7ba" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fe3-b516-e2e2-42be" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="310b-28f4-2747-35ce" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4ba4-3390-45ad-092d" name="Legs" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">11-12</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="9027-f636-4ff9-b37a" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="ac20-d5b6-5270-f35a">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a05-27fa-a12a-bccf" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="788b-e6ac-378a-9d9a" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="ac20-d5b6-5270-f35a" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b82-cac6-0d30-789f" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="8cae-74a0-a943-9d79" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="6f4a-fc4f-429c-9038" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b69-4bfc-4cc7-463f" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="8cf5-dde3-75d5-cfe1" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="cb1b-30ca-181c-cb2f" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8c4-fab1-e4bf-d652" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="9942-2e4d-c22c-4d09" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="3f6d-e866-4a4b-a41f" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="474d-67cd-e778-3bb4" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="e813-9981-3cab-4bf8" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="86e0-52f3-77ac-89f3" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77d9-a27d-0305-9964" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="dbb2-4250-1c45-47b4" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="a959-1081-6073-b8db" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eed7-d7d3-e898-1c34" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="f776-d48a-0164-8a9b" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="f0a1-5f54-86f2-5b42" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5037-7245-0f97-6fac" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="2f61-4176-21b8-bb51" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="e1b7-9601-f048-0edb" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="baac-b77a-7ab2-043a" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="785a-7176-5752-c5a3" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83fc-a8d4-fde6-68ce" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="d2bd-434c-a954-375f" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b56-30e3-0921-394c">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eec4-2391-20b6-9f8e" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a523-3994-1e1a-b325" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="2b56-30e3-0921-394c" name="⦿⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c35c-f3b0-33e5-f725" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="0931-df64-4c5a-266a" name="⦿⦿⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d52-4443-cb4b-2e8d" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="2692-3ce5-8f16-d604" name="⦿⦿⦿⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47c3-783e-b2c0-e523" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8461-a1d2-f546-dc46" name="⦿⦿⦿⦿⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffdc-5417-8015-1225" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8edc-2087-9a1a-97a7" name="⦿⦿⦿⦿⦿⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5ad-2cbd-5572-4a31" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="9c87-2325-bc84-deda" name="⦿⦿⦿⦿⦿⦿ Red(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ebe-fde4-9694-9e30" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="be56-42b4-e79b-5ba5" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff26-23a2-a262-ab8a" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d10-2aad-218b-d8f4" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="6cf7-6997-5c1a-e828" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="f4ec-7ca3-4c37-5932">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c957-ec35-1701-74d4" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eea-7604-ae9e-42fa" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="f4ec-7ca3-4c37-5932" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦾⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="2c89-338f-3bb8-c818" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="04fd-3b18-9809-587f" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="b355-c09b-1851-15a9" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="0eac-414d-90c1-8da3" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿⦿"/>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="360a-34ac-766d-69f2" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
@@ -1438,11 +895,6 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadd-b45a-3473-bb9a" type="instanceOf"/>
-              </conditions>
-            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffec-c86f-fff3-6d9b" type="max"/>
@@ -1474,627 +926,6 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <categoryLink id="1fb9-4ade-8578-24a5" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink id="e9d5-d649-c246-8d73" name="New CategoryLink" hidden="false" targetId="7103-9316-d4a5-8caa" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="46bb-a965-6f49-c8ee" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cadf-a9ab-206c-2982" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="549c-b972-95dd-878b" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="c9fc-05d6-b611-241b" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="aa49-c623-c57b-73bb" name="Body" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9c1-0776-cdf4-522b" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80f7-2e97-ac2a-86ee" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="ab77-35f7-48ab-fef0" name="Body" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">12-13</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-15</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="58a2-4c85-4a1a-aee9" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="ab1f-60d4-7ed1-615f">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bf0-53a0-fa82-87e5" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a226-347f-55f1-8704" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="ab1f-60d4-7ed1-615f" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc2-645f-04a2-de65" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="e111-3e7a-a1e1-1f20" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="adf4-7b44-6143-223b" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="163b-a8b5-f84a-7962" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="7bec-c45b-c892-aef0" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="9524-d74b-89e6-8124" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa6a-e738-77a4-3487" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="3bdd-3191-cc42-8ffe" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8120-d8ca-e063-fc69" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8ff-9024-dffd-0608" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="f3ef-b84f-61bd-896c" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="fd39-dad3-6381-f681" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a7-9bc7-14c1-bcc9" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="3f8f-6d74-34eb-7a4e" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="f712-6fc1-9af7-654c" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fd9-9294-2c31-7d8b" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="fa6f-f698-3dc1-e001" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8835-8f2d-2dc5-83a3" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84b7-a36b-3987-3c16" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="8b5e-2ee0-f549-0bc9" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="393c-855d-c302-25c1" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4334-7c5f-9f17-f5c2" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="0d8e-b803-2feb-b65d" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="dfd9-55f4-46af-8544" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="58ab-d5f7-afcb-2a19" name="Head" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd31-da63-0747-687b" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1e6-bafe-2cde-65d1" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="11b4-3e8a-4b18-745d" name="Head" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">12-13</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-15</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="e80f-7b39-4014-2a0a" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="3838-511f-208c-256c">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ecb-7880-9d24-9fe5" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92cb-d548-9ec2-ca1a" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="3838-511f-208c-256c" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6119-8d60-0b89-40f2" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="ad41-d91d-67ae-97a6" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="1180-0fb8-9f78-871c" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb99-f348-a4ad-2601" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="715d-70c9-337f-1fdf" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="1936-a16e-1410-426d" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a4a-624b-cdaf-ed9a" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="cfa5-0605-11a6-58cb" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="e5a3-fbec-38de-7fc7" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="787c-98ad-7ece-4e87" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="178c-4723-58ab-373e" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="67fa-e013-00d7-0f21" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5412-55a2-5eff-cfa1" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="e7fe-1fd2-2525-809d" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="6a3c-4a4a-c37a-170b" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2db-cd50-a831-d930" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="e22d-24a3-c07a-df6a" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="92ba-4ad0-f3a8-7592" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04aa-4f36-249e-7f28" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="e78f-5c14-6742-fdd0" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="c3a4-e953-7af0-88fe" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5acc-0459-2703-dc89" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="049b-8518-e72d-bd19" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="755c-0195-f901-caf4" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4ef7-9ace-96c0-97ea" name="Legs" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">13-14</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">15-16</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="2192-e522-33fc-7a0d" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="c4f0-e036-8fb6-710f">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49b4-42e7-5268-4d56" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e011-de54-df3f-2fcc" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="c4f0-e036-8fb6-710f" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9be1-a7aa-eba8-8559" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="4543-4432-5cbd-074b" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="5729-ab82-dcd7-517c" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27f0-7f4c-a3af-3b34" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="df50-618e-50cd-30d0" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8051-ffba-8f45-82b4" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1479-1a74-938d-0b81" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="c00f-d942-4c28-897b" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="1594-eb53-d37e-6e88" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="150e-10cb-feb4-d768" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="cf7e-2f15-9aa4-8cb8" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="2913-8ee0-87cf-c8b4" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f2-1fc3-e7ec-420a" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="9893-ec59-9eba-187d" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="d235-5e5b-a325-8206" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0735-a4dc-d8fa-f09c" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="4cc8-dbbf-2d63-302a" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="31ee-5ae5-74db-2bd9" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c8d-79c9-7edc-7faa" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="bfc1-c186-1e1b-39f8" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="ad21-e7a4-9a86-9e04" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db90-7021-6fbe-df20" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="4366-b0e8-1f06-9a27" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="d286-5cab-a926-da9c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8069-3325-63b2-3029" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c03-f95d-e7e5-5b09" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7832-31ce-dfb8-5fe3" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="b11a-fac5-3ae8-0851" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="6617-31a5-b4f8-a45e">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a2a-0cb9-90a7-7ade" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42fc-9bb4-0ee9-561c" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="6617-31a5-b4f8-a45e" name="⦿⦾⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30f4-cc6a-c757-c39d" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8de5-3d7c-764f-948e" name="⦿⦿⦾⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37bc-1b00-d218-a7c9" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="11b6-6636-0e86-ce0b" name="⦿⦿⦿⦾⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f558-4aff-27d1-2b76" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="d8f9-32a3-89cc-5b55" name="⦿⦿⦿⦿⦾⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5c5-828e-f59a-1ceb" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="287a-397a-875e-97db" name="⦿⦿⦿⦿⦿⦾⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e18-abb6-2053-5ad3" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="9aa4-9d6b-41ae-7eba" name="⦿⦿⦿⦿⦿⦿⦾ Orange(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4ea-289d-6cf7-aeaf" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="ec82-402a-b5ee-775c" name="⦿⦿⦿⦿⦿⦿⦿ Red(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4829-41c4-5ca0-1126" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4713-328f-fa65-9e84" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39a8-c596-3622-7cdc" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a1d-bc5b-b1fc-1886" type="min"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="6d0b-28e5-4a63-a6b0" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="c3db-3518-2542-a028">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0287-723f-12e1-0fb2" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ade-1817-3beb-2c7d" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="c3db-3518-2542-a028" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="ee07-d123-f53b-0dc9" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="9190-a1a2-b667-18a4" name="Void Shield (3+) 3" hidden="false" collective="false" import="true" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="e9d0-ceaf-04ef-8bf9" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="a22c-6c00-fbc0-a5fd" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="7840-44d7-49c3-e1fc" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="2c49-32dd-c032-07ff" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
@@ -2170,11 +1001,6 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadd-b45a-3473-bb9a" type="instanceOf"/>
-              </conditions>
-            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f10-7a4d-94e4-854e" type="max"/>
@@ -2206,503 +1032,6 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <categoryLink id="9848-624b-2e4a-6ddf" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink id="e12e-1619-83e6-4a5c" name="New CategoryLink" hidden="false" targetId="223f-6e71-9e4f-939e" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="139d-39eb-08c0-175c" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2700-70b7-8b4a-101f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb8a-5a6b-4d63-c7bd" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="b63d-d452-dd14-8f23" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="2e95-41ff-648a-c613" name="Body" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb15-7874-a8cf-34d4" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="026d-3d4b-1eb4-68e8" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="eaa2-1b91-358d-7399" name="Body" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">10-11</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">12-13</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">14+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="065f-7fc6-d202-91fe" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="e5f5-7737-0ee3-12ff">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd5b-f19a-c14f-40b3" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f77-3ef7-003e-35ed" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="e5f5-7737-0ee3-12ff" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03f8-b95e-e462-11a6" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="26cd-5b7a-1830-1fd4" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="b151-03fa-8b96-0fce" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="308b-e45d-c609-6971" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="f41f-5717-8476-559c" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="40a2-ed6a-d613-452e" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7522-3d26-e3ef-b351" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="061a-fe71-faab-75b4" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="7f2f-cebc-2271-d6b3" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2864-047c-f83b-7bc9" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="db85-b702-3f52-482f" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="c937-8b88-e260-ce58" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b321-1432-aba0-ed7b" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="9fab-f394-a2ce-40da" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="7cd8-67e7-b8af-86e2" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1806-001a-a2e6-fd42" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="616f-b35d-aa26-5e9d" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="1901-4d08-c84c-1d02" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c7e9-8beb-166b-2bd2" name="Head" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac7a-a8c0-f412-1ae3" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edc4-6c4c-f398-fd23" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="cec8-0ec1-db35-0db3" name="Head" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">11-13</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-15</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="87eb-c78b-8a61-d8ee" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="b141-59e1-7eef-4fb7">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1532-02f8-5e78-da0c" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a7e-6aa0-8b9d-a39b" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="b141-59e1-7eef-4fb7" name="⦿⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ec9-8a16-b052-c6a2" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="93e2-0dee-abbe-7569" name="⦿⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="2008-7140-9f77-0522" name="⦿⦿⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="189e-9eea-6cd2-1bde" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="30c8-28e3-4fce-e536" name="⦿⦿⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="ae51-9c44-5dab-2f9c" name="⦿⦿⦿⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc0a-934e-bf86-1758" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="682e-6771-0271-26cd" name="⦿⦿⦿⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="be7b-6c49-a68f-4f8f" name="⦿⦿⦿⦿⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ef2-efe5-40e9-5705" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="a563-535e-bbbf-162c" name="⦿⦿⦿⦿⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="0f9b-2649-2e13-f4ef" name="⦿⦿⦿⦿⦿(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea12-8754-4049-3053" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="1207-28da-7074-fe20" name="⦿⦿⦿⦿⦿(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="b204-41f0-c812-6299" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="973c-b73d-ae62-5394" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4f6-b348-a0ed-7a72" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c5e-501b-5eca-d998" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="bb98-7439-cdca-bd3d" name="Legs" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">10-12</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="a477-774a-da4f-8827" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="0ffe-6c1f-0edb-9ddb">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2bb-e7e3-465f-1616" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98a3-0772-b9bf-f4ee" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="0ffe-6c1f-0edb-9ddb" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2341-1e59-6625-0690" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="2e6c-6961-c6a3-62ef" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="9841-2754-3e13-2ece" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa9a-4a83-802d-a8bb" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="01a7-c382-dad6-bfb8" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="3f1e-254c-0f7c-30ed" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4dc-d3ca-cfb6-ae05" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="637d-64d3-7fcf-82f6" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="2a71-b4d3-b478-5933" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8e7-1703-0c7f-9056" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="4f5b-d157-6bbc-c01a" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="c15c-96d4-cc29-869c" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abd9-0b99-5cf7-df08" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="c719-2d13-3899-1a42" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8989-22df-c910-d28f" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb5b-e9bb-e119-17c3" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="3755-262c-77fc-c0a5" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="3ce0-684a-e00e-9282" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6749-39a0-bccd-77be" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17b2-6984-200e-9b80" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6772-7042-350a-29f1" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="2927-2d95-17e3-03df" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="78c9-22c6-9cc4-0984">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="045c-401a-b758-a864" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d41d-418d-680d-51b7" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="78c9-22c6-9cc4-0984" name="⦿⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aada-0398-afc7-b7c3" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="cbbf-4912-ef26-b2c8" name="⦿⦿⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8528-7979-02ad-92db" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="6303-e42d-0e7b-5504" name="⦿⦿⦿⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b27a-351a-a367-aa4c" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="5d9a-6b84-0e38-888b" name="⦿⦿⦿⦿⦾ Orange(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="594b-eb53-0b0f-328a" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="7ef3-7259-62da-5ca5" name="⦿⦿⦿⦿⦿ Red(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dfe-1122-d038-5bb8" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="10c3-14a9-774c-5c18" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cdc-4bf9-b3bb-0812" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26c4-bef5-68d7-3ecc" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="5c15-c1e9-f4bb-2039" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="fd3c-2761-b1cb-ccd7">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cd7-18f7-77c0-bebd" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbd0-5ec5-1081-ddd8" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="fd3c-2761-b1cb-ccd7" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="d3b0-f384-3e2a-4f34" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="b9e5-4d2b-fb2f-b061" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="fe5a-ad7f-493e-48a0" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿"/>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="f4dd-18ef-5ac0-0de0" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
@@ -2771,11 +1100,6 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadd-b45a-3473-bb9a" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4301,6 +2625,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
             <entryLink id="3f9b-7dda-849d-ccee" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
             <entryLink id="2895-85a1-7497-c104" name="Cerastus Knight Castigator" hidden="false" collective="false" import="true" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
             <entryLink id="4c38-5159-b94b-514d" name="Cerastus Knight Lancer" hidden="false" collective="false" import="true" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
+            <entryLink id="2134-c88b-f873-a067" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" targetId="aed6-0705-b201-ff96" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4957,7 +3282,7 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
       <entryLinks>
         <entryLink id="2276-d58d-a919-6ecc" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="54a7-7b7a-7e79-fd2e" value="1">
+            <modifier type="decrement" field="54a7-7b7a-7e79-fd2e" value="1.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
               </conditions>
@@ -5139,9 +3464,9 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bf14-af1e-5d72-7c8b" name="Legio Atatus (Firebrands)" publicationId="975a-00f4-pubN87630" page="28" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bf14-af1e-5d72-7c8b" name="Legio Atarus (Firebrands)" publicationId="ce02-a882-fdad-dd36" page="36" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
-        <rule id="e068-3696-9c94-b3cb" name="Seizing the Initiative" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
+        <rule id="e068-3696-9c94-b3cb" name="Seizing the Initiative" publicationId="ce02-a882-fdad-dd36" page="36" hidden="false">
           <description>In the first round of the battle, a force that contains at least one Firebrands maniple may re-roll the dice roll to deterine who will choose the First Player, but only if they rolled lower than their opponent.  If they win this roll-off then they must nominate themselves as the First Player.
 </description>
         </rule>
@@ -5338,6 +3663,13 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
                 <categoryLink id="61f9-4e72-3af2-cf36" name="LegioVulturum" hidden="false" targetId="5a98-05b4-ed38-bbc4" primary="false"/>
               </categoryLinks>
             </entryLink>
+            <entryLink id="3d47-581b-de11-2989" name="Legio Astraman (Morning Stars)" hidden="false" collective="false" import="true" targetId="dd39-c2b7-a515-da8a" type="selectionEntry"/>
+            <entryLink id="d513-ddb4-c33e-70aa" name="Legio Damicium (Unbroken Lords) " hidden="false" collective="false" import="true" targetId="0fb5-613c-cbb2-90df" type="selectionEntry"/>
+            <entryLink id="38a2-81f9-a087-d692" name="Legio Ignatum (Fire Wasps)" hidden="false" collective="false" import="true" targetId="4a11-763b-6a82-bc29" type="selectionEntry"/>
+            <entryLink id="d2b7-bf8f-f1a7-6111" name="Legio Kulisaetai (Gatekeepers)" hidden="false" collective="false" import="true" targetId="621d-d3d2-41c9-5052" type="selectionEntry"/>
+            <entryLink id="5467-d0bf-0128-5742" name="Legio Laniaskara (Impalers)" hidden="false" collective="false" import="true" targetId="8d2d-07be-eb8c-6cce" type="selectionEntry"/>
+            <entryLink id="71c1-8633-c2e6-9666" name="Legio Tritonis (Dark Tide)" hidden="false" collective="false" import="true" targetId="dddd-cc44-e662-51a6" type="selectionEntry"/>
+            <entryLink id="8d87-8772-b11d-8d92" name="Legio Venator (Iron Spiders) " hidden="false" collective="false" import="true" targetId="2acb-2c7d-5ba6-77ff" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6119,527 +4451,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="4fc4-a9c2-3fd9-2d80" name="New CategoryLink" hidden="false" targetId="d36f-5e44-2150-3428" primary="false"/>
         <categoryLink id="a118-7547-ea6e-049d" name="LegioGryphonicus" hidden="false" targetId="0796-178c-50ce-2d1f" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="7d4c-4be2-8f6f-ae94" name="Body" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="864e-0139-85fa-309d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9273-0788-899b-12bb" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="793f-ea0f-1968-7231" name="Body" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-              <characteristics>
-                <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">11-13</characteristic>
-                <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-16</characteristic>
-                <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="a12f-82fd-dda8-e6a1" name="Body Structure Point Damage" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="7aa2-8e28-1878-9c34" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2230-05dc-9e1b-d40b" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="15b6-7a4a-f9d0-2d8d" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="170d-6ebf-be21-a92f" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec5c-1b74-aa8c-5dc8" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="e471-7e3f-fdac-f0ef" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="e53c-5baa-ca96-abf6" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6184-c306-40e0-450c" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="5b0d-e9e1-12db-34eb" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d1ed-0daf-37ff-6f6c" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baa6-45f3-f972-513a" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="e441-772c-65e9-2cf7" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5b59-d7ae-daea-4673" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a66-f66d-e703-973b" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="c56d-b950-8d2e-4756" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f8cc-bbe5-2d1d-e348" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd9-8f25-f10c-4acc" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="f379-664c-82ae-d0fe" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b043-7ada-badd-5191" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="603e-2dd8-9630-18e5" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="a753-54e6-1c6c-258a" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="8071-8056-ff80-a61b" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="22be-c4e5-c2ee-ba8a" name="Head" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e06-9eba-b8b9-7fd2" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eda8-8228-23a3-b52a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="c660-0895-2bc6-06b5" name="Head" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-              <characteristics>
-                <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">10-12</characteristic>
-                <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
-                <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="16cb-44c2-a52f-c6cd" name="Head Structure Point Damage" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="7b10-0d8a-ddb5-752d" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b1-ba89-6c4d-f2fb" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="25bf-faf2-6eec-29ba" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="db0c-8d34-5696-21a8" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59dd-06ca-41f2-a65d" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="ee3c-9932-d9ee-9bdf" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c5be-327a-d3e0-1529" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a45c-8bf9-0c22-5599" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="d85b-556e-8923-c4c6" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1ab7-9726-329d-447d" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7233-f708-e663-3c2a" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="3ecf-2b43-5459-3852" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="df99-c6d1-538a-5bcf" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c73c-7381-60a5-427a" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="133c-8a63-8596-e3d0" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1801-950d-3f80-0b4d" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f1f-f8ca-318a-5a98" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="dcf8-270a-7c47-f5d5" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="a7cb-5909-9c38-e05f" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8855-5912-1bd4-e880" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab51-a999-785f-c401" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d57f-149c-e9ea-c2c4" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="fdb2-6577-7b76-2d93" name="Legs" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-              <characteristics>
-                <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">11-12</characteristic>
-                <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
-                <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="86fc-736f-4efc-c373" name="Legs Structure Point Damage" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="2dab-55f1-270e-cea2" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0900-cc6d-2b19-00ad" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="71f1-199d-746d-4c1f" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="86f6-cb80-7f75-cbfd" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0299-a063-a2b8-4eb3" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="180c-442b-e288-b4e9" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c4a6-8a81-480d-c391" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb06-6ad5-f941-2fa4" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="095c-8d01-c6b4-ee10" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="280a-80fd-b32d-dd97" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b21c-ff7a-d3ce-77e3" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="3a2e-c3df-5aa0-a27e" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2bb2-c21a-9fa7-7de6" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="410f-4d94-1429-5136" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="fc47-f356-27ec-03e3" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="53a5-54c2-399a-df50" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c09-7324-8c88-5ac6" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="9b20-a26b-d424-a98d" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ce74-dc8e-b7b1-8836" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed7c-f8a9-98d7-45a5" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="7270-5b96-d159-db69" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="2aa1-e161-4e5b-c510" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="915c-f54f-b791-a7ca" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7589-29c8-2b40-0360" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9e8-36a0-a5eb-9744" type="max"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="9fc4-c5f1-aeb9-2ecd" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="3c56-fc90-17b3-e3a1">
-              <entryLinks>
-                <entryLink id="3c56-fc90-17b3-e3a1" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="6666-6749-d87f-1dad" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="fd15-d3e8-4de9-0e7f" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="1ef2-6101-f731-90a6" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="82a7-5a91-3aa7-5b84" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="79bd-0517-6ee5-357f" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a7e-8c6e-1335-cd5b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9678-bc13-c348-9e9c" type="max"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="3286-3ec4-8173-f29a" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="42ab-55e1-c606-ac82">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39ef-c897-32bd-d245" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aff-9737-3a07-3bad" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="42ab-55e1-c606-ac82" name="⦿⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ef-0425-835f-ee99" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a50f-880e-9a58-bea8" name="⦿⦿⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf76-d77f-d780-89f5" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5dd0-a842-5e5d-9a13" name="⦿⦿⦿⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6326-8bf0-863c-85ea" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b313-668f-af80-2aea" name="⦿⦿⦿⦿⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="063d-a093-edec-6daa" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="abac-9573-2847-47d4" name="⦿⦿⦿⦿⦿⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df89-0acf-c1a3-470a" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5e92-e066-632c-36f6" name="⦿⦿⦿⦿⦿⦿ Red(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab1f-4a10-1059-b4e2" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="9fdc-6d46-4162-4abe" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
@@ -6698,11 +4509,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadd-b45a-3473-bb9a" type="instanceOf"/>
-              </conditions>
-            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16aa-6a8c-a064-5080" type="max"/>
@@ -6735,527 +4541,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
         <categoryLink id="f229-35c5-d1e0-f7fb" name="New CategoryLink" hidden="false" targetId="d36f-5e44-2150-3428" primary="false"/>
         <categoryLink id="a8bb-647b-8953-75e9" name="LegioGryphonicus" hidden="false" targetId="0796-178c-50ce-2d1f" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="2564-a66a-41ae-c711" name="Body" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6b1-f6d1-139f-8cc2" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9adb-18a9-d3ac-7f75" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="a07b-9b01-d151-4f45" name="Body" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-              <characteristics>
-                <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">11-13</characteristic>
-                <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-16</characteristic>
-                <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="3168-160a-17bd-8805" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="de2e-c221-a52a-a8cb">
-              <selectionEntries>
-                <selectionEntry id="de2e-c221-a52a-a8cb" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="394f-a002-2944-5ae6" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="28e9-7b09-afef-01b7" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2b54-b1cf-7122-447f" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="591b-b097-c13b-b4c8" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="c65f-81b5-aa11-ee43" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="452d-5fb3-1728-094e" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2840-6742-f7a0-1208" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="cd09-f502-0b6a-ca4f" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="92af-ae70-2071-9420" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0350-e811-9ce1-ff00" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="ae89-ce77-0e00-b7ba" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="e1fd-d09d-f535-034a" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5996-5c61-0ddc-c82f" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="63a3-ba61-bb7a-4d93" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c72b-0902-ce26-10c5" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fe3-373a-b433-7643" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="2b88-0e50-eb71-e328" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="929d-0b90-113a-6f19" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6806-31dd-36fb-fbc4" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="1b7f-8a87-08ce-f20f" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="f18b-a806-70e9-1f74" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b91f-db36-7dc9-dd3c" name="Head" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ee3-24c8-f589-de47" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0706-3558-075b-8d96" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="1021-b6a4-63fc-34e4" name="Head" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-              <characteristics>
-                <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">10-12</characteristic>
-                <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
-                <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="331c-41f1-93f5-fb12" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="eb54-81e0-3808-9adc">
-              <selectionEntries>
-                <selectionEntry id="eb54-81e0-3808-9adc" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="101c-61ae-ab40-0686" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="7d87-e581-462f-4cde" name="⦿⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f975-347d-1639-fa9e" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ac-071b-75ec-d59f" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="da99-9c17-2228-eede" name="⦿⦿⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9ad6-d9e5-0953-ebfd" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbf1-8bd7-8117-fd8d" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="4e7d-75b2-a12d-44b2" name="⦿⦿⦿⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b465-d0d7-b183-4374" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fa7-2ce1-6d5c-86ae" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="a151-8ec5-b7da-9739" name="⦿⦿⦿⦿⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="507e-a157-b3cb-c164" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1970-849e-25bf-aad7" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="a1b7-9a89-158e-49e9" name="⦿⦿⦿⦿⦿⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="535b-ff77-73e5-e5ab" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30e5-42c9-35de-10fa" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="a985-cdf7-a322-178f" name="⦿⦿⦿⦿⦿⦿(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="1772-05f9-b122-cfde" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c3ec-2b04-2ed1-9c20" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb57-dbfc-751e-85cc" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0471-2660-ce71-1306" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="60dc-ad66-5f9e-9271" name="Legs" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-              <characteristics>
-                <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">11-12</characteristic>
-                <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
-                <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="68b7-5c89-6e3d-86fc" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="0db1-4d4b-dc1e-3ede">
-              <selectionEntries>
-                <selectionEntry id="0db1-4d4b-dc1e-3ede" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9ba-c233-6908-572c" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="b82b-ed34-c5b1-9563" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="8e61-4220-fb3c-672c" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a662-e3df-ace0-b645" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="26c1-808b-0ea1-7112" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1218-689d-e653-91fb" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02e8-cb1e-0005-ee4e" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="bf3b-13f7-0183-dca0" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="27bb-9348-a145-6612" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ccd-919c-78d8-5fb8" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="81f6-dc90-7473-c7ce" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="691f-3383-93d1-0834" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="076c-19dd-8d64-fbbe" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="bd2c-def9-1d79-8013" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ab7d-30a5-0744-be33" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5ff-ecdd-000f-91bb" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="50d5-86b4-1102-7ed3" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="632b-0b5d-d7b1-88ed" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b0-dbc4-b4d6-3e68" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="8164-79a4-150a-e082" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="2292-7c49-11c4-921d" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4604-8f3c-441a-4747" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a221-a1fe-938e-b101" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e047-a7fc-e90a-717d" type="max"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="d780-076a-52a4-c0e1" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="1b08-b1f7-c03c-802a">
-              <entryLinks>
-                <entryLink id="1b08-b1f7-c03c-802a" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="7414-a5fd-6c2b-7e4f" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="cb52-3556-d192-886a" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="855a-31f2-4328-5fb8" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="b72a-3b5d-1124-68b3" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ae9b-67a9-e2d1-aa22" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e33d-73c8-e85f-bb69" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eea9-23bc-6964-587e" type="max"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="81cd-59d2-3957-66a1" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="3773-c51a-d6a7-a9b8">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="302b-343e-0a9b-5e44" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9430-3bf1-331a-493b" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="3773-c51a-d6a7-a9b8" name="⦿⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39b5-5f69-561d-dd43" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="135a-95f3-1d18-c8ec" name="⦿⦿⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e649-b9a3-3b83-eb92" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6270-2655-5a8c-66b4" name="⦿⦿⦿⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf5d-ac30-9e8d-6f1f" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="05f1-c9a8-6cce-0627" name="⦿⦿⦿⦿⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b092-0dbe-6276-eaf8" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5db6-e0d4-4484-473f" name="⦿⦿⦿⦿⦿⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c41-9c78-648d-ac38" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="bb6b-026c-1e6f-d24e" name="⦿⦿⦿⦿⦿⦿ Red(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4cc-f8be-4dd4-171a" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="4b56-5f30-cda0-99fa" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
@@ -7312,11 +4597,6 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadd-b45a-3473-bb9a" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8564,627 +5844,6 @@ is reduced by D3.</description>
         <categoryLink id="6c54-363e-23cf-0e6c" name="New CategoryLink" hidden="false" targetId="c37f-5ca9-9d98-5cf0" primary="true"/>
         <categoryLink id="e5dd-4763-2ead-cde7" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="c2af-b052-95b6-51e6" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69a6-a881-0bfb-5a36" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a07-b35c-819a-082c" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="b9e0-3d0d-247c-bb72" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="fd4f-5d94-5aa8-27c2" name="Body" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="114e-7393-f932-eda6" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="582e-b150-bdcf-d922" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="a67c-6fdc-f9fa-2b28" name="Body" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">11-12</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-15</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="8b72-fb8a-c9f8-cf36" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="b781-4eaa-2fd9-35a7">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7de-98d8-4c46-f108" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0e2-8bdc-61d1-2743" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="b781-4eaa-2fd9-35a7" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="507f-55c1-f09b-1c91" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="8f0d-9d50-1e3f-f31a" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="d828-8fa7-d6ec-d064" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22dd-382d-20d6-1ccb" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="9318-bf70-c4cc-f7dc" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="e73a-b84f-145f-c9c0" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e51b-3421-9969-90dc" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="1f28-087a-4f31-64d9" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="6e84-54ec-4429-0158" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d18b-9613-f646-da7d" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="8759-5dc3-2e02-4eb6" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="1e97-d271-ccba-697f" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3139-1a2f-e532-6d18" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="f4c0-cc3f-707f-f335" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="f8db-ef18-20ca-00b2" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11b5-2cd9-c655-650e" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="c149-0ca7-b4c6-4d94" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="910d-b1e5-ce42-1c19" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc23-f18e-ba78-7c91" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="07ac-4f8e-3931-f153" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="2395-8143-0494-ce0a" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5016-8412-df5e-f3ad" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="03c2-cf08-f131-cddf" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="b929-09a8-a6b6-b314" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="82dc-67ca-cf74-1dd3" name="Head" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3df9-ffd3-7f66-65fd" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6029-5532-59c5-f60b" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="cacc-d9ad-dc26-2133" name="Head" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">12-14</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">15-16</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="539c-4c72-38c3-0d92" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="d431-b0c6-22ed-9875">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5867-dacf-730b-cfef" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50db-7ba1-1e5b-36f0" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="d431-b0c6-22ed-9875" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71c7-30c0-cbab-9f4f" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="60db-c357-90a4-dfbd" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="d5e6-25ac-3f9a-48bc" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="788d-29f1-6ead-2cea" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="5548-94a3-5f5c-0a6f" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="deda-d105-68fa-c38e" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5eb9-5912-a538-1c3e" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="1ddd-3e42-5dfc-e9fd" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="ba67-48dd-c545-f495" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f55-8ed4-e535-7737" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="334a-a25d-c30d-0a9b" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="0fa9-bf22-22cf-7223" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5af3-e3ac-a632-e064" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="3e0f-07c4-8f0e-4221" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="b491-a013-d78d-935a" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a5b-1f8f-a7a2-2f36" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="954c-f0b1-3369-1327" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="0622-7f00-7827-b650" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f154-ed9d-08c1-09e5" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="ec31-5566-8650-846a" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="1e36-3527-90b8-7259" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b696-bc87-f5a1-c18d" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c50-e6ff-e4a7-d365" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8b3-dbaf-a59f-b2f0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="1a8c-a155-1c73-1a1a" name="Legs" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">11-13</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-15</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="b809-175a-a4e2-a1ba" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="3dbd-c844-fa6e-ad7c">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30a9-fe4b-0a13-15ff" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bcf-1eed-927e-6232" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="3dbd-c844-fa6e-ad7c" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="906e-a62d-6e8f-cd43" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="11bb-9be0-fefd-fa7d" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="b97d-dc6e-e9fd-fcbf" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca23-f6c2-86df-a1bd" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="21dc-3f9d-7cb8-20b7" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="3332-c264-7941-e154" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6fb-3da8-68f5-52d1" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="9029-429a-9646-0563" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8179-32e8-5940-e283" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f685-ef87-9edd-2c14" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="0a9f-b88e-7661-337f" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="494a-2b20-a732-8438" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="936e-e22e-a96c-6dd5" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="aab4-f28d-0296-7c38" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="5f37-fdf7-3d71-ed8a" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebe2-a3f6-6b12-a92f" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="d8f9-a72f-3bb2-959e" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="1b6a-b196-6219-885a" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c804-7efb-ac4e-e8d6" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="d4d2-a31a-4ae6-9f2d" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="1d8f-ab92-5cb9-10b8" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c68-16ad-6a91-e8cd" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="8247-525e-ec90-c985" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="e3f7-8b35-ccee-f1af" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f00d-9db0-a884-8037" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e49-9d9a-08ab-7c9b" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="315a-82fc-2a70-cdb4" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="e87c-0b2f-0050-0e5e" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="826d-1036-bfa1-56db">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1507-6add-cce1-e0d4" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9999-3b7a-0914-47e3" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="826d-1036-bfa1-56db" name="⦿⦾⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9f5-4c0b-53a7-887f" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="5f24-6841-f1fd-7886" name="⦿⦿⦾⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d3f-9918-0e65-eca3" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="64c7-2968-16e9-cfd7" name="⦿⦿⦿⦾⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b57-8602-7b90-5f4c" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="9a8e-9326-be35-9136" name="⦿⦿⦿⦿⦾⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d3c-d90d-2189-1eda" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="23a4-6d5e-dd6b-6091" name="⦿⦿⦿⦿⦿⦾⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c0-55e1-4e26-c82c" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="787c-d1d6-2a19-919c" name="⦿⦿⦿⦿⦿⦿⦾ Orange(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bebf-62a2-6195-b51e" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="eea5-36d3-569c-204d" name="⦿⦿⦿⦿⦿⦿⦿ Red(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3115-6bb1-b876-3dd8" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a7c7-5df8-99a0-4540" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e8a-6a74-9811-3685" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dd5-3eed-e7fa-b79d" type="min"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="8c70-6b9d-32dd-d557" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="be3e-1ec4-316f-a2f5">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="879c-c16f-ef92-64a0" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eae-31e4-b6b6-06fd" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="be3e-1ec4-316f-a2f5" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="6069-1a22-596d-19e9" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="213a-0ec4-902c-ae71" name="Void Shield (4+) 3" hidden="false" collective="false" import="true" targetId="787b-c4a3-7cbf-d79a" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="2899-3641-83a7-9308" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="3416-78e7-4767-86e7" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="db2a-2c7a-8d2e-f0d2" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="91e8-4476-60da-5d84" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
@@ -9263,11 +5922,6 @@ is reduced by D3.</description>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadd-b45a-3473-bb9a" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9516,62 +6170,6 @@ is reduced by D3.</description>
         <categoryLink id="a0c0-49c1-1633-3848" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="c58e-22a5-8294-f8ec" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="d48d-406a-7a52-5616" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0389-4d2c-cec3-6d2f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13de-24dc-a360-d981" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="0382-db03-db89-dc30" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="5e0e-b82a-6656-0fa1" name="Questoris Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="c946-0901-871d-7b2d">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c3d-dcd5-19f5-41a8" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a0-a084-8b71-9469" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="c946-0901-871d-7b2d" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0e15-65f6-ae22-6839" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5d51-c870-db7d-fe19" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0bfe-4537-48d8-081c" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="af24-dd9d-cfa8-fdbf" name="Questoris Knight Lord Scion" hidden="false" collective="false" import="true" targetId="9570-2851-584c-62e9" type="selectionEntry">
           <constraints>
@@ -9652,68 +6250,6 @@ is reduced by D3.</description>
         <categoryLink id="0167-368b-e85d-bd03" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="f23c-e700-3731-4a85" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="f6ac-4700-4294-8f61" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e49c-7af0-6a71-9918" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d689-8e1e-266f-75ca" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="31ae-a5f5-f841-0687" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="48f3-6c02-8773-28a4" name="Cerastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="5acb-caad-2f9a-3c77">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8649-3261-4611-4211" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f510-fe9e-cb04-a073" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="5acb-caad-2f9a-3c77" name="⦿⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="96c7-b751-b050-4cfd" name="⦿⦿⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2d2a-b467-87a3-9a53" name="⦿⦿⦿⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f996-a21f-7b86-1923" name="⦿⦿⦿⦿⦿(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d1aa-3cb1-69ae-d22b" name="⦿⦿⦿⦿⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="fb37-5a63-8e4b-45de" name="Cerastus Knight Lord Scion" hidden="false" collective="false" import="true" targetId="7d97-998e-da08-a298" type="selectionEntry">
           <constraints>
@@ -9744,6 +6280,7 @@ is reduced by D3.</description>
             <entryLink id="1d50-244f-2c4a-d063" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
             <entryLink id="54dd-da5d-c4ed-dbd2" name="Cerastus Knight Castigator" hidden="false" collective="false" import="true" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
             <entryLink id="697b-e89f-105c-2a4a" name="Cerastus Knight Lancer" hidden="false" collective="false" import="true" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
+            <entryLink id="cf4f-000e-0eeb-cd7e" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" targetId="aed6-0705-b201-ff96" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -9763,6 +6300,7 @@ is reduced by D3.</description>
             <entryLink id="cc58-0ba1-67a3-aab5" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
             <entryLink id="135c-87a4-773f-eb85" name="Cerastus Knight Castigator" hidden="false" collective="false" import="true" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
             <entryLink id="d06d-c78c-32d6-2b12" name="Cerastus Knight Lancer" hidden="false" collective="false" import="true" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
+            <entryLink id="c9b6-ca3b-c09e-a2ce" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" targetId="aed6-0705-b201-ff96" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -9871,80 +6409,6 @@ is reduced by D3.</description>
         <categoryLink id="418b-8a01-5ad1-7065" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="108a-4a65-bea8-c57e" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="f1c4-1d42-a7d3-9287" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ad3-3f76-5c45-e6b6" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c26-25aa-178d-cc95" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="0434-fabb-5e41-4289" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="af9c-d02f-895d-6c7d" name="Acastus Structure Point" hidden="false" collective="false" import="true" defaultSelectionEntryId="9694-ce3c-bb4d-6635">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6580-66e1-8b0d-8077" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4602-64cd-fc39-9975" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="9694-ce3c-bb4d-6635" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="066e-da4b-c22e-a925" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1306-90aa-8af3-b340" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4d1f-0c21-a08d-9aa0" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ac77-05f8-0156-123d" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="643f-aec0-635e-54d3" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d159-7a24-1886-b37b" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="a220-9945-dec5-1453" name="Acastus Knight Lord Scion" hidden="false" collective="false" import="true" targetId="7448-fdbe-6fda-c7f6" type="selectionEntry">
           <constraints>
@@ -10098,7 +6562,7 @@ is reduced by D3.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ba6a-6565-fd40-3645" name="=Atarus= Infernus Missiles" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ba6a-6565-fd40-3645" name="=Atarus= Infernus Missiles" publicationId="ce02-a882-fdad-dd36" page="36" hidden="true" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="4527-5dce-6630-39c6" name="Infernus Missiles" hidden="false">
           <description>Any Legio Atarus Titan may take Infernus Missiles as an upgrade to their Apocalypse Missile Launchers for +15 points. If a unit takes at least one hit from an Apocalypse Missile Launcher armed with Infernus Missiles, place a 5” Blast Marker under the unit. In the End Phase, any model with at least part of its base in the marker takes a Strength 4 hit, ignoring void and ion shields. Titans suffer this hit on their legs. In addition Blocking terrain touched by the template takes a Strength 4 Hit (see p52 of rulebook for Damaging and destroying terrain) and, if not destroyed, is set alight. In the end phase, burning terrain sufferers a Strength 4 Hit, and deals a Strength 4 hit to any models in it, as detailed above, until the terrain is destroyed and the fire goes out.</description>
@@ -10106,7 +6570,7 @@ is reduced by D3.</description>
       </rules>
       <categoryLinks>
         <categoryLink id="955d-7945-2c6f-99fe" name="LegioAtarus" hidden="false" targetId="cfcc-e5c0-bb0b-db6f" primary="false"/>
-        <categoryLink id="0218-8358-88b5-6d5b" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="0218-8358-88b5-6d5b" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
@@ -10147,605 +6611,6 @@ is reduced by D3.</description>
         <categoryLink id="568f-0301-4024-5955" name="New CategoryLink" hidden="false" targetId="7103-9316-d4a5-8caa" primary="true"/>
         <categoryLink id="4279-a840-9387-30b6" name="LegioKrytos" hidden="false" targetId="95e8-3d8e-a0ad-4ad3" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5b76-8038-e145-f677" name="Body" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0c8-bd3c-c973-f07b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3816-6a7c-fc5b-8b2e" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="cbf2-bb38-24a3-7885" name="Body" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-              <characteristics>
-                <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">12-13</characteristic>
-                <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-15</characteristic>
-                <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="e91e-5892-4539-7929" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="944b-3b00-d73a-562b">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6a7-2b05-517f-ce1a" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ac5-5753-3901-3aa5" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="944b-3b00-d73a-562b" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a62b-09be-23bb-ed5d" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="18f6-c472-397e-0854" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="26c9-fc87-d101-d10b" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e06-56f1-8713-6a33" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="c79f-31ee-6511-cb4f" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="abef-9ba6-2e68-d32a" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c699-de33-c511-fea1" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="336b-fbf5-c386-fe60" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5daa-4542-28c3-d43b" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a520-b337-8a3e-26eb" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="1a85-6a51-cb13-3300" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6451-f76e-6699-a882" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af11-ca9c-3214-ffe9" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="e648-b137-4cc8-651d" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7de2-ac86-3270-6e76" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d6e-4f5b-693b-fe54" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="7766-a4ab-a56c-1a19" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f456-9ebc-0083-4786" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="158e-d2bd-c3da-5bc0" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="7a32-3387-762f-33f3" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6515-0041-3bc1-d0cd" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d767-dcea-00cb-ea61" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="14c6-3b74-6188-9331" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="5e3f-d0b3-50ac-9606" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7444-c0ed-50e4-3482" name="Head" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50ee-b88c-d634-02af" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2552-06db-6ce5-2830" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="e36f-8ed0-63b3-1081" name="Head" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-              <characteristics>
-                <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">12-13</characteristic>
-                <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-15</characteristic>
-                <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="0389-84d7-71d0-eb40" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="c970-8332-0f14-3311">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14e0-4521-9e19-91af" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7003-63b5-36b7-e225" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="c970-8332-0f14-3311" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf70-98dd-4fe7-979e" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="f2fc-687d-b25c-a679" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0287-10f5-feb1-c1c4" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63f4-1fce-8731-6428" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="c1de-75fe-3e1e-3498" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1d24-3fe1-0662-fec3" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f8e-cd29-4783-b3c2" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="8475-6878-5c64-33b1" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="8239-a0ff-9d28-675a" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7cb-47a2-ee36-97bf" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="c645-aca3-8456-91e5" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9c8b-3728-ff2e-fe65" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7375-0554-db8d-07e0" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="2177-ee48-44ec-8026" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="be28-8f66-64c0-d380" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65dc-583f-d607-52c5" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="6ce9-245a-eeba-6187" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9e57-7c3e-2733-7c65" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="341f-2fdc-442d-8e50" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="9c97-87d7-b9f1-c8b9" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="3afa-b1c0-69fc-ec77" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="54ec-78fb-b718-4deb" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95fa-8349-81b9-a8bb" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="998b-990e-eeb2-3cd1" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="f4a2-764b-987b-80fc" name="Legs" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-              <characteristics>
-                <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">13-14</characteristic>
-                <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">15-16</characteristic>
-                <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="48c9-f6b5-9e06-ae9e" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="f2bd-91c8-3f24-45b6">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="193b-6508-c57e-5e79" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8cc-505c-ebce-a02b" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="f2bd-91c8-3f24-45b6" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4061-6d98-41ee-5173" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="5a32-c58a-785b-7899" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b9f4-b9ea-8b2b-cdfd" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8637-7556-eb7f-d9b9" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="c2f0-0f7e-e2b0-792c" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4071-d614-f327-d9ef" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ec-04ee-7270-17c6" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="ca09-2ee3-f48a-7b8c" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9b74-bd2b-14a9-f632" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2595-ea4e-2a61-40e7" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="0e55-2d09-cc12-791c" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2e05-def8-9277-2e0a" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dba-0614-4d85-9ca0" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="7b60-0882-db49-5fb9" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5e7d-faaf-a520-a423" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9782-71c7-b268-1c28" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="2a81-db9f-783b-8369" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6e24-61b8-7f7a-ac02" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dee-2386-84af-57a9" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="34cd-f478-6b1c-bca5" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="efaf-e0ed-c53c-9da1" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="408a-2a7b-8bee-86be" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="be88-93dc-1213-afe3" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                      <characteristics>
-                        <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="607e-1fc1-3792-7694" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="219b-802c-2bde-7ef0" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5daa-8d7c-c078-9db1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="483c-2a0d-deb7-62ce" type="min"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="3190-f0bb-5c9c-c7d1" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="384e-6d00-a8b5-1936">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a6b-2e64-51f4-5c27" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e71-b0e2-8cb6-a723" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="384e-6d00-a8b5-1936" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="955e-6903-1e69-2e59" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="8c86-86d0-ce9b-98f5" name="Void Shield (3+) 3" hidden="false" collective="false" import="true" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="7f61-0771-cf74-d910" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="5235-0694-ab1a-5561" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="1065-cf16-ab01-5584" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3518-26b2-fd3f-73c5" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43a9-6665-7581-bcae" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f07-0b26-d0eb-985b" type="max"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="82e8-07f7-deba-4824" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="587f-5708-dfcb-b6ea">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bb0-72ba-d5d2-a0bd" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4285-9921-bcfd-3f68" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="587f-5708-dfcb-b6ea" name="⦿⦾⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e59-e31b-479b-a888" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5be8-aedd-7f31-e4e3" name="⦿⦿⦾⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bfd-6b90-2217-2229" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="bc95-8b0a-ef67-8f22" name="⦿⦿⦿⦾⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78a4-7191-0cb3-2f64" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b62d-11c2-90c8-0266" name="⦿⦿⦿⦿⦾⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1f0-645d-3a40-281a" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b6ab-7100-c28a-8fa2" name="⦿⦿⦿⦿⦿⦾⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa44-c175-9e6a-f29b" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="248e-bca8-3861-8707" name="⦿⦿⦿⦿⦿⦿⦾ Orange(6)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="027d-a7df-02d4-a5c1" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4b48-d14d-d6eb-c16f" name="⦿⦿⦿⦿⦿⦿⦿ Red(7)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2431-96a2-54c3-34ee" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="b0ae-c0d6-b92d-4dac" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
@@ -10819,11 +6684,6 @@ is reduced by D3.</description>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadd-b45a-3473-bb9a" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11272,627 +7132,6 @@ is reduced by D3.</description>
         <categoryLink id="02c5-198c-8fd0-eb4b" name="New CategoryLink" hidden="false" targetId="f54f-c26d-3d2a-2749" primary="true"/>
         <categoryLink id="d7dd-e3aa-4ba1-e5a6" name="WarlordTitan" hidden="false" targetId="7103-9316-d4a5-8caa" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="54d2-8732-7748-4ad6" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9917-188a-1207-f805" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f089-9d61-3e28-724d" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="ced9-b70c-4d19-3e69" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="a1be-00eb-5111-49dd" name="Body" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="578f-f22b-c1e3-cf7c" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2b1-6bbf-f055-e2a0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c8e7-1911-2b3f-cd8c" name="Body" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">12-13</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-15</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="29a9-5508-520e-9cad" name="Body Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="0573-9763-6188-dd14">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bebb-bcd8-5d27-2133" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c7b-efb0-6414-33d1" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="0573-9763-6188-dd14" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4a0-5046-bc10-af6e" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="a28f-fcaa-2ba7-b161" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="3b2e-fa45-a364-8625" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c341-4a3e-1a5a-c6d0" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="051d-4742-4319-9003" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="f2bf-04cb-c4ae-6674" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fef-ef22-5e78-a185" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="9ff9-09b7-8055-4d03" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="2815-08a3-7640-d429" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77ba-0f5a-f04a-1642" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="53b8-b1cd-c196-b366" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="fd63-ca7b-7189-43a9" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75a8-301c-2528-bf1e" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="19bd-7409-6ae8-ff72" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="3d9d-c074-3423-f70e" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ca3-1644-5c45-e398" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="9426-7f33-51e9-6cb5" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="4b71-fcbb-08ab-ba92" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21d1-c8f4-3eaf-2bb6" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="5b83-dee1-3e27-65bf" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="aa70-34cd-b472-22c7" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a528-e125-8d67-d3cb" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="4696-d127-3ce7-198e" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="90da-54b7-ba57-3793" name="Body Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="1d49-39ff-979b-f7f0" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="eea1-9c78-1458-2a12" name="Void Shields" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fda5-327c-ce60-7e3e" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bee-4b73-c08a-a6a9" type="min"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="44fe-a9cf-7bfc-599a" name="Void Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="e32c-b0a1-ca43-3cd0">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e12-4e84-fe25-cf71" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d81-c01a-f2b5-11fc" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="e32c-b0a1-ca43-3cd0" name="Void Shield (3+)" hidden="false" collective="false" import="true" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="2350-ea5e-59df-b919" name="Void Shield (3+) 2" hidden="false" collective="false" import="true" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="7bb3-d9d3-990b-6e81" name="Void Shield (3+) 3" hidden="false" collective="false" import="true" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="ea17-be33-e77f-45ae" name="Void Shield (4+)" hidden="false" collective="false" import="true" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="9353-77f2-3d85-812f" name="Void Shield (4+) 2" hidden="false" collective="false" import="true" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦾"/>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="c1d8-53dd-f049-95ea" name="Void Shield (X)" hidden="false" collective="false" import="true" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b1b5-d079-a218-a6a1" name="Legs" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e513-b783-5ca5-54db" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d74c-867e-344f-9ef1" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="dbf7-d399-a610-4573" name="Legs" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">13-14</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">15-16</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="3386-7018-d1d9-1b61" name="Legs Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd2f-95d0-51d7-e3c3">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d8c-930c-df66-83cc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ed-6ed5-17eb-a5b9" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="dd2f-95d0-51d7-e3c3" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd28-5f02-316f-614b" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="4fb1-b6cb-e795-b221" name="⦿⦾⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="1bd9-19e2-a3a2-bd01" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8fa-ce4c-f487-c3d3" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="ccd5-3720-241d-f815" name="⦿⦿⦾⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="b00e-907d-ec88-ecfe" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="532c-b213-365d-2d5c" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="ccbb-2388-3df9-afe5" name="⦿⦿⦿⦾⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="b3fb-d79e-2a47-7338" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df67-0d5e-d6bc-31e6" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="8d05-e9c9-1842-80a1" name="⦿⦿⦿⦿⦾⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="88bc-6551-d0d3-4b14" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c8a-b659-a2e2-31e4" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="4421-c9f5-6333-d330" name="⦿⦿⦿⦿⦿⦾⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="52db-f605-993e-39f0" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d47-77f5-7a9c-24f9" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="bf99-aa10-1061-4763" name="⦿⦿⦿⦿⦿⦿⦾⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="d63f-02dc-4d76-2f27" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdad-d65e-2d89-e6a8" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="88cd-9cec-d500-507f" name="⦿⦿⦿⦿⦿⦿⦿⦾(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="4a59-e65c-a60b-74d8" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aafc-8f91-555e-aacf" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="a4fe-c33a-ed1a-8934" name="⦿⦿⦿⦿⦿⦿⦿⦿(8)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="2427-820a-054e-8ed5" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="50af-0bab-a322-f02c" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ae63-2269-22cc-5562" name="Head" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccf0-704a-7587-2146" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfaf-db49-1b11-9ec6" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c9e6-c038-8f21-5f88" name="Head" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
-                  <characteristics>
-                    <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">12-13</characteristic>
-                    <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">14-15</characteristic>
-                    <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="5a56-2379-3e7b-1da7" name="Head Structure Point Damage" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5b7-b2ab-6f49-86be">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adca-b7cc-df73-38d2" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3a6-6947-9a13-40f0" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="f5b7-b2ab-6f49-86be" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17c8-2420-2e8d-8fc2" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="bea1-da46-926d-4e8c" name="⦿⦾⦾⦾⦾⦾⦾(1)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="f14a-5b01-729d-2425" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48e2-cfa0-f3db-da95" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="8b91-d150-0743-0490" name="⦿⦿⦾⦾⦾⦾⦾(2)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="fbda-aa32-a215-e9b5" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7d3-c29b-d048-7417" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="20d2-eba1-067e-68aa" name="⦿⦿⦿⦾⦾⦾⦾(3)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="9561-d620-fe4a-ab6b" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="799e-8c37-81a6-e7ab" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="df71-7b20-1b05-cf07" name="⦿⦿⦿⦿⦾⦾⦾(4)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="2cbb-104a-ddec-44bd" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bb2-2f5d-d3cb-613d" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="3de4-ab12-e8ee-d181" name="⦿⦿⦿⦿⦿⦾⦾(5)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+1</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="a645-494f-1144-e0e8" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef4d-cf8f-4b9d-9182" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="9108-bfdc-e6f5-c003" name="⦿⦿⦿⦿⦿⦿⦾(6)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="f513-3480-27f9-0c41" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed2c-11b3-081e-5f71" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="5981-3c8f-1ab8-948b" name="⦿⦿⦿⦿⦿⦿⦿(7)" hidden="false" typeId="e539-8a16-c912-c6c5" typeName="Structure Points">
-                          <characteristics>
-                            <characteristic name="Modifer" typeId="1e91-6224-ebeb-fec2">+3</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="7f8e-de8e-baf8-47a8" name="Head Manifold Critical Damage" hidden="false" collective="false" import="true" targetId="9ba2-12fa-8d22-c505" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e617-d040-2766-c00c" name="Plasma Reactor" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e43c-9f0e-1c52-9243" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18cd-29bf-9173-024a" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="f452-7f33-5b85-ea95" name="Plasma Reactor" hidden="false" collective="false" import="true" defaultSelectionEntryId="d29f-5742-6760-fc7f">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a963-8816-9c39-f01e" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d668-375d-22a6-c04c" type="min"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="d29f-5742-6760-fc7f" name="⦿⦾⦾⦾⦾⦾⦾ Green(1)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="212c-a0be-2de9-cb78" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="2714-4aac-8906-9936" name="⦿⦿⦾⦾⦾⦾⦾ Green(2)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6690-22de-bb42-1dbe" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="d8b2-6ae9-776d-2963" name="⦿⦿⦿⦾⦾⦾⦾ Yellow(3)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ecd-7c49-d9b7-eaf9" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="7cef-c83e-0042-c8ee" name="⦿⦿⦿⦿⦾⦾⦾ Yellow(4)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3f-478a-150a-7b46" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="0a40-4904-79c5-c070" name="⦿⦿⦿⦿⦿⦾⦾ Orange(5)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb5f-b4be-64a7-d413" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="e8e1-ff6f-d95e-2b4b" name="⦿⦿⦿⦿⦿⦿⦾ Orange(6)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df82-e85d-77f3-f826" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="7624-ae68-026a-8bfe" name="⦿⦿⦿⦿⦿⦿⦿ Red(7)" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e35-2ffa-d574-f8ac" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="25b0-37d3-2ac2-2a2a" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
@@ -12532,7 +7771,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="174d-8530-d7b6-ff8e" name="Weapons on Full" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="174d-8530-d7b6-ff8e" name="Weapons to Full" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -12775,7 +8014,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b7bc-1a39-1fa8-bde4" name="=Atarus= Impetuous Machine Spirit" publicationId="975a-00f4-pubN87630" page="28" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b7bc-1a39-1fa8-bde4" name="=Atarus= Impetuous Machine Spirit" publicationId="ce02-a882-fdad-dd36" page="36" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7079-4c5f-e443-da4a" type="max"/>
       </constraints>
@@ -13535,7 +8774,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1904-0d73-fd65-ff15" name="Homing Warheads" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1904-0d73-fd65-ff15" name="Homing Missles " publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e715-7f20-6fd4-885d" type="max"/>
       </constraints>
@@ -13785,7 +9024,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
       <rules>
         <rule id="d5b1-a3d8-cc8c-8b18" name="=Ignatum= Guard the Gates" publicationId="ce02-a882-fdad-dd36" hidden="false">
           <description>Play during the first strategy phase.  All Ignatum titans can go on first fire without making a command check.
-
+ 
  </description>
         </rule>
       </rules>
@@ -14103,7 +9342,7 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
     <selectionEntry id="ab5b-9a2c-91b9-35a2" name="Ignus Light Maniple" publicationId="ce02-a882-fdad-dd36" page="56" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="3b40-aa65-1afd-b2cd" name="Ignus Light Maniple" publicationId="ce02-a882-fdad-dd36" page="56" hidden="false">
-          <description>Scorched Earth. add 1 dice to all firestorm weapons, and reroll armour rolls of one.
+          <description>Scorched Earth. add 1 dice to all firestorm weapons, and reroll armour rolls of one. 
 Banners must be Acherons.
 Banners within 6&quot; of a titan may be issued a First Fire or Full Stride order without a command check, if the titan has been successfully issued the same order this round.</description>
         </rule>
@@ -14175,6 +9414,7 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
         <entryLink id="1047-a812-0fd2-21d4" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b23f-b6bf-9428-b19d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c36-7b31-6b55-bbe7" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="7616-e76b-3d0d-5ce2" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -14202,6 +9442,344 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8738-12fd-ab3d-5ad5" name="Scatterable Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="5dd2-0ea9-7f01-7e61" name="Scatterable Mines" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Every Strat phase. mark a point and scatter d10. 12&quot; area from point is dangerous terrain. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="8105-be73-9f8c-2226" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a3f1-5763-016d-21d3" name="Strafing Run" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="e0f3-d1af-fa51-e08c" name="Strafing Run" hidden="false">
+          <description>Every Strat phase. Mark a point on two board edge and draw a line between them.  everything with 2&quot; of that line takes d3 S5 hits. Counts as hitting the facing that the strafing run is coming from. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="7d60-7bd8-0fc0-19b4" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2bd2-e1b7-69b5-b739" name="Quake Shells" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="e7ea-a719-fe23-3fb8" name="Quake Shells" hidden="false">
+          <description>Every Strat phase. place 5&quot; marker and scatter d10. touched take d3S6 hits or d6 under hole. Unit then scatters d6&quot;, this may cause a collision.
+</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ecb8-68cf-c474-7d3b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fce9-f583-2d42-26bd" name="Hold the Centre" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="b29f-074e-3a90-9d97" name="Hold the Centre" hidden="false">
+          <description>End of Battle  Score 2Vp for each friendly titan within 12&quot; of centre. Score 5Vp if no enemy are within 12&quot; of centre.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f666-358a-5279-abf1" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33df-1682-cf66-5255" name="Static Rain" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="8b06-4144-20ce-1ec1" name="Static Rain" hidden="false">
+          <description>Any Strat phase. Place a marker. Any titan within 2d10&quot; takes d3 void saves. Knights within range cannot make ion saves for entire round.
+</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="33f8-0425-927b-9c4e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="af36-a2ad-3abf-2f12" name="Titan Hunter Infantry" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="7e35-af3b-ac34-7abc" name="Titan Hunter Infantry" hidden="false">
+          <description>Battlefield Asset. Every Strat phase. Place two markers wholly within terrain. These can be activated as if they were units. 
+If two players place markers in the same terrain, both are removed.
+BS 5+ Short 6 long 12&quot; S+1 Dice 4 Str 5.
+Remove Marker after activating</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="71d1-1e7d-c6f7-0aae" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+        <categoryLink id="e27e-5784-03f2-f590" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e862-2a40-3c8f-1fd9" name="Haywire Barrage" publicationId="975a-00f4-pubN89746" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="96b1-8b12-36ba-55ad" name="Haywire Barrage" hidden="false">
+          <description>Any Strat phase. Place a marker and scatter d10. 6&quot; range, roll 2d6 for titans hit. Equal or greater than scale, take 1 point of critical damage to random location. If weapon, disabled. no effect if already fully damaged. Knight banners take d3S7 hits ignoring shields.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="dc3d-a511-0d62-20ae" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="10a5-6174-a6f3-0344" name="Penance" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="fc45-c29e-e364-578d" name="Penance" hidden="false">
+          <description>End of Battle. Score 3 VP for each structurally compromised but not destroyed friendly titan. Score 3VP if the Princeps Senioris has critical damage </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="324a-2e53-c322-9dad" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="17f0-a74f-027f-c827" name="Forward Observers" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="b696-effb-e43a-3cd9" name="Forward Observers" hidden="false">
+          <description>Battlefield Asset. Play before making a barrage attack. Place a marker anywhere on the board.  Barrage weapons may draw line of sight from this marker, ignoring the -2 for indirect fire.
+</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3f4f-781c-d66c-d797" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="fb5f-80af-e881-94f2" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a9b7-3d50-1282-ecb3" name="Titanic Decapitation" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="ed48-a252-a0ba-2d5d" name="Titanic Decapitation" hidden="false">
+          <description>any End phase. Score 5Vp if an enemy titan was destroyed due to critical damage to the head.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2ab1-905c-c9c1-5f01" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eb24-c12a-7f9c-d4c1" name="Earthshaker Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="5df9-8096-97b7-6685" name="Earthshaker Mines" hidden="false">
+          <description>Play after enemy finishes a move or turn. it takes d3 S6 hits to legs, no void saves. Unit then scatters D6&quot; which can cause a collision.
+</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6370-1861-e007-ca00" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="78ac-538a-0de3-c8d9" name="No Prisoners" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="bd0b-b01d-077d-1c7e" name="No Prisoners" hidden="false">
+          <description>End of Battle  Score 5 VP if all enemy titans are destroyed. For 2500+ games score 10VP.
+</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="adf0-7369-7dc4-f171" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6f6c-982d-c8ed-5fb8" name="A Quick Kill" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="6489-9a96-a7ac-d327" name="A Quick Kill" hidden="false">
+          <description>End phase of 1st or 2nd round. Score 5VP if you have destroyed a titan of at least scale 8. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c057-b46c-acd5-ea50" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dee9-1ba4-819a-306d" name="The Miracle of Mars" publicationId="975a-00f4-pubN89033" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="8eb9-ea55-75f3-3b1b" name="The Miracle of Mars" hidden="false">
+          <description>Start of damage control.  Place next to a titan. At any time, discard to cool reactor.
+Roll d10+5
+7-15 reduce reator by d3
+16-24 reduce by d6
+25, lose all heat</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="12f0-caca-5395-b265" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dac1-7045-afdb-e4e6" name="Venerable Machine Spirit" publicationId="975a-00f4-pubN89033" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="2ae9-b42c-048b-47da" name="Venerable Machine Spirit" hidden="false">
+          <description>Play in first strategy phase.  Play on one titan which is not a titan of legend or a psi titan.  Improve ws and bs by one (to a maximum of 2+). decrease command by 3 to a minimum of 10+. May take emergency repair and charge orders without rolling a command check. if the machine spirit awakens apply the belligerent result without rolling on the table.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="558e-cd7b-1c9b-b3ba" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1260-8d1f-16f7-75ad" name="=Astrorum= Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c8-2b67-3fdb-ac96" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="ad4d-abd4-2b1b-bfd7" name="Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false">
+          <description>Legio Astorum.Play when a titans void shields collapse. Roll repair dice using number of servitor clades. 5 or 6 restore void shields by 1 (not a repair roll).
+</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="bdfe-1cd2-460a-7f3c" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="92b1-64b6-4adc-cb84" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="14a6-fc52-9fa3-8a97" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43fb-83e1-2c6b-100c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="974b-19a6-ce5c-4bfa" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="3780-37a9-4520-2c89" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>End of Battle. If you have destroyed at least as many titans as you have lost, gain 5VP.
+</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0474-ebed-47c2-dbf2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aed6-0705-b201-ff96" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e84d-2d70-0070-5894" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="0389-4be5-248f-be4f" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7f96-a00e-cf44-5c6f" name="Atrapos Graviton Singularity Cannon" hidden="false" collective="false" import="true" targetId="8f75-8c57-ffd7-06c8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc5-d2d4-5d40-104c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3dc-9cbd-6f43-0253" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="322d-51b4-40ac-eddd" name="Atrapos Lascutter" hidden="false" collective="false" import="true" targetId="fd74-2b68-7a5f-28cc" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae0e-43b2-eff0-1ea3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8960-c683-634e-bfa8" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8f75-8c57-ffd7-06c8" name="Atrapos Graviton Singularity Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3bd7-fb3b-6de3-d3d2" name="Atrapos Graviton Singularity Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">20&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (3&quot;), Concussive</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd74-2b68-7a5f-28cc" name="Atrapos Lascutter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3bda-2578-547f-3ce9" name="Atrapos Lascutter" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion, Melee</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -14652,46 +10230,46 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="c491-319b-b9b1-adac" name="Weapon Characteristics" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
+    <rule id="c491-319b-b9b1-adac" name="Weapon Characteristics" hidden="false">
       <description>A unit’s Command Terminal has a number of spaces for Weapon cards, which must be selected before the start of the battle. Each Weapon card shows which Class of Titan it can be chosen for, and which slot(s) on the Command Terminal it can occupy.</description>
     </rule>
-    <rule id="099f-b1dd-9513-5d1d" name="Firing Arc" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
+    <rule id="099f-b1dd-9513-5d1d" name="Firing Arc" hidden="false">
       <description>A weapon’s firing arc (explained on page 26) is represented by a graphic. The graphic assumes that the Titan is facing towards the top of the Command Terminal - most weapons (particularly arm-mounted ones) generally have the Titan’s Front arc as their firing arc.</description>
     </rule>
-    <rule id="585e-acad-2307-042d" name="Range and Accuracy (ACC)" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
+    <rule id="585e-acad-2307-042d" name="Range and Accuracy (ACC)" hidden="false">
       <description>This shows the weapon’s range in inches. Weapons have two ranges: Short and Long. These are primarily used to determine the Accuracy modifier (which affects any Hit rolls made for the weapon), but might also be referenced by other in-game effects. </description>
     </rule>
-    <rule id="b7c8-dd3a-9b0d-730c" name="Dice" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
+    <rule id="b7c8-dd3a-9b0d-730c" name="Dice" hidden="false">
       <description>A weapon’s Dice value shows how many dice are rolled when attacking with it. In essence, it is a representation of how rapidly the weapon can fire - a gun with Dice 6 fires a lot more shots in one go than one with Dice 1.</description>
     </rule>
-    <rule id="26e1-ebdc-e470-dd28" name="Strength (STR)" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
+    <rule id="26e1-ebdc-e470-dd28" name="Strength (STR)" hidden="false">
       <description>A weapon’s Strength is a measure of its ability to punch through a target’s armour. The higher a weapon’s Strength, the more likely its attack will inflict damage on a successful hit.</description>
     </rule>
-    <rule id="c11a-edbe-0a11-00c8" name="MIU Feedback" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
+    <rule id="c11a-edbe-0a11-00c8" name="MIU Feedback" hidden="false">
       <description>The Mind Impulse Unit has been hit, disrupting the crew&apos;s interface to the manifold. Any command Checks made for the Titan have a -2 modifier.</description>
     </rule>
-    <rule id="8ca3-6877-6b64-00ef" name="Moderati Wounded" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
+    <rule id="8ca3-6877-6b64-00ef" name="Moderati Wounded" hidden="false">
       <description>The Moderatii overseeing the gunnery crews have been hit. Any Hit rolls made for the Titan have a -1 modifier.</description>
     </rule>
-    <rule id="f645-3cac-dca4-6c01" name="Princeps Wounded" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
+    <rule id="f645-3cac-dca4-6c01" name="Princeps Wounded" hidden="false">
       <description>The attack has grievously wounded the Princeps, who is at risk of passing out. At the start of each Strategy phase, roll a D6. On a roll of 1, the Titan takes Shutodown orders. In addition, the Titan automatically fails Command checks it makes. </description>
     </rule>
-    <rule id="9d86-911d-7d60-3acc" name="Reactor Leak (1)" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
+    <rule id="9d86-911d-7d60-3acc" name="Reactor Leak (1)" hidden="false">
       <description>The Titan&apos;s reactor containment fields are failing. In each End phase, advance the Titan&apos;s Reactor Status marker a number of times as shown in the brackets.</description>
     </rule>
-    <rule id="8243-0a90-7bc9-88ac" name="Reactor Leak (2)" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
+    <rule id="8243-0a90-7bc9-88ac" name="Reactor Leak (2)" hidden="false">
       <description>The Titan&apos;s reactor containment fields are failing. In each End phase, advance the Titan&apos;s Reactor Status marker a number of times as shown in the brackets.</description>
     </rule>
-    <rule id="a064-e684-d8a9-c65e" name="VSG Burnout" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
+    <rule id="a064-e684-d8a9-c65e" name="VSG Burnout" hidden="false">
       <description>The Titan&apos;s void shield generators have burned out -  its void shields collapse immediately. The Titan cannot use &apos;Raise Shields&apos; Repair actions until this damage has been repaired.</description>
     </rule>
-    <rule id="17b3-c01c-7edc-82da" name="Stabilizers Damaged" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
+    <rule id="17b3-c01c-7edc-82da" name="Stabilizers Damaged" hidden="false">
       <description>The Titan staggers as its stabilizers struggle to keep it upright. In each End phase, roll a D6 for the Titan. On a 1-3, it turns 45 degrees to the left. On a 4-6, it turns 45 degrees to the right.</description>
     </rule>
-    <rule id="933b-ea98-5684-890f" name="Locomotors Seized" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
+    <rule id="933b-ea98-5684-890f" name="Locomotors Seized" hidden="false">
       <description>Massive gears within the Titan&apos;s legs grind as it tries to move. The Titan&apos;s Speed and Manoeuver characteristics (both the normal and boosted values) are halved, rounding down. If this reduces a normal value to 0, the Titan must push the reactor to use the boosted value it it wishes to move/turn. </description>
     </rule>
-    <rule id="e8db-6948-589e-2c80" name="Immobilized" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
+    <rule id="e8db-6948-589e-2c80" name="Immobilized" hidden="false">
       <description>The Titan&apos;s legs and toros are frozen in place. It cannot move or make any turns.</description>
     </rule>
   </sharedRules>
