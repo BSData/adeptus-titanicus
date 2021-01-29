@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="20" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="21" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Crucible of Retribution update:
 
 All CoR content added
@@ -14,6 +14,7 @@ Structure points removed</readme>
     <publication id="3265-f408-cc9b-bfa3" name="Shadow and Iron"/>
     <publication id="2988-f24d-39ef-352e" name="Defense of Ryza"/>
     <publication id="ce02-a882-fdad-dd36" name="Crucible of Retribution" publisherUrl="https://www.warhammerdigital.com/all-products/adeptus-titanicus-crucible-of-retribution-epub-2020.html"/>
+    <publication id="8566-126e-e686-9bc4" name="White Dwarf: Sep 2020"/>
   </publications>
   <costTypes>
     <costType id="a731-e220-2d8a-41bf" name=" Points" defaultCostLimit="-1.0" hidden="false"/>
@@ -1416,10 +1417,10 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
               </constraints>
               <entryLinks>
                 <entryLink id="1ebf-4601-0b5e-b765" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="true" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
-                <entryLink id="b0db-882e-0d36-f524" name="Turbo Laser Destructor [RVR]" hidden="false" collective="false" import="true" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
+                <entryLink id="b0db-882e-0d36-f524" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="true" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
                 <entryLink id="73f2-7386-528b-89a6" name="Warp Missile Support Rack" hidden="false" collective="false" import="true" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
-                <entryLink id="c860-31b1-1c90-21a4" name="Vulcan Megabolter [RVR]" hidden="false" collective="false" import="true" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
-                <entryLink id="0c2b-34ac-a75d-59d0" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" hidden="true" collective="false" import="true" targetId="08c7-5efe-0712-c420" type="selectionEntry">
+                <entryLink id="c860-31b1-1c90-21a4" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" import="true" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink id="0c2b-34ac-a75d-59d0" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" import="true" targetId="08c7-5efe-0712-c420" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -14182,6 +14183,20 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0f6c-856d-c4d3-13e3" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false" collective="false" import="true" type="unit">
+          <rules>
+            <rule id="249e-51ed-5f66-e322" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false">
+              <description>Play this stratagem in the first Strategy phase of the battle. The player chooses one of their Titans that is not a Titan of Legend or Psi Titan; for the remainder of the battle that Titan increases its WS and BS value by 1 (to a maximum of 2+). In addition, it may be issued Emergency Repair and Charge orders without the need to make a Command check. However, reduce the Titan&apos;s Command characteristic by 3 (to a maximum of 10+). If, at any point during the battle, the Titan fails its command check to quell the Machine Spirit the Belligerent result is automatically applied; do not roll on the Awakened Machine Spirit table.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="da1c-5def-9333-ece2" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
     <selectionEntry id="2062-8f97-c49e-abe2" name="Warmaster Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="4bcb-5174-b9ac-cafd" name="Warmaster Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
