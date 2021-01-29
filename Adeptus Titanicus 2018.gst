@@ -773,6 +773,11 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <entryLink id="de16-e3b4-01e5-1e6d" name="=Vulturum= Cull the Weak" hidden="false" collective="false" import="true" targetId="f805-d25f-6ece-e62a" type="selectionEntry"/>
     <entryLink id="027a-da58-97db-3df9" name="=Vulturum= Scent of Blood" hidden="false" collective="false" import="true" targetId="0942-9568-cbd3-aec6" type="selectionEntry"/>
     <entryLink id="d96c-ad68-8809-387b" name="Warmaster Titan" hidden="false" collective="false" import="true" targetId="2062-8f97-c49e-abe2" type="selectionEntry"/>
+    <entryLink id="a646-5285-6238-f2b7" name="Venerable Machine Spirit" hidden="false" collective="false" import="true" targetId="0f6c-856d-c4d3-13e3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1af2-716e-33ec-2f87" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
@@ -14184,19 +14189,19 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
       </costs>
     </selectionEntry>
     <selectionEntry id="0f6c-856d-c4d3-13e3" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false" collective="false" import="true" type="unit">
-          <rules>
-            <rule id="249e-51ed-5f66-e322" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false">
-              <description>Play this stratagem in the first Strategy phase of the battle. The player chooses one of their Titans that is not a Titan of Legend or Psi Titan; for the remainder of the battle that Titan increases its WS and BS value by 1 (to a maximum of 2+). In addition, it may be issued Emergency Repair and Charge orders without the need to make a Command check. However, reduce the Titan&apos;s Command characteristic by 3 (to a maximum of 10+). If, at any point during the battle, the Titan fails its command check to quell the Machine Spirit the Belligerent result is automatically applied; do not roll on the Awakened Machine Spirit table.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="da1c-5def-9333-ece2" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
+      <rules>
+        <rule id="249e-51ed-5f66-e322" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false">
+          <description>Play this stratagem in the first Strategy phase of the battle. The player chooses one of their Titans that is not a Titan of Legend or Psi Titan; for the remainder of the battle that Titan increases its WS and BS value by 1 (to a maximum of 2+). In addition, it may be issued Emergency Repair and Charge orders without the need to make a Command check. However, reduce the Titan&apos;s Command characteristic by 3 (to a maximum of 10+). If, at any point during the battle, the Titan fails its command check to quell the Machine Spirit the Belligerent result is automatically applied; do not roll on the Awakened Machine Spirit table.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="da1c-5def-9333-ece2" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="2062-8f97-c49e-abe2" name="Warmaster Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="4bcb-5174-b9ac-cafd" name="Warmaster Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
@@ -15226,6 +15231,10 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
       <categoryLinks>
         <categoryLink id="7e16-5b67-6c0c-be88" name="New CategoryLink" hidden="false" targetId="3b8b-38d1-147a-f99d" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9850-b19f-11e0-2b54" name="Infusive Supercoolant" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -15236,6 +15245,10 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
       <categoryLinks>
         <categoryLink id="1fe8-c63e-4860-4a4e" name="New CategoryLink" hidden="false" targetId="3b8b-38d1-147a-f99d" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
