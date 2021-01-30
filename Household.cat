@@ -26,6 +26,7 @@
         <categoryLink id="ec78-05be-ff23-2fb9" name="Lance" hidden="false" targetId="b1c7-cb6c-5810-e9d9" primary="false"/>
         <categoryLink id="2434-58f3-dd2a-0fd2" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink id="bf96-9b27-a283-7054" name="Squadron" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="false"/>
+        <categoryLink id="346a-4747-185f-fc53" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -213,29 +214,296 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8d00-116d-2d58-b6e3" name="A Glorious Death" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="173c-789f-b91a-7c9a" name="A Glorious Death" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
+          <description>This stratagem can only be played on a
+Freeblade Banner. Play this card at the end of the battle. Nominate
+one Free blade Banner that was completely destroyed. The
+opposing player gains no Victory points for this unit. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="5489-bea0-c8e4-1f7d" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0a6b-13c3-78ee-7d67" name="Decapitating Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="9aad-e84d-7e73-0eb3" name="Decapitating Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
+          <description>Play this at rhe end of the battle. If the
+opposing player&apos;s Princeps Seniores&apos; Titan has been destroyed,
+score Victory points equal to half its Scale (rounding down).
+Alternatively, if the opponent&apos;s Seneschal and their entire Banner
+have been destroyed, score 3 additional Victory points.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c93b-333f-8e88-dfa5" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9782-138e-c720-b1c5" name="Fight for Every Step" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="5e38-03a9-454f-e800" name="Fight for Every Step" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
+          <description>Play this at the end of the battle. Score 2
+Victory points for each enemy Titan that has not been destroyed,
+but which is Strucrurally Compromised.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="5d4a-0dd9-658f-7d19" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8bd3-069b-1b5e-20b2" name="Fire Support Bombardment" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="e5f7-074a-0ef8-0776" name="Fire Support Bombardment" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
+          <description>Play this during each Strategy
+phase. Place the 5&quot; Blast marker anywhere on the battlefield
+then scarcer it DIO&quot;. Any unit touched by the marker where it
+evenrually lands suffers a single Strength 8 hit, or 2 Strength 8 hits
+if the central hole of the Blast marker is entirely over its base.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="62d3-9aec-a30e-7a44" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a3b1-8a3d-a0c0-5707" name="Interference" publicationId="975a-00f4-pubN89746" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="a8da-7459-285b-9f4b" name="Interference" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
+          <description>Play this Stratagem at the start of the Strategy
+phase. Pick a single enemy unit. This unit cannot be given any
+Orders this round and must instead act on its initiative.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="14f5-aa29-3964-59f5" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="06d7-5c7b-eefe-99e3" name="Orbital Lance Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="689d-a3f2-a626-703f" name="Orbital Lance Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
+          <description>Once per battle, play this during
+the Strategy phase. Place the 3&quot; Blasr marker anywhere on
+the bartlefield, then scatter it D6&quot;. Any unir touched by the
+marker where ir evenrually lands suffers D3 Strength IO hits,
+or 2D3 Strength IO hits if the central hole of the Blast marker is
+entirely over its base</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ead8-4e6d-1538-1976" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2689-80b2-03ef-25fa" name="Plasma Mines" publicationId="975a-00f4-pubN89746" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="c396-700d-a9d6-875b" name="Plasma Mines" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
+          <description>Play this Stratagem immediately after an
+enemy unit finishes moving or making a turn. That unit suffers D3 Strength 10 hits. If the unit is a Titan, these will be ro its Legs. Void Shield saves cannot be made against the hits, but Ion
+Shield saves can be made. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2706-c583-bdc7-f648" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5959-611c-3937-8d9b" name="Vengeance" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="04f9-5b83-a033-adc2" name="Vengeance" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
+          <description> Play this at the end of the battle. At the start of
+the battle, secretly nominate one enemy unit and make a note
+of this. At the end of the battle, reveal the nominated unit. If the
+nominated unit is a Titan, score 2 additional Victory points if it
+is Structurally Compromised, 3 additional Victory points if it
+is destroyed. If the nominated unit is a Knight Banner, score l
+additional Victory point if it is below half of its starting strength
+(rounding up), or 2 additional Victory points if it is destroyed. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2681-2f67-1068-e198" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3eab-8426-362f-944f" name="Vengeful" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="54fd-1fd2-d6ba-68bb" name="Vengeful" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
+          <description>A player can enact this Stratagem during the
+Strategy phase. To do so, they pick a Banner from their force
+which has been reduced to a single remaining Knight. This
+Banner immediately receives Charge orders. When it charges,
+the Knight may make a Smash Attack, as described on page 36 of
+the Adeptus Titanicus rulebook, resolved at Scale x2. Once this is
+resolved, the Knight is removed from play. At the end of the battle,
+the enemy gains a number of Victory points equal to half the Scale
+of this unit, rather than the full amount.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c0e6-f118-fc61-bfa2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ca83-f872-971c-fcb3" name="Voidbreaker Field" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="46c1-a45e-1305-c203" name="Voidbreaker Field" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
+          <description>Play this Stratagem immediately after
+an enemy unit with active void shields finishes moving or
+making a turn. Roll a D6. On a 2 or more, the opposing player
+must immediately make a number of Void Shield saves equal to
+the number rolled on the D6. On a r, no Void Shield saves are
+made this turn, but the Stratagem can be used a second time
+in a subsequent turn.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="b09e-c182-7887-ef67" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a0c3-da65-3192-41bd" name="Outflank" publicationId="975a-00f4-pubN89746" page="39" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="efbf-52f7-fd08-f329" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b77-15d2-9ca8-5cf7" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="efbf-52f7-fd08-f329" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3900-cfb6-52f2-c83c" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="812b-786b-9435-cd20" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dec1-8a16-1df5-e112" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a0a-5e72-9752-c32d" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="d4a3-1a27-6b0b-31d6" name="Outflank" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
+          <description>Outflank (X): When this Stratagem is chosen, the player secretly
+nominates one of their Free blade Banners. The cost of the
+Stratagem is equal to half of the unit&apos;s Scale, rounding up. Play
+this Stratagem at the start of deployment to set char unit to one
+side and state that it is outflanking (it is not deployed at the same
+time as the rest of the Household force ). Write down which of the
+battlefield&apos;s neutral flanks it will arrive on, but do not reveal this to
+the opposing player. While the unit is not on th</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="10cf-850e-4658-8cc9" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c86b-0ee2-5b83-b90c" name="Selected Unit" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9235-6e7f-a232-c4f4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5e3-1e3b-b856-24be" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7efa-5f10-2633-3fb1" name="Acastus Knight Banner" hidden="false" collective="false" import="true" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="54a3-3a1b-d41e-4aa8" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="d8b0-3d66-6de2-2de3" name="Questoris Knight Banner" hidden="false" collective="false" import="true" targetId="812b-786b-9435-cd20" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="f517-050c-dab0-d39c" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="true" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="98ef-b673-e679-5eb0" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="true" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="cerastus-freeblades" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
+      <comment>Freeblade</comment>
       <categoryLinks>
         <categoryLink id="04fd-c162-4c0f-1479" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="questoris-freeblades" name="Questoris Knight Banner" hidden="false" collective="false" import="true" targetId="812b-786b-9435-cd20" type="selectionEntry">
+      <comment>Freeblade</comment>
       <categoryLinks>
         <categoryLink id="cfbc-c6f6-9e5d-ea5e" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="magaera-freeblades" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="true" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
+      <comment>Freeblade</comment>
       <categoryLinks>
         <categoryLink id="9727-5692-9d2e-d4df" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="styrix-freeblades" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="true" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
+      <comment>Freeblade</comment>
       <categoryLinks>
         <categoryLink id="7ab5-33d2-784e-c0e3" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="acastus-freeblades" name="Acastus Knight Banner" hidden="false" collective="false" import="true" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
+      <comment>Freeblade</comment>
       <categoryLinks>
         <categoryLink id="7057-1fae-7d3d-dcad" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>

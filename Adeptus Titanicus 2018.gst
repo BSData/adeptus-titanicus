@@ -7233,6 +7233,15 @@ The Dauntless player may reveal this Stratagem when one of their Titans suffers 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="efbf-52f7-fd08-f329" value="8.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2062-8f97-c49e-abe2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <rules>
         <rule id="cfb3-d62f-5b05-0a9f" name="Outflank" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
@@ -7282,6 +7291,11 @@ If a player&apos;s battlegroup contains any Squadrons (see page 45), they can ch
               </modifiers>
             </entryLink>
             <entryLink id="a913-17d7-83b7-e321" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="1433-b1a9-5fb8-7f02" name="Warmaster Titan" hidden="false" collective="false" import="true" targetId="2062-8f97-c49e-abe2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
@@ -12273,7 +12287,7 @@ When the Titan arrives, it may be placed anywhere on the battlefield that is 1&q
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-   <selectionEntry id="e8cc-e33c-46ed-058d" name="Blackshield" publicationId="2988-f24d-39ef-352e" page="85" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e8cc-e33c-46ed-058d" name="Blackshield" publicationId="2988-f24d-39ef-352e" page="85" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0ed5-95eb-8f14-4a05" type="max"/>
       </constraints>
@@ -14912,30 +14926,6 @@ When the Titan arrives, it may be placed anywhere on the battlefield that is 1&q
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0750-ae51-c889-78ee" type="max"/>
         <constraint field="selections" scope="b1c7-cb6c-5810-e9d9" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7dab-4051-3b2c-874d" type="max"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry id="7ad0-16e3-baa1-585c" name="Knightly Quality" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c10f-c911-56c9-f192" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53f1-7ffb-4687-8ccb" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="34d8-ff35-668a-8a27" name="Knightly Qualities" hidden="false" collective="false" import="true" targetId="02bf-cce7-bd43-c8ae" type="selectionEntryGroup"/>
-            <entryLink id="0415-dd0a-4327-392b" name="Divine Qualities" hidden="true" collective="false" import="true" targetId="ee5b-4fb2-3f56-d638" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a63a-a3f0-b438-f507" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
