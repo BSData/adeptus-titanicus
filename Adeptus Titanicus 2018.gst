@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="21" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="22" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -496,13 +496,13 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="9e2e-c35f-34a4-d245" name="Tricks and Tactics" publicationId="2988-f24d-39ef-352e" page="107" hidden="false"/>
     <categoryEntry id="e37e-10e6-accd-329d" name="Shoulder" hidden="false"/>
     <categoryEntry id="3b8b-38d1-147a-f99d" name="Ancillary Reactor System" hidden="false"/>
-      <categoryEntry id="f13e-f477-7652-0e1c" name="LegioAstraman" hidden="false"/>
-        <categoryEntry id="f986-f640-3cb3-478a" name="LegioKulisaetai" hidden="false"/>
-        <categoryEntry id="f778-49fb-1bfd-4838" name="LegioDamicium" hidden="false"/>
-        <categoryEntry id="83db-4337-737c-1db8" name="LegioIgnatum" hidden="false"/>
-        <categoryEntry id="753b-9e36-a10c-7961" name="LegioTritonis" hidden="false"/>
-        <categoryEntry id="b4cb-2809-41b4-6d83" name="LegioLaniaskara" hidden="false"/>
-        <categoryEntry id="a768-815b-17bf-6136" name="LegioVenator" hidden="false"/>
+    <categoryEntry id="f13e-f477-7652-0e1c" name="LegioAstraman" hidden="false"/>
+    <categoryEntry id="f986-f640-3cb3-478a" name="LegioKulisaetai" hidden="false"/>
+    <categoryEntry id="f778-49fb-1bfd-4838" name="LegioDamicium" hidden="false"/>
+    <categoryEntry id="83db-4337-737c-1db8" name="LegioIgnatum" hidden="false"/>
+    <categoryEntry id="753b-9e36-a10c-7961" name="LegioTritonis" hidden="false"/>
+    <categoryEntry id="b4cb-2809-41b4-6d83" name="LegioLaniaskara" hidden="false"/>
+    <categoryEntry id="a768-815b-17bf-6136" name="LegioVenator" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
@@ -521,18 +521,18 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <categoryLink id="b789-e317-99d6-5b8e" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
       </categoryLinks>
     </forceEntry>
-     <forceEntry id="5334-72bf-3cf7-d361" name="Knight Household" hidden="false">
-          <categoryLinks>
-            <categoryLink id="d03c-074c-d4b8-76e9" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56e6-2748-dadd-469d" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="562d-f1e2-dae2-9aa5" type="max"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink id="6be4-4fef-6141-1819" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
-            <categoryLink id="0a38-cede-a93a-d6ce" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
-          </categoryLinks>
-        </forceEntry>
+    <forceEntry id="5334-72bf-3cf7-d361" name="Knight Household" hidden="false">
+      <categoryLinks>
+        <categoryLink id="d03c-074c-d4b8-76e9" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56e6-2748-dadd-469d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="562d-f1e2-dae2-9aa5" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6be4-4fef-6141-1819" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
+        <categoryLink id="0a38-cede-a93a-d6ce" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="fadd-b45a-3473-bb9a" name="Warhound Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -793,63 +793,64 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <categoryLink id="1af2-716e-33ec-2f87" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
-   <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="true" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
-      <entryLink id="dbb1-ed4f-4c95-7c91" name="=Astraman= Stand Firm" hidden="false" collective="false" import="true" targetId="ab6a-2fba-dc15-e2ef" type="selectionEntry"/>
-      <entryLink id="0156-e161-1f34-4cab" name="=Astraman= Strength and Resolve" hidden="false" collective="false" import="true" targetId="8f31-0e84-26f0-f2af" type="selectionEntry"/>
-      <entryLink id="dde0-a580-6658-e1cc" name="=Damicium= Endurance Beyond Limit" hidden="false" collective="false" import="false" targetId="43ed-3dab-833c-e085" type="selectionEntry">
-        <categoryLinks>
-          <categoryLink id="6428-64e1-91f5-80dc" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-          <categoryLink id="1e07-d102-4de5-7273" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
-        </categoryLinks>
-        <costs>
-          <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
-        </costs>
-      </entryLink>
-      <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="false" collective="false" import="true" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
-        <categoryLinks>
-          <categoryLink id="44ba-d4da-ccb1-640e" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-          <categoryLink id="1816-e9d6-db43-44ad" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
-        </categoryLinks>
-        <costs>
-          <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
-        </costs>
-      </entryLink>
-      <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="false" collective="false" import="true" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry"/>
-      <entryLink id="16c3-2c70-04ae-4df3" name="=Ignatum= Guard the Gates" hidden="false" collective="false" import="true" targetId="087c-a203-d1d4-bfcd" type="selectionEntry"/>
-      <entryLink id="2aa6-80ce-5c35-a605" name="=Ignatum= Punish their Folly" hidden="false" collective="false" import="true" targetId="ced4-b0c7-5d0f-3c30" type="selectionEntry"/>
-      <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders " hidden="false" collective="false" import="true" targetId="7c51-55b9-4942-4061" type="selectionEntry"/>
-      <entryLink id="1182-1545-6fc1-e75e" name="=Kulisaetai= Methodical Advance" hidden="false" collective="false" import="true" targetId="88d4-a5e8-4929-8037" type="selectionEntry"/>
-      <entryLink id="4736-4fef-8991-fe87" name="=Kulisaetai= Steadfast Bastion " hidden="false" collective="false" import="true" targetId="cf5b-8f2e-8df3-7539" type="selectionEntry"/>
-      <entryLink id="8a6c-b6fe-d912-ad44" name="=Laniaskara= Heedless Charge" hidden="false" collective="false" import="true" targetId="5dd2-5a20-9a7a-c000" type="selectionEntry">
-        <categoryLinks>
-          <categoryLink id="9543-1e7c-2624-3ae8" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-          <categoryLink id="9c5c-00d9-c76c-f7f5" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
-        </categoryLinks>
-      </entryLink>
-      <entryLink id="f865-1276-736a-80df" name="=Laniaskara= Mordantised Ceramite" hidden="false" collective="false" import="true" targetId="170d-3f13-f670-3cc6" type="selectionEntry"/>
-      <entryLink id="621c-b697-04b8-7517" name="=Tritonis= Radiative Warheads" hidden="false" collective="false" import="true" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry"/>
-      <entryLink id="0332-6f07-e3d8-ecfd" name="=Tritonis= Stygian Veil" hidden="false" collective="false" import="true" targetId="ad64-ba43-1e95-87ca" type="selectionEntry"/>
-      <entryLink id="e0d5-c856-00c2-92c4" name="=Venator= Blind Launchers" hidden="false" collective="false" import="true" targetId="1582-9f6b-0e82-c228" type="selectionEntry"/>
-      <entryLink id="f902-8a56-8c96-4c3c" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="true" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
-      <entryLink id="e895-90c4-04af-92e7" name="Precept Battleline Maniple" hidden="false" collective="false" import="true" targetId="6e74-335d-5467-0907" type="selectionEntry"/>
-      <entryLink id="3516-5d57-8e42-97f0" name="Ignus Light Maniple" hidden="false" collective="false" import="true" targetId="ab5b-9a2c-91b9-35a2" type="selectionEntry"/>
-      <entryLink id="bf58-e1b7-8ac6-933b" name="A Quick Kill" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" targetId="6f6c-982d-c8ed-5fb8" type="selectionEntry"/>
-      <entryLink id="6617-7324-c72a-e622" name="Earthshaker Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" targetId="eb24-c12a-7f9c-d4c1" type="selectionEntry"/>
-      <entryLink id="b694-6cd4-5db8-8d88" name="Even in Death" hidden="false" collective="false" import="true" targetId="fc25-6786-d24b-0cc8" type="selectionEntry"/>
-      <entryLink id="b47e-f0ce-71b0-d62c" name="Haywire Barrage" hidden="false" collective="false" import="true" targetId="e862-2a40-3c8f-1fd9" type="selectionEntry"/>
-      <entryLink id="23b8-0155-7c30-3169" name="Justice for the Fallen" hidden="false" collective="false" import="true" targetId="14a6-fc52-9fa3-8a97" type="selectionEntry"/>
-      <entryLink id="b900-44e7-a947-4500" name="Hold the Centre" hidden="false" collective="false" import="true" targetId="fce9-f583-2d42-26bd" type="selectionEntry"/>
-      <entryLink id="a57d-be5b-8200-5153" name="No Prisoners" hidden="false" collective="false" import="true" targetId="78ac-538a-0de3-c8d9" type="selectionEntry"/>
-      <entryLink id="b9d4-f9c7-26ec-9191" name="Penance" hidden="false" collective="false" import="true" targetId="10a5-6174-a6f3-0344" type="selectionEntry"/>
-      <entryLink id="eb2d-2ee1-3fc1-3975" name="Scatterable Mines" hidden="false" collective="false" import="true" targetId="8738-12fd-ab3d-5ad5" type="selectionEntry"/>
-      <entryLink id="d5b0-29d4-ddfc-14c9" name="Static Rain" hidden="false" collective="false" import="true" targetId="33df-1682-cf66-5255" type="selectionEntry"/>
-      <entryLink id="284c-caeb-2b2d-83b6" name="Strafing Run" hidden="false" collective="false" import="true" targetId="a3f1-5763-016d-21d3" type="selectionEntry"/>
-      <entryLink id="d69f-4382-fafd-1e9a" name="Titan Hunter Infantry" page="" hidden="false" collective="false" import="true" targetId="af36-a2ad-3abf-2f12" type="selectionEntry"/>
-      <entryLink id="7494-d040-547c-1a78" name="Titanic Decapitation" hidden="false" collective="false" import="true" targetId="a9b7-3d50-1282-ecb3" type="selectionEntry"/>
-      <entryLink id="4512-fd8f-08c9-1ec3" name="Venerable Machine Spirit" hidden="false" collective="false" import="true" targetId="dac1-7045-afdb-e4e6" type="selectionEntry"/>
-      <entryLink id="a76b-b826-3647-8c35" name="The Miracle of Mars" hidden="false" collective="false" import="true" targetId="dee9-1ba4-819a-306d" type="selectionEntry"/>
-      <entryLink id="2065-a689-35f6-52c3" name="Forward Observers" hidden="false" collective="false" import="true" targetId="17f0-a74f-027f-c827" type="selectionEntry"/>
-    </entryLinks>
+    <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="true" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
+    <entryLink id="dbb1-ed4f-4c95-7c91" name="=Astraman= Stand Firm" hidden="false" collective="false" import="true" targetId="ab6a-2fba-dc15-e2ef" type="selectionEntry"/>
+    <entryLink id="0156-e161-1f34-4cab" name="=Astraman= Strength and Resolve" hidden="false" collective="false" import="true" targetId="8f31-0e84-26f0-f2af" type="selectionEntry"/>
+    <entryLink id="dde0-a580-6658-e1cc" name="=Damicium= Endurance Beyond Limit" hidden="false" collective="false" import="false" targetId="43ed-3dab-833c-e085" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6428-64e1-91f5-80dc" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="1e07-d102-4de5-7273" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="false" collective="false" import="true" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="44ba-d4da-ccb1-640e" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="1816-e9d6-db43-44ad" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="false" collective="false" import="true" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry"/>
+    <entryLink id="16c3-2c70-04ae-4df3" name="=Ignatum= Guard the Gates" hidden="false" collective="false" import="true" targetId="087c-a203-d1d4-bfcd" type="selectionEntry"/>
+    <entryLink id="2aa6-80ce-5c35-a605" name="=Ignatum= Punish their Folly" hidden="false" collective="false" import="true" targetId="ced4-b0c7-5d0f-3c30" type="selectionEntry"/>
+    <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders " hidden="false" collective="false" import="true" targetId="7c51-55b9-4942-4061" type="selectionEntry"/>
+    <entryLink id="1182-1545-6fc1-e75e" name="=Kulisaetai= Methodical Advance" hidden="false" collective="false" import="true" targetId="88d4-a5e8-4929-8037" type="selectionEntry"/>
+    <entryLink id="4736-4fef-8991-fe87" name="=Kulisaetai= Steadfast Bastion " hidden="false" collective="false" import="true" targetId="cf5b-8f2e-8df3-7539" type="selectionEntry"/>
+    <entryLink id="8a6c-b6fe-d912-ad44" name="=Laniaskara= Heedless Charge" hidden="false" collective="false" import="true" targetId="5dd2-5a20-9a7a-c000" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9543-1e7c-2624-3ae8" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="9c5c-00d9-c76c-f7f5" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f865-1276-736a-80df" name="=Laniaskara= Mordantised Ceramite" hidden="false" collective="false" import="true" targetId="170d-3f13-f670-3cc6" type="selectionEntry"/>
+    <entryLink id="621c-b697-04b8-7517" name="=Tritonis= Radiative Warheads" hidden="false" collective="false" import="true" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry"/>
+    <entryLink id="0332-6f07-e3d8-ecfd" name="=Tritonis= Stygian Veil" hidden="false" collective="false" import="true" targetId="ad64-ba43-1e95-87ca" type="selectionEntry"/>
+    <entryLink id="e0d5-c856-00c2-92c4" name="=Venator= Blind Launchers" hidden="false" collective="false" import="true" targetId="1582-9f6b-0e82-c228" type="selectionEntry"/>
+    <entryLink id="f902-8a56-8c96-4c3c" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="true" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
+    <entryLink id="e895-90c4-04af-92e7" name="Precept Battleline Maniple" hidden="false" collective="false" import="true" targetId="6e74-335d-5467-0907" type="selectionEntry"/>
+    <entryLink id="3516-5d57-8e42-97f0" name="Ignus Light Maniple" hidden="false" collective="false" import="true" targetId="ab5b-9a2c-91b9-35a2" type="selectionEntry"/>
+    <entryLink id="bf58-e1b7-8ac6-933b" name="A Quick Kill" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" targetId="6f6c-982d-c8ed-5fb8" type="selectionEntry"/>
+    <entryLink id="6617-7324-c72a-e622" name="Earthshaker Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" targetId="eb24-c12a-7f9c-d4c1" type="selectionEntry"/>
+    <entryLink id="b694-6cd4-5db8-8d88" name="Even in Death" hidden="false" collective="false" import="true" targetId="fc25-6786-d24b-0cc8" type="selectionEntry"/>
+    <entryLink id="b47e-f0ce-71b0-d62c" name="Haywire Barrage" hidden="false" collective="false" import="true" targetId="e862-2a40-3c8f-1fd9" type="selectionEntry"/>
+    <entryLink id="23b8-0155-7c30-3169" name="Justice for the Fallen" hidden="false" collective="false" import="true" targetId="14a6-fc52-9fa3-8a97" type="selectionEntry"/>
+    <entryLink id="b900-44e7-a947-4500" name="Hold the Centre" hidden="false" collective="false" import="true" targetId="fce9-f583-2d42-26bd" type="selectionEntry"/>
+    <entryLink id="a57d-be5b-8200-5153" name="No Prisoners" hidden="false" collective="false" import="true" targetId="78ac-538a-0de3-c8d9" type="selectionEntry"/>
+    <entryLink id="b9d4-f9c7-26ec-9191" name="Penance" hidden="false" collective="false" import="true" targetId="10a5-6174-a6f3-0344" type="selectionEntry"/>
+    <entryLink id="eb2d-2ee1-3fc1-3975" name="Scatterable Mines" hidden="false" collective="false" import="true" targetId="8738-12fd-ab3d-5ad5" type="selectionEntry"/>
+    <entryLink id="d5b0-29d4-ddfc-14c9" name="Static Rain" hidden="false" collective="false" import="true" targetId="33df-1682-cf66-5255" type="selectionEntry"/>
+    <entryLink id="284c-caeb-2b2d-83b6" name="Strafing Run" hidden="false" collective="false" import="true" targetId="a3f1-5763-016d-21d3" type="selectionEntry"/>
+    <entryLink id="d69f-4382-fafd-1e9a" name="Titan Hunter Infantry" page="" hidden="false" collective="false" import="true" targetId="af36-a2ad-3abf-2f12" type="selectionEntry"/>
+    <entryLink id="7494-d040-547c-1a78" name="Titanic Decapitation" hidden="false" collective="false" import="true" targetId="a9b7-3d50-1282-ecb3" type="selectionEntry"/>
+    <entryLink id="a76b-b826-3647-8c35" name="The Miracle of Mars" hidden="false" collective="false" import="true" targetId="dee9-1ba4-819a-306d" type="selectionEntry"/>
+    <entryLink id="2065-a689-35f6-52c3" name="Forward Observers" hidden="false" collective="false" import="true" targetId="17f0-a74f-027f-c827" type="selectionEntry"/>
+    <entryLink id="573e-1025-b9ca-55d0" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="true" targetId="1a0a-5e72-9752-c32d" type="selectionEntry"/>
+    <entryLink id="1df3-98f5-9d87-11f1" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="true" targetId="dec1-8a16-1df5-e112" type="selectionEntry"/>
+  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9ff1-81bc-203d-620c" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -9495,7 +9496,7 @@ is reduced by D3.</description>
           </constraints>
           <entryLinks>
             <entryLink id="5385-987b-8053-a6b3" name="Avenger Gatling Cannon" hidden="false" collective="false" import="true" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry"/>
-            <entryLink id="3b47-f764-2eae-cf5c" name="Questoris Melee Weapon" hidden="false" collective="false" import="true" targetId="5be0-b49f-fc95-f499" type="selectionEntry"/>
+            <entryLink id="3b47-f764-2eae-cf5c" name="Hekaton Siege Claw" hidden="false" collective="false" import="true" targetId="5be0-b49f-fc95-f499" type="selectionEntry"/>
             <entryLink id="cbdb-ff90-b067-c4af" name="Rapid-Fire Battlecannon" hidden="false" collective="false" import="true" targetId="bc4c-36af-c4cd-4594" type="selectionEntry"/>
             <entryLink id="b949-0d6c-a742-9e1a" name="Thermal Cannon" hidden="false" collective="false" import="true" targetId="908e-f9af-f0d1-a124" type="selectionEntry"/>
           </entryLinks>
@@ -14296,46 +14297,49 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-     <selectionEntry id="8738-12fd-ab3d-5ad5" name="Scatterable Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="5dd2-0ea9-7f01-7e61" name="Scatterable Mines" publicationId="975a-00f4-pubN89746" hidden="false">
-              <description>Every Strat phase. mark a point and scatter d10. 12&quot; area from point is dangerous terrain. </description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="8105-be73-9f8c-2226" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-  <selectionEntry id="a3f1-5763-016d-21d3" name="Strafing Run" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-        <rules>
-          <rule id="e0f3-d1af-fa51-e08c" name="Strafing Run" hidden="false">
-            <description>Every Strat phase. Mark a point on two board edge and draw a line between them.  everything with 2&quot; of that line takes d3 S5 hits. Counts as hitting the facing that the strafing run is coming from. </description>
-          </rule>
-        </rules>
-        <categoryLinks>
-          <categoryLink id="7d60-7bd8-0fc0-19b4" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-        </categoryLinks>
-        <costs>
-          <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-        </costs>
-      </selectionEntry>
-        <selectionEntry id="2bd2-e1b7-69b5-b739" name="Quake Shells" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-            <rules>
-              <rule id="e7ea-a719-fe23-3fb8" name="Quake Shells" hidden="false">
-                <description>Every Strat phase. place 5&quot; marker and scatter d10. touched take d3S6 hits or d6 under hole. Unit then scatters d6&quot;, this may cause a collision.
+    <selectionEntry id="8738-12fd-ab3d-5ad5" name="Scatterable Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="5dd2-0ea9-7f01-7e61" name="Scatterable Mines" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>Every Strat phase. mark a point and scatter d10. 12&quot; area from point is dangerous terrain. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="8105-be73-9f8c-2226" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a3f1-5763-016d-21d3" name="Strafing Run" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="e0f3-d1af-fa51-e08c" name="Strafing Run" hidden="false">
+          <description>Every Strat phase. Mark a point on two board edge and draw a line between them.  everything with 2&quot; of that line takes d3 S5 hits. Counts as hitting the facing that the strafing run is coming from. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="7d60-7bd8-0fc0-19b4" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2bd2-e1b7-69b5-b739" name="Quake Shells" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="e7ea-a719-fe23-3fb8" name="Quake Shells" hidden="false">
+          <description>Every Strat phase. place 5&quot; marker and scatter d10. touched take d3S6 hits or d6 under hole. Unit then scatters d6&quot;, this may cause a collision.
       </description>
-              </rule>
-            </rules>
-            <categoryLinks>
-              <categoryLink id="ecb8-68cf-c474-7d3b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-            </categoryLinks>
-            <costs>
-              <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-            </costs>
-          </selectionEntry>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ecb8-68cf-c474-7d3b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="0f6c-856d-c4d3-13e3" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="249e-51ed-5f66-e322" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false">
@@ -14350,162 +14354,173 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-      <selectionEntry id="fce9-f583-2d42-26bd" name="Hold the Centre" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="b29f-074e-3a90-9d97" name="Hold the Centre" hidden="false">
-              <description>End of Battle  Score 2Vp for each friendly titan within 12&quot; of centre. Score 5Vp if no enemy are within 12&quot; of centre.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="f666-358a-5279-abf1" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="33df-1682-cf66-5255" name="Static Rain" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="8b06-4144-20ce-1ec1" name="Static Rain" hidden="false">
-              <description>Any Strat phase. Place a marker. Any titan within 2d10&quot; takes d3 void saves. Knights within range cannot make ion saves for entire round.
+    <selectionEntry id="fce9-f583-2d42-26bd" name="Hold the Centre" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="b29f-074e-3a90-9d97" name="Hold the Centre" hidden="false">
+          <description>End of Battle  Score 2Vp for each friendly titan within 12&quot; of centre. Score 5Vp if no enemy are within 12&quot; of centre.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f666-358a-5279-abf1" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33df-1682-cf66-5255" name="Static Rain" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="8b06-4144-20ce-1ec1" name="Static Rain" hidden="false">
+          <description>Any Strat phase. Place a marker. Any titan within 2d10&quot; takes d3 void saves. Knights within range cannot make ion saves for entire round.
     </description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="33f8-0425-927b-9c4e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="af36-a2ad-3abf-2f12" name="Titan Hunter Infantry" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="7e35-af3b-ac34-7abc" name="Titan Hunter Infantry" hidden="false">
-              <description>Battlefield Asset. Every Strat phase. Place two markers wholly within terrain. These can be activated as if they were units.
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="33f8-0425-927b-9c4e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="af36-a2ad-3abf-2f12" name="Titan Hunter Infantry" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="7e35-af3b-ac34-7abc" name="Titan Hunter Infantry" hidden="false">
+          <description>Battlefield Asset. Every Strat phase. Place two markers wholly within terrain. These can be activated as if they were units.
     If two players place markers in the same terrain, both are removed.
     BS 5+ Short 6 long 12&quot; S+1 Dice 4 Str 5.
     Remove Marker after activating</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="71d1-1e7d-c6f7-0aae" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
-            <categoryLink id="e27e-5784-03f2-f590" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e862-2a40-3c8f-1fd9" name="Haywire Barrage" publicationId="975a-00f4-pubN89746" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="96b1-8b12-36ba-55ad" name="Haywire Barrage" hidden="false">
-              <description>Any Strat phase. Place a marker and scatter d10. 6&quot; range, roll 2d6 for titans hit. Equal or greater than scale, take 1 point of critical damage to random location. If weapon, disabled. no effect if already fully damaged. Knight banners take d3S7 hits ignoring shields.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="dc3d-a511-0d62-20ae" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="10a5-6174-a6f3-0344" name="Penance" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="fc45-c29e-e364-578d" name="Penance" hidden="false">
-              <description>End of Battle. Score 3 VP for each structurally compromised but not destroyed friendly titan. Score 3VP if the Princeps Senioris has critical damage </description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="324a-2e53-c322-9dad" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="17f0-a74f-027f-c827" name="Forward Observers" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="b696-effb-e43a-3cd9" name="Forward Observers" hidden="false">
-              <description>Battlefield Asset. Play before making a barrage attack. Place a marker anywhere on the board.  Barrage weapons may draw line of sight from this marker, ignoring the -2 for indirect fire.
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="71d1-1e7d-c6f7-0aae" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+        <categoryLink id="e27e-5784-03f2-f590" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e862-2a40-3c8f-1fd9" name="Haywire Barrage" publicationId="975a-00f4-pubN89746" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="96b1-8b12-36ba-55ad" name="Haywire Barrage" hidden="false">
+          <description>Any Strat phase. Place a marker and scatter d10. 6&quot; range, roll 2d6 for titans hit. Equal or greater than scale, take 1 point of critical damage to random location. If weapon, disabled. no effect if already fully damaged. Knight banners take d3S7 hits ignoring shields.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="dc3d-a511-0d62-20ae" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="10a5-6174-a6f3-0344" name="Penance" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="fc45-c29e-e364-578d" name="Penance" hidden="false">
+          <description>End of Battle. Score 3 VP for each structurally compromised but not destroyed friendly titan. Score 3VP if the Princeps Senioris has critical damage </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="324a-2e53-c322-9dad" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="17f0-a74f-027f-c827" name="Forward Observers" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="b696-effb-e43a-3cd9" name="Forward Observers" hidden="false">
+          <description>Battlefield Asset. Play before making a barrage attack. Place a marker anywhere on the board.  Barrage weapons may draw line of sight from this marker, ignoring the -2 for indirect fire.
     </description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="3f4f-781c-d66c-d797" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-            <categoryLink id="fb5f-80af-e881-94f2" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a9b7-3d50-1282-ecb3" name="Titanic Decapitation" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="ed48-a252-a0ba-2d5d" name="Titanic Decapitation" hidden="false">
-              <description>any End phase. Score 5Vp if an enemy titan was destroyed due to critical damage to the head.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="2ab1-905c-c9c1-5f01" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="eb24-c12a-7f9c-d4c1" name="Earthshaker Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="5df9-8096-97b7-6685" name="Earthshaker Mines" hidden="false">
-              <description>Play after enemy finishes a move or turn. it takes d3 S6 hits to legs, no void saves. Unit then scatters D6&quot; which can cause a collision.
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3f4f-781c-d66c-d797" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="fb5f-80af-e881-94f2" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a9b7-3d50-1282-ecb3" name="Titanic Decapitation" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="ed48-a252-a0ba-2d5d" name="Titanic Decapitation" hidden="false">
+          <description>any End phase. Score 5Vp if an enemy titan was destroyed due to critical damage to the head.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2ab1-905c-c9c1-5f01" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eb24-c12a-7f9c-d4c1" name="Earthshaker Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="5df9-8096-97b7-6685" name="Earthshaker Mines" hidden="false">
+          <description>Play after enemy finishes a move or turn. it takes d3 S6 hits to legs, no void saves. Unit then scatters D6&quot; which can cause a collision.
     </description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="6370-1861-e007-ca00" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="78ac-538a-0de3-c8d9" name="No Prisoners" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="bd0b-b01d-077d-1c7e" name="No Prisoners" hidden="false">
-              <description>End of Battle  Score 5 VP if all enemy titans are destroyed. For 2500+ games score 10VP.
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6370-1861-e007-ca00" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="78ac-538a-0de3-c8d9" name="No Prisoners" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="bd0b-b01d-077d-1c7e" name="No Prisoners" hidden="false">
+          <description>End of Battle  Score 5 VP if all enemy titans are destroyed. For 2500+ games score 10VP.
     </description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="adf0-7369-7dc4-f171" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6f6c-982d-c8ed-5fb8" name="A Quick Kill" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="6489-9a96-a7ac-d327" name="A Quick Kill" hidden="false">
-              <description>End phase of 1st or 2nd round. Score 5VP if you have destroyed a titan of at least scale 8. </description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="c057-b46c-acd5-ea50" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="dee9-1ba4-819a-306d" name="The Miracle of Mars" publicationId="975a-00f4-pubN89033" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="8eb9-ea55-75f3-3b1b" name="The Miracle of Mars" hidden="false">
-              <description>Start of damage control.  Place next to a titan. At any time, discard to cool reactor.
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="adf0-7369-7dc4-f171" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6f6c-982d-c8ed-5fb8" name="A Quick Kill" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="6489-9a96-a7ac-d327" name="A Quick Kill" hidden="false">
+          <description>End phase of 1st or 2nd round. Score 5VP if you have destroyed a titan of at least scale 8. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c057-b46c-acd5-ea50" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dee9-1ba4-819a-306d" name="The Miracle of Mars" publicationId="975a-00f4-pubN89033" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="8eb9-ea55-75f3-3b1b" name="The Miracle of Mars" hidden="false">
+          <description>Start of damage control.  Place next to a titan. At any time, discard to cool reactor.
     Roll d10+5
     7-15 reduce reator by d3
     16-24 reduce by d6
     25, lose all heat</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="12f0-caca-5395-b265" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
-          </costs>
-        </selectionEntry>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="12f0-caca-5395-b265" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="2062-8f97-c49e-abe2" name="Warmaster Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="4bcb-5174-b9ac-cafd" name="Warmaster Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
@@ -15554,112 +15569,676 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-     <selectionEntry id="1260-8d1f-16f7-75ad" name="=Astrorum= Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false" collective="false" import="true" type="unit">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c8-2b67-3fdb-ac96" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="ad4d-abd4-2b1b-bfd7" name="Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false">
-              <description>Legio Astorum.Play when a titans void shields collapse. Roll repair dice using number of servitor clades. 5 or 6 restore void shields by 1 (not a repair roll).
+    <selectionEntry id="1260-8d1f-16f7-75ad" name="=Astrorum= Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c8-2b67-3fdb-ac96" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="ad4d-abd4-2b1b-bfd7" name="Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false">
+          <description>Legio Astorum.Play when a titans void shields collapse. Roll repair dice using number of servitor clades. 5 or 6 restore void shields by 1 (not a repair roll).
     </description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="bdfe-1cd2-460a-7f3c" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-            <categoryLink id="92b1-64b6-4adc-cb84" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="14a6-fc52-9fa3-8a97" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="bdfe-1cd2-460a-7f3c" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="92b1-64b6-4adc-cb84" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="14a6-fc52-9fa3-8a97" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43fb-83e1-2c6b-100c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="974b-19a6-ce5c-4bfa" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="3780-37a9-4520-2c89" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" hidden="false">
+          <description>End of Battle. If you have destroyed at least as many titans as you have lost, gain 5VP.
+    </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0474-ebed-47c2-dbf2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aed6-0705-b201-ff96" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e84d-2d70-0070-5894" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="0389-4be5-248f-be4f" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7f96-a00e-cf44-5c6f" name="Atrapos Graviton Singularity Cannon" hidden="false" collective="false" import="true" targetId="8f75-8c57-ffd7-06c8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc5-d2d4-5d40-104c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3dc-9cbd-6f43-0253" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="322d-51b4-40ac-eddd" name="Atrapos Lascutter" hidden="false" collective="false" import="true" targetId="fd74-2b68-7a5f-28cc" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae0e-43b2-eff0-1ea3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8960-c683-634e-bfa8" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8f75-8c57-ffd7-06c8" name="Atrapos Graviton Singularity Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3bd7-fb3b-6de3-d3d2" name="Atrapos Graviton Singularity Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">20&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (3&quot;), Concussive</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd74-2b68-7a5f-28cc" name="Atrapos Lascutter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3bda-2578-547f-3ce9" name="Atrapos Lascutter" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion, Melee</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dec1-8a16-1df5-e112" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="8d59-34f9-69d8-1f3c" name="Questoris Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">10&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">6 (4 with Lord Scion)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">3 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d507-4b66-fd9d-b391" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="90bb-3320-ade4-a96f" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="0be5-56e9-939b-6c25" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="77bc-60dc-8af8-8dfe" name="Questoris Knight Styrix Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-12</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-15</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="185c-cd7d-9550-48a3" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="6685-93da-bc92-172e" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="a901-f5ba-596d-d304" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="954b-fdb1-32e9-b80b" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43fb-83e1-2c6b-100c" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="974b-19a6-ce5c-4bfa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0916-de0d-383e-8b3b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4902-0d69-c9d8-fc47" type="min"/>
           </constraints>
-          <rules>
-            <rule id="3780-37a9-4520-2c89" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" hidden="false">
-              <description>End of Battle. If you have destroyed at least as many titans as you have lost, gain 5VP.
-    </description>
-            </rule>
-          </rules>
           <categoryLinks>
-            <categoryLink id="0474-ebed-47c2-dbf2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+            <categoryLink id="bb6b-4a72-ed91-f063" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="5c36-6a37-017f-252d" name="Questoris Structure Point" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="269e-2998-b9cd-ffc1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2046-fd64-75e5-2153" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="3386-c362-5910-c07e" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7a5c-1b69-8001-d0f9" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4dc7-511d-2879-bb1e" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="62d8-feac-7ff5-1553" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="aed6-0705-b201-ff96" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" type="upgrade">
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="6dec-b5d7-faf0-4c13" name="Questoris Knight Lord Styrix" hidden="false" collective="false" import="true" targetId="e393-1183-33fd-d14d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5911-f08c-cd69-fd24" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b379-9ba6-2ffe-98f5" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f092-af82-3042-7d64" name="Questoris Knight Scion Styrix" hidden="false" collective="false" import="true" targetId="540a-525d-45fd-2f93" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cd5-50dd-98aa-902b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5850-db9b-1135-88de" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ddf1-a4e4-e7b1-8ed0" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53e3-ed03-4bda-eb07" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12e3-cc2d-0569-8cbb" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a0a-5e72-9752-c32d" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9f6a-748a-46f1-05fe" name="Questoris Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">10&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">6 (4 with Lord Scion)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">3 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8ea8-f718-b0f3-1b99" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="866d-bf17-81c9-1636" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="5653-0cc9-7777-63b8" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="6397-1ce3-fbca-7f80" name="Questoris Knight Magaera Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-12</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-15</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="86ca-10cc-4dd2-5b4b" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="d92e-a23e-0b64-8679" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="7970-2070-0821-999f" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1996-71dd-e53e-e990" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d99-a705-d310-ce55" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d61-9ca2-e4b4-969b" type="min"/>
+          </constraints>
           <categoryLinks>
-            <categoryLink id="e84d-2d70-0070-5894" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
-            <categoryLink id="0389-4be5-248f-be4f" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+            <categoryLink id="3439-4bc9-1f2e-0a52" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
           </categoryLinks>
-          <entryLinks>
-            <entryLink id="7f96-a00e-cf44-5c6f" name="Atrapos Graviton Singularity Cannon" hidden="false" collective="false" import="true" targetId="8f75-8c57-ffd7-06c8" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b234-d6c8-36c5-06a7" name="Questoris Structure Point" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc5-d2d4-5d40-104c" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3dc-9cbd-6f43-0253" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ca1-58e1-85ff-9ac5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91e5-1a27-9dec-a4a4" type="min"/>
               </constraints>
-            </entryLink>
-            <entryLink id="322d-51b4-40ac-eddd" name="Atrapos Lascutter" hidden="false" collective="false" import="true" targetId="fd74-2b68-7a5f-28cc" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae0e-43b2-eff0-1ea3" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8960-c683-634e-bfa8" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+              <selectionEntries>
+                <selectionEntry id="4972-a688-bff2-a83e" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cdd7-a95e-5403-259f" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8bff-7c04-cb8b-3c39" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a323-5864-777e-e71f" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8f75-8c57-ffd7-06c8" name="Atrapos Graviton Singularity Cannon" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="3bd7-fb3b-6de3-d3d2" name="Atrapos Graviton Singularity Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
-                <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
-                <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
-                <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
-                <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">20&quot;</characteristic>
-                <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
-                <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
-                <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
-                <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-                <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (3&quot;), Concussive</characteristic>
-                <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry id="fd74-2b68-7a5f-28cc" name="Atrapos Lascutter" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="3bda-2578-547f-3ce9" name="Atrapos Lascutter" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
-                <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
-                <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
-                <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
-                <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
-                <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
-                <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
-                <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
-                <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-                <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion, Melee</characteristic>
-                <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="23a7-c61e-575a-87a4" name="Questoris Knight Lord Magaera" hidden="false" collective="false" import="true" targetId="be8e-e48f-d3f1-580c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43bd-744a-553b-0566" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ff-7926-59a8-453a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fbfd-3e68-0d63-9f8a" name="Questoris Knight Scion Magaera" hidden="false" collective="false" import="true" targetId="8d33-f08f-31d2-75a3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3c2-f2b7-81de-dab9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f32-9145-a71c-cb88" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4c52-84fc-03e5-d0e3" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f126-8bc9-5760-7778" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f807-d2c2-9884-b67c" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a5e7-b5d0-d911-6c59" name="Hekaton Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0133-efe3-a3f3-10d3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7d53-e9ec-784a-6e01" name="Hekaton Siege Claw" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27"/>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Melee, Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="560c-f255-894f-dc0d" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="26fd-9c38-b45a-5e16" name="New CategoryLink" hidden="false" targetId="4739-6f52-a293-aa06" primary="false"/>
+        <categoryLink id="8c3a-bcb5-a358-42d2" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="b58c-e00a-805f-3df9" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="991d-efeb-7a0d-9ad7" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="08b9-923d-1155-0c7f" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8d33-f08f-31d2-75a3" name="Questoris Knight Scion Magaera" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="664b-30c6-0303-98d7" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="43c8-7220-03b3-b06f" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2e68-616e-61fe-24c2" name="Arms" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="a6be-4af6-b8a7-19ba" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6be-4af6-b8a7-19ba" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0db0-2217-8db8-2ea9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="fd14-d4fe-7a46-9438" name="Lightning Cannon" hidden="false" collective="false" import="true" targetId="c240-3acf-9c72-43d1" type="selectionEntry"/>
+            <entryLink id="ec85-ddde-91f4-3c61" name="Hekaton Siege Claw" hidden="false" collective="false" import="true" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1c7e-0daa-4530-236a" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="d7af-1c47-6e90-39f1" name="Phased Plasma-Fusil" hidden="false" collective="false" import="true" targetId="006e-1fd0-7707-a241" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="540a-525d-45fd-2f93" name="Questoris Knight Scion Styrix" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="2ccd-2c05-f815-d943" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="c119-2849-9713-7c05" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b855-f0b6-369f-39b8" name="Arms" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="722f-626d-2c2f-e229" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="722f-626d-2c2f-e229" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3514-19ef-ff9e-ed66" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7638-d4d4-af69-4677" name="Hekaton Siege Claw" hidden="false" collective="false" import="true" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry"/>
+            <entryLink id="2de3-8448-6b49-a5a4" name="Volkite Chieorovile" hidden="false" collective="false" import="true" targetId="3595-8b4e-3496-ad5f" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c918-1c60-aae2-ea61" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="3ce6-f1f3-7d16-da65" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="7678-3f98-2f40-2d52" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3595-8b4e-3496-ad5f" name="Volkite Chieorovile" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f251-f90c-f19f-9b54" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8a89-6e65-2af9-879b" name="Volkite Chieorovile" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">16&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (1)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8ba4-402d-2722-1bc0" name="New CategoryLink" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="e139-a8cf-2336-cc53" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="b473-5117-06b1-66c1" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="3590-80e1-12f6-f4a2" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="30fd-d6bf-a6d5-3f23" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7678-3f98-2f40-2d52" name="Graviton Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01dc-2fa2-700e-213b" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="93fc-2d00-23e1-443a" name="Graviton Gun" hidden="false">
+          <description>When the banner is activated in the Combat phase, each Knight with a Graviton gun upgrade can target an enemy unit within 3&quot;.That unit suffers a Strength 3 hit; these attacks have the Concussive trait.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="8b36-8da2-47dd-e149" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="9f85-cc65-9da6-db01" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e393-1183-33fd-d14d" name="Questoris Knight Lord Styrix" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="e85f-76bd-1758-5ba2" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="4a84-ce54-899c-40a4" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2a73-8730-ff87-7748" name="Arms" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="f2ff-d6d8-6d13-3053" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2ff-d6d8-6d13-3053" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="670c-e530-3cec-1d8e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b6f8-fcac-5ba6-9e92" name="Volkite Chieorovile" hidden="false" collective="false" import="true" targetId="3595-8b4e-3496-ad5f" type="selectionEntry"/>
+            <entryLink id="8bd1-0e16-8aa8-a5e4" name="Hekaton Siege Claw" hidden="false" collective="false" import="true" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c7e4-e6c0-e507-a84a" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="efe1-4dba-45af-1996" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="7678-3f98-2f40-2d52" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="be8e-e48f-d3f1-580c" name="Questoris Knight Lord Magaera" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="4367-69cf-c64d-3f80" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="e11a-dc3f-6269-23a6" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1dce-fae5-e156-d84c" name="Arms" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="8959-fc3f-44b1-1b75" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8959-fc3f-44b1-1b75" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10a7-65d1-2f67-ec45" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6e55-06ae-7da3-06b2" name="Lightning Cannon" hidden="false" collective="false" import="true" targetId="c240-3acf-9c72-43d1" type="selectionEntry"/>
+            <entryLink id="e418-6620-fd5e-88f6" name="Hekaton Siege Claw" hidden="false" collective="false" import="true" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c2f3-2233-d318-c99d" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="050d-7a03-9fd3-cde8" name="Phased Plasma-Fusil" hidden="false" collective="false" import="true" targetId="006e-1fd0-7707-a241" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="006e-1fd0-7707-a241" name="Phased Plasma-Fusil" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adcf-5144-245e-5426" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="d85f-d09f-29ca-2379" name="Phased Plasma-Fusil" hidden="false">
+          <description>When the banner is activated in the Combat phase, each Knight with a Meltagun upgrade can target an enemy unit within 3&quot;.That unit suffers two Strength 4 hits.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="59f1-7e4b-1f33-286c" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c240-3acf-9c72-43d1" name="Lightning Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2d2-d88f-3ad3-9013" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3369-f73a-499d-e2aa" name="Lightning Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">20&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="707f-d80f-4591-10d8" name="New CategoryLink" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="e283-11d8-1c4a-8a86" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="fc59-5ac8-27d4-d11d" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="775a-0436-0e03-fe09" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="92cc-928a-1cf7-128b" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+        <categoryLink id="1943-429c-7994-52b6" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="aed7-bd3b-e9b1-3360" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="77ba-108d-edd5-7993" name="Ionic Flare Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fa57-77e1-a813-ad1d" name="Ionic Flare Shield" hidden="false" targetId="4bcc-c9a8-70bd-fda4" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="true">
@@ -16322,6 +16901,9 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
     </rule>
     <rule id="e8db-6948-589e-2c80" name="Immobilized" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
       <description>The Titan&apos;s legs and toros are frozen in place. It cannot move or make any turns.</description>
+    </rule>
+    <rule id="4bcc-c9a8-70bd-fda4" name="Ionic Flare Shield" hidden="false">
+      <description>Decrease the Strength of all attacks made by a weapon with the Blast trait against a Knight (Magaera/Styrix) Banner by 1, to a minimum of 3.</description>
     </rule>
   </sharedRules>
 </gameSystem>
