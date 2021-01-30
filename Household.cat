@@ -521,6 +521,12 @@ the opposing player. While the unit is not on th</description>
             <entryLink id="9e29-a652-c15a-ecba" name="House Kaushik " hidden="false" collective="false" import="true" targetId="f2ca-d1da-f4e3-205a" type="selectionEntry"/>
             <entryLink id="4580-b6a5-8b3a-f356" name="House Mamaragon" hidden="false" collective="false" import="true" targetId="7741-0027-541e-964c" type="selectionEntry"/>
             <entryLink id="f176-538c-951e-987a" name="House Tazkhar" hidden="false" collective="false" import="true" targetId="1b4e-7d7e-d6de-47ae" type="selectionEntry"/>
+            <entryLink id="0033-98bb-3a80-cf90" name="House Sidus" hidden="false" collective="false" import="true" targetId="ce42-548a-1d40-a806" type="selectionEntry"/>
+            <entryLink id="dff6-ff52-54a5-10c1" name="House Taranis" hidden="false" collective="false" import="true" targetId="6f6c-3458-6a80-f6f0" type="selectionEntry"/>
+            <entryLink id="4c1a-4031-c35c-fbe3" name="House Zavora" hidden="false" collective="false" import="true" targetId="2d90-7c1b-b26b-71b9" type="selectionEntry"/>
+            <entryLink id="7f4d-7d7a-3c83-06ee" name="House Morbidia" hidden="false" collective="false" import="true" targetId="0e9d-9505-9f03-58ca" type="selectionEntry"/>
+            <entryLink id="40df-0b26-f8e6-9c81" name="House Ioeden" hidden="false" collective="false" import="true" targetId="c282-fbc0-ae2d-ab64" type="selectionEntry"/>
+            <entryLink id="666a-4fd3-2c99-f141" name="House Oroborn" hidden="false" collective="false" import="true" targetId="6f48-de7c-452b-a00f" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="2ef5-fa91-d409-27dc" name="Knightly Qualities" hidden="false" collective="false" import="true">
@@ -1185,6 +1191,486 @@ Hit roll of a I when using a weapon with rhe Melee trait. </description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="a9f1-a413-4a16-ec8d" name="Sidus Qualities" publicationId="2988-f24d-39ef-352e" page="56" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce42-548a-1d40-a806" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="6bfb-4b80-dbc1-76e9" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bfb-4b80-dbc1-76e9" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="794a-6ce4-2b39-01ed" name="1 Bombard Commander" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6640-7d0b-c122-db47" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="d03b-bfb9-fb3c-2162" name="Bombard Commander" publicationId="2988-f24d-39ef-352e" page="56" hidden="false">
+                      <description>The Seneschal favours a less direct
+approach, using the superior speed of their Scions to avoid
+enemy fire and unleash devastating volleys in return.
+Once per game, all Banners within the Seneschal’s
+Lance can be issued a Coordinated Strike, Split Fire or
+First Fire order without the need to make a Command
+check. Not all Banners need to be issued an order in
+this way, but all Banners must be issued the same Order.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6ca0-f9f5-20c7-50ab" name="2 Scion of Ryza" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8756-15ed-96f4-c306" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="2dff-4814-09f4-34d9" name="Scion of Ryza" publicationId="2988-f24d-39ef-352e" page="56" hidden="false">
+                      <description>The Seneschal has served Ryza honourably
+for centuries, kept alive by ancient technology and bearing
+the greatest artifice its world has to offer. The weapons carried by the Seneschal’s Banner are of
+a higher quality than normal. Increase the Strength
+value of any weapon in the Seneschal’s Banner with
+a starting Strength value of 4 or higher by 1, to a
+maximum of Strength 8.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9f5a-1f0d-9d34-82b4" name="3 Favoured Scion" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2ce-978a-8fd2-476a" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5c3a-eaf9-0c68-3eed" name="Favoured Scion" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
+                      <description>The Seneschal is blessed by the patronage
+of a prominent Magos of Ryza, granted their favour so long
+as they bring no dishonour to their name. One model in the Seneschal’s Banner may be upgraded
+with the Battle Standard Mark of the Omnissiah
+(see page 104) for free. This model must be part of
+a Questor Mechanicus Household to do so and the
+Household Force cannot contain another Battle
+Standard. However, if the Seneschal’s Banner is ever
+Shaken, for the remainder of the battle the Battle
+Standard has no effect and the Seneschal cannot benefit
+from the Noble Sacrifice rules (see page 38 of Adeptus
+Titanicus: Doom of Molech).</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="6ab4-777d-e6d1-af4b" name="Taranis Qualities" publicationId="975a-00f4-pubN89746" page="46" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f6c-3458-6a80-f6f0" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="7259-41c0-4e4d-05cc" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7259-41c0-4e4d-05cc" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="fda8-3203-70d1-6ea6" name="1 Grace of the Omnissiah" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80a3-6303-d674-e828" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="b19e-1fba-71e1-3696" name="Grace of the Omnissiah" publicationId="2988-f24d-39ef-352e" page="58" hidden="false">
+                      <description>The Seneschal believes themselves
+blessed by the Omnissiah, having survived blows that
+would have felled others.
+Whenever the Seneschal’s Banner suffers Critical
+or Devastating Damage, roll a D6. On a 6, the
+damage is reduced by one level, i.e., a Critical Hit
+becomes a Devastating Hit, a Devastating Hit
+becomes a Direct Hit.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fab0-d3ff-b031-476f" name="2 Resolute Brotherhood" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0d4-89bb-b388-b69d" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6bd6-483d-0109-134a" name="Resolute Brotherhood" publicationId="2988-f24d-39ef-352e" page="58" hidden="false">
+                      <description>The Seneschal places great value in
+the notion of brotherhood, forming everlasting bonds with
+the Knights they command. When making an attack during the Movement phase as
+part of a Charge order, Knights within the Seneschal’s
+Banner add 1 to the Dice value of the weapon they
+are attacking with for each additional Banner within
+the Seneschal’s Lance within 3&quot; of them (measure for
+each Knight separately).</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="26ed-c4a5-fecf-59c0" name="3 Master at Arms" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce1f-40f2-1889-905b" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="b21a-cb66-2ca4-394c" name="Master at Arms" publicationId="2988-f24d-39ef-352e" page="58" hidden="false">
+                      <description>: The Seneschal fights with precision,
+striking at the weakest point and overwhelming their foe. The Seneschal may issue Coordinated Strike orders
+to Banners within their Lance without the need to
+make a Command check. However, the Seneschal’s
+Banner does not add 3 to the result of any of its
+Command checks, as described on page 38 of Adeptus
+Titanicus: Doom of Molech.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5724-5cd4-3130-50b7" name="Zavora Qualities" publicationId="2988-f24d-39ef-352e" page="60" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d90-7c1b-b26b-71b9" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="a229-f1f6-de63-84e0" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a229-f1f6-de63-84e0" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="731a-f657-311c-d5e5" name="1 Progeny of Mars" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="513a-2ca2-bb05-6a42" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="9a98-c332-fe1a-09b2" name="Progeny of Mars" publicationId="2988-f24d-39ef-352e" page="60" hidden="false">
+                      <description>The Seneschal can trace their
+line back to Mars itself and will honour that legacy
+until their dying breath.
+As long as the Seneschal is on the battlefield,
+the Seneschal’s Banner cannot be Shaken. In
+addition, Banners within the Seneschal’s Lance
+may be issued First Fire orders without the need to
+make a Command check.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c5b9-12cd-47cc-ada1" name="2 Sacred Armament" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d241-69a6-8dd6-c06c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="ceff-e932-7f2f-3d0c" name="Sacred Armament" publicationId="2988-f24d-39ef-352e" page="60" hidden="false">
+                      <description>The Seneschal wields deadly weapons
+forged during the Dark Age of Technology and advocates
+caution lest they fall into the hands of their enemy. Models in the Seneschal’s Banner increase the Dice 
+value of any weapon without the Melee trait by 1.
+However, Banners within the Seneschal’s Lance may
+not be issued Full Stride or Charge orders.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1fe1-7749-7283-7983" name="3 Broken Soul" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf6b-a180-d273-7be0" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="1738-1d67-2106-2d72" name="Broken Soul" publicationId="2988-f24d-39ef-352e" page="60" hidden="false">
+                      <description>The Seneschal has seen all they love burnt
+to ash and is now a husk of their former self, existing only
+because duty demands it.
+When the Seneschal’s Banner suffers a Direct Hit,
+roll a D6. On a 5 or 6, the hit is ignored. However, the
+Seneschal’s Banner does not add 3 to the result of any
+of its Command checks, as described on page 38 of
+Adeptus Titanicus: Doom of Molech</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="9ae0-61b3-54d0-d5b8" name="Morbidia Qualities" publicationId="2988-f24d-39ef-352e" page="62" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e9d-9505-9f03-58ca" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="c2d2-ed4a-2c68-3632" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2d2-ed4a-2c68-3632" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="8be6-f830-7b86-fcb3" name="1 Blackhearted" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d781-3a83-fd61-479f" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="2663-4dd9-f38d-daf0" name="1 Blackhearted" publicationId="2988-f24d-39ef-352e" page="62" hidden="false">
+                      <description>The Seneschal cares not for the
+weakness of mercy and revels in the cries of fear and
+the shedding of blood. When making an attack during the Movement phase as
+part of a Charge order, Knights within the Seneschal’s
+Banner may re-roll Hit rolls of a 1.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2983-5dd7-70e3-a8fa" name="2 Devoid of Virtue" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="953e-d1f9-a737-418e" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="e13f-3e01-2a3c-52fe" name="Devoid of Virtue" publicationId="2988-f24d-39ef-352e" page="62" hidden="false">
+                      <description>The Seneschal possesses a
+dread reputation, striking fear into the hearts of
+any that oppose them.
+At the end of the Movement phase, enemy Knight
+Banners within 6&quot; of the Seneschal’s Banner must check
+to see if they are Shaken, as if one or more Knights
+within their Banner had been destroyed.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ca46-b998-5f97-b9cc" name="3 Rule through Fear" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b2e-1b31-1b45-df15" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="1db1-7199-97d1-50b5" name="Rule through Fear" publicationId="2988-f24d-39ef-352e" page="62" hidden="false">
+                      <description>The Seneschal controls their warriors
+through terror, knowing they will not break if they fear
+their commander more than their enemy. Banners within the Seneschal’s Lance cannot be Shaken
+while the Seneschal is on the battlefield. However, the
+Seneschal’s Banner does not add 3 to the result of any
+of its Command checks, as described on page 38 of
+Adeptus Titanicus: Doom of Molech.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="6e0f-427f-9f50-a43b" name="Ioeden Qualities" publicationId="2988-f24d-39ef-352e" page="62" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c282-fbc0-ae2d-ab64" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="1deb-acc5-92d8-1eaf" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1deb-acc5-92d8-1eaf" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="7c11-d4b9-6af1-2052" name="1 Hidden Loyalties" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce5-db90-c5d9-adcd" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="a221-3518-611f-e13d" name="Hidden Loyalties" publicationId="2988-f24d-39ef-352e" page="64" hidden="false">
+                      <description>The Seneschal is a snake, concealing their loyalties until betrayal will deliver
+the deadliest of blows.
+During the Movement phase of the first round, so
+long as the Seneschal is on the battlefield, Banners
+within the Seneschal’s Lance can not be targeted
+by an enemy attack as long as they have not been
+activated yet that phase. </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1b86-d125-3474-3f48" name="2 Dishonourable" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="456d-56e9-97dd-074d" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5bd9-f5bc-f385-6b4b" name="Dishonourable" publicationId="2988-f24d-39ef-352e" page="64" hidden="false">
+                      <description>The Seneschal believes a fair fight is one
+already lost and seeks victory through any means.
+Models within the Seneschal’s Banner add 1 to their
+Armour rolls when making attacks against enemy units
+while within that unit’s Side or Rear arc, in addition to
+any other modifiers.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1ef9-2d23-3881-1d4e" name="3 From the Shadows" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67dd-0b98-c648-567b" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="65e6-b529-e75e-15ab" name="From the Shadows" publicationId="2988-f24d-39ef-352e" page="64" hidden="false">
+                      <description>: The Seneschal wields misdirection
+like a weapon, never revealing their plan until the
+last possible moment.
+At the start of the Strategy phase of the first round,
+Banners within the Seneschal’s Lance may be
+redeployed. These redeployed units can be placed
+anywhere that they would normally be allowed to
+deploy by the mission being played.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="6216-6532-4e47-4bdb" name="Oroborn Qualities" publicationId="2988-f24d-39ef-352e" page="66" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f48-de7c-452b-a00f" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="3db8-b909-d963-a92a" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3db8-b909-d963-a92a" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="32d7-c176-130e-71e0" name="1 All But Dead" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="144c-9cab-710b-686a" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="181f-a281-a3d8-ee26" name="All But Dead" publicationId="2988-f24d-39ef-352e" page="66" hidden="false">
+                      <description>A foul change has gripped the Seneschal, for
+they feel neither pain nor joy, driven only by a burning need
+to conquer in the name of the Warmaster. As long as the Seneschal is on the battlefield, the
+Seneschal’s Banner cannot be Shaken. In addition,
+reduce the Strength value of any attack made against
+the Seneschal’s Banner by 1, to a minimum of 1.
+However, the Seneschal’s Banner does not add 3 to the
+result of any of its Command checks, as described on
+page 38 of Adeptus Titanicus: Doom of Molech</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3ef7-aca5-96c1-2cc7" name="2 Noxious" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e07-07b3-1262-48c4" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5864-baf4-567d-0526" name="Noxious" publicationId="2988-f24d-39ef-352e" page="60" hidden="false">
+                      <description>The joints of the Seneschal’s armour weep foul
+fluids, each drop rusting armour and decaying flesh.
+Any unit, friend or foe, within 2&quot; of the Seneschal’s
+Banner when it is activated in the Combat phase
+suffers D3 S4 hits. Titans suffer these hits to their
+Legs. House Oroborn units are not affected by this
+rule. However, the Seneschal’s Banner may not
+include a Battle Standard.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cc17-eecf-19b6-0b03" name="3 Broken Soul" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff1f-5b07-0c3b-d973" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="c66e-ba7f-54d2-a45c" name="Broken Soul" publicationId="2988-f24d-39ef-352e" page="60" hidden="false">
+                      <description>
+3 Last of their Line: The Seneschal has so far staved off the
+worst of the corruption rooted within their Household and
+seeks an honourable death before they too are consumed. As long as the Seneschal is on the battlefield, Banners
+within the Seneschal’s Lance may be issued Charge
+orders without the need to make a Command check.
+However, at least one Banner within the Seneschal’s
+Lance must be given Charge orders in every round from
+round 2 onwards if possible.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1245,5 +1731,63 @@ Hit roll of a I when using a weapon with rhe Melee trait. </description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ce42-548a-1d40-a806" name="House Sidus" publicationId="2988-f24d-39ef-352e" page="56" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>
+1 Bombard Commander: The Seneschal favours a less direct
+approach, using the superior speed of their Scions to avoid
+enemy fire and unleash devastating volleys in return.
+Once per game, all Banners within the Seneschal’s
+Lance can be issued a Coordinated Strike, Split Fire or
+First Fire order without the need to make a Command
+check. Not all Banners need to be issued an order in
+this way, but all Banners must be issued the same Order. 2 Scion of Ryza:The Seneschal has served Ryza honourably
+for centuries, kept alive by ancient technology and bearing
+the greatest artifice its world has to offer. The weapons carried by the Seneschal’s Banner are of
+a higher quality than normal. Increase the Strength
+value of any weapon in the Seneschal’s Banner with
+a starting Strength value of 4 or higher by 1, to a
+maximum of Strength 8.
+3 Favoured Scion: The Seneschal is blessed by the patronage
+of a prominent Magos of Ryza, granted their favour so long
+as they bring no dishonour to their name. One model in the Seneschal’s Banner may be upgraded
+with the Battle Standard Mark of the Omnissiah
+(see page 104) for free. This model must be part of
+a Questor Mechanicus Household to do so and the
+Household Force cannot contain another Battle
+Standard. However, if the Seneschal’s Banner is ever
+Shaken, for the remainder of the battle the Battle
+Standard has no effect and the Seneschal cannot benefit
+from the Noble Sacrifice rules (see page 38 of Adeptus
+Titanicus: Doom of Molech).</comment>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6f6c-3458-6a80-f6f0" name="House Taranis" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2d90-7c1b-b26b-71b9" name="House Zavora" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e9d-9505-9f03-58ca" name="House Morbidia" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c282-fbc0-ae2d-ab64" name="House Ioeden" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6f48-de7c-452b-a00f" name="House Oroborn" hidden="false" collective="false" import="true" type="upgrade"/>
   </sharedSelectionEntries>
 </catalogue>
