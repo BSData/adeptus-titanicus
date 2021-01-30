@@ -16903,7 +16903,7 @@ Banners within 6&quot; of a titan may be issued a First Fire or Full Stride orde
       <description>The Titan&apos;s legs and toros are frozen in place. It cannot move or make any turns.</description>
     </rule>
     <rule id="4bcc-c9a8-70bd-fda4" name="Ionic Flare Shield" hidden="false">
-      <description>Decrease the Strength of all attacks made by a weapon with the Blast trai against a Knight (Magaera/Styrix) Banner by 1, to a minimum of 3.</description>
+      <description>Decrease the Strength of all attacks made by a weapon with the Blast trait against a Knight (Magaera/Styrix) Banner by 1, to a minimum of 3.</description>
     </rule>
   </sharedRules>
 </gameSystem>
