@@ -27,6 +27,7 @@
         <categoryLink id="2434-58f3-dd2a-0fd2" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink id="bf96-9b27-a283-7054" name="Squadron" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="false"/>
         <categoryLink id="346a-4747-185f-fc53" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+        <categoryLink id="b9a8-00d2-8884-091f" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -133,15 +134,6 @@
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be8a-970c-df26-07c0" type="min"/>
           </constraints>
-        </entryLink>
-        <entryLink id="9439-e24c-ef48-c6d6" name="Knight House" hidden="false" collective="false" import="true" targetId="cdb9-838a-4e44-bb7b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7972-dca9-4c6d-f214" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bce-d8e0-3af4-f210" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="e6ad-8a48-fac0-f130" name="Knight House" hidden="false" collective="false" import="true" targetId="5a2e-2e53-72f2-baea" type="selectionEntryGroup"/>
-          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -508,5 +500,750 @@ the opposing player. While the unit is not on th</description>
         <categoryLink id="7057-1fae-7d3d-dcad" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="6298-81cc-e35b-8aa1" name="Knight House" hidden="false" collective="false" import="true" targetId="cdb9-838a-4e44-bb7b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73dc-fec4-efdc-5073" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dd8-2a57-f18e-2afe" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c68e-031c-7b9e-8c73" name="New CategoryLink" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7183-c0e8-3027-d054" name="Knight House" publicationId="975a-00f4-pubN89746" page="44" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12b9-c4e5-aae7-ba3c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2fa3-2e3e-63a2-0608" name="House Divine" hidden="false" collective="false" import="true" targetId="5eed-80b3-369c-9e2d" type="selectionEntry"/>
+            <entryLink id="50d8-d7f7-33db-d172" name="House Donar" hidden="false" collective="false" import="true" targetId="39d4-f743-a814-577e" type="selectionEntry"/>
+            <entryLink id="4003-ad80-51d1-25a1" name="House Indra" hidden="false" collective="false" import="true" targetId="0a25-c423-8854-5b77" type="selectionEntry"/>
+            <entryLink id="dc7e-4120-aaa8-a9b1" name="House Kaska" hidden="false" collective="false" import="true" targetId="a777-fa68-d537-90f7" type="selectionEntry"/>
+            <entryLink id="9e29-a652-c15a-ecba" name="House Kaushik " hidden="false" collective="false" import="true" targetId="f2ca-d1da-f4e3-205a" type="selectionEntry"/>
+            <entryLink id="4580-b6a5-8b3a-f356" name="House Mamaragon" hidden="false" collective="false" import="true" targetId="7741-0027-541e-964c" type="selectionEntry"/>
+            <entryLink id="f176-538c-951e-987a" name="House Tazkhar" hidden="false" collective="false" import="true" targetId="1b4e-7d7e-d6de-47ae" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2ef5-fa91-d409-27dc" name="Knightly Qualities" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b605-e9f2-0a24-2e49" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="30be-b35b-bff5-88c1" name="1 First Born" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="193a-07f3-699f-9eed" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="6512-0706-f5ae-2d8f" name="First Born" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                  <description>
+I : Familiar since childhood to both their inherited
+duty and the unquestioning respect of others, the Seneschal is a
+skilled, if unpopular, commander.
+The Seneschal may issue Full Stride orders to Banners
+within their Lance without the need to make a
+Command check. However, deduct I from the results
+of any Command checks to see if any Banner within the
+Seneschal&apos;s Lance becomes Shaken.
+</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5a4a-4cb0-49c3-688b" name="2 Elder Patriarch" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d01-0230-d433-decb" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="f993-e6c5-c3a1-d630" name="Elder Patriarch" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                  <description>Many years of commanding impetuous
+young Knights has taught the Seneschal great patience. They
+exude a calm that belies their righteous fury.
+When making a Command check to see if they become
+Shaken, all Banners within 12&quot; of the Seneschal
+add I to the dice roll.
+</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2a1d-62c9-6031-cdda" name="3 Young Blood" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29d9-4a07-d48c-6390" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="6164-826a-3f13-bbe6" name="Young Blood" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                  <description>The Seneschal is young an.d new to such high command. They are eager to be proven worthy, but are hotheaded and prone to bravado.
+The Seneschal may issue Charge orders to Banners within their Lance without the need to make a Command check.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5664-d925-a86c-2622" name="4 Second Son" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c439-b6f0-f36c-4b3d" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="036d-6bb7-ae41-34df" name="4 Second Son" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                  <description>The Seneschal has lived their life with little
+responsibility, their days spent hunting and perfecting their
+martial skills rather than their skill as a leader.
+Any Banner within 12&quot; of the Seneschal&apos;s Banner may
+re-roll results of a I when making a Ballistic Skill check.
+However, the Seneschal&apos;s Banner does not add 3 to
+the result of any of its Command checks, as described
+earlier on this page.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d85e-87cc-fd48-ac04" name="5 Former Freeblade" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1791-445b-7811-4987" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="9d2c-b2b8-8829-6b37" name="Former Freeblade" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                  <description>The Seneschal has recently returned
+to their Household from the Great Crusade, where they have
+learned the value of individual acts of valour.
+The Seneschal may issue Split Fire orders to
+Banners within their Lance without the need to
+make a Command check.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1614-2aa6-a29b-908e" name="6 Outcast Bloodline" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9987-dece-ffbf-493b" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="330c-4500-6483-5f0f" name="Outcast Bloodline" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                  <description>Despite their seniority, the Seneschal
+belongs to an ill-favoured bloodline. Though their grip on
+command is weak, their ability is beyond compare.
+The Seneschal may issue Coordinated Strike orders to
+Banners within their Lance without the need to make a
+Command check. However, the Seneschal&apos;s Banner does
+not add 3 to the result of any of its Command checks, as
+described earlier on this page.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3418-5104-c517-5777" name="Divine Qualities" publicationId="975a-00f4-pubN89746" page="46" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5eed-80b3-369c-9e2d" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="dbc9-75b9-eac7-69b9" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbc9-75b9-eac7-69b9" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="3c83-7086-9a93-45ee" name="1 Serpent Cultist" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54f9-09bd-18d4-6b55" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6edb-70d0-caca-769d" name="Serpent Cultist" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
+                      <description>The Seneschal is a secret member of the
+forbidden Serpent Cult, their personality warped and their
+bravery increased by its dark. and disturbing rituals.
+When making a Command check to see if they become
+Shaken, all Banners within the Seneschal&apos;s Lance
+add 1 to the dice roll.
+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3826-8951-e119-b1da" name="2 Prideful Hunter" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d60-9f74-73d5-2d59" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="57f5-8e55-ee8f-aeda" name="Prideful Hunter" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
+                      <description>The Seneschal is drawn to the glory of the
+Rill and cannot resist when the opportunity presents to bring
+down the largest and most impressive prey.
+The Seneschal may issue Charge orders to Banners
+within their Lance without the need to make a Command
+check. Additionally, Banners within the Seneschal&apos;s
+Lance add D3&quot; to their Speed when acting under Charge
+orders. However, Banners in the Seneschal&apos;s Lance
+cannot be issued First Fire orders.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8a25-7e9e-6af8-0d4b" name="3 Old Guard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e28-aeae-bf6a-13fc" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="fdeb-1304-4289-e753" name=" Old Guard" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
+                      <description>The Seneschal is one of Cyprian Devine&apos;s old inner
+circle and doggedly adheres to their duty and the traditions of the
+House no matter the cost.
+Banners within the Seneschal&apos;s Lance can never become
+Shaken. However, at least one Banner within the
+Seneschal&apos;s Lance must be given Charge orders in every
+round from round 2 onwards. </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="0cdb-f601-f9df-e109" name="Donar Qualities" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39d4-f743-a814-577e" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="ab41-3de8-6e28-987f" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab41-3de8-6e28-987f" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="5be3-5740-3f91-17b0" name="1 Guardian Preceptor" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="75db-64b1-ced5-447b" name="Guardian Preceptor" publicationId="975a-00f4-pubN89746" page="48" hidden="false">
+                      <description> The Seneschal is a direct descendant
+of the ancient Preceptor himself and holds themselves to
+impossibly high standards.
+Banners within the Seneschal&apos;s Lance may re-roll any
+failed Command checks. </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8fd3-bc96-97dd-1ae9" name="2 Kush Veteran" publicationId="975a-00f4-pubN89746" page="49" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="7b66-a3bb-d7a9-2dd0" name="2 Kush Veteran" publicationId="975a-00f4-pubN89746" page="48" hidden="false">
+                      <description> The Seneschal is a veteran of many expeditions
+into the Kush and now few things slow them or those who
+fight at their side.
+Banners within the Seneschal&apos;s Lance treat Deadly terrain
+as if it were Dangerous terrain. Nore that even Banners
+with the Agile rule must test as if for Dangerous terrain
+should they move through Deadly terrain. </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a196-dc80-a46a-da1a" name="3 Beast Killer" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="2846-0e61-0b46-ec60" name="Beast Killer" publicationId="975a-00f4-pubN89746" page="48" hidden="false">
+                      <description>The Seneschal has killed almost every beast that
+walks, flies or slithers through the jungles of Kush, and knows
+just where to land a killing blow.
+Banners within the Seneschal&apos;s Lance may re-roll Hit
+rolls of a l when attacking an enemy unit with a Scale
+chat is higher than their</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="f538-9068-f479-71c7" name="Indra Qualities" publicationId="975a-00f4-pubN89746" page="50" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a25-c423-8854-5b77" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="04e4-f3c7-e036-b713" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04e4-f3c7-e036-b713" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="25c8-6748-4b48-74bd" name="1 Dancing Blade" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef1d-263d-7d76-7628" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="7783-926b-f0f7-6324" name="Dancing Blade" publicationId="975a-00f4-pubN89746" page="50" hidden="false">
+                      <description>The Seneschal. is one of the famed lndarii
+Blade Dancers, bringing their skill to the command throne of
+their Knight armour.
+Knights within the Seneschal&apos;s Banner may re-roll any
+Hit roll of a 1 when using a weapon with the Melee trait</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9208-2ad6-4d6b-db68" name="2 Forsaken Indarii" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0968-ae0e-36d4-93d6" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="b7b7-1171-c8e5-fb91" name="Forsaken Indarii" publicationId="975a-00f4-pubN89746" page="50" hidden="false">
+                      <description>The Seneschal is from one of the corrupted
+Indarii bloodlines, carrying with them some of the madness of
+those ancient Knight Scions.
+The Seneschal may issue Charge orders to Banners
+within their Lance without the need to make a Command
+check. However, if a Banner within the Seneschal&apos;s Lance
+fails a Command test when being issued with any other
+order, it does not act on its own initiative; instead, it must
+act under Charge orders.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9363-33d4-963e-a369" name="3 Banner of the High King" publicationId="975a-00f4-pubN89746" page="50" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7701-5e2c-fa60-214e" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="50e4-f0b3-875c-bdbb" name="Banner of the High King" publicationId="975a-00f4-pubN89746" page="50" hidden="false">
+                      <description>: The Seneschal has the honour of
+carrying the colours of the ancient High King of Malech, the first
+Knight Scion to walk the world.
+The Seneschal&apos;s Banner may include a Banle Standard
+for free . However, if the Banner is destroyed, the
+enemy will earn an extra D3 Victory points for claiming
+the Battle Standard</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="d467-0e35-8c1c-5c54" name="Kaska Qualities" publicationId="975a-00f4-pubN89746" page="52" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a777-fa68-d537-90f7" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="4db6-f50e-f191-ee31" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4db6-f50e-f191-ee31" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="fd74-c804-dae1-2aa9" name="1 Drunken Lord" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51f2-aa85-220f-bdf3" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="0871-24e4-eedc-5f8d" name="Drunken Lord" publicationId="975a-00f4-pubN89746" page="52" hidden="false">
+                      <description>The Seneschal is often deep in their cups and
+views the world through a haze of Kashaii ale, slowing their
+reactions but inuring them to both danger and pain.
+When the Seneschal&apos;s Banner suffers a Direct Hit,
+roll a D6. On a 5 or 6, the hit is ignored. However, the
+Seneschal&apos;s Banner does not add 3 to the result of any of
+its Command checks, as described on page 38.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="55ec-b401-23db-9971" name="2 Lord of Rain and Ruin" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c58e-1fb6-f874-194f" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="862c-5446-67ab-0b2a" name="Lord of Rain and Ruin" publicationId="975a-00f4-pubN89746" page="52" hidden="false">
+                      <description>The Seneschal hails from the
+wild walker tribes, their connection to their surroundings
+allowing them to swiftly navigate the world even from
+the throne of a Knight.
+Banners within the Seneschal&apos;s Lance treat Deadly terrain
+as if it were Dangerous terrain. Note that even Banners
+with the Agile rule must test as if for Dangerous terrain
+should they move through Deadly terrain.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cbf4-4a05-7795-15e8" name="3 Scion of the Storm" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99b4-efda-1bb1-3435" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="4262-b57b-0421-abbb" name="Scion of the Storm" publicationId="975a-00f4-pubN89746" page="52" hidden="false">
+                      <description>The Seneschal claims ancestry with
+the Lord of Storms, and all within their Household view
+them with awe and fear.
+When making a Command check to see if they become
+Shaken, all Banners within 12&quot; of the Seneschal
+add 1 to the dice roll.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="3ff8-96ea-3869-174a" name="Kaushik Qualities" publicationId="975a-00f4-pubN89746" page="54" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-d1da-f4e3-205a" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="80d2-b2fb-f9af-9d2b" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80d2-b2fb-f9af-9d2b" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="72b3-3bd7-2342-6e91" name="1 Stoneblind" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42a4-94e3-11ce-e05d" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="211e-cd56-8aa8-f614" name="Stoneblind" publicationId="975a-00f4-pubN89746" page="52" hidden="false">
+                      <description>The Seneschal has spent their life in the caverns
+beneath the Untar Mesas and knows the importance of detailed
+reconnaissance to help form a plan of battle.
+When rolling off to determine who will seize command
+of the battlefield, the Seneschal&apos;s controlling player
+may re-roll the dice.
+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="acd1-8091-3563-32b5" name="2 Iron of the Earth" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8121-1729-47f5-7c8f" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="82c4-6665-63e9-761d" name=" Iron of the Earth" publicationId="975a-00f4-pubN89746" page="54" hidden="false">
+                      <description>The Seneschal has worked the stone forges
+of the Sacristans and knows the intricacies of their Knight&apos;s
+armour like their own skin.
+Knights within the Seneschal&apos;s Banner may re-roll any
+Hit roll of a 1 when using a weapon with the Melee trait.
+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="41b2-426b-242e-ee0b" name="3 Scion of the Storm" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8b3-b8dc-24c8-7569" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6ddc-8239-b736-6ac4" name="Scion of the Storm" publicationId="975a-00f4-pubN89746" page="52" hidden="false">
+                      <description>3 Hardened Soul: The Seneschal&apos;s mind has entered the Great
+Quiet of the Kaushik, guided to a cold and unfeeling place by the
+ghosts of their command throne.
+Banners within the Seneschal&apos;s Lance can never become
+Shaken. However, all Knights within the Seneschal&apos;s
+Banner have their Speed characteristic reduced by 1&quot;.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="1d57-4e39-9b59-a8be" name="Mamaragon Qualities" publicationId="975a-00f4-pubN89746" page="52" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7741-0027-541e-964c" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="3d3b-3624-b795-83a3" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d3b-3624-b795-83a3" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="93d3-e84c-dae4-4a69" name="1 Sea Lord" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bce-2ddf-cd58-73f5" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5ffd-db1e-9ba9-485d" name="Sea Lord" publicationId="975a-00f4-pubN89746" page="52" hidden="false">
+                      <description>The Seneschal is adept at commanding the fleets of
+Mamaragon in battle and is just as at home on the rolling deck
+of a war barge as dry land.
+Banners within the Seneschal&apos;s Lance may re-roll any
+failed Command checks.
+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e6c3-27a3-d0f7-cc8d" name="2  Prince of the Waves" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1ec-7b78-9aa1-beab" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="89a8-e2a5-1da1-0d06" name=" Prince of the Waves" publicationId="975a-00f4-pubN89746" page="54" hidden="false">
+                      <description>The Seneschal is one of Lord Erol&apos;s
+offspring and is infected with their sire&apos;s insufferable arrogance
+and reckless overconfidence.
+Banners within the Seneschal&apos;s Lance can never become
+Shaken. However, at least one Banner within the
+Seneschal&apos;s Lance must be given Charge orders in every
+round from round 2 onwards.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="63d9-3414-f38e-6b4e" name="3 Scion of the Storm" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d62-b6d4-7e1d-f3d7" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="d717-d542-7244-7b08" name="Scion of the Storm" publicationId="975a-00f4-pubN89746" page="52" hidden="false">
+                      <description> 3 Reaver Lord: The Seneschal believes in the piratical ways of
+their forebears and adheres to their more flexible codes of honour
+and concept of allies.
+When making a Command check to see if they become
+Shaken, all Banners within the Seneschal&apos;s Lance add r
+to the dice roll. However, the Seneschal&apos;s Banner may not
+include a Battle Standard. 
+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="ca0f-2657-585a-2daf" name="Tazkkhar Qualities" publicationId="975a-00f4-pubN89746" page="58" hidden="false" collective="false" import="true">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b4e-7d7e-d6de-47ae" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true"/>
+                    <modifier type="set" field="02b8-91ea-965e-1f32" value="0.0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02b8-91ea-965e-1f32" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="05e5-1d78-d86c-d4ca" name="1 Dervish Lord" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae48-f900-fe73-7ff2" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="b971-359f-0a96-0643" name="Dervish Lord" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
+                      <description>The Seneschal. fights in the style of the ancient
+Dervish Lords, striking like the desert wind before f al!ing back
+out of their enemy&apos;s grasp.
+The Seneschal may issue Coordinated Strike orders ro
+Banners within rheir Lance without the need to make a
+Command check. However, the Seneschal&apos;s Banner does
+not add 3 to the result of any of its Command checks, as
+described on page 38.
+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4617-3c28-3408-c155" name="2 Kharii Savage" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0832-47db-47c4-710c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="7c39-4a9a-4e50-788f" name="Kharii Savage" publicationId="975a-00f4-pubN89746" page="58" hidden="false">
+                      <description>The Seneschal is from the deep desert Kharii
+tribes, still primitive and savage despite the rights of their blood
+and the gifts of the Becoming.
+The Seneschal may issue Charge orders to Banners
+within their Lance without rhe need to make a Command
+check. Additionally, Banners within the Senesohal&apos;s
+Lance add D3&quot; to their Speed when acting under Charge
+orders. However, Banners in the Seneschal&apos;s Lance
+cannot be issued First Fire orders.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="700e-b163-e706-8ab2" name="3 Vizier of Blades" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4f3-db4a-5e30-7ae7" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="3fc4-d6ca-bb1d-1201" name="Vizier of Blades" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
+                      <description>The Seneschal has earned the title Vizier of
+Blades by besting the finest swordsmen of the Tazkhar Steppes
+during the Feast of the Storm Lord.
+Knights within the Seneschal&apos;s Banner may re-roll any
+Hit roll of a I when using a weapon with rhe Melee trait. </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
   </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="5eed-80b3-369c-9e2d" name="House Divine" publicationId="975a-00f4-pubN89746" page="33" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a91f-c8d9-e85c-1236" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="39d4-f743-a814-577e" name="House Donar" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="746a-f895-9b1e-b289" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0a25-c423-8854-5b77" name="House Indra" publicationId="975a-00f4-pubN89746" page="50" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a777-fa68-d537-90f7" name="House Kaska" publicationId="975a-00f4-pubN89746" page="52" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a8d6-e461-2b5e-2340" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f2ca-d1da-f4e3-205a" name="House Kaushik " publicationId="975a-00f4-pubN89746" page="52" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2c26-ffba-9fe5-b72f" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7741-0027-541e-964c" name="House Mamaragon" publicationId="975a-00f4-pubN89746" page="56" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1b4e-7d7e-d6de-47ae" name="House Tazkhar" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>
