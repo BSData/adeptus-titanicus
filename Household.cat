@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry id="5334-72bf-3cf7-d361" name="Household" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cd7-277c-6238-0452" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="dd53-ea4a-79f8-94ac" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fd63-c2a7-e300-d668" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d03c-074c-d4b8-76e9" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0015-d3ed-ac13-0a76" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7251-4605-b1fd-d80f" name="Freeblades" publicationId="975a-00f4-pubN89746" page="35" hidden="false" targetId="efc2-e899-f74b-55ad" primary="false"/>
+        <categoryLink id="7dce-f7e9-d465-1c37" name="Seneschal" hidden="false" targetId="afaa-cd89-37a2-bcc9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c2ff-af03-4286-0bc8" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8562-098f-d509-bd91" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ec78-05be-ff23-2fb9" name="Lance" hidden="false" targetId="b1c7-cb6c-5810-e9d9" primary="false"/>
+        <categoryLink id="2434-58f3-dd2a-0fd2" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink id="bf96-9b27-a283-7054" name="Squadron" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="9e7f-0a70-42e5-403a" name="Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="12d0-65d4-7cef-bcd6" name="New CategoryLink" hidden="false" targetId="b1c7-cb6c-5810-e9d9" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="54d0-9dae-347b-7242" name="Acastus Knight Banner" hidden="false" collective="false" import="true" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="4753-388c-879b-d6da" value="2.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3900-cfb6-52f2-c83c" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dec1-8a16-1df5-e112" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a0a-5e72-9752-c32d" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3900-cfb6-52f2-c83c" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4753-388c-879b-d6da" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="b36c-dfa1-c187-436e" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="999f-9018-4f23-c820" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="e37c-c242-b0c1-0a13" value="2.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a0a-5e72-9752-c32d" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dec1-8a16-1df5-e112" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a0a-5e72-9752-c32d" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b77-15d2-9ca8-5cf7" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e37c-c242-b0c1-0a13" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c427-8d8f-ea6a-5d8f" name="Questoris Knight Banner" hidden="false" collective="false" import="true" targetId="812b-786b-9435-cd20" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="d043-6058-cd05-f952" value="2.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a0a-5e72-9752-c32d" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dec1-8a16-1df5-e112" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b77-15d2-9ca8-5cf7" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3900-cfb6-52f2-c83c" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d043-6058-cd05-f952" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="38e6-656c-0838-1af1" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="true" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="287e-2d94-89d3-dd24" value="2.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b77-15d2-9ca8-5cf7" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dec1-8a16-1df5-e112" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dec1-8a16-1df5-e112" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3900-cfb6-52f2-c83c" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="287e-2d94-89d3-dd24" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2361-a8f7-9fd3-42ab" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="true" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="be8a-970c-df26-07c0" value="2.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a0a-5e72-9752-c32d" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dec1-8a16-1df5-e112" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b77-15d2-9ca8-5cf7" type="lessThan"/>
+                    <condition field="selections" scope="9e7f-0a70-42e5-403a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3900-cfb6-52f2-c83c" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be8a-970c-df26-07c0" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9439-e24c-ef48-c6d6" name="Knight House" hidden="false" collective="false" import="true" targetId="cdb9-838a-4e44-bb7b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7972-dca9-4c6d-f214" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bce-d8e0-3af4-f210" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e6ad-8a48-fac0-f130" name="Knight House" hidden="false" collective="false" import="true" targetId="5a2e-2e53-72f2-baea" type="selectionEntryGroup"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7f42-4355-fed3-0274" name="Questoris Imperialis" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="8b99-8c09-b929-62dc" name="Questoris Imperialis" hidden="false"/>
+        <rule id="9834-0a99-b893-de71" name="Valorous Charge" hidden="false"/>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="1986-d35d-0287-da57" name="New CategoryLink" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1e71-3826-56b7-87f2" name=" Knightly Qualities" hidden="false" collective="false" import="true"/>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fa19-c8d7-464f-de6f" name="Questoris Mechanicus" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="bc16-e4eb-9ec0-49f7" name="Questoris Mechanicus" hidden="false"/>
+        <rule id="ee5c-b0da-aa3b-62d6" name=" Targeting Solutions" hidden="false"/>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ea95-19d8-3c12-06b9" name="New CategoryLink" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8145-4ffa-03f8-eccc" name=" Knightly Qualities" hidden="false" collective="false" import="true"/>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e516-cef8-4e79-4615" name="Questoris Traitorus" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="bb9e-8cb5-7e6e-16cb" name="Questoris Traitorus" hidden="false"/>
+        <rule id="a702-f75c-a9f7-58df" name="Lust for Blood" hidden="false"/>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="fd6e-2e2e-f890-f1f2" name="New CategoryLink" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
+        <categoryLink id="1b0f-12f7-3d63-90db" name="New CategoryLink" hidden="false" targetId="2841-67b5-15d0-8908" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6006-e4e4-9cb6-5b08" name=" Knightly Qualities" hidden="false" collective="false" import="true"/>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f324-b829-8cb6-1bad" name="Questoris Oblitus " hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="e121-f012-6712-4b12" name="Questoris Oblitus " hidden="false"/>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="50e3-08f6-8d4a-d493" name="New CategoryLink" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
+        <categoryLink id="c176-1168-0fef-986b" name="New CategoryLink" hidden="false" targetId="2841-67b5-15d0-8908" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7a08-572e-0d10-5943" name=" Knightly Qualities" hidden="false" collective="false" import="true"/>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="cerastus-freeblades" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="04fd-c162-4c0f-1479" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="questoris-freeblades" name="Questoris Knight Banner" hidden="false" collective="false" import="true" targetId="812b-786b-9435-cd20" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="cfbc-c6f6-9e5d-ea5e" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="magaera-freeblades" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="true" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9727-5692-9d2e-d4df" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="styrix-freeblades" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="true" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7ab5-33d2-784e-c0e3" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="acastus-freeblades" name="Acastus Knight Banner" hidden="false" collective="false" import="true" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7057-1fae-7d3d-dcad" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>
