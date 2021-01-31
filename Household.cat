@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5334-72bf-3cf7-d361" name="Household" hidden="false">
       <constraints>
@@ -32,12 +32,12 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="9e7f-0a70-42e5-403a" name="Lance" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9e7f-0a70-42e5-403a" name="Lance" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="12d0-65d4-7cef-bcd6" name="New CategoryLink" hidden="false" targetId="b1c7-cb6c-5810-e9d9" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="54d0-9dae-347b-7242" name="Acastus Knight Banner" hidden="false" collective="false" import="true" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
+        <entryLink id="54d0-9dae-347b-7242" name="Acastus Knight Banner" hidden="false" collective="false" import="false" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="4753-388c-879b-d6da" value="2.0">
               <conditionGroups>
@@ -59,7 +59,7 @@
             <categoryLink id="b36c-dfa1-c187-436e" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
           </categoryLinks>
         </entryLink>
-        <entryLink id="999f-9018-4f23-c820" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
+        <entryLink id="999f-9018-4f23-c820" name="Cerastus Knight Banner" hidden="false" collective="false" import="false" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="e37c-c242-b0c1-0a13" value="2.0">
               <conditionGroups>
@@ -78,7 +78,7 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e37c-c242-b0c1-0a13" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="c427-8d8f-ea6a-5d8f" name="Questoris Knight Banner" hidden="false" collective="false" import="true" targetId="812b-786b-9435-cd20" type="selectionEntry">
+        <entryLink id="c427-8d8f-ea6a-5d8f" name="Questoris Knight Banner" hidden="false" collective="false" import="false" targetId="812b-786b-9435-cd20" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="d043-6058-cd05-f952" value="2.0">
               <conditionGroups>
@@ -97,7 +97,7 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d043-6058-cd05-f952" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="38e6-656c-0838-1af1" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="true" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
+        <entryLink id="38e6-656c-0838-1af1" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="287e-2d94-89d3-dd24" value="2.0">
               <conditionGroups>
@@ -116,7 +116,7 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="287e-2d94-89d3-dd24" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="2361-a8f7-9fd3-42ab" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="true" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
+        <entryLink id="2361-a8f7-9fd3-42ab" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="false" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="be8a-970c-df26-07c0" value="2.0">
               <conditionGroups>
@@ -141,7 +141,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7f42-4355-fed3-0274" name="Questoris Imperialis" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7f42-4355-fed3-0274" name="Questoris Imperialis" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="8b99-8c09-b929-62dc" name="Questoris Imperialis" hidden="false"/>
         <rule id="9834-0a99-b893-de71" name="Valorous Charge" hidden="false"/>
@@ -150,14 +150,14 @@
         <categoryLink id="1986-d35d-0287-da57" name="New CategoryLink" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1e71-3826-56b7-87f2" name=" Knightly Qualities" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="1e71-3826-56b7-87f2" name=" Knightly Qualities" hidden="false" collective="false" import="false"/>
       </selectionEntryGroups>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fa19-c8d7-464f-de6f" name="Questoris Mechanicus" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="fa19-c8d7-464f-de6f" name="Questoris Mechanicus" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="bc16-e4eb-9ec0-49f7" name="Questoris Mechanicus" hidden="false"/>
         <rule id="ee5c-b0da-aa3b-62d6" name=" Targeting Solutions" hidden="false"/>
@@ -166,14 +166,14 @@
         <categoryLink id="ea95-19d8-3c12-06b9" name="New CategoryLink" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8145-4ffa-03f8-eccc" name=" Knightly Qualities" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="8145-4ffa-03f8-eccc" name=" Knightly Qualities" hidden="false" collective="false" import="false"/>
       </selectionEntryGroups>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e516-cef8-4e79-4615" name="Questoris Traitorus" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e516-cef8-4e79-4615" name="Questoris Traitorus" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="bb9e-8cb5-7e6e-16cb" name="Questoris Traitorus" hidden="false"/>
         <rule id="a702-f75c-a9f7-58df" name="Lust for Blood" hidden="false"/>
@@ -183,14 +183,14 @@
         <categoryLink id="1b0f-12f7-3d63-90db" name="New CategoryLink" hidden="false" targetId="2841-67b5-15d0-8908" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6006-e4e4-9cb6-5b08" name=" Knightly Qualities" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="6006-e4e4-9cb6-5b08" name=" Knightly Qualities" hidden="false" collective="false" import="false"/>
       </selectionEntryGroups>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f324-b829-8cb6-1bad" name="Questoris Oblitus " hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f324-b829-8cb6-1bad" name="Questoris Oblitus " hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="e121-f012-6712-4b12" name="Questoris Oblitus " hidden="false"/>
       </rules>
@@ -199,14 +199,14 @@
         <categoryLink id="c176-1168-0fef-986b" name="New CategoryLink" hidden="false" targetId="2841-67b5-15d0-8908" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7a08-572e-0d10-5943" name=" Knightly Qualities" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="7a08-572e-0d10-5943" name=" Knightly Qualities" hidden="false" collective="false" import="false"/>
       </selectionEntryGroups>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8d00-116d-2d58-b6e3" name="A Glorious Death" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8d00-116d-2d58-b6e3" name="A Glorious Death" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="173c-789f-b91a-7c9a" name="A Glorious Death" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
           <description>This stratagem can only be played on a
@@ -223,7 +223,7 @@ opposing player gains no Victory points for this unit. </description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0a6b-13c3-78ee-7d67" name="Decapitating Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0a6b-13c3-78ee-7d67" name="Decapitating Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="9aad-e84d-7e73-0eb3" name="Decapitating Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
           <description>Play this at rhe end of the battle. If the
@@ -237,11 +237,11 @@ have been destroyed, score 3 additional Victory points.</description>
         <categoryLink id="c93b-333f-8e88-dfa5" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9782-138e-c720-b1c5" name="Fight for Every Step" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9782-138e-c720-b1c5" name="Fight for Every Step" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="5e38-03a9-454f-e800" name="Fight for Every Step" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
           <description>Play this at the end of the battle. Score 2
@@ -257,7 +257,7 @@ but which is Strucrurally Compromised.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8bd3-069b-1b5e-20b2" name="Fire Support Bombardment" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8bd3-069b-1b5e-20b2" name="Fire Support Bombardment" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="e5f7-074a-0ef8-0776" name="Fire Support Bombardment" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
           <description>Play this during each Strategy
@@ -275,7 +275,7 @@ if the central hole of the Blast marker is entirely over its base.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a3b1-8a3d-a0c0-5707" name="Interference" publicationId="975a-00f4-pubN89746" page="39" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a3b1-8a3d-a0c0-5707" name="Interference" publicationId="975a-00f4-pubN89746" page="39" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="a8da-7459-285b-9f4b" name="Interference" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
           <description>Play this Stratagem at the start of the Strategy
@@ -291,7 +291,7 @@ Orders this round and must instead act on its initiative.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="06d7-5c7b-eefe-99e3" name="Orbital Lance Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="06d7-5c7b-eefe-99e3" name="Orbital Lance Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="689d-a3f2-a626-703f" name="Orbital Lance Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
           <description>Once per battle, play this during
@@ -310,7 +310,7 @@ entirely over its base</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2689-80b2-03ef-25fa" name="Plasma Mines" publicationId="975a-00f4-pubN89746" page="39" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2689-80b2-03ef-25fa" name="Plasma Mines" publicationId="975a-00f4-pubN89746" page="39" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="c396-700d-a9d6-875b" name="Plasma Mines" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
           <description>Play this Stratagem immediately after an
@@ -326,7 +326,7 @@ Shield saves can be made. </description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5959-611c-3937-8d9b" name="Vengeance" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5959-611c-3937-8d9b" name="Vengeance" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="04f9-5b83-a033-adc2" name="Vengeance" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
           <description> Play this at the end of the battle. At the start of
@@ -347,7 +347,7 @@ additional Victory point if it is below half of its starting strength
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3eab-8426-362f-944f" name="Vengeful" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3eab-8426-362f-944f" name="Vengeful" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="54fd-1fd2-d6ba-68bb" name="Vengeful" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
           <description>A player can enact this Stratagem during the
@@ -369,7 +369,7 @@ of this unit, rather than the full amount.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ca83-f872-971c-fcb3" name="Voidbreaker Field" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ca83-f872-971c-fcb3" name="Voidbreaker Field" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="46c1-a45e-1305-c203" name="Voidbreaker Field" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
           <description>Play this Stratagem immediately after
@@ -389,7 +389,7 @@ in a subsequent turn.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a0c3-da65-3192-41bd" name="Outflank" publicationId="975a-00f4-pubN89746" page="39" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="a0c3-da65-3192-41bd" name="Outflank" publicationId="975a-00f4-pubN89746" page="39" hidden="false" collective="false" import="false" type="unit">
       <modifiers>
         <modifier type="set" field="efbf-52f7-fd08-f329" value="3.0">
           <conditionGroups>
@@ -429,33 +429,33 @@ the opposing player. While the unit is not on th</description>
         <categoryLink id="10cf-850e-4658-8cc9" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c86b-0ee2-5b83-b90c" name="Selected Unit" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c86b-0ee2-5b83-b90c" name="Selected Unit" hidden="false" collective="false" import="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9235-6e7f-a232-c4f4" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5e3-1e3b-b856-24be" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7efa-5f10-2633-3fb1" name="Acastus Knight Banner" hidden="false" collective="false" import="true" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
+            <entryLink id="7efa-5f10-2633-3fb1" name="Acastus Knight Banner" hidden="false" collective="false" import="false" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="54a3-3a1b-d41e-4aa8" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
+            <entryLink id="54a3-3a1b-d41e-4aa8" name="Cerastus Knight Banner" hidden="false" collective="false" import="false" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="d8b0-3d66-6de2-2de3" name="Questoris Knight Banner" hidden="false" collective="false" import="true" targetId="812b-786b-9435-cd20" type="selectionEntry">
+            <entryLink id="d8b0-3d66-6de2-2de3" name="Questoris Knight Banner" hidden="false" collective="false" import="false" targetId="812b-786b-9435-cd20" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="f517-050c-dab0-d39c" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="true" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
+            <entryLink id="f517-050c-dab0-d39c" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
             </entryLink>
-            <entryLink id="98ef-b673-e679-5eb0" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="true" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
+            <entryLink id="98ef-b673-e679-5eb0" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="false" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
@@ -470,37 +470,37 @@ the opposing player. While the unit is not on th</description>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="cerastus-freeblades" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
+    <entryLink id="cerastus-freeblades" name="Cerastus Knight Banner" hidden="false" collective="false" import="false" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
       <comment>Freeblade</comment>
       <categoryLinks>
         <categoryLink id="04fd-c162-4c0f-1479" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="questoris-freeblades" name="Questoris Knight Banner" hidden="false" collective="false" import="true" targetId="812b-786b-9435-cd20" type="selectionEntry">
+    <entryLink id="questoris-freeblades" name="Questoris Knight Banner" hidden="false" collective="false" import="false" targetId="812b-786b-9435-cd20" type="selectionEntry">
       <comment>Freeblade</comment>
       <categoryLinks>
         <categoryLink id="cfbc-c6f6-9e5d-ea5e" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="magaera-freeblades" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="true" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
+    <entryLink id="magaera-freeblades" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
       <comment>Freeblade</comment>
       <categoryLinks>
         <categoryLink id="9727-5692-9d2e-d4df" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="styrix-freeblades" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="true" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
+    <entryLink id="styrix-freeblades" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="false" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
       <comment>Freeblade</comment>
       <categoryLinks>
         <categoryLink id="7ab5-33d2-784e-c0e3" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="acastus-freeblades" name="Acastus Knight Banner" hidden="false" collective="false" import="true" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
+    <entryLink id="acastus-freeblades" name="Acastus Knight Banner" hidden="false" collective="false" import="false" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
       <comment>Freeblade</comment>
       <categoryLinks>
         <categoryLink id="7057-1fae-7d3d-dcad" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6298-81cc-e35b-8aa1" name="Knight House" hidden="false" collective="false" import="true" targetId="cdb9-838a-4e44-bb7b" type="selectionEntry">
+    <entryLink id="6298-81cc-e35b-8aa1" name="Knight House" hidden="false" collective="false" import="false" targetId="cdb9-838a-4e44-bb7b" type="selectionEntry">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73dc-fec4-efdc-5073" type="min"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dd8-2a57-f18e-2afe" type="max"/>
@@ -509,42 +509,42 @@ the opposing player. While the unit is not on th</description>
         <categoryLink id="c68e-031c-7b9e-8c73" name="New CategoryLink" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7183-c0e8-3027-d054" name="Knight House" publicationId="975a-00f4-pubN89746" page="44" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="7183-c0e8-3027-d054" name="Knight House" publicationId="975a-00f4-pubN89746" page="44" hidden="false" collective="false" import="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12b9-c4e5-aae7-ba3c" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="2fa3-2e3e-63a2-0608" name="House Divine" hidden="false" collective="false" import="true" targetId="5eed-80b3-369c-9e2d" type="selectionEntry"/>
-            <entryLink id="50d8-d7f7-33db-d172" name="House Donar" hidden="false" collective="false" import="true" targetId="39d4-f743-a814-577e" type="selectionEntry"/>
-            <entryLink id="4003-ad80-51d1-25a1" name="House Indra" hidden="false" collective="false" import="true" targetId="0a25-c423-8854-5b77" type="selectionEntry"/>
-            <entryLink id="dc7e-4120-aaa8-a9b1" name="House Kaska" hidden="false" collective="false" import="true" targetId="a777-fa68-d537-90f7" type="selectionEntry"/>
-            <entryLink id="9e29-a652-c15a-ecba" name="House Kaushik " hidden="false" collective="false" import="true" targetId="f2ca-d1da-f4e3-205a" type="selectionEntry"/>
-            <entryLink id="4580-b6a5-8b3a-f356" name="House Mamaragon" hidden="false" collective="false" import="true" targetId="7741-0027-541e-964c" type="selectionEntry"/>
-            <entryLink id="f176-538c-951e-987a" name="House Tazkhar" hidden="false" collective="false" import="true" targetId="1b4e-7d7e-d6de-47ae" type="selectionEntry"/>
-            <entryLink id="0033-98bb-3a80-cf90" name="House Sidus" hidden="false" collective="false" import="true" targetId="ce42-548a-1d40-a806" type="selectionEntry"/>
-            <entryLink id="dff6-ff52-54a5-10c1" name="House Taranis" hidden="false" collective="false" import="true" targetId="6f6c-3458-6a80-f6f0" type="selectionEntry"/>
-            <entryLink id="4c1a-4031-c35c-fbe3" name="House Zavora" hidden="false" collective="false" import="true" targetId="2d90-7c1b-b26b-71b9" type="selectionEntry"/>
-            <entryLink id="7f4d-7d7a-3c83-06ee" name="House Morbidia" hidden="false" collective="false" import="true" targetId="0e9d-9505-9f03-58ca" type="selectionEntry"/>
-            <entryLink id="40df-0b26-f8e6-9c81" name="House Ioeden" hidden="false" collective="false" import="true" targetId="c282-fbc0-ae2d-ab64" type="selectionEntry"/>
-            <entryLink id="666a-4fd3-2c99-f141" name="House Oroborn" hidden="false" collective="false" import="true" targetId="6f48-de7c-452b-a00f" type="selectionEntry"/>
-            <entryLink id="7854-0b5e-0614-c10b" name="House Orhlacc" hidden="false" collective="false" import="true" targetId="700b-e893-eb9d-7104" type="selectionEntry"/>
-            <entryLink id="aa4b-b5b4-a3a6-9b10" name="House Vornherr" hidden="false" collective="false" import="true" targetId="0ab2-5a39-8159-2e25" type="selectionEntry"/>
-            <entryLink id="9386-0990-3990-6671" name="House Vyronii" hidden="false" collective="false" import="true" targetId="37eb-0ed0-40c5-ebec" type="selectionEntry"/>
-            <entryLink id="052f-41e8-fdec-9717" name="House Mordred" hidden="false" collective="false" import="true" targetId="005d-30aa-c2b1-ccef" type="selectionEntry"/>
-            <entryLink id="fb3d-5a3b-aa6f-ff88" name="House Malinax" hidden="false" collective="false" import="true" targetId="e75d-9086-133f-4411" type="selectionEntry"/>
-            <entryLink id="4517-2be8-a6d5-7a07" name="House Ærthegn" hidden="false" collective="false" import="true" targetId="3705-412c-1e49-53bd" type="selectionEntry"/>
-            <entryLink id="ae9d-a52f-143a-6f6c" name="House Col&apos;Khak" hidden="false" collective="false" import="true" targetId="4087-38c1-1197-7128" type="selectionEntry"/>
-            <entryLink id="089f-3114-def0-6ffe" name="House Moritain" hidden="false" collective="false" import="true" targetId="7ef0-68aa-a251-c72e" type="selectionEntry"/>
-            <entryLink id="adbb-32f2-5673-c9cc" name="House Gotrith" hidden="false" collective="false" import="true" targetId="3536-9bfa-f7ee-4411" type="selectionEntry"/>
-            <entryLink id="ace2-363b-2730-6722" name="House Vextrix" hidden="false" collective="false" import="true" targetId="1bc9-96d5-2af4-dafd" type="selectionEntry"/>
+            <entryLink id="2fa3-2e3e-63a2-0608" name="House Divine" hidden="false" collective="false" import="false" targetId="5eed-80b3-369c-9e2d" type="selectionEntry"/>
+            <entryLink id="50d8-d7f7-33db-d172" name="House Donar" hidden="false" collective="false" import="false" targetId="39d4-f743-a814-577e" type="selectionEntry"/>
+            <entryLink id="4003-ad80-51d1-25a1" name="House Indra" hidden="false" collective="false" import="false" targetId="0a25-c423-8854-5b77" type="selectionEntry"/>
+            <entryLink id="dc7e-4120-aaa8-a9b1" name="House Kaska" hidden="false" collective="false" import="false" targetId="a777-fa68-d537-90f7" type="selectionEntry"/>
+            <entryLink id="9e29-a652-c15a-ecba" name="House Kaushik " hidden="false" collective="false" import="false" targetId="f2ca-d1da-f4e3-205a" type="selectionEntry"/>
+            <entryLink id="4580-b6a5-8b3a-f356" name="House Mamaragon" hidden="false" collective="false" import="false" targetId="7741-0027-541e-964c" type="selectionEntry"/>
+            <entryLink id="f176-538c-951e-987a" name="House Tazkhar" hidden="false" collective="false" import="false" targetId="1b4e-7d7e-d6de-47ae" type="selectionEntry"/>
+            <entryLink id="0033-98bb-3a80-cf90" name="House Sidus" hidden="false" collective="false" import="false" targetId="ce42-548a-1d40-a806" type="selectionEntry"/>
+            <entryLink id="dff6-ff52-54a5-10c1" name="House Taranis" hidden="false" collective="false" import="false" targetId="6f6c-3458-6a80-f6f0" type="selectionEntry"/>
+            <entryLink id="4c1a-4031-c35c-fbe3" name="House Zavora" hidden="false" collective="false" import="false" targetId="2d90-7c1b-b26b-71b9" type="selectionEntry"/>
+            <entryLink id="7f4d-7d7a-3c83-06ee" name="House Morbidia" hidden="false" collective="false" import="false" targetId="0e9d-9505-9f03-58ca" type="selectionEntry"/>
+            <entryLink id="40df-0b26-f8e6-9c81" name="House Ioeden" hidden="false" collective="false" import="false" targetId="c282-fbc0-ae2d-ab64" type="selectionEntry"/>
+            <entryLink id="666a-4fd3-2c99-f141" name="House Oroborn" hidden="false" collective="false" import="false" targetId="6f48-de7c-452b-a00f" type="selectionEntry"/>
+            <entryLink id="7854-0b5e-0614-c10b" name="House Orhlacc" hidden="false" collective="false" import="false" targetId="700b-e893-eb9d-7104" type="selectionEntry"/>
+            <entryLink id="aa4b-b5b4-a3a6-9b10" name="House Vornherr" hidden="false" collective="false" import="false" targetId="0ab2-5a39-8159-2e25" type="selectionEntry"/>
+            <entryLink id="9386-0990-3990-6671" name="House Vyronii" hidden="false" collective="false" import="false" targetId="37eb-0ed0-40c5-ebec" type="selectionEntry"/>
+            <entryLink id="052f-41e8-fdec-9717" name="House Mordred" hidden="false" collective="false" import="false" targetId="005d-30aa-c2b1-ccef" type="selectionEntry"/>
+            <entryLink id="fb3d-5a3b-aa6f-ff88" name="House Malinax" hidden="false" collective="false" import="false" targetId="e75d-9086-133f-4411" type="selectionEntry"/>
+            <entryLink id="4517-2be8-a6d5-7a07" name="House Ærthegn" hidden="false" collective="false" import="false" targetId="3705-412c-1e49-53bd" type="selectionEntry"/>
+            <entryLink id="ae9d-a52f-143a-6f6c" name="House Col&apos;Khak" hidden="false" collective="false" import="false" targetId="4087-38c1-1197-7128" type="selectionEntry"/>
+            <entryLink id="089f-3114-def0-6ffe" name="House Moritain" hidden="false" collective="false" import="false" targetId="7ef0-68aa-a251-c72e" type="selectionEntry"/>
+            <entryLink id="adbb-32f2-5673-c9cc" name="House Gotrith" hidden="false" collective="false" import="false" targetId="3536-9bfa-f7ee-4411" type="selectionEntry"/>
+            <entryLink id="ace2-363b-2730-6722" name="House Vextrix" hidden="false" collective="false" import="false" targetId="1bc9-96d5-2af4-dafd" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="2ef5-fa91-d409-27dc" name="Knightly Qualities" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2ef5-fa91-d409-27dc" name="Knightly Qualities" hidden="false" collective="false" import="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b605-e9f2-0a24-2e49" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="30be-b35b-bff5-88c1" name="1 First Born" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="30be-b35b-bff5-88c1" name="1 First Born" hidden="false" collective="false" import="false" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="193a-07f3-699f-9eed" type="max"/>
               </constraints>
@@ -567,7 +567,7 @@ Seneschal&apos;s Lance becomes Shaken.
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5a4a-4cb0-49c3-688b" name="2 Elder Patriarch" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5a4a-4cb0-49c3-688b" name="2 Elder Patriarch" hidden="false" collective="false" import="false" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d01-0230-d433-decb" type="max"/>
               </constraints>
@@ -587,7 +587,7 @@ add I to the dice roll.
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2a1d-62c9-6031-cdda" name="3 Young Blood" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2a1d-62c9-6031-cdda" name="3 Young Blood" hidden="false" collective="false" import="false" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29d9-4a07-d48c-6390" type="max"/>
               </constraints>
@@ -602,7 +602,7 @@ The Seneschal may issue Charge orders to Banners within their Lance without the 
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5664-d925-a86c-2622" name="4 Second Son" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5664-d925-a86c-2622" name="4 Second Son" hidden="false" collective="false" import="false" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c439-b6f0-f36c-4b3d" type="max"/>
               </constraints>
@@ -623,7 +623,7 @@ earlier on this page.</description>
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d85e-87cc-fd48-ac04" name="5 Former Freeblade" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d85e-87cc-fd48-ac04" name="5 Former Freeblade" hidden="false" collective="false" import="false" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1791-445b-7811-4987" type="max"/>
               </constraints>
@@ -642,7 +642,7 @@ make a Command check.</description>
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1614-2aa6-a29b-908e" name="6 Outcast Bloodline" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1614-2aa6-a29b-908e" name="6 Outcast Bloodline" hidden="false" collective="false" import="false" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9987-dece-ffbf-493b" type="max"/>
               </constraints>
@@ -665,7 +665,7 @@ described earlier on this page.</description>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="3418-5104-c517-5777" name="Divine Qualities" publicationId="975a-00f4-pubN89746" page="46" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="3418-5104-c517-5777" name="Divine Qualities" publicationId="975a-00f4-pubN89746" page="46" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -681,7 +681,7 @@ described earlier on this page.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbc9-75b9-eac7-69b9" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="3c83-7086-9a93-45ee" name="1 Serpent Cultist" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3c83-7086-9a93-45ee" name="1 Serpent Cultist" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54f9-09bd-18d4-6b55" type="max"/>
                   </constraints>
@@ -701,7 +701,7 @@ add 1 to the dice roll.
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3826-8951-e119-b1da" name="2 Prideful Hunter" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3826-8951-e119-b1da" name="2 Prideful Hunter" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d60-9f74-73d5-2d59" type="max"/>
                   </constraints>
@@ -723,7 +723,7 @@ cannot be issued First Fire orders.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="8a25-7e9e-6af8-0d4b" name="3 Old Guard" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="8a25-7e9e-6af8-0d4b" name="3 Old Guard" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e28-aeae-bf6a-13fc" type="max"/>
                   </constraints>
@@ -745,7 +745,7 @@ round from round 2 onwards. </description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="0cdb-f601-f9df-e109" name="Donar Qualities" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="0cdb-f601-f9df-e109" name="Donar Qualities" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -761,7 +761,7 @@ round from round 2 onwards. </description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab41-3de8-6e28-987f" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="5be3-5740-3f91-17b0" name="1 Guardian Preceptor" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="5be3-5740-3f91-17b0" name="1 Guardian Preceptor" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="false" type="upgrade">
                   <rules>
                     <rule id="75db-64b1-ced5-447b" name="Guardian Preceptor" publicationId="975a-00f4-pubN89746" page="48" hidden="false">
                       <description> The Seneschal is a direct descendant
@@ -776,7 +776,7 @@ failed Command checks. </description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="8fd3-bc96-97dd-1ae9" name="2 Kush Veteran" publicationId="975a-00f4-pubN89746" page="49" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="8fd3-bc96-97dd-1ae9" name="2 Kush Veteran" publicationId="975a-00f4-pubN89746" page="49" hidden="false" collective="false" import="false" type="upgrade">
                   <rules>
                     <rule id="7b66-a3bb-d7a9-2dd0" name="2 Kush Veteran" publicationId="975a-00f4-pubN89746" page="48" hidden="false">
                       <description> The Seneschal is a veteran of many expeditions
@@ -793,7 +793,7 @@ should they move through Deadly terrain. </description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a196-dc80-a46a-da1a" name="3 Beast Killer" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="a196-dc80-a46a-da1a" name="3 Beast Killer" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="false" type="upgrade">
                   <rules>
                     <rule id="2846-0e61-0b46-ec60" name="Beast Killer" publicationId="975a-00f4-pubN89746" page="48" hidden="false">
                       <description>The Seneschal has killed almost every beast that
@@ -811,7 +811,7 @@ chat is higher than their</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f538-9068-f479-71c7" name="Indra Qualities" publicationId="975a-00f4-pubN89746" page="50" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="f538-9068-f479-71c7" name="Indra Qualities" publicationId="975a-00f4-pubN89746" page="50" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -827,7 +827,7 @@ chat is higher than their</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04e4-f3c7-e036-b713" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="25c8-6748-4b48-74bd" name="1 Dancing Blade" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="25c8-6748-4b48-74bd" name="1 Dancing Blade" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef1d-263d-7d76-7628" type="max"/>
                   </constraints>
@@ -845,7 +845,7 @@ Hit roll of a 1 when using a weapon with the Melee trait</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9208-2ad6-4d6b-db68" name="2 Forsaken Indarii" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9208-2ad6-4d6b-db68" name="2 Forsaken Indarii" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0968-ae0e-36d4-93d6" type="max"/>
                   </constraints>
@@ -867,7 +867,7 @@ act under Charge orders.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9363-33d4-963e-a369" name="3 Banner of the High King" publicationId="975a-00f4-pubN89746" page="50" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9363-33d4-963e-a369" name="3 Banner of the High King" publicationId="975a-00f4-pubN89746" page="50" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7701-5e2c-fa60-214e" type="max"/>
                   </constraints>
@@ -889,7 +889,7 @@ the Battle Standard</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="d467-0e35-8c1c-5c54" name="Kaska Qualities" publicationId="975a-00f4-pubN89746" page="52" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="d467-0e35-8c1c-5c54" name="Kaska Qualities" publicationId="975a-00f4-pubN89746" page="52" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -905,7 +905,7 @@ the Battle Standard</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4db6-f50e-f191-ee31" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="fd74-c804-dae1-2aa9" name="1 Drunken Lord" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="fd74-c804-dae1-2aa9" name="1 Drunken Lord" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51f2-aa85-220f-bdf3" type="max"/>
                   </constraints>
@@ -925,7 +925,7 @@ its Command checks, as described on page 38.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="55ec-b401-23db-9971" name="2 Lord of Rain and Ruin" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="55ec-b401-23db-9971" name="2 Lord of Rain and Ruin" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c58e-1fb6-f874-194f" type="max"/>
                   </constraints>
@@ -946,7 +946,7 @@ should they move through Deadly terrain.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="cbf4-4a05-7795-15e8" name="3 Scion of the Storm" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="cbf4-4a05-7795-15e8" name="3 Scion of the Storm" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99b4-efda-1bb1-3435" type="max"/>
                   </constraints>
@@ -967,7 +967,7 @@ add 1 to the dice roll.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="3ff8-96ea-3869-174a" name="Kaushik Qualities" publicationId="975a-00f4-pubN89746" page="54" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="3ff8-96ea-3869-174a" name="Kaushik Qualities" publicationId="975a-00f4-pubN89746" page="54" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -983,7 +983,7 @@ add 1 to the dice roll.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80d2-b2fb-f9af-9d2b" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="72b3-3bd7-2342-6e91" name="1 Stoneblind" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="72b3-3bd7-2342-6e91" name="1 Stoneblind" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42a4-94e3-11ce-e05d" type="max"/>
                   </constraints>
@@ -1003,7 +1003,7 @@ may re-roll the dice.
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="acd1-8091-3563-32b5" name="2 Iron of the Earth" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="acd1-8091-3563-32b5" name="2 Iron of the Earth" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8121-1729-47f5-7c8f" type="max"/>
                   </constraints>
@@ -1022,7 +1022,7 @@ Hit roll of a 1 when using a weapon with the Melee trait.
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="41b2-426b-242e-ee0b" name="3 Scion of the Storm" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="41b2-426b-242e-ee0b" name="3 Scion of the Storm" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8b3-b8dc-24c8-7569" type="max"/>
                   </constraints>
@@ -1043,7 +1043,7 @@ Banner have their Speed characteristic reduced by 1&quot;.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="1d57-4e39-9b59-a8be" name="Mamaragon Qualities" publicationId="975a-00f4-pubN89746" page="52" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="1d57-4e39-9b59-a8be" name="Mamaragon Qualities" publicationId="975a-00f4-pubN89746" page="52" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1059,7 +1059,7 @@ Banner have their Speed characteristic reduced by 1&quot;.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d3b-3624-b795-83a3" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="93d3-e84c-dae4-4a69" name="1 Sea Lord" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="93d3-e84c-dae4-4a69" name="1 Sea Lord" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bce-2ddf-cd58-73f5" type="max"/>
                   </constraints>
@@ -1078,7 +1078,7 @@ failed Command checks.
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e6c3-27a3-d0f7-cc8d" name="2  Prince of the Waves" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="e6c3-27a3-d0f7-cc8d" name="2  Prince of the Waves" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1ec-7b78-9aa1-beab" type="max"/>
                   </constraints>
@@ -1098,7 +1098,7 @@ round from round 2 onwards.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="63d9-3414-f38e-6b4e" name="3 Scion of the Storm" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="63d9-3414-f38e-6b4e" name="3 Scion of the Storm" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d62-b6d4-7e1d-f3d7" type="max"/>
                   </constraints>
@@ -1121,7 +1121,7 @@ include a Battle Standard.
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="ca0f-2657-585a-2daf" name="Tazkkhar Qualities" publicationId="975a-00f4-pubN89746" page="58" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="ca0f-2657-585a-2daf" name="Tazkkhar Qualities" publicationId="975a-00f4-pubN89746" page="58" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1137,7 +1137,7 @@ include a Battle Standard.
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02b8-91ea-965e-1f32" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="05e5-1d78-d86c-d4ca" name="1 Dervish Lord" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="05e5-1d78-d86c-d4ca" name="1 Dervish Lord" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae48-f900-fe73-7ff2" type="max"/>
                   </constraints>
@@ -1159,7 +1159,7 @@ described on page 38.
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4617-3c28-3408-c155" name="2 Kharii Savage" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="4617-3c28-3408-c155" name="2 Kharii Savage" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0832-47db-47c4-710c" type="max"/>
                   </constraints>
@@ -1181,7 +1181,7 @@ cannot be issued First Fire orders.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="700e-b163-e706-8ab2" name="3 Vizier of Blades" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="700e-b163-e706-8ab2" name="3 Vizier of Blades" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4f3-db4a-5e30-7ae7" type="max"/>
                   </constraints>
@@ -1201,7 +1201,7 @@ Hit roll of a I when using a weapon with rhe Melee trait. </description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="a9f1-a413-4a16-ec8d" name="Sidus Qualities" publicationId="2988-f24d-39ef-352e" page="56" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="a9f1-a413-4a16-ec8d" name="Sidus Qualities" publicationId="2988-f24d-39ef-352e" page="56" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1217,7 +1217,7 @@ Hit roll of a I when using a weapon with rhe Melee trait. </description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bfb-4b80-dbc1-76e9" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="794a-6ce4-2b39-01ed" name="1 Bombard Commander" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="794a-6ce4-2b39-01ed" name="1 Bombard Commander" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6640-7d0b-c122-db47" type="max"/>
                   </constraints>
@@ -1238,7 +1238,7 @@ this way, but all Banners must be issued the same Order.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="6ca0-f9f5-20c7-50ab" name="2 Scion of Ryza" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="6ca0-f9f5-20c7-50ab" name="2 Scion of Ryza" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8756-15ed-96f4-c306" type="max"/>
                   </constraints>
@@ -1258,7 +1258,7 @@ maximum of Strength 8.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9f5a-1f0d-9d34-82b4" name="3 Favoured Scion" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9f5a-1f0d-9d34-82b4" name="3 Favoured Scion" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2ce-978a-8fd2-476a" type="max"/>
                   </constraints>
@@ -1285,7 +1285,7 @@ Titanicus: Doom of Molech).</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="6ab4-777d-e6d1-af4b" name="Taranis Qualities" publicationId="975a-00f4-pubN89746" page="46" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="6ab4-777d-e6d1-af4b" name="Taranis Qualities" publicationId="975a-00f4-pubN89746" page="46" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1301,7 +1301,7 @@ Titanicus: Doom of Molech).</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7259-41c0-4e4d-05cc" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="fda8-3203-70d1-6ea6" name="1 Grace of the Omnissiah" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="fda8-3203-70d1-6ea6" name="1 Grace of the Omnissiah" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80a3-6303-d674-e828" type="max"/>
                   </constraints>
@@ -1322,7 +1322,7 @@ becomes a Direct Hit.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="fab0-d3ff-b031-476f" name="2 Resolute Brotherhood" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="fab0-d3ff-b031-476f" name="2 Resolute Brotherhood" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0d4-89bb-b388-b69d" type="max"/>
                   </constraints>
@@ -1343,7 +1343,7 @@ each Knight separately).</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="26ed-c4a5-fecf-59c0" name="3 Master at Arms" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="26ed-c4a5-fecf-59c0" name="3 Master at Arms" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce1f-40f2-1889-905b" type="max"/>
                   </constraints>
@@ -1365,7 +1365,7 @@ Titanicus: Doom of Molech.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="5724-5cd4-3130-50b7" name="Zavora Qualities" publicationId="2988-f24d-39ef-352e" page="60" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="5724-5cd4-3130-50b7" name="Zavora Qualities" publicationId="2988-f24d-39ef-352e" page="60" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1381,7 +1381,7 @@ Titanicus: Doom of Molech.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a229-f1f6-de63-84e0" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="731a-f657-311c-d5e5" name="1 Progeny of Mars" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="731a-f657-311c-d5e5" name="1 Progeny of Mars" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="513a-2ca2-bb05-6a42" type="max"/>
                   </constraints>
@@ -1402,7 +1402,7 @@ make a Command check.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c5b9-12cd-47cc-ada1" name="2 Sacred Armament" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c5b9-12cd-47cc-ada1" name="2 Sacred Armament" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d241-69a6-8dd6-c06c" type="max"/>
                   </constraints>
@@ -1421,7 +1421,7 @@ not be issued Full Stride or Charge orders.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1fe1-7749-7283-7983" name="3 Broken Soul" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1fe1-7749-7283-7983" name="3 Broken Soul" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf6b-a180-d273-7be0" type="max"/>
                   </constraints>
@@ -1444,7 +1444,7 @@ Adeptus Titanicus: Doom of Molech</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="9ae0-61b3-54d0-d5b8" name="Morbidia Qualities" publicationId="2988-f24d-39ef-352e" page="62" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="9ae0-61b3-54d0-d5b8" name="Morbidia Qualities" publicationId="2988-f24d-39ef-352e" page="62" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1460,7 +1460,7 @@ Adeptus Titanicus: Doom of Molech</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2d2-ed4a-2c68-3632" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="8be6-f830-7b86-fcb3" name="1 Blackhearted" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="8be6-f830-7b86-fcb3" name="1 Blackhearted" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d781-3a83-fd61-479f" type="max"/>
                   </constraints>
@@ -1478,7 +1478,7 @@ Banner may re-roll Hit rolls of a 1.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2983-5dd7-70e3-a8fa" name="2 Devoid of Virtue" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2983-5dd7-70e3-a8fa" name="2 Devoid of Virtue" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="953e-d1f9-a737-418e" type="max"/>
                   </constraints>
@@ -1498,7 +1498,7 @@ within their Banner had been destroyed.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ca46-b998-5f97-b9cc" name="3 Rule through Fear" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="ca46-b998-5f97-b9cc" name="3 Rule through Fear" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b2e-1b31-1b45-df15" type="max"/>
                   </constraints>
@@ -1520,7 +1520,7 @@ Adeptus Titanicus: Doom of Molech.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="6e0f-427f-9f50-a43b" name="Ioeden Qualities" publicationId="2988-f24d-39ef-352e" page="62" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="6e0f-427f-9f50-a43b" name="Ioeden Qualities" publicationId="2988-f24d-39ef-352e" page="62" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1536,7 +1536,7 @@ Adeptus Titanicus: Doom of Molech.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1deb-acc5-92d8-1eaf" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="7c11-d4b9-6af1-2052" name="1 Hidden Loyalties" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="7c11-d4b9-6af1-2052" name="1 Hidden Loyalties" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce5-db90-c5d9-adcd" type="max"/>
                   </constraints>
@@ -1556,7 +1556,7 @@ activated yet that phase. </description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1b86-d125-3474-3f48" name="2 Dishonourable" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1b86-d125-3474-3f48" name="2 Dishonourable" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="456d-56e9-97dd-074d" type="max"/>
                   </constraints>
@@ -1575,7 +1575,7 @@ any other modifiers.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1ef9-2d23-3881-1d4e" name="3 From the Shadows" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1ef9-2d23-3881-1d4e" name="3 From the Shadows" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67dd-0b98-c648-567b" type="max"/>
                   </constraints>
@@ -1598,7 +1598,7 @@ deploy by the mission being played.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="6216-6532-4e47-4bdb" name="Oroborn Qualities" publicationId="2988-f24d-39ef-352e" page="66" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="6216-6532-4e47-4bdb" name="Oroborn Qualities" publicationId="2988-f24d-39ef-352e" page="66" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1614,7 +1614,7 @@ deploy by the mission being played.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3db8-b909-d963-a92a" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="32d7-c176-130e-71e0" name="1 All But Dead" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="32d7-c176-130e-71e0" name="1 All But Dead" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="144c-9cab-710b-686a" type="max"/>
                   </constraints>
@@ -1636,7 +1636,7 @@ page 38 of Adeptus Titanicus: Doom of Molech</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3ef7-aca5-96c1-2cc7" name="2 Noxious" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3ef7-aca5-96c1-2cc7" name="2 Noxious" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e07-07b3-1262-48c4" type="max"/>
                   </constraints>
@@ -1657,7 +1657,7 @@ include a Battle Standard.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="cc17-eecf-19b6-0b03" name="3 Broken Soul" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="cc17-eecf-19b6-0b03" name="3 Broken Soul" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff1f-5b07-0c3b-d973" type="max"/>
                   </constraints>
@@ -1681,7 +1681,7 @@ round 2 onwards if possible.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f984-6bb6-44f0-2a0e" name="Orhlacc Qualities" publicationId="3265-f408-cc9b-bfa3" page="50" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="f984-6bb6-44f0-2a0e" name="Orhlacc Qualities" publicationId="3265-f408-cc9b-bfa3" page="50" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1697,7 +1697,7 @@ round 2 onwards if possible.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d51a-23d0-692c-f010" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="349a-0082-9bc5-456e" name="1 Shadow Fighter" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="349a-0082-9bc5-456e" name="1 Shadow Fighter" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14c3-ec79-314c-4b74" type="max"/>
                   </constraints>
@@ -1712,7 +1712,7 @@ For the duration of the first round, attacks made against the Seneschal’s Bann
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="bb69-1eb9-c92a-acf9" name="2 Indecipherable Commander" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="bb69-1eb9-c92a-acf9" name="2 Indecipherable Commander" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af20-d71b-50f8-ac76" type="max"/>
                   </constraints>
@@ -1727,7 +1727,7 @@ After both players have finished deploying their forces but before rolling to de
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a3ab-6a7f-a0c9-b7fb" name="3 Independent Warriors" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="a3ab-6a7f-a0c9-b7fb" name="3 Independent Warriors" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80be-fadf-0384-8cbf" type="max"/>
                   </constraints>
@@ -1744,7 +1744,7 @@ Banners in the Seneschal’s Lance do not have to maintain Lance coherency (see 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="6e41-df28-4dae-966f" name="Vornherr Qualities" publicationId="3265-f408-cc9b-bfa3" page="52" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="6e41-df28-4dae-966f" name="Vornherr Qualities" publicationId="3265-f408-cc9b-bfa3" page="52" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1760,7 +1760,7 @@ Banners in the Seneschal’s Lance do not have to maintain Lance coherency (see 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b73d-8274-a50b-f2a3" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="00cc-3de4-de64-27f9" name="1 Survivalist" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="00cc-3de4-de64-27f9" name="1 Survivalist" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea1-6df8-98b4-6735" type="max"/>
                   </constraints>
@@ -1775,7 +1775,7 @@ Whenever a model from the Seneschal’s Banner would be destroyed due to a weapo
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b0da-7513-5314-89d4" name="2 Unto Death" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="b0da-7513-5314-89d4" name="2 Unto Death" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ae-5f92-a197-27c2" type="max"/>
                   </constraints>
@@ -1790,7 +1790,7 @@ Whenever a model from the Seneschal’s Banner is destroyed, they may immediatel
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e21c-94e3-b325-027a" name="3 Figure of Legend" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="e21c-94e3-b325-027a" name="3 Figure of Legend" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebde-c545-9c9a-7fa8" type="max"/>
                   </constraints>
@@ -1807,7 +1807,7 @@ Friendly Banners with at least one model within 3&quot; of a model from the Sene
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="bf2e-97ea-cf4a-2b80" name="Vyronii Qualities" publicationId="3265-f408-cc9b-bfa3" page="54" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="bf2e-97ea-cf4a-2b80" name="Vyronii Qualities" publicationId="3265-f408-cc9b-bfa3" page="54" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1823,7 +1823,7 @@ Friendly Banners with at least one model within 3&quot; of a model from the Sene
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="448b-399a-5637-ea33" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="3859-0337-a1d3-489c" name="1 Independent Spirit" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3859-0337-a1d3-489c" name="1 Independent Spirit" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="608d-d452-d88c-d37a" type="max"/>
                   </constraints>
@@ -1838,7 +1838,7 @@ If a Banner within the Seneschal’s Lance fails a Command check when an Order i
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9777-5031-b483-1594" name="2 Resolute" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9777-5031-b483-1594" name="2 Resolute" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d69-b83b-87b2-fefb" type="max"/>
                   </constraints>
@@ -1853,7 +1853,7 @@ When making a Command check to see if they become Shaken, all Banners within 12&
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="7662-37d7-20a4-5610" name="3 Lord of Felweather" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="7662-37d7-20a4-5610" name="3 Lord of Felweather" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b061-33c8-2210-788e" type="max"/>
                   </constraints>
@@ -1870,7 +1870,7 @@ The Seneschal may issue Charge orders to Banners within their Lance without the 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="ca95-84eb-d960-0496" name="Mordred Qualities" publicationId="3265-f408-cc9b-bfa3" page="56" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="ca95-84eb-d960-0496" name="Mordred Qualities" publicationId="3265-f408-cc9b-bfa3" page="56" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1886,7 +1886,7 @@ The Seneschal may issue Charge orders to Banners within their Lance without the 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62c2-a013-ec3a-eb97" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="9ce3-6dbd-4271-66eb" name="1 Ancestral Pride" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9ce3-6dbd-4271-66eb" name="1 Ancestral Pride" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9128-39ca-f4a2-b179" type="max"/>
                   </constraints>
@@ -1901,7 +1901,7 @@ In the first round of the game, the Seneschal’s Lance may choose to forgo thei
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e5da-f2b0-a2fc-6378" name="2 Tapestry of Deeds" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="e5da-f2b0-a2fc-6378" name="2 Tapestry of Deeds" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6847-9ff6-7f4f-9b57" type="max"/>
                   </constraints>
@@ -1916,7 +1916,7 @@ If the Seneschal’s Banner contains a Battle Standard, and the Knight carrying 
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1f65-e803-314a-6a6b" name="3 Aggression Unbound" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1f65-e803-314a-6a6b" name="3 Aggression Unbound" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceeb-3989-00fc-efc6" type="max"/>
                   </constraints>
@@ -1933,7 +1933,7 @@ When acting under Charge orders during the Movement phase, one Knight per Banner
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="1136-6182-c004-a341" name="Malinax Qualities" publicationId="3265-f408-cc9b-bfa3" page="56" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="1136-6182-c004-a341" name="Malinax Qualities" publicationId="3265-f408-cc9b-bfa3" page="56" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -1949,7 +1949,7 @@ When acting under Charge orders during the Movement phase, one Knight per Banner
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d8a-90ad-5d64-3402" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="3402-97ff-772e-0f75" name="1 Elusive" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3402-97ff-772e-0f75" name="1 Elusive" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="510f-b874-957c-96e9" type="max"/>
                   </constraints>
@@ -1964,7 +1964,7 @@ If the Seneschal is destroyed, the player may choose a friendly Banner of the sa
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b4b7-28fb-a231-adf6" name="2 Trusted Bearer" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="b4b7-28fb-a231-adf6" name="2 Trusted Bearer" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d947-2bcf-d43f-5323" type="max"/>
                   </constraints>
@@ -1979,7 +1979,7 @@ Knights within the Seneschal’s Banner may re-roll any Armour rolls of a 1 for 
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9daf-3b1f-631e-cbcd" name="Favoured Scion" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9daf-3b1f-631e-cbcd" name="Favoured Scion" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="664c-e1aa-2a6a-a56c" type="max"/>
                   </constraints>
@@ -1996,7 +1996,7 @@ When the Seneschal’s Banner suffers a Direct Hit, roll a D6. On the roll of a 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="17c0-2a1d-5cad-b1f7" name="Ærthegn Qualities" publicationId="3265-f408-cc9b-bfa3" page="60" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="17c0-2a1d-5cad-b1f7" name="Ærthegn Qualities" publicationId="3265-f408-cc9b-bfa3" page="60" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -2012,7 +2012,7 @@ When the Seneschal’s Banner suffers a Direct Hit, roll a D6. On the roll of a 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1ef-d005-859b-b182" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="d32e-3a57-c529-1394" name="1 Methodical Butcher" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="d32e-3a57-c529-1394" name="1 Methodical Butcher" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6139-626f-1a32-0e13" type="max"/>
                   </constraints>
@@ -2027,7 +2027,7 @@ Knights in the Seneschal’s Banner may re-roll Armour rolls of a 1 for attacks 
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="75a4-da0e-c07e-fa56" name="2 Bloodlust" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="75a4-da0e-c07e-fa56" name="2 Bloodlust" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cc5-3bc6-f552-0daf" type="max"/>
                   </constraints>
@@ -2042,7 +2042,7 @@ The Seneschal may issue Charge orders to Banners within their Lance without the 
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="571b-356c-029b-e786" name="3 Furious Assault" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="571b-356c-029b-e786" name="3 Furious Assault" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9a8-4af0-3c9d-6886" type="max"/>
                   </constraints>
@@ -2059,7 +2059,7 @@ For each Hit roll of 6 made by the Seneschal’s banner when attacking with a Me
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="57f4-d190-0b18-a383" name="Col’Khak Qualities" publicationId="ce02-a882-fdad-dd36" page="60" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="57f4-d190-0b18-a383" name="Col’Khak Qualities" publicationId="ce02-a882-fdad-dd36" page="60" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -2075,7 +2075,7 @@ For each Hit roll of 6 made by the Seneschal’s banner when attacking with a Me
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acd0-a055-074c-9219" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="291c-01e4-baf5-1efe" name="1 Consecrated Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="291c-01e4-baf5-1efe" name="1 Consecrated Autosimulacra" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2572-b662-6b07-3e75" type="max"/>
                   </constraints>
@@ -2098,7 +2098,7 @@ part of the Blessed Autosimulacra rule instead.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="bb6e-a341-692c-1a8e" name="2 Child of the Omnissiah" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="bb6e-a341-692c-1a8e" name="2 Child of the Omnissiah" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9562-0ab1-6145-cc2b" type="max"/>
                   </constraints>
@@ -2119,7 +2119,7 @@ maximum of Strength 8.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="7a5f-ade2-a869-99de" name="3 Bombard Commander" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="7a5f-ade2-a869-99de" name="3 Bombard Commander" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a52-c1d3-80b0-a725" type="max"/>
                   </constraints>
@@ -2142,7 +2142,7 @@ this way, but all Banners must be issued the same Order.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="85df-8cda-e88a-ecc6" name="Moritain Qualities" publicationId="ce02-a882-fdad-dd36" page="62" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="85df-8cda-e88a-ecc6" name="Moritain Qualities" publicationId="ce02-a882-fdad-dd36" page="62" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -2158,7 +2158,7 @@ this way, but all Banners must be issued the same Order.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7578-6969-e98f-ab2e" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="f8b8-9275-4437-a265" name="1 Iron Lord of Conquered Dreams" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="f8b8-9275-4437-a265" name="1 Iron Lord of Conquered Dreams" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6244-f36d-0cb8-0cd1" type="max"/>
                   </constraints>
@@ -2178,7 +2178,7 @@ Knight Banner is Shaken</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="dce9-9ab1-6e71-c190" name="2 The Blade that Rends all who Defy" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="dce9-9ab1-6e71-c190" name="2 The Blade that Rends all who Defy" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b7-5b3b-ae20-17d2" type="max"/>
                   </constraints>
@@ -2197,7 +2197,7 @@ with the Melee trait.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="26d1-a8a0-fa59-a8c0" name="3 One who Walks Unshackled by Reality" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="26d1-a8a0-fa59-a8c0" name="3 One who Walks Unshackled by Reality" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2861-3e55-b832-0b28" type="max"/>
                   </constraints>
@@ -2219,7 +2219,7 @@ from </description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="2652-4244-dd73-5c79" name="Gotrith Qualities" publicationId="ce02-a882-fdad-dd36" page="64" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="2652-4244-dd73-5c79" name="Gotrith Qualities" publicationId="ce02-a882-fdad-dd36" page="64" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -2235,7 +2235,7 @@ from </description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deef-7311-2412-50da" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="9194-b5f0-6761-1957" name="1 Destroyer of Civilisations:" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9194-b5f0-6761-1957" name="1 Destroyer of Civilisations:" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88fd-1a7f-7a3c-168f" type="max"/>
                   </constraints>
@@ -2254,7 +2254,7 @@ target of a Scale at least 6 higher than themselves.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="bffc-2af0-6464-db84" name="2 Furious Assault" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="bffc-2af0-6464-db84" name="2 Furious Assault" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="006c-f928-5a6e-df8c" type="max"/>
                   </constraints>
@@ -2274,7 +2274,7 @@ the Melee trait against the Seneschal’s </description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="7339-aa25-e5a6-b074" name="3 Urban Fighter" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="7339-aa25-e5a6-b074" name="3 Urban Fighter" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edf5-04ad-de8b-8f9f" type="max"/>
                   </constraints>
@@ -2295,7 +2295,7 @@ against a Banner within the Seneschal’s Lance suffer a
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="1566-2c8d-95c9-3115" name="Vextrix Qualities" publicationId="ce02-a882-fdad-dd36" page="66" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="1566-2c8d-95c9-3115" name="Vextrix Qualities" publicationId="ce02-a882-fdad-dd36" page="66" hidden="false" collective="false" import="false">
               <modifierGroups>
                 <modifierGroup>
                   <conditions>
@@ -2311,7 +2311,7 @@ against a Banner within the Seneschal’s Lance suffer a
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e31-3aaf-7637-51e6" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="a0ef-4a60-37db-de21" name="1 Dauntless" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="a0ef-4a60-37db-de21" name="1 Dauntless" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad41-8b5b-4c79-408d" type="max"/>
                   </constraints>
@@ -2328,7 +2328,7 @@ Seneschal’s Banner cannot be Shaken.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="695b-0e26-6adb-4c13" name="2 Soul of Decay" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="695b-0e26-6adb-4c13" name="2 Soul of Decay" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a3d-4585-7fca-77d2" type="max"/>
                   </constraints>
@@ -2349,7 +2349,7 @@ becomes a Direct Hit.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="53a9-18d2-2b8d-9fa4" name="3 Implacable Foe" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="53a9-18d2-2b8d-9fa4" name="3 Implacable Foe" hidden="false" collective="false" import="false" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c58a-4d46-1d34-459c" type="max"/>
                   </constraints>
@@ -2373,174 +2373,29 @@ Movement phase as part of a Charge </description>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </entryLink>
+    <entryLink id="reaver-support-household" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0237-b896-cf2d-fd8c" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="warlord-support-household" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fd7f-32e2-ba13-32eb" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="warbringer-support-household" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="adde-353e-0207-cfb6" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="sinister-support-household" name="Warlord-Sinister Titan" hidden="false" collective="false" import="false" targetId="dfeb-83af-7b26-622a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3542-a0f1-8d51-4ad7" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="warmaster-support-household" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry"/>
+    <entryLink id="warhound-squadron-household-support" targetId="9fc6-f5ca-16a8-7515"  name="Warhound Squadron" hidden="false" collective="false" import="false" type="selectionEntry"></entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="5eed-80b3-369c-9e2d" name="House Divine" publicationId="975a-00f4-pubN89746" page="33" hidden="false" collective="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink id="a91f-c8d9-e85c-1236" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="39d4-f743-a814-577e" name="House Donar" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink id="746a-f895-9b1e-b289" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0a25-c423-8854-5b77" name="House Indra" publicationId="975a-00f4-pubN89746" page="50" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a777-fa68-d537-90f7" name="House Kaska" publicationId="975a-00f4-pubN89746" page="52" hidden="false" collective="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink id="a8d6-e461-2b5e-2340" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f2ca-d1da-f4e3-205a" name="House Kaushik " publicationId="975a-00f4-pubN89746" page="52" hidden="false" collective="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink id="2c26-ffba-9fe5-b72f" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7741-0027-541e-964c" name="House Mamaragon" publicationId="975a-00f4-pubN89746" page="56" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1b4e-7d7e-d6de-47ae" name="House Tazkhar" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ce42-548a-1d40-a806" name="House Sidus" publicationId="2988-f24d-39ef-352e" page="56" hidden="false" collective="false" import="true" type="upgrade">
-      <comment>
-1 Bombard Commander: The Seneschal favours a less direct
-approach, using the superior speed of their Scions to avoid
-enemy fire and unleash devastating volleys in return.
-Once per game, all Banners within the Seneschal’s
-Lance can be issued a Coordinated Strike, Split Fire or
-First Fire order without the need to make a Command
-check. Not all Banners need to be issued an order in
-this way, but all Banners must be issued the same Order. 2 Scion of Ryza:The Seneschal has served Ryza honourably
-for centuries, kept alive by ancient technology and bearing
-the greatest artifice its world has to offer. The weapons carried by the Seneschal’s Banner are of
-a higher quality than normal. Increase the Strength
-value of any weapon in the Seneschal’s Banner with
-a starting Strength value of 4 or higher by 1, to a
-maximum of Strength 8.
-3 Favoured Scion: The Seneschal is blessed by the patronage
-of a prominent Magos of Ryza, granted their favour so long
-as they bring no dishonour to their name. One model in the Seneschal’s Banner may be upgraded
-with the Battle Standard Mark of the Omnissiah
-(see page 104) for free. This model must be part of
-a Questor Mechanicus Household to do so and the
-Household Force cannot contain another Battle
-Standard. However, if the Seneschal’s Banner is ever
-Shaken, for the remainder of the battle the Battle
-Standard has no effect and the Seneschal cannot benefit
-from the Noble Sacrifice rules (see page 38 of Adeptus
-Titanicus: Doom of Molech).</comment>
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6f6c-3458-6a80-f6f0" name="House Taranis" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="2d90-7c1b-b26b-71b9" name="House Zavora" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0e9d-9505-9f03-58ca" name="House Morbidia" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="c282-fbc0-ae2d-ab64" name="House Ioeden" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6f48-de7c-452b-a00f" name="House Oroborn" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="700b-e893-eb9d-7104" name="House Orhlacc" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0ab2-5a39-8159-2e25" name="House Vornherr" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="37eb-0ed0-40c5-ebec" name="House Vyronii" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="005d-30aa-c2b1-ccef" name="House Mordred" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e75d-9086-133f-4411" name="House Malinax" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3705-412c-1e49-53bd" name="House Ærthegn" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4087-38c1-1197-7128" name="House Col&apos;Khak" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7ef0-68aa-a251-c72e" name="House Moritain" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3536-9bfa-f7ee-4411" name="House Gotrith" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="1bc9-96d5-2af4-dafd" name="House Vextrix" hidden="false" collective="false" import="true" type="upgrade"/>
   </sharedSelectionEntries>
 </catalogue>
