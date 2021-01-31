@@ -3888,7 +3888,7 @@
     <selectionEntry id="0a6b-13c3-78ee-7d67" name="Decapitating Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="9aad-e84d-7e73-0eb3" name="Decapitating Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
-          <description>Play this at rhe end of the battle. If the opposing player&apos;s Princeps Seniores&apos; Titan has been destroyed, score Victory points equal to half its Scale (rounding down). Alternatively, if the opponent&apos;s Seneschal and their entire Banner have been destroyed, score 3 additional Victory points.</description>
+          <description>Play this at the end of the battle. If the opposing player&apos;s Princeps Seniores&apos; Titan has been destroyed, score Victory points equal to half its Scale (rounding down). Alternatively, if the opponent&apos;s Seneschal and their entire Banner have been destroyed, score 3 additional Victory points.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -3944,7 +3944,7 @@
     <selectionEntry id="06d7-5c7b-eefe-99e3" name="Orbital Lance Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="689d-a3f2-a626-703f" name="Orbital Lance Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
-          <description>Once per battle, play this during the Strategy phase. Place the 3&quot; Blasr marker anywhere on the bartlefield, then scatter it D6&quot;. Any unir touched by the marker where ir evenrually lands suffers D3 Strength IO hits, or 2D3 Strength IO hits if the central hole of the Blast marker is entirely over its base</description>
+          <description>Once per battle, play this during the Strategy phase. Place the 3&quot; Blast marker anywhere on the battlefield, then scatter it D6&quot;. Any unit touched by the marker where ir evenrually lands suffers D3 Strength IO hits, or 2D3 Strength IO hits if the central hole of the Blast marker is entirely over its base</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -3958,7 +3958,7 @@
     <selectionEntry id="2689-80b2-03ef-25fa" name="Plasma Mines" publicationId="975a-00f4-pubN89746" page="39" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="c396-700d-a9d6-875b" name="Plasma Mines" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
-          <description>Play this Stratagem immediately after an enemy unit finishes moving or making a turn. That unit suffers D3 Strength 10 hits. If the unit is a Titan, these will be ro its Legs. Void Shield saves cannot be made against the hits, but Ion Shield saves can be made. </description>
+          <description>Play this Stratagem immediately after an enemy unit finishes moving or making a turn. That unit suffers D3 Strength 10 hits. If the unit is a Titan, these will be to its Legs. Void Shield saves cannot be made against the hits, but Ion Shield saves can be made. </description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4626,7 +4626,7 @@
                   </constraints>
                   <rules>
                     <rule id="b971-359f-0a96-0643" name="Dervish Lord" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
-                      <description>The Seneschal. fights in the style of the ancient Dervish Lords, striking like the desert wind before f al!ing back out of their enemy&apos;s grasp. The Seneschal may issue Coordinated Strike orders ro Banners within rheir Lance without the need to make a Command check. However, the Seneschal&apos;s Banner does not add 3 to the result of any of its Command checks, as described on page 38.
+                      <description>The Seneschal. fights in the style of the ancient Dervish Lords, striking like the desert wind before falling back out of their enemy&apos;s grasp. The Seneschal may issue Coordinated Strike orders to Banners within rheir Lance without the need to make a Command check. However, the Seneschal&apos;s Banner does not add 3 to the result of any of its Command checks, as described on page 38.
 </description>
                     </rule>
                   </rules>
@@ -4641,7 +4641,7 @@
                   </constraints>
                   <rules>
                     <rule id="7c39-4a9a-4e50-788f" name="Kharii Savage" publicationId="975a-00f4-pubN89746" page="58" hidden="false">
-                      <description>The Seneschal is from the deep desert Kharii tribes, still primitive and savage despite the rights of their blood and the gifts of the Becoming. The Seneschal may issue Charge orders to Banners within their Lance without rhe need to make a Command check. Additionally, Banners within the Senesohal&apos;s Lance add D3&quot; to their Speed when acting under Charge orders. However, Banners in the Seneschal&apos;s Lance cannot be issued First Fire orders.</description>
+                      <description>The Seneschal is from the deep desert Kharii tribes, still primitive and savage despite the rights of their blood and the gifts of the Becoming. The Seneschal may issue Charge orders to Banners within their Lance without the need to make a Command check. Additionally, Banners within the Senesohal&apos;s Lance add D3&quot; to their Speed when acting under Charge orders. However, Banners in the Seneschal&apos;s Lance cannot be issued First Fire orders.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -4655,7 +4655,7 @@
                   </constraints>
                   <rules>
                     <rule id="3fc4-d6ca-bb1d-1201" name="Vizier of Blades" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
-                      <description>The Seneschal has earned the title Vizier of Blades by besting the finest swordsmen of the Tazkhar Steppes during the Feast of the Storm Lord. Knights within the Seneschal&apos;s Banner may re-roll any Hit roll of a I when using a weapon with rhe Melee trait. </description>
+                      <description>The Seneschal has earned the title Vizier of Blades by besting the finest swordsmen of the Tazkhar Steppes during the Feast of the Storm Lord. Knights within the Seneschal&apos;s Banner may re-roll any Hit roll of a I when using a weapon with the Melee trait. </description>
                     </rule>
                   </rules>
                   <costs>
