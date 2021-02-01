@@ -3916,7 +3916,7 @@
     <selectionEntry id="8bd3-069b-1b5e-20b2" name="Fire Support Bombardment" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="e5f7-074a-0ef8-0776" name="Fire Support Bombardment" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
-          <description>Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield then scarcer it DIO&quot;. Any unit touched by the marker where it evenrually lands suffers a single Strength 8 hit, or 2 Strength 8 hits if the central hole of the Blast marker is entirely over its base.</description>
+          <description>Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield then scarcer it D10&quot;. Any unit touched by the marker where it evenrually lands suffers a single Strength 8 hit, or 2 Strength 8 hits if the central hole of the Blast marker is entirely over its base.</description>
         </rule>
       </rules>
       <categoryLinks>
