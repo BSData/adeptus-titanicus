@@ -15240,7 +15240,7 @@
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="88e6-53a9-a84d-2923" name="Body Structure Point Damage" hidden="false" collective="false" import="false">
+                <selectionEntryGroup id="88e6-53a9-a84d-2923" name="Body Structure Point Damage" hidden="false" collective="false" import="false" defaultSelectionEntryId="3528-0205-08c9-1498">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20a5-6541-47c2-ee5f" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c18c-677b-8602-6a02" type="max"/>
@@ -15400,7 +15400,7 @@
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="9013-bfa5-ca52-ef32" name="Head Structure Point Damage" hidden="false" collective="false" import="false">
+                <selectionEntryGroup id="9013-bfa5-ca52-ef32" name="Head Structure Point Damage" hidden="false" collective="false" import="false" defaultSelectionEntryId="6720-f2f3-6a4e-8715">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8af0-d9e6-617a-a8a4" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6789-b62d-ebb9-b2b7" type="min"/>
@@ -15544,7 +15544,7 @@
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="d6e2-9a5d-5409-845a" name="Legs Structure Point Damage" hidden="false" collective="false" import="false">
+                <selectionEntryGroup id="d6e2-9a5d-5409-845a" name="Legs Structure Point Damage" hidden="false" collective="false" import="false" defaultSelectionEntryId="45b8-8f2a-60ec-ac36">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fa8-5be3-8c80-62b9" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c0-aff9-254f-2b7b" type="min"/>
@@ -15695,7 +15695,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8117-e0b4-2b83-df39" type="max"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="0e42-2fb5-543b-1c62" name="Plasma Reactor" hidden="false" collective="false" import="false">
+                <selectionEntryGroup id="0e42-2fb5-543b-1c62" name="Plasma Reactor" hidden="false" collective="false" import="false" defaultSelectionEntryId="bcee-46ac-ce9b-613a">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1004-71af-fc4e-7920" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7778-4c8f-5d36-1d1c" type="min"/>
@@ -15787,7 +15787,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf2-d6f3-3eb3-2538" type="min"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="89b5-dfb0-7fb0-fdef" name="Void Shields" hidden="false" collective="false" import="false">
+                <selectionEntryGroup id="89b5-dfb0-7fb0-fdef" name="Void Shields" hidden="false" collective="false" import="false" defaultSelectionEntryId="8207-e1c4-b623-1ca1">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e13-be5a-48a5-c846" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="595f-30f3-7840-e68c" type="max"/>
