@@ -3902,7 +3902,7 @@
     <selectionEntry id="9782-138e-c720-b1c5" name="Fight for Every Step" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="5e38-03a9-454f-e800" name="Fight for Every Step" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
-          <description>Play this at the end of the battle. Score 2 Victory points for each enemy Titan that has not been destroyed, but which is Strucrurally Compromised.</description>
+          <description>Play this at the end of the battle. Score 2 Victory points for each enemy Titan that has not been destroyed, but which is Structurally Compromised.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -3916,7 +3916,7 @@
     <selectionEntry id="8bd3-069b-1b5e-20b2" name="Fire Support Bombardment" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="e5f7-074a-0ef8-0776" name="Fire Support Bombardment" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
-          <description>Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield then scarcer it DIO&quot;. Any unit touched by the marker where it evenrually lands suffers a single Strength 8 hit, or 2 Strength 8 hits if the central hole of the Blast marker is entirely over its base.</description>
+          <description>Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield then scatter it DIO&quot;. Any unit touched by the marker where it evenrually lands suffers a single Strength 8 hit, or 2 Strength 8 hits if the central hole of the Blast marker is entirely over its base.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -3944,7 +3944,7 @@
     <selectionEntry id="06d7-5c7b-eefe-99e3" name="Orbital Lance Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="689d-a3f2-a626-703f" name="Orbital Lance Strike" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
-          <description>Once per battle, play this during the Strategy phase. Place the 3&quot; Blast marker anywhere on the battlefield, then scatter it D6&quot;. Any unit touched by the marker where ir evenrually lands suffers D3 Strength IO hits, or 2D3 Strength IO hits if the central hole of the Blast marker is entirely over its base</description>
+          <description>Once per battle, play this during the Strategy phase. Place the 3&quot; Blast marker anywhere on the battlefield, then scatter it D6&quot;. Any unit touched by the marker where it evenrually lands suffers D3 Strength 10 hits, or 2D3 Strength 10 hits if the central hole of the Blast marker is entirely over its base</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4001,7 +4001,7 @@
     <selectionEntry id="ca83-f872-971c-fcb3" name="Voidbreaker Field" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="46c1-a45e-1305-c203" name="Voidbreaker Field" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
-          <description>Play this Stratagem immediately after an enemy unit with active void shields finishes moving or making a turn. Roll a D6. On a 2 or more, the opposing player must immediately make a number of Void Shield saves equal to the number rolled on the D6. On a r, no Void Shield saves are made this turn, but the Stratagem can be used a second time in a subsequent turn.</description>
+          <description>Play this Stratagem immediately after an enemy unit with active void shields finishes moving or making a turn. Roll a D6. On a 2 or more, the opposing player must immediately make a number of Void Shield saves equal to the number rolled on the D6. On a 1, no Void Shield saves are made this turn, but the Stratagem can be used a second time in a subsequent turn.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4038,7 +4038,7 @@
       </modifiers>
       <rules>
         <rule id="d4a3-1a27-6b0b-31d6" name="Outflank" publicationId="975a-00f4-pubN89746" page="39" hidden="false">
-          <description>Outflank (X): When this Stratagem is chosen, the player secretly nominates one of their Free blade Banners. The cost of the Stratagem is equal to half of the unit&apos;s Scale, rounding up. Play this Stratagem at the start of deployment to set char unit to one side and state that it is outflanking (it is not deployed at the same time as the rest of the Household force ). Write down which of the battlefield&apos;s neutral flanks it will arrive on, but do not reveal this to the opposing player. While the unit is not on th</description>
+          <description>Outflank (X): When this Stratagem is chosen, the player secretly nominates one of their Free blade Banners. The cost of the Stratagem is equal to half of the unit&apos;s Scale, rounding up. Play this Stratagem at the start of deployment to set that unit to one side and state that it is outflanking (it is not deployed at the same time as the rest of the Household force ). Write down which of the battlefield&apos;s neutral flanks it will arrive on, but do not reveal this to the opposing player. While the unit is not on th</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4166,7 +4166,7 @@
               </constraints>
               <rules>
                 <rule id="6512-0706-f5ae-2d8f" name="First Born" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-                  <description> I : Familiar since childhood to both their inherited duty and the unquestioning respect of others, the Seneschal is a skilled, if unpopular, commander. The Seneschal may issue Full Stride orders to Banners within their Lance without the need to make a Command check. However, deduct I from the results of any Command checks to see if any Banner within the Seneschal&apos;s Lance becomes Shaken.
+                  <description>Familiar since childhood to both their inherited duty and the unquestioning respect of others, the Seneschal is a skilled, if unpopular, commander. The Seneschal may issue Full Stride orders to Banners within their Lance without the need to make a Command check. However, deduct 1 from the results of any Command checks to see if any Banner within the Seneschal&apos;s Lance becomes Shaken.
 </description>
                 </rule>
               </rules>
@@ -4181,7 +4181,7 @@
               </constraints>
               <rules>
                 <rule id="f993-e6c5-c3a1-d630" name="Elder Patriarch" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-                  <description>Many years of commanding impetuous young Knights has taught the Seneschal great patience. They exude a calm that belies their righteous fury. When making a Command check to see if they become Shaken, all Banners within 12&quot; of the Seneschal add I to the dice roll.
+                  <description>Many years of commanding impetuous young Knights has taught the Seneschal great patience. They exude a calm that belies their righteous fury. When making a Command check to see if they become Shaken, all Banners within 12&quot; of the Seneschal add 1 to the dice roll.
 </description>
                 </rule>
               </rules>
@@ -4196,7 +4196,7 @@
               </constraints>
               <rules>
                 <rule id="6164-826a-3f13-bbe6" name="Young Blood" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-                  <description>The Seneschal is young an.d new to such high command. They are eager to be proven worthy, but are hotheaded and prone to bravado. The Seneschal may issue Charge orders to Banners within their Lance without the need to make a Command check.</description>
+                  <description>The Seneschal is young and new to such high command. They are eager to be proven worthy, but are hotheaded and prone to bravado. The Seneschal may issue Charge orders to Banners within their Lance without the need to make a Command check.</description>
                 </rule>
               </rules>
               <costs>
@@ -4210,7 +4210,7 @@
               </constraints>
               <rules>
                 <rule id="036d-6bb7-ae41-34df" name="4 Second Son" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-                  <description>The Seneschal has lived their life with little responsibility, their days spent hunting and perfecting their martial skills rather than their skill as a leader. Any Banner within 12&quot; of the Seneschal&apos;s Banner may re-roll results of a I when making a Ballistic Skill check. However, the Seneschal&apos;s Banner does not add 3 to the result of any of its Command checks, as described earlier on this page.</description>
+                  <description>The Seneschal has lived their life with little responsibility, their days spent hunting and perfecting their martial skills rather than their skill as a leader. Any Banner within 12&quot; of the Seneschal&apos;s Banner may re-roll results of a 1 when making a Ballistic Skill check. However, the Seneschal&apos;s Banner does not add 3 to the result of any of its Command checks, as described earlier on this page.</description>
                 </rule>
               </rules>
               <costs>
@@ -4350,7 +4350,7 @@
                 <selectionEntry id="a196-dc80-a46a-da1a" name="3 Beast Killer" publicationId="975a-00f4-pubN89746" page="48" hidden="false" collective="false" import="false" type="upgrade">
                   <rules>
                     <rule id="2846-0e61-0b46-ec60" name="Beast Killer" publicationId="975a-00f4-pubN89746" page="48" hidden="false">
-                      <description>The Seneschal has killed almost every beast that walks, flies or slithers through the jungles of Kush, and knows just where to land a killing blow. Banners within the Seneschal&apos;s Lance may re-roll Hit rolls of a l when attacking an enemy unit with a Scale chat is higher than their</description>
+                      <description>The Seneschal has killed almost every beast that walks, flies or slithers through the jungles of Kush, and knows just where to land a killing blow. Banners within the Seneschal&apos;s Lance may re-roll Hit rolls of a l when attacking an enemy unit with a Scale chat is higher than theirs.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -4410,7 +4410,7 @@
                   </constraints>
                   <rules>
                     <rule id="50e4-f0b3-875c-bdbb" name="Banner of the High King" publicationId="975a-00f4-pubN89746" page="50" hidden="false">
-                      <description>: The Seneschal has the honour of carrying the colours of the ancient High King of Malech, the first Knight Scion to walk the world. The Seneschal&apos;s Banner may include a Banle Standard for free . However, if the Banner is destroyed, the enemy will earn an extra D3 Victory points for claiming the Battle Standard</description>
+                      <description>: The Seneschal has the honour of carrying the colours of the ancient High King of Malech, the first Knight Scion to walk the world. The Seneschal&apos;s Banner may include a Battle Standard for free . However, if the Banner is destroyed, the enemy will earn an extra D3 Victory points for claiming the Battle Standard</description>
                     </rule>
                   </rules>
                   <costs>
@@ -4655,7 +4655,7 @@
                   </constraints>
                   <rules>
                     <rule id="3fc4-d6ca-bb1d-1201" name="Vizier of Blades" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
-                      <description>The Seneschal has earned the title Vizier of Blades by besting the finest swordsmen of the Tazkhar Steppes during the Feast of the Storm Lord. Knights within the Seneschal&apos;s Banner may re-roll any Hit roll of a I when using a weapon with the Melee trait. </description>
+                      <description>The Seneschal has earned the title Vizier of Blades by besting the finest swordsmen of the Tazkhar Steppes during the Feast of the Storm Lord. Knights within the Seneschal&apos;s Banner may re-roll any Hit roll of a 1 when using a weapon with the Melee trait. </description>
                     </rule>
                   </rules>
                   <costs>
