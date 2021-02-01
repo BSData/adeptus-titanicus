@@ -75,6 +75,16 @@
     <entryLink id="da16-a787-0bc8-23ed" name="Ferrox Light Maniple" hidden="false" collective="false" import="false" targetId="365e-d892-5c42-f7a3" type="selectionEntry"/>
     <entryLink id="f87f-52a5-0f04-ba5a" name="Fortis Battle Maniple" hidden="false" collective="false" import="false" targetId="2004-6a18-7dac-156c" type="selectionEntry"/>
     <entryLink id="34d0-7019-8dcc-71c5" name="Acastus Knight Banner" hidden="false" collective="false" import="false" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="d0e1-5f6d-1da1-6370" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e1-5f6d-1da1-6370" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="e475-b3db-6c86-b828" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
@@ -329,6 +339,4 @@
     <entryLink id="a76b-b826-3647-8c35" name="The Miracle of Mars" hidden="false" collective="false" import="false" targetId="dee9-1ba4-819a-306d" type="selectionEntry"/>
     <entryLink id="2065-a689-35f6-52c3" name="Forward Observers" hidden="false" collective="false" import="false" targetId="17f0-a74f-027f-c827" type="selectionEntry"/>
   </entryLinks>
-  <sharedSelectionEntries></sharedSelectionEntries>
-  <sharedSelectionEntryGroups></sharedSelectionEntryGroups>
 </catalogue>
