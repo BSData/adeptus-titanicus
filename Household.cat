@@ -4140,7 +4140,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12b9-c4e5-aae7-ba3c" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="2fa3-2e3e-63a2-0608" name="House Divine" hidden="false" collective="false" import="false" targetId="5eed-80b3-369c-9e2d" type="selectionEntry"/>
+            <entryLink id="2fa3-2e3e-63a2-0608" name="House Devine" hidden="false" collective="false" import="false" targetId="5eed-80b3-369c-9e2d" type="selectionEntry"/>
             <entryLink id="50d8-d7f7-33db-d172" name="House Donar" hidden="false" collective="false" import="false" targetId="39d4-f743-a814-577e" type="selectionEntry"/>
             <entryLink id="4003-ad80-51d1-25a1" name="House Indra" hidden="false" collective="false" import="false" targetId="0a25-c423-8854-5b77" type="selectionEntry"/>
             <entryLink id="dc7e-4120-aaa8-a9b1" name="House Kaska" hidden="false" collective="false" import="false" targetId="a777-fa68-d537-90f7" type="selectionEntry"/>
