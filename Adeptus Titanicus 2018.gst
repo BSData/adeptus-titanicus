@@ -2205,7 +2205,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5eed-80b3-369c-9e2d" name="House Divine" publicationId="975a-00f4-pubN89746" page="33" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="5eed-80b3-369c-9e2d" name="House Devine" publicationId="975a-00f4-pubN89746" page="33" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="a91f-c8d9-e85c-1236" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
