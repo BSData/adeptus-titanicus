@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="24" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="25" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -3206,18 +3206,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="812b-786b-9435-cd20" name="Questoris Knight Banner" hidden="false" collective="false" import="false" type="unit">
-      <modifiers>
-        <modifier type="append" field="name" value=", Baronial Court">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" field="name" value=", Warrior Born">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="cd29-3032-7b80-a74d" name="Questoris Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -3335,9 +3323,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85a6-21d7-2800-08c5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4b2-9420-fc91-97c5" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="436d-0490-3e67-0daf" name="Nobility" hidden="false" collective="false" import="false" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
-          </entryLinks>
         </entryLink>
         <entryLink id="be8e-e238-af50-a42b" name="Questoris Knight Scion Martial" hidden="false" collective="false" import="false" targetId="2f87-1543-1c08-5dcf" type="selectionEntry">
           <constraints>
@@ -3480,9 +3465,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2d1-65f1-f526-1f6a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d0b-56c9-3008-d54b" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="6334-2f09-1d02-6325" name="Nobility" hidden="false" collective="false" import="false" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
-          </entryLinks>
         </entryLink>
         <entryLink id="d347-4977-be77-635e" name="Cerastus Knight Scion Martial" hidden="false" collective="false" import="false" targetId="8f63-919a-9591-ecd2" type="selectionEntry">
           <constraints>
@@ -3716,9 +3698,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a45-376f-5b80-540f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24c8-62b5-db9c-c499" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="f172-4ec3-b6c4-20e2" name="Nobility" hidden="false" collective="false" import="false" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
-          </entryLinks>
         </entryLink>
         <entryLink id="dc51-c463-c333-395e" name="Acastus Knight Scion Martial" hidden="false" collective="false" import="false" targetId="69b3-e7ac-9cec-ad72" type="selectionEntry">
           <constraints>
@@ -3803,18 +3782,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="dec1-8a16-1df5-e112" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="false" type="unit">
-      <modifiers>
-        <modifier type="append" field="name" value=", Baronial Court">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" field="name" value=", Warrior Born">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="8d59-34f9-69d8-1f3c" name="Questoris Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -3932,9 +3899,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5911-f08c-cd69-fd24" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b379-9ba6-2ffe-98f5" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="340d-2553-8e1c-6760" name="Nobility" hidden="false" collective="false" import="false" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
-          </entryLinks>
         </entryLink>
         <entryLink id="f092-af82-3042-7d64" name="Questoris Knight Scion Styrix" hidden="false" collective="false" import="false" targetId="540a-525d-45fd-2f93" type="selectionEntry">
           <constraints>
@@ -3955,18 +3919,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1a0a-5e72-9752-c32d" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" type="unit">
-      <modifiers>
-        <modifier type="append" field="name" value=", Baronial Court">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="append" field="name" value=", Warrior Born">
-          <conditions>
-            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="9f6a-748a-46f1-05fe" name="Questoris Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -4084,9 +4036,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43bd-744a-553b-0566" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ff-7926-59a8-453a" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="4058-864a-9764-87a5" name="Nobility" hidden="false" collective="false" import="false" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
-          </entryLinks>
         </entryLink>
         <entryLink id="fbfd-3e68-0d63-9f8a" name="Questoris Knight Scion Magaera" hidden="false" collective="false" import="false" targetId="8d33-f08f-31d2-75a3" type="selectionEntry">
           <constraints>
@@ -16860,7 +16809,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="357d-7247-ec2a-45d5" name="Nobility" publicationId="975a-00f4-pubN89746" page="37" hidden="false" collective="false" import="false">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c21-7780-4ec8-849f" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a904-4f3e-3960-de85" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="1f22-0871-f59a-d0f9" name="Seneschal" hidden="false" collective="false" import="false" targetId="8a4b-2186-a159-35fe" type="selectionEntry"/>
