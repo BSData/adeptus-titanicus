@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5334-72bf-3cf7-d361" name="Household" hidden="false">
       <constraints>
@@ -2032,6 +2032,7 @@
                 <selectionEntry id="19ef-4f7b-f4d4-dbe5" name="Cerastus Knight Lord Scion" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6ac-666b-de23-71b3" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c908-0aef-7e45-8465" type="max"/>
                   </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="21d7-c53b-1233-bdcd" name="Knight Hull" hidden="false" collective="false" import="true">
@@ -2643,6 +2644,7 @@
                 <selectionEntry id="c6ec-d0e5-9be3-9b4c" name="Cerastus Knight Lord Scion" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cb0-24f8-bbf1-8f9d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab67-9922-c241-d054" type="max"/>
                   </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="0774-96e6-b929-4cb1" name="Knight Hull" hidden="false" collective="false" import="true">
