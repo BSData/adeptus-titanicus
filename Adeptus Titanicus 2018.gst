@@ -532,6 +532,8 @@
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry id="cd4a-3c69-5fc8-0773" name="LegioHonorum" publicationId="2988-f24d-39ef-352e" page="29" hidden="false"/>
+    <categoryEntry id="c130-1260-4c15-147a" name="Princeps Seniores" publicationId="975a-00f4-pubN65537" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -10108,6 +10110,7 @@
             <entryLink id="5467-d0bf-0128-5742" name="Legio Laniaskara (Impalers)" hidden="false" collective="false" import="false" targetId="8d2d-07be-eb8c-6cce" type="selectionEntry"/>
             <entryLink id="71c1-8633-c2e6-9666" name="Legio Tritonis (Dark Tide)" hidden="false" collective="false" import="false" targetId="dddd-cc44-e662-51a6" type="selectionEntry"/>
             <entryLink id="8d87-8772-b11d-8d92" name="Legio Venator (Iron Spiders) " hidden="false" collective="false" import="false" targetId="2acb-2c7d-5ba6-77ff" type="selectionEntry"/>
+            <entryLink id="9f69-c40f-4381-11aa" name="Legio Honorum (Deathbolts)" hidden="false" collective="false" import="true" targetId="158f-4cf2-be7e-6c75" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -10795,6 +10798,11 @@
           </constraints>
         </entryLink>
         <entryLink id="8d8c-9755-8e12-171b" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="dc65-2c47-a746-00e1" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="d5d2-eebe-8913-d09d" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
@@ -11527,6 +11535,11 @@
           </constraints>
         </entryLink>
         <entryLink id="4994-4e39-e7fe-57d5" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="17e5-7a1d-0467-27c1" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="ca6e-73da-5c0f-e2e3" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="385.0"/>
@@ -12130,6 +12143,11 @@
           </constraints>
         </entryLink>
         <entryLink id="fcd2-9d09-2af7-36de" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="34b6-b972-e7b1-1fb8" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="89bc-e4ca-5d75-4e54" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="180.0"/>
@@ -14236,6 +14254,11 @@
           </constraints>
         </entryLink>
         <entryLink id="fc7a-b856-2fe3-566f" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="014f-fb41-12dd-1860" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="d8ba-fd36-d3a1-e997" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="325.0"/>
@@ -16183,6 +16206,197 @@
       <categoryLinks>
         <categoryLink id="1fe8-c63e-4860-4a4e" name="New CategoryLink" hidden="false" targetId="3b8b-38d1-147a-f99d" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="158f-4cf2-be7e-6c75" name="Legio Honorum (Deathbolts)" publicationId="2988-f24d-39ef-352e" page="19" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="b0b5-c1cb-b1d6-bc4b" name="Resolute and Unbowed" publicationId="2988-f24d-39ef-352e" page="29" hidden="false">
+          <description>Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Movement phase of any round decreases the bonus to an attacker’s Armour roll as the result of damage already inflicted on a location by 1, as indicated by the Titan’s Command Terminal (see the Adeptus Titanicus rulebook), so long as the attack originates from within the Titan’s Front Arc.stood by the core tenets of the Collegia Titanica and the Great Crusade, believing it was forever their duty to march forth and bring death to the enemies of the Imperium and the Omnissiah.
+Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Movement phase of any round decreases the bonus to an attacker’s Armour roll as the result of damage already inflicted on a location by 1, as indicated by the Titan’s Command Terminal (see the Adeptus Titanicus rulebook), so long as the attack originates from within the Titan’s Front Arc.</description>
+        </rule>
+        <rule id="c2e4-7017-3418-6427" name="Legio Honorum (Deathbolts)" hidden="false">
+          <description>The core of Legio Honorum favoured the traditional tactics of the Collegia Titanica, adapting them to the needs of a campaign while disregarding the more elaborate methods of other Legio. A Legio Honorum maniple may substitute any mandatory component from an Axiom, Myrmidon or Fortis maniple with a Reaver or Warlord Titan, so long as that new Titan is of equal to or greater Scale than the Titan it is replacing. In addition, a Legio Honorum Titan may replace a single optional component Reaver or Warlord Titan from these maniples with a Warbringer Nemesis Titan. Each maniple can only include a single Warbringer Nemesis in this way. Legio Specific </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2f52-9550-b94a-14d8" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="055a-d188-f052-c5c1" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a7d-3ead-16e2-1979" name="=Honorum= Basilus Throne" publicationId="2988-f24d-39ef-352e" page="33" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="1f21-002f-5510-587f" value="0.0">
+          <conditions>
+            <condition field="selections" scope="6982-2d18-55cb-61e5" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd4a-3c69-5fc8-0773" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f21-002f-5510-587f" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5299-608c-7856-017d" name="Basilius Throne" publicationId="ce02-a882-fdad-dd36" page="29" hidden="false">
+          <description>A Legio Honorum Princeps Seniores’ Titan may take a Basilius Throne for +25 points. A Titan with this upgrade may be issued Orders without the need to make a Command check. In addition, any Legio Honorum Titan adds 1 to the result of any Command check made when being issued an Order previously issued to a Princeps Seniores’ Titan with this upgrade within the same maniple.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2104-df3a-cefb-d060" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="4608-bf7a-a1fa-df32" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c80f-d884-325b-745c" name="=Honorum= Crusading Spirit" publicationId="2988-f24d-39ef-352e" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="20cd-a50d-46c3-6dea" name="=Honorum= Crusading Spirit" hidden="false">
+          <description>Since its inception, Legio Honorum has strode ever forwards, preferring death over failure. This Stratagem can be purchased by any Legio Honorum player. Play this Stratagem during any Strategy phase. For the remainder of the phase, friendly Legio Honorum Titans do not suffer penalties to Command checks. In addition, a single Legio Honorum Titan may re-roll a failed Command check made when issuing Orders.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e483-6742-e193-c4b9" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2dc5-e9bf-6f6e-39a5" name="Princeps Seniores" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52f0-7a81-15a5-b780" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="981b-2cfa-ed36-ae90" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2337-45e1-87e4-f282" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="69df-cbc9-f278-290d" name="Princeps Seniores" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+          <description>On the field of battle, each maniple is commanded by a Princeps Seniores - a Princeps who has proven themselves beyond reproach, and worthy of such a vaunted position.
+After assembling their battlegroup, the player should pick one Titan in their maniple to be commanded by their Princeps Seniores - note this on the roster. </description>
+        </rule>
+        <rule id="90ad-101a-ba5f-d1e0" name="Orders (Princeps Seniores)" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+          <description>Add 2 to the result of any Command checks made when issuing an order tQ\o the Princeps Seniores&apos; Titan.
+</description>
+        </rule>
+        <rule id="8d63-35e0-8ff8-55bc" name="Personal Traits" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+          <description>Each Princeps Seniores has a Personal trait, which is in effect for as long as they are on the battlefield. Immediately before deploying their force, each player should roll a D6 on the table to the right to see what their trait is. If both players agree then they can each pick a Personal Trait instead of rolling a D6. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d7fc-5f6b-234f-fd37" name="Princeps Senioris" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4daf-274c-716e-9840" name="Personal Trait" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62af-df01-0b69-ae6d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62cb-c05a-e6b0-fbb8" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5a52-30bf-dd3c-64b0" name="1 Dominant Strategist" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ea8-cf1c-1cb7-6759" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="9e3b-ebb6-a2af-9fe5" name="Dominant Strategist" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>Once during the battle, at the start of any phase, the controlling player can use this trait to take the Opus Titanica, becoming the First Player. If they do this at the start of the Strategy phase, do not roll off to see who takes the marker.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4eab-e730-5bf7-162d" name="2 Iron-clad Tyrant" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b9e-5fa8-3a2f-1d87" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="15f3-61c5-a121-4cd8" name="Iron-clad Tyrant" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>Once per turn, when issuing orders to a Titan in the Princeps Seniores&apos; maniple, the Command check
+can be re-rolled.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0d4f-05bd-c1e9-983f" name="3 Swift Killer" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3d0-b865-3749-85b4" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="ff65-2f74-f861-01db" name="Swift Killer" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>Once per round, before the Princeps Seniores&apos; Titan makes an anack, it can turn up to 45°. Subtract I from the result of any Hit rolls it makes for the rest of the phase.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5c8a-1404-b000-1041" name="4 Devoted Servant of the Machine" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b172-2ab8-90c1-95ee" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="25e6-a907-6fe5-5f01" name="Devoted Servant of the Machine" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>When making a Repair roll for the Princeps Seniores&apos; Titan, the controlling player can add I to the
+result of a single D6.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3b90-2656-c0ce-e221" name="5 Favoured by Fortune" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b047-93c9-48e1-490f" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="143f-f4d5-1b46-f36c" name="Favoured by Fortune" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>Once per round, the controlling player can re-roll a single D6 from a Hit roll or Save roll for the Princeps Seniores&apos; Titan.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e9e1-d5d0-aa86-8b81" name="6 Will of Iron" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ac9-d26b-340d-d230" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="3fce-bbb1-6e4b-bbe4" name="Will of Iron" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>The first time a Catastrophic Damage roll is made for the Princeps Seniores&apos; Titan, roll a Dro. If the score equals or beats the result of the Catastrophic Damage roll, it is ignored and has no effect. </description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="18df-cf47-fde1-6f3d" name="=Honorum= Basilus Throne" hidden="false" collective="false" import="true" targetId="8a7d-3ead-16e2-1979" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>

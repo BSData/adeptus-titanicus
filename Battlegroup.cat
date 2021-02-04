@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -18,6 +18,19 @@
         </categoryLink>
         <categoryLink id="8870-d6d8-5519-9eb0" name="Squadron" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="false"/>
         <categoryLink id="b789-e317-99d6-5b8e" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
+        <categoryLink id="3546-6658-7a79-214d" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false">
+          <modifiers>
+            <modifier type="increment" field="bf78-6b8f-80d8-996a" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4225-27f8-9c8b-e56e" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f28c-fa09-7512-e0c7" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf78-6b8f-80d8-996a" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -219,12 +232,36 @@
     </entryLink>
     <entryLink id="2bf7-b386-a4ee-2043" name="Mandatum Battleline Maniple" hidden="false" collective="false" import="false" targetId="f969-b5c4-4b5d-1723" type="selectionEntry"/>
     <entryLink id="dcf6-6569-c080-e2ea" name="=Audax= Canis Light Maniple" hidden="false" collective="false" import="false" targetId="3a41-59a8-581b-0498" type="selectionEntry"/>
-    <entryLink id="00f5-8d82-bcc2-9188" name="=Mordaxis= Unstoppable" hidden="false" collective="false" import="false" targetId="3426-e19b-771f-0d15" type="selectionEntry"/>
-    <entryLink id="cf67-1865-82d1-2564" name="=Infernus= Burned Ones" hidden="false" collective="false" import="false" targetId="4cf8-2cc7-a7fc-085e" type="selectionEntry"/>
-    <entryLink id="2057-fe4e-c273-b652" name="=Lysanda= Frontier Guard" hidden="false" collective="false" import="false" targetId="117e-1150-d95c-0c61" type="selectionEntry"/>
-    <entryLink id="418d-8284-b516-cbaf" name="=Oberon= Decisive Action" hidden="false" collective="false" import="false" targetId="4db9-d3f5-c9e7-63b2" type="selectionEntry"/>
-    <entryLink id="14c2-77f4-4acb-2bf2" name="=Praesagius= Precision Volley" hidden="false" collective="false" import="false" targetId="fa21-d04e-c23a-9d6a" type="selectionEntry"/>
-    <entryLink id="358f-5483-de43-cf14" name="=Oberon= Strategiser" hidden="false" collective="false" import="false" targetId="86f7-1a40-382b-ae4b" type="selectionEntry"/>
+    <entryLink id="00f5-8d82-bcc2-9188" name="=Mordaxis= Unstoppable" hidden="false" collective="false" import="false" targetId="3426-e19b-771f-0d15" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cf67-1865-82d1-2564" name="=Infernus= Burned Ones" hidden="false" collective="false" import="false" targetId="4cf8-2cc7-a7fc-085e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2057-fe4e-c273-b652" name="=Lysanda= Frontier Guard" hidden="false" collective="false" import="false" targetId="117e-1150-d95c-0c61" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="418d-8284-b516-cbaf" name="=Oberon= Decisive Action" hidden="false" collective="false" import="false" targetId="4db9-d3f5-c9e7-63b2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="14c2-77f4-4acb-2bf2" name="=Praesagius= Precision Volley" hidden="false" collective="false" import="false" targetId="fa21-d04e-c23a-9d6a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="358f-5483-de43-cf14" name="=Oberon= Strategiser" hidden="false" collective="false" import="false" targetId="86f7-1a40-382b-ae4b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="3cc2-eabb-9018-b76b" name="Localised Warp Storm" hidden="false" collective="false" import="false" targetId="4ca2-15c0-5ded-18d4" type="selectionEntry"/>
     <entryLink id="ded3-1fde-114c-273e" name="Wails of the Damned" hidden="false" collective="false" import="false" targetId="9aff-f954-d10d-1a6b" type="selectionEntry"/>
     <entryLink id="d83c-04f9-69a0-a5c6" name="Warp Displacement" hidden="false" collective="false" import="false" targetId="076f-49cf-0bc3-d5b0" type="selectionEntry"/>
@@ -243,24 +280,96 @@
     <entryLink id="ed20-7f19-2b93-53b6" name="Veteran Princeps" hidden="false" collective="false" import="false" targetId="dcdc-1908-1c28-7f44" type="selectionEntry"/>
     <entryLink id="c7e4-7e9b-2d9f-8d52" name="Shock mines" hidden="false" collective="false" import="false" targetId="0336-bb0f-b870-de7a" type="selectionEntry"/>
     <entryLink id="1f2a-ee67-2d96-be19" name="Tracer Cloud" hidden="false" collective="false" import="false" targetId="1aba-1767-f646-5ebe" type="selectionEntry"/>
-    <entryLink id="d023-dd5e-5a6d-3266" name="=Astrorum= Bounty of Mars" hidden="false" collective="false" import="false" targetId="2992-c2ab-d138-890d" type="selectionEntry"/>
-    <entryLink id="7824-c714-a76f-84f5" name="=Atarus= Impetuous Machine Spirit" hidden="false" collective="false" import="false" targetId="b7bc-1a39-1fa8-bde4" type="selectionEntry"/>
-    <entryLink id="87c4-07fe-5ea5-64c1" name="=Atarus= Maniple of One" hidden="false" collective="false" import="false" targetId="ffa3-89c9-f658-9a64" type="selectionEntry"/>
-    <entryLink id="48bc-30f3-4ffd-547a" name="=Defensor= A Day of Retribution" hidden="false" collective="false" import="false" targetId="b96e-64b2-6f6c-2836" type="selectionEntry"/>
-    <entryLink id="8869-79bd-2524-552a" name="=Defensor= Blessings of the Emperor" hidden="false" collective="false" import="false" targetId="61a7-3fcd-5cb5-7014" type="selectionEntry"/>
-    <entryLink id="202b-5047-b836-c377" name="=Fureans= Offensive Surge" hidden="false" collective="false" import="false" targetId="79c4-5f36-3c4b-8482" type="selectionEntry"/>
-    <entryLink id="ef85-5b4a-7f40-78e5" name="=Krytos= Iron Endures" hidden="false" collective="false" import="false" targetId="f4e1-e803-82c2-72ee" type="selectionEntry"/>
-    <entryLink id="66e5-9d2f-d90c-e6f2" name="=Krytos= Scorched Earth" hidden="false" collective="false" import="false" targetId="d7da-8565-a7b8-e782" type="selectionEntry"/>
-    <entryLink id="9534-0eaa-8f14-3310" name="=Mortis= March of the Dead" hidden="false" collective="false" import="false" targetId="4699-f903-0c50-1e80" type="selectionEntry"/>
-    <entryLink id="ae8d-c57e-44ea-9093" name="=Solaria= Fog of War" hidden="false" collective="false" import="false" targetId="63d6-80e8-e266-00b0" type="selectionEntry"/>
-    <entryLink id="8867-35a8-38be-ee71" name="=Vulpa= No Pity for the Vanquished" hidden="false" collective="false" import="false" targetId="12c2-179b-3e38-04d0" type="selectionEntry"/>
-    <entryLink id="cd7b-5bcd-a82c-a220" name="=Fortidus= For the Red Planet" hidden="false" collective="false" import="false" targetId="c88c-e5de-39a8-a14c" type="selectionEntry"/>
-    <entryLink id="0862-be2c-943f-9090" name="=Fortidus= Red Skies" hidden="false" collective="false" import="false" targetId="77b5-8263-66f7-7c67" type="selectionEntry"/>
-    <entryLink id="ee62-96c9-e7fa-813a" name="=Interfector= Tormented Machine Spirit" hidden="false" collective="false" import="false" targetId="8f50-2bbe-22c7-c81e" type="selectionEntry"/>
-    <entryLink id="5552-c44d-7a80-8fb8" name="=Tempestus= Combat Drop" hidden="false" collective="false" import="false" targetId="a325-71b4-799f-daa1" type="selectionEntry"/>
-    <entryLink id="b247-402c-24c1-9186" name="=Vulcanum= Symbiotic Commands" hidden="false" collective="false" import="false" targetId="da32-bf28-85d1-9f9d" type="selectionEntry"/>
-    <entryLink id="5da6-82f5-7541-1024" name="=Osedax= Relentless March" hidden="false" collective="false" import="false" targetId="2807-7c6c-a62b-6732" type="selectionEntry"/>
-    <entryLink id="fbca-90bf-d58c-53de" name="=Osedax= Blood Begets Blood" hidden="false" collective="false" import="false" targetId="99e9-5b47-5d7a-f6f7" type="selectionEntry"/>
+    <entryLink id="d023-dd5e-5a6d-3266" name="=Astrorum= Bounty of Mars" hidden="false" collective="false" import="false" targetId="2992-c2ab-d138-890d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="db6f-56d6-02c5-d156" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7824-c714-a76f-84f5" name="=Atarus= Impetuous Machine Spirit" hidden="false" collective="false" import="false" targetId="b7bc-1a39-1fa8-bde4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="87c4-07fe-5ea5-64c1" name="=Atarus= Maniple of One" hidden="false" collective="false" import="false" targetId="ffa3-89c9-f658-9a64" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d004-4c2e-5fbb-f3f7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="48bc-30f3-4ffd-547a" name="=Defensor= A Day of Retribution" hidden="false" collective="false" import="false" targetId="b96e-64b2-6f6c-2836" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8869-79bd-2524-552a" name="=Defensor= Blessings of the Emperor" hidden="false" collective="false" import="false" targetId="61a7-3fcd-5cb5-7014" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="202b-5047-b836-c377" name="=Fureans= Offensive Surge" hidden="false" collective="false" import="false" targetId="79c4-5f36-3c4b-8482" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ef85-5b4a-7f40-78e5" name="=Krytos= Iron Endures" hidden="false" collective="false" import="false" targetId="f4e1-e803-82c2-72ee" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="66e5-9d2f-d90c-e6f2" name="=Krytos= Scorched Earth" hidden="false" collective="false" import="false" targetId="d7da-8565-a7b8-e782" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9534-0eaa-8f14-3310" name="=Mortis= March of the Dead" hidden="false" collective="false" import="false" targetId="4699-f903-0c50-1e80" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ae8d-c57e-44ea-9093" name="=Solaria= Fog of War" hidden="false" collective="false" import="false" targetId="63d6-80e8-e266-00b0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8867-35a8-38be-ee71" name="=Vulpa= No Pity for the Vanquished" hidden="false" collective="false" import="false" targetId="12c2-179b-3e38-04d0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cd7b-5bcd-a82c-a220" name="=Fortidus= For the Red Planet" hidden="false" collective="false" import="false" targetId="c88c-e5de-39a8-a14c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0862-be2c-943f-9090" name="=Fortidus= Red Skies" hidden="false" collective="false" import="false" targetId="77b5-8263-66f7-7c67" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ee62-96c9-e7fa-813a" name="=Interfector= Tormented Machine Spirit" hidden="false" collective="false" import="false" targetId="8f50-2bbe-22c7-c81e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5552-c44d-7a80-8fb8" name="=Tempestus= Combat Drop" hidden="false" collective="false" import="false" targetId="a325-71b4-799f-daa1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b247-402c-24c1-9186" name="=Vulcanum= Symbiotic Commands" hidden="false" collective="false" import="false" targetId="da32-bf28-85d1-9f9d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5da6-82f5-7541-1024" name="=Osedax= Relentless March" hidden="false" collective="false" import="false" targetId="2807-7c6c-a62b-6732" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fbca-90bf-d58c-53de" name="=Osedax= Blood Begets Blood" hidden="false" collective="false" import="false" targetId="99e9-5b47-5d7a-f6f7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="4254-bf37-74eb-4aa4" name="Perpetua Battleline Maniple" hidden="false" collective="false" import="false" targetId="fd1f-e255-c7bd-442b" type="selectionEntry"/>
     <entryLink id="4a69-59bf-2150-1e88" name="Extergimus Battleline Maniple" hidden="false" collective="false" import="false" targetId="9d50-e86f-4613-3e07" type="selectionEntry"/>
     <entryLink id="9612-b592-813b-8af5" name="Firmus Light Maniple" hidden="false" collective="false" import="false" targetId="7fa2-9af4-1b60-8a28" type="selectionEntry"/>
@@ -276,19 +385,35 @@
     <entryLink id="6738-c35d-f956-9de6" name="Partial Shutdown" hidden="false" collective="false" import="false" targetId="e450-d58f-c711-7be7" type="selectionEntry"/>
     <entryLink id="c793-a821-ef0d-c817" name="Tactical Assessment" hidden="false" collective="false" import="false" targetId="5fe5-58cd-143f-df0e" type="selectionEntry"/>
     <entryLink id="7740-08d6-29c3-9a3b" name="Last Ditch Effort" hidden="false" collective="false" import="false" targetId="a6f0-9aff-9834-89c7" type="selectionEntry"/>
-    <entryLink id="de16-e3b4-01e5-1e6d" name="=Vulturum= Cull the Weak" hidden="false" collective="false" import="false" targetId="f805-d25f-6ece-e62a" type="selectionEntry"/>
-    <entryLink id="027a-da58-97db-3df9" name="=Vulturum= Scent of Blood" hidden="false" collective="false" import="false" targetId="0942-9568-cbd3-aec6" type="selectionEntry"/>
+    <entryLink id="de16-e3b4-01e5-1e6d" name="=Vulturum= Cull the Weak" hidden="false" collective="false" import="false" targetId="f805-d25f-6ece-e62a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="027a-da58-97db-3df9" name="=Vulturum= Scent of Blood" hidden="false" collective="false" import="false" targetId="0942-9568-cbd3-aec6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="a646-5285-6238-f2b7" name="Venerable Machine Spirit" hidden="false" collective="false" import="false" targetId="0f6c-856d-c4d3-13e3" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="1af2-716e-33ec-2f87" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="false" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
-    <entryLink id="dbb1-ed4f-4c95-7c91" name="=Astraman= Stand Firm" hidden="false" collective="false" import="false" targetId="ab6a-2fba-dc15-e2ef" type="selectionEntry"/>
-    <entryLink id="0156-e161-1f34-4cab" name="=Astraman= Strength and Resolve" hidden="false" collective="false" import="false" targetId="8f31-0e84-26f0-f2af" type="selectionEntry"/>
+    <entryLink id="dbb1-ed4f-4c95-7c91" name="=Astraman= Stand Firm" hidden="false" collective="false" import="false" targetId="ab6a-2fba-dc15-e2ef" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d960-4189-8cb1-9d61" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0156-e161-1f34-4cab" name="=Astraman= Strength and Resolve" hidden="false" collective="false" import="false" targetId="8f31-0e84-26f0-f2af" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ee58-c888-891f-64de" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="dde0-a580-6658-e1cc" name="=Damicium= Endurance Beyond Limit" hidden="false" collective="false" import="false" targetId="43ed-3dab-833c-e085" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="6428-64e1-91f5-80dc" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="1e07-d102-4de5-7273" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
       </categoryLinks>
       <costs>
@@ -304,21 +429,49 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
       </costs>
     </entryLink>
-    <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="false" collective="false" import="false" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry"/>
-    <entryLink id="16c3-2c70-04ae-4df3" name="=Ignatum= Guard the Gates" hidden="false" collective="false" import="false" targetId="087c-a203-d1d4-bfcd" type="selectionEntry"/>
-    <entryLink id="2aa6-80ce-5c35-a605" name="=Ignatum= Punish their Folly" hidden="false" collective="false" import="false" targetId="ced4-b0c7-5d0f-3c30" type="selectionEntry"/>
-    <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders " hidden="false" collective="false" import="false" targetId="7c51-55b9-4942-4061" type="selectionEntry"/>
-    <entryLink id="1182-1545-6fc1-e75e" name="=Kulisaetai= Methodical Advance" hidden="false" collective="false" import="false" targetId="88d4-a5e8-4929-8037" type="selectionEntry"/>
-    <entryLink id="4736-4fef-8991-fe87" name="=Kulisaetai= Steadfast Bastion " hidden="false" collective="false" import="false" targetId="cf5b-8f2e-8df3-7539" type="selectionEntry"/>
+    <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="false" collective="false" import="false" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="16c3-2c70-04ae-4df3" name="=Ignatum= Guard the Gates" hidden="false" collective="false" import="false" targetId="087c-a203-d1d4-bfcd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2aa6-80ce-5c35-a605" name="=Ignatum= Punish their Folly" hidden="false" collective="false" import="false" targetId="ced4-b0c7-5d0f-3c30" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders " hidden="false" collective="false" import="false" targetId="7c51-55b9-4942-4061" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1182-1545-6fc1-e75e" name="=Kulisaetai= Methodical Advance" hidden="false" collective="false" import="false" targetId="88d4-a5e8-4929-8037" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4736-4fef-8991-fe87" name="=Kulisaetai= Steadfast Bastion " hidden="false" collective="false" import="false" targetId="cf5b-8f2e-8df3-7539" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="8a6c-b6fe-d912-ad44" name="=Laniaskara= Heedless Charge" hidden="false" collective="false" import="false" targetId="5dd2-5a20-9a7a-c000" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="9543-1e7c-2624-3ae8" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="9c5c-00d9-c76c-f7f5" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f865-1276-736a-80df" name="=Laniaskara= Mordantised Ceramite" hidden="false" collective="false" import="false" targetId="170d-3f13-f670-3cc6" type="selectionEntry"/>
     <entryLink id="621c-b697-04b8-7517" name="=Tritonis= Radiative Warheads" hidden="false" collective="false" import="false" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry"/>
-    <entryLink id="0332-6f07-e3d8-ecfd" name="=Tritonis= Stygian Veil" hidden="false" collective="false" import="false" targetId="ad64-ba43-1e95-87ca" type="selectionEntry"/>
+    <entryLink id="0332-6f07-e3d8-ecfd" name="=Tritonis= Stygian Veil" hidden="false" collective="false" import="false" targetId="ad64-ba43-1e95-87ca" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="e0d5-c856-00c2-92c4" name="=Venator= Blind Launchers" hidden="false" collective="false" import="false" targetId="1582-9f6b-0e82-c228" type="selectionEntry"/>
     <entryLink id="f902-8a56-8c96-4c3c" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="false" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
     <entryLink id="e895-90c4-04af-92e7" name="Precept Battleline Maniple" hidden="false" collective="false" import="false" targetId="6e74-335d-5467-0907" type="selectionEntry"/>
@@ -338,5 +491,10 @@
     <entryLink id="7494-d040-547c-1a78" name="Titanic Decapitation" hidden="false" collective="false" import="false" targetId="a9b7-3d50-1282-ecb3" type="selectionEntry"/>
     <entryLink id="a76b-b826-3647-8c35" name="The Miracle of Mars" hidden="false" collective="false" import="false" targetId="dee9-1ba4-819a-306d" type="selectionEntry"/>
     <entryLink id="2065-a689-35f6-52c3" name="Forward Observers" hidden="false" collective="false" import="false" targetId="17f0-a74f-027f-c827" type="selectionEntry"/>
+    <entryLink id="bab5-942b-7806-af79" name="=Honorum= Crusading Spirit" hidden="false" collective="false" import="true" targetId="c80f-d884-325b-745c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>
