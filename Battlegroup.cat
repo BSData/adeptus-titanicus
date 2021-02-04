@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -273,18 +273,17 @@
     <entryLink id="6eef-d1f7-d9e3-d79e" name="Only Forwards" hidden="false" collective="false" import="false" targetId="e033-a991-5c12-4e9a" type="selectionEntry"/>
     <entryLink id="1a56-2716-1648-e954" name="Even in Death" hidden="false" collective="false" import="false" targetId="fc25-6786-d24b-0cc8" type="selectionEntry"/>
     <entryLink id="69d5-8807-9616-b7eb" name="Weapons on Full" hidden="false" collective="false" import="false" targetId="174d-8530-d7b6-ff8e" type="selectionEntry"/>
-    <entryLink id="e5dd-7c46-3b97-26b8" name="Sacraficial Lock-on" hidden="false" collective="false" import="false" targetId="e7d9-c9e1-cfaf-1c18" type="selectionEntry"/>
+    <entryLink id="e5dd-7c46-3b97-26b8" name="Sacrificial Lock-On" hidden="false" collective="false" import="false" targetId="e7d9-c9e1-cfaf-1c18" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b01e-3702-17dc-7efa" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="edca-6466-0531-f40f" name="Augmented Servitor Clades" hidden="false" collective="false" import="false" targetId="f303-73e9-fd41-6eda" type="selectionEntry"/>
     <entryLink id="6582-acb2-6791-9d08" name="Concealment Barrage" hidden="false" collective="false" import="false" targetId="1ad5-b9b3-0d8d-400d" type="selectionEntry"/>
     <entryLink id="dffb-cc77-bc1e-6479" name="MIU Link" hidden="false" collective="false" import="false" targetId="f809-8222-f211-054d" type="selectionEntry"/>
     <entryLink id="ed20-7f19-2b93-53b6" name="Veteran Princeps" hidden="false" collective="false" import="false" targetId="dcdc-1908-1c28-7f44" type="selectionEntry"/>
     <entryLink id="c7e4-7e9b-2d9f-8d52" name="Shock mines" hidden="false" collective="false" import="false" targetId="0336-bb0f-b870-de7a" type="selectionEntry"/>
     <entryLink id="1f2a-ee67-2d96-be19" name="Tracer Cloud" hidden="false" collective="false" import="false" targetId="1aba-1767-f646-5ebe" type="selectionEntry"/>
-    <entryLink id="d023-dd5e-5a6d-3266" name="=Astrorum= Bounty of Mars" hidden="false" collective="false" import="false" targetId="2992-c2ab-d138-890d" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="db6f-56d6-02c5-d156" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="7824-c714-a76f-84f5" name="=Atarus= Impetuous Machine Spirit" hidden="false" collective="false" import="false" targetId="b7bc-1a39-1fa8-bde4" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
@@ -473,12 +472,11 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="e0d5-c856-00c2-92c4" name="=Venator= Blind Launchers" hidden="false" collective="false" import="false" targetId="1582-9f6b-0e82-c228" type="selectionEntry"/>
-    <entryLink id="f902-8a56-8c96-4c3c" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="false" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
+    <entryLink id="f902-8a56-8c96-4c3c" name="=Astraman= Maglock Shells (12 Dice)" hidden="false" collective="false" import="false" targetId="a52a-5348-8d0b-fe2d" type="selectionEntry"/>
     <entryLink id="e895-90c4-04af-92e7" name="Precept Battleline Maniple" hidden="false" collective="false" import="false" targetId="6e74-335d-5467-0907" type="selectionEntry"/>
     <entryLink id="3516-5d57-8e42-97f0" name="Ignus Light Maniple" hidden="false" collective="false" import="false" targetId="ab5b-9a2c-91b9-35a2" type="selectionEntry"/>
     <entryLink id="bf58-e1b7-8ac6-933b" name="A Quick Kill" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="false" targetId="6f6c-982d-c8ed-5fb8" type="selectionEntry"/>
     <entryLink id="6617-7324-c72a-e622" name="Earthshaker Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="false" targetId="eb24-c12a-7f9c-d4c1" type="selectionEntry"/>
-    <entryLink id="b694-6cd4-5db8-8d88" name="Even in Death" hidden="false" collective="false" import="false" targetId="fc25-6786-d24b-0cc8" type="selectionEntry"/>
     <entryLink id="b47e-f0ce-71b0-d62c" name="Haywire Barrage" hidden="false" collective="false" import="false" targetId="e862-2a40-3c8f-1fd9" type="selectionEntry"/>
     <entryLink id="23b8-0155-7c30-3169" name="Justice for the Fallen" hidden="false" collective="false" import="false" targetId="14a6-fc52-9fa3-8a97" type="selectionEntry"/>
     <entryLink id="b900-44e7-a947-4500" name="Hold the Centre" hidden="false" collective="false" import="false" targetId="fce9-f583-2d42-26bd" type="selectionEntry"/>
@@ -494,6 +492,54 @@
     <entryLink id="bab5-942b-7806-af79" name="=Honorum= Crusading Spirit" hidden="false" collective="false" import="true" targetId="c80f-d884-325b-745c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1d6a-6369-540b-f5cd" name="Outflank" hidden="false" collective="false" import="true" targetId="1ff9-2715-d0fa-8049" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="95b3-9276-34a5-9e74" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dd35-c9f9-16aa-8e3c" name="=Astorum= Bounty of Mars" hidden="false" collective="false" import="false" targetId="2992-c2ab-d138-890d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6838-a0ed-73fa-908b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2692-413d-2cc7-e51d" name="Command Bastion" hidden="false" collective="false" import="true" targetId="6d49-58e1-e625-0ceb" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="88ec-3c8f-d7b2-a145" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="23fe-5ed6-6972-4f34" name="=Astorum= Machine Defiance" hidden="false" collective="false" import="true" targetId="1260-8d1f-16f7-75ad" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8790-133a-62e7-e793" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bb74-73c5-dd7f-4df3" name="=Magna= Battle Fervour" hidden="false" collective="false" import="true" targetId="cd33-541d-dc04-9ee4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="365a-863a-a819-e263" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5985-6d0e-627f-ac88" name="=Magna= Spearhead Assault" hidden="false" collective="false" import="true" targetId="a0e1-b0c5-c4a3-ac4e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="20d8-6a5a-edbc-014e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b9c9-93f8-ab40-7137" name="=Interfector= Portents of Doom" hidden="false" collective="false" import="true" targetId="a77a-601b-06c0-9ccc" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="74c9-f3a4-7280-a4fd" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="f971-31dc-24ee-2d31" name="Dark Pledge" hidden="false" collective="false" import="true" targetId="a926-7329-163c-d9a6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9999-b755-371a-0a55" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f55d-9951-227b-e8b2" name="Quake Shells" hidden="false" collective="false" import="true" targetId="2bd2-e1b7-69b5-b739" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ea2c-1d43-9dfd-e7d4" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
