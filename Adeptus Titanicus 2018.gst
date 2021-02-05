@@ -285,8 +285,8 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="a731-e220-2d8a-41bf" scope="roster" value="700.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="unit" type="atLeast"/>
-                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1250.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="unit" type="atMost"/>
+                <condition field="a731-e220-2d8a-41bf" scope="roster" value="700.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
+                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1250.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="any" type="atMost"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -295,8 +295,8 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1250.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="unit" type="greaterThan"/>
-                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1750.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="unit" type="atMost"/>
+                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1250.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="any" type="greaterThan"/>
+                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1750.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="any" type="atMost"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -305,8 +305,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1750.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="unit" type="greaterThan"/>
-                <condition field="a731-e220-2d8a-41bf" scope="roster" value="2500.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="unit" type="atMost"/>
+                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1750.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -532,6 +531,10 @@
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry id="cd4a-3c69-5fc8-0773" name="LegioHonorum" publicationId="2988-f24d-39ef-352e" page="29" hidden="false"/>
+    <categoryEntry id="c130-1260-4c15-147a" name="Princeps Seniores" publicationId="975a-00f4-pubN65537" hidden="false"/>
+    <categoryEntry id="841e-1054-24aa-8eca" name="Ranged Support" publicationId="975a-00f4-pubN65537" page="64" hidden="false"/>
+    <categoryEntry id="d198-6567-a9f9-a3fc" name="Tertiary Objective" publicationId="975a-00f4-pubN65537" page="64" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -1005,7 +1008,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6f84-544d-c82b-ae95" name="Warmaster&apos;s Petition" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="6f84-544d-c82b-ae95" name="Warmaster&apos;s Portion" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1017,7 +1020,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b49e-50e3-b319-8a11" type="max"/>
       </constraints>
       <rules>
-        <rule id="55a1-5d0b-5744-c20f" name="Warmaster&apos;s Petition" publicationId="975a-00f4-pubN89746" hidden="false">
+        <rule id="55a1-5d0b-5744-c20f" name="Warmaster&apos;s Portion" publicationId="975a-00f4-pubN89746" hidden="false">
           <description>Play in the Strategy phase of the first round. During the Movement and Combat phases this round, your Titans can re-roll 1s to hit.</description>
         </rule>
       </rules>
@@ -1528,7 +1531,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e7d9-c9e1-cfaf-1c18" name="Sacraficial Lock-on" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="e7d9-c9e1-cfaf-1c18" name="Sacrificial Lock-On" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1540,7 +1543,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b19-b094-8191-ae36" type="max"/>
       </constraints>
       <rules>
-        <rule id="54a4-548f-531d-b55d" name="Sacraficial Lock-on" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
+        <rule id="54a4-548f-531d-b55d" name="Sacrificial Lock-On" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
           <description>Play this at the start of any Combat phase. Place the 5&quot; Blast marker so that the central hole is entirely over a friendly model’s base. Any unit touched by the marker suffers D3 Strength 10 hits, or 2D3 Strength 10 hits if the central hole of the Blast marker is entirely over its base. This attack does not ignore void shields, even if the friendly model the marker is centred over is within 2&quot; of a Titan with active shields.</description>
         </rule>
       </rules>
@@ -1984,9 +1987,9 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2bd2-e1b7-69b5-b739" name="Quake Shells" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2bd2-e1b7-69b5-b739" name="Quake Shells" publicationId="975a-00f4-pubN89746" page="79" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
-        <rule id="e7ea-a719-fe23-3fb8" name="Quake Shells" hidden="false">
+        <rule id="e7ea-a719-fe23-3fb8" name="Quake Shells" publicationId="975a-00f4-pubN89746" page="79" hidden="false">
           <description>Every Strat phase. place 5&quot; marker and scatter d10. touched take d3S6 hits or d6 under hole. Unit then scatters d6&quot;, this may cause a collision.
                     </description>
         </rule>
@@ -7407,7 +7410,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2992-c2ab-d138-890d" name="=Astrorum= Bounty of Mars" publicationId="975a-00f4-pubN87630" page="18" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="2992-c2ab-d138-890d" name="=Astorum= Bounty of Mars" publicationId="975a-00f4-pubN87630" page="18" hidden="false" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf93-928a-ede0-8624" type="max"/>
       </constraints>
@@ -8369,7 +8372,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1260-8d1f-16f7-75ad" name="=Astrorum= Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="1260-8d1f-16f7-75ad" name="=Astorum= Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c8-2b67-3fdb-ac96" type="max"/>
       </constraints>
@@ -8380,8 +8383,9 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="bdfe-1cd2-460a-7f3c" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="bdfe-1cd2-460a-7f3c" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="92b1-64b6-4adc-cb84" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+        <categoryLink id="4d3c-9d2b-4b60-b685" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -10108,6 +10112,7 @@
             <entryLink id="5467-d0bf-0128-5742" name="Legio Laniaskara (Impalers)" hidden="false" collective="false" import="false" targetId="8d2d-07be-eb8c-6cce" type="selectionEntry"/>
             <entryLink id="71c1-8633-c2e6-9666" name="Legio Tritonis (Dark Tide)" hidden="false" collective="false" import="false" targetId="dddd-cc44-e662-51a6" type="selectionEntry"/>
             <entryLink id="8d87-8772-b11d-8d92" name="Legio Venator (Iron Spiders) " hidden="false" collective="false" import="false" targetId="2acb-2c7d-5ba6-77ff" type="selectionEntry"/>
+            <entryLink id="9f69-c40f-4381-11aa" name="Legio Honorum (Deathbolts)" hidden="false" collective="false" import="true" targetId="158f-4cf2-be7e-6c75" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -10795,6 +10800,11 @@
           </constraints>
         </entryLink>
         <entryLink id="8d8c-9755-8e12-171b" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="dc65-2c47-a746-00e1" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="d5d2-eebe-8913-d09d" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
@@ -11527,6 +11537,11 @@
           </constraints>
         </entryLink>
         <entryLink id="4994-4e39-e7fe-57d5" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="17e5-7a1d-0467-27c1" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="ca6e-73da-5c0f-e2e3" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="385.0"/>
@@ -12130,6 +12145,11 @@
           </constraints>
         </entryLink>
         <entryLink id="fcd2-9d09-2af7-36de" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="34b6-b972-e7b1-1fb8" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="89bc-e4ca-5d75-4e54" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="180.0"/>
@@ -13061,450 +13081,6 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="375f-b70b-7462-5d29" name="Legio Specific Strategems" hidden="false" collective="false" import="false" type="upgrade">
-      <categoryLinks>
-        <categoryLink id="ea9b-4391-f398-d3ba" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="1784-4ad0-1919-d5c0" name="Bounty of Mars" publicationId="975a-00f4-pubN87630" page="19" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="06c2-f93e-7bf5-9fd5" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="133f-f443-cb1e-287e" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a96-3b53-96b3-9ba7" type="min"/>
-          </constraints>
-          <rules>
-            <rule id="48be-6077-226d-c773" name="Bounty of Mars" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Astorum player.
-                                Play this stratagem at the beginning of the Damage Control phase of any round.  Choose one type of critcally damaged system or disabled weapon, i.e., Head, Body, Weapon, etc  For the duration of this Damage Control phase, the dice score required to repair this system is reduced by 1, i.e., if the dice result of a 5 or 6 is normally requires then for this phase, the player can use a dice result of a 4,5, or 6.
-                            </description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e466-20df-b265-7ad2" name="Machine Defiance" page="" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="06c2-f93e-7bf5-9fd5" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4cc-bf98-7efa-c890" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b7a-7785-dd74-789f" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="6f4e-529b-b1bc-f31c" name="Machine Defiance" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
-              <description>This Stratagem can be purchased by an Legio Astorum player.
-                                Play this Stratagem when a Titan&apos;s void shields collapse.  Immediatly roll a number of D6 equal to the Titan&apos;s Servator Clades characteristic.  For each roll of a 5 or 6 restore the Titan&apos;s Void Shield level by 1.  Note, this is not a Repair roll and does not benifit from any effects which influence or modify Repair rolls.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="120b-ea0c-47a7-3132" name="Combat Drop" page="" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9262-f051-0b82-928d" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4314-db40-41c9-dac9" type="min"/>
-          </constraints>
-          <rules>
-            <rule id="a1ec-918e-4b64-0160" name="Combat Drop" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
-              <description>When a player chooses this Stratagem, they must secretly write down the name of one of their Titans which has a Scale of 6 or lower.  Play this Stratagem at the start of deployment to set that unit to one side and state that it is being held in orbit (it is not deployed with the rest of the battlegroup).  Declare (and write down) a round between rounds 2-4 - this is the round in which its dropshop is aiming to deploy the Titan to the battlefield
-
-                                At the begining of the Movement phase of the chosen rouind, roll a D10.  If the result is lower than the Titans Scale, it arrives Otherwise the Titan is delayed and will arrive at the start of the following Movement phase.
-
-                                When the Titan arrives, place it anywhere on the battlefield that is not withing 1&quot; of another model or terrain feature, then scatter it D6&quot;  Once it has been scattered, roll a D3 (typo in book, should say D6), on a 1-2, it makes a 45-degree turn to the left.  On a 3-4, it stays where it is, and on a 5-6 it makes a 45-degree turn to the right.  If the Titan scatters or turns into any terrain, it stops before moving into it and then suffers D6 Strength 9 hits.
-
-                                A Titan that arrives from orbit cannot be activated in any of the phases of the current round, as it is deploying from its dropship.  It can, however, be targed by attacks as normal.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="cdfa-6187-38dc-0319" name="Blessing of the Emperor" page="" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b17-f14f-4709-e96c" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b39d-d4a3-cdbb-9f82" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aefc-54d0-b79f-52e2" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="e9f1-61cd-16bf-f838" name="Blessing of the Emperor" publicationId="975a-00f4-pubN87630" page="24" hidden="false">
-              <description>This Stratagem can be purchased by an Legio Defensor player.
-                                Reveal this Stratagem when a hit would result in one of your Titans rolling on the Catastrphic Damage table.  The his is ignored and this Stratagem has no further effect.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6a90-5f45-4eef-04ff" name="A Day of Retribution" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b17-f14f-4709-e96c" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f223-20f8-7db4-45be" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e729-3153-c9e6-a159" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="8a91-33d7-852b-b2ad" name="A Day of Retribution" publicationId="975a-00f4-pubN87630" page="24" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Defensor player.
-                                Play this Stratagem in the Strategy phase of the first round.
-                                Choose one of your opponent&apos;s Titans.  Immediatly conduct a round of shooting against the Titan with one of your own Titans weapons, counting the weapon as having double its normal range.
-                                Note that this does not increase the weapons Short Range.  THen advance your titan&apos;s Plasma Reactor Status track three places.  Once the effects of the attack have been worked out, begin the first game round.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8495-ff67-56d5-e918" name="Impetuous Machine Spirit" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cfcc-e5c0-bb0b-db6f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4737-c9b2-e857-101e" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="299b-ffd9-1a4d-4000" type="min"/>
-          </constraints>
-          <rules>
-            <rule id="250b-cff6-a194-1f00" name="Impetuous Machine Spirit" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Astus player.
-                                Reveal this Stratagem when a Firebrands Titan would be required to make a roll on the Awakened Machine Spirit table (see page 44 of the Adeptus Titanicus rulebook).  Rather than rolling, the Firebrands player may instead choose to autmatically apply the Impetuous result, rolling d6+2 rather than D6 to determine the distance moved.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="4.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="82be-13d1-5446-584a" name="Maniple of One" page="" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cfcc-e5c0-bb0b-db6f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a619-8b61-29f1-801c" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a37-d6e4-9b57-9aa2" type="min"/>
-          </constraints>
-          <rules>
-            <rule id="cf51-7e3e-bd98-e3b9" name="Maniple of One" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
-              <description>This Stratagem can be purchased by an Legio Atarus player.
-                                The Firebrands player may reveal this stratagem at the beginnin of any round.  Fo rht eduration of that round, one Titan in their froce may gain the benifits of any Maniple trait normally available to the Firebrands.  Note that while thie Stratagem is in effect, the chosen Titan loses any other Maniple trait it might have and does not count as being part of any other maniple</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0642-68ed-dde8-57e1" name="Fog of War" publicationId="975a-00f4-pubN87630" page="35" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40e0-e003-6c1e-501d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d502-fb31-4ba2-b2de" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="1be7-6882-9f6e-79ed" name="Fog of War" publicationId="975a-00f4-pubN87630" page="35" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Solaria player.
-                                Play this Stratagem in the Strategy phase of the first round.
-                                The Imperial Hunters player may redeploy a Warhound Titan for every Titan with a Scale of 7 or greater in their froce.  These redeployed units can be placed anywhere that they would normally be allowed to deploy by the mission being played.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4239-0c38-823a-ae67" name="March of the Dead" page="" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f88f-e42d-38f7-bfa7" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac4c-3ce6-605b-34bd" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fe5-2989-4372-a78e" type="min"/>
-          </constraints>
-          <rules>
-            <rule id="0bf7-ccba-80dc-e0d1" name="March of the Dead" publicationId="975a-00f4-pubN87630" page="40" hidden="false">
-              <description>This Stratagem can be purchased by an Legio Mortis player.
-                                Play this Stratagem in the Strategy phase of the first round.  The Legio Mortis play may immediatly move each of thei Titans just as if it was the Movement phase.  This special movement cannot be boosted.  If the player uses this Stratagem, their opponent automatically becomes the First Player for the remainder of the first game round.
-                            </description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c610-8076-2dd0-8ced" name="Scorched Earth" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7598-3754-ce47-8181" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fa9-3dd4-945e-dd8b" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="1cd9-3d4e-f9bb-d419" name="Scorched Earth" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Krytos player.
-                                Reveal this Stratagem in any Strategy phase.
-                                For the duration of that round, when targeting terrain, Titans of the Legio Krytos add 2 to the Strength of their weapons
-
-                            </description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="293d-f089-accb-a4aa" name="Iron Endures" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dde4-0d06-0570-c906" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2110-d115-6ecc-5a90" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="167e-fda1-27c5-06fe" name="Iron Endures" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Krytos player.
-                                Reveal this Stratagem in any Strategy phase.
-                                For the duration of that round, all God Breakers TItans reduce the Strength of hits suffered as a result of Dangerous terrain by 2 (to a minimum of 0)
-
-
-                            </description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="81d8-5420-7921-d127" name="Offensive Surge" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72ba-4008-bf4b-fe3b" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e70-d94f-cfcf-40c6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bbf-19f8-ec92-80ba" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="685c-2d4a-79f7-a250" name="Offensive Surge" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Fureans player.
-                                Reveal this Stratagem in any Combat  phase.
-                                The Tiger Eyes player cay choose one of their deployed Tiger Eyes maniples for this Combat phase, each TItan in the chosen maniple may attack twice with one of its weapons but must increase its Reactor level by 1, in addition to any other effects.
-
-                            </description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="cbdb-8c65-9d07-03b1" name="No Pity for the Vanquished" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="561a-cb05-d4b5-94fd" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99ed-19a0-8059-eba6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e782-1bc6-ef05-ae5a" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="a702-1d3f-5d8c-4231" name="No Pity for the Vanquished" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Vulpa player
-                                Play this Stratagem when an enemy Titan is destroyed (i.e. makes a roll on the Catastrophic Damage table).  The Titan who inflicted the killing attack may immediatly make another attack with the same weapon system against a fresh target within 12&quot; of the destroyed Titan.  For all intents and purposes, this is  anew attakc requiring a dice roll, and increase to the Titan&apos;s reactor level, etc</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9409-e584-f50c-3b9c" name="Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f0a4-f7dc-25cf-21c8" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4419-211b-9586-2085" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e21-20f6-9a78-d3fd" type="min"/>
-          </constraints>
-          <rules>
-            <rule id="2211-e2e5-c37d-a86d" name="Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Interfector player.Reveal this Stratagem durring the Strate3gy phase.  Any enemy Titan or Knight Banner within 12&quot; of a Legio Interfector Titan may not be issued Orders this round.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e313-da99-15ee-1305" name="Tormented Machine Spirit" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f0a4-f7dc-25cf-21c8" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ec5-a589-195f-0589" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b33f-e305-c668-7c57" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="6749-e8ff-b52e-c7df" name="Tormented Machine Spirit" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Interfector player.
-                                Reveal this Stratagem when a Legion Interfector Titan would roll on the Awaken Machine Spirit table (see page 44 of the Adeptus Titanicus rulebook).  Instead of rolling on the table, make an attack weith each of the Titan&apos;s weapons.  These attacks must be made against the closest model, wheather it is friend or foe.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="93ab-95c9-2957-dea3" name="Symbiotic Command" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4225-27f8-9c8b-e56e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39f9-3b67-9f67-3754" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="955e-dccf-e7aa-5a78" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="6177-d8d8-e3c8-8bf1" name="Symbiotic Command" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Vulcanum player.
-                                Play this Stratagem in the Strategy phase  after successfully issuing an Order to a Legio Vulcanum Titan.  The player may, if they choose, immediatly issue this same Order to any or all of the Legio Vulcanum Titans in the battlegroup without the need to make further Command checks.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="38d4-3483-c105-d1ef" name="For the Red Planet" publicationId="975a-00f4-pubN89746" page="20" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a10-2d7a-85a3-6d44" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86dc-7abe-7838-271e" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="e2bc-90ed-fe0d-52b3" name="For the Red Planet" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Fortus player.
-                                The Dauntless player may reveal this Stratagem when activating a Titan.  Until the beginning of the following game round, the Titan ignores the damage effect of Critical Damage to its Head, Body, or Legs, as chosen by the player when the Stratagem is revealed.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="68bd-d77e-acbe-4bd0" name="Red Skies" publicationId="975a-00f4-pubN89746" page="20" hidden="true" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a016-8da9-9471-7fa1" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6618-0888-ae88-3e31" type="min"/>
-          </constraints>
-          <rules>
-            <rule id="fa6d-7c14-2f9a-3bb3" name="Red Skies" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
-              <description>This Stratagem can be purchased by any Legio Fortidus player.
-                                The Dauntless player may reveal this Stratagem when one of their Titans suffers a Magazine Detonation or Catastrophic Meltdown result on the Catastrophic Damage table (see page 36 of the Adeptus Titanicus rulebook).  When resolving the Catastrophic Damage effects, add 5 to the Titans Scale.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="d2b6-f342-ccdb-b9cc" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" type="model">
       <profiles>
         <profile id="c503-4384-cbe7-b407" name="Warbringer Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
@@ -14236,6 +13812,11 @@
           </constraints>
         </entryLink>
         <entryLink id="fc7a-b856-2fe3-566f" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="014f-fb41-12dd-1860" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="d8ba-fd36-d3a1-e997" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="325.0"/>
@@ -16188,6 +15769,226 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="158f-4cf2-be7e-6c75" name="Legio Honorum (Deathbolts)" publicationId="2988-f24d-39ef-352e" page="19" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="b0b5-c1cb-b1d6-bc4b" name="Resolute and Unbowed" publicationId="2988-f24d-39ef-352e" page="29" hidden="false">
+          <description>Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Movement phase of any round decreases the bonus to an attacker’s Armour roll as the result of damage already inflicted on a location by 1, as indicated by the Titan’s Command Terminal (see the Adeptus Titanicus rulebook), so long as the attack originates from within the Titan’s Front Arc.stood by the core tenets of the Collegia Titanica and the Great Crusade, believing it was forever their duty to march forth and bring death to the enemies of the Imperium and the Omnissiah.
+Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Movement phase of any round decreases the bonus to an attacker’s Armour roll as the result of damage already inflicted on a location by 1, as indicated by the Titan’s Command Terminal (see the Adeptus Titanicus rulebook), so long as the attack originates from within the Titan’s Front Arc.</description>
+        </rule>
+        <rule id="c2e4-7017-3418-6427" name="Legio Honorum (Deathbolts)" hidden="false">
+          <description>The core of Legio Honorum favoured the traditional tactics of the Collegia Titanica, adapting them to the needs of a campaign while disregarding the more elaborate methods of other Legio. A Legio Honorum maniple may substitute any mandatory component from an Axiom, Myrmidon or Fortis maniple with a Reaver or Warlord Titan, so long as that new Titan is of equal to or greater Scale than the Titan it is replacing. In addition, a Legio Honorum Titan may replace a single optional component Reaver or Warlord Titan from these maniples with a Warbringer Nemesis Titan. Each maniple can only include a single Warbringer Nemesis in this way. Legio Specific </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2f52-9550-b94a-14d8" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="055a-d188-f052-c5c1" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a7d-3ead-16e2-1979" name="=Honorum= Basilus Throne" publicationId="2988-f24d-39ef-352e" page="33" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="1f21-002f-5510-587f" value="0.0">
+          <conditions>
+            <condition field="selections" scope="6982-2d18-55cb-61e5" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd4a-3c69-5fc8-0773" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f21-002f-5510-587f" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5299-608c-7856-017d" name="Basilius Throne" publicationId="ce02-a882-fdad-dd36" page="29" hidden="false">
+          <description>A Legio Honorum Princeps Seniores’ Titan may take a Basilius Throne for +25 points. A Titan with this upgrade may be issued Orders without the need to make a Command check. In addition, any Legio Honorum Titan adds 1 to the result of any Command check made when being issued an Order previously issued to a Princeps Seniores’ Titan with this upgrade within the same maniple.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2104-df3a-cefb-d060" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+        <categoryLink id="4608-bf7a-a1fa-df32" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c80f-d884-325b-745c" name="=Honorum= Crusading Spirit" publicationId="2988-f24d-39ef-352e" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="20cd-a50d-46c3-6dea" name="=Honorum= Crusading Spirit" hidden="false">
+          <description>Since its inception, Legio Honorum has strode ever forwards, preferring death over failure. This Stratagem can be purchased by any Legio Honorum player. Play this Stratagem during any Strategy phase. For the remainder of the phase, friendly Legio Honorum Titans do not suffer penalties to Command checks. In addition, a single Legio Honorum Titan may re-roll a failed Command check made when issuing Orders.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e483-6742-e193-c4b9" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2dc5-e9bf-6f6e-39a5" name="Princeps Seniores" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52f0-7a81-15a5-b780" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="981b-2cfa-ed36-ae90" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2337-45e1-87e4-f282" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="69df-cbc9-f278-290d" name="Princeps Seniores" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+          <description>On the field of battle, each maniple is commanded by a Princeps Seniores - a Princeps who has proven themselves beyond reproach, and worthy of such a vaunted position.
+After assembling their battlegroup, the player should pick one Titan in their maniple to be commanded by their Princeps Seniores - note this on the roster. </description>
+        </rule>
+        <rule id="90ad-101a-ba5f-d1e0" name="Orders (Princeps Seniores)" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+          <description>Add 2 to the result of any Command checks made when issuing an order tQ\o the Princeps Seniores&apos; Titan.
+</description>
+        </rule>
+        <rule id="8d63-35e0-8ff8-55bc" name="Personal Traits" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+          <description>Each Princeps Seniores has a Personal trait, which is in effect for as long as they are on the battlefield. Immediately before deploying their force, each player should roll a D6 on the table to the right to see what their trait is. If both players agree then they can each pick a Personal Trait instead of rolling a D6. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d7fc-5f6b-234f-fd37" name="Princeps Senioris" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4daf-274c-716e-9840" name="Personal Trait" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62af-df01-0b69-ae6d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62cb-c05a-e6b0-fbb8" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5a52-30bf-dd3c-64b0" name="1 Dominant Strategist" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ea8-cf1c-1cb7-6759" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="9e3b-ebb6-a2af-9fe5" name="Dominant Strategist" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>Once during the battle, at the start of any phase, the controlling player can use this trait to take the Opus Titanica, becoming the First Player. If they do this at the start of the Strategy phase, do not roll off to see who takes the marker.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4eab-e730-5bf7-162d" name="2 Iron-clad Tyrant" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b9e-5fa8-3a2f-1d87" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="15f3-61c5-a121-4cd8" name="Iron-clad Tyrant" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>Once per turn, when issuing orders to a Titan in the Princeps Seniores&apos; maniple, the Command check
+can be re-rolled.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0d4f-05bd-c1e9-983f" name="3 Swift Killer" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3d0-b865-3749-85b4" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="ff65-2f74-f861-01db" name="Swift Killer" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>Once per round, before the Princeps Seniores&apos; Titan makes an anack, it can turn up to 45°. Subtract I from the result of any Hit rolls it makes for the rest of the phase.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5c8a-1404-b000-1041" name="4 Devoted Servant of the Machine" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b172-2ab8-90c1-95ee" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="25e6-a907-6fe5-5f01" name="Devoted Servant of the Machine" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>When making a Repair roll for the Princeps Seniores&apos; Titan, the controlling player can add I to the
+result of a single D6.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3b90-2656-c0ce-e221" name="5 Favoured by Fortune" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b047-93c9-48e1-490f" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="143f-f4d5-1b46-f36c" name="Favoured by Fortune" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>Once per round, the controlling player can re-roll a single D6 from a Hit roll or Save roll for the Princeps Seniores&apos; Titan.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e9e1-d5d0-aa86-8b81" name="6 Will of Iron" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ac9-d26b-340d-d230" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="3fce-bbb1-6e4b-bbe4" name="Will of Iron" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
+                  <description>The first time a Catastrophic Damage roll is made for the Princeps Seniores&apos; Titan, roll a Dro. If the score equals or beats the result of the Catastrophic Damage roll, it is ignored and has no effect. </description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="18df-cf47-fde1-6f3d" name="=Honorum= Basilus Throne" hidden="false" collective="false" import="true" targetId="8a7d-3ead-16e2-1979" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a77a-601b-06c0-9ccc" name="=Interfector= Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="869c-9ea5-feb0-8426" name="=Interfector= Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
+          <description>Reveal this Stratagem during the Strategy phase. Any enemy Titan or Knight Banner within 12&quot; of a Legio Interfector Titan may not
+be issued Orders this round.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a926-7329-163c-d9a6" name="Dark Pledge" publicationId="975a-00f4-pubN87630" page="79" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="a1aa-a8e6-7f3e-71bb" name="Dark Pledge" publicationId="975a-00f4-pubN87630" page="79" hidden="false">
+          <description>This Stratagem can be purchased by any Traitor player. 
+Play this Stratagem in the Strategy phase of the first round. The player chooses an enemy Titan or number of Titans with a Scale of 10 or more to mark for destruction. If, at the end of the battle,
+these marked Titans have been destroyed, the player scores 10 Victory points. If all or some of the marked Titans have not been
+destroyed by the end of the battle, the player loses 10 Victory points. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="57de-7508-271e-84bf" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="false">
@@ -16622,6 +16423,27 @@
           </constraints>
         </entryLink>
         <entryLink id="ecde-54c8-cd51-7c3b" name="=Osedax= Plasma Channels" hidden="false" collective="false" import="false" targetId="eb8b-95ca-bf92-b3f9" type="selectionEntry"/>
+        <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="false" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
+        <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="false" collective="false" import="false" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="44ba-d4da-ccb1-640e" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
+            <categoryLink id="1816-e9d6-db43-44ad" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="false" collective="false" import="false" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry"/>
+        <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders " hidden="false" collective="false" import="false" targetId="7c51-55b9-4942-4061" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="f865-1276-736a-80df" name="=Laniaskara= Mordantised Ceramite" hidden="false" collective="false" import="false" targetId="170d-3f13-f670-3cc6" type="selectionEntry"/>
+        <entryLink id="621c-b697-04b8-7517" name="=Tritonis= Radiative Warheads" hidden="false" collective="false" import="false" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry"/>
+        <entryLink id="0332-6f07-e3d8-ecfd" name="=Tritonis= Stygian Veil" hidden="false" collective="false" import="false" targetId="ad64-ba43-1e95-87ca" type="selectionEntry"/>
+        <entryLink id="e0d5-c856-00c2-92c4" name="=Venator= Blind Launchers" hidden="false" collective="false" import="false" targetId="1582-9f6b-0e82-c228" type="selectionEntry"/>
+        <entryLink id="f902-8a56-8c96-4c3c" name="=Astraman= Maglock Shells (12 Dice)" hidden="false" collective="false" import="false" targetId="a52a-5348-8d0b-fe2d" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="0be1-9d7b-05c5-827a" name="Body Manifold Critical Damage (12+)" hidden="false" collective="false" import="false">
