@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -639,7 +639,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4225-27f8-9c8b-e56e" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -705,6 +705,8 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="d960-4189-8cb1-9d61" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="098b-2405-4339-e65b" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+        <categoryLink id="bcdb-aac0-0cc2-aac6" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0156-e161-1f34-4cab" name="=Astraman= Strength and Resolve" hidden="true" collective="false" import="false" targetId="8f31-0e84-26f0-f2af" type="selectionEntry">
@@ -717,13 +719,15 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="ee58-c888-891f-64de" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="c42b-9432-6577-10cd" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+        <categoryLink id="d817-81f8-4d56-621d" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dde0-a580-6658-e1cc" name="=Damicium= Endurance Beyond Limit" hidden="true" collective="false" import="false" targetId="43ed-3dab-833c-e085" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cfcc-e5c0-bb0b-db6f" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae2e-5751-1800-545a" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -818,9 +822,10 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="6838-a0ed-73fa-908b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="31cd-1273-0a50-bd48" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="23fe-5ed6-6972-4f34" name="=Astorum= Machine Defiance" hidden="true" collective="false" import="true" targetId="1260-8d1f-16f7-75ad" type="selectionEntry">
+    <entryLink id="23fe-5ed6-6972-4f34" name="=Astorum= Machine Defiance" hidden="true" collective="false" import="false" targetId="1260-8d1f-16f7-75ad" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -830,6 +835,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="8790-133a-62e7-e793" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="432f-e748-1b98-2084" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bb74-73c5-dd7f-4df3" name="=Magna= Battle Fervour" hidden="true" collective="false" import="true" targetId="cd33-541d-dc04-9ee4" type="selectionEntry">
@@ -870,6 +876,20 @@
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
       </costs>
+    </entryLink>
+    <entryLink id="926c-2aa5-3b18-f873" name="=Tritonis= Stygian Veil" hidden="true" collective="false" import="false" targetId="ad64-ba43-1e95-87ca" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ccee-936e-87d6-bf29" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ce07-431f-69fa-5dd6" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
+        <categoryLink id="0500-1ee4-6dd0-8362" name="LegioTritonis" hidden="false" targetId="ccee-936e-87d6-bf29" primary="false"/>
+        <categoryLink id="d316-0996-34ef-a634" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
 </catalogue>

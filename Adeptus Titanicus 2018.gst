@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="25" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="26" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -5891,7 +5891,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="02ce-a62d-4e4b-d7cc" name="Legio Fortidus (Daultless)" publicationId="975a-00f4-pubN89746" page="20" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="02ce-a62d-4e4b-d7cc" name="Legio Fortidus (Dauntless)" publicationId="975a-00f4-pubN89746" page="20" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="41a8-f791-55f3-5ade" name="Children of Mars" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
           <description>Legio Fortidus Titans never suffer penalties to thei Command checks and may ignore effects that force them to re-roll successful Command checks.  Knight Banners bonded to Legio Fortidus may re-roll Command checks to avoid becoming Shaken provided they are within line of sight of at least one Legio Fortidus Battle Titan.</description>
@@ -8002,6 +8002,7 @@
       <categoryLinks>
         <categoryLink id="f02a-37e1-1b7a-54ff" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
         <categoryLink id="bd40-2589-1f9d-e30a" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+        <categoryLink id="068e-b035-3674-0ce4" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -8017,6 +8018,7 @@
       <categoryLinks>
         <categoryLink id="160d-314e-4d7e-7258" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
         <categoryLink id="52c9-6fc2-a263-7166" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+        <categoryLink id="cbbc-6719-dae1-2e9d" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
@@ -8141,6 +8143,7 @@
       <categoryLinks>
         <categoryLink id="8b7c-ad51-e7d4-20d8" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
         <categoryLink id="076e-e445-f63a-8a03" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+        <categoryLink id="fe1e-8c6f-7c35-291f" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -8156,6 +8159,7 @@
       <categoryLinks>
         <categoryLink id="e383-6349-b3aa-6a9c" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
         <categoryLink id="c156-4375-0c4d-2877" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
+        <categoryLink id="b7bc-35a2-25d2-fee6" name="LegioIgnatum" hidden="false" targetId="5f7b-2051-3935-7637" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -8176,7 +8180,8 @@
       </rules>
       <categoryLinks>
         <categoryLink id="6a9f-abfb-e397-7ffb" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="57f1-8fd7-14fe-c848" name="LegioVenator" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+        <categoryLink id="29a3-7818-7f79-e4f0" name="LegioVenator" hidden="false" targetId="a768-815b-17bf-6136" primary="false"/>
+        <categoryLink id="125f-91dd-d582-a337" name="LegioVenator" hidden="false" targetId="43b6-60b3-8111-290c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -8195,6 +8200,7 @@
       <categoryLinks>
         <categoryLink id="44ed-5e7d-6f58-e3e1" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
         <categoryLink id="f1fa-3dd6-b7b2-95dc" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
+        <categoryLink id="cbd3-4c50-c547-8b66" name="LegioLaniaskara" hidden="false" targetId="4a24-73e7-556c-1bfd" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -8210,6 +8216,7 @@
       <categoryLinks>
         <categoryLink id="4462-7806-fa4d-b50b" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
         <categoryLink id="ad52-2e3b-c08b-3a53" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
+        <categoryLink id="4b85-83d5-04be-9e02" name="LegioKulisaetai" hidden="false" targetId="6740-1e8a-8e25-88fd" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -8228,6 +8235,7 @@
       <categoryLinks>
         <categoryLink id="7618-c1eb-3eef-eb24" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
         <categoryLink id="5788-689c-bd4f-f1dd" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
+        <categoryLink id="f276-b54e-4e72-99b2" name="LegioTritonis" hidden="false" targetId="ccee-936e-87d6-bf29" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -8246,6 +8254,7 @@
       <categoryLinks>
         <categoryLink id="5992-f48d-e889-e56f" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
         <categoryLink id="22e5-bc97-c768-b417" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
+        <categoryLink id="b395-68a0-416e-ba64" name="LegioDamicium" hidden="false" targetId="ae2e-5751-1800-545a" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -8276,6 +8285,7 @@
       <categoryLinks>
         <categoryLink id="5832-b2dc-b9cb-38ad" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
         <categoryLink id="9f60-1051-b719-c89e" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+        <categoryLink id="4292-b5e6-4fff-f5b0" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
@@ -8366,6 +8376,7 @@
       <categoryLinks>
         <categoryLink id="79b7-fd71-d457-ffe0" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
         <categoryLink id="1989-e08d-dfd5-793e" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+        <categoryLink id="5e59-ddc7-762f-dd03" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
@@ -10003,47 +10014,47 @@
                 <categoryLink id="9ab2-6533-23c4-dde6" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="0bee-465c-7167-a46a" name="Legio Atatus (Firebrands)" hidden="false" collective="false" import="false" targetId="bf14-af1e-5d72-7c8b" type="selectionEntry">
+            <entryLink id="0bee-465c-7167-a46a" name="Legio Atarus (Firebrands)" hidden="false" collective="false" import="false" targetId="bf14-af1e-5d72-7c8b" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="4356-bdee-bb43-2d3b" name="LegioAtarus" hidden="false" targetId="cfcc-e5c0-bb0b-db6f" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="e14a-e696-1044-eb8c" name="Legio Defensor" hidden="false" collective="false" import="false" targetId="63e1-fca8-5023-12d6" type="selectionEntry">
+            <entryLink id="e14a-e696-1044-eb8c" name="Legio Defensor (Nova Guard)" hidden="false" collective="false" import="false" targetId="63e1-fca8-5023-12d6" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="5ef2-6100-d25d-ad8d" name="LegioDefensor" hidden="false" targetId="7b17-f14f-4709-e96c" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="7a87-0de0-02e5-b83c" name="Legio Fureans" hidden="false" collective="false" import="false" targetId="1a92-f760-bf0e-ce26" type="selectionEntry">
+            <entryLink id="7a87-0de0-02e5-b83c" name="Legio Fureans (Tiger Eyes)" hidden="false" collective="false" import="false" targetId="1a92-f760-bf0e-ce26" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="bec6-93d4-afad-fbdc" name="LegioFureans" hidden="false" targetId="72ba-4008-bf4b-fe3b" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="4026-a032-96e6-b7e4" name="Legio Gryphonicus" hidden="false" collective="false" import="false" targetId="0986-9b84-b734-e9c8" type="selectionEntry">
+            <entryLink id="4026-a032-96e6-b7e4" name="Legio Gryphonicus (War Griffons)" hidden="false" collective="false" import="false" targetId="0986-9b84-b734-e9c8" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="5cc5-3a34-7b7a-417b" name="LegioGryphonicus" hidden="false" targetId="0796-178c-50ce-2d1f" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="51ab-885d-ea81-e623" name="Legio Krytos" hidden="false" collective="false" import="false" targetId="bffc-4266-a83d-cae6" type="selectionEntry">
+            <entryLink id="51ab-885d-ea81-e623" name="Legio Krytos (God Breakers)" hidden="false" collective="false" import="false" targetId="bffc-4266-a83d-cae6" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="6c38-7428-a4f7-2158" name="LegioKrytos" hidden="false" targetId="95e8-3d8e-a0ad-4ad3" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="85f9-7332-78ec-42d8" name="Legio Mortis" hidden="false" collective="false" import="false" targetId="1b13-8735-b4bf-0caf" type="selectionEntry">
+            <entryLink id="85f9-7332-78ec-42d8" name="Legio Mortis (Death&apos;s Heads)" hidden="false" collective="false" import="false" targetId="1b13-8735-b4bf-0caf" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="45ed-c74d-8395-b42a" name="LegioMortis" hidden="false" targetId="f88f-e42d-38f7-bfa7" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="d7e3-7a02-9f15-da8e" name="Legio Tempestus" hidden="false" collective="false" import="false" targetId="cbc6-216c-8a22-c1b4" type="selectionEntry">
+            <entryLink id="d7e3-7a02-9f15-da8e" name="Legio Tempestus (Storm Lords)" hidden="false" collective="false" import="false" targetId="cbc6-216c-8a22-c1b4" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="691d-b655-d68c-1227" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="8f64-8c3a-89f5-7945" name="Legio Vulpa" hidden="false" collective="false" import="false" targetId="7093-f8b3-b5f9-d38d" type="selectionEntry">
+            <entryLink id="8f64-8c3a-89f5-7945" name="Legio Vulpa (Death Stalkers)" hidden="false" collective="false" import="false" targetId="7093-f8b3-b5f9-d38d" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="a074-fb7c-f879-1333" name="LegioVulpa" hidden="false" targetId="561a-cb05-d4b5-94fd" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="b39f-da6f-35d0-6a14" name="Legio Solaria" hidden="false" collective="false" import="false" targetId="14a9-163a-83aa-7520" type="selectionEntry">
+            <entryLink id="b39f-da6f-35d0-6a14" name="Legio Solaria (Imperial Hunters)" hidden="false" collective="false" import="false" targetId="14a9-163a-83aa-7520" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="089c-8649-fba5-d798" name="LegioSolaria" hidden="false" targetId="56c0-1162-173d-b052" primary="false"/>
               </categoryLinks>
@@ -10053,41 +10064,49 @@
                 <categoryLink id="af11-fcf3-a8ff-2b7e" name="LegioCrucius" hidden="false" targetId="4501-ac6c-5b8c-1b03" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="15c9-cacc-6a3c-cfa9" name="Legio Fortidus" hidden="false" collective="false" import="false" targetId="02ce-a62d-4e4b-d7cc" type="selectionEntry">
+            <entryLink id="15c9-cacc-6a3c-cfa9" name="Legio Fortidus (Dauntless)" hidden="false" collective="false" import="false" targetId="02ce-a62d-4e4b-d7cc" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="c8a8-adfd-f9fb-aff4" name="LegioFortidus" hidden="false" targetId="8129-9843-a287-cd8e" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="c18c-9bdd-7bbc-a11c" name="Legio Vulcanum" hidden="false" collective="false" import="false" targetId="1d02-6c17-cd84-a92f" type="selectionEntry">
+            <entryLink id="c18c-9bdd-7bbc-a11c" name="Legio Vulcanum (Dark Fire/Lords of Ruin)" hidden="false" collective="false" import="false" targetId="1d02-6c17-cd84-a92f" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="0cf4-07de-f456-6c67" name="LegioVulcanum" hidden="false" targetId="4225-27f8-9c8b-e56e" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="5768-da55-af2e-71de" name="Legio Interfector" hidden="false" collective="false" import="false" targetId="f3d0-92f8-3bf7-4799" type="selectionEntry">
+            <entryLink id="5768-da55-af2e-71de" name="Legio Interfector (Murder Lords)" hidden="false" collective="false" import="false" targetId="f3d0-92f8-3bf7-4799" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="9c04-65c7-34d5-5330" name="LegioInterfector" hidden="false" targetId="f0a4-f7dc-25cf-21c8" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="8d70-4ddd-ff8f-a2b4" name="Legio Infernus (Fire Masters)" hidden="false" collective="false" import="false" targetId="bd79-8c5d-3949-d89d" type="selectionEntry"/>
-            <entryLink id="cbc6-e43d-5246-b446" name="Legio Lysanda (Sentinels of the Edge)" hidden="false" collective="false" import="false" targetId="f808-ec75-4a31-8a29" type="selectionEntry"/>
+            <entryLink id="8d70-4ddd-ff8f-a2b4" name="Legio Infernus (Fire Masters)" hidden="false" collective="false" import="false" targetId="bd79-8c5d-3949-d89d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="f38f-cbff-8748-8c24" name="LegioInfernus" hidden="false" targetId="99b7-5e2f-9ea4-bbdf" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="cbc6-e43d-5246-b446" name="Legio Lysanda (Sentinels of the Edge)" hidden="false" collective="false" import="false" targetId="f808-ec75-4a31-8a29" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="9aa6-bad5-6586-79aa" name="LegioLysanda" hidden="false" targetId="7ada-d471-345c-f8a4" primary="false"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink id="7b35-71ca-4d91-f370" name="Legio Mordaxis (Deathdealers)" hidden="false" collective="false" import="false" targetId="4e6f-c618-89f4-d690" type="selectionEntry">
               <categoryLinks>
-                <categoryLink id="ead4-dd4a-bc3d-e19b" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+                <categoryLink id="4c8c-e638-06e2-a6df" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
               </categoryLinks>
             </entryLink>
             <entryLink id="fb06-9772-21e6-d20d" name="Legio Oberon (Death Bolts II)" hidden="false" collective="false" import="false" targetId="dee5-885d-fc38-08ce" type="selectionEntry">
               <categoryLinks>
-                <categoryLink id="6f89-d2d9-7df0-ee05" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+                <categoryLink id="03da-ecef-7818-2f3f" name="LegioOberon" hidden="false" targetId="7dc9-a722-55be-5f42" primary="false"/>
               </categoryLinks>
             </entryLink>
             <entryLink id="6898-2e5d-de6d-6257" name="Legio Praesagius (True Messengers)" hidden="false" collective="false" import="false" targetId="e6da-1530-1bdd-276a" type="selectionEntry">
               <categoryLinks>
-                <categoryLink id="9698-bab2-1c91-8c1d" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+                <categoryLink id="898e-488d-de70-42bb" name="LegioPraesagius" hidden="false" targetId="4e62-72e2-a04f-9b86" primary="false"/>
               </categoryLinks>
             </entryLink>
             <entryLink id="fa1d-ffc7-fbe8-4235" name="Legio Audax (Ember Wolves)" hidden="false" collective="false" import="false" targetId="e9a0-229e-7cfb-4def" type="selectionEntry">
               <categoryLinks>
-                <categoryLink id="b238-b6cd-2242-3f59" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+                <categoryLink id="d1d8-389f-bb87-28fa" name="LegioAudax" hidden="false" targetId="4f76-34ac-3cf7-34c6" primary="false"/>
               </categoryLinks>
             </entryLink>
             <entryLink id="66c8-bfd3-3495-8a80" name="Legio Osedax (The Cockatrices)" hidden="false" collective="false" import="false" targetId="f2ca-fd65-b60e-4dca" type="selectionEntry">
@@ -10105,14 +10124,52 @@
                 <categoryLink id="61f9-4e72-3af2-cf36" name="LegioVulturum" hidden="false" targetId="5a98-05b4-ed38-bbc4" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="3d47-581b-de11-2989" name="Legio Astraman (Morning Stars)" hidden="false" collective="false" import="false" targetId="dd39-c2b7-a515-da8a" type="selectionEntry"/>
-            <entryLink id="d513-ddb4-c33e-70aa" name="Legio Damicium (Unbroken Lords) " hidden="false" collective="false" import="false" targetId="0fb5-613c-cbb2-90df" type="selectionEntry"/>
-            <entryLink id="38a2-81f9-a087-d692" name="Legio Ignatum (Fire Wasps)" hidden="false" collective="false" import="false" targetId="4a11-763b-6a82-bc29" type="selectionEntry"/>
-            <entryLink id="d2b7-bf8f-f1a7-6111" name="Legio Kulisaetai (Gatekeepers)" hidden="false" collective="false" import="false" targetId="621d-d3d2-41c9-5052" type="selectionEntry"/>
-            <entryLink id="5467-d0bf-0128-5742" name="Legio Laniaskara (Impalers)" hidden="false" collective="false" import="false" targetId="8d2d-07be-eb8c-6cce" type="selectionEntry"/>
-            <entryLink id="71c1-8633-c2e6-9666" name="Legio Tritonis (Dark Tide)" hidden="false" collective="false" import="false" targetId="dddd-cc44-e662-51a6" type="selectionEntry"/>
-            <entryLink id="8d87-8772-b11d-8d92" name="Legio Venator (Iron Spiders) " hidden="false" collective="false" import="false" targetId="2acb-2c7d-5ba6-77ff" type="selectionEntry"/>
-            <entryLink id="9f69-c40f-4381-11aa" name="Legio Honorum (Deathbolts)" hidden="false" collective="false" import="true" targetId="158f-4cf2-be7e-6c75" type="selectionEntry"/>
+            <entryLink id="3d47-581b-de11-2989" name="Legio Astraman (Morning Stars)" hidden="false" collective="false" import="false" targetId="dd39-c2b7-a515-da8a" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="3494-08d6-98f4-adf7" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
+                <categoryLink id="da9a-36bb-3fb5-5c4e" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="d513-ddb4-c33e-70aa" name="Legio Damicium (Unbroken Lords) " hidden="false" collective="false" import="false" targetId="0fb5-613c-cbb2-90df" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="b309-b758-a59a-d51e" name="LegioDamicium" hidden="false" targetId="ae2e-5751-1800-545a" primary="false"/>
+                <categoryLink id="8153-651e-1686-5beb" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="38a2-81f9-a087-d692" name="Legio Ignatum (Fire Wasps)" hidden="false" collective="false" import="false" targetId="4a11-763b-6a82-bc29" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="588c-8d99-ff83-f1a3" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
+                <categoryLink id="6a73-1068-adb6-9fdb" name="LegioIgnatum" hidden="false" targetId="5f7b-2051-3935-7637" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="d2b7-bf8f-f1a7-6111" name="Legio Kulisaetai (Gatekeepers)" hidden="false" collective="false" import="false" targetId="621d-d3d2-41c9-5052" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="d013-b218-4465-1480" name="LegioKulisaetai" hidden="false" targetId="6740-1e8a-8e25-88fd" primary="false"/>
+                <categoryLink id="f240-1278-539b-02e5" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="5467-d0bf-0128-5742" name="Legio Laniaskara (Impalers)" hidden="false" collective="false" import="false" targetId="8d2d-07be-eb8c-6cce" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="ae39-660c-f063-ddb5" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
+                <categoryLink id="6b91-874e-98a3-3397" name="LegioLaniaskara" hidden="false" targetId="4a24-73e7-556c-1bfd" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="71c1-8633-c2e6-9666" name="Legio Tritonis (Dark Tide)" hidden="false" collective="false" import="false" targetId="dddd-cc44-e662-51a6" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="a5fc-e01d-901c-8b2f" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
+                <categoryLink id="5d27-818d-1735-87a5" name="LegioTritonis" hidden="false" targetId="ccee-936e-87d6-bf29" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="8d87-8772-b11d-8d92" name="Legio Venator (Iron Spiders) " hidden="false" collective="false" import="false" targetId="2acb-2c7d-5ba6-77ff" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="d816-d35a-f4cb-9299" name="LegioVenator" hidden="false" targetId="43b6-60b3-8111-290c" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="9f69-c40f-4381-11aa" name="Legio Honorum (Deathbolts)" hidden="false" collective="false" import="true" targetId="158f-4cf2-be7e-6c75" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="a1cf-d147-7ab9-fa95" name="LegioHonorum" hidden="false" targetId="cd4a-3c69-5fc8-0773" primary="false"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -15781,7 +15838,7 @@ Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Move
       </rules>
       <categoryLinks>
         <categoryLink id="2f52-9550-b94a-14d8" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="055a-d188-f052-c5c1" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+        <categoryLink id="e576-8043-3168-241b" name="LegioHonorum" hidden="false" targetId="cd4a-3c69-5fc8-0773" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
