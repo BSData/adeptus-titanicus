@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="26" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="27" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -17230,6 +17230,487 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="bd11-7a98-f2d6-7754" name="Legio Praesagius" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6da-1530-1bdd-276a" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6da-1530-1bdd-276a" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02b8-6f8f-a6e1-a8ac" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="d7ad-a4bb-6719-b9a7" name="2 Natural Commander" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="3166-c997-3cad-d20d" name="2 Natural Commander" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
+                      <description>If the Princeps’ Titan rolls a 9 or 10 for a Command check made when issuing Orders, they may issue the same order to any or all of the Titans in their maniple (provided they do not already have an Order) without the need to make a Command check.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6d7d-005f-33c6-d948" name="3 Crusader" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="c2ab-636e-d8f1-65e1" name="3 Crusader" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
+                      <description>The Princeps is a true believer in the crusading spirit of their Legio, adhering to a doctrine of marching forwards with relentless purpose.
+Once per round, when moving in the Combat phase as part of a Full Stride order, the Princeps’ Titan may fire one of its weapons after they finished moving. Apply a -2 modifier to the Hit rolls.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c712-2891-832d-b4c5" name="1 Noble Legacy" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="83af-a166-0b30-c561" name="1 Noble Legacy" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
+                      <description>If the Princeps’ battlegroup does not have a Tertiary Objective (as part of a Stratagem or Mission), it gains the Eternal Bastion Tertiary Objective. A battlegroup with this objective earns 5 Victory points at the end of the game if their Princeps Seniores’ Titan was not destroyed or Structurally Compromised.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="6455-0780-1e8c-7f98" name="Legio Oberon" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dee5-885d-fc38-08ce" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dee5-885d-fc38-08ce" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9a7-9946-a92f-450a" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="a350-6d71-0959-1db0" name="3 Tactical Genius" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="86b2-f700-cc50-1341" name="3 Tactical Genius" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
+                      <description>Before forces are deployed, when choosing Stratagems, the Legio Oberon player gains +1 Stratagem point if one or more Princeps with this Personal Trait is present in the force</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e598-26b9-643a-6cf4" name="2 Peerless Commander" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="e32c-9a1f-aced-a092" name="2 Peerless Commander" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
+                      <description>Friendly Knight Banners with at least one model within 6&quot; of the Princeps’ Titan automatically pass Command checks when testing to see if they are Shaken or recover from being Shaken.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6853-4e1f-ad40-a494" name="1 Unwavering" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="f516-ce73-0000-2b65" name="1 Unwavering" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
+                      <description>Once per game, if the Princeps’ Titan fails a Command check, it can choose to pass it instead.
+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="56ff-01bc-d895-2a71" name="Legio Lysanda" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f808-ec75-4a31-8a29" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f808-ec75-4a31-8a29" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac4a-a8b9-c047-fab5" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="010f-a6e8-b7ea-03b7" name="3 Vanguard Leader" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="e30d-7923-e334-c636" name="3 Vanguard Leader" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false">
+                      <description>Any friendly Legio Lysanda Titan that begins its movement within 3&quot; of the Princeps’ Titan can declare Power to Locomotors without pushing its reactor. This includes the Princeps’ Titan</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7743-3e83-1ea8-29ff" name="2 Serene" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="6291-b059-c2f8-7ec7" name="2 Serene" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false">
+                      <description>The Princeps’ Titan never suffers penalties to their Command checks and may ignore effects that force them to re-roll successful Command checks.
+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c01b-171b-b5c6-d4ae" name="1 Harrowed by Betrayal" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="adef-f66d-3abd-4191" name="1 Harrowed by Betrayal" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false">
+                      <description>If the machine spirit of a Legio Lysanda Titan awakens, the Titan may apply the Wrathful result instead of rolling on the Awakened Machine Spirit table.
+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="18cc-b97e-e2a0-6f3f" name="Legio Infernus" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd79-8c5d-3949-d89d" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd79-8c5d-3949-d89d" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30dc-8f46-8569-6e3a" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="47e1-cf97-7ff6-a72d" name="3 Methodical" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="cf62-1f00-c06c-6cc4" name="3 Methodical" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+                      <description>Once per game, during the Strategy phase, when the Princeps’ Titan is successfully issued a First Fire order, any other Titan in the maniple can be issued the same order without the need for a Command check.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1f4b-4c4a-456c-0ea9" name="2 World Burner" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="8d7a-c70e-0715-f6fd" name="2 World Burner" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+                      <description>Once per round, during the Combat phase, the Princeps’ Titan may fire one of their Inferno Guns or Melta Cannon twice during its activation. If they do so, the weapon gains the Draining trait for the second attack.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f117-1000-346e-c428" name="1 Butcher" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="cb59-a10f-dfd8-139c" name="1 Butcher" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+                      <description>When the Princeps’ Titan is activated during the Strategy phase, they can work themselves into a frenzy – this counts as their activation for that phase. If they do so, they can re-roll all Hit rolls of a 1 until the end of the round.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="047f-21a5-dfb2-97dc" name="Legio Mordaxis" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e6f-c618-89f4-d690" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e6f-c618-89f4-d690" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ae-d313-572e-cb53" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="d08f-cb39-91b0-68f7" name="3 Proud Protector" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="bbc3-262b-8155-3782" name="3 Proud Protector" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
+                      <description>Though they have broken many oaths, the Princeps still believes in the strength of brotherhood.
+Once per round, when a friendly Legio Mordaxis Titan within 3&quot; of the Princeps suffers a Direct, Devastating, or Critical Hit, the Princeps may immediately push their reactor to make an attack with one of their weapons</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5900-ffa5-2dec-4a7a" name="2 Harbinger of Decay" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="0dc3-0afb-851b-afef" name="2 Harbinger of Decay" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
+                      <description>The Princeps has welcomed the changes wrought upon them, accepting every ‘blessing’ offered.
+Units within 2&quot; of the Princeps’ Titan suffer D3+1 S5 hits from the Techno-toxin trait instead of D3 S4 hits.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="bb36-fd62-1f38-76ec" name="1 Dulled Mind" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="4cbd-73b7-08c6-567c" name="1 Dulled Mind" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
+                      <description>:The Princeps has become a conduit of toxins and knows no discomfort or pain.
+The Princeps Titan ignores the MIU Feedback and Princeps Wounded Damage effects.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="e2ca-9c9d-c52e-1bf7" name="Legio Audax" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9a0-229e-7cfb-4def" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9a0-229e-7cfb-4def" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c7c-6723-3f26-7303" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0428-b904-357f-c111" name="3 Pack Alpha" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="45d8-b6bb-9b22-82f8" name="3 Pack Alpha" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
+                      <description>Friendly Legio Audax Titans within 3&quot; of the Princeps’ Titan may re-roll rolls of 1 when makingCommand check</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a09c-2edf-fdf2-9403" name="2 Cull the Weak" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="4d86-0211-3581-dcd1" name="2 Cull the Weak" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
+                      <description>The Princeps’ Titan can re-roll failed Armour rolls against a location that has suffered Critical Damage.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4e53-ed58-a70e-5b9f" name="1 Master of Ambush" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="7b9a-7669-5bae-2986" name="1 Master of Ambush" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
+                      <description>The Stalk Unseen Legio Trait applies to the Princeps’ Titan for both the first and second round, instead of just the first.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a560-a6fc-9197-dee8" name="Legio Gryphonicus" publicationId="975a-00f4-pubN65537" page="91" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0986-9b84-b734-e9c8" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0986-9b84-b734-e9c8" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1974-ca13-a1ba-274a" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="b1f6-ddbc-0020-b1d3" name="2 Master Duellist" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="124a-74d6-7a3c-a6c2" name="2 Master Duellist" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
+                      <description>Failed Hit rolls for the Princeps Seniores&apos; Titan can be re-rolled when it is making attacks against a
+target which is within 8&quot;.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c706-bbcd-8dd9-7808" name="3 Hunter without Equal" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="de3c-fd2f-a7ef-3d7c" name="3 Hunter without Equal" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
+                      <description>Re-roll any failed Hit rolls, not just Hit rolls of 1, when the Princeps Seniores&apos; Titan attacks a target it has claimed (see the Lust for Glory rule on page 89). </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f7f1-b663-7d98-2b1f" name="1 Reckless Maverick" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="318f-4ac7-d0ef-28a9" name="1 Reckless Maverick" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
+                      <description>Once per battle, the Princeps Seniores&apos; Titan can be activated a second time in the Movement phase or Combat phase. After doing so, advance the Titan&apos;s Reactor level three times.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="9fe9-64c5-cf2f-c134" name="Legio Tempestus" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbc6-216c-8a22-c1b4" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbc6-216c-8a22-c1b4" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b17f-7da0-f299-a2cc" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="13db-d26b-d90b-aeeb" name="2 Storm-born" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="ec1e-be84-ea60-47dc" name="2 Storm-born" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
+                      <description>When a Titan in the Princeps Seniores&apos; maniple that has Charge orders moves in the Movement phase, it uses its boosted Speed value without having to push its reactor.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="091a-4ee0-87cd-92b3" name="3 Defiant Warrior" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="6ea2-2d42-11dd-f3a6" name="3 Defiant Warrior" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
+                      <description>If the Princeps Seniores&apos; Titan&apos;s void shields have collapsed, Hit rolls of I for its attacks can be re-rolled. </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4a82-4b8f-9531-21bd" name="1 Adamantium Resolve" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="357c-0e14-ca0f-f8ef" name="1 Adamantium Resolve" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
+                      <description>Once per battle, at any point, the controlling player can remove Shutdown orders from the Princeps Seniores&apos; Titan, even as the Shutdown order is issued,
+effectively cancelling it.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -17457,8 +17938,24 @@ destroyed by the end of the battle, the player loses 10 Victory points. </descri
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33e5-a40c-3e62-acd3" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="953c-dcfa-224e-58fd" name="=Crucius= Terminus Override Mechanisms" hidden="true" collective="false" import="false" targetId="d169-c82c-a137-bb35" type="selectionEntry"/>
-        <entryLink id="a6b9-74a0-12c3-4ab9" name="=Crucius= Bi-folded Power Containment" hidden="true" collective="false" import="false" targetId="1c7b-4247-5715-1d18" type="selectionEntry"/>
+        <entryLink id="953c-dcfa-224e-58fd" name="=Crucius= Terminus Override Mechanisms" hidden="true" collective="false" import="false" targetId="d169-c82c-a137-bb35" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4501-ac6c-5b8c-1b03" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="a6b9-74a0-12c3-4ab9" name="=Crucius= Bi-folded Power Containment" hidden="true" collective="false" import="false" targetId="1c7b-4247-5715-1d18" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4501-ac6c-5b8c-1b03" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="57d8-eb61-62ff-370a" name="=Vulvcanum= Twinned Machine Spirits" hidden="true" collective="false" import="false" targetId="f9a9-0ee9-960e-960b" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -17704,8 +18201,30 @@ destroyed by the end of the battle, the player loses 10 Victory points. </descri
           </constraints>
         </entryLink>
         <entryLink id="ecde-54c8-cd51-7c3b" name="=Osedax= Plasma Channels" hidden="false" collective="false" import="false" targetId="eb8b-95ca-bf92-b3f9" type="selectionEntry"/>
-        <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="false" collective="false" import="false" targetId="146b-78b6-75ce-e17e" type="selectionEntry"/>
-        <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="false" collective="false" import="false" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
+        <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="true" collective="false" import="false" targetId="146b-78b6-75ce-e17e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="324b-8404-7509-9b36" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="324b-8404-7509-9b36" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="true" collective="false" import="false" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ae2e-5751-1800-545a" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink id="44ba-d4da-ccb1-640e" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
             <categoryLink id="1816-e9d6-db43-44ad" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
@@ -17714,17 +18233,70 @@ destroyed by the end of the battle, the player loses 10 Victory points. </descri
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
           </costs>
         </entryLink>
-        <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="false" collective="false" import="false" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry"/>
-        <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders " hidden="false" collective="false" import="false" targetId="7c51-55b9-4942-4061" type="selectionEntry">
+        <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="true" collective="false" import="false" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="5f7b-2051-3935-7637" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders " hidden="true" collective="false" import="false" targetId="7c51-55b9-4942-4061" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6740-1e8a-8e25-88fd" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
           </categoryLinks>
         </entryLink>
-        <entryLink id="f865-1276-736a-80df" name="=Laniaskara= Mordantised Ceramite" hidden="false" collective="false" import="false" targetId="170d-3f13-f670-3cc6" type="selectionEntry"/>
-        <entryLink id="621c-b697-04b8-7517" name="=Tritonis= Radiative Warheads" hidden="false" collective="false" import="false" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry"/>
-        <entryLink id="0332-6f07-e3d8-ecfd" name="=Tritonis= Stygian Veil" hidden="false" collective="false" import="false" targetId="ad64-ba43-1e95-87ca" type="selectionEntry"/>
-        <entryLink id="e0d5-c856-00c2-92c4" name="=Venator= Blind Launchers" hidden="false" collective="false" import="false" targetId="1582-9f6b-0e82-c228" type="selectionEntry"/>
-        <entryLink id="f902-8a56-8c96-4c3c" name="=Astraman= Maglock Shells (12 Dice)" hidden="false" collective="false" import="false" targetId="a52a-5348-8d0b-fe2d" type="selectionEntry"/>
+        <entryLink id="f865-1276-736a-80df" name="=Laniaskara= Mordantised Ceramite" hidden="true" collective="false" import="false" targetId="170d-3f13-f670-3cc6" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4a24-73e7-556c-1bfd" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="621c-b697-04b8-7517" name="=Tritonis= Radiative Warheads" hidden="true" collective="false" import="false" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="e0d5-c856-00c2-92c4" name="=Venator= Blind Launchers" hidden="true" collective="false" import="false" targetId="1582-9f6b-0e82-c228" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43b6-60b3-8111-290c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="f902-8a56-8c96-4c3c" name="=Astraman= Maglock Shells (12 Dice)" hidden="true" collective="false" import="false" targetId="a52a-5348-8d0b-fe2d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="324b-8404-7509-9b36" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="324b-8404-7509-9b36" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="0be1-9d7b-05c5-827a" name="Body Manifold Critical Damage (12+)" hidden="false" collective="false" import="false">
