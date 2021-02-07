@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5334-72bf-3cf7-d361" name="Household" hidden="false">
       <constraints>
@@ -417,94 +417,6 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b605-e9f2-0a24-2e49" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="30be-b35b-bff5-88c1" name="1 First Born" hidden="false" collective="false" import="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="193a-07f3-699f-9eed" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="6512-0706-f5ae-2d8f" name="First Born" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-                  <description> I : Familiar since childhood to both their inherited duty and the unquestioning respect of others, the Seneschal is a skilled, if unpopular, commander. The Seneschal may issue Full Stride orders to Banners within their Lance without the need to make a Command check. However, deduct I from the results of any Command checks to see if any Banner within the Seneschal&apos;s Lance becomes Shaken.
-</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5a4a-4cb0-49c3-688b" name="2 Elder Patriarch" hidden="false" collective="false" import="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d01-0230-d433-decb" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="f993-e6c5-c3a1-d630" name="Elder Patriarch" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-                  <description>Many years of commanding impetuous young Knights has taught the Seneschal great patience. They exude a calm that belies their righteous fury. When making a Command check to see if they become Shaken, all Banners within 12&quot; of the Seneschal add I to the dice roll.
-</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2a1d-62c9-6031-cdda" name="3 Young Blood" hidden="false" collective="false" import="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29d9-4a07-d48c-6390" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="6164-826a-3f13-bbe6" name="Young Blood" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-                  <description>The Seneschal is young an.d new to such high command. They are eager to be proven worthy, but are hotheaded and prone to bravado. The Seneschal may issue Charge orders to Banners within their Lance without the need to make a Command check.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5664-d925-a86c-2622" name="4 Second Son" hidden="false" collective="false" import="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c439-b6f0-f36c-4b3d" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="036d-6bb7-ae41-34df" name="4 Second Son" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-                  <description>The Seneschal has lived their life with little responsibility, their days spent hunting and perfecting their martial skills rather than their skill as a leader. Any Banner within 12&quot; of the Seneschal&apos;s Banner may re-roll results of a I when making a Ballistic Skill check. However, the Seneschal&apos;s Banner does not add 3 to the result of any of its Command checks, as described earlier on this page.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d85e-87cc-fd48-ac04" name="5 Former Freeblade" hidden="false" collective="false" import="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1791-445b-7811-4987" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="9d2c-b2b8-8829-6b37" name="Former Freeblade" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-                  <description>The Seneschal has recently returned to their Household from the Great Crusade, where they have learned the value of individual acts of valour. The Seneschal may issue Split Fire orders to Banners within their Lance without the need to make a Command check.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1614-2aa6-a29b-908e" name="6 Outcast Bloodline" hidden="false" collective="false" import="false" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9987-dece-ffbf-493b" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="330c-4500-6483-5f0f" name="Outcast Bloodline" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-                  <description>Despite their seniority, the Seneschal belongs to an ill-favoured bloodline. Though their grip on command is weak, their ability is beyond compare. The Seneschal may issue Coordinated Strike orders to Banners within their Lance without the need to make a Command check. However, the Seneschal&apos;s Banner does not add 3 to the result of any of its Command checks, as described earlier on this page.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="3418-5104-c517-5777" name="Divine Qualities" publicationId="975a-00f4-pubN89746" page="46" hidden="false" collective="false" import="false">
               <modifierGroups>
@@ -1876,6 +1788,99 @@
                   <rules>
                     <rule id="bc57-bc7c-fc5b-b0e3" name="Implacable Foe" publicationId="ce02-a882-fdad-dd36" page="66" hidden="false">
                       <description>The Seneschal has never met a foe they cannot kill, laying waste to some of the greatest champions of civilisations across the galaxy. Knights within the Seneschal’s Banner may re-roll Armour rolls of a 1 when making an attack during the Movement phase as part of a Charge </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="f555-5da3-5dd6-ac6d" name=" d6" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d53-1685-ad6c-cb81" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="e627-c434-0b3e-59a1" name="1 First Born" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0b6-0463-d89b-739e" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="fef3-c60d-5d3a-c74d" name="First Born" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                      <description> I : Familiar since childhood to both their inherited duty and the unquestioning respect of others, the Seneschal is a skilled, if unpopular, commander. The Seneschal may issue Full Stride orders to Banners within their Lance without the need to make a Command check. However, deduct I from the results of any Command checks to see if any Banner within the Seneschal&apos;s Lance becomes Shaken.
+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fff9-3f1d-0707-915b" name="2 Elder Patriarch" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57de-8aa3-5df3-f379" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="a65a-6f2e-b9aa-401e" name="Elder Patriarch" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                      <description>Many years of commanding impetuous young Knights has taught the Seneschal great patience. They exude a calm that belies their righteous fury. When making a Command check to see if they become Shaken, all Banners within 12&quot; of the Seneschal add I to the dice roll.
+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f701-af6b-b899-1529" name="3 Young Blood" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f35-5b4e-c2bf-0c66" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="1bc3-9454-9c02-e2f9" name="Young Blood" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                      <description>The Seneschal is young an.d new to such high command. They are eager to be proven worthy, but are hotheaded and prone to bravado. The Seneschal may issue Charge orders to Banners within their Lance without the need to make a Command check.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="321c-ba31-0a14-4e39" name="4 Second Son" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba20-0976-b6bb-f9b8" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6529-c928-316a-179b" name="4 Second Son" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                      <description>The Seneschal has lived their life with little responsibility, their days spent hunting and perfecting their martial skills rather than their skill as a leader. Any Banner within 12&quot; of the Seneschal&apos;s Banner may re-roll results of a I when making a Ballistic Skill check. However, the Seneschal&apos;s Banner does not add 3 to the result of any of its Command checks, as described earlier on this page.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="480d-4974-8857-7dca" name="5 Former Freeblade" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="283f-22a6-ba39-00bc" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="2a78-72ab-ec85-db4e" name="Former Freeblade" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                      <description>The Seneschal has recently returned to their Household from the Great Crusade, where they have learned the value of individual acts of valour. The Seneschal may issue Split Fire orders to Banners within their Lance without the need to make a Command check.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8349-c713-1ee3-c306" name="6 Outcast Bloodline" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9281-1393-199e-553d" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="c8cf-9045-bab9-e442" name="Outcast Bloodline" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+                      <description>Despite their seniority, the Seneschal belongs to an ill-favoured bloodline. Though their grip on command is weak, their ability is beyond compare. The Seneschal may issue Coordinated Strike orders to Banners within their Lance without the need to make a Command check. However, the Seneschal&apos;s Banner does not add 3 to the result of any of its Command checks, as described earlier on this page.</description>
                     </rule>
                   </rules>
                   <costs>

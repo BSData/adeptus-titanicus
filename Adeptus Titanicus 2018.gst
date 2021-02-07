@@ -541,6 +541,10 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true"/>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78bb-f8f4-9112-ceaa" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d937-d26a-ecd9-a62b" type="max"/>
+      </constraints>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
