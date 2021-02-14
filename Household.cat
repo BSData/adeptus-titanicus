@@ -6069,6 +6069,7 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0b7-a797-61ee-6f00" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c42-e785-a08d-2b9d" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3211-83fd-3914-748f" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="32fb-f63f-99a1-0f4b" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
