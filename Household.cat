@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="abef-007d-766a-b940" name="Seneschal" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
+      <rules>
+        <rule id="4e32-eed1-4ca8-b855" name="Seneschal" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
+          <description>Where several Lances are brought together, the most senior noble will assume the rank of Seneschal and take command of all forces in the field. Their decades of experience as both a warrior and statesman prove invaluable in melding the forces under their command into a seamless and efficient fighting force. Knight Scions are bombastic and cantankerous, and Lances drawn from different keeps are often prone to letting competition and internal politics interfere. Without the strong leadership of a respected Seneschal, a Household army risks losing much of its discipline and martial might.</description>
+        </rule>
+        <rule id="e0b8-3543-d623-c4fe" name="Strategist" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+          <description>Before forces are deployed, when choosing Stratagems, the presence of the Seneschal adds +2 Stratagem points.
+                    </description>
+        </rule>
+        <rule id="45b7-d6b1-11a4-f847" name="The Baronial Court" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+          <description>Unlike other Banners that are part of a Lance in a Household force, the individual Knights within the Seneschal&apos;s Banner may be equipped differently, following the options available to a Support Banner of the same type of Knight. This allows the player to better represent the unique, elite warriors that make up the Seneschal&apos;s companions. However, if this option is taken, the Banner may not be issued with Coordinated Strike orders.
+                    </description>
+        </rule>
+        <rule id="eb6a-807e-fe51-2a8d" name="Noble Sacrifice" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+          <description>If the Seneschal is removed as the result of a Targeted Attack, the controlling player rolls a D6. On a 6, the Seneschal is saved by the sacrifice of one of the Knights in their Banner. The controlling player chooses one other Knight in the Banner to remove instead. If the Seneschal is the last remaining model in the Banner, this rule has no effecr.</description>
+        </rule>
+        <rule id="be39-f32d-507b-3136" name="The Battle Standard" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+          <description>: The Seneschal will invariably march to war in great splendour and accompanied by the most treasured battle standards of their Household. These honoured relics bear the heraldry of the Household and its home world, alongside campaign and battle honours beyond number. Their presence on the battlefield provides a rallying point for one and all:
+                        • One Knight within the Seneschal&apos;s Banner may be upgraded to carry the Battle Standard at a cost of 50 points.
+                        • The Battle Standard must be clearly displayed on the model that carries it.
+                        • As long as the Knight carrying the Battle Standard is part of the Banner, any Banner or Lance within 12&quot; of that Knight may re-roll any failed Command checks to see if the Banner becomes Shaken.</description>
+        </rule>
+        <rule id="e676-691a-4206-19bc" name="Warrior Elite" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+          <description>The Seneschal is the mightiest warrior in the force. Knights in their Banner may re-roll Hit rolls of 1 when using their Ballistic Skill or Weapon Skill.
+                    </description>
+        </rule>
+      </rules>
+    </categoryEntry>
+  </categoryEntries>
   <forceEntries>
     <forceEntry id="5334-72bf-3cf7-d361" name="Household" hidden="false">
       <constraints>
@@ -18,12 +48,6 @@
           </constraints>
         </categoryLink>
         <categoryLink id="7251-4605-b1fd-d80f" name="Freeblades" publicationId="975a-00f4-pubN89746" page="35" hidden="false" targetId="efc2-e899-f74b-55ad" primary="false"/>
-        <categoryLink id="7dce-f7e9-d465-1c37" name="Seneschal" hidden="false" targetId="afaa-cd89-37a2-bcc9" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c2ff-af03-4286-0bc8" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8562-098f-d509-bd91" type="min"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="ec78-05be-ff23-2fb9" name="Lance" hidden="false" targetId="b1c7-cb6c-5810-e9d9" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63ac-bf75-9c3f-33fb" type="min"/>
@@ -1936,11 +1960,6 @@
           <selectionEntries>
             <selectionEntry id="a23c-7cdc-d6a3-f92d" name="Lance Cerastus Atrapos Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -2055,7 +2074,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="17bd-a679-a947-e9b7" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="17bd-a679-a947-e9b7" name="Seneschal" hidden="false" collective="false" import="true" targetId="2d80-35d6-4ab0-19ca" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="70.0"/>
@@ -2125,6 +2144,9 @@
               </selectionEntries>
               <entryLinks>
                 <entryLink id="34f1-c984-28b2-55e4" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" targetId="aed6-0705-b201-ff96" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" field="a731-e220-2d8a-41bf" value="60.0"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa2b-54f3-bb16-289b" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfe6-c782-b951-c346" type="min"/>
@@ -2138,11 +2160,6 @@
             </selectionEntry>
             <selectionEntry id="0ae1-a06b-9ee5-daf0" name="Lance Cerastus Acheron Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -2258,7 +2275,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="ecca-be3d-dc30-83ae" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="ecca-be3d-dc30-83ae" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="70.0"/>
@@ -2328,6 +2345,9 @@
               </selectionEntries>
               <entryLinks>
                 <entryLink id="c89c-ec4a-1043-9962" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" field="a731-e220-2d8a-41bf" value="60.0"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f093-2c48-bb7a-bdbf" type="min"/>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4e7-ef31-f23f-a47f" type="max"/>
@@ -2341,11 +2361,6 @@
             </selectionEntry>
             <selectionEntry id="0918-f82e-c66d-4214" name="Lance Cerastus Castigator Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -2460,7 +2475,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="3ee7-1f2a-27cc-d2a5" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="3ee7-1f2a-27cc-d2a5" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="70.0"/>
@@ -2530,6 +2545,9 @@
               </selectionEntries>
               <entryLinks>
                 <entryLink id="0946-9a16-bdc0-dcb9" name="Cerastus Knight Castigator" hidden="false" collective="false" import="true" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" field="a731-e220-2d8a-41bf" value="60.0"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c3f-f884-8421-d6e5" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0717-3907-bbe0-f048" type="min"/>
@@ -2543,11 +2561,6 @@
             </selectionEntry>
             <selectionEntry id="f079-50e8-7458-4175" name="Lance Cerastus Lancer Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -2667,7 +2680,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="76cd-a79f-c2a1-381b" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="76cd-a79f-c2a1-381b" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="70.0"/>
@@ -2737,6 +2750,9 @@
               </selectionEntries>
               <entryLinks>
                 <entryLink id="e7e9-15b5-cd30-9a70" name="Cerastus Knight Lancer" hidden="false" collective="false" import="true" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" field="a731-e220-2d8a-41bf" value="60.0"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ab7-eca5-8251-0a33" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7c6-24c4-eb8b-5b5a" type="min"/>
@@ -2750,11 +2766,6 @@
             </selectionEntry>
             <selectionEntry id="a9e2-bd4a-2e03-52f0" name="Lance Questoris Crusader Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -2884,7 +2895,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="4b71-8b22-3244-c358" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="4b71-8b22-3244-c358" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -2993,11 +3004,6 @@
             </selectionEntry>
             <selectionEntry id="a2a3-9b7b-a83d-941d" name="Lance Questoris Double Battlecannon Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -3123,7 +3129,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="f141-effb-119d-c145" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="f141-effb-119d-c145" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -3227,11 +3233,6 @@
             </selectionEntry>
             <selectionEntry id="b2bb-fb2a-9658-106f" name="Lance Questoris Double Avenger Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -3357,7 +3358,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="70d4-b246-6469-e90a" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="70d4-b246-6469-e90a" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -3461,11 +3462,6 @@
             </selectionEntry>
             <selectionEntry id="1548-539a-5a64-cbc2" name="Lance Questoris Warden Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -3595,7 +3591,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="9d88-3b7e-77c5-06b9" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="9d88-3b7e-77c5-06b9" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -3704,11 +3700,6 @@
             </selectionEntry>
             <selectionEntry id="9049-4ec7-09c0-5f42" name="Lance Questoris Paladin Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -3838,7 +3829,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="1ca8-5726-de81-f946" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="1ca8-5726-de81-f946" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -3947,11 +3938,6 @@
             </selectionEntry>
             <selectionEntry id="3161-0094-179f-ffb4" name="Lance Questoris Gallant Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -4077,7 +4063,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="d152-326e-79ab-fbb3" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="d152-326e-79ab-fbb3" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -4181,11 +4167,6 @@
             </selectionEntry>
             <selectionEntry id="fcd5-3e2a-436b-6740" name="Lance Questoris Errant Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -4315,7 +4296,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="7a64-d8b3-300f-5cb5" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="7a64-d8b3-300f-5cb5" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -4424,11 +4405,6 @@
             </selectionEntry>
             <selectionEntry id="5fe1-0129-21cc-f1d7" name="Lance Questoris Double Thermal Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -4553,7 +4529,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="c4f7-fa77-80ab-aff8" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="c4f7-fa77-80ab-aff8" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -4657,11 +4633,6 @@
             </selectionEntry>
             <selectionEntry id="8df2-fdf0-4790-9338" name="Lance Questoris Magaera Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -4832,7 +4803,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="5216-ab7f-327d-c25b" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="5216-ab7f-327d-c25b" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
@@ -4909,11 +4880,6 @@
             </selectionEntry>
             <selectionEntry id="324d-3626-f9c6-0573" name="Lance Questoris Magaera Double Lightning Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -5127,7 +5093,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="34bb-6e82-3c49-6e83" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="34bb-6e82-3c49-6e83" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
@@ -5150,11 +5116,6 @@
             </selectionEntry>
             <selectionEntry id="c7b1-175e-cccc-1828" name="Lance Questoris Magaera Double Hekaton Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -5369,7 +5330,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="53ec-c536-a929-050b" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="53ec-c536-a929-050b" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
@@ -5392,11 +5353,6 @@
             </selectionEntry>
             <selectionEntry id="42ca-144a-4582-128d" name="Lance Questoris Styrix Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -5565,6 +5521,12 @@
                         <entryLink id="650b-fffd-ebac-34dc" name="Volkite Chieorovile" hidden="false" collective="false" import="true" targetId="3595-8b4e-3496-ad5f" type="selectionEntry">
                           <constraints>
                             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7aa8-7e68-0bf1-7b93" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fca9-592f-8b4d-17c2" type="min"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="1003-dd68-8ed6-eead" name="Hekaton Siege Claw" hidden="false" collective="false" import="true" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa38-6ad9-5ed9-46ea" type="min"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
@@ -5610,7 +5572,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="7948-3a80-a8eb-7a1f" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="7948-3a80-a8eb-7a1f" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
@@ -5633,11 +5595,6 @@
             </selectionEntry>
             <selectionEntry id="44b6-cc20-0bd8-e5b0" name="Lance Questoris Styrix Double Hekaton Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -5805,12 +5762,7 @@
                       <entryLinks>
                         <entryLink id="6e6d-de04-9ad4-87e9" name="Hekaton Siege Claw" hidden="false" collective="false" import="true" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry">
                           <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f0f9-d3ab-3e36-9901" type="min"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink id="1ab8-df59-19d1-4cb5" name="Volkite Chieorovile" hidden="false" collective="false" import="true" targetId="3595-8b4e-3496-ad5f" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00df-3cf0-3771-e956" type="min"/>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f0f9-d3ab-3e36-9901" type="min"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
@@ -5856,7 +5808,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="c1f5-bd25-80fe-7797" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="c1f5-bd25-80fe-7797" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
@@ -5879,11 +5831,6 @@
             </selectionEntry>
             <selectionEntry id="3d20-5082-973b-3d75" name="Lance Questoris Styrix Double Volkite Banner" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="append" field="name" value=", Baronial Court">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="afaa-cd89-37a2-bcc9" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="append" field="name" value=", Warrior Born">
                   <conditions>
                     <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7d0a-a772-ed25-9202" type="equalTo"/>
@@ -6097,7 +6044,7 @@
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="c7f6-d25c-88c4-7968" name="Nobility" hidden="false" collective="false" import="true" targetId="357d-7247-ec2a-45d5" type="selectionEntryGroup"/>
+                    <entryLink id="c7f6-d25c-88c4-7968" name="Nobility" hidden="false" collective="false" import="true" targetId="43a7-dba2-f75d-3b99" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
@@ -6118,6 +6065,75 @@
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="e0b9-9826-289c-2bf1" name="Baronial Court" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0b7-a797-61ee-6f00" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c42-e785-a08d-2b9d" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3211-83fd-3914-748f" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="32fb-f63f-99a1-0f4b" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
+                <categoryLink id="6d5f-4bc2-a3c3-fb9d" name="Baronial Court" hidden="false" targetId="e616-b753-5dbd-72cb" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="d149-a1d7-4c19-a561" name="Hull" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="565d-cdf9-8660-3f8d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4351-fe75-bf8c-a0fe" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="9c22-3ccf-4c89-0d7b" name="Cerastus Knight Banner" hidden="false" collective="false" import="true" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
+                      <comment>Freeblade</comment>
+                      <modifiers>
+                        <modifier type="append" field="name" value=", Baronial Court"/>
+                      </modifiers>
+                      <categoryLinks>
+                        <categoryLink id="61a7-aa65-e677-c009" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+                      </categoryLinks>
+                    </entryLink>
+                    <entryLink id="213a-f737-a971-0a86" name="Questoris Knight Banner" hidden="false" collective="false" import="true" targetId="812b-786b-9435-cd20" type="selectionEntry">
+                      <comment>Freeblade</comment>
+                      <modifiers>
+                        <modifier type="append" field="name" value=", Baronial Court"/>
+                      </modifiers>
+                      <categoryLinks>
+                        <categoryLink id="146e-d5c5-a1f4-57f7" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+                      </categoryLinks>
+                    </entryLink>
+                    <entryLink id="41c3-cb37-cddb-a96d" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="true" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
+                      <comment>Freeblade</comment>
+                      <modifiers>
+                        <modifier type="append" field="name" value=", Baronial Court"/>
+                      </modifiers>
+                      <categoryLinks>
+                        <categoryLink id="f688-3492-33c6-dd0d" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+                      </categoryLinks>
+                    </entryLink>
+                    <entryLink id="a98e-8e7d-69eb-9ef1" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="true" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
+                      <comment>Freeblade</comment>
+                      <modifiers>
+                        <modifier type="append" field="name" value=", Baronial Court"/>
+                      </modifiers>
+                      <categoryLinks>
+                        <categoryLink id="418a-42dd-929a-14e6" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+                      </categoryLinks>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="f348-c86d-0124-df7d" name="Seneschal" hidden="false" collective="false" import="true" targetId="2d80-35d6-4ab0-19ca" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9c1-82fd-4fe1-64e9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a08-abec-ee08-92fa" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6126,5 +6142,32 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2d80-35d6-4ab0-19ca" name="Seneschal" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1c7-cb6c-5810-e9d9" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="43a7-dba2-f75d-3b99" name="Nobility" publicationId="975a-00f4-pubN89746" page="37" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="056e-6b2c-1812-703a" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="3e07-4a53-d65c-6995" name="High Scion" hidden="false" collective="false" import="true" targetId="7034-5a1f-ed47-870b" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="0f25-c5d4-f6a9-126b" name="High Scion" hidden="false" targetId="7d0a-a772-ed25-9202" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>

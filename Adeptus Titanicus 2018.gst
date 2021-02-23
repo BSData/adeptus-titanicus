@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="26" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="27" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -469,34 +469,6 @@
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="afaa-cd89-37a2-bcc9" name="Seneschal" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
-      <rules>
-        <rule id="9e0c-31ea-08bf-12fe" name="Seneschal" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
-          <description>Where several Lances are brought together, the most senior noble will assume the rank of Seneschal and take command of all forces in the field. Their decades of experience as both a warrior and statesman prove invaluable in melding the forces under their command into a seamless and efficient fighting force. Knight Scions are bombastic and cantankerous, and Lances drawn from different keeps are often prone to letting competition and internal politics interfere. Without the strong leadership of a respected Seneschal, a Household army risks losing much of its discipline and martial might.</description>
-        </rule>
-        <rule id="315a-e66a-f2ed-f021" name="Strategist" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-          <description>Before forces are deployed, when choosing Stratagems, the presence of the Seneschal adds +2 Stratagem points.
-                    </description>
-        </rule>
-        <rule id="e025-d4b2-1b45-71ff" name="The Baronial Court" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-          <description>Unlike other Banners that are part of a Lance in a Household force, the individual Knights within the Seneschal&apos;s Banner may be equipped differently, following the options available to a Support Banner of the same type of Knight. This allows the player to better represent the unique, elite warriors that make up the Seneschal&apos;s companions. However, if this option is taken, the Banner may not be issued with Coordinated Strike orders.
-                    </description>
-        </rule>
-        <rule id="4771-17db-2843-8829" name="Noble Sacrifice" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-          <description>If the Seneschal is removed as the result of a Targeted Attack, the controlling player rolls a D6. On a 6, the Seneschal is saved by the sacrifice of one of the Knights in their Banner. The controlling player chooses one other Knight in the Banner to remove instead. If the Seneschal is the last remaining model in the Banner, this rule has no effecr.</description>
-        </rule>
-        <rule id="60fc-c030-1e96-f537" name="The Battle Standard" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-          <description>: The Seneschal will invariably march to war in great splendour and accompanied by the most treasured battle standards of their Household. These honoured relics bear the heraldry of the Household and its home world, alongside campaign and battle honours beyond number. Their presence on the battlefield provides a rallying point for one and all:
-                        • One Knight within the Seneschal&apos;s Banner may be upgraded to carry the Battle Standard at a cost of 50 points.
-                        • The Battle Standard must be clearly displayed on the model that carries it.
-                        • As long as the Knight carrying the Battle Standard is part of the Banner, any Banner or Lance within 12&quot; of that Knight may re-roll any failed Command checks to see if the Banner becomes Shaken.</description>
-        </rule>
-        <rule id="694b-2fa2-fda0-c3d7" name="Warrior Elite" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-          <description>The Seneschal is the mightiest warrior in the force. Knights in their Banner may re-roll Hit rolls of 1 when using their Ballistic Skill or Weapon Skill.
-                    </description>
-        </rule>
-      </rules>
-    </categoryEntry>
     <categoryEntry id="b1c7-cb6c-5810-e9d9" name="Lance" hidden="false">
       <rules>
         <rule id="0034-0bec-545c-14dd" name="Lance" hidden="false">
@@ -535,6 +507,11 @@
     <categoryEntry id="c130-1260-4c15-147a" name="Princeps Seniores" publicationId="975a-00f4-pubN65537" hidden="false"/>
     <categoryEntry id="841e-1054-24aa-8eca" name="Ranged Support" publicationId="975a-00f4-pubN65537" page="64" hidden="false"/>
     <categoryEntry id="d198-6567-a9f9-a3fc" name="Tertiary Objective" publicationId="975a-00f4-pubN65537" page="64" hidden="false"/>
+    <categoryEntry id="e616-b753-5dbd-72cb" name="Baronial Court" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+      <rules>
+        <rule id="9e0e-dbe2-6ee1-092c" name="Baronial Court" hidden="false"/>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -3176,6 +3153,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="2f87-1543-1c08-5dcf" name="Questoris Knight Scion Martial" hidden="false" collective="false" import="false" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value=", Standard Bearer">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d4b9-40ea-dcd5-ae76" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="d8b2-148f-8c91-d5ba" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="66e0-a560-760a-0589" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
@@ -3207,6 +3191,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3e74-ac1f-3eee-78a5" name="The Battle Standard" hidden="false" collective="false" import="true" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
@@ -3506,6 +3493,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8f63-919a-9591-ecd2" name="Cerastus Knight Scion Martial" hidden="false" collective="false" import="false" type="upgrade">
+      <modifiers>
+        <modifier type="append" field="name" value=", Standard Bearer">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="5e05-c927-c019-727b" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup id="323d-05e9-d28c-6d12" name="Knight Hull" hidden="false" collective="false" import="false">
           <constraints>
@@ -3520,6 +3514,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5e05-c927-c019-727b" name="The Battle Standard" hidden="false" collective="false" import="true" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -4097,6 +4094,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8d33-f08f-31d2-75a3" name="Questoris Knight Scion Magaera" hidden="false" collective="false" import="false" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value=", Standard Bearer">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d4b9-40ea-dcd5-ae76" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="664b-30c6-0303-98d7" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="43c8-7220-03b3-b06f" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
@@ -4125,12 +4129,22 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c5e5-f9d1-81db-839d" name="The Battle Standard" hidden="false" collective="false" import="true" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="540a-525d-45fd-2f93" name="Questoris Knight Scion Styrix" hidden="false" collective="false" import="false" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value=", Standard Bearer">
+          <conditions>
+            <condition field="selections" scope="self" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d4b9-40ea-dcd5-ae76" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2ccd-2c05-f815-d943" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="c119-2849-9713-7c05" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
@@ -4159,6 +4173,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8d06-3d06-66f2-619c" name="The Battle Standard" hidden="false" collective="false" import="true" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
@@ -4345,25 +4362,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="cdb9-838a-4e44-bb7b" name="Knight House" hidden="false" collective="false" import="false" type="upgrade">
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="8a4b-2186-a159-35fe" name="Seneschal" hidden="true" collective="false" import="false" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1c7-cb6c-5810-e9d9" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5911-3f18-1d60-42ea" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="13e8-2cb5-717a-4a89" name="Seneschal" hidden="false" targetId="afaa-cd89-37a2-bcc9" primary="false"/>
-      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -17782,6 +17780,31 @@ destroyed by the end of the battle, the player loses 10 Victory points. </descri
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d4b9-40ea-dcd5-ae76" name="The Battle Standard" hidden="true" collective="false" import="true" type="upgrade">
+      <comment>: </comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e616-b753-5dbd-72cb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b71c-a825-1759-7e7f" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a10-6d31-3594-ae81" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="a303-9e7a-3fc7-85c2" name="The Battle Standard" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+          <description>• One Knight within the Seneschal&apos;s Banner may be upgraded to carry the Battle Standard at a cost of 50 points.
+• The Battle Standard must be clearly displayed on the model that carries it.
+• As long as the Knight carrying the Battle Standard is part of the Banner, any Banner or Lance within 12&quot; of that Knight may re-roll any failed Command checks to see if the Banner becomes Shaken. </description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="false">
@@ -18511,19 +18534,6 @@ destroyed by the end of the battle, the player loses 10 Victory points. </descri
       <entryLinks>
         <entryLink id="c750-04b1-5a96-6e07" name="Acastus Twin Autocannon" hidden="false" collective="false" import="false" targetId="abac-6fdb-0228-d12a" type="selectionEntry"/>
         <entryLink id="3ea6-1bed-f54a-c10f" name="Acastus Twin Lascannon" hidden="false" collective="false" import="false" targetId="a2a3-d4b5-189a-5f63" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="357d-7247-ec2a-45d5" name="Nobility" publicationId="975a-00f4-pubN89746" page="37" hidden="false" collective="false" import="false">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a904-4f3e-3960-de85" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="1f22-0871-f59a-d0f9" name="Seneschal" hidden="false" collective="false" import="false" targetId="8a4b-2186-a159-35fe" type="selectionEntry"/>
-        <entryLink id="9bb1-3368-9611-a524" name="High Scion" hidden="false" collective="false" import="false" targetId="7034-5a1f-ed47-870b" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink id="b44a-01de-f7f0-7a42" name="High Scion" hidden="false" targetId="7d0a-a772-ed25-9202" primary="false"/>
-          </categoryLinks>
-        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
