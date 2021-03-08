@@ -4367,23 +4367,6 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7034-5a1f-ed47-870b" name="High Scion" hidden="true" collective="false" import="false" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1c7-cb6c-5810-e9d9" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0750-ae51-c889-78ee" type="max"/>
-        <constraint field="selections" scope="b1c7-cb6c-5810-e9d9" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7dab-4051-3b2c-874d" type="max"/>
-      </constraints>
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="15dc-a57d-f1f3-41a6" name="Manifold Critical Damage" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec0f-c79f-18dd-ff5b" type="max"/>
@@ -4578,7 +4561,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0dd0-2ee9-4657-776f" name="=Krytos= Reaver replacement Warlord" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="0dd0-2ee9-4657-776f" name="=Krytos= Reaver replacement Warlord" hidden="true" collective="false" import="false" type="model">
       <profiles>
         <profile id="78a3-c9e7-5fdb-1400" name="Warlord Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -6072,7 +6055,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c07c-f050-45e2-1376" name="=Gryphonicus= Warhound replacement Reaver" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="c07c-f050-45e2-1376" name="=Gryphonicus= Warhound replacement Reaver" hidden="true" collective="false" import="false" type="model">
       <profiles>
         <profile id="fd15-1beb-af88-6378" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -6688,7 +6671,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2c74-3aeb-1a28-d45e" name="=Gryphonicus= Warlord replacement Reaver" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="2c74-3aeb-1a28-d45e" name="=Gryphonicus= Warlord replacement Reaver" hidden="true" collective="false" import="false" type="model">
       <profiles>
         <profile id="2a72-55d8-fc95-9058" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -7412,7 +7395,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2992-c2ab-d138-890d" name="=Astorum= Bounty of Mars" publicationId="975a-00f4-pubN87630" page="18" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="2992-c2ab-d138-890d" name="=Astorum= Bounty of Mars" publicationId="975a-00f4-pubN87630" page="18" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf93-928a-ede0-8624" type="max"/>
       </constraints>
@@ -7430,7 +7413,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b96e-64b2-6f6c-2836" name="=Defensor= A Day of Retribution" publicationId="975a-00f4-pubN87630" page="23" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="b96e-64b2-6f6c-2836" name="=Defensor= A Day of Retribution" publicationId="975a-00f4-pubN87630" page="23" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b658-6872-25f9-fbec" type="max"/>
       </constraints>
@@ -7448,7 +7431,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="61a7-3fcd-5cb5-7014" name="=Defensor= Blessings of the Emperor" publicationId="975a-00f4-pubN87630" page="23" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="61a7-3fcd-5cb5-7014" name="=Defensor= Blessings of the Emperor" publicationId="975a-00f4-pubN87630" page="23" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2cd-759e-a4a2-3b0c" type="max"/>
       </constraints>
@@ -7466,7 +7449,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b7bc-1a39-1fa8-bde4" name="=Atarus= Impetuous Machine Spirit" publicationId="ce02-a882-fdad-dd36" page="36" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="b7bc-1a39-1fa8-bde4" name="=Atarus= Impetuous Machine Spirit" publicationId="ce02-a882-fdad-dd36" page="36" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7079-4c5f-e443-da4a" type="max"/>
       </constraints>
@@ -7484,7 +7467,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ffa3-89c9-f658-9a64" name="=Atarus= Maniple of One" publicationId="975a-00f4-pubN87630" page="28" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="ffa3-89c9-f658-9a64" name="=Atarus= Maniple of One" publicationId="975a-00f4-pubN87630" page="28" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5db-1b84-a093-c0ea" type="max"/>
       </constraints>
@@ -7502,7 +7485,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="63d6-80e8-e266-00b0" name="=Solaria= Fog of War" publicationId="975a-00f4-pubN87630" page="34" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="63d6-80e8-e266-00b0" name="=Solaria= Fog of War" publicationId="975a-00f4-pubN87630" page="34" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="944c-1211-a5a9-2908" type="max"/>
       </constraints>
@@ -7545,7 +7528,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d7da-8565-a7b8-e782" name="=Krytos= Scorched Earth" publicationId="975a-00f4-pubN87630" page="44" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="d7da-8565-a7b8-e782" name="=Krytos= Scorched Earth" publicationId="975a-00f4-pubN87630" page="44" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d560-1d67-ea19-4e14" type="max"/>
       </constraints>
@@ -7563,7 +7546,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f4e1-e803-82c2-72ee" name="=Krytos= Iron Endures" publicationId="975a-00f4-pubN87630" page="44" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="f4e1-e803-82c2-72ee" name="=Krytos= Iron Endures" publicationId="975a-00f4-pubN87630" page="44" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8f5-df40-0a46-1d99" type="max"/>
       </constraints>
@@ -7581,7 +7564,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="79c4-5f36-3c4b-8482" name="=Fureans= Offensive Surge" publicationId="975a-00f4-pubN87630" page="49" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="79c4-5f36-3c4b-8482" name="=Fureans= Offensive Surge" publicationId="975a-00f4-pubN87630" page="49" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0157-4522-b645-cfad" type="max"/>
       </constraints>
@@ -7599,7 +7582,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="12c2-179b-3e38-04d0" name="=Vulpa= No Pity for the Vanquished" publicationId="975a-00f4-pubN87630" page="45" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="12c2-179b-3e38-04d0" name="=Vulpa= No Pity for the Vanquished" publicationId="975a-00f4-pubN87630" page="45" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2b4-86da-964e-5c1e" type="max"/>
       </constraints>
@@ -7617,7 +7600,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a325-71b4-799f-daa1" name="=Tempestus= Combat Drop" publicationId="975a-00f4-pubN65537" page="92" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="a325-71b4-799f-daa1" name="=Tempestus= Combat Drop" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="229d-552f-009a-61f5" type="max"/>
       </constraints>
@@ -7638,7 +7621,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c88c-e5de-39a8-a14c" name="=Fortidus= For the Red Planet" publicationId="975a-00f4-pubN89746" page="20" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="c88c-e5de-39a8-a14c" name="=Fortidus= For the Red Planet" publicationId="975a-00f4-pubN89746" page="20" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fdc-a411-0d19-422c" type="max"/>
       </constraints>
@@ -7656,7 +7639,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="77b5-8263-66f7-7c67" name="=Fortidus= Red Skies" publicationId="975a-00f4-pubN89746" page="20" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="77b5-8263-66f7-7c67" name="=Fortidus= Red Skies" publicationId="975a-00f4-pubN89746" page="20" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59cd-ea6f-e1a9-a09e" type="max"/>
       </constraints>
@@ -7674,7 +7657,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="da32-bf28-85d1-9f9d" name="=Vulcanum= Symbiotic Commands" publicationId="975a-00f4-pubN89746" page="23" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="da32-bf28-85d1-9f9d" name="=Vulcanum= Symbiotic Commands" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e85c-535b-73f1-1564" type="max"/>
       </constraints>
@@ -7692,7 +7675,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8f50-2bbe-22c7-c81e" name="=Interfector= Tormented Machine Spirit" publicationId="975a-00f4-pubN89746" page="26" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="8f50-2bbe-22c7-c81e" name="=Interfector= Tormented Machine Spirit" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24e8-17cc-6315-398c" type="max"/>
       </constraints>
@@ -7781,7 +7764,7 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="equalTo"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="equalTo"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
@@ -7921,7 +7904,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
+            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7946,7 +7929,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
+            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7992,7 +7975,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8f31-0e84-26f0-f2af" name="=Astraman= Strength and Resolve" publicationId="ce02-a882-fdad-dd36" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="8f31-0e84-26f0-f2af" name="=Astraman= Strength and Resolve" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad15-7c67-6aca-99ff" type="max"/>
       </constraints>
@@ -8011,7 +7994,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ab6a-2fba-dc15-e2ef" name="=Astraman= Stand Firm" publicationId="ce02-a882-fdad-dd36" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ab6a-2fba-dc15-e2ef" name="=Astraman= Stand Firm" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="aa80-9e0a-81a8-0cdd" name="Stand Firm" publicationId="ce02-a882-fdad-dd36" hidden="false">
           <description>Reveal at beginning of any round. That round all Astraman titans can merge voids, if they don&apos;t move (voluntary or involuntary)</description>
@@ -8027,7 +8010,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ced4-b0c7-5d0f-3c30" name="=Ignatum= Punish their Folly" publicationId="ce02-a882-fdad-dd36" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ced4-b0c7-5d0f-3c30" name="=Ignatum= Punish their Folly" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="eb9b-e6f7-e068-d39b" name="=Ignatum= Punish their Folly" publicationId="ce02-a882-fdad-dd36" hidden="false">
           <description>Play when an enemy titan ends it&apos;s  move within 3&quot; of an Ignatum titan during a chage. Before resolving the charge attack,  the ignatum titan can make an attack using BS with a non melee weapon. </description>
@@ -8042,7 +8025,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="087c-a203-d1d4-bfcd" name="=Ignatum= Guard the Gates" publicationId="ce02-a882-fdad-dd36" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="087c-a203-d1d4-bfcd" name="=Ignatum= Guard the Gates" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="d5b1-a3d8-cc8c-8b18" name="=Ignatum= Guard the Gates" publicationId="ce02-a882-fdad-dd36" hidden="false">
           <description>Play during the first strategy phase.  All Ignatum titans can go on first fire without making a command check.
@@ -8059,7 +8042,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5dd2-5a20-9a7a-c000" name="=Laniaskara= Heedless Charge" publicationId="ce02-a882-fdad-dd36" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="5dd2-5a20-9a7a-c000" name="=Laniaskara= Heedless Charge" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="5ffa-7650-fbc9-0acb" name="=Laniaskara= Heedless Charge" publicationId="ce02-a882-fdad-dd36" hidden="false">
           <description>Play at start of any strategy phase.  For that phase Laniaskara titans gain charge orders without having to make a command check</description>
@@ -8073,7 +8056,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cf5b-8f2e-8df3-7539" name="=Kulisaetai= Steadfast Bastion " publicationId="ce02-a882-fdad-dd36" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="cf5b-8f2e-8df3-7539" name="=Kulisaetai= Steadfast Bastion " publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="446b-334d-7306-47b4" name="=Kulisaetai= Steadfast Bastion " publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
           <description>Play in any shooting phase. Add 6&quot; to short range characteristic of all Kulisaetai non melee weapons, if they have not moved, for this round.</description>
@@ -8088,7 +8071,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="88d4-a5e8-4929-8037" name="=Kulisaetai= Methodical Advance" publicationId="ce02-a882-fdad-dd36" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="88d4-a5e8-4929-8037" name="=Kulisaetai= Methodical Advance" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="880f-916f-3203-443b" name="=Kulisaetai= Methodical Advance" publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
           <description>First round strategy phase. Choose a scale. all friendly Kulisaetai titans with the chosen scale may make an unboosted move.  Then the opposing player becomes First Player.  Titans moved this way may not be activated during the strategy phase.</description>
@@ -8103,7 +8086,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ad64-ba43-1e95-87ca" name="=Tritonis= Stygian Veil" publicationId="ce02-a882-fdad-dd36" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ad64-ba43-1e95-87ca" name="=Tritonis= Stygian Veil" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="538c-2a10-554b-5afc" name="=Tritonis= Stygian Veil" hidden="false">
           <description>Strat phase. place 3 markers at least 10&quot;apart.  3&quot; from the marker blocks line of sight. Any non Tritonis player within 6&quot; of a marker suffers -2 penalty  to command check. remove markers in end phase </description>
@@ -8118,7 +8101,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="43ed-3dab-833c-e085" name="=Damicium= Endurance Beyond Limit" publicationId="ce02-a882-fdad-dd36" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="43ed-3dab-833c-e085" name="=Damicium= Endurance Beyond Limit" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f5e-a05e-279e-ae11" type="max"/>
       </constraints>
@@ -8263,7 +8246,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74e8-71ca-57d3-f9b0" name="=Ignatum= Gravitic Sensor Array" publicationId="ce02-a882-fdad-dd36" page="40" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="74e8-71ca-57d3-f9b0" name="=Ignatum= Gravitic Sensor Array" publicationId="ce02-a882-fdad-dd36" page="40" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="56f7-0ff2-fa75-8b1c" name="Gravitic Sensor Array" publicationId="ce02-a882-fdad-dd36" page="40" hidden="false">
           <description>Any titan.  +1 modifier to hit rolls against a target at least 25% obscured. </description>
@@ -8278,7 +8261,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="146b-78b6-75ce-e17e" name="=Astraman= Maglock Shells (6 Dice)" publicationId="ce02-a882-fdad-dd36" page="33" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="146b-78b6-75ce-e17e" name="=Astraman= Maglock Shells (6 Dice)" publicationId="ce02-a882-fdad-dd36" page="33" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="12ca-f28d-7db1-35da" name="Maglock Shells" publicationId="ce02-a882-fdad-dd36" page="33" hidden="false">
           <description>Ordnance Weapons.  Add 1 to all armour rolls. natural 1s are still a superficial hit.  This is for 6 dice weapons.</description>
@@ -8294,7 +8277,10 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1582-9f6b-0e82-c228" name="=Venator= Blind Launchers" publicationId="ce02-a882-fdad-dd36" page="42" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="1582-9f6b-0e82-c228" name="=Venator= Blind Launchers" publicationId="ce02-a882-fdad-dd36" page="42" hidden="true" collective="false" import="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b5e-aea1-a918-f29f" type="max"/>
+      </constraints>
       <rules>
         <rule id="3c32-7526-899c-0455" name="=Venator= Blind Launchers" publicationId="ce02-a882-fdad-dd36" page="42" hidden="false">
           <description>Any titan. Once per game in combat phase activate the blind launchers. Once activated suffer a -1 penalty to attacka made by and against this titan until the next combat phase. (But you can attack before you deploy the launchers)</description>
@@ -8309,7 +8295,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="170d-3f13-f670-3cc6" name="=Laniaskara= Mordantised Ceramite" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="170d-3f13-f670-3cc6" name="=Laniaskara= Mordantised Ceramite" publicationId="ce02-a882-fdad-dd36" page="44" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="a6dd-007e-daba-9d00" name="=Laniaskara= Mordantised Ceramite" hidden="false">
           <description>Any titan.  Subtract 1 from armour rolls made against this titan made by weapons with the maximal fire trait (even if maximal fire is not used).</description>
@@ -8324,7 +8310,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7c51-55b9-4942-4061" name="=Kulisaetai= Accelerated Autoloaders " publicationId="ce02-a882-fdad-dd36" page="48" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="7c51-55b9-4942-4061" name="=Kulisaetai= Accelerated Autoloaders " publicationId="ce02-a882-fdad-dd36" page="48" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="2257-4054-c57c-6ae9" name="=Kulisaetai= Accelerated Autoloaders " publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
           <description>Apocalypse Missile Launchers (either type).  May not combine with another upgrade. After resolving an attack, may immediately make a second attack with this weapon against the same target applying a -1 modifier to hit. After resolving the attack the weapon is disabled and the upgrade is removed, even if the weapon is repaired. </description>
@@ -8339,7 +8325,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5b5c-2d02-7856-0dd8" name="=Tritonis= Radiative Warheads" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="5b5c-2d02-7856-0dd8" name="=Tritonis= Radiative Warheads" publicationId="ce02-a882-fdad-dd36" page="52" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="a211-039e-7883-c076" name="=Tritonis= Radiative Warheads" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
           <description>Apocalypse Missile Launchers (either type). May not combine with another upgrade.  Against voids, each hit of a 6 counts as 2 hits.</description>
@@ -8354,7 +8340,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dc14-b65e-acfb-906a" name="=Damicium= Secondary Plating" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="dc14-b65e-acfb-906a" name="=Damicium= Secondary Plating" publicationId="ce02-a882-fdad-dd36" page="54" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="899c-50ef-d2bb-0ef1" name="=Damicium= Secondary Plating" hidden="false">
           <description>Any titan.  First critical hit downgraded to Devastating. </description>
@@ -8369,7 +8355,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a52a-5348-8d0b-fe2d" name="=Astraman= Maglock Shells (12 Dice)" publicationId="ce02-a882-fdad-dd36" page="33" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="a52a-5348-8d0b-fe2d" name="=Astraman= Maglock Shells (12 Dice)" publicationId="ce02-a882-fdad-dd36" page="33" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="314b-c859-601b-4f9f" name="Maglock Shells" publicationId="ce02-a882-fdad-dd36" page="33" hidden="false">
           <description>Ordnance Weapons.  Add 1 to all armour rolls. natural 1s are still a superficial hit.  This is for 12 dice weapons.</description>
@@ -8385,7 +8371,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1260-8d1f-16f7-75ad" name="=Astorum= Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="1260-8d1f-16f7-75ad" name="=Astorum= Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c8-2b67-3fdb-ac96" type="max"/>
       </constraints>
@@ -8405,7 +8391,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3426-e19b-771f-0d15" name="=Mordaxis= Unstoppable" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="3426-e19b-771f-0d15" name="=Mordaxis= Unstoppable" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c69-5d32-c31d-9f64" type="max"/>
       </constraints>
@@ -8423,7 +8409,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4cf8-2cc7-a7fc-085e" name="=Infernus= Burned Ones" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="4cf8-2cc7-a7fc-085e" name="=Infernus= Burned Ones" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="true" collective="false" import="false" type="unit">
       <rules>
         <rule id="58ef-c3dc-5473-01f0" name="Burned Ones" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
           <description>Reveal this Stratagem in any Combat phase. Choose any piece of Blocking terrain withing 12” of a friendly Legio Infernus Titan and remove it, replacing it with an area of Difficult Terrain of roughly the same size. This stratagem can be purchased multiple times.</description>
@@ -8438,7 +8424,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="117e-1150-d95c-0c61" name="=Lysanda= Frontier Guard" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="117e-1150-d95c-0c61" name="=Lysanda= Frontier Guard" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be34-a671-1633-9bbd" type="max"/>
       </constraints>
@@ -8474,7 +8460,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fa21-d04e-c23a-9d6a" name="=Praesagius= Precision Volley" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="fa21-d04e-c23a-9d6a" name="=Praesagius= Precision Volley" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="true" collective="false" import="false" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7298-6f53-82aa-ccf1" type="max"/>
       </constraints>
@@ -9552,7 +9538,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3a41-59a8-581b-0498" name="=Audax= Canis Light Maniple" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="3a41-59a8-581b-0498" name="=Audax= Canis Light Maniple" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="true" collective="false" import="false" type="unit">
       <rules>
         <rule id="e70f-0805-8c7e-5971" name="Hunting Pack" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="false">
           <description>Canis Light Maniples can only include Legio Audax Titans. Warhound Titans within this maniple do not deploy as normal. Instead, at the start of the deployment phase, after arranging Titans into squadrons, the controlling player places a number of markers equal to the number of Warhounds in this maniple. These markers can be placed anywhere on the battlefield more than 6” from the enemy deployment zone. Titans from this maniple count as deployed for the purposes of determining which player finished deploying first. When both players have finished deploying as normal, Warhounds from this maniple can be deployed anywhere within 3” of a Pack Ambush marker. Any Warhound deployed in this manner outside of the controlling player’s deployment zone must be at least 50% obscured from any enemy unit within line of sight of that Warhound. If a Warhound cannot be placed within 3” of a Pack Ambush marker in this way, they must be deployed in the controlling player’s deployment zone, following all of the normal rules.
@@ -15876,7 +15862,7 @@ Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Move
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c80f-d884-325b-745c" name="=Honorum= Crusading Spirit" publicationId="2988-f24d-39ef-352e" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c80f-d884-325b-745c" name="=Honorum= Crusading Spirit" publicationId="2988-f24d-39ef-352e" hidden="true" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="20cd-a50d-46c3-6dea" name="=Honorum= Crusading Spirit" hidden="false">
           <description>Since its inception, Legio Honorum has strode ever forwards, preferring death over failure. This Stratagem can be purchased by any Legio Honorum player. Play this Stratagem during any Strategy phase. For the remainder of the phase, friendly Legio Honorum Titans do not suffer penalties to Command checks. In addition, a single Legio Honorum Titan may re-roll a failed Command check made when issuing Orders.</description>
@@ -17751,7 +17737,7 @@ being issued an order.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a77a-601b-06c0-9ccc" name="=Interfector= Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a77a-601b-06c0-9ccc" name="=Interfector= Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="869c-9ea5-feb0-8426" name="=Interfector= Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
           <description>Reveal this Stratagem during the Strategy phase. Any enemy Titan or Knight Banner within 12&quot; of a Legio Interfector Titan may not
@@ -18344,7 +18330,7 @@ destroyed by the end of the battle, the player loses 10 Victory points. </descri
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="324b-8404-7509-9b36" type="atLeast"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="324b-8404-7509-9b36" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
