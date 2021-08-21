@@ -4,13 +4,11 @@ Adeptus Titanicus
 Hey guys, the current plan is to get Loyalist Legios updated on the old format, then we have a complete rebuild we are testing.
 
 
+Find us on the Discord, the messaging on Gittr has gone off the rails:  https://discord.com/invite/UrrPB3T
 
 
 
 
-
-
-[![Join the chat at https://gitter.im/BSData/adeptus-titanicus](https://badges.gitter.im/BSData/adeptus-titanicus.svg)](https://gitter.im/BSData/adeptus-titanicus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 #### Contents ####
 
