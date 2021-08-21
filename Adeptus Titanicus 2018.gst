@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="27" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="28" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -11,6 +11,8 @@
     <publication id="2988-f24d-39ef-352e" name="Defense of Ryza"/>
     <publication id="ce02-a882-fdad-dd36" name="Crucible of Retribution" publisherUrl="https://www.warhammerdigital.com/all-products/adeptus-titanicus-crucible-of-retribution-epub-2020.html"/>
     <publication id="8566-126e-e686-9bc4" name="White Dwarf: Sep 2020"/>
+    <publication id="3401-191e-1333-8a1d" name="Loyalist Legios"/>
+    <publication id="3f10-4381-6c37-a2f9" name="Adeptus Titanicus 2018 Errata v1.2"/>
   </publications>
   <costTypes>
     <costType id="a731-e220-2d8a-41bf" name=" Points" defaultCostLimit="-1.0" hidden="false"/>
@@ -512,6 +514,10 @@
         <rule id="9e0e-dbe2-6ee1-092c" name="Baronial Court" hidden="false"/>
       </rules>
     </categoryEntry>
+    <categoryEntry id="3fd9-a0bc-cb00-c4d6" name="Desperate Measures" publicationId="3401-191e-1333-8a1d" page="175" hidden="false"/>
+    <categoryEntry id="b477-7f02-0efe-637c" name="Tactical Support" publicationId="3401-191e-1333-8a1d" page="175" hidden="false"/>
+    <categoryEntry id="2afb-401e-9ec9-28b2" name="LegioMetalica" hidden="false"/>
+    <categoryEntry id="49cb-6b32-2241-ca58" name="Warp Trickery" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -582,41 +588,43 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="92b5-e290-3859-ee00" name="Auspex Bafflers" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="92b5-e290-3859-ee00" name="Auspex Bafflers" publicationId="3401-191e-1333-8a1d" page="173" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9475-954d-9bc0-bee5" type="max"/>
       </constraints>
       <rules>
-        <rule id="3b5a-cbb2-e42b-3ead" name="Auspex Bafflers" hidden="false">
-          <description>Play in any Strategy phase. Pick a Knight Banner or Titan - the for the rest of the round, incoming attacks have an extra -1 to hit that unit.</description>
+        <rule id="3b5a-cbb2-e42b-3ead" name="Auspex Bafflers" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>Play this Stratagem in any Stratagy phase. The player chooses one of their Titans or Knight Banners. Until the end of the round, the chosen unit increases the To Hit roll penalty for being obscured by 1, i.e., -2 To Hit if at least 25% of the unit is obscured, or -3 To Hit if at least 50% of the unit is obscured.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="fe05-2ae0-6d29-56e8" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="655a-3801-69d1-9bfd" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1911-abf3-ac1a-dc24" name="Ablative Armour" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1911-abf3-ac1a-dc24" name="Ablative Armour" publicationId="3401-191e-1333-8a1d" page="173" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e92b-03d7-ddeb-9e5f" type="max"/>
       </constraints>
       <rules>
-        <rule id="d289-a08c-7084-5177" name="Ablative Armour" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in any Strategy phase. Pick a Titan. Ignore the first Direct, Devastating, or Critical hit against that unit, then discard this strategem.</description>
+        <rule id="d289-a08c-7084-5177" name="Ablative Armour" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>Play this Stratagem in any Stratagy phase. The player chooses one of their Titans and places a marker next to its Command Terminal. The first Direct, Devastating or Critical Hit suffered by the Titan is ignored. Then discad this stratagem.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="f6e5-39f6-fcfb-d2d7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="97c7-ad50-3170-4bcf" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d57-58b8-78e2-ef41" name="Bloodthirst" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="7d57-58b8-78e2-ef41" name="Bloodthirst" publicationId="975a-00f4-pubN89746" page="78" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -624,54 +632,60 @@
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c00-06fc-88a7-95e3" type="max"/>
+      </constraints>
       <rules>
-        <rule id="e190-0e76-863b-13e8" name="Bloodthirst" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in an Strategy phase. This round, your Titans add +2 to hit enemies within 2&quot; and add +2 to Command checks when issuing Charge orders.</description>
+        <rule id="e190-0e76-863b-13e8" name="Bloodthirst" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. for the duration of the round, the player&apos;s Titans add 2 to any To Hit rolls made against enemies within 2&quot; of them. In addition, the player&apos;s Titans add 2 to their Command checks when attempting to issue the Charge order.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="6c7b-33e6-e037-f88c" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="6e10-8bea-9c1e-79f0" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1de7-d898-28ca-df04" name="Cursed Earth" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1de7-d898-28ca-df04" name="Cursed Earth" publicationId="3401-191e-1333-8a1d" page="172" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="961e-00a1-1f79-b536" type="max"/>
       </constraints>
       <rules>
-        <rule id="c5fd-928f-6592-7f3e" name="Cursed Earth" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in the first Strategy phase of the game. Radioactive battlefield - Titans rolle on extra dive when making Void Shield svaes, Knight banners count the strength of incoming attacks as 1 higher when working out their Ion Shield saves.</description>
+        <rule id="c5fd-928f-6592-7f3e" name="Cursed Earth" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
+          <description>Play this Stratagem in the first Stratagy phase of the game. The battlefield is heavily irradiated, making shields less effective. Titans must roll an extra dice when making Void Shield saves, while Knight Banners count the Strength of attacks as one higher for the purposes of working out their Ion Shield saves.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="ee24-d8e3-b68e-d64f" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="099a-7db5-aa0e-913f" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="25d9-b5e3-6243-ba14" name="Dawn Attack" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="25d9-b5e3-6243-ba14" name="Dawn Attack" publicationId="3401-191e-1333-8a1d" page="172" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="323e-0fb9-3fd0-a676" type="max"/>
       </constraints>
       <rules>
-        <rule id="90ee-05f6-621a-1b33" name="Dawn Attack" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in the first Strategy phase of hte game. For the first 2 rounds, Titans must roll d6x10 to determine hoe far away the can target enemies. Enemy usnits that have fired earlier in the round can always be targeted.</description>
+        <rule id="90ee-05f6-621a-1b33" name="Dawn Attack" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
+          <description>Play this Stratagem in the first Stratagy phase of the game. For the first two rounds of the game, darkness cloaks the battlefield. Titans must roll (D6+1) x 5 to determine how many inches they can see - only enemies within this range can be targeted. Titans that shot earlier in the round can be targeted, regardless of the distance an attacker can see.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="2fdb-45f6-8f5e-be64" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="32f6-36f8-fed3-adc7" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d4f-7971-bacc-d50e" name="Endurance of Terra" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="7d4f-7971-bacc-d50e" name="Endurance of Terra" publicationId="3401-191e-1333-8a1d" page="173" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -683,33 +697,38 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6444-c60f-2ed7-c3bf" type="max"/>
       </constraints>
       <rules>
-        <rule id="90e8-b136-e796-658d" name="Endurance of Terra" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play hwen a Titan suffers Critical damage. Rolle a d6 - if you rolle equal or less than the amount of damage, that damage is ignored. Otherwise, take damage as normal and retain this card.</description>
+        <rule id="90e8-b136-e796-658d" name="Endurance of Terra" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem when one of the player&apos;s Titans suffers Critical Damage. The player rolls a D6. On a 3+, the damage is ignored. Otherwise nothing happens, but the Stratagem is not discarded and can be played again in a subsequent round.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="2d14-fe00-fbcf-d121" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="7a91-53ff-1446-c56f" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cb69-65f4-f95f-62d3" name="Experimental Weapon" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="cb69-65f4-f95f-62d3" name="Experimental Weapon" publicationId="3401-191e-1333-8a1d" page="172" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab3e-4814-48e4-dc1a" type="max"/>
+      </constraints>
       <rules>
-        <rule id="93f0-6127-7745-5f27" name="Experimental Weapon" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in the Strategy phase of the first round. Pick a Titan, then randomly select one of its weapons. That weapon gains the Maximal Fire trait, but must always fire on Maximal. If the weapon already has that trait, pick another weapon.</description>
+        <rule id="93f0-6127-7745-5f27" name="Experimental Weapon" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
+          <description>Play this Stratagem in the first Stratagy phase of the game. The player chooses one of their Titans and places a marker next to its Command Terminal. Then, randomly choose one of the Titan&apos;s weapons. For the duration of this battle, the selected weapon gains the Maximal Fire trait, though must always declare that it is using this trait each time it fires. If the wepon already has the Maximal Fire trait, select another weapon.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="2d07-dca9-7891-14c7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="b6ef-627d-1bbe-72a9" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9ed4-ecf1-c67b-b64e" name="Gifts of the Dark Mechanicum" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="9ed4-ecf1-c67b-b64e" name="Gifts of the Dark Mechanicum" publicationId="975a-00f4-pubN89746" page="78" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -721,19 +740,20 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab55-2470-271f-1b8a" type="max"/>
       </constraints>
       <rules>
-        <rule id="8486-7526-90c4-40bb" name="Gifts of the Dark Mechanicum" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in an Strategy phase. Pick a Titan. Each time that Titan pushes its reactor, you may put a token on thsi card instead of rolling a Reactor die. Once this card has 3 tokens, it is discarded.</description>
+        <rule id="8486-7526-90c4-40bb" name="Gifts of the Dark Mechanicum" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in the Stratagem phase of the first round. The player chooses one of their Titans and places a marker next to its Command Terminal. Each time the Titan pushes its Reactor, the player can choose to place a token next to this marker instead of rolling the Reactor dice, gaining the benefits of Pushing the Reactor without advancing the Reactor track. Once there are three tokens, this stratagem, the marker and all tokens are discarded.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="f2bb-75b2-ac63-ed25" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="18e3-dd69-4416-d102" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b8c9-6ea9-db00-80ad" name="Great Crusade Titans" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="b8c9-6ea9-db00-80ad" name="Great Crusade Titans" publicationId="3401-191e-1333-8a1d" page="173" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -745,19 +765,20 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7500-77e3-927a-4b5a" type="max"/>
       </constraints>
       <rules>
-        <rule id="c679-501a-4c2e-d9fc" name="Great Crusade Titans" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in any Strategy phase. Add +2 to Command checks when issuing Charge orders this round. Titans also count as having moved 6&quot; furhter for hte purposes of their additional Charge attacks.</description>
+        <rule id="c679-501a-4c2e-d9fc" name="Great Crusade Titans" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Strategy phase. For the duration of the round, the player&apos;s Titans add 2 to Command checks when issuing Charge orders. In addition, when moving under Charge orders the player&apos;s Titans count as moving 6&quot; further than they actually moved for the purposes of working out additional Attack dice.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="8165-a347-ab06-4f1f" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="ae6c-26b1-20e7-3758" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="63e5-c3bf-0f5b-a8ae" name="Living Armour" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="63e5-c3bf-0f5b-a8ae" name="Living Armour" publicationId="975a-00f4-pubN89746" page="78" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -769,19 +790,20 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99eb-58fb-1c17-d40c" type="max"/>
       </constraints>
       <rules>
-        <rule id="df4e-a0e3-9e1f-63b9" name="Living Armour" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in any Strategy phase. Pick a Titan, and a location that has suffered damage. Roll a d10. If your roll equal or higher than the amount of Structural damage, all damage to that location is repaired. Otherwise, there&apos;s no effect, but you retain the card for subsequent rounds.</description>
+        <rule id="df4e-a0e3-9e1f-63b9" name="Living Armour" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. The player chooses one of their Titans and a location on the chosen Titan that has suffered Structural Damage. The player rolls a D10. If the result is equal to or higher than the amount of Structural Damage suffered, all damage to the location is repaired. Otherwise there is no effect, but the player may retain this Stratagem and play it again in a subsequent round.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="74ad-b7d8-e91e-f9ec" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="67bb-6dc6-6510-10c8" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9c4a-cc01-9454-b339" name="Martian Servitor Clades" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="9c4a-cc01-9454-b339" name="Martian Servitor Clades" publicationId="3401-191e-1333-8a1d" page="173" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -793,50 +815,56 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a169-694f-a412-42ce" type="max"/>
       </constraints>
       <rules>
-        <rule id="52e0-9a76-6894-5abd" name="Martian Servitor Clades" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play at the start of any Damage Control phase. Each of your Titans adds 2 reapir dice to their Servitor clades. If your opponent is fielding any Legio Mortis or Tempestus Titans, you can also re-roll 1s on repair dice.</description>
+        <rule id="52e0-9a76-6894-5abd" name="Martian Servitor Clades" publicationId="3f10-4381-6c37-a2f9" page="10" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem at the beginning of any Damage Control phase. Until the end of the next Strategy phase, each of the player&apos;s Titans adds two Repair dice to their Servitor Clades. In addition, if the player&apos;s opponent is fielding any Legio Mortis or Legio Tempestus Titans, they may re-roll any results of a 1 on the Repair dice.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="214a-d9c4-724c-1943" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="14be-9ef5-4b26-efac" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f53-6658-d606-ad5c" name="Overcharged Cannon" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="2f53-6658-d606-ad5c" name="Overcharged Cannon" publicationId="3401-191e-1333-8a1d" page="173" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b057-ff2c-6238-8256" type="max"/>
+      </constraints>
       <rules>
-        <rule id="c4b1-aa1f-4b50-92b0" name="Overcharged Cannon" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in the Strategy phase of the first round. Pick a Titan that has a weapon with Maximal Fire. One weapon with that trait gains Super Maximal Fire - like regular Maximal, but at +4 Strength instead.</description>
+        <rule id="c4b1-aa1f-4b50-92b0" name="Overcharged Cannon" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans armed with a weapon with the Maximal Fire trat. Place a marker next to the Titan&apos;s Command Terminal and select one of its weapons with the Maximal Fire trait. Until the end of the battle, the Titan can fire this weapon on Super Maximal Fire. This works in exactly the same way as the Maximal Fire trait, except that the weapon&apos;s Strength is increased by 4 instead of 2.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="6d30-67eb-dcbd-bae7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="a07f-1ee7-aaed-2140" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c88b-b85f-1703-59c7" name="Sabotage" publicationId="975a-00f4-pubN65537" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c88b-b85f-1703-59c7" name="Sabotage" publicationId="3401-191e-1333-8a1d" page="172" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e844-5a81-9b8e-57f6" type="max"/>
       </constraints>
       <rules>
-        <rule id="141c-9df4-b519-6fe0" name="Sabotage" publicationId="975a-00f4-pubN65537" hidden="false">
-          <description>Play at the start of any phase. Pick a Titan that doesn&apos;t have Shutdown orders. Replace their order with a random one.</description>
+        <rule id="141c-9df4-b519-6fe0" name="Sabotage" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
+          <description>Play this stratagem at the start of any phase. Pick an enemy unit which does not currently have Shutdown orders, remove its current Order (if any), then roll an Order dice - the unit immediately takes the order shown. If it cannot be issued that Order, only its current Order is removed - no new Order is given.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="a5d0-0356-0cd7-ba2e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="889f-90dd-36b9-5a12" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="82dc-135c-6241-dcca" name="Secutarii Battalion" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="82dc-135c-6241-dcca" name="Secutarii Battalion" publicationId="3401-191e-1333-8a1d" page="173" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -848,19 +876,20 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12ef-5ea6-76b4-56b9" type="max"/>
       </constraints>
       <rules>
-        <rule id="1007-6826-61f3-4bc1" name="Secutarii Batallion" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in each Strategy phase. Any enemy units with Scale 3 or less take d6 Strength 3 hits, if they are within 2&quot; of one of the player&apos;s Titans.</description>
+        <rule id="1007-6826-61f3-4bc1" name="Secutarii Batallion" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in each Strategy phase. Any enemy units with a Scale of 3 or less immediately suffer D6 Strength 3 hits if they are within 2&quot; of one of the player&apos;s Titans.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="a6e9-5337-2ec8-f9a8" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="ed7d-ac22-f0ed-15c6" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="68a2-d06c-8ad8-9ea0" name="The Long Retreat" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="68a2-d06c-8ad8-9ea0" name="The Long Retreat" publicationId="3401-191e-1333-8a1d" page="173" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -872,58 +901,74 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b3-21ef-690b-2c7d" type="max"/>
       </constraints>
       <rules>
-        <rule id="e5f4-6ba8-2b91-1faf" name="The Long Retreat" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in an Strategy phase. Pick a Titan. This round, your Titans don&apos;t move at half speed when moving outside their Front arc.</description>
+        <rule id="e5f4-6ba8-2b91-1faf" name="The Long Retreat" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Strategy phase. For the duration of this round, the player&apos;s Titans do not halve thier Speed when moving outside of their Front arc.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="3646-0090-b602-6e42" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+        <categoryLink id="dba7-63e4-2540-b784" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3195-2ce6-0ecc-7d2e" name="Thermal Mines" publicationId="975a-00f4-pubN65537" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3195-2ce6-0ecc-7d2e" name="Thermal Mines" publicationId="3401-191e-1333-8a1d" page="172" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcbc-42ad-d9c4-cf8e" type="max"/>
       </constraints>
       <rules>
-        <rule id="5877-a1c6-d33d-c69c" name="Thermal Mines" publicationId="7236-e1d8-c886-f5fd" hidden="false">
-          <description>Play after an enemy unit finishes moving or making a turn. That unit takes d3 S10 hits to the legs, ignoring shields.</description>
+        <rule id="5877-a1c6-d33d-c69c" name="Thermal Mines" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
+          <description>Play this stratagem immediately after an enemy unit finishes moving or making a turn. Roll a D6. On a 2 or more, that unit suffers D3 Strength 8 hits; a Titan takes these hits to its Legs. Shield saves cannot be made against the hits. On a 1, nothing happens but the stratagem is not discarded and he can be played again in a subsequent round.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="001c-2d1a-a553-5703" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="9620-53e3-ea16-46b1" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b9c7-8740-586c-af80" name="Voidbreaker Field" publicationId="975a-00f4-pubN65537" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b9c7-8740-586c-af80" name="Voidbreaker Field" publicationId="3401-191e-1333-8a1d" page="172" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="747e-a475-fc09-3272" type="max"/>
       </constraints>
       <rules>
-        <rule id="7974-7395-36fe-c3ac" name="Voidbreaker Field" publicationId="975a-00f4-pubN65537" hidden="false">
-          <description>Play this Stratagem immediately after an enemy unit with active void shields finishes moving or making a turn. Roll a D6. On a 2 or more, the opposing player must immediately make a number of Shield saves equal to the number rolled on the D6. On a 1, the Stratagem can be used a second time, in a subsequent turn.</description>
+        <rule id="7974-7395-36fe-c3ac" name="Voidbreaker Field" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
+          <description>Play this Stratagem immediately after an enemy unit with active void shields finishes moving or making a turn. Roll a D6. On a 2 or more, the opposing player must immediately make a number of Shield saves equal to the number rolled on the D6. On a 1, nothing happens but the Stratagem is not discarded and can be played again in a subsequent round.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="0895-2d2a-efe8-20d8" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+        <categoryLink id="fa46-2fec-b05d-c31e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="211c-5c02-080a-eeb4" name="Vox Blackout" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="211c-5c02-080a-eeb4" name="Vox Blackout" publicationId="3401-191e-1333-8a1d" page="173" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eaa-461f-d419-461e" type="max"/>
       </constraints>
       <rules>
-        <rule id="1c9e-d57d-35be-80f5" name="Vox Blackout" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in any Strategy phase. All non-Shutdown orders are discarded, and the phase immediately ends.</description>
+        <rule id="1c9e-d57d-35be-80f5" name="Vox Blackout" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>Play this Stratagem in any Strategy phase. The Stratagy phase immediately ends and all Orders are removed, with the exception of Shutdown orders.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="8517-005e-76d6-8ff1" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+        <categoryLink id="59da-6eb9-6edd-cd9a" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
       <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3ef1-098e-a603-9111" name="Wages of Betrayal" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="3ef1-098e-a603-9111" name="Wages of Betrayal" publicationId="3401-191e-1333-8a1d" page="173" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -935,19 +980,20 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3383-9672-08e4-8986" type="max"/>
       </constraints>
       <rules>
-        <rule id="7721-0e26-60a5-66e6" name="Wages of Betrayal" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in any Strategy phase. Enemy Titans suffer -2 to Command checks this phase; the enemy Princeps Seniores suffers -3 to Command checks instead.</description>
+        <rule id="7721-0e26-60a5-66e6" name="Wages of Betrayal" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Stratagy phase. For the duration of the round, enemy Titans suffer a -2 penalty to Command checks. Any enemy Priceps Senioris suffers a -3 penalty to Command checks instead.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="c803-e008-a3f9-dc88" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="5243-616e-dde8-7bbb" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="19e6-b0cc-5b61-4583" name="War Lust" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="19e6-b0cc-5b61-4583" name="War Lust" publicationId="975a-00f4-pubN89746" page="78" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -959,16 +1005,20 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0c5-d94c-134a-8b3c" type="max"/>
       </constraints>
       <rules>
-        <rule id="697b-958d-7a0a-0201" name="War Lust" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in any Strategy phase. This round, your tians add +2&quot; to their Boosted Speed. Also, add +2 to Command checks when issuing Full Stride orders.</description>
+        <rule id="697b-958d-7a0a-0201" name="War Lust" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. For the duration of this round, the player&apos;s Tians add 2&quot; to their Boosted Speed characteristic. In addition, the player&apos;s Titans add 2 to their Command checks when attempting to issue the Full Stride order.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="f7b2-70f4-83bf-0101" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+        <categoryLink id="af96-4db7-6866-6ccb" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5fff-7fff-159a-06b8" name="War of Fates" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="5fff-7fff-159a-06b8" name="War of Fates" publicationId="975a-00f4-pubN89746" page="78" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -980,16 +1030,20 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40c8-9465-4c5b-f98c" type="max"/>
       </constraints>
       <rules>
-        <rule id="c0de-a421-ac8a-a9ec" name="War of Fates" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in any Strategy phase. Beofre the Movement, Damage Control, and Combat phases, roll a d10. If the result is ODD, during that phase any 6 on a d6 (or 10 on a d10) counts as a 1. If the result is EVEN, any 1 rolled on a d6 or d10 counts as having the maximum for that die.</description>
+        <rule id="c0de-a421-ac8a-a9ec" name="War of Fates" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. Beofre the Movement phase, Damage Control phase and Combat phase, the player rolls a D10. If the result is an odd number, for the duration of that phase any D6 roll of a 6 counts as a 1 and any D10 roll of a 10 counts as a 1. If the result is an even number, any D6 roll of a 1 counts as a 6 and any D10 roll of a 1 counts as a 10.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="03b8-b423-a4d3-2b72" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="2699-8672-ad28-4e2b" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6f84-544d-c82b-ae95" name="Warmaster&apos;s Portion" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="6f84-544d-c82b-ae95" name="Warmaster&apos;s Portion" publicationId="975a-00f4-pubN89746" page="78" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1001,10 +1055,14 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b49e-50e3-b319-8a11" type="max"/>
       </constraints>
       <rules>
-        <rule id="55a1-5d0b-5744-c20f" name="Warmaster&apos;s Portion" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Play in the Strategy phase of the first round. During the Movement and Combat phases this round, your Titans can re-roll 1s to hit.</description>
+        <rule id="55a1-5d0b-5744-c20f" name="Warmaster&apos;s Portion" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in the Strategy phase of the first round. During the Movement and Combat phases of the first round, the player&apos;s Titans can re-roll rolls of 1 when making To Hit rolls.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="f1fc-5637-d008-c217" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="6249-4f6e-5c0a-e656" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -1044,68 +1102,72 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b450-3a86-ecdf-39fc" name="Noble Sacrifice" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b450-3a86-ecdf-39fc" name="Noble Sacrifice" publicationId="3401-191e-1333-8a1d" page="172" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cff2-5040-7160-7812" type="max"/>
       </constraints>
       <rules>
-        <rule id="9a92-3879-479c-dcb3" name="Noble Sacrifice" hidden="false">
-          <description>A player can enact this Stratagem during the Strategy phase. To do so, they pick a Titan from their force whose strucrure has been compromised and roll a D6. Add 1 to the result if its Reactor Starus marker is in a hole with an orange indicator, or add 3 to the result if it is in a hole with a red indicator. The Titan suffers a Magazine Detonation on a result of 1-4, or a Catastrophic Meltdown on a result of 5-6 (see the Catastrophic Damage table on page 36). At the end of the battle, the player loses a number of Victory points equal to the Titan&apos;s Scale.</description>
+        <rule id="9a92-3879-479c-dcb3" name="Noble Sacrifice" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
+          <description>A player can enact this Stratagem during the Strategy phase. To do so, they pick a Titan from their force whose structure has been compromised and roll a D6. Add 1 to the result if its Reactor Status marker is in a hole with an orange indicator, or add 3 to the result if it is in a hole with a red indicator. The Titan suffers a Magazine Detonation on a result of 1-4, or a Catastrophic Meltdown on a result of 5-6 (see the Catastrophic Damage table).</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="225f-44de-db0f-58bd" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="0e9f-2f3e-0d8f-03d7" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a0b2-b8fc-58d2-90f3" name="Artillery Bombardment" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="a0b2-b8fc-58d2-90f3" name="Artillery Bombardment" publicationId="3401-191e-1333-8a1d" page="172" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b63-0a44-5c20-e32d" type="max"/>
       </constraints>
       <rules>
-        <rule id="5154-fe72-cab6-0525" name="Artillery Bombardment" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
-          <description>Artillery Bombardment. Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield, then scatter it D10&apos;&apos;. Any unit touched by the marker where it evenrually lands suffers a Strength 8 hit, or two Strength 8 hits if the cenrral hole of the Blast marker is entirely over its base.</description>
+        <rule id="5154-fe72-cab6-0525" name="Artillery Bombardment" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
+          <description>Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield, then scatter it D10&apos;&apos;. Any unit touched by the marker where it eventually lands suffers a Strength 8 hit, or two Strength 8 hits if the cenrral hole of the Blast marker is entirely over its base.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="9281-1e2a-9d46-9b5c" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="faa4-e215-3c47-203e" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4537-cab6-8147-aebe" name="Orbital Lance Strike" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="4537-cab6-8147-aebe" name="Orbital Lance Strike" publicationId="3401-191e-1333-8a1d" page="172" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4576-c93d-63e3-9fdf" type="max"/>
       </constraints>
       <rules>
-        <rule id="d780-0b5c-9bed-dda0" name="Orbital Lance Strike" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
-          <description>Once per battle, play this during the Strategy phase. Place the 3&quot; Blast marker anywhere on the battlefield, then scatter it D6&quot;. Any unit touched by the marker where it evenrually lands suffers D3 Strength 10 hits, or 2D3 Strength 10 hits ifthe central hole ofthe Blast marker is entirely over its base.</description>
+        <rule id="d780-0b5c-9bed-dda0" name="Orbital Lance Strike" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
+          <description>Once per battle, play this during the Strategy phase. Place the 3&quot; Blast marker anywhere on the battlefield, then scatter it D6&quot;. Any unit touched by the marker where it eventually lands suffers D3 Strength 10 hits, or 2D3 Strength 10 hits if the central hole of the Blast marker is entirely over its base.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="34db-650d-be3b-6981" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="7152-ad6b-6c4c-465e" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1fc1-6634-8b70-9b23" name="Blind Barage" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1fc1-6634-8b70-9b23" name="Blind Barage" publicationId="3401-191e-1333-8a1d" page="172" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a952-0638-9e96-d99e" type="max"/>
       </constraints>
       <rules>
-        <rule id="a4be-3ed9-4bfa-cb1e" name="Blind Barage" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
-          <description>Once per battle,play this during the Strategy phase. Pick a unit on the battlefield. Any attacks that target it or are made by it suffer a -2 To Hit penalty for the duration of the round.</description>
+        <rule id="a4be-3ed9-4bfa-cb1e" name="Blind Barage" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
+          <description>Once per battle, play this during the Strategy phase. Pick a unit on the battlefield. Any attacks that target it or are made by it suffer a -2 To Hit penalty for the duration of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="634e-325b-b8ab-a59b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="ea48-6174-11d0-a256" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -1123,6 +1185,7 @@
       </rules>
       <categoryLinks>
         <categoryLink id="250a-c923-df82-0701" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="8594-6ba3-8ece-d882" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -1140,6 +1203,7 @@
       </rules>
       <categoryLinks>
         <categoryLink id="0796-92e4-538b-f148" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="b7da-38af-0a05-d678" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -1157,6 +1221,7 @@
       </rules>
       <categoryLinks>
         <categoryLink id="d56f-7018-2baf-bfb3" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="5757-ac96-80b8-85af" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -1174,18 +1239,19 @@
       </rules>
       <categoryLinks>
         <categoryLink id="74cd-7809-7c02-0211" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="8bfa-e9da-4d63-1671" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6d49-58e1-e625-0ceb" name="Command Bastion" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="6d49-58e1-e625-0ceb" name="Command Bastion" publicationId="975a-00f4-pubN65537" page="65" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9774-450a-5fbc-a9a4" type="max"/>
       </constraints>
       <rules>
-        <rule id="3f88-a505-7495-f00d" name="Command Bastion" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+        <rule id="3f88-a505-7495-f00d" name="Command Bastion" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
           <description>A command bastion allows the owning player to issue one more order after they fail a Command check when issuing orders in the Strategy phase. The order must be issued to a unit within 18&quot; of the command bastion. Note that this does not allow more than one order to be issued to a unit.</description>
         </rule>
       </rules>
@@ -1198,7 +1264,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2aaf-da08-f744-14f6" name="Apocalypse Missile Strongpoint" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="2aaf-da08-f744-14f6" name="Apocalypse Missile Strongpoint" publicationId="975a-00f4-pubN65537" page="65" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ee-dd35-881e-2b1f" type="max"/>
       </constraints>
@@ -1232,7 +1298,15 @@
       </profiles>
       <rules>
         <rule id="652a-29df-1102-97fd" name="Apocalypse Missile Strongpoint" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
-          <description>In the &apos;Enact Stratagems&apos; step of the Strategy phase, the owning player can make an attack with the strongpoint&apos;s apocalypse missile launcher, using the profile which follows. The strongpoint has a Ballistic Skill/Weapon Skill of 4+ and a 360° firing arc.</description>
+          <description>In the &apos;Enact Stratagems&apos; step of the Strategy phase, the owning player can make an attack with the strongpoint&apos;s apocalypse missile launcher, using the profile which follows.
+
+Arc: 360
+BS/WS: 4+
+Short Range: 30&quot;
+Long Range: 120&quot;, +1 To Hit
+Dice: 5
+Strength: 4
+Traits: Barrage</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1252,7 +1326,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9def-cfbe-720b-1039" type="max"/>
       </constraints>
       <rules>
-        <rule id="2818-6dc4-11ca-8e15" name="Communications Relay" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+        <rule id="2818-6dc4-11ca-8e15" name="Communications Relay" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
           <description>Subtract 1 from the result of any Command checks for units that are within 18&quot; of a communications relay that is owned by the enemy.</description>
         </rule>
       </rules>
@@ -1265,7 +1339,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0e1f-c7a0-8a50-0e5e" name="Macro Cannon Battery" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="0e1f-c7a0-8a50-0e5e" name="Macro Cannon Battery" publicationId="975a-00f4-pubN65537" page="65" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e68-aa1b-6b3c-c622" type="max"/>
       </constraints>
@@ -1298,8 +1372,16 @@
         </profile>
       </profiles>
       <rules>
-        <rule id="06ea-eb68-3868-211c" name="Macro Cannon Battery" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
-          <description>In the &apos;Enact Stratagems&apos; step of the Strategy phase, the owning player can make an attack with the battery&apos;s macro cannon, using the profile that follows. The battery has a Ballistic Skill/ Weapon Skill of 4+ and a 360°firing arc.</description>
+        <rule id="06ea-eb68-3868-211c" name="Macro Cannon Battery" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
+          <description>In the &apos;Enact Stratagems&apos; step of the Strategy phase, the owning player can make an attack with the battery&apos;s macro cannon, using the profile that follows. 
+
+BS/WS: 4+
+Arc: 360
+Short Range: 12&quot;
+Long Range: 24&quot;, -1 To Hit
+Dice: 2
+Strngth: 10
+Traits: Ordnance</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1319,7 +1401,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1784-b884-65b0-6b6a" type="max"/>
       </constraints>
       <rules>
-        <rule id="22e4-7086-ff36-598b" name="Void Shield Relay" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+        <rule id="22e4-7086-ff36-598b" name="Void Shield Relay" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
           <description>Failed Void Shield saves can be re-rolled for units that are within 2&quot; of a friendly void shield relay, and which have not moved (voluntarily or involuntarily) this round.</description>
         </rule>
       </rules>
@@ -1338,7 +1420,7 @@
       </constraints>
       <rules>
         <rule id="dedd-2b03-80eb-d110" name="Plasma Generator" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
-          <description>When the owning player activates a unit within l&quot; of the plasma generator in the Movement phase, they can declare that it will draw power instead of moving or making turns (or attacking, if it has First Fire orders). The unit does nothing when it is activated, but its Reactor level is reduced by D3.</description>
+          <description>When the owning player activates a unit within 1&quot; of the plasma generator in the Movement phase, they can declare that it will draw power instead of moving or making turns (or attacking, if it has First Fire orders). The unit does nothing when it is activated, but its Reactor level is reduced by D3.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1363,11 +1445,12 @@
       </constraints>
       <rules>
         <rule id="d74e-0cf6-7851-54fa" name="Localised Warp Storm" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
-          <description>Play this Stratagem in any Strategy phase. Place the 3&quot; Blast marker anywhere on the battlefield, then scatter it D10&quot;. Any unit touched by the marker after it has scattered takes D3 Hits as if attacked by a Warp weapon that has successfully hit</description>
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. Place the 3&quot; Blast marker anywhere on the battlefield, then scatter it D10&quot;. Any unit touched by the marker after it has scattered takes D3 Hits as if attacked by a Warp weapon that has successfully hit.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="3f49-2b03-056a-20e1" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="a8c3-8df0-7a69-beba" name="Warp Trickery" hidden="false" targetId="49cb-6b32-2241-ca58" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
@@ -1387,11 +1470,12 @@
       </constraints>
       <rules>
         <rule id="9f21-4171-3ff8-708c" name="Aetheric Infusion" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
-          <description>Play this Stratagem in any phase. The player chooses one of their Titans and rolls a D10. On a 3+, immediately make a Repair roll for the Titan, adding 2 to their Servitor Clades for that roll. On a 2, the Titan takes D3 Devastating Hits to its Body. On a 1, the Titan immediately suffers Catastrophic Damage</description>
+          <description>This Stratagem may be purchased by any Traitor player. Play this Stratagem in any phase. The player chooses one of their Titans and rolls a D10. On a 3+, immediately make a Repair roll for the Titan, adding 2 to their Servitor Clades for that roll. On a 2, the Titan takes D3 Devastating Hits to its Body. On a 1, the Titan immediately suffers Catastrophic Damage.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="bcfe-608f-5a1e-1a5e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="29b3-5c31-285b-4d73" name="Warp Trickery" hidden="false" targetId="49cb-6b32-2241-ca58" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -1408,11 +1492,12 @@
       </modifiers>
       <rules>
         <rule id="44c5-1432-9260-9194" name="Profane Blessing" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
-          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans or Knight Banners and places a marker of some kind next to its Command Terminal. That unit may choose to re-roll one or more dice for a single roll; for example, they may re-roll a Command check or all failed Hit rolls from a single weapon attack. Discard the marker after the re-rolls have been resolved. This Stratagem can be taken multiple times.</description>
+          <description>This Stratagem may be purchased by any Traitor player. Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans or Knight Banners and places a marker of some kind next to its Command Terminal. That unit may choose to re-roll one or more dice for a single roll; for example, they may re-roll a Command check or all failed Hit rolls from a single weapon attack. Discard the marker after the re-rolls have been resolved. This Stratagem can be taken multiple times.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="2cac-822e-c470-eae2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="8e01-f89d-39f0-9003" name="Warp Trickery" hidden="false" targetId="49cb-6b32-2241-ca58" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -1432,11 +1517,12 @@
       </constraints>
       <rules>
         <rule id="532a-a833-6c0a-082b" name="Wails of the Damned" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
-          <description>Play this Stratagem during any Strategy phase. For the remainder of that round, subtract 2 from the result of any Command checks made by enemy units when issuing orders</description>
+          <description>This Stratagem may be purchased by any Traitor player. Play this Stratagem during any Strategy phase. For the remainder of that round, subtract 2 from the result of any Command checks made by enemy units when issuing orders.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="046f-ba13-38c7-dd1b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="ad8e-c687-9ffa-b2e9" name="Warp Trickery" hidden="false" targetId="49cb-6b32-2241-ca58" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -1456,11 +1542,12 @@
       </constraints>
       <rules>
         <rule id="0166-0c24-3c0b-1b8c" name="Warp Displacement" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
-          <description>The player chooses one of their units and rolls 2D6. Models within the chosen unit move that many inches in a straight line in a direction chosen by the player, ignoring any rules for movement such as Dangerous or Blocking terrain when moving. If the unit would be placed in a piece of terrain, other than Blocking terrain, the unit suffers D3 S7 hits to its Body, bypassing void shields, and the terrain is destroyed. If the unit would be placed in a piece of Blocking terrain, the unit is destroyed. If the unit would be placed overlapping the base of another unit, the unit stops at its base and suffers a collision. This does not change the unit’s facing and a unit cannot move off the battlefield – if it would, place the unit at the battlefield’s edge.</description>
+          <description>This Stratagem may be purchased by any Traitor player. Play this Stratagem in any phase. The player chooses one of their units and rolls 2D6. Models within the chosen unit move that many inches in a straight line in a direction chosen by the player, ignoring any rules for movement such as Dangerous or Blocking terrain when moving. If the unit would be placed in a piece of terrain, other than Blocking terrain, the unit suffers D3 S7 hits to its Body, bypassing void shields, and the terrain is destroyed. If the unit would be placed in a piece of Blocking terrain, the unit is destroyed. If the unit would be placed overlapping the base of another unit, the unit stops at its base and suffers a collision. This does not change the unit’s facing and a unit cannot move off the battlefield – if it would, place the unit at the battlefield’s edge.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="a5eb-8eb0-b90d-5577" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="b501-82d4-a973-932c" name="Warp Trickery" hidden="false" targetId="49cb-6b32-2241-ca58" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -1480,18 +1567,19 @@
       </constraints>
       <rules>
         <rule id="5788-7295-5726-fd2c" name="Unhallowed Ground" publicationId="3265-f408-cc9b-bfa3" page="96" hidden="false">
-          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in the first Strategy phase of the game. The battlefield is infused with tainted Warp energies harmful to any who linger upon it. At the end of each Movement phase, any unit that has not moved, voluntarily or involuntarily, in the Movement phase suffers D3 S6 Hits, ignoring void shields and ion shields. Titans suffer these Hits to their Legs</description>
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in the first Strategy phase of the game. The battlefield is infused with tainted Warp energies harmful to any who linger upon it. At the end of each Movement phase, any unit that has not moved, voluntarily or involuntarily, in the Movement phase suffers D3 S6 Hits, ignoring void shields and ion shields. Titans suffer these Hits to their Legs.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="4d34-8151-9fdb-fcb7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="0cbc-5c39-c6d7-baef" name="Warp Trickery" hidden="false" targetId="49cb-6b32-2241-ca58" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d225-d951-ec1f-68ed" name="Iron Resolve" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="d225-d951-ec1f-68ed" name="Iron Resolve" publicationId="3401-191e-1333-8a1d" page="175" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1500,19 +1588,20 @@
         </modifier>
       </modifiers>
       <rules>
-        <rule id="8ff0-cef4-bea9-bb0b" name="Iron Resolve" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
-          <description>Play this Stratagem when a Titan fails a Command check during the Strategy phase or when a Knight Banner fails a Command check to see if they become Shaken in any phase. That check is passed instead. This Stratagem can be purchased multiple times.</description>
+        <rule id="8ff0-cef4-bea9-bb0b" name="Iron Resolve" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem when a Titan fails a Command check during the Strategy phase or when a Knight Banner fails a Command check to see if they become Shaken in any phase. That check is passed instead. This Stratagem can be purchased multiple times.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="aff7-a45e-525f-71de" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="abc9-d715-7b4f-dc19" name="Desperate Measures" hidden="false" targetId="3fd9-a0bc-cb00-c4d6" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e7d9-c9e1-cfaf-1c18" name="Sacrificial Lock-On" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="e7d9-c9e1-cfaf-1c18" name="Sacrificial Lock-on" publicationId="3401-191e-1333-8a1d" page="175" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1524,19 +1613,20 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b19-b094-8191-ae36" type="max"/>
       </constraints>
       <rules>
-        <rule id="54a4-548f-531d-b55d" name="Sacrificial Lock-On" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
-          <description>Play this at the start of any Combat phase. Place the 5&quot; Blast marker so that the central hole is entirely over a friendly model’s base. Any unit touched by the marker suffers D3 Strength 10 hits, or 2D3 Strength 10 hits if the central hole of the Blast marker is entirely over its base. This attack does not ignore void shields, even if the friendly model the marker is centred over is within 2&quot; of a Titan with active shields.</description>
+        <rule id="54a4-548f-531d-b55d" name="Sacrificial Lock-on" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this at the start of any Combat phase. Place the 5&quot; Blast marker so that the central hole is entirely over a friendly model’s base. Any unit touched by the marker suffers D3 Strength 10 hits, or 2D3 Strength 10 hits if the central hole of the Blast marker is entirely over its base. This attack does not ignore void shields, even if the friendly model the marker is centred over is within 2&quot; of a Titan with active shields.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="bfa2-cbb0-bff9-e2ba" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="8f24-b344-f66e-be37" name="Desperate Measures" hidden="false" targetId="3fd9-a0bc-cb00-c4d6" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="174d-8530-d7b6-ff8e" name="Weapons to Full" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="174d-8530-d7b6-ff8e" name="Weapons to Full" publicationId="3401-191e-1333-8a1d" page="175" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1548,19 +1638,20 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58de-9dbd-d1a2-a409" type="max"/>
       </constraints>
       <rules>
-        <rule id="ac72-f835-2da4-bd2c" name="Weapons on Full" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
-          <description>Play this Stratagem during the Combat phase. Select a friendly Titan. That Titan may immediately attack with any/all of its weapons even if it has already been activated in the Combat phase that round. After resolving each weapon attack, the Titan rolls a D10 on the Reactor Overload table.</description>
+        <rule id="ac72-f835-2da4-bd2c" name="Weapons to Full" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem during the Combat phase. Select a friendly Titan. That Titan may immediately attack with any/all of its weapons even if it has already been activated in the Combat phase that round. After resolving each weapon attack, the Titan rolls a D10 on the Reactor Overload table.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="3159-274f-44f8-18e9" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="c8f4-41b0-5df7-496a" name="Desperate Measures" hidden="false" targetId="3fd9-a0bc-cb00-c4d6" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fc25-6786-d24b-0cc8" name="Even in Death" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="fc25-6786-d24b-0cc8" name="Even in Death" publicationId="3401-191e-1333-8a1d" page="175" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1572,19 +1663,20 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0169-edf0-d509-67a7" type="max"/>
       </constraints>
       <rules>
-        <rule id="8311-176e-26b7-5c21" name="Even In Death" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
-          <description>Play this Stratagem when a friendly Titan suffers Catastrophic Damage, before rolling on the Catastrophic Damage table. Instead of rolling on the table, roll a D6. On 1-4, the Titan suffers the Magazine Detonation result, and on a 5+ the Titan suffers the Catastrophic Meltdown result. Add 1 to the result if the Titan’s Reactor Status is in orange and add 3 if it in red.</description>
+        <rule id="8311-176e-26b7-5c21" name="Even In Death" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem when a friendly Titan suffers Catastrophic Damage, before rolling on the Catastrophic Damage table. Instead of rolling on the table, roll a D6. On 1-4, the Titan suffers the Magazine Detonation result, and on a 5+ the Titan suffers the Catastrophic Meltdown result. Add 1 to the result if the Titan’s Reactor Status marker is in a hole with an orange indicator and add 3 if it in a hole with a red indicator.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="88a5-af01-a4d6-e3f7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="b117-f3ed-2eed-6409" name="Desperate Measures" hidden="false" targetId="3fd9-a0bc-cb00-c4d6" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e033-a991-5c12-4e9a" name="Only Forwards" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="e033-a991-5c12-4e9a" name="Only Forwards" publicationId="3401-191e-1333-8a1d" page="175" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1596,19 +1688,20 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e94-a3fe-354d-9b3d" type="max"/>
       </constraints>
       <rules>
-        <rule id="a691-e565-2ff7-da83" name="Only Forwards" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
-          <description>Play this Stratagem at the start of any Strategy phase. For the remainder of that phase, any unit may be issued Full Stride or Charge orders without the need to make a Command check.</description>
+        <rule id="a691-e565-2ff7-da83" name="Only Forwards" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem at the start of any Strategy phase. For the remainder of that phase, any unit may be issued Full Stride or Charge orders without the need to make a Command check.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="6f34-164b-c9cc-e276" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="a018-213d-09d4-bacc" name="Desperate Measures" hidden="false" targetId="3fd9-a0bc-cb00-c4d6" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0e98-ad0d-4899-fa29" name="EMP Discharge" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="0e98-ad0d-4899-fa29" name="EMP Discharge" publicationId="3401-191e-1333-8a1d" page="175" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1620,105 +1713,118 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9819-dbf4-c95a-f64e" type="max"/>
       </constraints>
       <rules>
-        <rule id="2727-a48c-3f00-4eb7" name="EMP Discharge" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
-          <description>Play this Stratagem during any Movement phase or Combat phase. Pick a friendly Titan that has active void shields. Every Titan that has active shields within 3&quot; of that Titan suffers a number of S4 Hits equal to the Void Shield level of the chosen Titan, as if resolving an attack from a Shieldbane weapon. After resolving these Hits, the chosen Titan’s Void Shield level is reduced to X.</description>
+        <rule id="2727-a48c-3f00-4eb7" name="EMP Discharge" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem during any Movement phase or Combat phase. Pick a friendly Titan that has active void shields. Every Titan that has active shields within 3&quot; of that Titan suffers a number of S4 Hits equal to the Void Shield level of the chosen Titan, as if resolving an attack from a Shieldbane weapon. After resolving these Hits, the chosen Titan’s Void Shield level is reduced to X.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="6344-5a0e-8cf0-9302" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="bba7-490b-cd9d-d5e1" name="Desperate Measures" hidden="false" targetId="3fd9-a0bc-cb00-c4d6" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1aba-1767-f646-5ebe" name="Tracer Cloud" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1aba-1767-f646-5ebe" name="Tracer Cloud" publicationId="3401-191e-1333-8a1d" page="175" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1da0-4060-cd46-5841" type="max"/>
+      </constraints>
       <rules>
-        <rule id="f6e0-9521-d245-f376" name="Tracer Cloud" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
-          <description>Play this Stratagem at the start of any phase. Place the 5&quot; Blast marker anywhere on the battlefield. A player may re-roll Hit rolls for attacks made against any unit underneath the marker. Remove the Blast marker at the end of the round. This Stratagem can be purchased multiple times, however it can only be played once per round.</description>
+        <rule id="f6e0-9521-d245-f376" name="Tracer Cloud" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
+          <description>Play this Stratagem at the start of any Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield. A player may re-roll Hit rolls for attacks made against any unit underneath the marker. Remove the Blast marker at the end of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="88b2-4652-dd37-4c71" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="905f-624c-3b7f-c144" name="Tactical Support" hidden="false" targetId="b477-7f02-0efe-637c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dcdc-1908-1c28-7f44" name="Veteran Princeps" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="dcdc-1908-1c28-7f44" name="Veteran Princeps" publicationId="3401-191e-1333-8a1d" page="175" hidden="false" collective="false" import="true" type="unit">
       <rules>
-        <rule id="b683-bfa7-396c-30b2" name="Veteran Princeps" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
+        <rule id="b683-bfa7-396c-30b2" name="Veteran Princeps" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
           <description>When this Stratagem is chosen, the player chooses one of their Titans that is not a Princeps Seniores’ Titan to be commanded by a Veteran Princeps. Add 1 to the result of any Command checks made when issuing an order to the chosen Titan. This Stratagem can be purchased multiple times, but any Titan can only benefit from this Stratagem once.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="57bd-4dd6-af66-ae21" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="f7bc-2ab0-4428-9ef2" name="Tactical Support" hidden="false" targetId="b477-7f02-0efe-637c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f303-73e9-fd41-6eda" name="Augmented Servitor Clades" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="f303-73e9-fd41-6eda" name="Augmented Servitor Clades" publicationId="3401-191e-1333-8a1d" page="175" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b94f-6c96-6961-71f9" type="max"/>
       </constraints>
       <rules>
-        <rule id="476d-57b9-6a81-ed96" name="Augmented Servitor Clades" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
-          <description>Play this Stratagem during the first Strategy phase. The player chooses one of their Titans to have a Senior Enginseer aboard. Increase the Servitor Clades of that Titan by 1 during each Damage Control phase for the remainder of the battle. Note, this does not affect Repair rolls made as part of the Emergency Repair order.</description>
+        <rule id="476d-57b9-6a81-ed96" name="Augmented Servitor Clades" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
+          <description>Play this Stratagem during the first Strategy phase of the game. The player chooses one of their Titans to have a Senior Enginseer aboard. Increase the Servitor Clades of that Titan by 1 during each Damage Control phase for the remainder of the battle. Note, this does not affect Repair rolls made as part of the Emergency Repair order.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="23eb-0af4-825e-99db" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="5240-cfd8-3203-4a02" name="Tactical Support" hidden="false" targetId="b477-7f02-0efe-637c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f809-8222-f211-054d" name="MIU Link" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="f809-8222-f211-054d" name="MIU Link" publicationId="3401-191e-1333-8a1d" page="175" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0580-7b75-758e-156a" type="max"/>
       </constraints>
       <rules>
-        <rule id="093a-50ca-f8b5-8a31" name="MIU Link" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
-          <description>Play this Stratagem in the first Strategy phase. The player chooses two of their Titans to link MIU. For the remainder of the game, when making a weapon attack, you may measure from either linked Titan for the purposes of determining the Accuracy value for Short or Long range. If either of the linked Titans suffers the MIU Feedback Critical Damage effect, both Titans suffer it and the MIU Link Stratagem is cancelled for the remainder of the game, even if the damage is repaired</description>
+        <rule id="093a-50ca-f8b5-8a31" name="MIU Link" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses two of their Titans to link MIU. For the remainder of the game, when making a weapon attack, you may measure from either linked Titan for the purposes of determining the Accuracy value for Short or Long range. If either of the linked Titans suffers the MIU Feedback Critical Damage effect, both Titans suffer it and the MIU Link Stratagem is cancelled for the remainder of the game, even if the damage is repaired.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="7c21-1f8e-bd6b-3635" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="32d5-b06e-a316-50c4" name="Tactical Support" hidden="false" targetId="b477-7f02-0efe-637c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1ad5-b9b3-0d8d-400d" name="Concealment Barrage" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1ad5-b9b3-0d8d-400d" name="Concealment Barrage" publicationId="3401-191e-1333-8a1d" page="175" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f70e-0cdf-0d8d-3c98" type="max"/>
+      </constraints>
       <rules>
-        <rule id="5d2d-e1b4-60d0-d0f4" name="Concealment Barrage" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
-          <description>Play this Stratagem at the start of any phase. Place the 5&quot; Blast marker anywhere on the battlefield. Any part of the battlefield underneath the template blocks line of sight. Remove the Blast marker at the end of the round. This Stratagem can be purchased multiple times, however it can only be played once per round.</description>
+        <rule id="5d2d-e1b4-60d0-d0f4" name="Concealment Barrage" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
+          <description>Play this Stratagem at the start of any Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield. Any part of the battlefield underneath the template blocks line of sight. Remove the Blast marker at the end of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="123f-0073-103e-9634" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="55ce-f7c5-2f27-171f" name="Tactical Support" hidden="false" targetId="b477-7f02-0efe-637c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0336-bb0f-b870-de7a" name="Shock mines" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="0336-bb0f-b870-de7a" name="Shock Mines" publicationId="3401-191e-1333-8a1d" page="175" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da74-4c12-aa39-93e1" type="max"/>
       </constraints>
       <rules>
-        <rule id="d178-9704-56ba-5e45" name="Shock Mines" publicationId="3265-f408-cc9b-bfa3" page="97" hidden="false">
+        <rule id="d178-9704-56ba-5e45" name="Shock Mines" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
           <description>Play this Stratagem immediately after an enemy unit has finished moving or making a turn. That unit suffers D3 S5 hits to its Legs. Shields saves cannot be made against these hits. If that unit suffers any Direct, Devastating or Critical Hits from this Stratagem, the unit discards any order it has and is immediately issued a Shutdown order. This Shutdown order is removed in the End phase of that round.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="aeeb-7ffa-5aa1-cdc1" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="738d-ff41-271f-d727" name="Tactical Support" hidden="false" targetId="b477-7f02-0efe-637c" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
@@ -1742,12 +1848,12 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1904-0d73-fd65-ff15" name="Homing Missiles " publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1904-0d73-fd65-ff15" name="Homing Warheads" publicationId="3401-191e-1333-8a1d" page="176" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e715-7f20-6fd4-885d" type="max"/>
       </constraints>
       <rules>
-        <rule id="1450-d517-7d5b-aa1a" name="Homing Warheads" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+        <rule id="1450-d517-7d5b-aa1a" name="Homing Warheads" publicationId="3401-191e-1333-8a1d" page="176" hidden="false">
           <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans armed with an Apocalypse missile launcher or paired Apocalypse missile launchers, so long as that Titan does not already have an upgrade affecting that weapon. Subtract 3 from the Dice Value of the weapon (to a minimum of 1). For the remainder of the game, attacks with that weapon do not suffer negative modifiers when attacking an obscured target or when attacking a target out of line of sight via the Barrage trait.</description>
         </rule>
       </rules>
@@ -1760,12 +1866,12 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0f18-d5cf-2e7e-2fe7" name="Enhanced Coolant" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="0f18-d5cf-2e7e-2fe7" name="Enhanced Coolant" publicationId="3401-191e-1333-8a1d" page="176" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9b4-0f94-920d-e2f8" type="max"/>
       </constraints>
       <rules>
-        <rule id="f76b-09cd-3179-412e" name="Enhanced Coolant" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+        <rule id="f76b-09cd-3179-412e" name="Enhanced Coolant" publicationId="3401-191e-1333-8a1d" page="176" hidden="false">
           <description>Play this Stratagem during any Strategy phase. The player chooses one of their Titans; for the remainder of the game, roll a D6 each time that Titan would increase its Reactor level. On a 5+, increase the Reactor level by one less hole than normal, to a minimum of zero holes (e.g., if two symbols were rolled on the Reactor dice, a 5+ would increase the Reactor level by one, not two). If an effect results in multiple increases, such as rolling multiple 1s while using the Maximal Fire trait, roll individually for each increase.</description>
         </rule>
       </rules>
@@ -1778,12 +1884,12 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bc92-e509-916e-4e39" name="Redundant Systems" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="bc92-e509-916e-4e39" name="Redundant Systems" publicationId="3401-191e-1333-8a1d" page="176" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16fe-0c69-19a8-2c7a" type="max"/>
       </constraints>
       <rules>
-        <rule id="568a-e234-41b8-3f88" name="Redundant Systems" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+        <rule id="568a-e234-41b8-3f88" name="Redundant Systems" publicationId="3401-191e-1333-8a1d" page="176" hidden="false">
           <description>Play this Stratagem in any Strategy phase. The player chooses one of their Titans; the first time Critical Damage is suffered by that Titan it is ignored – do not move the marker up the tracker. Any other effect, such as loss of Structure points, still occurs. If a Titan is forced to move the Critical Damage marker more than once for an attack, move it one fewer space. Then, discard this Stratagem.</description>
         </rule>
       </rules>
@@ -1796,12 +1902,12 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="689b-0672-ff8e-6eab" name="Experimental Locomotors" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="689b-0672-ff8e-6eab" name="Experimental Locomotors" publicationId="3401-191e-1333-8a1d" page="176" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e170-db8c-97e8-d9b0" type="max"/>
       </constraints>
       <rules>
-        <rule id="435c-1365-b315-c51e" name="Experimental Locomotors" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+        <rule id="435c-1365-b315-c51e" name="Experimental Locomotors" publicationId="3401-191e-1333-8a1d" page="176" hidden="false">
           <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans; for the remainder of the battle the Titan may use its boosted Speed characteristic without pushing its reactor. During every End phase roll a D10 for this Titan. On a 1, the Titan suffers a Devastating Hit to its Legs and this Stratagem is discarded.</description>
         </rule>
       </rules>
@@ -1814,12 +1920,12 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b042-847a-2bf2-9266" name="Override Signal" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b042-847a-2bf2-9266" name="Override Signal" publicationId="3401-191e-1333-8a1d" page="176" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6f3-f239-8914-aca8" type="max"/>
       </constraints>
       <rules>
-        <rule id="b490-d581-64f3-d05a" name="Override Signal" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+        <rule id="b490-d581-64f3-d05a" name="Override Signal" publicationId="3401-191e-1333-8a1d" page="176" hidden="false">
           <description>Play this Stratagem when a Titan (friend or foe) within 12&quot; of a friendly Titan suffers Catastrophic Damage, before rolling on the Catastrophic Damage table. When rolling on the Catastrophic Damage table for the chosen Titan, add 4 to the result.</description>
         </rule>
       </rules>
@@ -1832,13 +1938,13 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5bf8-0983-e8e3-bdf8" name="Dusk Attack" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="5bf8-0983-e8e3-bdf8" name="Dusk Attack" publicationId="3401-191e-1333-8a1d" page="174" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a87f-a93e-5f04-f53a" type="max"/>
       </constraints>
       <rules>
-        <rule id="d218-9f34-fb70-0322" name="Dusk Attack" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
-          <description>Play this Stratagem in the first Strategy phase of the game. During the End phase of Turn 3, the First Player must roll (D6+1)x5 to determine how many inches every unit on the battlefield can see for the remainder of the battle – only enemies within this range can be targeted by an attack. Units that have made an attack with a weapon without the Melee Trait previously in a round can be targeted, regardless of the distance a unit can see.</description>
+        <rule id="d218-9f34-fb70-0322" name="Dusk Attack" publicationId="3401-191e-1333-8a1d" page="174" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. During the End phase of Turn 3, the First Player must roll (D6+1) x 5 to determine how many inches every unit on the battlefield can see for the remainder of the battle – only enemies within this range can be targeted by an attack. Units that have made an attack with a weapon without the Melee trait previously in a round can be targeted, regardless of the distance a unit can see.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1850,12 +1956,12 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2cfc-dc41-7148-0a77" name="False Intel" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="2cfc-dc41-7148-0a77" name="False Intel" publicationId="3401-191e-1333-8a1d" page="174" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3b4-5949-a145-e654" type="max"/>
       </constraints>
       <rules>
-        <rule id="0ed3-a314-17c1-9a31" name="False Intel" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+        <rule id="0ed3-a314-17c1-9a31" name="False Intel" publicationId="3401-191e-1333-8a1d" page="174" hidden="false">
           <description>Play this Stratagem after all objectives have been deployed. Pick any objective on the battlefield. Move that objective D6&quot; in any direction – this can take it outside its normal deployment area. The objective cannot be moved off the board, nor can it overlap with a piece of Blocking terrain.</description>
         </rule>
       </rules>
@@ -1868,13 +1974,13 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="47d7-d3dc-14f4-bf68" name="Reactor Surge" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="47d7-d3dc-14f4-bf68" name="Reactor Surge" publicationId="3401-191e-1333-8a1d" page="174" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4512-7867-86f4-6194" type="max"/>
       </constraints>
       <rules>
-        <rule id="b5ed-557a-15f3-8604" name="Reactor Surge" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
-          <description>Play this Stratagem when activating a Titan in the Combat phase. If the chosen Titan has a Shield level of X, this Stratagem is immediately discarded. Otherwise, increase the Titan’s Reactor Status level by any number of holes – you cannot voluntarily advance it further than the end of the Status tracker. For each hole the marker is moved along the Reactor Status level, repair the Titan’s Void Shield level by 1. This counts as the Titan’s activation for this round.</description>
+        <rule id="b5ed-557a-15f3-8604" name="Reactor Surge" publicationId="3401-191e-1333-8a1d" page="174" hidden="false">
+          <description>Play this Stratagem when activating a friendly Titan in the Combat phase. If the chosen Titan has a Shield level of X, this Stratagem is immediately discarded. Otherwise, increase the Titan’s Reactor Status level by any number of holes – you cannot voluntarily advance it further than the end of the Status tracker. For each hole the marker is moved along the Reactor Status level, repair the Titan’s Void Shield level by 1. This counts as the Titan’s activation for this round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1886,13 +1992,13 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e450-d58f-c711-7be7" name="Partial Shutdown" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e450-d58f-c711-7be7" name="Partial Shutdown" publicationId="3401-191e-1333-8a1d" page="174" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad6b-b185-f229-fbbc" type="max"/>
       </constraints>
       <rules>
-        <rule id="f43d-03c1-904c-5bca" name="Partial Shutdown" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
-          <description>Play this Stratagem at the start of any Movement phase. Choose a friendly Titan to initiate Partial Shutdown. The chosen Titan is immediately issued Shutdown orders, replacing any Order previously given. The void shields of a Titan that has initiated a Partial Shutdown do not collapse. In addition, a Titan issued Shutdown orders as part of the Partial Shutdown Stratagem reduces its Reactor level by 1 instead of 2 during the Damage Control phase and Reactor rolls can be made for the Titan if forced to do so. Barring these exceptions, a Partially Shutdown Titan follows all other normal rules for the Shutdown order as described in the Adeptus Titanicus rulebook.</description>
+        <rule id="f43d-03c1-904c-5bca" name="Partial Shutdown" publicationId="3401-191e-1333-8a1d" page="174" hidden="false">
+          <description>Play this Stratagem at the start of any Movement phase. Choose a friendly Titan to initiate Partial Shutdown. The chosen Titan is immediately issued Shutdown orders, replacing any Order previously given. The void shields of a Titan that has initiated a Partial Shutdown do not collapse. In addition, a Titan issued Shutdown orders as part of the Partial Shutdown Stratagem reduces its Reactor level by 1 instead of 2 during the Damage Control phase and Reactor rolls can be made for the Titan if forced to do so. Barring these exceptions, a Partially Shutdown Titan follows all other normal rules for the Shutdown order as described in the Adeptus Titanicus rulebook until the Shutdown orders issued by this Stratagem are discarded.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1904,12 +2010,12 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5fe5-58cd-143f-df0e" name="Tactical Assessment" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="5fe5-58cd-143f-df0e" name="Tactical Assessment" publicationId="3401-191e-1333-8a1d" page="174" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ec7-52da-ce88-6d76" type="max"/>
       </constraints>
       <rules>
-        <rule id="a7bc-e89e-a030-cefc" name="Tactical Assessment" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+        <rule id="a7bc-e89e-a030-cefc" name="Tactical Assessment" publicationId="3401-191e-1333-8a1d" page="174" hidden="false">
           <description>Play this at the end of the deployment phase, before rolling to see who is the First Player. The player may immediately discard their current objective and determine a new one by rolling two D6 on the Mission Objective table as described in the Adeptus Titanicus rulebook.</description>
         </rule>
       </rules>
@@ -1922,12 +2028,12 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a6f0-9aff-9834-89c7" name="Last Ditch Effort" publicationId="2988-f24d-39ef-352e" page="107" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="a6f0-9aff-9834-89c7" name="Last Ditch Effort" publicationId="3401-191e-1333-8a1d" page="174" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ce-fa94-8413-3107" type="max"/>
       </constraints>
       <rules>
-        <rule id="e2a8-7313-5620-c525" name="Last Ditch Effort" publicationId="2988-f24d-39ef-352e" page="107" hidden="false">
+        <rule id="e2a8-7313-5620-c525" name="Last Ditch Effort" publicationId="3401-191e-1333-8a1d" page="174" hidden="false">
           <description>Play this Stratagem when a friendly Titan falls due to the Laid Low or Wild Fire Catastrophic Damage effect. The controlling player may choose the direction the Titan falls, rather than determining it by rolling a Scatter dice. If, for whatever reason, both players are allowed to choose the direction the Titan falls, randomly determine the direction as normal and discard this Stratagem.</description>
         </rule>
       </rules>
@@ -1940,43 +2046,54 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8738-12fd-ab3d-5ad5" name="Scatterable Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8738-12fd-ab3d-5ad5" name="Scatterable Mines" publicationId="3401-191e-1333-8a1d" page="173" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ee3-c46f-3182-2d45" type="max"/>
+      </constraints>
       <rules>
-        <rule id="5dd2-0ea9-7f01-7e61" name="Scatterable Mines" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>Every Strat phase. mark a point and scatter d10. 12&quot; area from point is dangerous terrain. </description>
+        <rule id="5dd2-0ea9-7f01-7e61" name="Scatterable Mines" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>Play this Stratagem during any Stratagy phase. Place a marker anywhere on the battlefield then scatter it D10&quot;. The area within 6&quot; of this marker counts as Dangerous Terrain. Remove the marker at the end of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="8105-be73-9f8c-2226" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a3f1-5763-016d-21d3" name="Strafing Run" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="e0f3-d1af-fa51-e08c" name="Strafing Run" hidden="false">
-          <description>Every Strat phase. Mark a point on two board edge and draw a line between them.  everything with 2&quot; of that line takes d3 S5 hits. Counts as hitting the facing that the strafing run is coming from. </description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="7d60-7bd8-0fc0-19b4" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="21f8-d793-5c4e-4df3" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2bd2-e1b7-69b5-b739" name="Quake Shells" publicationId="975a-00f4-pubN89746" page="79" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a3f1-5763-016d-21d3" name="Strafing Run" publicationId="3401-191e-1333-8a1d" page="173" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eb4-5e51-e314-f036" type="max"/>
+      </constraints>
       <rules>
-        <rule id="e7ea-a719-fe23-3fb8" name="Quake Shells" publicationId="975a-00f4-pubN89746" page="79" hidden="false">
-          <description>Every Strat phase. place 5&quot; marker and scatter d10. touched take d3S6 hits or d6 under hole. Unit then scatters d6&quot;, this may cause a collision.
-                    </description>
+        <rule id="e0f3-d1af-fa51-e08c" name="Strafing Run" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>Play this Stratagem during any Strategy phase. A squadron of fighter-bombers scream across the battlefield, attacking everything in their path. Choose one of the four edges of the battlefield and pick a point on that edge. Then pick a point on any other edge of the battlefield and draw an imaginary line 1mm wide between the two. Any unit under this line, or within 2&quot; of it, takes D3 Strength 6 hits. The arc from which the hits originate is determined by the direction the line is travelling. Determine which arc the first chosen point is within for each unit hit and resolve the hits against that arc.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="7d60-7bd8-0fc0-19b4" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="a429-4da9-8977-353e" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2bd2-e1b7-69b5-b739" name="Quake Shells" publicationId="3401-191e-1333-8a1d" page="174" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f780-87bc-ad4b-95d8" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e7ea-a719-fe23-3fb8" name="Quake Shells" publicationId="3401-191e-1333-8a1d" page="174" hidden="false">
+          <description>Play this during any Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield then scatter it D10&quot;. Any unit touched by the marker where iteventually lands suffers D3 Strength 6 hits, or D6 Strength 6 hits in the central hole of the Blast marker is entirely over its base. In addition, the unit is then moved D6&quot; in a direction determined by the Scatter dice (this may result in a Collision - see the Adeptus Titanicus rulebook). This does not change the unit&apos;s facing.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="ecb8-68cf-c474-7d3b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="f34e-5a70-045b-b6ad" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -1997,42 +2114,58 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fce9-f583-2d42-26bd" name="Hold the Centre" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="fce9-f583-2d42-26bd" name="Hold the Centre" publicationId="975a-00f4-pubN89746" page="79" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9be7-d813-26ad-ef58" type="max"/>
+      </constraints>
       <rules>
-        <rule id="b29f-074e-3a90-9d97" name="Hold the Centre" hidden="false">
-          <description>End of Battle  Score 2Vp for each friendly titan within 12&quot; of centre. Score 5Vp if no enemy are within 12&quot; of centre.</description>
+        <rule id="b29f-074e-3a90-9d97" name="Hold the Centre" publicationId="975a-00f4-pubN89746" page="79" hidden="false">
+          <description>Play this Stratagem at the end of the battle. The player scores 2 Victory points for each of their Titans that are within 12&quot; of the centre of the battlefield. In addition, they score and extra 5 Victory points if there are no enemy units within 12&quot; of the centre of the battlefield.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="f666-358a-5279-abf1" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="81d0-27bf-36ed-1395" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="33df-1682-cf66-5255" name="Static Rain" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="33df-1682-cf66-5255" name="Static Rain" publicationId="3401-191e-1333-8a1d" page="173" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf13-bd7f-c9b8-a31e" type="max"/>
+      </constraints>
       <rules>
-        <rule id="8b06-4144-20ce-1ec1" name="Static Rain" hidden="false">
-          <description>Any Strat phase. Place a marker. Any titan within 2d10&quot; takes d3 void saves. Knights within range cannot make ion saves for entire round.
-                    </description>
+        <rule id="8b06-4144-20ce-1ec1" name="Static Rain" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
+          <description>Play this Stratagem during any Strategy phase. Place a marker anywhere on the battlefield. Any Titan within 12&quot; of this marker must immediately make D3 Void Shield saves. Knight Banners within this range cannot make Ion Shield saves for the remainder of the round, even if they subsequently move out from the marker&apos;s radius of effect. Remove the marker at the end of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="33f8-0425-927b-9c4e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="8c40-38be-8cfa-4eed" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="af36-a2ad-3abf-2f12" name="Titan Hunter Infantry" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="af36-a2ad-3abf-2f12" name="Titan Hunter Infantry" publicationId="975a-00f4-pubN89746" page="80" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4031-d520-be34-5ff0" type="max"/>
+      </constraints>
       <rules>
-        <rule id="7e35-af3b-ac34-7abc" name="Titan Hunter Infantry" hidden="false">
-          <description>Battlefield Asset. Every Strat phase. Place two markers wholly within terrain. These can be activated as if they were units.
-                        If two players place markers in the same terrain, both are removed.
-                        BS 5+ Short 6 long 12&quot; S+1 Dice 4 Str 5.
-                        Remove Marker after activating</description>
+        <rule id="7e35-af3b-ac34-7abc" name="Titan Hunter Infantry" publicationId="975a-00f4-pubN89746" page="80" hidden="false">
+          <description>This Stratagem may be played once in each Strataegy phase of the game. When this Stratagem is played, place two markers anywhere on the table wholly within a piece of terrain (this does not need to be the same piece of terrain). Instead of activating a Titan or Knight Banner, a player may fire with these markers as if they were units, following all the rules for making attacks and using the profile below.
+
+BS/WS: 5+
+Arc: 360
+Short: 6&quot;, +1 To Hit
+Long: 12&quot;
+Dice: 4
+Strength: 5
+
+If more than one player has this Stratagem, players take turns when placing their markers, beginning with the First Player. If two opposing markers are placed in the same piece of terrain, immediately remove both markers. After resolving the effects of any attacks it makes, remove that marker from the battlefield. Any marker not activated is removed during the End phase of a round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2044,39 +2177,49 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e862-2a40-3c8f-1fd9" name="Haywire Barrage" publicationId="975a-00f4-pubN89746" page="" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e862-2a40-3c8f-1fd9" name="Haywire Barrage" publicationId="3401-191e-1333-8a1d" page="174" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c744-cb02-7678-3d2f" type="max"/>
+      </constraints>
       <rules>
-        <rule id="96b1-8b12-36ba-55ad" name="Haywire Barrage" hidden="false">
-          <description>Any Strat phase. Place a marker and scatter d10. 6&quot; range, roll 2d6 for titans hit. Equal or greater than scale, take 1 point of critical damage to random location. If weapon, disabled. no effect if already fully damaged. Knight banners take d3S7 hits ignoring shields.</description>
+        <rule id="96b1-8b12-36ba-55ad" name="Haywire Barrage" publicationId="3401-191e-1333-8a1d" page="174" hidden="false">
+          <description>Play this during any Strategy phase. Place a marker anywhere on the battlefield then scatter it D10&quot;. Roll 2D6 for each Titan within 6&quot; of the marker. If the roll is equal to or greater than their Scale, they take 1 point of Critical Damage to a random location, ignoring Shields. If the location is a Weapon, it is disabled. If the location is a disabled Weapon or already has 3 points of Critical Damage then the barrage has no effect. Knight Banners hit by a Haywire Barrage take D3 Strength 7 hits that ignore Ion Shields instead.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="dc3d-a511-0d62-20ae" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="ed84-5da2-b44e-8a3c" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="10a5-6174-a6f3-0344" name="Penance" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="10a5-6174-a6f3-0344" name="Penance" publicationId="975a-00f4-pubN89746" page="79" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6842-8009-cf20-2ea1" type="max"/>
+      </constraints>
       <rules>
-        <rule id="fc45-c29e-e364-578d" name="Penance" hidden="false">
-          <description>End of Battle. Score 3 VP for each structurally compromised but not destroyed friendly titan. Score 3VP if the Princeps Senioris has critical damage </description>
+        <rule id="fc45-c29e-e364-578d" name="Penance" publicationId="975a-00f4-pubN89746" page="79" hidden="false">
+          <description>Play this Stratagem at the end of the battle. The player scores 2 Victory points for each of their Titans that has not been destroyed, but which is Structurally Compromised. In addition, they score an extra 3 Victory points if their Princeps Seniores&apos; Titan has any Critical Damage.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="324a-2e53-c322-9dad" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="92eb-8fc3-1afe-fdbd" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="17f0-a74f-027f-c827" name="Forward Observers" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="17f0-a74f-027f-c827" name="Forward Observers" publicationId="975a-00f4-pubN89746" page="80" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe1b-130d-8b21-7134" type="max"/>
+      </constraints>
       <rules>
-        <rule id="b696-effb-e43a-3cd9" name="Forward Observers" hidden="false">
-          <description>Battlefield Asset. Play before making a barrage attack. Place a marker anywhere on the board.  Barrage weapons may draw line of sight from this marker, ignoring the -2 for indirect fire.
-                    </description>
+        <rule id="b696-effb-e43a-3cd9" name="Forward Observers" publicationId="975a-00f4-pubN89746" page="80" hidden="false">
+          <description>Play this Stratagem before making an attack with a weapon with the Barrage trait. Place a command bastion or communication relay anywhere on the board to represent a forward observer team position that has been camoflaged up until this point. While the Asset is on the board, when a friendly unit makes an attack with the Barrage trait, they may draw line of sight, though not range, from this model, thus ignoring the -2 penalty for firing indirectly.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2088,58 +2231,72 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a9b7-3d50-1282-ecb3" name="Titanic Decapitation" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a9b7-3d50-1282-ecb3" name="Titanic Decapitation" publicationId="975a-00f4-pubN89746" page="79" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d36-da56-c4da-0ae8" type="max"/>
+      </constraints>
       <rules>
-        <rule id="ed48-a252-a0ba-2d5d" name="Titanic Decapitation" hidden="false">
-          <description>any End phase. Score 5Vp if an enemy titan was destroyed due to critical damage to the head.</description>
+        <rule id="ed48-a252-a0ba-2d5d" name="Titanic Decapitation" publicationId="975a-00f4-pubN89746" page="79" hidden="false">
+          <description>Play this Stratagem in the End phase if an enemy Titan was destroyed by suffering Critical Damage to its head. Score 5 Victory Points.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="2ab1-905c-c9c1-5f01" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="a32d-ca21-9123-c64b" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="eb24-c12a-7f9c-d4c1" name="Earthshaker Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="eb24-c12a-7f9c-d4c1" name="Earthshaker Mines" publicationId="3401-191e-1333-8a1d" page="174" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d11-0a3c-c1ef-0b32" type="max"/>
+      </constraints>
       <rules>
-        <rule id="5df9-8096-97b7-6685" name="Earthshaker Mines" hidden="false">
-          <description>Play after enemy finishes a move or turn. it takes d3 S6 hits to legs, no void saves. Unit then scatters D6&quot; which can cause a collision.
-                    </description>
+        <rule id="5df9-8096-97b7-6685" name="Earthshaker Mines" publicationId="3401-191e-1333-8a1d" page="174" hidden="false">
+          <description>Play this Stratagem immediately after an enemy unit finishes moving or making a turn. Roll a D6. On a 2 or more, that unit suffers D3 Strength 6 hits; a Titan takes these hits to its Legs. Shield saves cannot be made against the hits. In addition, the unit is then moved D6&quot; in a direction determined by the  Scatter dice (this may result in a Collision - see the Adeptus Titanicus rulebook). This does not change the unit&apos;s facing. On a 1, nothing happens but the Stratagem is not discarded and can be played again in a subsequent round.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="6370-1861-e007-ca00" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="b3f2-1f10-2f9a-6891" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="78ac-538a-0de3-c8d9" name="No Prisoners" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="78ac-538a-0de3-c8d9" name="No Prisoners" publicationId="975a-00f4-pubN89746" page="79" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eaff-0a7f-8c0d-8720" type="max"/>
+      </constraints>
       <rules>
-        <rule id="bd0b-b01d-077d-1c7e" name="No Prisoners" hidden="false">
-          <description>End of Battle  Score 5 VP if all enemy titans are destroyed. For 2500+ games score 10VP.
-                    </description>
+        <rule id="bd0b-b01d-077d-1c7e" name="No Prisoners" publicationId="975a-00f4-pubN89746" page="79" hidden="false">
+          <description>Play this Stratagem at the end of the battle. Score 5 Victory points if all enemy Titans have been destroyed. If the points total of the game is 2,500 points or more, score 10 Victory points instead.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="adf0-7369-7dc4-f171" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="6c1a-2682-cb25-73af" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6f6c-982d-c8ed-5fb8" name="A Quick Kill" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6f6c-982d-c8ed-5fb8" name="A Quick Kill" publicationId="975a-00f4-pubN89746" page="79" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc0f-a6c8-a179-e2df" type="max"/>
+      </constraints>
       <rules>
-        <rule id="6489-9a96-a7ac-d327" name="A Quick Kill" hidden="false">
-          <description>End phase of 1st or 2nd round. Score 5VP if you have destroyed a titan of at least scale 8. </description>
+        <rule id="6489-9a96-a7ac-d327" name="A Quick Kill" publicationId="975a-00f4-pubN89746" page="79" hidden="false">
+          <description>Play this Stratagem in the End phase of the first or second round. If at least one enemy Titan with Scale 8 or greater has been destroyed, score 5 Victory points.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="c057-b46c-acd5-ea50" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="5bbb-8311-b480-f9b8" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -2164,7 +2321,7 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="14a6-fc52-9fa3-8a97" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="14a6-fc52-9fa3-8a97" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" page="79" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -2176,16 +2333,16 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="974b-19a6-ce5c-4bfa" type="max"/>
       </constraints>
       <rules>
-        <rule id="3780-37a9-4520-2c89" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" hidden="false">
-          <description>End of Battle. If you have destroyed at least as many titans as you have lost, gain 5VP.
-                    </description>
+        <rule id="3780-37a9-4520-2c89" name="Justice for the Fallen" publicationId="975a-00f4-pubN89746" page="79" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem at the end of the battle. If the player has destroyed at least as many enemy Titans as they themselves have lost, they score 5 Victory points.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="0474-ebed-47c2-dbf2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e627-a798-d7dc-190a" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7395,119 +7552,164 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2992-c2ab-d138-890d" name="=Astorum= Bounty of Mars" publicationId="975a-00f4-pubN87630" page="18" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="2992-c2ab-d138-890d" name="=Astorum= Bounty of Mars" publicationId="3401-191e-1333-8a1d" page="40" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbd6-65fd-6354-a154" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf93-928a-ede0-8624" type="max"/>
       </constraints>
       <rules>
-        <rule id="3680-49ed-78c2-3e78" name="Bounty of Mars" publicationId="975a-00f4-pubN87630" page="18" hidden="false">
-          <description>Play this Stratagem at the beginning of the Damage Control phase of any round. Choose one type of critically damaged system or disabled weapon, e.g. Head, Body, Weapon etc. For the duration of this Damage Control phase, the dice score required to repair this system is reduced by 1, i.e. if a dice result of 5 or 6 is normally required then a 4+ is sufficent in this phase.</description>
+        <rule id="3680-49ed-78c2-3e78" name="Bounty of Mars" publicationId="3401-191e-1333-8a1d" page="40" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Astorum player. Play this Stratagem at the beginning of the Damage Control phase of any round. Choose one type of critically damaged system or disabled weapon, e.g. Head, Body, Weapon etc. For the duration of this Damage Control phase, the dice score required to repair this system is reduced by 1, i.e. if a dice result of 5 or 6 is normally required then for this phase, the player can use a dice result of 4, 5, or 6.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="5479-d8ef-eb1e-c4aa" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="5479-d8ef-eb1e-c4aa" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="56e2-c609-70c9-d842" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
+        <categoryLink id="6e97-3ad6-22b1-cd06" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b96e-64b2-6f6c-2836" name="=Defensor= A Day of Retribution" publicationId="975a-00f4-pubN87630" page="23" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="b96e-64b2-6f6c-2836" name="=Defensor= A Day of Retribution" publicationId="3401-191e-1333-8a1d" page="51" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="63e1-fca8-5023-12d6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b658-6872-25f9-fbec" type="max"/>
       </constraints>
       <rules>
-        <rule id="a30d-e863-9a88-e3f9" name="A Day of Retribution" publicationId="975a-00f4-pubN87630" page="23" hidden="false">
-          <description>Play this Stratagem in the Strategy phase of the first round. Choose one of your Opponent&apos;s titans. Immediately conduct a round of shooting against the Titaan with one or your own Titan&apos;s weapons, counting the weapon as having double its normal range. Note that the weapons Short Range characteristic is not increased. Then advance your Titan&apos;s Plasma Reactor Status track three places. Once the effects of the attack have been worked out, begin the first round of the game.</description>
+        <rule id="a30d-e863-9a88-e3f9" name="A Day of Retribution" publicationId="3401-191e-1333-8a1d" page="51" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Defensor player. Play this Stratagem in the Strategy phase of the first round. Choose a single friendly Legio Defensor Titan. That Titan may immediately make an attack with one of its weapons. While resolving this attack, double the weapon&apos;s Long range. Then, advance your Titan&apos;s Plasma Reactor track three places. Once the effects of the attack have been worked out, begin the first game round.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="41ad-fb33-b5e5-065e" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="41ad-fb33-b5e5-065e" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="51e2-ce35-7fa6-c7a4" name="LegioDefensor" hidden="false" targetId="7b17-f14f-4709-e96c" primary="false"/>
+        <categoryLink id="838e-4455-c8cb-0faf" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="61a7-3fcd-5cb5-7014" name="=Defensor= Blessings of the Emperor" publicationId="975a-00f4-pubN87630" page="23" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="61a7-3fcd-5cb5-7014" name="=Defensor= Blessings of the Emperor" publicationId="3401-191e-1333-8a1d" page="51" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="63e1-fca8-5023-12d6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2cd-759e-a4a2-3b0c" type="max"/>
       </constraints>
       <rules>
-        <rule id="65c0-1d08-d380-1b64" name="Blessings of the Emperor" publicationId="975a-00f4-pubN87630" page="23" hidden="false">
-          <description>Reveal this Stratagem when a hit would result in one of your Titans having to roll on the Catestrophic Damage table. The hit is ignored and this Stratagem has no further effect.</description>
+        <rule id="65c0-1d08-d380-1b64" name="Blessings of the Emperor" publicationId="3401-191e-1333-8a1d" page="51" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Defensor player. Reveal this Stratagem when a hit would result in one of your Titans rolling on the Catestrophic Damage table. The hit is ignored and this Stratagem has no further effect.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="7991-aaa2-3c66-a334" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="7991-aaa2-3c66-a334" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="9e0e-fcb3-0305-8a62" name="LegioDefensor" hidden="false" targetId="7b17-f14f-4709-e96c" primary="false"/>
+        <categoryLink id="3d9a-ed8b-2ec8-ec07" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b7bc-1a39-1fa8-bde4" name="=Atarus= Impetuous Machine Spirit" publicationId="ce02-a882-fdad-dd36" page="36" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="b7bc-1a39-1fa8-bde4" name="=Atarus= Impetuous Machine Spirit" publicationId="3401-191e-1333-8a1d" page="71" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bf14-af1e-5d72-7c8b" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7079-4c5f-e443-da4a" type="max"/>
       </constraints>
       <rules>
-        <rule id="ece4-92f5-0d83-388e" name="Impetuous Machine Spirit" publicationId="975a-00f4-pubN87630" page="28" hidden="false">
-          <description>Reveal this Stratagem when an Atarus Titan would be required to make a roll on the Awakend Machine Spirit table. Rather than rolling the atarus player may instead choose to utomaticlly apply the Impetuous result, rolling D6+2&quot; rather than D6&quot; to determine the distance moved.</description>
+        <rule id="ece4-92f5-0d83-388e" name="Impetuous Machine Spirit" publicationId="3401-191e-1333-8a1d" page="71" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Atarus player. Reveal this Stratagem when a Legio Atarus Titan would be required to make a roll on the Awakend Machine Spirit table. Rather than rolling, the Legio Atarus player may instead choose to automaticlly apply the Impetuous result, rolling D6+2&quot; rather than D6&quot; to determine the distance moved.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="22ca-2b30-8a83-3596" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="22ca-2b30-8a83-3596" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="851d-32e4-48f2-1d7d" name="LegioAtarus" hidden="false" targetId="cfcc-e5c0-bb0b-db6f" primary="false"/>
+        <categoryLink id="92b3-e994-f55f-00c6" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ffa3-89c9-f658-9a64" name="=Atarus= Maniple of One" publicationId="975a-00f4-pubN87630" page="28" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="ffa3-89c9-f658-9a64" name="=Atarus= Maniple of One" publicationId="3401-191e-1333-8a1d" page="71" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bf14-af1e-5d72-7c8b" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5db-1b84-a093-c0ea" type="max"/>
       </constraints>
       <rules>
-        <rule id="0678-dbaf-fd05-8fe6" name="Maniple of One" publicationId="975a-00f4-pubN87630" page="28" hidden="false">
-          <description>This Stratagem may be revealed at the start of any round. For the duration of that round, one Titan in this player&apos;s force may gain the benefit of any Maniple trait normally available to Legio Atarus. Note that while this Stratagem is in effect, the chosen Titan loses any other Maniple trait it might have and does not count as being as part of any other Maniple.</description>
+        <rule id="0678-dbaf-fd05-8fe6" name="Maniple of One" publicationId="3401-191e-1333-8a1d" page="71" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Astraman player. The Legio Atarus player may reveal this Stratagem at the beginning of any round. For the duration of that round, one Titan in their force may gain the benefits of any Maniple trait normally available to Legio Atarus. Note that while this Stratagem is in effect, the chosen Titan loses any other Maniple trait it might have and does not count as being as part of any other Maniples.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="43a5-712d-b889-6365" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="43a5-712d-b889-6365" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="cc4b-e6b8-1726-8d4f" name="LegioAtarus" hidden="false" targetId="cfcc-e5c0-bb0b-db6f" primary="false"/>
+        <categoryLink id="00c8-02a9-40ca-ac13" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="63d6-80e8-e266-00b0" name="=Solaria= Fog of War" publicationId="975a-00f4-pubN87630" page="34" hidden="true" collective="false" import="false" type="unit">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="944c-1211-a5a9-2908" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="277f-96fe-8014-e967" name="Fog of War" publicationId="975a-00f4-pubN87630" page="34" hidden="false">
-          <description>Play this Stratagem in the Strategy Phase of the first round. The Legio Solaria Player may redeploy a Warhound Titan for every Scale 7 or greater in their force. These redeployed units can be placed anywhere that they would normally ne allowed to deploy as constrained by the mission being played.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="06fe-8dea-d75a-de4b" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-        <categoryLink id="a550-613c-b43e-b01f" name="LegioSolaria" hidden="false" targetId="56c0-1162-173d-b052" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4699-f903-0c50-1e80" name="=Mortis= March of the Dead" publicationId="975a-00f4-pubN87630" page="39" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="63d6-80e8-e266-00b0" name="=Solaria= Fog of War" publicationId="3401-191e-1333-8a1d" page="60" hidden="true" collective="false" import="false" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f88f-e42d-38f7-bfa7" type="atLeast"/>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="14a9-163a-83aa-7520" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="277f-96fe-8014-e967" name="Fog of War" publicationId="3401-191e-1333-8a1d" page="60" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Solaria player. Play this Stratagem in the Strategy Phase of the first round. The Legio Solaria Player may redeploy a Warhound Titan. These redeployed units can be placed anywhere that they would normally be allowed to deploy by the mission being played. This Stratagem can be purchased multiple times.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="06fe-8dea-d75a-de4b" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
+        <categoryLink id="a550-613c-b43e-b01f" name="LegioSolaria" hidden="false" targetId="56c0-1162-173d-b052" primary="false"/>
+        <categoryLink id="7c48-42b3-810f-cae2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4699-f903-0c50-1e80" name="=Mortis= March of the Dead" publicationId="2988-f24d-39ef-352e" page="46" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f88f-e42d-38f7-bfa7" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7520,80 +7722,113 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="09e9-be1d-dc7f-b873" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="09e9-be1d-dc7f-b873" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="5ed2-ca28-a8c7-8bba" name="LegioMortis" hidden="false" targetId="f88f-e42d-38f7-bfa7" primary="false"/>
+        <categoryLink id="0ff1-e2c6-f3af-e671" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d7da-8565-a7b8-e782" name="=Krytos= Scorched Earth" publicationId="975a-00f4-pubN87630" page="44" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="d7da-8565-a7b8-e782" name="=Krytos= Scorched Earth" publicationId="975a-00f4-pubN87630" page="45" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bffc-4266-a83d-cae6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d560-1d67-ea19-4e14" type="max"/>
       </constraints>
       <rules>
-        <rule id="4440-9c29-ffa4-aabb" name="Scorched Earth" publicationId="975a-00f4-pubN87630" page="39" hidden="false">
-          <description>Reveal this Stratagem in any Strategy phase. For the duration of that round, when targeting terrain, Titans of the Legio Krytos add 2 to the strength of their weapons.</description>
+        <rule id="4440-9c29-ffa4-aabb" name="Scorched Earth" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Krytos player. Reveal this Stratagem in any Strategy phase. For the duration of that round, when targeting terrain, Titans of the Legio Krytos add 2 to the strength of their weapons.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="a024-0b33-11fb-3205" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="a024-0b33-11fb-3205" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="af08-53b2-7179-a064" name="LegioKrytos" hidden="false" targetId="95e8-3d8e-a0ad-4ad3" primary="false"/>
+        <categoryLink id="64ef-8698-36de-a8fe" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f4e1-e803-82c2-72ee" name="=Krytos= Iron Endures" publicationId="975a-00f4-pubN87630" page="44" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="f4e1-e803-82c2-72ee" name="=Krytos= Iron Endures" publicationId="975a-00f4-pubN87630" page="45" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bffc-4266-a83d-cae6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8f5-df40-0a46-1d99" type="max"/>
       </constraints>
       <rules>
-        <rule id="2db4-450e-8b08-3387" name="Iron Endures" publicationId="975a-00f4-pubN87630" page="39" hidden="false">
-          <description>Reveal this Stratagem in any Strategy phase. For the duration of that round, all Legio Krytos Titans reduce the Strength of hits suffered as a result of Dangerous terrain by 2 (to a minumum of 0).</description>
+        <rule id="2db4-450e-8b08-3387" name="Iron Endures" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Krytos player. Reveal this Stratagem in any Strategy phase. For the duration of that round, all Legio Krytos Titans reduce the Strength of hits suffered as a result of Dangerous terrain by 2 (to a minumum of 0).</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="54da-6742-fa1d-d099" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="54da-6742-fa1d-d099" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="dd24-89be-8ff8-2eff" name="LegioKrytos" hidden="false" targetId="95e8-3d8e-a0ad-4ad3" primary="false"/>
+        <categoryLink id="f0be-77d9-95ca-ef1a" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="79c4-5f36-3c4b-8482" name="=Fureans= Offensive Surge" publicationId="975a-00f4-pubN87630" page="49" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="79c4-5f36-3c4b-8482" name="=Fureans= Offensive Surge" publicationId="975a-00f4-pubN87630" page="50" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1a92-f760-bf0e-ce26" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0157-4522-b645-cfad" type="max"/>
       </constraints>
       <rules>
-        <rule id="c1f4-3ffc-3bc1-7eeb" name="Offensive Surge" publicationId="975a-00f4-pubN87630" page="39" hidden="false">
-          <description>Reveal this Stratagem in any Combat phase. The Legio Fureans player may choose one of their deployed Fureans Maniples; for this Combat phase, each Titan in the chosen maniple my attack twice with one of its weapons but must increase its reactor level by 1, in addition to any other effects.</description>
+        <rule id="c1f4-3ffc-3bc1-7eeb" name="Offensive Surge" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Fureans player. Reveal this Stratagem in any Combat phase. The Legio Fureans player may choose one of their deployed Fureans Maniples; for this Combat phase, each Titan in the chosen maniple my attack twice with one of its weapons but must increase its reactor level by 1, in addition to any other effects.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="98b2-7a94-7ce5-a5a1" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="98b2-7a94-7ce5-a5a1" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="5d5e-0a05-40eb-21a3" name="LegioFureans" hidden="false" targetId="72ba-4008-bf4b-fe3b" primary="false"/>
+        <categoryLink id="ba85-e379-b05a-5ce2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="12c2-179b-3e38-04d0" name="=Vulpa= No Pity for the Vanquished" publicationId="975a-00f4-pubN87630" page="45" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="12c2-179b-3e38-04d0" name="=Vulpa= No Pity for the Vanquished" publicationId="975a-00f4-pubN87630" page="55" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7093-f8b3-b5f9-d38d" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2b4-86da-964e-5c1e" type="max"/>
       </constraints>
       <rules>
-        <rule id="3fa0-9cf5-0414-0e4f" name="No Pity for the Vanquished" publicationId="975a-00f4-pubN87630" page="54" hidden="false">
-          <description>Play this Stratagem when an enemy Titan is destroyed (i.e. when it makes a roll on the Catestrophic Damage table). The Titan who infliced the killing attack may immediately make another attavk with the same weapon system against a fresh target within 12&quot; of the destroyed Titan. For all intents and purposes, this is a new attack requiring a dice roll, any increases to the Titan&apos;s reactor level, etc. </description>
+        <rule id="3fa0-9cf5-0414-0e4f" name="No Pity for the Vanquished" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Vulpa player. Play this Stratagem when an enemy Titan is destroyed (i.e. when it makes a roll on the Catestrophic Damage table). The Titan who infliced the killing attack may immediately make another attack with the same weapon system against a fresh target within 12&quot; of the destroyed Titan. For all intents and purposes, this is a new attack requiring a dice roll, any increases to the Titan&apos;s reactor level, etc. </description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="1682-efcb-68d5-f971" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="1682-efcb-68d5-f971" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="022a-a8a1-63eb-ef07" name="LegioFureans" hidden="false" targetId="72ba-4008-bf4b-fe3b" primary="false"/>
+        <categoryLink id="64b6-3672-3148-7b09" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -7601,56 +7836,83 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="a325-71b4-799f-daa1" name="=Tempestus= Combat Drop" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbc6-216c-8a22-c1b4" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="229d-552f-009a-61f5" type="max"/>
       </constraints>
       <rules>
         <rule id="eb20-0124-4019-ea50" name="Combat Drop" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
-          <description>When chosen by a player they must write the name of one of their Titan&apos;s whose scale is 6 or lower.
-                        Play this Stratagem at the start of deployment to set the named Titan to one side and state that it is being held in orbit. Declare and record a round between 2 and 4 - this is the round in which its dropship will aim to deploy the Titan.
-                        At the beginning of the Movement phase of the chosen round, roll a D10. If the result is lower than the Titan&apos;s scale, it arrives. Otherwise the Titan is delayed and will arrive at the start of the following Movement phase instead.
-                        When the Titan arrives, it may be placed anywhere on the battlefield that is 1&quot; or more from any model or terrain feature, then scatter D6&quot;. Choose it&apos;s facing then roll a D3. On a 1-2, it makes a 45° turn to the left. On a 3-4, it keeps the chosen facing. On a 5-6, it turns 45° to the right. If the Titan scatters or turns into any terrain, it stops before moving into it and the suffers D6 S9 Hits. The Titan cannot be activated in any of the remaining phases of this round. It can still be targeted and attacked as normal.</description>
+          <description>This Stratagem can be purchased by any Legio Tempestus player. When a player chooses this Stratagem, they must secretly write down the name of one of their Titans which has a Scale of 6 or lower. Play this Stratagem at the start of deployment to set that unit to one side and state that it is being held in orbit (it is not deployed with the rest of the battlegroup). Declare (and write down) a round between rounds 2-4 - this is the round in which its dropship is aiming to deploy the Titan to the battlefield.
+
+At the beginning of the Movement phase of the chosen round, roll a D10. If the result is lower than the Titan&apos;s scale, it arrives. Otherwise the Titan is delayed and will arrive at the start of the following Movement phase instead.
+
+When the Titan arrives, place it anywhere on the battlefield that is not within 1&quot; of another model or terrain feature, then scatter it D6&quot;. Once it has been scattered, roll a D3. On a 1-2, it makes a 45° turn to the left. On a 3-4, it stays where it is. On a 5-6, it turns 45° to the right. If the Titan scatters or turns into any terrain, it stops before moving into it and the suffers D6 S9 Hits. 
+
+A Titan that arrives from orbit cannot be activated in any of the phases of the current round, as it is deployed from its dropship. It can, however, be targeted by attacks as normal.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="d6ef-01ec-3bb1-1b70" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="d6ef-01ec-3bb1-1b70" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="639f-2f93-b346-225d" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
+        <categoryLink id="7a81-e870-279e-7e5b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c88c-e5de-39a8-a14c" name="=Fortidus= For the Red Planet" publicationId="975a-00f4-pubN89746" page="20" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="c88c-e5de-39a8-a14c" name="=Fortidus= For the Red Planet" publicationId="3401-191e-1333-8a1d" page="111" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="02ce-a62d-4e4b-d7cc" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fdc-a411-0d19-422c" type="max"/>
       </constraints>
       <rules>
-        <rule id="e4ec-79d7-d9dd-1924" name="For the Red Planet" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
-          <description>The Legio Fortidus Player may reveal this Stratagem when activating a Titan. Until the beginning of the following game round, the Titan ignores the damage effects of Critical Damage to its Head, Body or Legs, as chosen by the player when the Stratagem is revealed.</description>
+        <rule id="e4ec-79d7-d9dd-1924" name="For the Red Planet" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Fortidus player. The Legio Fortidus Player may reveal this Stratagem when activating a Titan. Until the beginning of the following game round, the Titan ignores the damage effects of Critical Damage to its Head, Body or Legs, as chosen by the player when the Stratagem is revealed.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="57c3-e9fa-f8f0-b772" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="57c3-e9fa-f8f0-b772" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="8c78-f8b6-fcee-508f" name="LegioFortidus" hidden="false" targetId="8129-9843-a287-cd8e" primary="false"/>
+        <categoryLink id="8dbc-c1ee-6ac2-8da1" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="77b5-8263-66f7-7c67" name="=Fortidus= Red Skies" publicationId="975a-00f4-pubN89746" page="20" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="77b5-8263-66f7-7c67" name="=Fortidus= Red Skies" publicationId="3401-191e-1333-8a1d" page="111" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="02ce-a62d-4e4b-d7cc" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59cd-ea6f-e1a9-a09e" type="max"/>
       </constraints>
       <rules>
-        <rule id="8593-357d-0c57-fca0" name="Red Skies" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
-          <description>The Legio Fortidus Player may reveal this Stratagem when one of their Titans suffers a Magazine Detonation or Catastrophic Meltdown result on the Catestrophic Damage table. When resolving the Catestrophic Damage effects, add 5 to the Titan&apos;s scale.</description>
+        <rule id="8593-357d-0c57-fca0" name="Red Skies" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Fortidus player. The Legio Fortidus Player may reveal this Stratagem when one of their Titans suffers a Magazine Detonation or Catastrophic Meltdown result on the Catestrophic Damage table. When resolving the Catestrophic Damage effects, add 5 to the Titan&apos;s scale.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="edae-b5ab-12af-7768" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="edae-b5ab-12af-7768" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="7d74-3e61-eb64-5915" name="LegioFortidus" hidden="false" targetId="8129-9843-a287-cd8e" primary="false"/>
+        <categoryLink id="6625-aace-a994-3919" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -7658,17 +7920,25 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="da32-bf28-85d1-9f9d" name="=Vulcanum= Symbiotic Commands" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1d02-6c17-cd84-a92f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e85c-535b-73f1-1564" type="max"/>
       </constraints>
       <rules>
         <rule id="e1d2-ea6a-9a73-548b" name="Symbiotic Commands" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
-          <description>Play this Stratagem in the Strategy phase after successfully issuing an order to a Legio Vulcanum Titan. The Player may, if the choose, issue the same Order to any or all of the Legio Vulcanum Titans in their battlegroup without needing to make any further Command checks.</description>
+          <description>This Stratagem can be purchased by any Legio Vulcanum player. Play this Stratagem in the Strategy phase after successfully issuing an Order to a Legio Vulcanum Titan. The Player may, if they choose, immediately issue the same Order to any or all of the Legio Vulcanum Titans in their battlegroup without the need to make further Command checks.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="05b7-6e32-5deb-6bb9" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="05b7-6e32-5deb-6bb9" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="4bbe-ed93-db90-d937" name="LegioVulcanum" hidden="false" targetId="4225-27f8-9c8b-e56e" primary="false"/>
+        <categoryLink id="c6d8-51a2-8bf2-5211" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -7676,17 +7946,25 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8f50-2bbe-22c7-c81e" name="=Interfector= Tormented Machine Spirit" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f3d0-92f8-3bf7-4799" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24e8-17cc-6315-398c" type="max"/>
       </constraints>
       <rules>
         <rule id="6803-8ebb-8728-241b" name="Tormented Machine Spirit" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
-          <description>Reveal this Stratagem when a Legio Interfector Titan would roll on the Awakened Machine Spirit table. Instead of rolling on the table, make an attack with each of the Titan&apos;s weapons. These attacks must be made on the closest model, whether it is friend or foe.</description>
+          <description>This Stratagem can be purchased by any Legio Interfector player. Reveal this Stratagem when a Legio Interfector Titan would roll on the Awakened Machine Spirit table. Instead of rolling on the table, make an attack with each of the Titan&apos;s weapons. These attacks must be made on the closest model, whether it is friend or foe.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="9815-dfb5-41aa-8894" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
-        <categoryLink id="ad36-7885-ea62-752d" name="LegioVulcanum" hidden="false" targetId="4225-27f8-9c8b-e56e" primary="false"/>
+        <categoryLink id="9815-dfb5-41aa-8894" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
+        <categoryLink id="1109-0401-abd2-7330" name="LegioInterfector" hidden="false" targetId="f0a4-f7dc-25cf-21c8" primary="false"/>
+        <categoryLink id="b685-2cf4-48b0-2972" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -7708,11 +7986,11 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="99e9-5b47-5d7a-f6f7" name="=Osedax= Blood Begets Blood" publicationId="2988-f24d-39ef-352e" page="32" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="99e9-5b47-5d7a-f6f7" name="=Osedax= Blood Begets Blood" publicationId="3401-191e-1333-8a1d" page="141" hidden="true" collective="false" import="false" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2ca-fd65-b60e-4dca" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7720,24 +7998,25 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02fe-8da6-6ac0-77cc" type="max"/>
       </constraints>
       <rules>
-        <rule id="297e-3a6a-6c0e-6d96" name="Blood Begets Blood" publicationId="2988-f24d-39ef-352e" page="32" hidden="false">
+        <rule id="297e-3a6a-6c0e-6d96" name="Blood Begets Blood" publicationId="3401-191e-1333-8a1d" page="141" hidden="false">
           <description>This Stratagem can be purchased by any Legio Osedax player. Play this Stratagem when a friendly Legio Osedax Titan suffers Catastrophic Damage. After resolving the effects of the Catastrophic Damage, every friendly Legio Osedax Titan may immediately make a single weapon attack. This attack must be made against the closest visible enemy unit. Increase the Plasma Reactor level of any Titan that makes an attack in this way by 2, in addition to any other advances associated with weapon fire.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="fe83-7faa-3442-224a" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="fe83-7faa-3442-224a" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="3326-0fa1-ba65-553a" name="LegioOsedax" hidden="false" targetId="fc8c-656d-ffe8-69b6" primary="false"/>
+        <categoryLink id="11be-9383-35ed-e32a" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2807-7c6c-a62b-6732" name="=Osedax= Relentless March" publicationId="2988-f24d-39ef-352e" page="32" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="2807-7c6c-a62b-6732" name="=Osedax= Relentless March" publicationId="3401-191e-1333-8a1d" page="141" hidden="true" collective="false" import="false" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2ca-fd65-b60e-4dca" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7745,13 +8024,14 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcb6-5ea6-f5ce-8ef3" type="max"/>
       </constraints>
       <rules>
-        <rule id="646d-c2fb-d70c-4cd5" name="Relentless March" publicationId="2988-f24d-39ef-352e" page="32" hidden="false">
+        <rule id="646d-c2fb-d70c-4cd5" name="Relentless March" publicationId="3401-191e-1333-8a1d" page="141" hidden="false">
           <description>This Stratagem can be purchased by any Legio Osedax player. Play this Stratagem during any Strategy phase. For the remainder of the round, friendly Legio Osedax Titans may be issued Full Stride orders without the need to make a Command check and are not affected by Difficult terrain and Dangerous terrain.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="d325-818a-7ede-ffbf" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="d325-818a-7ede-ffbf" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="4216-3faf-8577-1be8" name="LegioOsedax" hidden="false" targetId="fc8c-656d-ffe8-69b6" primary="false"/>
+        <categoryLink id="8aa8-580f-e744-ac26" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -7814,7 +8094,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3009-299d-5b6d-7a0e" type="atLeast"/>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3009-299d-5b6d-7a0e" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7827,8 +8107,9 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="bd9f-2533-d447-7b13" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="bd9f-2533-d447-7b13" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="6b3e-2681-9679-2150" name="LegioMagna" hidden="false" targetId="4cad-18cf-5711-5331" primary="false"/>
+        <categoryLink id="7197-f96b-8638-c4e3" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
@@ -7839,7 +8120,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3009-299d-5b6d-7a0e" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3009-299d-5b6d-7a0e" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7852,8 +8133,9 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="aa1a-da5b-1daa-946e" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="aa1a-da5b-1daa-946e" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="1514-ed0c-b3fb-5206" name="LegioMagna" hidden="false" targetId="4cad-18cf-5711-5331" primary="false"/>
+        <categoryLink id="700e-e716-00d9-9457" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -7904,7 +8186,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5c80-4c19-098e-4775" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7917,8 +8199,9 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="f835-6ea6-cfc2-e53f" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="f835-6ea6-cfc2-e53f" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="1676-30e0-23f4-9de5" name="LegioVulturum" hidden="false" targetId="5a98-05b4-ed38-bbc4" primary="false"/>
+        <categoryLink id="deb5-35f5-16b5-0ffa" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -7929,7 +8212,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5c80-4c19-098e-4775" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7942,8 +8225,9 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="631f-2527-dcad-5bf3" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="631f-2527-dcad-5bf3" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="e565-8cf9-8f0e-3e66" name="LegioVulturum" hidden="false" targetId="5a98-05b4-ed38-bbc4" primary="false"/>
+        <categoryLink id="ee26-69f3-3519-04b7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -7975,144 +8259,236 @@
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8f31-0e84-26f0-f2af" name="=Astraman= Strength and Resolve" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="8f31-0e84-26f0-f2af" name="=Astraman= Strength and Resolve" publicationId="3401-191e-1333-8a1d" page="90" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dd39-c2b7-a515-da8a" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad15-7c67-6aca-99ff" type="max"/>
       </constraints>
       <rules>
-        <rule id="a570-96dd-654d-3158" name="=Astraman= Strength and Resolve" publicationId="ce02-a882-fdad-dd36" hidden="false">
-          <description>Play when activating a titan in strategy phase. Until beginning or next round: that titan doesnt suffer bonuses to armour rolls due to existing damage. This counts as the titans activation (so no orders).</description>
+        <rule id="a570-96dd-654d-3158" name="=Astraman= Strength and Resolve" publicationId="3401-191e-1333-8a1d" page="90" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Astraman player. The Legio Astraman player may reveal this Stratagem when activating a Titan during the Strategy phase. Unitl the beginning of the following round, attacks made against that Titan gain no bonus to Armour rolls as a result of damage already inflicted as indicated by the Command Terminal (see the Adeptus Titanicus rulebook). This counts as the Titan&apos;s activation for that phase.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="f02a-37e1-1b7a-54ff" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="f02a-37e1-1b7a-54ff" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="bd40-2589-1f9d-e30a" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
         <categoryLink id="068e-b035-3674-0ce4" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
+        <categoryLink id="e38f-be32-5100-b67b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ab6a-2fba-dc15-e2ef" name="=Astraman= Stand Firm" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ab6a-2fba-dc15-e2ef" name="=Astraman= Stand Firm" publicationId="3401-191e-1333-8a1d" page="90" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dd39-c2b7-a515-da8a" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24aa-9a6d-0326-83ad" type="max"/>
+      </constraints>
       <rules>
-        <rule id="aa80-9e0a-81a8-0cdd" name="Stand Firm" publicationId="ce02-a882-fdad-dd36" hidden="false">
-          <description>Reveal at beginning of any round. That round all Astraman titans can merge voids, if they don&apos;t move (voluntary or involuntary)</description>
+        <rule id="aa80-9e0a-81a8-0cdd" name="Stand Firm" publicationId="3401-191e-1333-8a1d" page="90" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Astraman player. The Legio Astraman player may reveal this Stratagem at the beginning of any round. For the duration of that round, any friendly Legio Astraman Titan can merge void shields with any other friendly Legio Astraman Titans as if they were part of the same squadron, so long as none of the Titan&apos;s sharing void shields have moved this round (voluntarily or involuntarily).</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="160d-314e-4d7e-7258" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="160d-314e-4d7e-7258" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="52c9-6fc2-a263-7166" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
         <categoryLink id="cbbc-6719-dae1-2e9d" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
+        <categoryLink id="2450-46c0-28cd-42fb" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ced4-b0c7-5d0f-3c30" name="=Ignatum= Punish their Folly" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ced4-b0c7-5d0f-3c30" name="=Ignatum= Punish their Folly" publicationId="3401-191e-1333-8a1d" page="21" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4a11-763b-6a82-bc29" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4595-1f0e-79de-84fe" type="max"/>
+      </constraints>
       <rules>
-        <rule id="eb9b-e6f7-e068-d39b" name="=Ignatum= Punish their Folly" publicationId="ce02-a882-fdad-dd36" hidden="false">
-          <description>Play when an enemy titan ends it&apos;s  move within 3&quot; of an Ignatum titan during a chage. Before resolving the charge attack,  the ignatum titan can make an attack using BS with a non melee weapon. </description>
+        <rule id="eb9b-e6f7-e068-d39b" name="Punish their Folly" publicationId="3401-191e-1333-8a1d" page="21" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Ignatum player. Play this Stratagem when an enemy Titan ends its move within 3&quot; of a Legio Ignatum Titan as part of a Charge order. Before any attacks are resolved, that Legio Ignatum Titan can immediately make an attack using their Ballistic Skill with a weapon without the Melee trait.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="eb6f-48f1-7363-103d" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="eb6f-48f1-7363-103d" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="c9eb-3740-741a-5ebe" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
+        <categoryLink id="ce4e-d79e-d344-09bc" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="087c-a203-d1d4-bfcd" name="=Ignatum= Guard the Gates" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="087c-a203-d1d4-bfcd" name="=Ignatum= Guard the Gates" publicationId="3401-191e-1333-8a1d" page="21" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4a11-763b-6a82-bc29" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12a6-33cd-1888-a51f" type="max"/>
+      </constraints>
       <rules>
-        <rule id="d5b1-a3d8-cc8c-8b18" name="=Ignatum= Guard the Gates" publicationId="ce02-a882-fdad-dd36" hidden="false">
-          <description>Play during the first strategy phase.  All Ignatum titans can go on first fire without making a command check.
-
-                    </description>
+        <rule id="d5b1-a3d8-cc8c-8b18" name="Guard the Gates" publicationId="3401-191e-1333-8a1d" page="21" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Ignatum player. Play this Stratagem at the start of the first round&apos;s Strategy phase. Until the end of the round, friendly Legio Ignatum Titans can be issued the First Fire order without the need to make a Command check.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="9a8a-87a7-c2e3-41e2" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="9a8a-87a7-c2e3-41e2" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="0045-7a6f-b5e2-5292" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
+        <categoryLink id="871e-cc37-4945-1855" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5dd2-5a20-9a7a-c000" name="=Laniaskara= Heedless Charge" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="5dd2-5a20-9a7a-c000" name="=Laniaskara= Heedless Charge" publicationId="ce02-a882-fdad-dd36" page="44" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d2d-07be-eb8c-6cce" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="236e-aa60-ddcb-9f51" type="max"/>
+      </constraints>
       <rules>
-        <rule id="5ffa-7650-fbc9-0acb" name="=Laniaskara= Heedless Charge" publicationId="ce02-a882-fdad-dd36" hidden="false">
-          <description>Play at start of any strategy phase.  For that phase Laniaskara titans gain charge orders without having to make a command check</description>
+        <rule id="5ffa-7650-fbc9-0acb" name="Heedless Charge" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Laniaskara player. Play this Stratagem at start of any strategy phase. For the remainder of the phase, any friendly Legio Laniaskara Titans can be issued a Charge order without the need to make a Command check.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="c697-e873-2c87-cca4" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
+        <categoryLink id="56a8-ba94-2a0f-1c07" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
+        <categoryLink id="776f-d2e5-84e1-a80b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cf5b-8f2e-8df3-7539" name="=Kulisaetai= Steadfast Bastion " publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="cf5b-8f2e-8df3-7539" name="=Kulisaetai= Steadfast Bastion " publicationId="ce02-a882-fdad-dd36" page="48" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="621d-d3d2-41c9-5052" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b8-545a-a822-ea9a" type="max"/>
+      </constraints>
       <rules>
-        <rule id="446b-334d-7306-47b4" name="=Kulisaetai= Steadfast Bastion " publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
-          <description>Play in any shooting phase. Add 6&quot; to short range characteristic of all Kulisaetai non melee weapons, if they have not moved, for this round.</description>
+        <rule id="446b-334d-7306-47b4" name="Steadfast Bastion " publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Kulisaetai player. Play this Stratagem during any Combat phase. Add 6&quot; to the Short range (but not the Long range) characteristic of all weapons without the Melee trait carried by a Legio Kulisaetai Titan during the Combat phase, so long as it has not moved (voluntarily or involuntarily) already this round.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="2d20-871a-7077-6cfb" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="2d20-871a-7077-6cfb" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="029e-e259-fc56-53a5" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
+        <categoryLink id="ba05-5f8a-eb17-49a1" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="88d4-a5e8-4929-8037" name="=Kulisaetai= Methodical Advance" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="88d4-a5e8-4929-8037" name="=Kulisaetai= Methodical Advance" publicationId="ce02-a882-fdad-dd36" page="48" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="621d-d3d2-41c9-5052" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d036-072f-58a3-2c0d" type="max"/>
+      </constraints>
       <rules>
-        <rule id="880f-916f-3203-443b" name="=Kulisaetai= Methodical Advance" publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
-          <description>First round strategy phase. Choose a scale. all friendly Kulisaetai titans with the chosen scale may make an unboosted move.  Then the opposing player becomes First Player.  Titans moved this way may not be activated during the strategy phase.</description>
+        <rule id="880f-916f-3203-443b" name="Methodical Advance" publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Kulisaetai player. Play this Stratagem in the Stratagey phase of the first round. Choose a Scale. All friendly Legio Kulesaetai Titans with the same Scale as the chosen Scale may immediately make a move although no Titan may declare Power to Stabalisers! or Power to Locomotors!. After the effects of the Stratagem have been resolved, the opposing player becomes the First Player. Titans that move in this way may not be activated in the Strategy phase of the first round.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="6d62-d708-e5d3-7c2f" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="6d62-d708-e5d3-7c2f" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="9716-bc0e-6199-9133" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
+        <categoryLink id="4384-04e8-abda-0dd7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ad64-ba43-1e95-87ca" name="=Tritonis= Stygian Veil" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ad64-ba43-1e95-87ca" name="=Tritonis= Stygian Veil" publicationId="ce02-a882-fdad-dd36" page="52" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dddd-cc44-e662-51a6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec61-b60b-48e0-084d" type="max"/>
+      </constraints>
       <rules>
-        <rule id="538c-2a10-554b-5afc" name="=Tritonis= Stygian Veil" hidden="false">
-          <description>Strat phase. place 3 markers at least 10&quot;apart.  3&quot; from the marker blocks line of sight. Any non Tritonis player within 6&quot; of a marker suffers -2 penalty  to command check. remove markers in end phase </description>
+        <rule id="538c-2a10-554b-5afc" name="Stygian Veil" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Tritonis player. Play this Stratagem during any Strategy phase. The Legio Tritonis player may immediately place three markers anywhere on the battlefield, so long as each marker is at least 10&quot; from a previously deployed marker. Any section of the battlefield within 3&quot; of the centre of the marker blocks line of sight and any non-Legio Tritonis units within 6&quot; of the centre of one or more markers suffers a -2 penalty to their Command check. All markers are removed at the start of the End phase.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="5fe7-093f-b82b-1091" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="5fe7-093f-b82b-1091" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="4099-59c5-c97c-4a60" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
+        <categoryLink id="0b33-52ea-786d-b3a0" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="43ed-3dab-833c-e085" name="=Damicium= Endurance Beyond Limit" publicationId="ce02-a882-fdad-dd36" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="43ed-3dab-833c-e085" name="=Damicium= Endurance Beyond Limit" publicationId="ce02-a882-fdad-dd36" page="54" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0fb5-613c-cbb2-90df" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f5e-a05e-279e-ae11" type="max"/>
       </constraints>
       <rules>
-        <rule id="2254-5e4f-6db6-066e" name="=Damicium= Endurance Beyond Limit" publicationId="ce02-a882-fdad-dd36" hidden="false">
-          <description>Play at start of combat phase. Make a repair roll for each Damicium titan, with dice equal to half it&apos;s servitor clade (rounding up)</description>
+        <rule id="2254-5e4f-6db6-066e" name="Endurance Beyond Limit" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Damicium player. Play this Stratagem at the start of the Combat phase, before any units are activated. The Legio Damicium player may immediately make a Repair roll for each Titan, rolling a number of D6 equal to half its Servitor Clades characteristic (rounding up).</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="5b16-a9b5-983f-d3fe" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
         <categoryLink id="d6ed-9390-2a0a-4f9c" name="New CategoryLink" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
+        <categoryLink id="0e07-0b66-d16f-2ad0" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
@@ -8371,13 +8747,20 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1260-8d1f-16f7-75ad" name="=Astorum= Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="1260-8d1f-16f7-75ad" name="=Astorum= Machine Defiance" publicationId="3401-191e-1333-8a1d" page="40" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbd6-65fd-6354-a154" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c8-2b67-3fdb-ac96" type="max"/>
       </constraints>
       <rules>
-        <rule id="ad4d-abd4-2b1b-bfd7" name="Machine Defiance" publicationId="975a-00f4-pubN87630" page="18" hidden="false">
-          <description>Legio Astorum.Play when a titans void shields collapse. Roll repair dice using number of servitor clades. 5 or 6 restore void shields by 1 (not a repair roll).
+        <rule id="ad4d-abd4-2b1b-bfd7" name="Machine Defiance" publicationId="3401-191e-1333-8a1d" page="40" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Astorum player. Play this Stratagem when a Titan&apos;s void shields collapse. Immediately roll a number of D6 equal to the Titan&apos;s Servitor Clades characteristic. For each roll of a 5 or 6, restore the Titan&apos;s void shields by 1. Note, this is not a Repair roll and does not benefit from any effects which influence or modify Repair rolls.
                     </description>
         </rule>
       </rules>
@@ -8392,17 +8775,25 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3426-e19b-771f-0d15" name="=Mordaxis= Unstoppable" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e6f-c618-89f4-d690" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c69-5d32-c31d-9f64" type="max"/>
       </constraints>
       <rules>
         <rule id="5436-c2a4-839c-47c6" name="Unstoppable" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
-          <description>Play this Stratagem at the start of the Damage Control phase, before any Repair rolls are made. Until the end of the phase, add 2 to the Servitor Clades of every Legio Mordaxis Titan</description>
+          <description>This Stratagem may be purchased by any Legio Mordaxis player. Play this Stratagem at the start of the Damage Control phase, before any Repair rolls are made. Until the end of the phase, add 2 to the Servitor Clades of every Legio Mordaxis Titan.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="3173-de32-14fd-e620" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="3173-de32-14fd-e620" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="c1e8-1659-eb79-7b08" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
+        <categoryLink id="9ac9-5ff0-ac16-4b44" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
@@ -8410,86 +8801,126 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4cf8-2cc7-a7fc-085e" name="=Infernus= Burned Ones" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bd79-8c5d-3949-d89d" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="58ef-c3dc-5473-01f0" name="Burned Ones" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
-          <description>Reveal this Stratagem in any Combat phase. Choose any piece of Blocking terrain withing 12” of a friendly Legio Infernus Titan and remove it, replacing it with an area of Difficult Terrain of roughly the same size. This stratagem can be purchased multiple times.</description>
+          <description>This Strratagem may be purchased by any Legio Infernus player. Reveal this Stratagem in any Combat phase. Choose any piece of Blocking terrain withing 12” of a friendly Legio Infernus Titan and remove it, replacing it with an area of Difficult terrain of the same approximate size. This Stratagem can be purchased multiple times.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="39dd-a123-fcca-d330" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="39dd-a123-fcca-d330" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="5769-7d67-e82f-69ce" name="LegioInfernus" hidden="false" targetId="99b7-5e2f-9ea4-bbdf" primary="false"/>
+        <categoryLink id="ea9a-eb2e-f366-ebe6" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="117e-1150-d95c-0c61" name="=Lysanda= Frontier Guard" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="117e-1150-d95c-0c61" name="=Lysanda= Frontier Guard" publicationId="3401-191e-1333-8a1d" page="159" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f808-ec75-4a31-8a29" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be34-a671-1633-9bbd" type="max"/>
       </constraints>
       <rules>
-        <rule id="d084-8920-f843-b458" name="Frontier Guard" publicationId="3265-f408-cc9b-bfa3" page="29" hidden="false">
-          <description>Play this Stratagem during the Strategy phase of any round. Until the end of the round, the BS and WS of any Legio Lysanda Titan that is within 6” of an objective marker (for their own victory conditions) when this Stratagem is played is increased by 1, to maximum of 2+.</description>
+        <rule id="d084-8920-f843-b458" name="Frontier Guard" publicationId="3401-191e-1333-8a1d" page="159" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Lysanda player. Play this Stratagem during the Strategy phase of any round. Until the end of the round, the BS and WS of any Legio Lysanda Titan that is within 6” of an objective marker (for their own victory conditions) when this Stratagem is played is increased by 1, to maximum of 2+.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="040d-fc25-44e0-e023" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="040d-fc25-44e0-e023" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="6b19-9892-f014-61a6" name="LegioLysanda" hidden="false" targetId="7ada-d471-345c-f8a4" primary="false"/>
+        <categoryLink id="8ee5-e271-bd21-b1fa" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4db9-d3f5-c9e7-63b2" name="=Oberon= Decisive Action" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="4db9-d3f5-c9e7-63b2" name="=Oberon= Decisive Action" publicationId="3401-191e-1333-8a1d" page="147" hidden="false" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dee5-885d-fc38-08ce" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd7c-70fa-f953-ef8f" type="max"/>
       </constraints>
       <rules>
-        <rule id="3069-1ca0-27b0-c6c3" name="Decisive Action" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
-          <description>Play this Stratagem at the start of any Strategy phase. If played during the first round, until the end of the phase, Legio Oberon Titans may be issued with Full Stride or First Fire orders without needing a Command check. If played during in any subsequent phase, until the end of the phase, Legio Oberon Titans may be issued with Full Stride or Split Fire order without needing a Command check. All Legio Oberon Titans issued orders via this Stratagem must be issued with the same order.</description>
+        <rule id="3069-1ca0-27b0-c6c3" name="Decisive Action" publicationId="3401-191e-1333-8a1d" page="147" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Oberon player. Play this Stratagem at the start of any Strategy phase. If played during the first round, until the end of the phase, Legio Oberon Titans may be issued with Full Stride or First Fire orders without needing a Command check. If played during any round after the first, until the end of the phase, Legio Oberon Titans may be issued with Full Stride or Split Fire orders without needing a Command check. All Legio Oberon Titans issued Orders via this Stratagem must be issued the same Order.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="3a99-f4c1-3279-663e" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="3a99-f4c1-3279-663e" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="60f0-2c87-9186-7af5" name="LegioOberon" hidden="false" targetId="7dc9-a722-55be-5f42" primary="false"/>
+        <categoryLink id="1ca0-896f-d9fa-4e99" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fa21-d04e-c23a-9d6a" name="=Praesagius= Precision Volley" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="true" collective="false" import="false" type="unit">
+    <selectionEntry id="fa21-d04e-c23a-9d6a" name="=Praesagius= Precision Volley" publicationId="3401-191e-1333-8a1d" page="101" hidden="true" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e6da-1530-1bdd-276a" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7298-6f53-82aa-ccf1" type="max"/>
       </constraints>
       <rules>
-        <rule id="a95e-6b88-2aca-102d" name="Precision Volley" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
-          <description>Play this Stratagem at the start of any Strategy phase, before any orders are issued. Until the tart of the next round, add 1 to the Hit rolls of all attacks made by Legio Praesagius Titans when using a weapon’s long range.</description>
+        <rule id="a95e-6b88-2aca-102d" name="Precision Volley" publicationId="3401-191e-1333-8a1d" page="101" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Praesagius player. Play this Stratagem at the start of any Strategy phase, before any orders are issued. Until the start of the next round, add 1 to the Hit rolls of all attacks made by Legio Praesagius Titans when using a weapon’s Long range.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="9e56-5993-aafd-fc5f" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="9e56-5993-aafd-fc5f" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="3b48-a06f-7463-1f7f" name="LegioPraesagius" hidden="false" targetId="4e62-72e2-a04f-9b86" primary="false"/>
+        <categoryLink id="969f-cce1-7aae-13b2" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="86f7-1a40-382b-ae4b" name="=Oberon= Strategiser" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="86f7-1a40-382b-ae4b" name="=Oberon= Strategiser" publicationId="3401-191e-1333-8a1d" page="147" hidden="false" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dee5-885d-fc38-08ce" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d3c-c2f6-8e33-043b" type="max"/>
       </constraints>
       <rules>
-        <rule id="27b8-2aa1-e19e-1aa0" name="Strategiser" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
-          <description>Play this Stratagem when an Opponent plays a Stratagem that costs 2 or fewer Stratagem points. Before resolving its effects, this Stratagem is discarded and its effect ignored.</description>
+        <rule id="27b8-2aa1-e19e-1aa0" name="Strategiser" publicationId="3401-191e-1333-8a1d" page="147" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Oberon player. Play this Stratagem when an opponent plays a Stratagem that costs 2 or fewer Stratagem points, before resolving its effects. The Stratagem is discarded and its effects ignored.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="005e-8bb2-8019-fbed" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="true"/>
+        <categoryLink id="005e-8bb2-8019-fbed" name="LegioSpecificStratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="696e-4ad5-5c10-2b4c" name="LegioOberon" hidden="false" targetId="7dc9-a722-55be-5f42" primary="false"/>
+        <categoryLink id="6886-9f82-6c07-1aa6" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
@@ -9875,7 +10306,7 @@
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1ff9-2715-d0fa-8049" name="Outflank" publicationId="975a-00f4-pubN65537" page="64" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="1ff9-2715-d0fa-8049" name="Outflank" publicationId="3401-191e-1333-8a1d" page="172" hidden="false" collective="false" import="false" type="unit">
       <modifiers>
         <modifier type="set" field="efbf-52f7-fd08-f329" value="4.0">
           <conditions>
@@ -9923,14 +10354,17 @@
         </modifier>
       </modifiers>
       <rules>
-        <rule id="379f-458f-52f0-f90c" name="Outflank" publicationId="975a-00f4-pubN65537" page="64" hidden="false">
+        <rule id="379f-458f-52f0-f90c" name="Outflank" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
           <description>When this Stratagem is chosen, the player secretly writes down one of their units. The cost of the Stratagem is equal to half the unit&apos;s Scale, rounding up. Play this Stratagem at the start of deployment to set that unit to one side and state that it is outflanking (it is not deployed with the rest ofits battlegroup). Write down which of the battlefield&apos;s neutral flanks it will arrive on, but do not reveal this to the opposing player. While the unit is not on the board, it cannot be activated, and so cannot be issued orders.
-                        At the start of the Movement phase of the first round, the unit appears on long range auspex - reveal to the opposing player which neutral flank was chosen. During the Movement phase of the second round, the outflanking unit can be activated. When it is, it is set up so that the Rear arc ofits base is touching the chosen flank. It cannot move any further during the phase.
-                        If a player&apos;s battlegroup contains any Squadrons (see page 45), they can choose this Stratagem more than once, as long as each outflanking unit is part of the same Squadron.</description>
+
+At the start of the Movement phase of the first round, the unit appears on long range auspex - reveal to the opposing player which neutral flank was chosen. During the Movement phase of the second round, the outflanking unit can be activated. When it is, it is set up so that the Rear arc of its base is touching the chosen flank. It cannot move any further during the phase.
+
+If a player&apos;s battlegroup contains any Squadrons, they can choose this Stratagem more than once, as long as each outflanking unit is part of the same Squadron.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="066f-63cf-dc9e-d775" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e5c0-7e0a-d766-2675" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="419f-443b-f165-a407" name="Selected Unit" hidden="false" collective="false" import="false">
@@ -15862,14 +16296,26 @@ Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Move
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c80f-d884-325b-745c" name="=Honorum= Crusading Spirit" publicationId="2988-f24d-39ef-352e" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c80f-d884-325b-745c" name="=Honorum= Crusading Spirit" publicationId="3401-191e-1333-8a1d" page="131" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158f-4cf2-be7e-6c75" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e63-3068-31db-400e" type="max"/>
+      </constraints>
       <rules>
-        <rule id="20cd-a50d-46c3-6dea" name="=Honorum= Crusading Spirit" hidden="false">
-          <description>Since its inception, Legio Honorum has strode ever forwards, preferring death over failure. This Stratagem can be purchased by any Legio Honorum player. Play this Stratagem during any Strategy phase. For the remainder of the phase, friendly Legio Honorum Titans do not suffer penalties to Command checks. In addition, a single Legio Honorum Titan may re-roll a failed Command check made when issuing Orders.</description>
+        <rule id="20cd-a50d-46c3-6dea" name="Crusading Spirit" publicationId="3401-191e-1333-8a1d" page="131" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Honorum player. Play this Stratagem during any Strategy phase. For the remainder of the phase, friendly Legio Honorum Titans do not suffer penalties to Command checks. In addition, a single Legio Honorum Titan may re-roll a failed Command check made when issuing Orders.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="e483-6742-e193-c4b9" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="1171-2130-ede4-af22" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
+        <categoryLink id="7d1b-8bee-928a-7a43" name="LegioHonorum" hidden="false" targetId="cd4a-3c69-5fc8-0773" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -17737,29 +18183,51 @@ being issued an order.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a77a-601b-06c0-9ccc" name="=Interfector= Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a77a-601b-06c0-9ccc" name="=Interfector= Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f3d0-92f8-3bf7-4799" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad70-ade9-8471-4262" type="max"/>
+      </constraints>
       <rules>
-        <rule id="869c-9ea5-feb0-8426" name="=Interfector= Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
-          <description>Reveal this Stratagem during the Strategy phase. Any enemy Titan or Knight Banner within 12&quot; of a Legio Interfector Titan may not
-be issued Orders this round.</description>
+        <rule id="869c-9ea5-feb0-8426" name="Portents of Doom" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Interfector player. Reveal this Stratagem during the Strategy phase. Any enemy Titan or Knight Banner within 12&quot; of a Legio Interfector Titan may not be issued Orders this round.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="8db3-2587-5d66-51ed" name="LegioInterfector" hidden="false" targetId="f0a4-f7dc-25cf-21c8" primary="false"/>
+        <categoryLink id="94c9-6066-41d0-545c" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
+        <categoryLink id="9ffe-5c52-3bfd-ee67" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+      </categoryLinks>
       <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a926-7329-163c-d9a6" name="Dark Pledge" publicationId="975a-00f4-pubN87630" page="79" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a926-7329-163c-d9a6" name="Dark Pledge" publicationId="975a-00f4-pubN89746" page="79" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2364-f6ba-4b1d-a250" type="max"/>
+      </constraints>
       <rules>
-        <rule id="a1aa-a8e6-7f3e-71bb" name="Dark Pledge" publicationId="975a-00f4-pubN87630" page="79" hidden="false">
-          <description>This Stratagem can be purchased by any Traitor player. 
-Play this Stratagem in the Strategy phase of the first round. The player chooses an enemy Titan or number of Titans with a Scale of 10 or more to mark for destruction. If, at the end of the battle,
-these marked Titans have been destroyed, the player scores 10 Victory points. If all or some of the marked Titans have not been
-destroyed by the end of the battle, the player loses 10 Victory points. </description>
+        <rule id="a1aa-a8e6-7f3e-71bb" name="Dark Pledge" publicationId="975a-00f4-pubN89746" page="79" hidden="false">
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in the Strategy phase of the first round. The player chooses an enemy Titan or number of Titans with a Scale of 10 or more to mark for destruction. If, at the end of the battle, these marked Titans have been destroyed, the player scores 10 Victory points. If all or some of the marked Titans have not been destroyed by the end of the battle, the player loses 10 Victory points. </description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="57de-7508-271e-84bf" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="a16b-c42c-a944-5575" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
@@ -17789,6 +18257,42 @@ destroyed by the end of the battle, the player loses 10 Victory points. </descri
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c8fe-3fd8-e98f-6f9b" name="=Metalica= Harmony and Order" publicationId="3401-191e-1333-8a1d" page="81" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b8d-55ad-53af-7f9d" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30aa-ee17-1766-9649" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="9fa7-dfed-30e0-d8f0" name="Harmony and Order" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Metalica player. Play this Stratagem when a Titan&apos;s Machine Spirit awakens as a result of pushing its Reactor. The Machine Spirit is not awakened, in the same manner as if the Titan had passed its Command check.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="fef2-bf4f-8e3d-02ac" name="LegioMetalica" hidden="false" targetId="2afb-401e-9ec9-28b2" primary="false"/>
+        <categoryLink id="408f-b938-d418-4f00" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="2173-d36e-35ed-0a9c" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b8d-55ad-53af-7f9d" name="Legio Metalica (Iron Skulls)" publicationId="3401-191e-1333-8a1d" page="78" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="45bd-9f5e-cc71-0320" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+        <categoryLink id="8b76-0ed5-6850-05bd" name="LegioMetalica" hidden="false" targetId="2afb-401e-9ec9-28b2" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
