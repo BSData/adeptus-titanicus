@@ -3,6 +3,8 @@ Adeptus Titanicus
 
 Hey guys the current plan is to get the Repository updated asap on the old format, then push out a ground up build that fixes a ton of issues.
 
+Gitter is messed up, find us on the discord: https://discord.com/invite/UrrPB3T
+
 
 [![Join the chat at https://gitter.im/BSData/adeptus-titanicus](https://badges.gitter.im/BSData/adeptus-titanicus.svg)](https://gitter.im/BSData/adeptus-titanicus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
