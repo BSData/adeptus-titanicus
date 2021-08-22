@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="29" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:
-
-https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="30" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Wargear!</comment>
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
@@ -4591,21 +4589,9 @@ If more than one player has this Stratagem, players take turns when placing thei
     <selectionEntry id="d169-c82c-a137-bb35" name="=Crucius= Terminus Override Mechanisms" publicationId="2988-f24d-39ef-352e" page="36" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="equalTo"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="atLeast"/>
-                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da6d-e379-1848-8c31" type="greaterThan"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -10574,7 +10560,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                 <categoryLink id="a1cf-d147-7ab9-fa95" name="LegioHonorum" hidden="false" targetId="cd4a-3c69-5fc8-0773" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="523b-21dd-9c2f-96fe" name="Legio Metalica (Iron Skulls)" hidden="false" collective="false" import="true" targetId="3b8d-55ad-53af-7f9d" type="selectionEntry"/>
+            <entryLink id="523b-21dd-9c2f-96fe" name="Legio Metalica (Iron Skulls)" hidden="false" collective="false" import="true" targetId="3b8d-55ad-53af-7f9d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="c248-69af-4374-aba7" name="LegioMetalica" hidden="false" targetId="2afb-401e-9ec9-28b2" primary="false"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -15151,6 +15141,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e567-79a0-2397-8b15" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="21e5-616b-0e01-800a" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink id="e127-fa59-df52-fa3d" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="685.0"/>
@@ -18298,6 +18290,7 @@ being issued an order.</description>
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f595-8a61-ffd1-817a" name="Hunter Shells" hidden="false" collective="false" import="true" type="upgrade">
@@ -18313,6 +18306,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="31c3-cb32-1048-ba54" name="Null Emitter" hidden="false" collective="false" import="true" type="upgrade">
@@ -18326,6 +18320,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="528d-e5e2-a24d-4e06" name="Plasmatic Binders" hidden="false" collective="false" import="true" type="upgrade">
@@ -18339,6 +18334,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c5cb-fe7e-6bc2-f4bd" name="Spark of Vengeance " hidden="false" collective="false" import="true" type="upgrade">
@@ -18352,6 +18348,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="405e-ee62-a0ec-ede0" name="Vortex Payload" hidden="false" collective="false" import="true" type="upgrade">
@@ -18368,6 +18365,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="256f-a0de-9b30-27a6" name="Bastion Shielding" hidden="false" collective="false" import="true" type="upgrade">
@@ -18381,6 +18379,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fc6c-b6b9-51a0-b7b0" name="Hardened Casing" hidden="false" collective="false" import="true" type="upgrade">
@@ -18394,6 +18393,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e37d-f716-228b-5c9d" name="Oath Banner" hidden="false" collective="false" import="true" type="upgrade">
@@ -18407,6 +18407,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="da3a-8e05-dcc0-bd3b" name="Ranging Auspex" hidden="false" collective="false" import="true" type="upgrade">
@@ -18420,6 +18421,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="28ac-d2b9-5667-854e" name="Tracking Gyroscopes" hidden="false" collective="false" import="true" type="upgrade">
@@ -18433,12 +18435,10 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="31ff-82f8-241d-7b29" name="=Metalica= Bastion Armor" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef95-9024-b5a9-eff3" type="max"/>
-      </constraints>
       <rules>
         <rule id="ec6b-eb41-b5c4-bba8" name="=Metalica= Bastion Armor" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
           <description>Any Legion Metalica Titan may take Reinforced Armour for +15 points.  Weapons with the Fusion Trait that target a Titan with this upgrade always roll a D6 regardless or range and weapons with the rending trait add 1 to the Armour Roll rather than D3 for each Armour roll of 6.</description>
@@ -18446,12 +18446,10 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f32d-4b22-e51e-d86f" name="=Metalica= Auditory Barrage" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1234-65e8-757f-81b1" type="max"/>
-      </constraints>
       <rules>
         <rule id="463d-938b-a67a-0fa7" name="=Metalica= Auditory Barrage" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
           <description>Any Legio Metalica Titan can be upgraded with an Auditory Barrage for +10 points.  When a Titan with this upgrade makes an attack with any weapon that does not have the Melee trait, enemy Knight Banners within 8&quot; of the Titan must make a Command check; if the banner fails its Command check they become shaken.  A Banner can only be affected by this upgrade once per round.</description>
@@ -18459,6 +18457,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -18600,7 +18599,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio-Specific Wargear" hidden="true" collective="false" import="false">
+    <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
       <entryLinks>
         <entryLink id="cc8a-a05d-7ae9-a2b8" name="=Gryphonicus= Enhanced Auspex Relay" hidden="true" collective="false" import="false" targetId="46c7-de03-c901-4ecc" type="selectionEntry">
           <modifiers>
@@ -19007,15 +19006,23 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="c790-8ac8-fbc0-5856" name="=Metalica= Bastion Armor" hidden="false" collective="false" import="true" targetId="31ff-82f8-241d-7b29" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b09-40b0-fafa-f392" type="max"/>
-          </constraints>
+        <entryLink id="c790-8ac8-fbc0-5856" name="=Metalica= Bastion Armor" hidden="true" collective="false" import="true" targetId="31ff-82f8-241d-7b29" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="2afb-401e-9ec9-28b2" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
-        <entryLink id="1324-50f5-8694-4e6d" name="=Metalica= Auditory Barrage" hidden="false" collective="false" import="true" targetId="f32d-4b22-e51e-d86f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="754f-0ea3-b108-38a6" type="max"/>
-          </constraints>
+        <entryLink id="1324-50f5-8694-4e6d" name="=Metalica= Auditory Barrage" hidden="true" collective="false" import="true" targetId="f32d-4b22-e51e-d86f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="2afb-401e-9ec9-28b2" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
