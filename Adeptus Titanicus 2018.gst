@@ -18157,6 +18157,53 @@ being issued an order.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="e096-d673-4cf6-9a65" name="Legio Metalica" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="523b-21dd-9c2f-96fe" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="523b-21dd-9c2f-96fe" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="659c-b1b3-3259-e030" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="5966-e5d8-54c8-4c81" name="Paragon of Conquest" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="9988-a957-ba79-4d28" name="Paragon of Conquest" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
+                      <description>If the Princeps&apos; Battlegroup does not have a Tertiary Objective (as a part of a Strategm or a Mission), it gains the Paragon of Conquest Objective.  A battlegroup with this objective earns 5 victory points at the end of the game if their Priceps Seniores&apos; Titan is in the opponent&apos;s deployment zone.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry id="b968-bc0c-21dc-bba0" name="Godlike Benevolence " publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="974b-3ffa-9190-ad12" name="Godlike Benevolence " hidden="false">
+                      <description>Once per round, during the End Phase, the player can choose a Knight Banner that is Shaken and make a Command Check using this Princeps&apos; Command value.  If the test is passed, the banner is no longer shaken.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry id="f73a-6745-ccaa-524b" name="Diligent Commander" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="7d3a-b884-1ddb-3a9d" name="Diligent Commander" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
+                      <description>Once per round, at the end of the strategy phase, the Legio Metalica player may chose a friendly Legio Metalica Titan withing 6&quot; ofthe Princeps Seniores Titan. Make a Command check for that Titan.  If the check is passed, the Titan may immediately be issued an Order, which replaces any Order it is currently issued, of the player&apos;s choice. The Strategy phase then ends.  Emergency Repairs orders cannot be replaced in this manner.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
