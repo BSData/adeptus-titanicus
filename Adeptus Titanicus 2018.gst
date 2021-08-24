@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="30" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="31" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Wargear!</comment>
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
@@ -738,7 +738,7 @@
       </constraints>
       <rules>
         <rule id="8486-7526-90c4-40bb" name="Gifts of the Dark Mechanicum" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
-          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in the Stratagem phase of the first round. The player chooses one of their Titans and places a marker next to its Command Terminal. Each time the Titan pushes its Reactor, the player can choose to place a token next to this marker instead of rolling the Reactor dice, gaining the benefits of Pushing the Reactor without advancing the Reactor track. Once there are three tokens, this stratagem, the marker and all tokens are discarded.</description>
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in the Strategy phase of the first round. The player chooses one of their Titans and places a marker next to its Command Terminal. Each time the Titan pushes its Reactor, the player can choose to place a token next to this marker instead of rolling the Reactor dice, gaining the benefits of Pushing the Reactor without advancing the Reactor track. Once there are three tokens, this stratagem, the marker and all tokens are discarded.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -899,7 +899,7 @@
       </constraints>
       <rules>
         <rule id="e5f4-6ba8-2b91-1faf" name="The Long Retreat" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
-          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Strategy phase. For the duration of this round, the player&apos;s Titans do not halve thier Speed when moving outside of their Front arc.</description>
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Strategy phase. For the duration of this round, the player&apos;s Titans do not halve their Speed when moving outside of their Front arc.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1003,7 +1003,7 @@
       </constraints>
       <rules>
         <rule id="697b-958d-7a0a-0201" name="War Lust" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
-          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. For the duration of this round, the player&apos;s Tians add 2&quot; to their Boosted Speed characteristic. In addition, the player&apos;s Titans add 2 to their Command checks when attempting to issue the Full Stride order.</description>
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. For the duration of this round, the player&apos;s Titans add 2&quot; to their Boosted Speed characteristic. In addition, the player&apos;s Titans add 2 to their Command checks when attempting to issue the Full Stride order.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1028,7 +1028,7 @@
       </constraints>
       <rules>
         <rule id="c0de-a421-ac8a-a9ec" name="War of Fates" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
-          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. Beofre the Movement phase, Damage Control phase and Combat phase, the player rolls a D10. If the result is an odd number, for the duration of that phase any D6 roll of a 6 counts as a 1 and any D10 roll of a 10 counts as a 1. If the result is an even number, any D6 roll of a 1 counts as a 6 and any D10 roll of a 1 counts as a 10.</description>
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. Before the Movement phase, Damage Control phase and Combat phase, the player rolls a D10. If the result is an odd number, for the duration of that phase any D6 roll of a 6 counts as a 1 and any D10 roll of a 10 counts as a 1. If the result is an even number, any D6 roll of a 1 counts as a 6 and any D10 roll of a 1 counts as a 10.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1123,7 +1123,7 @@
       </constraints>
       <rules>
         <rule id="5154-fe72-cab6-0525" name="Artillery Bombardment" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
-          <description>Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield, then scatter it D10&apos;&apos;. Any unit touched by the marker where it eventually lands suffers a Strength 8 hit, or two Strength 8 hits if the cenrral hole of the Blast marker is entirely over its base.</description>
+          <description>Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield, then scatter it D10&apos;&apos;. Any unit touched by the marker where it eventually lands suffers a Strength 8 hit, or two Strength 8 hits if the central hole of the Blast marker is entirely over its base.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2098,13 +2098,19 @@ Traits: Ordnance</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="0f6c-856d-c4d3-13e3" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54d1-1965-97be-3035" type="max"/>
+      </constraints>
       <rules>
         <rule id="249e-51ed-5f66-e322" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false">
-          <description>Play this stratagem in the first Strategy phase of the battle. The player chooses one of their Titans that is not a Titan of Legend or Psi Titan; for the remainder of the battle that Titan increases its WS and BS value by 1 (to a maximum of 2+). In addition, it may be issued Emergency Repair and Charge orders without the need to make a Command check. However, reduce the Titan&apos;s Command characteristic by 3 (to a maximum of 10+). If, at any point during the battle, the Titan fails its command check to quell the Machine Spirit the Belligerent result is automatically applied; do not roll on the Awakened Machine Spirit table.</description>
+          <description>Play this stratagem in the first Strategy phase of the battle. The player chooses one of their Titans that is not a Titan of Legend or Psi Titan; for the remainder of the battle that Titan increases its WS and BS value by 1 (to a maximum of 2+). In addition, it may be issued Emergency Repair and Charge orders without the need to make a Command check. However, reduce the Titan&apos;s Command characteristic by 3 (to a maximum of 10+). If, at any point during the battle, the Titan fails its command check to quell the Machine Spirit the Belligerent result is automatically applied; do not roll on the Awakened Machine Spirit table.
+
+(WD: Sep 2020)</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="da1c-5def-9333-ece2" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="8968-5b86-4f48-4c5f" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -2300,18 +2306,26 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dee9-1ba4-819a-306d" name="The Miracle of Mars" publicationId="975a-00f4-pubN89033" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="dee9-1ba4-819a-306d" name="The Miracle of Mars" publicationId="975a-00f4-pubN89033" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08c5-ab05-06c0-66d6" type="max"/>
+      </constraints>
       <rules>
-        <rule id="8eb9-ea55-75f3-3b1b" name="The Miracle of Mars" hidden="false">
-          <description>Start of damage control.  Place next to a titan. At any time, discard to cool reactor.
-                        Roll d10+5
-                        7-15 reduce reator by d3
-                        16-24 reduce by d6
-                        25, lose all heat</description>
+        <rule id="8eb9-ea55-75f3-3b1b" name="The Miracle of Mars" publicationId="975a-00f4-pubN89033" hidden="false">
+          <description>Play this Stratagem at the start of the Damage Control phase. The player chooses one of their Titans and places a marker next to its Command Terminal. At any point during the Titan&apos;s activation the player may discard the marker to cool the Titan&apos;s reactor. To see how effective this is, roll 2D10 and add 5:
+
+If the result is 7-15, reduce the Titan&apos;s reactor by D3 levels.
+
+If the result is 16-24, reduce the Titan&apos;s reactor by D6 levels.
+
+If the result is 25, move the reactor tracker to its leftmost hole.
+
+(WD: Feb 2019)</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="12f0-caca-5395-b265" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="0813-3594-0ec5-acb7" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
@@ -7764,7 +7778,7 @@ If more than one player has this Stratagem, players take turns when placing thei
       </constraints>
       <rules>
         <rule id="c1f4-3ffc-3bc1-7eeb" name="Offensive Surge" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Fureans player. Reveal this Stratagem in any Combat phase. The Legio Fureans player may choose one of their deployed Fureans Maniples; for this Combat phase, each Titan in the chosen maniple my attack twice with one of its weapons but must increase its reactor level by 1, in addition to any other effects.</description>
+          <description>This Stratagem can be purchased by any Legio Fureans player. Reveal this Stratagem in any Combat phase. The Legio Fureans player may choose one of their deployed Fureans Maniples; for this Combat phase, each Titan in the chosen maniple may attack twice with one of its weapons but must increase its reactor level by 1, in addition to any other effects.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -18187,6 +18201,10 @@ being issued an order.</description>
                       <description>If the Princeps&apos; Battlegroup does not have a Tertiary Objective (as a part of a Strategm or a Mission), it gains the Paragon of Conquest Objective.  A battlegroup with this objective earns 5 victory points at the end of the game if their Priceps Seniores&apos; Titan is in the opponent&apos;s deployment zone.</description>
                     </rule>
                   </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="b968-bc0c-21dc-bba0" name="Godlike Benevolence " publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
@@ -18194,6 +18212,10 @@ being issued an order.</description>
                       <description>Once per round, during the End Phase, the player can choose a Knight Banner that is Shaken and make a Command Check using this Princeps&apos; Command value.  If the test is passed, the banner is no longer shaken.</description>
                     </rule>
                   </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="f73a-6745-ccaa-524b" name="Diligent Commander" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
@@ -18201,6 +18223,10 @@ being issued an order.</description>
                       <description>Once per round, at the end of the strategy phase, the Legio Metalica player may chose a friendly Legio Metalica Titan withing 6&quot; ofthe Princeps Seniores Titan. Make a Command check for that Titan.  If the check is passed, the Titan may immediately be issued an Order, which replaces any Order it is currently issued, of the player&apos;s choice. The Strategy phase then ends.  Emergency Repairs orders cannot be replaced in this manner.</description>
                     </rule>
                   </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
