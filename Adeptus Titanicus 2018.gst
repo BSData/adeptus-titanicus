@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="31" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="34" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Wargear!</comment>
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
@@ -228,9 +228,9 @@
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="ce80-524a-1913-7f68" name="Voidbreaker" hidden="false">
+    <categoryEntry id="ce80-524a-1913-7f68" name="Voidbreaker (X)" hidden="false">
       <rules>
-        <rule id="e9a2-7824-8465-47b8" name="Voidbreaker" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
+        <rule id="e9a2-7824-8465-47b8" name="Voidbreaker (X)" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Although Voidbreaker weapons are unlikely to cause any physical damage to a target, this does not matter - their purpose is the disruption of void shields, pure and simple. If a Voidbreaker weapon hits a target with active void shields, the target’s controlling player must make a number of additional saves as shown by the number in brackets after the trait.</description>
         </rule>
       </rules>
@@ -5339,6 +5339,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
                 <entryLink id="d48d-bba5-a698-76bc" name="Mori Quake Cannon" hidden="false" collective="false" import="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
                 <entryLink id="a1a2-b626-b48b-069e" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
                 <entryLink id="8980-d170-10ab-45a7" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
+                <entryLink id="6f1a-a20e-373d-8b74" name="Volkite Destructor" hidden="false" collective="false" import="false" targetId="5eb1-594c-9774-9d00" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="0bb7-328e-83bc-eabb" name="Carapace" hidden="false" collective="false" import="false">
@@ -11229,10 +11230,10 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
               </constraints>
               <entryLinks>
                 <entryLink id="1ebf-4601-0b5e-b765" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
-                <entryLink id="b0db-882e-0d36-f524" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
+                <entryLink id="b0db-882e-0d36-f524" name="Turbo Laser Destructor [RVR]" hidden="false" collective="false" import="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
                 <entryLink id="73f2-7386-528b-89a6" name="Warp Missile Support Rack" hidden="false" collective="false" import="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
-                <entryLink id="c860-31b1-1c90-21a4" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" import="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
-                <entryLink id="0c2b-34ac-a75d-59d0" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" import="false" targetId="08c7-5efe-0712-c420" type="selectionEntry">
+                <entryLink id="c860-31b1-1c90-21a4" name="Vulcan Megabolter [RVR]" hidden="false" collective="false" import="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink id="0c2b-34ac-a75d-59d0" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" hidden="true" collective="false" import="false" targetId="08c7-5efe-0712-c420" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -11241,6 +11242,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="3f6e-4df9-0f1e-8502" name="Volkite Eradicator [RVR]" hidden="false" collective="false" import="true" targetId="d863-a6cc-6691-c00d" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -11935,10 +11937,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
               </constraints>
               <entryLinks>
                 <entryLink id="02c3-1211-25b7-2063" name="Bellicosa Volcano Cannon [WLD]" hidden="false" collective="false" import="false" targetId="fee8-4996-06cd-64bc" type="selectionEntry"/>
-                <entryLink id="3faa-da51-4eee-2221" name="Mori Quake Cannon" hidden="false" collective="false" import="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
+                <entryLink id="3faa-da51-4eee-2221" name="Mori Quake Cannon [WLD]" hidden="false" collective="false" import="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
                 <entryLink id="ad41-83a1-d41d-dd34" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
                 <entryLink id="b4ae-a574-74b8-b907" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
                 <entryLink id="03f5-016e-81d3-8475" name="Arioch Titan Power Claw" hidden="false" collective="false" import="false" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry"/>
+                <entryLink id="6f1a-a20e-373d-8b72" name="Volkite Destructor" hidden="false" collective="false" import="false" targetId="5eb1-594c-9774-9d00" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fd46-9b21-ec00-bd85" name="Carapace" hidden="false" collective="false" import="false">
@@ -12552,7 +12555,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                 <entryLink id="dd37-25ca-a5a0-a04a" name="Inferno Gun" hidden="false" collective="false" import="false" targetId="c7aa-80e5-43d2-0cfd" type="selectionEntry"/>
                 <entryLink id="23f0-ce15-158e-d8f5" name="Plasma Blast Gun" hidden="false" collective="false" import="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
                 <entryLink id="fc86-6790-bf6c-3f0a" name="Turbo Laser Destructor (Warhound)" hidden="false" collective="false" import="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
-                <entryLink id="1524-5b2a-1e79-12e8" name="Vulcan Megabolter (Warhound)" hidden="false" collective="false" import="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
+                <entryLink id="1524-5b2a-1e79-12e8" name="Vulcan Megabolter [WHD]" hidden="false" collective="false" import="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
                 <entryLink id="3ee3-eda0-0fc6-d1e0" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="true" collective="false" import="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
@@ -12590,6 +12593,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   </modifiers>
                 </entryLink>
                 <entryLink id="6a38-658a-3b64-348d" name="Natrix Shock Lance" hidden="false" collective="false" import="false" targetId="59e1-0284-05e3-4c67" type="selectionEntry"/>
+                <entryLink id="0dd2-8d78-752d-cfd4" name="Volkite Eradicator [WHD]" hidden="false" collective="false" import="true" targetId="a201-0a58-6fe0-f3d9" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -15090,6 +15094,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                 <entryLink id="6e57-8050-7c3d-26fd" name="Mori Quake Cannon" hidden="false" collective="false" import="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
                 <entryLink id="76a7-598f-cfbc-d7f7" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
                 <entryLink id="06a5-628c-5f03-7997" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
+                <entryLink id="6f1a-a20e-373d-8b73" name="Volkite Destructor" hidden="false" collective="false" import="false" targetId="5eb1-594c-9774-9d00" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="8003-d38f-5fe8-19b0" name="Carapace" hidden="false" collective="false" import="false">
@@ -18530,6 +18535,104 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5eb1-594c-9774-9d00" name="Volkite Destructor" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="937d-961f-a4b6-c629" name="Volkite Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">16</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">Beam (1), Voidbreaker(2)</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Beam (1) {Draining}, Voidbreaker(2)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2277-74bc-4f36-9eb3" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="9983-dd06-2d77-5ec1" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="a4e7-07f9-9d80-53ca" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="ff3a-a325-56e3-3fa1" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
+        <categoryLink id="d67a-b447-dcbd-e879" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+        <categoryLink id="317c-1904-ee13-2fa9" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8ea6-104d-5b54-d001" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a201-0a58-6fe0-f3d9" name="Volkite Eradicator [WHD]" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="da78-58b2-ba2e-f177" name="Volkite Eradicator [WHD]" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">20</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">2</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d1f6-6559-0e72-6d0a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="43a9-d787-dd35-e78d" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="b18c-5f8a-0408-14f2" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="aa14-f622-3512-bfd0" name="Voidbreaker (X)" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="57e8-054d-691f-1abb" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d863-a6cc-6691-c00d" name="Volkite Eradicator [RVR]" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c015-7a57-3f53-4e7d" name="Volkite Eradicator [RVR]" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">20</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">2</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c11c-972d-c8d7-ac5e" name="New CategoryLink" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="cee9-9a8c-8772-b7a2" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="068b-30c0-ddf7-a0c3" name="Voidbreaker (X)" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+        <categoryLink id="2362-0169-17ab-9faf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3a78-0b29-6129-605a" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
