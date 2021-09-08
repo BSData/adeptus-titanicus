@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="28" battleScribeVersion="2.03" authorName="https://github.com/BSData/adeptus-titanicus/graphs/contributors" authorContact="https://gitter.im/BSData/adeptus-titanicus" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="33" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <comment>Wargear!</comment>
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -516,7 +517,7 @@
     </categoryEntry>
     <categoryEntry id="3fd9-a0bc-cb00-c4d6" name="Desperate Measures" publicationId="3401-191e-1333-8a1d" page="175" hidden="false"/>
     <categoryEntry id="b477-7f02-0efe-637c" name="Tactical Support" publicationId="3401-191e-1333-8a1d" page="175" hidden="false"/>
-    <categoryEntry id="2afb-401e-9ec9-28b2" name="LegioMetalica" hidden="false"/>
+    <categoryEntry id="2afb-401e-9ec9-28b2" name="LegioMetalica" publicationId="3401-191e-1333-8a1d" page="81" hidden="false"/>
     <categoryEntry id="49cb-6b32-2241-ca58" name="Warp Trickery" hidden="false"/>
   </categoryEntries>
   <forceEntries>
@@ -532,10 +533,6 @@
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="1b82-8c99-c3c3-ad32" name="Show Structure" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15d2-08ff-8b71-7414" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="904c-abe6-7912-58c5" type="min"/>
-      </constraints>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -4537,23 +4534,6 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9fc6-f5ca-16a8-7515" name="Warhound Squadron" hidden="false" collective="false" import="false" type="unit">
-      <categoryLinks>
-        <categoryLink id="681f-f9ba-e101-9c4d" name="New CategoryLink" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="ff2c-c286-63af-7a56" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14e1-9f66-65fd-cad5" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2e8-14df-2f95-a5ec" type="min"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="9646-5ac3-8725-8523" name="=Defensor= Devotional War Sirens" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="db7c-811a-5a2d-2496" name="Devotional War Sirens" publicationId="975a-00f4-pubN87630" hidden="false">
@@ -4609,21 +4589,9 @@ If more than one player has this Stratagem, players take turns when placing thei
     <selectionEntry id="d169-c82c-a137-bb35" name="=Crucius= Terminus Override Mechanisms" publicationId="2988-f24d-39ef-352e" page="36" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="equalTo"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="atLeast"/>
-                    <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da6d-e379-1848-8c31" type="greaterThan"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -10592,6 +10560,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                 <categoryLink id="a1cf-d147-7ab9-fa95" name="LegioHonorum" hidden="false" targetId="cd4a-3c69-5fc8-0773" primary="false"/>
               </categoryLinks>
             </entryLink>
+            <entryLink id="523b-21dd-9c2f-96fe" name="Legio Metalica (Iron Skulls)" hidden="false" collective="false" import="true" targetId="3b8d-55ad-53af-7f9d" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="c248-69af-4374-aba7" name="LegioMetalica" hidden="false" targetId="2afb-401e-9ec9-28b2" primary="false"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -11284,6 +11257,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <categoryLink id="d5d2-eebe-8913-d09d" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
           </categoryLinks>
         </entryLink>
+        <entryLink id="78aa-e114-838d-a41b" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink id="ffab-831a-9c60-823a" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
@@ -12015,12 +11990,14 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8363-23e4-9244-93f2" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4994-4e39-e7fe-57d5" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="4994-4e39-e7fe-57d5" name="Legio-Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
         <entryLink id="17e5-7a1d-0467-27c1" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
           <categoryLinks>
             <categoryLink id="ca6e-73da-5c0f-e2e3" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
           </categoryLinks>
         </entryLink>
+        <entryLink id="d423-0b55-e2dc-5814" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink id="390c-cf74-a2a8-27c1" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="385.0"/>
@@ -12629,6 +12606,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <categoryLink id="89bc-e4ca-5d75-4e54" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
           </categoryLinks>
         </entryLink>
+        <entryLink id="b8b1-c93b-014e-44ce" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink id="7046-1472-1c31-4540" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="180.0"/>
@@ -14296,6 +14275,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <categoryLink id="d8ba-fd36-d3a1-e997" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
           </categoryLinks>
         </entryLink>
+        <entryLink id="9864-2da3-5f35-c2e7" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink id="ebdf-52f9-0ae0-c477" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="325.0"/>
@@ -15160,6 +15141,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e567-79a0-2397-8b15" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="21e5-616b-0e01-800a" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink id="e127-fa59-df52-fa3d" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="685.0"/>
@@ -15924,6 +15907,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
           </constraints>
         </entryLink>
         <entryLink id="73ce-e513-8b62-aaca" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="b65c-9738-14e6-5ffc" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink id="4d5a-c123-302f-107e" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="850.0"/>
@@ -18172,6 +18157,65 @@ being issued an order.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="e096-d673-4cf6-9a65" name="Legio Metalica" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="523b-21dd-9c2f-96fe" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="523b-21dd-9c2f-96fe" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="659c-b1b3-3259-e030" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="5966-e5d8-54c8-4c81" name="Paragon of Conquest" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="9988-a957-ba79-4d28" name="Paragon of Conquest" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
+                      <description>If the Princeps&apos; Battlegroup does not have a Tertiary Objective (as a part of a Strategm or a Mission), it gains the Paragon of Conquest Objective.  A battlegroup with this objective earns 5 victory points at the end of the game if their Priceps Seniores&apos; Titan is in the opponent&apos;s deployment zone.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b968-bc0c-21dc-bba0" name="Godlike Benevolence " publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="974b-3ffa-9190-ad12" name="Godlike Benevolence " hidden="false">
+                      <description>Once per round, during the End Phase, the player can choose a Knight Banner that is Shaken and make a Command Check using this Princeps&apos; Command value.  If the test is passed, the banner is no longer shaken.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f73a-6745-ccaa-524b" name="Diligent Commander" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="7d3a-b884-1ddb-3a9d" name="Diligent Commander" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
+                      <description>Once per round, at the end of the strategy phase, the Legio Metalica player may chose a friendly Legio Metalica Titan withing 6&quot; ofthe Princeps Seniores Titan. Make a Command check for that Titan.  If the check is passed, the Titan may immediately be issued an Order, which replaces any Order it is currently issued, of the player&apos;s choice. The Strategy phase then ends.  Emergency Repairs orders cannot be replaced in this manner.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -18259,14 +18303,7 @@ being issued an order.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c8fe-3fd8-e98f-6f9b" name="=Metalica= Harmony and Order" publicationId="3401-191e-1333-8a1d" page="81" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3b8d-55ad-53af-7f9d" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="c8fe-3fd8-e98f-6f9b" name="=Metalica= Harmony and Order" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30aa-ee17-1766-9649" type="max"/>
       </constraints>
@@ -18286,6 +18323,11 @@ being issued an order.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="3b8d-55ad-53af-7f9d" name="Legio Metalica (Iron Skulls)" publicationId="3401-191e-1333-8a1d" page="78" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="2ee4-311c-db34-2655" name="Victories Beyond Measure" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
+          <description>Once per round, after completing the activation of a friendly Legio Metalica Titan, the Legio Metalica player may immediately activate another friendly Legio Metalica Titan.  After resovling the seond Titan&apos;s activation, increase it&apos;s Reactor Level by 2.  A Titan cannot be activated in this way if the Titan activate first was part of a squadron, nor can a Titan that is part of a Squadron be chosen for the second activation.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="45bd-9f5e-cc71-0320" name="New CategoryLink" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
         <categoryLink id="8b76-0ed5-6850-05bd" name="LegioMetalica" hidden="false" targetId="2afb-401e-9ec9-28b2" primary="false"/>
@@ -18293,6 +18335,188 @@ being issued an order.</description>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="420e-234b-ffd8-d613" name="Aquila Benedictus " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5355-6011-172b-0ae6" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e5f-d6df-b485-7a1a" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="738b-eef6-a6c4-9c67" name="Aquila Benedictus " hidden="false">
+          <description>A maximum of one Loyalist Titan within a battlegroup can be upgraded with an Aquila Benedictus for +15 points. A friendly Loyalist Titan within 6&quot; of a Titan with this upgrade, including the upgraded Titan itself, suffers no penalties to Command checks. If the Titan is destroyed, all friendly Loyalist Titans within 6&quot; of the upgraded Titan immediately roll on the Awakened Machine Spirit table, as if they had failed to quell the Machine Spirit.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f595-8a61-ffd1-817a" name="Hunter Shells" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2133-dad8-77a1-472c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="c58b-ac0c-f7de-adbd" name="Hunter Shells" hidden="false">
+          <description>Any Loyalist Titan equipped with a weapon with the Ordnance trait can be upgraded with Hunter Shells for +5 points x the Dice value of the weapon (e.g., a Reaver Gatling Blaster would be +30 points), so long as that Titan does not already have an upgrade  affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Once per game, a weapon upgraded with Hunter Shells may fire a hunter salvo rather than firing as normal. When firing a hunter salvo, the Titan does not apply a -2 modifier to the Hit roll when making a Targeted Attack.
+
+Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections for +30 pts.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="31c3-cb32-1048-ba54" name="Null Emitter" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2463-a419-4023-277b" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="2b2a-74e0-2013-b527" name="Null Emitter" hidden="false">
+          <description>Any Loyalist Princeps Seniores’ Titan can be upgraded with a Null Emitter for +25 points. Corrupted Titans within 6&quot; of a Titan with a Null Emitter subtract 1 from the result of any Command check they make. In addition, once per game, when a Titan with this upgrade is activated during any phase, they may discharge their Null Emitter. If they do so, choose a visible Corrupted Titan within 10&quot; of the Princeps Seniores’ Titan. Until the end of the round, a single additional Mutation the chosen Titan is upgraded with  as no effect – a Base Mutation cannot be chosen. Once a Null Emitter has been discharged, it no longer applies negative modifiers to the Command checks of Corrupted Titans.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="528d-e5e2-a24d-4e06" name="Plasmatic Binders" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10fb-2e18-ea62-b8ec" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="11b4-6214-19e8-f36e" name="Plasmatic Binders" hidden="false">
+          <description>Any Loyalist Titan can be upgraded with Plasmatic Binders for +25 points. Once per game, during the Damage Control phase of any round, a Titan with this upgrade may activate its Plasmatic Binders. Until the end of the round, the Titan can Vent Plasma on a 2+ instead of a 4+.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c5cb-fe7e-6bc2-f4bd" name="Spark of Vengeance " hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f45-5d4b-45d0-edde" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="654d-60a1-8d82-e2ad" name="Spark of Vengeance " hidden="false">
+          <description>Any Loyalist Titan may be upgraded with a Spark of Vengeance for +10 points. When a Titan with this upgrade is required to roll on the Awakened Machine Spirit table, they apply the Wrathful result instead.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="405e-ee62-a0ec-ede0" name="Vortex Payload" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false"/>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d7d-b4fd-47f7-add9" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="6738-5ca3-c24e-40ae" name="Vortex Payload" hidden="false">
+          <description>Any Loyalist Titan equipped with a Warp Missile can be upgraded with a Vortex Payload for +20 points. Each of the Titan’s weapons must be upgraded separately. A Warp Missile upgraded with a Vortex Payload loses the Warp trait and gains the Vortex trait. However, the X value of the Limited trait cannot be changed in any way, i.e., it will always be Limited (1).</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="256f-a0de-9b30-27a6" name="Bastion Shielding" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="313c-9c5e-0e13-35d3" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="9bb9-bdc7-c30d-e68a" name="Bastion Shielding" hidden="false">
+          <description>Any Titan can be upgraded with Bastion Shielding for +10 points. Once per game, a Titan with this upgrade can declare Voids to Full! without pushing its reactor.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fc6c-b6b9-51a0-b7b0" name="Hardened Casing" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9d0-ffa4-bf08-46c3" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="29a4-303c-f0f0-4528" name="Hardened Casing" hidden="false">
+          <description>Any Titan’s weapon can be upgraded with Hardened Casing for +5 points. Each of the Titan’s weapons must be upgraded separately. A weapon with this upgrade increases the Armour roll needed to achieve a Weapon Disabled Damage effect by 1 (e.g., a Reaver Arm Melta Cannon with this upgrade would need a 11+ instead of a 10+). After this weapon suffers a Detonation (X) damage effect, this upgrade has no effect for the remainder of the battle.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e37d-f716-228b-5c9d" name="Oath Banner" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41cc-06c2-627d-c140" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="481c-fa34-c844-046b" name="Oath Banner" hidden="false">
+          <description>Any Titan can be upgraded with an Oath Banner for +5 points. Friendly Knight Banners within 6&quot; of a Titan with an Oath Banner can re-roll Command checks to see if they become Shaken.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da3a-8e05-dcc0-bd3b" name="Ranging Auspex" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="768d-a2cf-da27-5914" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="326d-1436-b617-00b8" name="Ranging Auspex" hidden="false">
+          <description>Any Titan can be upgraded with Ranging Auspexes for +15 points. In the Combat phase, a Titan with this upgrade can pre-measure the range and check weapon arcs between itself and potential targets before selecting a target.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="28ac-d2b9-5667-854e" name="Tracking Gyroscopes" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="230b-43b7-d117-332d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="3232-7b01-8300-438e" name="Tracking Gyroscopes" hidden="false">
+          <description>Any Titan of Scale 10 or lower can be upgraded with Tracking Gyroscopes for +25 points. A Titan with this upgrade changes the Fire arc of all their carapace weapons to include the entire Front arc of the Titan.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="31ff-82f8-241d-7b29" name="=Metalica= Bastion Armor" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="ec6b-eb41-b5c4-bba8" name="=Metalica= Bastion Armor" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
+          <description>Any Legion Metalica Titan may take Reinforced Armour for +15 points.  Weapons with the Fusion Trait that target a Titan with this upgrade always roll a D6 regardless or range and weapons with the rending trait add 1 to the Armour Roll rather than D3 for each Armour roll of 6.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f32d-4b22-e51e-d86f" name="=Metalica= Auditory Barrage" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="463d-938b-a67a-0fa7" name="=Metalica= Auditory Barrage" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
+          <description>Any Legio Metalica Titan can be upgraded with an Auditory Barrage for +10 points.  When a Titan with this upgrade makes an attack with any weapon that does not have the Melee trait, enemy Knight Banners within 8&quot; of the Titan must make a Command check; if the banner fails its Command check they become shaken.  A Banner can only be affected by this upgrade once per round.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -18434,7 +18658,7 @@ being issued an order.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Wargear" hidden="false" collective="false" import="false">
+    <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
       <entryLinks>
         <entryLink id="cc8a-a05d-7ae9-a2b8" name="=Gryphonicus= Enhanced Auspex Relay" hidden="true" collective="false" import="false" targetId="46c7-de03-c901-4ecc" type="selectionEntry">
           <modifiers>
@@ -18692,7 +18916,7 @@ being issued an order.</description>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3e3-1fd3-fdd4-fb33" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="b285-9a61-5285-0a39" name="=Lysanda= Mantel of Responsility" hidden="false" collective="false" import="false" targetId="5f0a-2b12-1f44-a4b9" type="selectionEntry">
+        <entryLink id="b285-9a61-5285-0a39" name="=Lysanda= Mantel of Responsibility" hidden="false" collective="false" import="false" targetId="5f0a-2b12-1f44-a4b9" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -18838,6 +19062,24 @@ being issued an order.</description>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="c790-8ac8-fbc0-5856" name="=Metalica= Bastion Armor" hidden="true" collective="false" import="true" targetId="31ff-82f8-241d-7b29" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="2afb-401e-9ec9-28b2" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="1324-50f5-8694-4e6d" name="=Metalica= Auditory Barrage" hidden="true" collective="false" import="true" targetId="f32d-4b22-e51e-d86f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="2afb-401e-9ec9-28b2" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
@@ -19024,6 +19266,25 @@ being issued an order.</description>
       <entryLinks>
         <entryLink id="c750-04b1-5a96-6e07" name="Acastus Twin Autocannon" hidden="false" collective="false" import="false" targetId="abac-6fdb-0228-d12a" type="selectionEntry"/>
         <entryLink id="3ea6-1bed-f54a-c10f" name="Acastus Twin Lascannon" hidden="false" collective="false" import="false" targetId="a2a3-d4b5-189a-5f63" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="c354-c2bb-8d84-0770" name="Loyalist Wargear" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="43ce-7298-a62f-4d43" name="Aquila Benedictus " hidden="false" collective="false" import="true" targetId="420e-234b-ffd8-d613" type="selectionEntry"/>
+        <entryLink id="3da8-5021-8fe3-20a1" name="Hunter Shells" hidden="false" collective="false" import="true" targetId="f595-8a61-ffd1-817a" type="selectionEntry"/>
+        <entryLink id="23d0-a3eb-5bee-d509" name="Null Emitter" hidden="false" collective="false" import="true" targetId="31c3-cb32-1048-ba54" type="selectionEntry"/>
+        <entryLink id="ab4d-45a8-e96d-8769" name="Plasmatic Binders" hidden="false" collective="false" import="true" targetId="528d-e5e2-a24d-4e06" type="selectionEntry"/>
+        <entryLink id="83a8-203f-e0f2-33c4" name="Spark of Vengeance " hidden="false" collective="false" import="true" targetId="c5cb-fe7e-6bc2-f4bd" type="selectionEntry"/>
+        <entryLink id="1d28-19be-3964-7c56" name="Vortex Payload" hidden="false" collective="false" import="true" targetId="405e-ee62-a0ec-ede0" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f360-b4bd-e6cd-d077" name="Universal Wargear" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="4715-b621-482b-2762" name="Bastion Shielding" hidden="false" collective="false" import="true" targetId="256f-a0de-9b30-27a6" type="selectionEntry"/>
+        <entryLink id="3f5f-b100-1958-84f3" name="Hardened Casing" hidden="false" collective="false" import="true" targetId="fc6c-b6b9-51a0-b7b0" type="selectionEntry"/>
+        <entryLink id="9f27-dfb1-6771-73ef" name="Oath Banner" hidden="false" collective="false" import="true" targetId="e37d-f716-228b-5c9d" type="selectionEntry"/>
+        <entryLink id="9204-a8c6-7202-0910" name="Ranging Auspex" hidden="false" collective="false" import="true" targetId="da3a-8e05-dcc0-bd3b" type="selectionEntry"/>
+        <entryLink id="efe7-93fd-c4a7-3520" name="Tracking Gyroscopes" hidden="false" collective="false" import="true" targetId="28ac-d2b9-5667-854e" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
