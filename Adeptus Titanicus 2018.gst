@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="33" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <comment>Wargear!</comment>
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="34" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <comment>Gryphonicus, Solaria, and Honorum Updates, now with CHOOOM</comment>
+  <readme>Gryphonicus : Select your replacement titans from the Maniple level options.  We are working to clean up how you choose replacement titans.</readme>
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -738,7 +739,7 @@
       </constraints>
       <rules>
         <rule id="8486-7526-90c4-40bb" name="Gifts of the Dark Mechanicum" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
-          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in the Stratagem phase of the first round. The player chooses one of their Titans and places a marker next to its Command Terminal. Each time the Titan pushes its Reactor, the player can choose to place a token next to this marker instead of rolling the Reactor dice, gaining the benefits of Pushing the Reactor without advancing the Reactor track. Once there are three tokens, this stratagem, the marker and all tokens are discarded.</description>
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in the Strategy phase of the first round. The player chooses one of their Titans and places a marker next to its Command Terminal. Each time the Titan pushes its Reactor, the player can choose to place a token next to this marker instead of rolling the Reactor dice, gaining the benefits of Pushing the Reactor without advancing the Reactor track. Once there are three tokens, this stratagem, the marker and all tokens are discarded.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -899,7 +900,7 @@
       </constraints>
       <rules>
         <rule id="e5f4-6ba8-2b91-1faf" name="The Long Retreat" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
-          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Strategy phase. For the duration of this round, the player&apos;s Titans do not halve thier Speed when moving outside of their Front arc.</description>
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Strategy phase. For the duration of this round, the player&apos;s Titans do not halve their Speed when moving outside of their Front arc.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1003,7 +1004,7 @@
       </constraints>
       <rules>
         <rule id="697b-958d-7a0a-0201" name="War Lust" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
-          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. For the duration of this round, the player&apos;s Tians add 2&quot; to their Boosted Speed characteristic. In addition, the player&apos;s Titans add 2 to their Command checks when attempting to issue the Full Stride order.</description>
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. For the duration of this round, the player&apos;s Titans add 2&quot; to their Boosted Speed characteristic. In addition, the player&apos;s Titans add 2 to their Command checks when attempting to issue the Full Stride order.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1028,7 +1029,7 @@
       </constraints>
       <rules>
         <rule id="c0de-a421-ac8a-a9ec" name="War of Fates" publicationId="975a-00f4-pubN89746" page="78" hidden="false">
-          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. Beofre the Movement phase, Damage Control phase and Combat phase, the player rolls a D10. If the result is an odd number, for the duration of that phase any D6 roll of a 6 counts as a 1 and any D10 roll of a 10 counts as a 1. If the result is an even number, any D6 roll of a 1 counts as a 6 and any D10 roll of a 1 counts as a 10.</description>
+          <description>This Stratagem can be purchased by any Traitor player. Play this Stratagem in any Strategy phase. Before the Movement phase, Damage Control phase and Combat phase, the player rolls a D10. If the result is an odd number, for the duration of that phase any D6 roll of a 6 counts as a 1 and any D10 roll of a 10 counts as a 1. If the result is an even number, any D6 roll of a 1 counts as a 6 and any D10 roll of a 1 counts as a 10.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1123,7 +1124,7 @@
       </constraints>
       <rules>
         <rule id="5154-fe72-cab6-0525" name="Artillery Bombardment" publicationId="3401-191e-1333-8a1d" page="172" hidden="false">
-          <description>Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield, then scatter it D10&apos;&apos;. Any unit touched by the marker where it eventually lands suffers a Strength 8 hit, or two Strength 8 hits if the cenrral hole of the Blast marker is entirely over its base.</description>
+          <description>Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield, then scatter it D10&apos;&apos;. Any unit touched by the marker where it eventually lands suffers a Strength 8 hit, or two Strength 8 hits if the central hole of the Blast marker is entirely over its base.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2098,13 +2099,19 @@ Traits: Ordnance</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="0f6c-856d-c4d3-13e3" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54d1-1965-97be-3035" type="max"/>
+      </constraints>
       <rules>
         <rule id="249e-51ed-5f66-e322" name="Venerable Machine Spirit" publicationId="8566-126e-e686-9bc4" hidden="false">
-          <description>Play this stratagem in the first Strategy phase of the battle. The player chooses one of their Titans that is not a Titan of Legend or Psi Titan; for the remainder of the battle that Titan increases its WS and BS value by 1 (to a maximum of 2+). In addition, it may be issued Emergency Repair and Charge orders without the need to make a Command check. However, reduce the Titan&apos;s Command characteristic by 3 (to a maximum of 10+). If, at any point during the battle, the Titan fails its command check to quell the Machine Spirit the Belligerent result is automatically applied; do not roll on the Awakened Machine Spirit table.</description>
+          <description>Play this stratagem in the first Strategy phase of the battle. The player chooses one of their Titans that is not a Titan of Legend or Psi Titan; for the remainder of the battle that Titan increases its WS and BS value by 1 (to a maximum of 2+). In addition, it may be issued Emergency Repair and Charge orders without the need to make a Command check. However, reduce the Titan&apos;s Command characteristic by 3 (to a maximum of 10+). If, at any point during the battle, the Titan fails its command check to quell the Machine Spirit the Belligerent result is automatically applied; do not roll on the Awakened Machine Spirit table.
+
+(WD: Sep 2020)</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="da1c-5def-9333-ece2" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="8968-5b86-4f48-4c5f" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
@@ -2300,18 +2307,26 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dee9-1ba4-819a-306d" name="The Miracle of Mars" publicationId="975a-00f4-pubN89033" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="dee9-1ba4-819a-306d" name="The Miracle of Mars" publicationId="975a-00f4-pubN89033" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08c5-ab05-06c0-66d6" type="max"/>
+      </constraints>
       <rules>
-        <rule id="8eb9-ea55-75f3-3b1b" name="The Miracle of Mars" hidden="false">
-          <description>Start of damage control.  Place next to a titan. At any time, discard to cool reactor.
-                        Roll d10+5
-                        7-15 reduce reator by d3
-                        16-24 reduce by d6
-                        25, lose all heat</description>
+        <rule id="8eb9-ea55-75f3-3b1b" name="The Miracle of Mars" publicationId="975a-00f4-pubN89033" hidden="false">
+          <description>Play this Stratagem at the start of the Damage Control phase. The player chooses one of their Titans and places a marker next to its Command Terminal. At any point during the Titan&apos;s activation the player may discard the marker to cool the Titan&apos;s reactor. To see how effective this is, roll 2D10 and add 5:
+
+If the result is 7-15, reduce the Titan&apos;s reactor by D3 levels.
+
+If the result is 16-24, reduce the Titan&apos;s reactor by D6 levels.
+
+If the result is 25, move the reactor tracker to its leftmost hole.
+
+(WD: Feb 2019)</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="12f0-caca-5395-b265" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="0813-3594-0ec5-acb7" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
@@ -4536,8 +4551,8 @@ If more than one player has this Stratagem, players take turns when placing thei
     </selectionEntry>
     <selectionEntry id="9646-5ac3-8725-8523" name="=Defensor= Devotional War Sirens" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="db7c-811a-5a2d-2496" name="Devotional War Sirens" publicationId="975a-00f4-pubN87630" hidden="false">
-          <description>Any Legio Defensor Warlord Titan may take Devotional War Sirens for +20points. Legio Defensor Titans within 8&quot; of a Legio Defensor Warlord Titan equipped with Devotional War Sirens may roll two dice when making a Command check and choose the highest result.</description>
+        <rule id="db7c-811a-5a2d-2496" name="Devotional War Sirens" publicationId="3401-191e-1333-8a1d" page="51" hidden="false">
+          <description>Any Legio Defensor Warlord Titan can be upgraded with a Devotional War Sirens for +20 points. Legio Defensor Titans within 8&quot; of a Legio Defensor Warlord Titan equipped with Devotional War Sirens may roll two dice when making a Command check and choose the higher result.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4549,7 +4564,7 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1c7b-4247-5715-1d18" name="=Crucius= Bi-folded Power Containment" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="1c7b-4247-5715-1d18" name="=Crucius= Bi-folded Power Containment" publicationId="3401-191e-1333-8a1d" page="120" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -4573,8 +4588,8 @@ If more than one player has this Stratagem, players take turns when placing thei
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ee0-6284-c475-0f16" type="max"/>
       </constraints>
       <rules>
-        <rule id="e185-e37d-8ed8-63d9" name="Bi-folded Power Containment" publicationId="2988-f24d-39ef-352e" page="36" hidden="false">
-          <description>Any Legio Crucius Titan may be equipped with a Bi-folded Power Containment system for +30 points. When firing a weapon with the Draining trait (see the Adeptus Titanicus rulebook), a Titan equipped with a Bi-folded Power Containment system can roll a D6 to mitigate its effect. On a 4+, the Titan can roll the Reactor dice twice and choose the result they want. On a 1, however, they must roll the Reactor dice twice and choose the result that would advance their Reactor marker by the most or, if both results would advance it by the same amount, the result that would Awaken the Machine Spirit.</description>
+        <rule id="e185-e37d-8ed8-63d9" name="Bi-folded Power Containment" publicationId="3401-191e-1333-8a1d" page="120" hidden="false">
+          <description>Any Legio Crucius Titan may be equipped with a Bifolded Power Containment System for +20 points. When firing a weapon with the Draining trait (see the Adeptus Titanicus rulebook), a Titan equipped with a Bi-folded Power Containment System can roll a D6 to mitigate its effect. On a 4+, the Titan can roll the Reactor dice twice and choose the result they want. On a 1, however, they must roll the Reactor dice twice and choose the result that would advance their Reactor marker by the most or, if both results would advance it by the same amount, the result that would Awaken the Machine Spirit.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4582,11 +4597,11 @@ If more than one player has this Stratagem, players take turns when placing thei
         <categoryLink id="d4bd-bfa2-ae62-76ba" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d169-c82c-a137-bb35" name="=Crucius= Terminus Override Mechanisms" publicationId="2988-f24d-39ef-352e" page="36" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="d169-c82c-a137-bb35" name="=Crucius= Terminus Override Mechanisms" publicationId="3401-191e-1333-8a1d" page="120" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -4598,8 +4613,8 @@ If more than one player has this Stratagem, players take turns when placing thei
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1efd-3308-5b47-84cd" type="max"/>
       </constraints>
       <rules>
-        <rule id="fe76-9ecd-5abb-5e2c" name="Terminus Override Mechanisms" publicationId="2988-f24d-39ef-352e" page="36" hidden="false">
-          <description>Any Legio Crucius Titan may be equipped with a Terminus Override Mechanism for +30 points. The first time a Legio Crucius Titan with a Terminus Override Mechanism would be required to roll on the Reactor Overload table (see the Adeptus Titanicus rulebook), instead of rolling, give the Titan a Shutdown order instead. Once triggered in this manner, a Terminus Override Mechanism has no further effect on the game.</description>
+        <rule id="fe76-9ecd-5abb-5e2c" name="Terminus Override Mechanisms" publicationId="3401-191e-1333-8a1d" page="120" hidden="false">
+          <description>Any Legio Crucius Titan may be equipped with a Terminus Override Mechanism for +30 points. The first time a Legio Crucius Titan with a Terminus Override Mechanism would be required to roll on the Reactor Overload table (see the Adeptus Titanicus rulebook), instead of rolling, nothing happens – no roll is needed. Once triggered in this manner, a Terminus Override Mechanism has no further effect on the game.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4656,10 +4671,11 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ba6a-6565-fd40-3645" name="=Atarus= Infernus Missiles" publicationId="ce02-a882-fdad-dd36" page="36" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ba6a-6565-fd40-3645" name="=Atarus= Infernus Missiles" publicationId="3401-191e-1333-8a1d" page="71" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="4527-5dce-6630-39c6" name="Infernus Missiles" hidden="false">
-          <description>Any Legio Atarus Titan may take Infernus Missiles as an upgrade to their Apocalypse Missile Launchers for +15 points. If a unit takes at least one hit from an Apocalypse Missile Launcher armed with Infernus Missiles, place a 5” Blast Marker under the unit. In the End Phase, any model with at least part of its base in the marker takes a Strength 4 hit, ignoring void and ion shields. Titans suffer this hit on their legs. In addition Blocking terrain touched by the template takes a Strength 4 Hit (see p52 of rulebook for Damaging and destroying terrain) and, if not destroyed, is set alight. In the end phase, burning terrain sufferers a Strength 4 Hit, and deals a Strength 4 hit to any models in it, as detailed above, until the terrain is destroyed and the fire goes out.</description>
+        <rule id="4527-5dce-6630-39c6" name="Infernus Missiles" publicationId="3401-191e-1333-8a1d" page="71" hidden="false">
+          <description>Any Legio Atarus Titan armed with Apocalypse missile launchers, Apocalypse missile arrays or an Apocalypse missile launcher can be upgraded to have Infernus missiles for +25 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with this upgrade gains the Voidbreaker (2) trait. In addition, if a unit suffers at least one hit from a weapon with this upgrade, place a 5&quot; Blast marker under the unit. In the End phase, any model with at least part of its base on the marker takes a Strength 4 hit, ignoring void shields and ion shields. After resolving any hits, the fire goes out and the marker is removed. Titans suffer this hit to their Legs. In addition, Blocking terrain touched by the marker takes a Strength 4 hit (see the Adeptus Titanicus rulebook for details on damaging and destroying terrain) and, if not destroyed, is set alight. In the End phase, burning terrain suffers a Strength 4 hit, and deals a Strength 4 hit to any models in it, as detailed above.
+The fire then goes out.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4667,7 +4683,7 @@ If more than one player has this Stratagem, players take turns when placing thei
         <categoryLink id="0218-8358-88b5-6d5b" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -5516,10 +5532,10 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1c9d-16db-f94b-c0ec" name="=Solaria= Cameleoline Shrouding" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="1c9d-16db-f94b-c0ec" name="=Solaria= Cameleoline Shrouding" publicationId="3401-191e-1333-8a1d" page="60" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="c52f-f035-6ef4-e119" name="=Solaria= Cameleoline Shrouding" publicationId="975a-00f4-pubN87630" hidden="false">
-          <description>Any Legio Solaria Titan with a Scale of 6 or less can take Cameleoline Shrouding as an upgrade for +35 points. Titans with this upgrade have their outline blurred at longer distances, and when shooting at them Hit rolls suffer an additional -1 to Hit at Long Range. However, the shrouding was notoriously fragile, and as soon as the Titan suffers 1 point of structural damage, this benefit is lost.  </description>
+        <rule id="c52f-f035-6ef4-e119" name="=Solaria= Cameleoline Shrouding" publicationId="3401-191e-1333-8a1d" page="60" hidden="false">
+          <description>Any Legio Solaria Titan with a Scale of 6 or less can take Cameleoline Shrouding as an upgrade for +35 points. Titans with this upgrade have their outline blurred, making a moving Titan difficult to hit. Any attacks made against a Titan with this upgrade suffer a -1 modifier to all Hit rolls so long as the targeted Titan has moved more than 6&quot; this round and is more than 10&quot; away from the attacking unit. However, the shrouding was notoriously fragile, and as soon as the Titan suffers 1 point of Structural Damage, this bonus is lost.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5531,10 +5547,10 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5f0a-2b12-1f44-a4b9" name="=Lysanda= Mantel of Responsibility" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="5f0a-2b12-1f44-a4b9" name="=Lysanda= Mantel of Responsibility" publicationId="3401-191e-1333-8a1d" page="159" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="d6f5-1f38-8657-7cd0" name="Mantel of Responsibility" hidden="false">
-          <description>Any Legio Lysanda Titan can be upgraded to have a Mantle of Responsibility for +15 points. A titan with this upgrade may re-roll results of a 1 or 2 when making a command check.</description>
+          <description>Any Legio Lysanda Titan can be upgraded to have a Mantle of Responsibility for +15 points. A Titan with this upgrade may re-roll results of a 1 or 2 when making a Command check.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5730,16 +5746,15 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0986-9b84-b734-e9c8" name="Legio Gryphonicus (War Griffons)" publicationId="975a-00f4-pubN65537" page="89" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="0986-9b84-b734-e9c8" name="Legio Gryphonicus (War Griffons)" publicationId="3401-191e-1333-8a1d" page="31" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="086d-6793-f939-4a7e" name="Lust for Glory" publicationId="975a-00f4-pubN65537" page="89" hidden="false">
-          <description>After both sides have deployed, a player commanding a Legio Gryphonicus battlegroup can declaire that any of their Titans will claim an enemy Titan as a target.  Declare out loud which Titan is making the claim and their intended target, and write both down.
-
-                        If a Titan attacks its intended target, the controlling player can re-roll Hit rolls of 1 and add 1 to the result of any Armour rolls.  However, if another Titan attacks the inteded target then the claim is forfeited and this rules no longer applies
-                    </description>
+        <rule id="086d-6793-f939-4a7e" name="Lust for Glory" publicationId="3401-191e-1333-8a1d" page="31" hidden="false">
+          <description>After both sides have deployed, one or more Legio Gryphonicus Titans can declare an enemy Titan as a target. Each Legio Gryphonicus Titan may select a target, though a Titan may not
+select a previously chosen target. Make a note of which Titans are declaring a target and their intended target, sharing this with your opponent. If a Titan attacks its intended target, the controlling player can re-roll all Hit rolls of a 1, and add 1 to the result of any Armour rolls made as part of an attack against the target. However, if a friendly Legio Gryphonicus Titan attacks
+a target claimed by a different friendly Titan, the claim is forfeit and this rule no longer applies for that Titan.</description>
         </rule>
-        <rule id="e8e9-383e-580a-a954" name="Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="false">
-          <description>When assembling a Legio Gryphonicus maniple, players can select up to one Reaver Titan in place of a Warlord Titan or Warhound Titan</description>
+        <rule id="e8e9-383e-580a-a954" name="Mainstay of the Titan Legion" publicationId="3401-191e-1333-8a1d" page="31" hidden="false">
+          <description>Any Legio Gryphonicus maniple may select a Reaver Titan in place of any Warlord Titan or Warhound Titan as part of its mandatory or optional components.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5751,14 +5766,14 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dbd6-65fd-6354-a154" name="Legio Astorum (Warp Runners)" publicationId="975a-00f4-pubN87630" page="19" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="dbd6-65fd-6354-a154" name="Legio Astorum (Warp Runners)" publicationId="3401-191e-1333-8a1d" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="663e-f301-76a4-55fb" name="War March" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
-          <description>In the first and second round of the game, a Legio Astorum Titan can choose to add 2&quot; to it&apos;s boosted Movement characteristic. If a Titan uses this boosted speed then whenever it is required to roll a Reactor dice during the first and second round of the game, it must roll twice and choose the least favourable result (i.e., the result which increases the Titan’s Plasma Reactor Status track by the largest amount or awakens its machine spirit). [FAQ - 1.1]
-                    </description>
+        <rule id="663e-f301-76a4-55fb" name="War March" publicationId="3401-191e-1333-8a1d" page="40" hidden="false">
+          <description>In the first and second round of the game, a Legio Astorum Titan can choose to add 2&quot; to its boosted Movement characteristic. If a Titan uses this boosted speed then whenever
+it is required to roll a Reactor dice during the first and second round of the game, it must roll twice and choose the least favourable result (i.e., the result which increases the Titan’s Plasma Reactor Status track by the largest amount or awakens its Machine Spirit).</description>
         </rule>
-        <rule id="5e7b-611a-ad57-7a1f" name="Veteran Princeps" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
-          <description>During the Damage Control phase, or when enacting an Emergency Repairs order, a Legio Astorum Titan may re-roll one of it&apos;s repair Action dice.  If it is a Warlord Titan, it may instead re-roll two of its Repair Action Dice</description>
+        <rule id="5e7b-611a-ad57-7a1f" name="Veteran Princeps" publicationId="3401-191e-1333-8a1d" page="40" hidden="false">
+          <description>During the Damage Control phase, or when enacting an Emergency Repairs order, a Legio Astorum Titan may re-roll one of its Repair Action dice. A Legio Astorum Titan with a Scale of 10 or higher may instead re-roll two of its Repair Action dice.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5770,13 +5785,13 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="63e1-fca8-5023-12d6" name="Legio Defensor (Nova Guard)" publicationId="975a-00f4-pubN87630" page="23" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="63e1-fca8-5023-12d6" name="Legio Defensor (Nova Guard)" publicationId="3401-191e-1333-8a1d" page="51" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="8360-d791-861b-1740" name="Righteous Fire" publicationId="975a-00f4-pubN87630" page="24" hidden="false">
-          <description>In the first round of the game, a Legio Defensor Titan may fire one of its weapon twice durring its activation.  If they do so, advance the Titan&apos;s Plasma Reactor status track by two places, in addition to any advances associated with firing the weapon</description>
+        <rule id="8360-d791-861b-1740" name="Righteous Fire" publicationId="3401-191e-1333-8a1d" page="51" hidden="false">
+          <description>In the first round of the game, each Legio Defensor Titan may fire one of its weapons twice during its activation in the Combat phase. If they do so, advance the Titan’s Plasma Reactor Status track by two places, in addition to any advances associated with firing the weapon.</description>
         </rule>
-        <rule id="61ae-1e4e-17d6-2a39" name="Indomitable Resolve" publicationId="975a-00f4-pubN87630" page="24" hidden="false">
-          <description>Titans in a Nova Guard maniple may add 1 to the dice roll when making COmmand checks,  provided that at least one of the units in their battlegroup has been destroyed</description>
+        <rule id="61ae-1e4e-17d6-2a39" name="Indomitable Resolve" publicationId="3401-191e-1333-8a1d" page="51" hidden="false">
+          <description>Titans in a Legio Defensor maniple may add 1 to the dice roll when making Command checks, provided that at least one of the units in their battlegroup has been destroyed.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5788,11 +5803,10 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bf14-af1e-5d72-7c8b" name="Legio Atarus (Firebrands)" publicationId="ce02-a882-fdad-dd36" page="36" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="bf14-af1e-5d72-7c8b" name="Legio Atarus (Firebrands)" publicationId="3401-191e-1333-8a1d" page="71" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="e068-3696-9c94-b3cb" name="Seizing the Initiative" publicationId="ce02-a882-fdad-dd36" page="36" hidden="false">
-          <description>In the first round of the battle, a force that contains at least one Firebrands maniple may re-roll the dice roll to deterine who will choose the First Player, but only if they rolled lower than their opponent.  If they win this roll-off then they must nominate themselves as the First Player.
-                    </description>
+        <rule id="e068-3696-9c94-b3cb" name="Seizing the Initiative" publicationId="3401-191e-1333-8a1d" page="71" hidden="false">
+          <description>Once per battle, a force that contains at least one Legio Atarus maniple may re-roll the dice roll to determine who will choose the First Player, but only if they rolled lower than their opponent. If they win this roll-off then they must nominate themselves as the First Player.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5905,10 +5919,10 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6646-91ea-1418-5c89" name="=Gryphonicus= Gravatus Plating" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="6646-91ea-1418-5c89" name="=Gryphonicus= Gravatus Plating" publicationId="3401-191e-1333-8a1d" page="31" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="8323-86d7-e9d0-4242" name="Gravatus Plating" publicationId="975a-00f4-pubN65537" page="89" hidden="false">
-          <description>A Legio Gryphonicus Reaver that is chosen as part of a maniple in place of a Warlord Titan (as per the Mainstay of the Titan Legion, rule above) can be fitted with Gravatus plating at a cost of +20 points.  This increases the Armour value of the Reaver&apos;s body and legs by 1 point each, but subtracts 1 from its default and boosted Speed characteristic.</description>
+        <rule id="8323-86d7-e9d0-4242" name="Gravatus Plating" publicationId="3401-191e-1333-8a1d" page="31" hidden="false">
+          <description>Any Legio Gryphonicus Reaver can be upgraded to have Gravatus Plating for +20 points. A Titan with this upgrade changes the first tier of its Armour value for its Body from 10-12 to 11-12 and for its Legs from 11-12 to 12. In addition, the Titan decreases its default and boosted Speed characteristic by 1&quot;, to a minimum of 4&quot; and 6&quot; respectively. A Reaver Titan with this upgrade cannot also have the Motive Sub-reactors upgrade.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5920,10 +5934,10 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="46c7-de03-c901-4ecc" name="=Gryphonicus= Enhanced Auspex Relay" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="46c7-de03-c901-4ecc" name="=Gryphonicus= Enhanced Auspex Relay" publicationId="3401-191e-1333-8a1d" page="31" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="6c0f-cc14-446d-5a5b" name="Enhanced Auspex Relay (Legio Gryphonicus)" publicationId="975a-00f4-pubN65537" page="89" hidden="false">
-          <description>Any Legio Gryphonicus Warhound can be equipped with ehnanced auspex relays at a cost of +10 points.  Whenever a Legio Gryphonicus Titan makes an attack, it can meausre the distance to  any targets that are withing 12&quot; of a friendly Warhound equipped with enhanced auspex relays before declairing its target.</description>
+        <rule id="6c0f-cc14-446d-5a5b" name="Enhanced Auspex Relay (Legio Gryphonicus)" publicationId="3401-191e-1333-8a1d" page="31" hidden="false">
+          <description>Any Legio Gryphonicus Warhound can be equipped with Enhanced Auspex Relays at a cost of +10 points. Whenever a Legio Gryphonicus Titan makes an attack, it can measure the distance to any targets that are within 12&quot; of a friendly Warhound equipped with Enhanced Auspex Relays before declaring its target.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5935,10 +5949,10 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b486-104f-536e-87f6" name="=Gryphonicus= Motive Sub-reactor" publicationId="975a-00f4-pubN65537" page="91" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="b486-104f-536e-87f6" name="=Gryphonicus= Motive Sub-reactor" publicationId="3401-191e-1333-8a1d" page="31" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="4e7c-5d96-85c6-98ce" name="Motive sub-reactor" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
-          <description>A Legio Gryphonicus Reaver which is chosen as part of a maniple in place of a Warhound Titan (as per the Mainstay of the Titan Legion found on page 89) can be fitted with motive sub-reactors at a cost of +25 points.  This allows the Reaver to use its boosted Speed and Manoeuvre characteristics without pushing its reactor.  However each time the Titan suffers a Critical Hit to its Legs, roll a D6, On a result of 3 or less, it&apos;s Reactor level increases by 1</description>
+        <rule id="4e7c-5d96-85c6-98ce" name="Motive sub-reactor" publicationId="3401-191e-1333-8a1d" page="31" hidden="false">
+          <description>Any Legio Gryphonicus Reaver can be upgraded to have Motive Sub-reactors for +25 points. A Titan with this upgrade can declare Power to Locomotors! and Power to Stabilisers! without pushing its reactor. However, each time the Titan suffers a Critical Hit to its Legs, roll a D6. On a result of 3 or less, its Reactor level is increased by 1. A Reaver Titan with this upgrade cannot also have the Gravatus Plating upgrade.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5950,10 +5964,10 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="14a9-163a-83aa-7520" name="Legio Solaria (Imperial Hunters)" publicationId="975a-00f4-pubN87630" page="34" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="14a9-163a-83aa-7520" name="Legio Solaria (Imperial Hunters)" publicationId="3401-191e-1333-8a1d" page="60" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="1501-95cf-c617-ecc1" name="Wolf Packs" publicationId="975a-00f4-pubN87630" page="35" hidden="false">
-          <description>Warhound squadrons in the Legio Solaria maniple can contain up to four Warhound Titans.  In addition, any Legio Solaria maniple can select a Warhound Titan in place of any Reaver Titans as part of its mandatory components</description>
+        <rule id="1501-95cf-c617-ecc1" name="Wolf Packs" publicationId="3401-191e-1333-8a1d" page="60" hidden="false">
+          <description>Warhound squadrons in a Legio Solaria maniple can contain up to five Warhound Titans. In addition, any Legio Solaria maniple can select a Warhound Titan in place of any Reaver Titans as part of its mandatory components.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5965,12 +5979,12 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="da6d-e379-1848-8c31" name="Legio Crucius (Warmongers)" publicationId="2988-f24d-39ef-352e" page="36" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="da6d-e379-1848-8c31" name="Legio Crucius (Warmongers)" publicationId="3401-191e-1333-8a1d" page="120" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="0e61-2a1f-1df0-a956" name="Forgeborn" publicationId="2988-f24d-39ef-352e" page="36" hidden="false">
+        <rule id="0e61-2a1f-1df0-a956" name="Forgeborn" publicationId="3401-191e-1333-8a1d" page="120" hidden="false">
           <description>In the first and second rounds of the game, when a Legio Crucius Titan makes a Repair roll, either in the Damage Control phase or as a result of being issued an Emergency Repairs order, it may re-roll any dice results of 1.</description>
         </rule>
-        <rule id="5417-3f5e-f95e-a348" name="Pride of Ryza" publicationId="2988-f24d-39ef-352e" page="36" hidden="false">
+        <rule id="5417-3f5e-f95e-a348" name="Pride of Ryza" publicationId="3401-191e-1333-8a1d" page="120" hidden="false">
           <description>During the Damage Control phase, or when making Repair rolls as part of an Emergency Repairs order, when a Legio Crucius Titan uses a dice result of 6 to Vent Plasma, decrease the Titan’s Reactor level by 2 rather than 1.</description>
         </rule>
       </rules>
@@ -6001,13 +6015,14 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="02ce-a62d-4e4b-d7cc" name="Legio Fortidus (Dauntless)" publicationId="975a-00f4-pubN89746" page="20" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="02ce-a62d-4e4b-d7cc" name="Legio Fortidus (Dauntless)" publicationId="3401-191e-1333-8a1d" page="111" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="41a8-f791-55f3-5ade" name="Children of Mars" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
-          <description>Legio Fortidus Titans never suffer penalties to thei Command checks and may ignore effects that force them to re-roll successful Command checks.  Knight Banners bonded to Legio Fortidus may re-roll Command checks to avoid becoming Shaken provided they are within line of sight of at least one Legio Fortidus Battle Titan.</description>
+        <rule id="41a8-f791-55f3-5ade" name="Children of Mars" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
+          <description>Legio Fortidus Titans never suffer penalties to their Command checks and may ignore effects that force them to re-roll successful Command checks. Knight Banners bonded to Legio
+Fortidus may re-roll Command checks to avoid becoming Shaken provided they are within line of sight of at least one friendly Legio Fortidus Titan.</description>
         </rule>
-        <rule id="749b-0dd5-ea9b-37ba" name="Lost Sons" publicationId="25e8-c9ce-9330-c53b" page="3" hidden="false">
-          <description>A Legio Fortidus battlegroup may alter one of the mandatory Titan components of any of its maniples, exchanging this mandatory component for a Warhound, Reaver or Warlord Titan. Note that for the purposes of the maniple’s rules, the replacement Titan does not count as the Titan type it is replacing.</description>
+        <rule id="749b-0dd5-ea9b-37ba" name="Lost Sons" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
+          <description>A Legio Fortidus battlegroup may alter one of the mandatory Titan components of any of its maniples, exchanging this mandatory component for a Titan of Scale 10 or lower. Note that for the purposes of the maniple’s rules, the replacement Titan does not count as the Titan type it is replacing.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -7405,23 +7420,23 @@ If more than one player has this Stratagem, players take turns when placing thei
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46d1-cd25-c00d-3e61" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="f4fa-d534-2066-eeaa" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="f4fa-d534-2066-eeaa" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e6da-1530-1bdd-276a" name="Legio Praesagius (True Messengers)" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="e6da-1530-1bdd-276a" name="Legio Praesagius (True Messengers)" publicationId="3401-191e-1333-8a1d" page="101" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="c416-1bf9-7dcb-7d6e" name="Pinpoint Accuracy" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
-          <description>A Legio Praesagius player may re-roll the Location dice for attacks made by Legio Praesagius Titans when using a weapon’s Long range - they must accept the second roll. They may not re-roll the Location dice if the attack was made with a Blast weapon that subsequently missed.</description>
+        <rule id="c416-1bf9-7dcb-7d6e" name="Pinpoint Accuracy" publicationId="3401-191e-1333-8a1d" page="101" hidden="false">
+          <description>A Legio Praesagius player may re-roll the Location dice for attacks made by Legio Praesagius Titans when using a weapon’s Long range – they must accept the second roll. They may not re-roll the Location dice if the attack was made with a Blast weapon that subsequently missed.</description>
         </rule>
-        <rule id="ec4b-ea3d-c5a0-f1a3" name="Fluid Command Structure" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
-          <description>If the Princeps Seniores of a Legio Praesagius maniple is destroyed, the player may choose another Titan from that maniple to designate as the new Princeps Seniores. The new Princeps Seniores follows all the rules for being a Princeps Seniores but has not Personal Trait. Only a Princeps Seniores chosen during battlegroup selection counts for the purpose of determining Victory points and other scenario effects.</description>
+        <rule id="ec4b-ea3d-c5a0-f1a3" name="Fluid Command Structure" publicationId="3401-191e-1333-8a1d" page="101" hidden="false">
+          <description>If the Princeps Seniores of a Legio Praesagius maniple is destroyed, the player may choose another Titan from that maniple to designate as the new Princeps Seniores. The new Princeps Seniores follows all the rules for being a Princeps Seniores but has no Personal Trait. Only a Princeps Seniores chosen during battlegroup selection counts for the purpose of determining Victory points and other scenario effects.</description>
         </rule>
-        <rule id="ca99-e926-5cc5-1c8b" name="Against the Impossible" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
-          <description>Once per battle, when any Legio Praesagius Titan takes Critical Damage from a weapon attack, after the weapon attack has been resolved, it may immediately undergo an Emergency Repair as if it had been issued the Emergency Repairs Order. This cannot be used if the Titan has suffered Catastrophic Damage.</description>
+        <rule id="ca99-e926-5cc5-1c8b" name="Against the Impossible" publicationId="3401-191e-1333-8a1d" page="101" hidden="false">
+          <description>Once per battle, when any Legio Praesagius Titan takes Critical Damage from a weapon attack, after the weapon attack has been resolved, it may immediately undergo an Emergency Repair as if it had been issued the Emergency Repairs order. This cannot be used if the Titan has suffered Catastrophic Damage.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -7433,13 +7448,13 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dee5-885d-fc38-08ce" name="Legio Oberon (Death Bolts II)" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="dee5-885d-fc38-08ce" name="Legio Oberon (Death Bolts II)" publicationId="3401-191e-1333-8a1d" page="147" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a6b7-af5d-0923-4ad6" name="Armoured Phalanx" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
-          <description>Subtract 1 from the result of any Armour roll made against a Legio Oberon Titan within 2” of one or more friendly Legio Oberon Titan.</description>
+        <rule id="a6b7-af5d-0923-4ad6" name="Armoured Phalanx" publicationId="3401-191e-1333-8a1d" page="147" hidden="false">
+          <description>Subtract 1 from the result of any Armour roll made against a Legio Oberon Titan within 2&quot; of one or more friendly Legio Oberon Titan.</description>
         </rule>
-        <rule id="0345-2c2d-42ea-a3fd" name="Efficient Planners" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
-          <description>When issuing an order to any friendly Legio Oberon Titan, add 1 to the result of the Command check for each Legio Oberon Titan that has already been successfully issued with the same order during this round, to a maximum of 3+.</description>
+        <rule id="0345-2c2d-42ea-a3fd" name="Efficient Planners" publicationId="3401-191e-1333-8a1d" page="147" hidden="false">
+          <description>When issuing an Order to any friendly Legio Oberon Titan, add 1 to the result of the Command check for each Legio Oberon Titan that has already been successfully issued with the same Order during this round, to a maximum of +3.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -7451,13 +7466,13 @@ If more than one player has this Stratagem, players take turns when placing thei
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f808-ec75-4a31-8a29" name="Legio Lysanda (Sentinels of the Edge)" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="f808-ec75-4a31-8a29" name="Legio Lysanda (Sentinels of the Edge)" publicationId="3401-191e-1333-8a1d" page="159" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="1f25-4d8e-c714-52c3" name="Stillness of Mind" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false">
+        <rule id="1f25-4d8e-c714-52c3" name="Stillness of Mind" publicationId="3401-191e-1333-8a1d" page="159" hidden="false">
           <description>Add 2 to the result when rolling to see if a Shutdown order is removed from a Legio Lysanda Titan.</description>
         </rule>
-        <rule id="d8f1-dac2-9524-8dbc" name="Patience Beyond Measure" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false">
-          <description>Before any units are deployed, a force that contains at least one Legio Lysanda maniple may choose to deploy all their units at once at the start of deployment, before their opponent deploys any unit. If they do so, the Legio Lysanda player does not roll to determine the First Player in the first round, instead allowing their opponent to win the roll-off. If they do so, all Legio Lysanda Titans add 1 to the result of any Hit tolls and Command checks made during the first round. Patience Beyond Measure has not effect in Narrative missions unless otherwise stated.</description>
+        <rule id="d8f1-dac2-9524-8dbc" name="Patience Beyond Measure" publicationId="3401-191e-1333-8a1d" page="159" hidden="false">
+          <description>Before any units are deployed, a battleforce that contains at least one Legio Lysanda maniple may choose to deploy all their units at once at the start of deployment, before their opponent deploys any unit. If they do so, the Legio Lysanda player does not roll to determine the First Player in the first round, instead allowing their opponent to win the roll-off. If they do so, all Legio Lysanda Titans add 1 to the result of any Hit rolls and Command checks made during the first round. Patience Beyond Measure has no effect in Narrative missions unless otherwise stated.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -7764,7 +7779,7 @@ If more than one player has this Stratagem, players take turns when placing thei
       </constraints>
       <rules>
         <rule id="c1f4-3ffc-3bc1-7eeb" name="Offensive Surge" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Fureans player. Reveal this Stratagem in any Combat phase. The Legio Fureans player may choose one of their deployed Fureans Maniples; for this Combat phase, each Titan in the chosen maniple my attack twice with one of its weapons but must increase its reactor level by 1, in addition to any other effects.</description>
+          <description>This Stratagem can be purchased by any Legio Fureans player. Reveal this Stratagem in any Combat phase. The Legio Fureans player may choose one of their deployed Fureans Maniples; for this Combat phase, each Titan in the chosen maniple may attack twice with one of its weapons but must increase its reactor level by 1, in addition to any other effects.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -7939,9 +7954,9 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f2ca-fd65-b60e-4dca" name="Legio Osedax (The Cockatrices)" publicationId="2988-f24d-39ef-352e" page="32" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="f2ca-fd65-b60e-4dca" name="Legio Osedax (The Cockatrices)" publicationId="3401-191e-1333-8a1d" page="141" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="fcce-439f-0bdc-2577" name="Reforged in War" publicationId="2988-f24d-39ef-352e" page="32" hidden="false">
+        <rule id="fcce-439f-0bdc-2577" name="Reforged in War" publicationId="3401-191e-1333-8a1d" page="141" hidden="false">
           <description>Legio Osedax Titans never suffer penalties to Command checks and may ignore effects that force them to re-roll successful Command checks.</description>
         </rule>
       </rules>
@@ -8006,7 +8021,7 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="eb8b-95ca-bf92-b3f9" name="=Osedax= Plasma Channels" publicationId="2988-f24d-39ef-352e" page="32" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="eb8b-95ca-bf92-b3f9" name="=Osedax= Plasma Channels" publicationId="3401-191e-1333-8a1d" page="141" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -8030,7 +8045,7 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cbd-9e24-e114-a34c" type="max"/>
       </constraints>
       <rules>
-        <rule id="b4ed-efcb-7d7a-9d08" name="Plasma Channels" publicationId="2988-f24d-39ef-352e" page="32" hidden="false">
+        <rule id="b4ed-efcb-7d7a-9d08" name="Plasma Channels" publicationId="3401-191e-1333-8a1d" page="141" hidden="false">
           <description>Any Legio Osedax Titan may be equipped with Plasma Channels for +20 points. Once per game, during the Movement phase, a Titan equipped with Plasma Channels can activate them. If they do so, decrease the Reactor Level of that Titan by D3+1. This counts as the Titan’s activation for that phase.</description>
         </rule>
       </rules>
@@ -8463,10 +8478,11 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dd39-c2b7-a515-da8a" name="Legio Astraman (Morning Stars)" publicationId="ce02-a882-fdad-dd36" page="33" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="dd39-c2b7-a515-da8a" name="Legio Astraman (Morning Stars)" publicationId="3401-191e-1333-8a1d" page="90" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="5769-1cbc-a65e-ac5a" name="Unyielding" publicationId="ce02-a882-fdad-dd36" page="33" hidden="false">
-          <description>When activated in the movement phase, a Legio Astraman titan can voluntarily awaken the machine spirit as thier activation.  Advance reactor by 2. Apply the Stalwart result automatically.  The titan cannot activate in the following combat phase.</description>
+        <rule id="5769-1cbc-a65e-ac5a" name="Unyielding" publicationId="3401-191e-1333-8a1d" page="90" hidden="false">
+          <description>When activated during the Movement phase, a Legio Astraman Titan can choose to voluntarily Awaken their Machine Spirit – this counts as the Titan’s activation. If they do this, advance
+their Reactor Status marker by 2. The Titan automatically fails their Command check to quell the Machine Spirit and applies the Stalwart result from the Awakened Machine Spirit table instead of rolling. The chosen Titan cannot be activated in the subsequent Combat phase.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -8479,10 +8495,10 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4a11-763b-6a82-bc29" name="Legio Ignatum (Fire Wasps)" publicationId="ce02-a882-fdad-dd36" page="40" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="4a11-763b-6a82-bc29" name="Legio Ignatum (Fire Wasps)" publicationId="3401-191e-1333-8a1d" page="21" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="0d53-57b2-737f-a9f8" name="We Loyal Few" publicationId="ce02-a882-fdad-dd36" page="40" hidden="false">
-          <description>Re-roll hits of 1 when making attacks against titans within 12 during the combat phase.</description>
+        <rule id="0d53-57b2-737f-a9f8" name="We Loyal Few" publicationId="3401-191e-1333-8a1d" page="21" hidden="false">
+          <description>Legio Ignatum Titans may re-roll Hit rolls of a 1 when making attacks against an enemy Titan within 12&quot; of them during the Combat phase.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -8495,16 +8511,16 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2acb-2c7d-5ba6-77ff" name="Legio Venator (Iron Spiders) " publicationId="ce02-a882-fdad-dd36" page="42" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="2acb-2c7d-5ba6-77ff" name="Legio Venator (Iron Spiders) " publicationId="3401-191e-1333-8a1d" page="153" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="82c1-4488-8a26-065b" name="Loyalty Above All" publicationId="ce02-a882-fdad-dd36" page="42" hidden="false">
-          <description>Ignore Princeps Wounded Critical damage effect. Friendly Venator titans add 1 to command checks within 6&quot; of a Venator Princeps Seniores</description>
+        <rule id="82c1-4488-8a26-065b" name="Loyalty Above All" publicationId="3401-191e-1333-8a1d" page="153" hidden="false">
+          <description>Legio Venator Titans ignore the Princeps Wounded Critical Damage effect. In addition, friendly Legio Venator Titans add 1 to the result of any Command check they make while within 6&quot; of a Legio Venator Princeps Seniores’ Titan.</description>
         </rule>
-        <rule id="7cd3-f5f6-d916-5fbf" name="One Mind" publicationId="ce02-a882-fdad-dd36" page="42" hidden="false">
-          <description>Start of each round, Venator titans in a maniple may form squadrons until the end of the round. Maximum of two titans per squadron, and they cannot already be in a squadron.  They cannot merge void shields.</description>
+        <rule id="7cd3-f5f6-d916-5fbf" name="One Mind" publicationId="3401-191e-1333-8a1d" page="153" hidden="false">
+          <description>At the beginning of each round, Titans within a friendly Legio Venator maniple may be formed into Squadrons. Each Squadron may contain a maximum of two Titans and cannot include a Titan that is already part of a Squadron. These Squadrons last until the end of the round. Titans formed into a Squadron in this manner cannot merge void shields but follow all other Squadron rules as normal.</description>
         </rule>
-        <rule id="f6a0-3a26-8999-7325" name="Mobile Force" publicationId="ce02-a882-fdad-dd36" page="42" hidden="false">
-          <description>May select a Reaver instead of a compulsory  warlord in a maniple. </description>
+        <rule id="f6a0-3a26-8999-7325" name="Mobile Force" publicationId="3401-191e-1333-8a1d" page="153" hidden="false">
+          <description>Any Legio Venator maniple may select a Reaver Titan in place of any Warlord Titan as part of its mandatory components.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -8590,10 +8606,10 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74e8-71ca-57d3-f9b0" name="=Ignatum= Gravitic Sensor Array" publicationId="ce02-a882-fdad-dd36" page="40" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="74e8-71ca-57d3-f9b0" name="=Ignatum= Gravitic Sensor Array" publicationId="3401-191e-1333-8a1d" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="56f7-0ff2-fa75-8b1c" name="Gravitic Sensor Array" publicationId="ce02-a882-fdad-dd36" page="40" hidden="false">
-          <description>Any titan.  +1 modifier to hit rolls against a target at least 25% obscured. </description>
+        <rule id="56f7-0ff2-fa75-8b1c" name="Gravitic Sensor Array" publicationId="3401-191e-1333-8a1d" page="21" hidden="false">
+          <description>Any Legio Ignatum Titan may take a Gravitonic Sensor Array for +15 points. Apply a +1 modifier to all Hit rolls made by a Titan with this upgrade against a target that is at least 25% obscured.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -8605,10 +8621,10 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="146b-78b6-75ce-e17e" name="=Astraman= Maglock Shells (6 Dice)" publicationId="ce02-a882-fdad-dd36" page="33" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="146b-78b6-75ce-e17e" name="=Astraman= Maglock Shells (6 Dice)" publicationId="3401-191e-1333-8a1d" page="90" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="12ca-f28d-7db1-35da" name="Maglock Shells" publicationId="ce02-a882-fdad-dd36" page="33" hidden="false">
-          <description>Ordnance Weapons.  Add 1 to all armour rolls. natural 1s are still a superficial hit.  This is for 6 dice weapons.</description>
+        <rule id="12ca-f28d-7db1-35da" name="Maglock Shells" publicationId="3401-191e-1333-8a1d" page="90" hidden="false">
+          <description>Ordnance Weapons.  Add 1 to all armour rolls. Natural 1s are still a superficial hit.  This is for 6 dice weapons.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -8621,13 +8637,13 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1582-9f6b-0e82-c228" name="=Venator= Blind Launchers" publicationId="ce02-a882-fdad-dd36" page="42" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="1582-9f6b-0e82-c228" name="=Venator= Blind Launchers" publicationId="3401-191e-1333-8a1d" page="153" hidden="true" collective="false" import="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b5e-aea1-a918-f29f" type="max"/>
       </constraints>
       <rules>
-        <rule id="3c32-7526-899c-0455" name="=Venator= Blind Launchers" publicationId="ce02-a882-fdad-dd36" page="42" hidden="false">
-          <description>Any titan. Once per game in combat phase activate the blind launchers. Once activated suffer a -1 penalty to attacka made by and against this titan until the next combat phase. (But you can attack before you deploy the launchers)</description>
+        <rule id="3c32-7526-899c-0455" name="=Venator= Blind Launchers" publicationId="3401-191e-1333-8a1d" page="153" hidden="false">
+          <description>Any Legio Venator Titan may be equipped with Blind Launchers for +20 points. Once per game, during the Combat phase, a Titan with this upgrade may activate its Blind Launchers. If it does, until the start of the next Combat phase apply a -1 modifier to all Hit rolls for attacks made against this Titan and a -1 modifier to any Hit rolls for attacks made by this Titan. Blind Launchers can be activated at any point during the Titan’s activation (i.e., after it has made any attacks).</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -8699,10 +8715,10 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a52a-5348-8d0b-fe2d" name="=Astraman= Maglock Shells (12 Dice)" publicationId="ce02-a882-fdad-dd36" page="33" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="a52a-5348-8d0b-fe2d" name="=Astraman= Maglock Shells (12 Dice)" publicationId="3401-191e-1333-8a1d" page="90" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="314b-c859-601b-4f9f" name="Maglock Shells" publicationId="ce02-a882-fdad-dd36" page="33" hidden="false">
-          <description>Ordnance Weapons.  Add 1 to all armour rolls. natural 1s are still a superficial hit.  This is for 12 dice weapons.</description>
+        <rule id="314b-c859-601b-4f9f" name="Maglock Shells" publicationId="3401-191e-1333-8a1d" page="90" hidden="false">
+          <description>Ordnance Weapons.  Add 1 to all armour rolls. Natural 1s are still a superficial hit.  This is for 12 dice weapons.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -11217,7 +11233,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                 <entryLink id="1ebf-4601-0b5e-b765" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
                 <entryLink id="b0db-882e-0d36-f524" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
                 <entryLink id="73f2-7386-528b-89a6" name="Warp Missile Support Rack" hidden="false" collective="false" import="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
-                <entryLink id="c860-31b1-1c90-21a4" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" import="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink id="c860-31b1-1c90-21a4" name="Vulcan Megabolter [RVR]" hidden="false" collective="false" import="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
                 <entryLink id="0c2b-34ac-a75d-59d0" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" import="false" targetId="08c7-5efe-0712-c420" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
@@ -11227,6 +11243,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="14de-4175-9e2f-e718" name="Volkite Eradicator R" hidden="false" collective="false" import="true" targetId="4f49-0fb1-426f-c152" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -11925,6 +11942,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                 <entryLink id="ad41-83a1-d41d-dd34" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
                 <entryLink id="b4ae-a574-74b8-b907" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
                 <entryLink id="03f5-016e-81d3-8475" name="Arioch Titan Power Claw" hidden="false" collective="false" import="false" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry"/>
+                <entryLink id="6d64-2797-31df-45a2" name="Volkite Destructor" hidden="false" collective="false" import="true" targetId="2e8a-92e8-a90e-545e" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fd46-9b21-ec00-bd85" name="Carapace" hidden="false" collective="false" import="false">
@@ -12536,7 +12554,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
               </constraints>
               <entryLinks>
                 <entryLink id="dd37-25ca-a5a0-a04a" name="Inferno Gun" hidden="false" collective="false" import="false" targetId="c7aa-80e5-43d2-0cfd" type="selectionEntry"/>
-                <entryLink id="23f0-ce15-158e-d8f5" name="Plasma Blast Gun" hidden="false" collective="false" import="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
+                <entryLink id="23f0-ce15-158e-d8f5" name="Plasma Blast Gun (WH)" hidden="false" collective="false" import="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
                 <entryLink id="fc86-6790-bf6c-3f0a" name="Turbo Laser Destructor (Warhound)" hidden="false" collective="false" import="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
                 <entryLink id="1524-5b2a-1e79-12e8" name="Vulcan Megabolter (Warhound)" hidden="false" collective="false" import="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
                 <entryLink id="3ee3-eda0-0fc6-d1e0" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="true" collective="false" import="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry">
@@ -12576,6 +12594,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   </modifiers>
                 </entryLink>
                 <entryLink id="6a38-658a-3b64-348d" name="Natrix Shock Lance" hidden="false" collective="false" import="false" targetId="59e1-0284-05e3-4c67" type="selectionEntry"/>
+                <entryLink id="c1c4-f64d-0ddf-86cb" name="Volkite Eradicator WH" hidden="false" collective="false" import="true" targetId="2f29-8298-5888-bcc6" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -16233,14 +16252,13 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="158f-4cf2-be7e-6c75" name="Legio Honorum (Deathbolts)" publicationId="2988-f24d-39ef-352e" page="19" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="158f-4cf2-be7e-6c75" name="Legio Honorum (Deathbolts)" publicationId="3401-191e-1333-8a1d" page="131" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
-        <rule id="b0b5-c1cb-b1d6-bc4b" name="Resolute and Unbowed" publicationId="2988-f24d-39ef-352e" page="29" hidden="false">
-          <description>Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Movement phase of any round decreases the bonus to an attacker’s Armour roll as the result of damage already inflicted on a location by 1, as indicated by the Titan’s Command Terminal (see the Adeptus Titanicus rulebook), so long as the attack originates from within the Titan’s Front Arc.stood by the core tenets of the Collegia Titanica and the Great Crusade, believing it was forever their duty to march forth and bring death to the enemies of the Imperium and the Omnissiah.
-Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Movement phase of any round decreases the bonus to an attacker’s Armour roll as the result of damage already inflicted on a location by 1, as indicated by the Titan’s Command Terminal (see the Adeptus Titanicus rulebook), so long as the attack originates from within the Titan’s Front Arc.</description>
+        <rule id="b0b5-c1cb-b1d6-bc4b" name="Resolute and Unbowed" publicationId="3401-191e-1333-8a1d" page="131" hidden="false">
+          <description>Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Movement phase of any round decreases the bonus to an attacker’s Armour roll as the result of damage already inflicted on a location by 1, as indicated by the Titan’s Command Terminal (see the Adeptus Titanicus rulebook), so long as the attack originates from within the Titan’s Front arc.</description>
         </rule>
-        <rule id="c2e4-7017-3418-6427" name="Legio Honorum (Deathbolts)" hidden="false">
-          <description>The core of Legio Honorum favoured the traditional tactics of the Collegia Titanica, adapting them to the needs of a campaign while disregarding the more elaborate methods of other Legio. A Legio Honorum maniple may substitute any mandatory component from an Axiom, Myrmidon or Fortis maniple with a Reaver or Warlord Titan, so long as that new Titan is of equal to or greater Scale than the Titan it is replacing. In addition, a Legio Honorum Titan may replace a single optional component Reaver or Warlord Titan from these maniples with a Warbringer Nemesis Titan. Each maniple can only include a single Warbringer Nemesis in this way. Legio Specific </description>
+        <rule id="c2e4-7017-3418-6427" name="Founding Tenets" publicationId="3401-191e-1333-8a1d" page="131" hidden="false">
+          <description>A Legio Honorum maniple may substitute any mandatory component from an Axiom, Myrmidon or Fortis maniple with a Reaver or Warlord Titan, so long as that new Titan is of equal to or greater Scale than the Titan it is replacing. In addition, a Legio Honorum Titan may replace a single optional component Reaver or Warlord Titan from these maniples with a Warbringer Nemesis Titan. Each maniple can only include a single Warbringer Nemesis Titan in this way.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -16252,7 +16270,7 @@ Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Move
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8a7d-3ead-16e2-1979" name="=Honorum= Basilus Throne" publicationId="2988-f24d-39ef-352e" page="33" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8a7d-3ead-16e2-1979" name="=Honorum= Basilus Throne" publicationId="3401-191e-1333-8a1d" page="131" hidden="true" collective="false" import="true" type="upgrade">
       <modifierGroups>
         <modifierGroup>
           <conditions>
@@ -16268,8 +16286,8 @@ Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Move
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f21-002f-5510-587f" type="max"/>
       </constraints>
       <rules>
-        <rule id="5299-608c-7856-017d" name="Basilius Throne" publicationId="ce02-a882-fdad-dd36" page="29" hidden="false">
-          <description>A Legio Honorum Princeps Seniores’ Titan may take a Basilius Throne for +25 points. A Titan with this upgrade may be issued Orders without the need to make a Command check. In addition, any Legio Honorum Titan adds 1 to the result of any Command check made when being issued an Order previously issued to a Princeps Seniores’ Titan with this upgrade within the same maniple.</description>
+        <rule id="5299-608c-7856-017d" name="Basilius Throne" publicationId="3401-191e-1333-8a1d" page="131" hidden="false">
+          <description>A Legio Honorum Princeps Seniores’ Titan may take a Basilius Throne for +25 points. A Titan with this upgrade may be issued Orders without the need to make a Command check. In addition, any Legio Honorum Titan adds 1 to the result of any Command check made when being issued an Order previously issued to a Princeps Seniores’ Titan with this upgrade within the same maniple this round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -16326,7 +16344,7 @@ Any Legio Honorum Titan that has voluntarily moved more than 4&quot; in the Move
 After assembling their battlegroup, the player should pick one Titan in their maniple to be commanded by their Princeps Seniores - note this on the roster. </description>
         </rule>
         <rule id="90ad-101a-ba5f-d1e0" name="Orders (Princeps Seniores)" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
-          <description>Add 2 to the result of any Command checks made when issuing an order tQ\o the Princeps Seniores&apos; Titan.
+          <description>Add 2 to the result of any Command checks made when issuing an order to the Princeps Seniores&apos; Titan.
 </description>
         </rule>
         <rule id="8d63-35e0-8ff8-55bc" name="Personal Traits" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
@@ -16342,7 +16360,7 @@ After assembling their battlegroup, the player should pick one Titan in their ma
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62cb-c05a-e6b0-fbb8" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="4fbd-ca46-0469-058c" name="Legio Crucius" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="4fbd-ca46-0469-058c" name="Legio Crucius" publicationId="3401-191e-1333-8a1d" page="120" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -16368,10 +16386,8 @@ After assembling their battlegroup, the player should pick one Titan in their ma
               <selectionEntries>
                 <selectionEntry id="571c-7002-12b9-8386" name="1 Collegia Lord" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="bf40-f047-6deb-5e51" name="1 Collegia Lord" publicationId="975a-00f4-pubN89746" page="17" hidden="false">
-                      <description>The Princeps holds dual rank between the Legio and the Ryzan Mechanicum, commanding a greater measure of the Titan Legion&apos;s resources as befits their position.
-When making a Command Check for the Princeps Seniores&apos; Titan, if a 9 or IO is rolled they may issue Orders to any or all of the Titans in their maniple (provided that they do not already have an Order) without the need to make Command checks for them.
-</description>
+                    <rule id="bf40-f047-6deb-5e51" name="1 Collegia Lord" publicationId="3401-191e-1333-8a1d" page="120" hidden="false">
+                      <description>When making a Command check for the Princeps Seniores’ Titan, if a 9 or 10 is rolled they may issue Orders to any or all of the Titans in their maniple (provided that they do not already have an Order) without the need to make Command checks for them.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16381,11 +16397,8 @@ When making a Command Check for the Princeps Seniores&apos; Titan, if a 9 or IO 
                 </selectionEntry>
                 <selectionEntry id="bf44-4204-45d0-f863" name="2 Mechanicum Born" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="80e4-9577-3c31-f20f" name="2 Mechanicum Born" publicationId="975a-00f4-pubN89746" page="17" hidden="false">
-                      <description>The Princeps was drawn from the Magos of Ryza and is closer to their god-machine than their
-more mortal counterparts as a result.
-Once in each Damage Control phase, you can re-roll one of the Repair dice for the Princeps Seniores&apos; Titan, though you must accept the second result, even if it is worse.
-</description>
+                    <rule id="80e4-9577-3c31-f20f" name="2 Mechanicum Born" publicationId="3401-191e-1333-8a1d" page="120" hidden="false">
+                      <description>Once in each Damage Control phase, you can re-roll one of the Repair dice for the Princeps Seniores’ Titan, though you must accept the second result, even if it is worse.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16395,8 +16408,8 @@ Once in each Damage Control phase, you can re-roll one of the Repair dice for th
                 </selectionEntry>
                 <selectionEntry id="cab8-ba31-94c6-83d5" name="3 Black Banner" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="1a99-6c41-20e7-2b04" name="3 Black Banner" publicationId="975a-00f4-pubN89746" page="17" hidden="false">
-                      <description>If the Princeps&apos; battlegroup does not have a Tertiary Objective (as part of a Stratagem or Mission), it gains the Salvation of Crucius Tertiary Objective. A battlegroup with this objective earns 5 Victory points at the end of the game if their Princeps Seniores&apos; Titan was not destroyed or Structurally Compromised. </description>
+                    <rule id="1a99-6c41-20e7-2b04" name="3 Black Banner" publicationId="3401-191e-1333-8a1d" page="120" hidden="false">
+                      <description>If the Princeps’ battlegroup does not have a Tertiary Objective (as part of a Stratagem or Mission), it gains the Salvation of Crucius Tertiary Objective. A battlegroup with this objective earns 5 Victory points at the end of the game if their Princeps Seniores’ Titan was not destroyed or Structurally Compromised.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16481,7 +16494,7 @@ can be re-rolled.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f56f-13d8-1dee-71fd" name="Legio Fortidus" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="f56f-13d8-1dee-71fd" name="Legio Fortidus" publicationId="3401-191e-1333-8a1d" page="111" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -16505,12 +16518,10 @@ can be re-rolled.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a9f-f020-e148-db00" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="66f5-fe8c-60e2-de03" name="1 Broken by Treachery" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="66f5-fe8c-60e2-de03" name="1 Broken by Treachery" publicationId="3401-191e-1333-8a1d" page="111" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="bf23-24b5-2a72-d0d7" name="1 Broken by Treachery" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
-                      <description> The Princeps has become filled with despair at the destruction of their hin, seeking ou.t the
-largest among the enemy so they might bring them down or meet their own end. When targeting a Titan with a Scale equal to or larger than the Princeps&apos; own Titan, you may re-roll the dice for
-its first attack roll of the game. Note that in the case of weapons with multiple arrack dice, all of the dice must be re-rolled or none of them.</description>
+                    <rule id="bf23-24b5-2a72-d0d7" name="1 Broken by Treachery" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
+                      <description>Once per round, when targeting a Titan with a Scale equal to or greater than the Princeps’ own Titan, you may re-roll the Hit dice. Note that in the case of attacks with multiple dice rolled, all of the dice must be rerolled or none of them.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16520,11 +16531,8 @@ its first attack roll of the game. Note that in the case of weapons with multipl
                 </selectionEntry>
                 <selectionEntry id="bebd-1c79-aa09-50af" name="2 Immortal of Mars" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="5b35-6a36-c628-68be" name="2 Immortal of Mars" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
-                      <description>Arrogance drives the Princeps, who believes they were spared the betrayal on Mars by divine
-providence, and that they cannot die.
-The Princeps counts the effects of Critical Damage to their Titan&apos;s Head as one level lower than it is (i.e., Moderati Wounded and Princeps Wounded counts a Moderati Wounded and MIU Feedback, while Moderati Wounded and MIU Feedback counts only as MIU Feedback, while MIU Feedback alone is ignored).
-</description>
+                    <rule id="5b35-6a36-c628-68be" name="2 Immortal of Mars" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
+                      <description>The Princeps counts the effects of Critical Damage to their Titan’s Head as one level lower than it is (i.e., Moderati Wounded and Princeps Wounded counts a Moderati Wounded and MIU Feedback, while Moderati Wounded and MIU Feedback counts only as MIU Feedback, while MIU Feedback alone is ignored).</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16534,9 +16542,8 @@ The Princeps counts the effects of Critical Damage to their Titan&apos;s Head as
                 </selectionEntry>
                 <selectionEntry id="38ff-fda2-0360-2838" name="3 Soldier of the Crusade" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="d155-efec-b2ad-0938" name="3 Soldier of the Crusade" publicationId="975a-00f4-pubN89746" page="20" hidden="false">
-                      <description>The Princeps is the commander of a self-contained Great Crusade battlegroup, of the Legio but apart, and able to call upon its own devoted supporting units.
-The presence of the Princeps adds one additional Stratagem point to their battlegroup that may be used before the battle to purchase Stratagems.</description>
+                    <rule id="d155-efec-b2ad-0938" name="3 Soldier of the Crusade" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
+                      <description>Before forces are deployed, when choosing Stratagems, the Legio Fortidus player gains +1 Stratagem point if one or more Princeps with this Personal Trait is present in the force.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16670,7 +16677,7 @@ Princeps&apos; battle group can count any roll of 9 as a 6, or any roll of 6 as 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="61e2-bc65-679d-2fb3" name="Legio Astorum" publicationId="975a-00f4-pubN87630" page="19" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="61e2-bc65-679d-2fb3" name="Legio Astorum" publicationId="3401-191e-1333-8a1d" page="40" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -16696,8 +16703,8 @@ Princeps&apos; battle group can count any roll of 9 as a 6, or any roll of 6 as 
               <selectionEntries>
                 <selectionEntry id="165b-1a89-7399-f1ac" name="2 Reckless Hubris" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="2901-f6f4-0719-d6ed" name="2 Reckless Hubris" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
-                      <description>Once each round, the Princeps&apos; Titan can ignore the negative effects of a critically damaged system or a disabled weapon, firing the weapon as if it were functional. After the system or weapon is used, work out a single Strength 12 hit against the Titan&apos;s Body, ignoring the Titan&apos;s void shields.</description>
+                    <rule id="2901-f6f4-0719-d6ed" name="2 Reckless Hubris" publicationId="3401-191e-1333-8a1d" page="40" hidden="false">
+                      <description>Once each round, the Princeps’ Titan can ignore the negative effects of a critically damaged system or a disabled weapon, firing the weapon as if it were functional. After the system or  weapon is used, work out a single Strength 12 hit against the Titan’s Body, ignoring the Titan’s void shields.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16707,9 +16714,8 @@ Princeps&apos; battle group can count any roll of 9 as a 6, or any roll of 6 as 
                 </selectionEntry>
                 <selectionEntry id="500f-f9a1-5326-f807" name="3 Ancient MIU" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="95ef-91d6-d7eb-461c" name="3 Ancient MIU" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
-                      <description>Instead of making a Command check during the Strategy phase, the Princeps&apos; Titan may be given a
-random Order. Roll the Order dice and apply the result to the Princeps&apos; Titan.</description>
+                    <rule id="95ef-91d6-d7eb-461c" name="3 Ancient MIU" publicationId="3401-191e-1333-8a1d" page="40" hidden="false">
+                      <description>Instead of making a Command check during the Strategy phase, the Princeps’ Titan may be given a random Order. Roll the Order dice and apply the result to the Princeps’ Titan. If a Shutdown order is rolled, the Princeps may ignore it if they choose.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16719,10 +16725,8 @@ random Order. Roll the Order dice and apply the result to the Princeps&apos; Tit
                 </selectionEntry>
                 <selectionEntry id="917e-43f7-d1e1-4eeb" name="1 Hero of the Crusade" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="487b-296b-ce70-d02d" name="1 Hero of the Crusade" publicationId="975a-00f4-pubN87630" page="19" hidden="false">
-                      <description>As long as the Princeps&apos; Titan is closer to the nearest enemy unit than any of the other Titans in their maniple, then all Titans in their maniple can add I to any Command checks they are required to take.
-When rolling a D10, such as to determine the First Player or when making a Command check, the
-Princeps&apos; battle group can count any roll of 9 as a 6, or any roll of 6 as a 9.</description>
+                    <rule id="487b-296b-ce70-d02d" name="1 Hero of the Crusade" publicationId="3401-191e-1333-8a1d" page="40" hidden="false">
+                      <description>As long as the Princeps’ Titan is closer to the nearest enemy unit than any of the other Titans in their maniple, then all Titans in their maniple can add 1 to any Command checks they are required to take.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16732,7 +16736,7 @@ Princeps&apos; battle group can count any roll of 9 as a 6, or any roll of 6 as 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="a1ad-e8b9-8ac7-f7f7" name="Legio Defensor" publicationId="975a-00f4-pubN87630" page="24" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="a1ad-e8b9-8ac7-f7f7" name="Legio Defensor" publicationId="3401-191e-1333-8a1d" page="51" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -16758,9 +16762,8 @@ Princeps&apos; battle group can count any roll of 9 as a 6, or any roll of 6 as 
               <selectionEntries>
                 <selectionEntry id="6a80-ec50-9f7a-e22d" name="2 Crusade Veteran" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="e51b-d7be-0ac3-0a29" name="2 Crusade Veteran" publicationId="975a-00f4-pubN87630" page="25" hidden="false">
-                      <description>Once per game, when the Princeps successfully issues an Emergency Repairs order, they may immediately issue a second order after its effects have been resolved. This second order may be another Emergency Repairs order.
-Note that the Titan must adhere to the restrictions to movement and activation of both orders.</description>
+                    <rule id="e51b-d7be-0ac3-0a29" name="2 Crusade Veteran" publicationId="3401-191e-1333-8a1d" page="51" hidden="false">
+                      <description>Once per game, when the Princeps successfully issues an Emergency Repairs order, they may immediately issue a second Order after its effects have been resolved. This second Order may be another Emergency Repairs order. Note that the Titan must adhere to the restrictions to movement and activation of both Orders.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16770,8 +16773,8 @@ Note that the Titan must adhere to the restrictions to movement and activation o
                 </selectionEntry>
                 <selectionEntry id="49d4-aa13-7ca6-7055" name="3 Icon of the True" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="b3c4-9687-3055-179b" name="3 Icon of the True" publicationId="975a-00f4-pubN87630" page="25" hidden="false">
-                      <description>While the Princeps Titan is on the board, all Knight Banners and Titans from other friendly Legios add 1 to the dice roll when making Command checks. </description>
+                    <rule id="b3c4-9687-3055-179b" name="3 Icon of the True" publicationId="3401-191e-1333-8a1d" page="51" hidden="false">
+                      <description>While the Princeps Titan is on the board, all Knight Banners and Titans from other friendly Legios add 1 to the dice roll when making Command checks.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16781,8 +16784,8 @@ Note that the Titan must adhere to the restrictions to movement and activation o
                 </selectionEntry>
                 <selectionEntry id="5257-fa88-14d5-df52" name="1 Enduring Hatred" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="4d32-677f-70fa-2ff8" name="1 Enduring Hatred" publicationId="975a-00f4-pubN87630" page="25" hidden="false">
-                      <description>The Princeps Titan may re-roll Hit rolls of 1 once their Titan has suffered Critical Damage. However, during the Damage Control phase, they must spend any Repair dice to repair disabled weapons before repairing any other kind of damage.</description>
+                    <rule id="4d32-677f-70fa-2ff8" name="1 Enduring Hatred" publicationId="3401-191e-1333-8a1d" page="51" hidden="false">
+                      <description>If the Princeps’ battlegroup does not have a Tertiary Objective (as part of a Stratagem or Mission), it gains the Salvation of Crucius Tertiary Objective. A battlegroup with this objective earns 5 Victory points at the end of the game if their Princeps Seniores’ Titan was not destroyed or Structurally Compromised.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16792,7 +16795,7 @@ Note that the Titan must adhere to the restrictions to movement and activation o
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="842f-0ac7-2711-6b32" name="Legio Atarus" publicationId="975a-00f4-pubN87630" page="29" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="842f-0ac7-2711-6b32" name="Legio Atarus" publicationId="3401-191e-1333-8a1d" page="71" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -16818,9 +16821,8 @@ Note that the Titan must adhere to the restrictions to movement and activation o
               <selectionEntries>
                 <selectionEntry id="6dd0-df68-3a1a-399a" name="2 Unconventional Thinker" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="0c32-f55a-7aa4-2633" name="2 Unconventional Thinker" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
-                      <description>Once per battle, after an enemy Titan has declared its action, but before it moves or fires, the Princeps&apos; Titan can be moved D6&quot; in any direction and its facing changed by up to 90°. This movement may not take the Titan through impassable terrain or other models.
-</description>
+                    <rule id="0c32-f55a-7aa4-2633" name="2 Unconventional Thinker" publicationId="3401-191e-1333-8a1d" page="71" hidden="false">
+                      <description>Once per battle, after an enemy Titan has declared its action, but before it moves or fires, the Princeps’ Titan can be moved D6&quot; in any direction and its facing changed by up to 90°. This movement may not take the Titan through Blocking terrain or other models.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16830,8 +16832,8 @@ Note that the Titan must adhere to the restrictions to movement and activation o
                 </selectionEntry>
                 <selectionEntry id="d870-0d03-1e6f-2fb8" name="3 Shedim Drift Veteran" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="bb90-b479-16d5-906e" name="3 Shedim Drift Veteran" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
-                      <description>During che Combat phase, che Princeps may choose one of their Titan&apos;s weapons. Any Armour rolls resulting from hits by the weapon may be re-rolled this round. If the Princeps is targeting a Titan from the Death&apos;s Heads or Tiger Eyes Legios, then hits from all of the Princeps&apos; Titan&apos;s weapons may re-roll their Armour rolls. </description>
+                    <rule id="bb90-b479-16d5-906e" name="3 Shedim Drift Veteran" publicationId="3401-191e-1333-8a1d" page="71" hidden="false">
+                      <description>During the Combat phase, the Princeps may choose one of their Titan’s weapons. Any Armour rolls resulting from hits by the weapon may be re-rolled this round. If the Princeps is targeting a Titan from the Death’s Heads (Legio Mortis) or Tiger Eyes (Legio Fureans) Legios, then hits from all of the Princeps’ Titan’s weapons may re-roll their Armour rolls.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16841,10 +16843,9 @@ Note that the Titan must adhere to the restrictions to movement and activation o
                 </selectionEntry>
                 <selectionEntry id="191a-1e18-a8e0-5d43" name="1 Headstrong" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="ba6f-29d2-24c5-c25c" name="1 Headstrong" publicationId="975a-00f4-pubN87630" page="29" hidden="false">
-                      <description>In the End phase, the Princeps Seniores may choose not to discard any orders issued to their Titan - in effect carrying forward the order into the following round without the need to make a new Command check. Note, Shutdown orders and other effects that change a Titan&apos;s
-current order are still applied as normal.
-</description>
+                    <rule id="ba6f-29d2-24c5-c25c" name="1 Headstrong" publicationId="3401-191e-1333-8a1d" page="71" hidden="false">
+                      <description>In the End phase, the Princeps Seniores may choose not to discard any Orders issued to their Titan – in effect carrying forward the Order into the following round without the need to make a new Command check.
+Note, Shutdown orders and other effects that change a Titan’s current Order are still applied as normal.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16854,7 +16855,7 @@ current order are still applied as normal.
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="7af0-cfd2-edd9-82f3" name="Legio Solaria" publicationId="975a-00f4-pubN87630" page="35" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="7af0-cfd2-edd9-82f3" name="Legio Solaria" publicationId="3401-191e-1333-8a1d" page="60" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -16880,8 +16881,8 @@ current order are still applied as normal.
               <selectionEntries>
                 <selectionEntry id="ef81-321f-4170-40d9" name="2 Agile Minded" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="2130-60ea-00b5-6d8e" name="2 Agile Minded" publicationId="975a-00f4-pubN87630" page="35" hidden="false">
-                      <description>Once per game, when the Princeps&apos; Titan is hit by an attack, their Titan may respond in kind, interrupting the activation of an enemy unit and immediately making a single attack back at the attacker.</description>
+                    <rule id="2130-60ea-00b5-6d8e" name="2 Agile Minded" publicationId="3401-191e-1333-8a1d" page="60" hidden="false">
+                      <description>Once per game, when the Princeps’ Titan is hit by an attack, their Titan may respond in kind, interrupting the activation of an enemy unit and immediately making a single attack back at the attacker.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16891,8 +16892,8 @@ current order are still applied as normal.
                 </selectionEntry>
                 <selectionEntry id="e0df-9b22-8468-6b80" name="3 Swift Displacement" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="5b82-8d27-b03e-c386" name="3 Swift Displacement" publicationId="975a-00f4-pubN87630" page="35" hidden="false">
-                      <description>Once per game, when an enemy Titan makes a Smash Attack as part of a Charge order against the Princeps&apos; Titan, the Princeps may move their Titan D6&quot; directly away from the attacker, after the enemy Titan has moved but before any To Hit dice for the attack are rolled. This does not change the facing of the Princeps&apos; Titan. </description>
+                    <rule id="5b82-8d27-b03e-c386" name="3 Swift Displacement" publicationId="3401-191e-1333-8a1d" page="60" hidden="false">
+                      <description>Once per game, when an enemy Titan makes a Smash Attack as part of a Charge order against the Princeps’ Titan, the Princeps may move their Titan D6&quot; directly away from the attacker, after the enemy Titan has moved but before any Hit dice for the attack are rolled. This does not change the facing of the Princeps’ Titan.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16902,8 +16903,8 @@ current order are still applied as normal.
                 </selectionEntry>
                 <selectionEntry id="d592-3eb8-4c68-1e79" name="1 Spear of Tigrus" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="081c-27dc-819e-63c4" name="1 Spear of Tigrus" publicationId="975a-00f4-pubN87630" page="35" hidden="false">
-                      <description>The Princeps&apos; Titan may go onto Full Stride orders without the need to make a Command check.</description>
+                    <rule id="081c-27dc-819e-63c4" name="1 Spear of Tigrus" publicationId="3401-191e-1333-8a1d" page="60" hidden="false">
+                      <description>The Princeps’ Titan may be issued a Full Stride order without the need to make a Command check.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17136,7 +17137,7 @@ lower, increase the Strength of any hits by 2. </comment>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="875f-5d89-1de9-3c24" name="Legio Astraman" publicationId="ce02-a882-fdad-dd36" page="33" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="875f-5d89-1de9-3c24" name="Legio Astraman" publicationId="3401-191e-1333-8a1d" page="90" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -17162,10 +17163,8 @@ lower, increase the Strength of any hits by 2. </comment>
               <selectionEntries>
                 <selectionEntry id="3fad-5638-c929-2156" name="2 Diligent" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="3405-c0a6-c022-99ce" name="2 Diligent" publicationId="ce02-a882-fdad-dd36" page="33" hidden="false">
-                      <description>Once per battle, during the Strategy phase, the Princeps’ Titan may be issued an Emergency Repairs
-order without the need to make a Command check.
-</description>
+                    <rule id="3405-c0a6-c022-99ce" name="2 Diligent" publicationId="3401-191e-1333-8a1d" page="90" hidden="false">
+                      <description>Once per game, during the Strategy phase, the Princeps’ Titan may be issued an Emergency Repairs order without the need to make a Command check.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17175,8 +17174,8 @@ order without the need to make a Command check.
                 </selectionEntry>
                 <selectionEntry id="c0c1-3f7e-77fe-0984" name="3 Immovable Bastion" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="c505-4a5f-22e3-8f35" name="3 Immovable Bastion" publicationId="ce02-a882-fdad-dd36" page="33" hidden="false">
-                      <description>Once per battle, after resolving the effects of an attack made against the Princeps’ Titan by an enemy Titan as part of a Charge order, the Princeps’ Titan may immediately make a Smash Attack, or an attack with a weapon with the Melee trait, against the attacking unit.</description>
+                    <rule id="c505-4a5f-22e3-8f35" name="3 Immovable Bastion" publicationId="3401-191e-1333-8a1d" page="90" hidden="false">
+                      <description>Once per game, after resolving the effects of an attack made against the Princeps’ Titan by an enemy Titan as part of a Charge order, the Princeps’ Titan may immediately make a Smash Attack, or an attack with a weapon with the Melee trait, against the attacking unit.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17186,7 +17185,7 @@ order without the need to make a Command check.
                 </selectionEntry>
                 <selectionEntry id="ed5b-efba-f549-c198" name="1 Steadfast" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="c635-5d30-8ce4-e8b1" name="1 Steadfast" publicationId="ce02-a882-fdad-dd36" page="33" hidden="false">
+                    <rule id="c635-5d30-8ce4-e8b1" name="1 Steadfast" publicationId="3401-191e-1333-8a1d" page="90" hidden="false">
                       <description>When the Princeps’ Titan is required to roll on the Awakened Machine Spirit table, they may instead choose the result from the table instead of rolling. If they do this, increase their Reactor level by 1, in addition to any other effects.</description>
                     </rule>
                   </rules>
@@ -17197,7 +17196,7 @@ order without the need to make a Command check.
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="d159-815d-ff9b-8d15" name="Legio Ignatum" publicationId="ce02-a882-fdad-dd36" page="40" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="d159-815d-ff9b-8d15" name="Legio Ignatum" publicationId="3401-191e-1333-8a1d" page="21" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -17223,8 +17222,8 @@ order without the need to make a Command check.
               <selectionEntries>
                 <selectionEntry id="f60c-16a4-3b5e-5415" name="2 Foe Slayer" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="c7cf-1cc2-514c-ddbd" name=" 2 Foe Slayer" publicationId="ce02-a882-fdad-dd36" page="40" hidden="false">
-                      <description>During the Combat phase, the Princeps may choose one of their Titan’s weapons. Add 1 to the result of all Armour rolls made with the chosen weapon. If the Princeps is targeting a Titan from Legio Mortis or Legio Tempestus, the Princeps may choose two of their Titan’s weapons to add 1 to the result.</description>
+                    <rule id="c7cf-1cc2-514c-ddbd" name=" 2 Foe Slayer" publicationId="3401-191e-1333-8a1d" page="21" hidden="false">
+                      <description>During the Combat phase, the Princeps may choose one of their Titan’s weapons. Add 1 to the result of all Armour rolls made with the chosen weapon. If the Princeps is targeting a Titan from Legio Mortis or Legio Tempestus, the Princeps may choose two of the Princeps’ Titan’s weapons to add 1 to the result.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17234,7 +17233,7 @@ order without the need to make a Command check.
                 </selectionEntry>
                 <selectionEntry id="b737-49ec-530f-1c52" name="3 Eternal Guardian" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="cd5a-ea9c-2592-add3" name="3 Eternal Guardian" publicationId="ce02-a882-fdad-dd36" page="40" hidden="false">
+                    <rule id="cd5a-ea9c-2592-add3" name="3 Eternal Guardian" publicationId="3401-191e-1333-8a1d" page="21" hidden="false">
                       <description>Once per Combat phase, the Princeps may re-roll a single Armour roll resulting from hits from any of their weapons if they have not moved (voluntarily or involuntarily) in the same round.</description>
                     </rule>
                   </rules>
@@ -17245,7 +17244,7 @@ order without the need to make a Command check.
                 </selectionEntry>
                 <selectionEntry id="2845-30dd-35cf-cc3c" name="1 Death before Dishonour" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="7911-4c6b-8101-4117" name="1 Death before Dishonour" publicationId="ce02-a882-fdad-dd36" page="40" hidden="false">
+                    <rule id="7911-4c6b-8101-4117" name="1 Death before Dishonour" publicationId="3401-191e-1333-8a1d" page="21" hidden="false">
                       <description>The Princeps’ Titan may re-roll failed Hit rolls if their Titan has suffered Critical Damage. However, during the Damage Control phase, they must spend any Repair dice to repair disabled weapons before repairing any other kind of damage if possible.</description>
                     </rule>
                   </rules>
@@ -17256,7 +17255,7 @@ order without the need to make a Command check.
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="c773-8a26-5ce5-6a31" name="Legio Venator" publicationId="ce02-a882-fdad-dd36" page="42" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="c773-8a26-5ce5-6a31" name="Legio Venator" publicationId="3401-191e-1333-8a1d" page="153" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -17282,8 +17281,9 @@ order without the need to make a Command check.
               <selectionEntries>
                 <selectionEntry id="72ec-4688-c105-6548" name="2 Crusade Veteran" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="8794-ce5c-c3b5-66df" name="2 Crusade Veteran" publicationId="ce02-a882-fdad-dd36" page="42" hidden="false">
-                      <description>Once per game, after resolving a Repair roll made as part of an Emergency Repairs order, the Princeps may discard the Order and immediately be issued a second Order. This second Order can be another Emergency Repairs order. Even if an Emergency Repairs order is removed in this manner, the Princeps’ Titan can still only be activated in either the subsequent Movement phase or Combat phase of that round as normal.</description>
+                    <rule id="8794-ce5c-c3b5-66df" name="2 Crusade Veteran" publicationId="3401-191e-1333-8a1d" page="153" hidden="false">
+                      <description>Once per game, after resolving a Repair roll made as part of an Emergency Repairs order, the Princeps may discard the Order and immediately be issued a second Order. This second Order can be another Emergency Repairs order. Even if an Emergency Repairs order is removed in this manner, the Princeps’ Titan can still only be activated in either the subsequent Movement
+phase or Combat phase of that round as normal.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17293,8 +17293,8 @@ order without the need to make a Command check.
                 </selectionEntry>
                 <selectionEntry id="d223-1f5d-b068-f85f" name="3 Superior Tactician" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="64f5-2f4b-45f4-3645" name="3 Superior Tactician" publicationId="ce02-a882-fdad-dd36" page="42" hidden="false">
-                      <description>The presence of the Princeps adds one additional Stratagem point to their battlegroup that may be used before the battle to purchase Stratagems.</description>
+                    <rule id="64f5-2f4b-45f4-3645" name="3 Superior Tactician" publicationId="3401-191e-1333-8a1d" page="153" hidden="false">
+                      <description>Before forces are deployed, when choosing Stratagems, the Legio Venator player gains +1 Stratagem point if one or more Princeps with this Personal Trait is present in the force.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17305,8 +17305,7 @@ order without the need to make a Command check.
                 <selectionEntry id="abe8-55ef-0703-634e" name="1 Burning Hatred" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
                     <rule id="5d62-0bf7-610f-ec2a" name="1 Burning Hatred" publicationId="ce02-a882-fdad-dd36" page="42" hidden="false">
-                      <description>Once per round, when the Princeps’ Titan causes Critical Damage to an enemy Titan, the Princeps’
-Titan may immediately make an attack with one of its weapons, chosen by the controlling player. After resolving the effects of this attack, roll a D6 on the Reactor Overload table for the Princeps’ Titan.</description>
+                      <description>Once per round, when the Princeps’ Titan causes Critical Damage to an enemy Titan, the Princeps’ Titan may immediately make an attack with one of its weapons, chosen by the controlling player. After resolving the effects of this attack, roll a D6 on the Reactor Overload table for the Princeps’ Titan.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17555,7 +17554,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="bd11-7a98-f2d6-7754" name="Legio Praesagius" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="bd11-7a98-f2d6-7754" name="Legio Praesagius" publicationId="3401-191e-1333-8a1d" page="101" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -17581,7 +17580,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
               <selectionEntries>
                 <selectionEntry id="d7ad-a4bb-6719-b9a7" name="2 Natural Commander" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="3166-c997-3cad-d20d" name="2 Natural Commander" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
+                    <rule id="3166-c997-3cad-d20d" name="2 Natural Commander" publicationId="3401-191e-1333-8a1d" page="101" hidden="false">
                       <description>If the Princeps’ Titan rolls a 9 or 10 for a Command check made when issuing Orders, they may issue the same order to any or all of the Titans in their maniple (provided they do not already have an Order) without the need to make a Command check.</description>
                     </rule>
                   </rules>
@@ -17592,9 +17591,8 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="6d7d-005f-33c6-d948" name="3 Crusader" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="c2ab-636e-d8f1-65e1" name="3 Crusader" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
-                      <description>The Princeps is a true believer in the crusading spirit of their Legio, adhering to a doctrine of marching forwards with relentless purpose.
-Once per round, when moving in the Combat phase as part of a Full Stride order, the Princeps’ Titan may fire one of its weapons after they finished moving. Apply a -2 modifier to the Hit rolls.</description>
+                    <rule id="c2ab-636e-d8f1-65e1" name="3 Crusader" publicationId="3401-191e-1333-8a1d" page="101" hidden="false">
+                      <description>Once per round, when moving in the Combat phase as part of a Full Stride order, the Princeps’ Titan may fire one of its weapons after they finished moving. Apply a -2 modifier to the Hit rolls.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17604,7 +17602,7 @@ Once per round, when moving in the Combat phase as part of a Full Stride order, 
                 </selectionEntry>
                 <selectionEntry id="c712-2891-832d-b4c5" name="1 Noble Legacy" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="83af-a166-0b30-c561" name="1 Noble Legacy" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
+                    <rule id="83af-a166-0b30-c561" name="1 Noble Legacy" publicationId="3401-191e-1333-8a1d" page="101" hidden="false">
                       <description>If the Princeps’ battlegroup does not have a Tertiary Objective (as part of a Stratagem or Mission), it gains the Eternal Bastion Tertiary Objective. A battlegroup with this objective earns 5 Victory points at the end of the game if their Princeps Seniores’ Titan was not destroyed or Structurally Compromised.</description>
                     </rule>
                   </rules>
@@ -17615,7 +17613,7 @@ Once per round, when moving in the Combat phase as part of a Full Stride order, 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="6455-0780-1e8c-7f98" name="Legio Oberon" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="6455-0780-1e8c-7f98" name="Legio Oberon" publicationId="3401-191e-1333-8a1d" page="147" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -17641,7 +17639,7 @@ Once per round, when moving in the Combat phase as part of a Full Stride order, 
               <selectionEntries>
                 <selectionEntry id="a350-6d71-0959-1db0" name="3 Tactical Genius" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="86b2-f700-cc50-1341" name="3 Tactical Genius" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
+                    <rule id="86b2-f700-cc50-1341" name="3 Tactical Genius" publicationId="3401-191e-1333-8a1d" page="147" hidden="false">
                       <description>Before forces are deployed, when choosing Stratagems, the Legio Oberon player gains +1 Stratagem point if one or more Princeps with this Personal Trait is present in the force</description>
                     </rule>
                   </rules>
@@ -17652,7 +17650,7 @@ Once per round, when moving in the Combat phase as part of a Full Stride order, 
                 </selectionEntry>
                 <selectionEntry id="e598-26b9-643a-6cf4" name="2 Peerless Commander" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="e32c-9a1f-aced-a092" name="2 Peerless Commander" publicationId="3265-f408-cc9b-bfa3" page="21" hidden="false">
+                    <rule id="e32c-9a1f-aced-a092" name="2 Peerless Commander" publicationId="3401-191e-1333-8a1d" page="147" hidden="false">
                       <description>Friendly Knight Banners with at least one model within 6&quot; of the Princeps’ Titan automatically pass Command checks when testing to see if they are Shaken or recover from being Shaken.</description>
                     </rule>
                   </rules>
@@ -17663,7 +17661,7 @@ Once per round, when moving in the Combat phase as part of a Full Stride order, 
                 </selectionEntry>
                 <selectionEntry id="6853-4e1f-ad40-a494" name="1 Unwavering" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="f516-ce73-0000-2b65" name="1 Unwavering" publicationId="3265-f408-cc9b-bfa3" page="25" hidden="false">
+                    <rule id="f516-ce73-0000-2b65" name="1 Unwavering" publicationId="3401-191e-1333-8a1d" page="147" hidden="false">
                       <description>Once per game, if the Princeps’ Titan fails a Command check, it can choose to pass it instead.
 </description>
                     </rule>
@@ -17675,7 +17673,7 @@ Once per round, when moving in the Combat phase as part of a Full Stride order, 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="56ff-01bc-d895-2a71" name="Legio Lysanda" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="56ff-01bc-d895-2a71" name="Legio Lysanda" publicationId="3401-191e-1333-8a1d" page="159" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -17701,7 +17699,7 @@ Once per round, when moving in the Combat phase as part of a Full Stride order, 
               <selectionEntries>
                 <selectionEntry id="010f-a6e8-b7ea-03b7" name="3 Vanguard Leader" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="e30d-7923-e334-c636" name="3 Vanguard Leader" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false">
+                    <rule id="e30d-7923-e334-c636" name="3 Vanguard Leader" publicationId="3401-191e-1333-8a1d" page="159" hidden="false">
                       <description>Any friendly Legio Lysanda Titan that begins its movement within 3&quot; of the Princeps’ Titan can declare Power to Locomotors without pushing its reactor. This includes the Princeps’ Titan</description>
                     </rule>
                   </rules>
@@ -17712,7 +17710,7 @@ Once per round, when moving in the Combat phase as part of a Full Stride order, 
                 </selectionEntry>
                 <selectionEntry id="7743-3e83-1ea8-29ff" name="2 Serene" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="6291-b059-c2f8-7ec7" name="2 Serene" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false">
+                    <rule id="6291-b059-c2f8-7ec7" name="2 Serene" publicationId="3401-191e-1333-8a1d" page="159" hidden="false">
                       <description>The Princeps’ Titan never suffers penalties to their Command checks and may ignore effects that force them to re-roll successful Command checks.
 </description>
                     </rule>
@@ -17724,7 +17722,7 @@ Once per round, when moving in the Combat phase as part of a Full Stride order, 
                 </selectionEntry>
                 <selectionEntry id="c01b-171b-b5c6-d4ae" name="1 Harrowed by Betrayal" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="adef-f66d-3abd-4191" name="1 Harrowed by Betrayal" publicationId="3265-f408-cc9b-bfa3" page="28" hidden="false">
+                    <rule id="adef-f66d-3abd-4191" name="1 Harrowed by Betrayal" publicationId="3401-191e-1333-8a1d" page="159" hidden="false">
                       <description>If the machine spirit of a Legio Lysanda Titan awakens, the Titan may apply the Wrathful result instead of rolling on the Awakened Machine Spirit table.
 </description>
                     </rule>
@@ -17854,7 +17852,7 @@ Once per round, when moving in the Combat phase as part of a Full Stride order, 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="a560-a6fc-9197-dee8" name="Legio Gryphonicus" publicationId="975a-00f4-pubN65537" page="91" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="a560-a6fc-9197-dee8" name="Legio Gryphonicus" publicationId="3401-191e-1333-8a1d" page="31" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -17880,9 +17878,8 @@ Once per round, when moving in the Combat phase as part of a Full Stride order, 
               <selectionEntries>
                 <selectionEntry id="b1f6-ddbc-0020-b1d3" name="2 Master Duellist" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="124a-74d6-7a3c-a6c2" name="2 Master Duellist" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
-                      <description>Failed Hit rolls for the Princeps Seniores&apos; Titan can be re-rolled when it is making attacks against a
-target which is within 8&quot;.</description>
+                    <rule id="124a-74d6-7a3c-a6c2" name="2 Master Duellist" publicationId="3401-191e-1333-8a1d" page="31" hidden="false">
+                      <description>Failed Hit rolls for the Princeps Seniores’ Titan can be re-rolled when it is making attacks against a target which is within 8&quot;.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17892,8 +17889,8 @@ target which is within 8&quot;.</description>
                 </selectionEntry>
                 <selectionEntry id="c706-bbcd-8dd9-7808" name="3 Hunter without Equal" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="de3c-fd2f-a7ef-3d7c" name="3 Hunter without Equal" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
-                      <description>Re-roll any failed Hit rolls, not just Hit rolls of 1, when the Princeps Seniores&apos; Titan attacks a target it has claimed (see the Lust for Glory rule on page 89). </description>
+                    <rule id="de3c-fd2f-a7ef-3d7c" name="3 Hunter without Equal" publicationId="3401-191e-1333-8a1d" page="31" hidden="false">
+                      <description>The Princeps Seniores’ Titan may re-roll any failed Hit rolls, not just Hit rolls of 1, when the Princeps Seniores’ Titan attacks a target it has claimed (see the Lust for Glory Legio trait).</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17903,8 +17900,8 @@ target which is within 8&quot;.</description>
                 </selectionEntry>
                 <selectionEntry id="f7f1-b663-7d98-2b1f" name="1 Reckless Maverick" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="318f-4ac7-d0ef-28a9" name="1 Reckless Maverick" publicationId="975a-00f4-pubN65537" page="91" hidden="false">
-                      <description>Once per battle, the Princeps Seniores&apos; Titan can be activated a second time in the Movement phase or Combat phase. After doing so, advance the Titan&apos;s Reactor level three times.</description>
+                    <rule id="318f-4ac7-d0ef-28a9" name="1 Reckless Maverick" publicationId="3401-191e-1333-8a1d" page="31" hidden="false">
+                      <description>Once per battle, the Princeps Seniores’ Titan can be activated a second time in the Movement phase or Combat phase. After doing so, advance the Titan’s Reactor level three times.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -18033,7 +18030,7 @@ effectively cancelling it.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="3df4-bbb4-2c07-8b09" name="Legio Osedax" publicationId="2988-f24d-39ef-352e" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="3df4-bbb4-2c07-8b09" name="Legio Osedax" publicationId="3401-191e-1333-8a1d" page="141" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -18059,10 +18056,8 @@ effectively cancelling it.</description>
               <selectionEntries>
                 <selectionEntry id="4071-2bc3-5e66-4961" name="1 Natural General" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="5dab-4b37-b382-fe80" name="1 Natural General" publicationId="2988-f24d-39ef-352e" page="32" hidden="false">
-                      <description>During the Strategy phase, when the Princeps is successfully issued with an Order, a single friendly
-Legio Osedax Titan within the same maniple may be issued the same Order without the need to
-make a Command check.</description>
+                    <rule id="5dab-4b37-b382-fe80" name="1 Natural General" publicationId="3401-191e-1333-8a1d" page="141" hidden="false">
+                      <description>During the Strategy phase, when the Princeps is successfully issued with an Order, a single friendly Legio Osedax Titan within the same maniple may be issued the same Order without the need to make a Command check.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -18072,10 +18067,8 @@ make a Command check.</description>
                 </selectionEntry>
                 <selectionEntry id="ef80-ff9f-0172-cba9" name="2 Careful Planner" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="2ce3-d7e7-2a14-7996" name="2 Careful Planner" publicationId="2988-f24d-39ef-352e" page="32" hidden="false">
-                      <description>Once per game, the Legio Osedax player can reuse a Stratagem that cost 1 or fewer Stratagem points and has been used earlier in the battle by the Legio Osedax player. The Princeps must be on the battlefield to use this ability. If the Stratagem is one that can be used more than once (i.e., Artillery Bombardment), it may instead be used twice in one phase by the Legio Osedax player. 3 Lightning Assault: The Princeps is known for practicing swift attacks, bearing down upon their
-foe with deadly intent.
-After both players have deployed, but before players determine who is the First Player, Titans within the Princeps Seniores’ maniple may immediately make a move. Each Titan may move no more than 6&quot; when making this move. Any Titan that moves in this way cannot be issued Orders during the first round.</description>
+                    <rule id="2ce3-d7e7-2a14-7996" name="2 Careful Planner" publicationId="3401-191e-1333-8a1d" page="141" hidden="false">
+                      <description>Once per game, the Legio Osedax player can reuse a Stratagem that cost 1 or fewer Stratagem points and has been used earlier in the battle by the Legio Osedax player. The Princeps must be on the battlefield to use this ability. If the Stratagem is one that can be used more than once (i.e., Artillery Bombardment), it may instead be used twice in one phase by the Legio Osedax player.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -18085,7 +18078,7 @@ After both players have deployed, but before players determine who is the First 
                 </selectionEntry>
                 <selectionEntry id="3f28-4242-d281-a7d5" name="3 Lightning Assault" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="eb9c-43b2-8e26-25fa" name="3 Lightning Assault" publicationId="2988-f24d-39ef-352e" page="32" hidden="false">
+                    <rule id="eb9c-43b2-8e26-25fa" name="3 Lightning Assault" publicationId="3401-191e-1333-8a1d" page="141" hidden="false">
                       <description>After both players have deployed, but before players determine who is the First Player, Titans within the Princeps Seniores’ maniple may immediately make a move. Each Titan may move no more than 6&quot; when making this move. Any Titan that moves in this way cannot be issued Orders during the first round.</description>
                     </rule>
                   </rules>
@@ -18096,7 +18089,7 @@ After both players have deployed, but before players determine who is the First 
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="8a8b-ca92-808a-33b1" name="Legio Honorum" publicationId="2988-f24d-39ef-352e" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="8a8b-ca92-808a-33b1" name="Legio Honorum" publicationId="3401-191e-1333-8a1d" page="131" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -18122,7 +18115,7 @@ After both players have deployed, but before players determine who is the First 
               <selectionEntries>
                 <selectionEntry id="7d23-1bfd-9900-572b" name="1 Ardent Crusader" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="a4b5-b8cc-9fc8-b386" name="1 Ardent Crusader" publicationId="2988-f24d-39ef-352e" page="29" hidden="false">
+                    <rule id="a4b5-b8cc-9fc8-b386" name="1 Ardent Crusader" publicationId="3401-191e-1333-8a1d" page="131" hidden="false">
                       <description>The presence of this Princeps within the battlegroup allows it to purchase the Legio Specific Stratagem: Crusading Spirit multiple times.</description>
                     </rule>
                   </rules>
@@ -18133,10 +18126,8 @@ After both players have deployed, but before players determine who is the First 
                 </selectionEntry>
                 <selectionEntry id="2aa9-54f0-8626-b8ff" name="2 Stubborn" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="1523-f713-be74-2b20" name="2 Stubborn" publicationId="2988-f24d-39ef-352e" page="29" hidden="false">
-                      <description>The Princeps may always be issued Orders during the Strategy phase, even if normally unable to do
-so, e.g., due to Vox Blackout or because a friendly Titan has failed their Command check when
-being issued an order.</description>
+                    <rule id="1523-f713-be74-2b20" name="2 Stubborn" publicationId="3401-191e-1333-8a1d" page="131" hidden="false">
+                      <description>The Princeps may always be issued Orders during the Strategy phase, even if normally unable to do so, e.g., due to Vox Blackout or because a friendly Titan has failed their Command check when being issued an order.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -18146,7 +18137,7 @@ being issued an order.</description>
                 </selectionEntry>
                 <selectionEntry id="1b34-9661-a3cb-9aa6" name="3 Iron Resolve" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="5cab-5015-0a38-ff6a" name="3 Iron Resolve" publicationId="2988-f24d-39ef-352e" page="29" hidden="false">
+                    <rule id="5cab-5015-0a38-ff6a" name="3 Iron Resolve" publicationId="3401-191e-1333-8a1d" page="131" hidden="false">
                       <description>The Princeps Seniores’ Titan always benefits from the Resolute and Unbowed Legio Trait even if it has moved less than 4&quot; that round, so long as the attack originates from within the Titan’s Front Arc.</description>
                     </rule>
                   </rules>
@@ -18181,9 +18172,9 @@ being issued an order.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="659c-b1b3-3259-e030" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="5966-e5d8-54c8-4c81" name="Paragon of Conquest" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="5966-e5d8-54c8-4c81" name="1 Paragon of Conquest" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="9988-a957-ba79-4d28" name="Paragon of Conquest" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
+                    <rule id="9988-a957-ba79-4d28" name="1 Paragon of Conquest" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
                       <description>If the Princeps&apos; Battlegroup does not have a Tertiary Objective (as a part of a Strategm or a Mission), it gains the Paragon of Conquest Objective.  A battlegroup with this objective earns 5 victory points at the end of the game if their Priceps Seniores&apos; Titan is in the opponent&apos;s deployment zone.</description>
                     </rule>
                   </rules>
@@ -18192,10 +18183,10 @@ being issued an order.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b968-bc0c-21dc-bba0" name="Godlike Benevolence " publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="b968-bc0c-21dc-bba0" name="3 Godlike Benevolence " publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="974b-3ffa-9190-ad12" name="Godlike Benevolence " hidden="false">
-                      <description>Once per round, during the End Phase, the player can choose a Knight Banner that is Shaken and make a Command Check using this Princeps&apos; Command value.  If the test is passed, the banner is no longer shaken.</description>
+                    <rule id="974b-3ffa-9190-ad12" name="3 Godlike Benevolence " publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
+                      <description>Once per round, during the End Phase, the player can choose a Knight Banner that is Shaken and make a Command Check using this Princeps&apos; Command value.  If the test is passed, the Banner is no longer shaken.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -18203,9 +18194,9 @@ being issued an order.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f73a-6745-ccaa-524b" name="Diligent Commander" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="f73a-6745-ccaa-524b" name="2 Diligent Commander" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="7d3a-b884-1ddb-3a9d" name="Diligent Commander" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
+                    <rule id="7d3a-b884-1ddb-3a9d" name="2 Diligent Commander" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
                       <description>Once per round, at the end of the strategy phase, the Legio Metalica player may chose a friendly Legio Metalica Titan withing 6&quot; ofthe Princeps Seniores Titan. Make a Command check for that Titan.  If the check is passed, the Titan may immediately be issued an Order, which replaces any Order it is currently issued, of the player&apos;s choice. The Strategy phase then ends.  Emergency Repairs orders cannot be replaced in this manner.</description>
                     </rule>
                   </rules>
@@ -18322,10 +18313,10 @@ being issued an order.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3b8d-55ad-53af-7f9d" name="Legio Metalica (Iron Skulls)" publicationId="3401-191e-1333-8a1d" page="78" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3b8d-55ad-53af-7f9d" name="Legio Metalica (Iron Skulls)" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="2ee4-311c-db34-2655" name="Victories Beyond Measure" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
-          <description>Once per round, after completing the activation of a friendly Legio Metalica Titan, the Legio Metalica player may immediately activate another friendly Legio Metalica Titan.  After resovling the seond Titan&apos;s activation, increase it&apos;s Reactor Level by 2.  A Titan cannot be activated in this way if the Titan activate first was part of a squadron, nor can a Titan that is part of a Squadron be chosen for the second activation.</description>
+          <description>Once per round, after completing the activation of a friendly Legio Metalica Titan, the Legio Metalica player may immediately activate another friendly Legio Metalica Titan. After resolving the second Titan’s activation, increase its Reactor Level by 2. A Titan cannot be activated in this way if the Titan activated first was part of a Squadron, nor can a Titan that is part of a Squadron be chosen as the second activation.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -18519,6 +18510,106 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="19c8-d226-1d72-28e4" name="=Solaria= Fortis Motivators" publicationId="3401-191e-1333-8a1d" page="60" hidden="true" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="a0ca-b1a6-1a2f-061e" name="=Solaria= Fortis Motivators" publicationId="3401-191e-1333-8a1d" page="60" hidden="false">
+          <description>A Legio Solaria Warhound Titan can be fitted with Fortis Motivators for a cost of +20 points. In the Damage Control phase, a Titan with this upgrade can repair Critical Damage to its Legs on a 1+ instead of a 5+.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="910a-de38-5393-6560" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="970b-e4b8-8123-c3ac" name="LegioSolaria" hidden="false" targetId="56c0-1162-173d-b052" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f29-8298-5888-bcc6" name="Volkite Eradicator WH" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5f78-03b9-5494-fec4" name="Volkite Eradicator WH" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">(2)</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="34b1-0844-b92f-4352" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="a57d-ed71-5a7c-f574" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
+        <categoryLink id="f5ee-6ca8-458f-b8cf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="a25e-a4c3-d463-9d59" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f49-0fb1-426f-c152" name="Volkite Eradicator R" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="063c-efe9-9689-3cd2" name="Volkite Eradicator R" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">(2)</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e248-b9d3-c22d-3a26" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="4dae-813a-858f-d2a5" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="false"/>
+        <categoryLink id="4aef-7f11-00ba-89f9" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2e8a-92e8-a90e-545e" name="Volkite Destructor" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a24f-6c4f-a97b-f5bf" name="Volkite Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">16&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">2</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2), Beam (1) (Draining)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7a18-29f1-1985-5963" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="0bc4-44ef-2564-069e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
+        <categoryLink id="e4a4-bbd8-e794-09ea" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="d546-6679-7d4c-f7c7" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+        <categoryLink id="85e3-3232-4627-b203" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
+        <categoryLink id="ee6c-7629-e207-b1b1" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="50af-0bab-a322-f02c" name="Legs Manifold Critical Damage" hidden="false" collective="false" import="false">
@@ -18684,8 +18775,15 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="instanceOf"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d36f-5e44-2150-3428" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -18697,8 +18795,15 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="instanceOf"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d36f-5e44-2150-3428" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -18874,26 +18979,6 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a1e-df03-83b9-5cda" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="033a-8544-0dde-d497" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="0470-4cd4-2022-b54e" name="=Solaria= Cameleoline Shrouding" hidden="true" collective="false" import="false" targetId="1c9d-16db-f94b-c0ec" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="223f-6e71-9e4f-939e" type="instanceOf"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d24-3a31-aa77-6c3f" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c9b-832a-06d0-86a3" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="b1b7-81d6-7559-1192" name="=Defensor= Devotional War Sirens" hidden="true" collective="false" import="false" targetId="9646-5ac3-8725-8523" type="selectionEntry">
@@ -19082,6 +19167,54 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
               </conditions>
             </modifier>
           </modifiers>
+        </entryLink>
+        <entryLink id="499b-3294-6b78-4417" name="=Honorum= Basilus Throne" hidden="false" collective="false" import="true" targetId="8a7d-3ead-16e2-1979" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cd4a-3c69-5fc8-0773" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="c130-1260-4c15-147a" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="c725-815f-945b-712d" name="=Solaria= Cameleoline Shrouding" hidden="false" collective="false" import="true" targetId="1c9d-16db-f94b-c0ec" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="223f-6e71-9e4f-939e" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a8b-6f6e-5b5d-f062" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="388b-7562-3259-42db" name="=Solaria= Fortis Motivators" hidden="false" collective="false" import="true" targetId="19c8-d226-1d72-28e4" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="223f-6e71-9e4f-939e" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e526-b2e1-1213-55e9" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
