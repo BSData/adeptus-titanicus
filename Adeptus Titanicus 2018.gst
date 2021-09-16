@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="37" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="38" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Gryphonicus : Select your replacement titans from the Maniple level options.  We are working to clean up how you choose replacement titans.</readme>
   <publications>
@@ -112,7 +112,7 @@
     <categoryEntry id="27c5-bdc6-5cc3-ec66" name="Quake" hidden="false">
       <rules>
         <rule id="0991-274d-8c53-e57b" name="Quake" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
-          <description> Quake weapons strike their target with such force that the very ground ruptures and shakes. If a unit is hit by a Quake cannon and the hit is not deflected by its shields, it is caught in the seismic blastwave. Until the end of the following Movement phase, the target’s default and boosted Speed values are halved (rounding down).</description>
+          <description>Quake weapons strike their target with such force that the very ground ruptures and shakes. If a unit is hit by a Quake cannon and the hit is not deflected by its shields, it is caught in the seismic blastwave. Until the end of the following Movement phase, the target’s default and boosted Speed values are halved (rounding down).</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -141,7 +141,7 @@
       <rules>
         <rule id="6d36-18ba-c400-471c" name="Rapid" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Rapid weapons spit an overpowering stream of shots, saturating the target with weapons fire. For each Hit roll of 6 when attacking with a Rapid weapon, it causes 2 hits rather than 1.
-                        If a roll of 6 To Hit was required, this rule has no effect.</description>
+If a roll of 6 To Hit was required, this rule has no effect.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -170,9 +170,9 @@
       <rules>
         <rule id="c6c8-e060-ed51-a490" name="Warp" publicationId="7236-e1d8-c886-f5fd" page="39" hidden="false">
           <description>Warp weapons, most famously warp missiles, are fired in realspace but translate to the Warp for the majority of their flight, only returning to reality as they reach their target. If an attack made by a Warp weapon hits its target, make a Location roll (or choose a location if making a Targeted Attack).
-                        Then, regardless of whether the target is shielded, roll a D6.
-                        On a result of 1, the target location loses 1 Structure point. On a result of 2-3, the target location loses D3 Structure points. On a result of 4-6, the target location suffers Critical Damage.
-                        If the target location is a weapon, on a 1-3 the weapon is disabled. If the weapon is already disabled, it detonates. On a 4-6 the weapon is disabled and the Body loses 1 Structure point. If the weapon is already disabled, it detonates and the Body loses 1 Structure point.</description>
+Then, regardless of whether the target is shielded, roll a D6.
+On a result of 1, the target location loses 1 Structure point. On a result of 2-3, the target location loses D3 Structure points. On a result of 4-6, the target location suffers Critical Damage.
+If the target location is a weapon, on a 1-3 the weapon is disabled. If the weapon is already disabled, it detonates. On a 4-6 the weapon is disabled and the Body loses 1 Structure point. If the weapon is already disabled, it detonates and the Body loses 1 Structure point.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -192,7 +192,7 @@
       <rules>
         <rule id="c7a1-ea93-5049-17dc" name="Firestorm" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
           <description>Firestorm weapons unleash gouts of blazing promethium or some other volatile fuel. Instead of rolling To Hit with a Firestorm weapon, place the Flame template so that the narrowest part is touching the end of the firing weapon and the centre of the wide end is within the weapon’s firing arc. It cannot be placed so that it is touching any friendly units. The closest model to the firing unit that is touched by the template suffers a number of hits equal to the weapon’s Dice value; each other model that is touched by the template (except the firing model!) suffers one hit.
-                        Note that it is not necessary to make the Hit rolls - these hits are automatic. Firestorm weapons cannot make Targeted Attacks.</description>
+Note that it is not necessary to make the Hit rolls - these hits are automatic. Firestorm weapons cannot make Targeted Attacks.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -200,24 +200,8 @@
     <categoryEntry id="917a-77ef-30e4-b812" name="Banner" hidden="false">
       <rules>
         <rule id="59fb-73c8-478f-68c9" name="Banner" publicationId="975a-00f4-pubN65537" page="46" hidden="false">
-          <description>Composition of a Banner A Banner is made up of a number of Knights acting as a single unit. The reverse of a Banner&apos;s Command Terminal describes its exact composition, along with any options. When a Banner is activated, all of the Knights within it act; individual Knights cannot be activated.
-                        Banners in the Movement Phase When a Banner is activated in the Movement phase, each Knight can move up to the Banner&apos;s Speed characteristic in inches. Knights are considered to have a 360° Front arc, and can make as many turns as they wish as they move. When the Banner has finished moving, each must be within 3&quot; of another Knight in the Banner - Knight Banners operate in much closer proximity than Titan Squadrons, especially when facing larger war engines. If any of the Knights are outside of this range, the Banner is Shaken - see page 47.
-                        Banners in the Combat Phase When a Banner is activated in the Combat phase, it follows the Combat Sequence as if it were a Titan. Instead of attacking with each Knight individually, make an attack with each different weapon in tum. For each weapon, multiply the Dice characteristic by the number of Knights in the Banner that are equipped with that weapon, and which are within range and line of sight of the target. For example,ifa Banner has two Knights armed with rapid fire battle cannon (Dice 2) and one Knight armed with a thermal cannon (Dicer),it would roll four dice when attacking with the battle cannon and one dice when attacking with the thermal cannon.IfsomeKnightsarewithin2&quot; ofthetargetandothersare further away, roll using Ballistic Skill for those that are further, and Weapon Skill for those that are within 2&quot;.
-                        When determining line of sight for a Banner, Knights within the Banner do not block the view of others. Also, remember that Knights have a 360° Front arc,so their weapons can fire in any direction. All of the weapons in a Banner must be fired at the same target, unless the Banner has Split Fire orders, at which point each weapon can be directed at a different target.
-                        Banners cannot make Smash Attacks.
-                        ATTACKING BANNERS. When attacking a Banner, pick a single Knight in the Banner to be the target of the attack. This model is used for purposes ofrange,line ofsight and so on. However, any damage that is caused is applied to the Banner as a whole. As Banners do not have Side or Rear arcs, these do not cause modifiers to the Damage roll.
-                        ION SHIELDS. When fighting in a Banner, Knights align their Ion shields, granting them greater protection as a group than individually. Ion shields are different to void shields;ifa rule refers specifically to void shields, it does not affect ion shields, but ifit refers to Shield saves, it will affect both. Note that, unlike void shields, ion shields can be used against attacks that originate from within 2&quot;. If a Banner is hit by a shooting attack, hits are resolved (at Step 5 of the Combat Sequence) as follows:
-                        • Target&apos;s controlling player makes Ion Shield saves.
-                        • The attacking player makes Armour rolls for any remaining hits. To make an Ion Shield save, look up the Ion Shield level on the Banner&apos;s Command Terminal, which varies depending on the number of Knights currently in the Banner and the Strength of the attack. Then roll a D6 for each hit that was scored. For each dice that equals or beats the Ion Shield level, the hit is discarded. Then for each remaining hit, the attacking player makes an Armour roll as described on page 34.
-                        DAMAGING BANNERS. Direct Hits, Devastating Hits and Critical Hits affect Banners differently to Titans, as follows:
-                        Direct Hit: When a Banner suffers a Direct Hit,it loses a Structure point. If it has no Structure points left to lose, one Knight in the Banner is desttoyed instead.
-                        Devastating Hit: When a Banner suffers a Devastating Hit, it loses two Structure points. If the Banner has one Structure point or no Structure points left when it suffers a Devastating Hit, one Knight in the Banner is destroyed instead.
-                        Critical Hit: When a Banner suffers a Critical Hit, it loses two Structure points, then one Knight in the Banner is destroyed. If the Banner has one Structure point or no Structure points j left when it suffers a Critical Hit, two Knights in the Banner are destroyed instead.
-                        When a Knight is destroyed, the controlling player chooses one model to remove. The Banner&apos;s Structure Points marker is then immediately reset to the first hole of the track. If a Targeted Attack destroys a Knight, the attacking player can choose which model to remove instead of the controlling player.
-                        BLAST MARKERS, FLAME TEMPLATES AND AREA EFFECTS. When a Banner is hit by a Blast marker or Flame template, total the number of hits scored on the models in the Banner, then apply that many hits to the Banner as a whole. This also applies to attack~with an area effect - catastrophic reactor overloads, environmental effects and so on.
-                        Shaken Banners Each time a Knight is removed from a Banner, the Banner must make a Command check. If it is failed, the Banner is Shaken. It immediately loses any orders and an Order dice showing the Shutdown symbol is placed on its Command Terminal to show that it is Shaken. Shaken Banners subtract 3&quot; from their Speed and will suffer a -1 modifier to all Hit rolls. When the Banner is activated in the Issue Orders step of the next Strategy phase, make a Command roll for the Shaken Banner. If it is passed, remove the dice. Otherwise, it stays where it is. In either case, the Banner cannot be issued orders.
-
-                    </description>
+          <description>A Banner is made up of a number of Knights acting as a single unit. The reverse of a Banner&apos;s Command Terminal describes its exact composition, along with any options. When a Banner is activated, all of the Knights within it act; individual Knights cannot be activated.
+            </description>
         </rule>
       </rules>
     </categoryEntry>
@@ -240,7 +224,7 @@
       <rules>
         <rule id="8a76-8edc-073a-cd65" name="Vortex" publicationId="7236-e1d8-c886-f5fd" page="39" hidden="false">
           <description>Vortex weapons make use of bewildering technology to open an unstable warp rift at the target point. They follow use all of the rules for Blast weapons, but use the 3&quot; Vortex template instead. Each model that is touched by the template suffers D6 Strength 10 hits, bypassing void shields.
-                        After resolving the attack, leave the Vortex template where it is. In the End phase of each turn, the template is moved D6&quot; in a random direction, hitting anything it touches as it moves. If a Hit is rolled, the template is removed instead.</description>
+After resolving the attack, leave the Vortex template where it is. In the End phase of each turn, the template is moved D6&quot; in a random direction, hitting anything it touches as it moves. If a Hit is rolled, the template is removed instead.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -255,7 +239,7 @@
     </categoryEntry>
     <categoryEntry id="e580-b213-3f86-c2fc" name="Agile" hidden="false">
       <rules>
-        <rule id="e1ee-cf92-788d-7083" name="Agile" hidden="false">
+        <rule id="e1ee-cf92-788d-7083" name="Agile" publicationId="975a-00f4-pubN65537" page="Knight Terminal" hidden="false">
           <description>Not affected by Difficult or Dangerous Terrain</description>
         </rule>
       </rules>
@@ -341,16 +325,16 @@
       <profiles>
         <profile id="2e0d-6258-e5ac-3907" name="Battlefield Assets" publicationId="975a-00f4-pubN65537" page="65" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
           <characteristics>
-            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">Roll a d6. On a 5 or 6, the Battlefield Asset is destroyed.</characteristic>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">12-15: Roll a d6. On a 5 or 6, the Battlefield Asset is destroyed.</characteristic>
             <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa"/>
-            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+ Roll a d6. On a 3 or more, the Battlefield Asset is destroyed.</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+: Roll a d6. On a 3 or more, the Battlefield Asset is destroyed.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
         <rule id="8746-c417-9782-3eeb" name="Battlefield Asset" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
           <description>Battlefield Assets can be targeted by attacks, and are hit by Blast markers, Flame templates and area effects (such as exploding reactors) in the same way as a unit. Hit rolls against Battlefield Assets have a -1 penalty at Short range and a -2 penalty at Long range.
-                        Units can move across Battlefield Assets without penalty. If a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance it will crush it underfoot. Ifit does so, roll a Dro,or a D6 if the Titan&apos;s move ends with its base over the Battlefield Asset. If the result is lower than the Titan&apos;s Scale, the Battlefield Asset is destroyed.</description>
+Units can move across Battlefield Assets without penalty. If a Titan&apos;s base crosses a Battlefield Asset as it moves, there is a chance it will crush it underfoot. Ifit does so, roll a Dro,or a D6 if the Titan&apos;s move ends with its base over the Battlefield Asset. If the result is lower than the Titan&apos;s Scale, the Battlefield Asset is destroyed.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -371,8 +355,8 @@
       <rules>
         <rule id="c660-4152-ef3e-aeba" name="Impale" publicationId="3265-f408-cc9b-bfa3" page="95" hidden="false">
           <description>After resolving an attack from an Impale weapon against a Titan, do not make an Armour roll. Instead, if the attack Hits, roll a D6 and add the strength of the weapon. if resolving an attack from an Impale weapon as part of a Coordinated Strike, resolve the attacks of all contributing Titans first, making a note of how many attacks from Impale weapons successfully hit. Then roll a D6, adding the Strength value of all contributing weapons, and apply a +1 modifier for each Impale weapon beyond the first that successfully hit.
-                        If the total of the roll is equal to the target unit&apos;s Scale, roll a D6. On a 1-3, the target unit turns 90° to its right. On a 4-6, the target unit turns to 90° to its left. If the total of the roll is higher than the target unit&apos;s Scale, the target unit turns as described above and the immediately suffers D3+1 Devastating Hits to its Legs. If the target unit suffers Catastrophic Damage table - the target unit automatically suffers the Laid Low result instead. If the total of the roll is lower that the target unit&apos;s Scale, or a natural 1 is rolled, each unit contributing to the attack immediately suffers a Devastating Hit to their Legs and a S7 hit against and Impale weapons that successfully hit as part of the Coordinated Strike.
-                        Attacks made by Impale weapon bypass void shields.
+ If the total of the roll is equal to the target unit&apos;s Scale, roll a D6. On a 1-3, the target unit turns 90° to its right. On a 4-6, the target unit turns to 90° to its left. If the total of the roll is higher than the target unit&apos;s Scale, the target unit turns as described above and the immediately suffers D3+1 Devastating Hits to its Legs. If the target unit suffers Catastrophic Damage table - the target unit automatically suffers the Laid Low result instead. If the total of the roll is lower that the target unit&apos;s Scale, or a natural 1 is rolled, each unit contributing to the attack immediately suffers a Devastating Hit to their Legs and a S7 hit against and Impale weapons that successfully hit as part of the Coordinated Strike.
+Attacks made by Impale weapon bypass void shields.
                     </description>
         </rule>
       </rules>
@@ -402,9 +386,9 @@
       <rules>
         <rule id="3882-2805-b80e-d019" name="Beam (X)" publicationId="3265-f408-cc9b-bfa3" page="94" hidden="false">
           <description>When resolving an attack from a Beam weapon, do not roll To Hit. Instead, pick a target and draw an imaginary, 1mm wide, straight line from the weapon to its maximum range; the line must cross the base of the target at the point closest to the firing model. The closes unit to the firing unit whose base is under the line suffers a number of hits equal to the weapon&apos;s Dice value. If that unit is destroyed, the next closest unit suffers aa number of hits equal to the weapon&apos;s Dice value minus the number in brackets after the trait, to a minimum of 0.
-                        Continue these steps until a unit is not destroyed, there are no units left underneath the line, or the weapon&apos;s Dice value has been reduced to 0. Beam weapons can only make Targeted Attacks against the closest unit - randomly determine the location for any subsequent unit hit by a Beam weapon.
-                        When determining the closest unit to be hit, any piece of terrain underneath the line counts as a unit. If a piece of terrain underneath the line is the closest &apos;unit&apos;, the beam carries on as if it had destroyed an enemy unit, i.e, reduce the Dice value and resolve hits against the next unit down the line.
-                        If the Destroying Terrain special rule is in use, the terrain takes hits as normal however the beam carries on after resolving these even if the building is not destroyed, reducing the Dice value as if it had destroyed an enemy unit.</description>
+Continue these steps until a unit is not destroyed, there are no units left underneath the line, or the weapon&apos;s Dice value has been reduced to 0. Beam weapons can only make Targeted Attacks against the closest unit - randomly determine the location for any subsequent unit hit by a Beam weapon.
+When determining the closest unit to be hit, any piece of terrain underneath the line counts as a unit. If a piece of terrain underneath the line is the closest &apos;unit&apos;, the beam carries on as if it had destroyed an enemy unit, i.e, reduce the Dice value and resolve hits against the next unit down the line.
+If the Destroying Terrain special rule is in use, the terrain takes hits as normal however the beam carries on after resolving these even if the building is not destroyed, reducing the Dice value as if it had destroyed an enemy unit.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -441,23 +425,25 @@
     <categoryEntry id="efc2-e899-f74b-55ad" name="Freeblades" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
       <rules>
         <rule id="7233-2ed1-2a09-cccc" name="Freeblades" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
-          <description>Freeblades When a Household marches to war, it is not uncommon for it to be accompanied by ad hoc Banners of Free blades. These might be questing Knights attached to local elements of the Great Crusade or, particularly during the brutal wars of the Horus Heresy, survivors of larger forces allying with another Household as they seek vengeance for their fallen brethren. Units of Free blades are added to the Household force just like Household Support Banners are added to a Titan battlegroup: A Free blade Banner consists of one Support Banner. The Knights in a Support Banner can be armed in any combination. A Free blade Banner cannot join a Lance or benefit from any of the rules that apply to Banners within a Lance. A Free blade Banner cannot be given Coordinated Strike orders. Freeblade Banners cannot be formed into Lances (see below).</description>
+          <description>• A Free blade Banner consists of one Support Banner. 
+• The Knights in a Support Banner can be armed in any combination. 
+• A Free blade Banner cannot join a Lance or benefit from any of the rules that apply to Banners within a Lance. 
+• A Free blade Banner cannot be given Coordinated Strike orders. 
+• Freeblade Banners cannot be formed into Lances.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="b1c7-cb6c-5810-e9d9" name="Lance" hidden="false">
       <rules>
         <rule id="0034-0bec-545c-14dd" name="Lance" hidden="false">
-          <description>By tradition, a Lance is made up of three Household Banners, with multiple Lances combining to form a Household force. Command of a Lance is generally granted to the most experienced noble present, the highest ranking Knight of the Household taking natural and easy command over their juniors. The commanding Knight is given the rank of High Scion, and is charged with dictating the Lance&apos;s strategic and tactical approaches. Their personality will shape the way that the Lance functions and fights, and such command is highly sought after by ambitious young Knight Scions who wish to prove their worth. Where several Lances are brought together, the most senior noble will assume the rank of Seneschal and take command of all forces in the field. Their decades of experience as both a warrior and statesman prove invaluable in melding the forces under their command into a seamless and efficient fighting force. Knight Scions are bombastic and cantankerous, and Lances drawn from different keeps are often prone to letting competition and internal politics interfere. Without the strong leadership of a respected Seneschal, a Household army risks losing much of its discipline and martial might.
-                    </description>
+          <description></description>
         </rule>
         <rule id="8b90-6468-bd0e-1ecf" name="Designating Lances" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
-          <description>When assembling a Household force, all Household Banners must be formed into Lances, which in battle operate much like a squadron of Titans would:
-                        • A Lance must consist of three Household Banners.
-                        • A Lance may not contain any Freeblade Banners.
-                        • At least two Banners within a Lance must be of the same type (for example, a Lance may contain rwo Questoris Banners and one Cerastus Banner, but not one Questoris, one Cerastus and one Acastus ). The Knights within each Banner must be armed alike, as described previously, but each Banner within the Lance may be armed differently.
-                        • One Banner within the Lance must be designated as the High Scion&apos;s Banner (see page 37).
-                        • All of the Banners within a Lance count as a single unit for the purposes of deployment and activation. </description>
+          <description>• A Lance must consist of three Household Banners.
+• A Lance may not contain any Freeblade Banners.
+• At least two Banners within a Lance must be of the same type (for example, a Lance may contain two Questoris Banners and one Cerastus Banner, but not one Questoris, one Cerastus and one Acastus ). The Knights within each Banner must be armed alike, as described previously, but each Banner within the Lance may be armed differently. 
+• One Banner within the Lance must be designated as the High Scion&apos;s Banner (see page 37).
+• All of the Banners within a Lance count as a single unit for the purposes of deployment and activation. </description>
         </rule>
       </rules>
     </categoryEntry>
@@ -469,10 +455,9 @@
                     </description>
         </rule>
         <rule id="f0a5-b72b-deaf-d936" name="High Scions" publicationId="975a-00f4-pubN89746" page="37" hidden="false">
-          <description>Individual Lances are often drawn from a single keep. They will contain Knights that are accustomed to one another and that have trained and fought together for many years. The distinctions of rank and importance between the Banners are subtle, often all but invisible to an outsider, but of the utmost important to the Knightly Households themselves. A Lance is commanded by the most senior noble present, taking the title of High Scion in the field and commanding unswerving respect and duty from their underlings:
-                        • One Banner within each Lance must be designated as containing the High Scion in command of that Lance, rather than a Lord Scion.
-                        • The controlling player must make it clear to their opponent(s) which model represents the High Scion in command of each Lance.
-                        • While the High Scion is part of the Banner, add 2 to the result of any Command checks for it.</description>
+          <description>• One Banner within each Lance must be designated as containing the High Scion in command of that Lance, rather than a Lord Scion.
+• The controlling player must make it clear to their opponent(s) which model represents the High Scion in command of each Lance.
+• While the High Scion is part of the Banner, add 2 to the result of any Command checks for it.</description>
         </rule>
         <rule id="2670-8730-0920-2ce7" name="Warrior Born" publicationId="975a-00f4-pubN89746" page="37" hidden="false">
           <description>A High Scion is a mighty warrior. Knights in their Banner may re-roll Hit rolls of 1 when using their Weapon Skill. </description>
@@ -485,7 +470,9 @@
     <categoryEntry id="d198-6567-a9f9-a3fc" name="Tertiary Objective" publicationId="975a-00f4-pubN65537" page="64" hidden="false"/>
     <categoryEntry id="e616-b753-5dbd-72cb" name="Baronial Court" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
       <rules>
-        <rule id="9e0e-dbe2-6ee1-092c" name="Baronial Court" hidden="false"/>
+        <rule id="9e0e-dbe2-6ee1-092c" name="Baronial Court" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
+          <description>Unlike other Banners that are part of a Lance in a Household force, the individual Knights within the Seneschal&apos;s Banner may be equipped differently, following the options available to a Support Banner of the same type of Knight. This allows the player to better represent the unique, elite warriors that make up the Seneschal&apos;s companions. However, if this option is taken, the Banner may not be issued with Coordinated Strike orders</description>
+        </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="3fd9-a0bc-cb00-c4d6" name="Desperate Measures" publicationId="3401-191e-1333-8a1d" page="175" hidden="false"/>
