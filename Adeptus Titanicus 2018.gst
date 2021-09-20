@@ -435,9 +435,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     </categoryEntry>
     <categoryEntry id="b1c7-cb6c-5810-e9d9" name="Lance" hidden="false">
       <rules>
-        <rule id="0034-0bec-545c-14dd" name="Lance" hidden="false">
-          <description></description>
-        </rule>
+        <rule id="0034-0bec-545c-14dd" name="Lance" hidden="false"/>
         <rule id="8b90-6468-bd0e-1ecf" name="Designating Lances" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
           <description>• A Lance must consist of three Household Banners.
 • A Lance may not contain any Freeblade Banners.
@@ -4260,7 +4258,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f9a9-0ee9-960e-960b" name="=Vulcanum= Twinned Machine Spirits" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="f9a9-0ee9-960e-960b" name="=Vulcanum= Twinned Machine Spirits" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="60b2-ad77-9e97-d0d8" name="Twinned Machine Spirits" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
           <description>Any two Legio Vulcanum Titans may take twinned machine spirits for +20 points each.  Legio Vulcanum Titans with twinned machine spirits count as being part of a squadron with each other (see page 45 of the Adpetus Titanicus rulebook).   However, should a Titan with a twinned machine spirit roll the Machine Spirit symbol on the Reactor dice, both it and its paried Titan must make a Command check to see if their Titan&apos;s machine spirit awakens.  Note that multiple pairs of Titans in a Legio Vulcanum Battlegroup may be equipped to have twinned machine spirits, each forming their onw swuadron of two.</description>
@@ -4275,9 +4273,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3dfc-85e0-9496-60ec" name="=Vulcanum= Janus Missiles" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="3dfc-85e0-9496-60ec" name="=Vulcanum= Janus Missiles" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a8c6-6592-fa07-3c94" name="Janus Missiles" publicationId="975a-00f4-pubN87630" page="23" hidden="false">
+        <rule id="a8c6-6592-fa07-3c94" name="Janus Missiles" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
           <description>Any Legio Vulcanum Titan with an Apocalypse Missile Launcher or Paired Apocalypse Missile Launchers may take Janus pattern missiles for +20points. Legio Vulcanum Titans with Janus pattern missiles may split the dice of their missile launches between more than one target as the Janus warheads disperse in flight. The titan chooses a main target for its missiles, which will either be the same target as the rest of its weapons or one of its targets if has the Split Fire order, At least one dice must then be allocated to the Titan’s main target, The rest of the missile launcher’s dice can then either be applied to the main target or any other target within 12” Of the main target, provided that they are in range and line of sight of the weapon.</description>
         </rule>
       </rules>
@@ -4321,9 +4319,9 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4c8f-29c9-0c8e-67b6" name="=Krytos= Earthbreaker Missiles" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="4c8f-29c9-0c8e-67b6" name="=Krytos= Earthbreaker Missiles" publicationId="975a-00f4-pubN87630" page="45" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="107c-7e05-bf9d-8946" name="Earthbreaker Missiles" hidden="false">
+        <rule id="107c-7e05-bf9d-8946" name="Earthbreaker Missiles" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
           <description>Any Legio Krytos Titan with an Apocalypse Missile Launchers may take Earthbreaker pattern missiles as an upgrade, +20points on a Warlord Titan, +10points on a Reaver. When firing the Titan’s Apocalypse missile launchers, the player may choose to use either normal profile missiles or Earthbreaker missiles. Earthbreaker missiles reduce dice to 2 for a Warlord Titan and to 1 for a Reaver Titan. They have the added trait of Quake and increase their strength by +5 when resolving damage against terrain.</description>
         </rule>
       </rules>
@@ -4502,7 +4500,7 @@ The fire then goes out.</description>
     </selectionEntry>
     <selectionEntry id="0d56-2ed6-8229-739e" name="=Fureans= Hunting Auspex" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="ec54-b467-379f-8edf" name="Hunting Auspex" hidden="false">
+        <rule id="ec54-b467-379f-8edf" name="Hunting Auspex" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
           <description>Any Legio Fureans Titan may take a Hunting Auspex upgrade for +20 points. When making a ranged attack at over 12” away, a Legio Fureans Titan equipped with a Hunting Auspex may reduce any penalty to Hit by 1, to a minimum of 0.</description>
         </rule>
       </rules>
@@ -4515,7 +4513,7 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f8aa-6108-4447-0e90" name="=Mortis= Remains of the Fallen" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="f8aa-6108-4447-0e90" name="=Mortis= Remains of the Fallen" publicationId="2988-f24d-39ef-352e" page="46" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -4539,8 +4537,8 @@ The fire then goes out.</description>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a06c-86bf-4269-41b3" type="max"/>
       </constraints>
       <rules>
-        <rule id="f1ca-7438-e47a-6e56" name="Remains of the Fallen" publicationId="975a-00f4-pubN87630" page="39" hidden="false">
-          <description>Any Legio Mortis Titan may be upgraded to have Remains of the Fallen for +20 points. Enemy units within 8&quot; of a Titan with this upgrade must increase their Command characteristic by 1 to a maximum of 10.</description>
+        <rule id="f1ca-7438-e47a-6e56" name="Remains of the Fallen" publicationId="2988-f24d-39ef-352e" page="46" hidden="false">
+          <description>Any Legio Mortis Titan may be upgraded to have the Remains of the Fallen for +20 points. Enemy units within 8&quot; of a Titan with this upgrade must increase their Command characteristic by 1 to a maximum of 10.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4552,7 +4550,7 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f5a-dccf-63ea-17ba" name="=Mortis= The Warmaster&apos;s Beneficence" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="2f5a-dccf-63ea-17ba" name="=Mortis= The Warmaster&apos;s Beneficence" publicationId="2988-f24d-39ef-352e" page="46" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -4577,7 +4575,9 @@ The fire then goes out.</description>
       </constraints>
       <rules>
         <rule id="f0d8-d46c-f7c1-248e" name="The Warmaster&apos;s Beneficence" publicationId="2988-f24d-39ef-352e" page="46" hidden="false">
-          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +20 points. Until the end of the phase in which a Titan with this upgrade first makes an attack during a battle, it adds 1 to the Strength of any of its bolter or missile weapons, and may ignore the effects of the Draining trait.</description>
+          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +20 points. Until the end of
+the phase in which a Titan with this upgrade first makes an attack during a battle, it adds 1 to the Strength of any
+of its bolter or missile weapons, and may ignore the effects of the Draining trait.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4591,7 +4591,7 @@ The fire then goes out.</description>
     </selectionEntry>
     <selectionEntry id="b46d-e9ec-be67-c141" name="=Vulpa= Plasma Gargoyles" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="66ff-7402-bfe7-f298" name="Plasma Gargoyles" publicationId="975a-00f4-pubN87630" hidden="false">
+        <rule id="66ff-7402-bfe7-f298" name="Plasma Gargoyles" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
           <description>Any Legio Vulpa Titan may take plasma gargoyles for +15 points. Whenever the Titan uses Repair dice to Vent Plasma, all units (friend or foe) within 3&quot; take a hit with strength equal to 3 plus the number of levels the Titan&apos;s reactor is reduced by, e.g. if a Titan Vented Plasma reducing its reactor by 3 levels then all units within 3&quot; take a Strength 6 hit.</description>
         </rule>
       </rules>
@@ -4604,9 +4604,9 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ac1f-504e-5a1c-6a95" name="=Vulpa= Disruption Emitters" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ac1f-504e-5a1c-6a95" name="=Vulpa= Disruption Emitters" publicationId="975a-00f4-pubN87630" page="55" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="08c7-9190-61c4-2b2e" name="Disruption Emitters" publicationId="975a-00f4-pubN87630" hidden="false">
+        <rule id="08c7-9190-61c4-2b2e" name="Disruption Emitters" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
           <description>Any Legio Vulpa Titan may take Disruption Emitters for +30 points. The Titan adds 2 to the strength of any of its weapons with the Melee trait, and counts its Scale as 2 higher when making Smash Attacks.</description>
         </rule>
       </rules>
@@ -4651,7 +4651,7 @@ The fire then goes out.</description>
     </selectionEntry>
     <selectionEntry id="2133-4929-2061-f585" name="=Infernus= Clinging Phosphex" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="c863-1c58-e8a4-710f" name="=Infernus= Clinging Phosphex" hidden="false">
+        <rule id="c863-1c58-e8a4-710f" name="=Infernus= Clinging Phosphex" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
           <description>Any Legio Infernus Titan that is equipped with an Inferno Gun can take Clinging Phosphex for +20 points. When firing the Titan Inferno Gun, targets other than the one closest to the firing unit take 2 hits instead of 1.</description>
         </rule>
       </rules>
@@ -4664,9 +4664,9 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7689-d32b-cef1-edf0" name="=Infernus= Dark Blessing" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="7689-d32b-cef1-edf0" name="=Infernus= Dark Blessing" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="397d-915b-8316-8a8d" name="Dark Blessing" hidden="false">
+        <rule id="397d-915b-8316-8a8d" name="Dark Blessing" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
           <description>Any Legio Infernus Titan can take Dark Blessing for +5 points. Once per round, a Titan with this upgrade can re-roll a single dice. However, a Titan with this upgrade suffers a -1 modifier to any command check made when issuing Orders.</description>
         </rule>
       </rules>
@@ -4784,10 +4784,10 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2351-970d-8215-e66c" name="=Mordaxis= Toxin Nodes" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="2351-970d-8215-e66c" name="=Mordaxis= Toxin Nodes" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a67d-f050-a56d-8313" name="Toxin Nodes" hidden="false">
-          <description>Any Legio Mordaxis Titan armed with a Blast (3”) weapon may take Toxin Nodes for +20 points. Decrease the Strength value of the weapon by 1 (to a minimum of 4) and replace the Blast (3”) trait with the Blast (5”) trait.</description>
+        <rule id="a67d-f050-a56d-8313" name="Toxin Nodes" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
+          <description>Any Legio Mordaxis Titan armed with a Blast (3&quot;) weapon may take Toxin Nodes for +20 points. Decrease the Strength value of the weapon by 1 (to a minimum of 4) and replace the Blast (3&quot;) trait with the Blast (5&quot;) trait.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4799,7 +4799,7 @@ The fire then goes out.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="69f2-0efb-9085-02cb" name="=Audax= Reinforced Plating" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="69f2-0efb-9085-02cb" name="=Audax= Reinforced Plating" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="775c-ba4c-b28d-9cdb" name="Reinforced Plating" hidden="false">
           <description>A Legio Audax Titan of Scale 6 or lower can be fitted with Reinforced Plating for +15 points. Subtract 1 from the result of Armour rolls made against a Titan with Reinforced Plating.</description>
@@ -4971,7 +4971,7 @@ it is required to roll a Reactor dice during the first and second round of the g
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="08c7-5efe-0712-c420" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="08c7-5efe-0712-c420" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="dd46-08dc-7ea5-12b3" name="Chasmata Turbo Laser Destructor" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -5141,9 +5141,9 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8fee-61b8-1c39-b9ee" name="=Tempestus= Chasmata Turbo Laser Destructor [WHD]" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="8fee-61b8-1c39-b9ee" name="=Tempestus= Chasmata Turbo Laser Destructor [WHD]" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="7838-8984-7946-069e" name="Chasmata Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="7838-8984-7946-069e" name="Chasmata Turbo Laser Destructor" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -5175,9 +5175,9 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2699-bb53-cff4-a864" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="2699-bb53-cff4-a864" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="1253-3d06-27b8-28e7" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="1253-3d06-27b8-28e7" name="Paired Chasmata Pattern Turbo Laser Destructor" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -5211,9 +5211,9 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fe03-8e18-b108-5853" name="=Tempestus= Paired Chasmata Laser Blaster" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="fe03-8e18-b108-5853" name="=Tempestus= Paired Chasmata Laser Blaster" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="67bd-692f-8028-ccd6" name="Paired Chasmata Pattern Laser Blasters" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="67bd-692f-8028-ccd6" name="Paired Chasmata Pattern Laser Blasters" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -5247,9 +5247,9 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="01e4-e3f5-4396-d5c4" name="=Tempestus= Chasmata Laser Blaster" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="01e4-e3f5-4396-d5c4" name="=Tempestus= Chasmata Laser Blaster" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="769f-b83a-baec-2e03" name="Chasmata Laser Blaster" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="769f-b83a-baec-2e03" name="Chasmata Laser Blaster" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -6131,7 +6131,8 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
       </constraints>
       <rules>
         <rule id="1b83-e3ad-a51d-84ed" name="Battle Fervour" publicationId="2988-f24d-39ef-352e" page="38" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Magna player. Play this Stratagem during any Strategy phase. For the remainder of the phase, friendly Legio Magna Titans may be issued Charge orders without the need to make a Command check. In addition, for the remainder of the round, friendly Legio Magna Titans may re-roll Hit rolls of a 1 for attacks made with a weapon with the Melee trait.</description>
+          <description>This Stratagem can be purchased by any Legio Magna player. Play this Stratagem during any Strategy phase. For the
+remainder of the phase, friendly Legio Magna Titans may be issued Charge orders without the need to make a Command check. In addition, for the remainder of the round, friendly Legio Magna Titans may re-roll Hit rolls of a 1 for attacks made with a weapon with the Melee trait.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6157,7 +6158,8 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
       </constraints>
       <rules>
         <rule id="f866-ed34-3e29-8ecb" name="Spearhead Assault" publicationId="2988-f24d-39ef-352e" page="38" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Magna player. Play this Stratagem during any Strategy phase. For the remainder of the round, friendly Legio Magna Titans add 1 to all Hit rolls and Armour rolls made as a result of an attack against a target within 8&quot; of the attacking Titan, in addition to any other modifiers. However, enemy Titans add 1 to all Armour rolls made as a result of an attack against a Legio Magna Titan originating from its Side or Rear arc, in addition to any other modifiers.</description>
+          <description>This Stratagem can be purchased by any Legio Magna player. Play this Stratagem during any Strategy phase. For the
+remainder of the round, friendly Legio Magna Titans add 1 to all Hit rolls and Armour rolls made as a result of an attack against a target within 8&quot; of the attacking Titan, in addition to any other modifiers. However, enemy Titans add 1 to all Armour rolls made as a result of an attack against a Legio Magna Titan originating from its Side or Rear arc, in addition to any other modifiers.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6432,7 +6434,9 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
       </constraints>
       <rules>
         <rule id="446b-334d-7306-47b4" name="Steadfast Bastion " publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Kulisaetai player. Play this Stratagem during any Combat phase. Add 6&quot; to the Short range (but not the Long range) characteristic of all weapons without the Melee trait carried by a Legio Kulisaetai Titan during the Combat phase, so long as it has not moved (voluntarily or involuntarily) already this round.</description>
+          <description>ThisStratagem can be purchased by any Legio Kulisaetai player. Play this Strategy during any Shooting phase. Add
+6&quot; to the Short range (but not the Long range) characteristic of all weapons without the Melee trait carried by a Legio
+Kulisaetai Titan during the Shooting phase, so long as it has not moved (voluntarily or involuntarily) already this round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6458,7 +6462,10 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
       </constraints>
       <rules>
         <rule id="880f-916f-3203-443b" name="Methodical Advance" publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Kulisaetai player. Play this Stratagem in the Stratagey phase of the first round. Choose a Scale. All friendly Legio Kulesaetai Titans with the same Scale as the chosen Scale may immediately make a move although no Titan may declare Power to Stabalisers! or Power to Locomotors!. After the effects of the Stratagem have been resolved, the opposing player becomes the First Player. Titans that move in this way may not be activated in the Strategy phase of the first round.</description>
+          <description>This Stratagem can be purchased by any Legio Kulisaetai player. Play this Stratagem in the Strategy phase of the first
+round. Choose a Scale. All friendly Legio Kulisaetai Titans with the same Scale as the chosen Scale may immediately
+make a move although no Titan may declare Power to Stabilisers! or Power to Locomotors!. After the effects of the
+Stratagem have been resolved, the opposing player becomes the First Player. Titans that move in this way may not be activated in the Strategy phase of the first round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6484,7 +6491,8 @@ A Titan that arrives from orbit cannot be activated in any of the phases of the 
       </constraints>
       <rules>
         <rule id="538c-2a10-554b-5afc" name="Stygian Veil" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Tritonis player. Play this Stratagem during any Strategy phase. The Legio Tritonis player may immediately place three markers anywhere on the battlefield, so long as each marker is at least 10&quot; from a previously deployed marker. Any section of the battlefield within 3&quot; of the centre of the marker blocks line of sight and any non-Legio Tritonis units within 6&quot; of the centre of one or more markers suffers a -2 penalty to their Command check. All markers are removed at the start of the End phase.</description>
+          <description>This Stratagem can be purchased by any Legio Tritonis player. Play this Stratagem during any Strategy phase. The Legio Tritonis player may immediately place three markers anywhere on the battlefield, so long as each marker is at least 10&quot; from a previously deployed marker. Any section of the battlefield within 3&quot; of the centre of the marker blocks line of sight and any non-Legio Tritonis player within 6&quot; of the centre of one or more markers suffers a -2 penalty to their Command check.
+All markers are removed at the start of the End phase.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6702,8 +6710,8 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="170d-3f13-f670-3cc6" name="=Laniaskara= Mordantised Ceramite" publicationId="ce02-a882-fdad-dd36" page="44" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a6dd-007e-daba-9d00" name="=Laniaskara= Mordantised Ceramite" hidden="false">
-          <description>Any titan.  Subtract 1 from armour rolls made against this titan made by weapons with the maximal fire trait (even if maximal fire is not used).</description>
+        <rule id="a6dd-007e-daba-9d00" name="=Laniaskara= Mordantised Ceramite" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false">
+          <description>Any Legio Laniaskara Titan may be upgraded with Mordantised Ceramite for +10 points. Subtract 1 from the result of all Armour rolls for an attack made by a weapon with the Maximal Fire trait against a Titan with this upgrade. This negative modifier is applied even if the attacking unit is not using the Maximal Fire trait to increase their weapon’s Strength.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6718,7 +6726,7 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     <selectionEntry id="7c51-55b9-4942-4061" name="=Kulisaetai= Accelerated Autoloaders " publicationId="ce02-a882-fdad-dd36" page="48" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="2257-4054-c57c-6ae9" name="=Kulisaetai= Accelerated Autoloaders " publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
-          <description>Apocalypse Missile Launchers (either type).  May not combine with another upgrade. After resolving an attack, may immediately make a second attack with this weapon against the same target applying a -1 modifier to hit. After resolving the attack the weapon is disabled and the upgrade is removed, even if the weapon is repaired. </description>
+          <description>Any Legio Kulisaetai Titan armed with either Apocalypse Missile Launchers or an Apocalypse Missile Launcher may be equipped with Accelerated Autoloaders for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon a Titan is armed with must be upgraded separately. After resolving an attack made by a weapon with this upgrade, the Titan may immediately make a second attack with this weapon against the same target, applying a -1 modifier to all Hit rolls for that attack. After resolving the second attack, the weapon is disabled and the upgrade has no further effect for the remainder of the battle, even if the weapon is subsequently repaired.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6733,7 +6741,8 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     <selectionEntry id="5b5c-2d02-7856-0dd8" name="=Tritonis= Radiative Warheads" publicationId="ce02-a882-fdad-dd36" page="52" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="a211-039e-7883-c076" name="=Tritonis= Radiative Warheads" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-          <description>Apocalypse Missile Launchers (either type). May not combine with another upgrade.  Against voids, each hit of a 6 counts as 2 hits.</description>
+          <description>Any Legio Tritonis Titan armed with either Apocalypse Missile Launchers or an Apocalypse Missile Launcher may
+be equipped with Radiative Warheads for +25 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon a Titan is armed with must be upgraded separately. When making an attack with a weapon with this upgrade against a target with active Void Shields, each Hit roll of a 6 counts as two hits.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6747,8 +6756,9 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="dc14-b65e-acfb-906a" name="=Damicium= Secondary Plating" publicationId="ce02-a882-fdad-dd36" page="54" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="899c-50ef-d2bb-0ef1" name="=Damicium= Secondary Plating" hidden="false">
-          <description>Any titan.  First critical hit downgraded to Devastating. </description>
+        <rule id="899c-50ef-d2bb-0ef1" name="=Damicium= Secondary Plating" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
+          <description>The first Critical Hit a Titan with this upgrade receives is downgraded to a Devastating Hit instead. As soon
+as this happens, the benefits from this piece of Wargear are lost for the remainder of the battle.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6816,7 +6826,7 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
       </constraints>
       <rules>
         <rule id="5436-c2a4-839c-47c6" name="Unstoppable" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
-          <description>This Stratagem may be purchased by any Legio Mordaxis player. Play this Stratagem at the start of the Damage Control phase, before any Repair rolls are made. Until the end of the phase, add 2 to the Servitor Clades of every Legio Mordaxis Titan.</description>
+          <description>This Stratagem can be purchased by any Legio Mordaxis player. Play this Stratagem at the start of the Damage Control phase, before any Repair rolls are made. Until the end of the phase, add 2 to the Servitor Clades of every Legio Mordaxis Titan.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6956,7 +6966,7 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f476-3a7b-5612-d96e" name="=Audax= Ursus Claw" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="f476-3a7b-5612-d96e" name="=Audax= Ursus Claw" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="a029-a99d-fea2-790d" name="Ursus Claw" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -8003,7 +8013,7 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
         <rule id="e70f-0805-8c7e-5971" name="Hunting Pack" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="false">
           <description>Canis Light Maniples can only include Legio Audax Titans. Warhound Titans within this maniple do not deploy as normal. Instead, at the start of the deployment phase, after arranging Titans into squadrons, the controlling player places a number of markers equal to the number of Warhounds in this maniple. These markers can be placed anywhere on the battlefield more than 6” from the enemy deployment zone. Titans from this maniple count as deployed for the purposes of determining which player finished deploying first. When both players have finished deploying as normal, Warhounds from this maniple can be deployed anywhere within 3” of a Pack Ambush marker. Any Warhound deployed in this manner outside of the controlling player’s deployment zone must be at least 50% obscured from any enemy unit within line of sight of that Warhound. If a Warhound cannot be placed within 3” of a Pack Ambush marker in this way, they must be deployed in the controlling player’s deployment zone, following all of the normal rules.
 
-                        If a player has more than one Canis Light Maniple, each maniple beyond the first gives only one extra Pack Ambush marker. Pack Ambush markers are shared between maniples.</description>
+If a player has more than one Canis Light Maniple, each maniple beyond the first gives only one extra Pack Ambush marker. Pack Ambush markers are shared between maniples.</description>
         </rule>
       </rules>
       <categoryLinks>
