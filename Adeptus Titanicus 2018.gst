@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="38" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="39" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Gryphonicus : Select your replacement titans from the Maniple level options.  We are working to clean up how you choose replacement titans.</readme>
   <publications>
@@ -8933,8 +8933,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
               <entryLinks>
                 <entryLink id="dd37-25ca-a5a0-a04a" name="Inferno Gun" hidden="false" collective="false" import="false" targetId="c7aa-80e5-43d2-0cfd" type="selectionEntry"/>
                 <entryLink id="23f0-ce15-158e-d8f5" name="Plasma Blast Gun (WH)" hidden="false" collective="false" import="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
-                <entryLink id="fc86-6790-bf6c-3f0a" name="Turbo Laser Destructor (Warhound)" hidden="false" collective="false" import="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
-                <entryLink id="1524-5b2a-1e79-12e8" name="Vulcan Megabolter (Warhound)" hidden="false" collective="false" import="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
+                <entryLink id="fc86-6790-bf6c-3f0a" name="Turbo Laser Destructor [WHD]" hidden="false" collective="false" import="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
+                <entryLink id="1524-5b2a-1e79-12e8" name="Vulcan Megabolter [WHD]" hidden="false" collective="false" import="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
                 <entryLink id="3ee3-eda0-0fc6-d1e0" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="true" collective="false" import="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
@@ -9182,9 +9182,9 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0b27-6d01-57d3-0e9d" name="Turbo Laser Destructor [RVR]" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="0b27-6d01-57d3-0e9d" name="Turbo Laser Destructor [RVR]" publicationId="3401-191e-1333-8a1d" page="168" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="d790-65c0-7f6c-708f" name="Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="d790-65c0-7f6c-708f" name="Turbo Laser Destructor (Reaver)" publicationId="3401-191e-1333-8a1d" page="168" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -9299,20 +9299,20 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2165-2206-85af-b273" name="Turbo Laser Destructor [WHD]" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="2165-2206-85af-b273" name="Turbo Laser Destructor [WHD]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="46f4-f06b-9149-ebca" name="Turbo Laser Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="46f4-f06b-9149-ebca" name="Turbo Laser Destructor  (Warhound)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">18&quot;</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">16&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">32&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Shieldbane (Draining)</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Shieldbane (Draining)</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -9322,6 +9322,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="c4f9-3ddc-fee0-91a7" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
         <categoryLink id="643d-6101-2c14-1f1a" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="abfb-2be7-daf7-1c27" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="f171-36ff-f4eb-082e" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ef15-4c97-4ef7-9c43" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -9495,9 +9496,9 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bd35-3f71-8bea-7e42" name="Plasma Blast Gun (WH)" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="bd35-3f71-8bea-7e42" name="Plasma Blast Gun (WH)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="f969-ff69-e466-aa5f" name="Plasma Blast Gun (WH)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="f969-ff69-e466-aa5f" name="Plasma Blast Gun (Warhound)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -9508,7 +9509,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Maximal Fire</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (3&quot;), Maximal Fire</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -9705,7 +9706,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c7aa-80e5-43d2-0cfd" name="Inferno Gun (WH)" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="c7aa-80e5-43d2-0cfd" name="Inferno Gun (WH)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="9501-9bd3-1519-158a" name="Inferno Gun" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -9822,7 +9823,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="edcd-f43d-10ba-7f60" name="Vulcan Megabolter [WHD]" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="edcd-f43d-10ba-7f60" name="Vulcan Megabolter [WHD]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="add" field="category" value="12b5-203d-86d9-3e60">
           <conditions>
@@ -9831,7 +9832,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="9e0d-d5fd-c251-904b" name="Vulcan Megabolter (Warhound)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="9e0d-d5fd-c251-904b" name="Vulcan Megabolter (Warhound)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
             <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
               <conditions>
@@ -9846,7 +9847,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">20&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">(+</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Rapid</characteristic>
@@ -9859,6 +9860,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="1f47-fa17-59e4-f828" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="ad18-28ce-f3ad-7e1b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="6467-0a33-3b57-e7e7" name="Qualifier-StaticRounds" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
+        <categoryLink id="13f1-7b0c-63e2-efdb" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b36b-f4ee-e2a9-f796" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -10125,9 +10127,9 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="abfb-13ba-25c8-f130" name="Ursus Claw" publicationId="3265-f408-cc9b-bfa3" page="92" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="abfb-13ba-25c8-f130" name="Ursus Claw" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="132d-d0fa-bf94-b735" name="Ursus Claw" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="132d-d0fa-bf94-b735" name="Ursus Claw" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">3</characteristic>
@@ -10138,7 +10140,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Impale</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Impale, Specialised</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -10148,6 +10150,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="294c-9cb6-158f-e40c" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="1cac-8e78-30d3-e724" name="Impale" hidden="false" targetId="87f5-9eef-f2bc-d248" primary="false"/>
         <categoryLink id="6485-122d-5cf7-14a2" name="Specialised" hidden="false" targetId="7e70-5a5c-eee8-c911" primary="false"/>
+        <categoryLink id="db4a-4f94-e290-3d69" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="429d-427a-9e98-67c3" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -10157,9 +10160,9 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="59e1-0284-05e3-4c67" name="Natrix Shock Lance" publicationId="3265-f408-cc9b-bfa3" page="92" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="59e1-0284-05e3-4c67" name="Natrix Shock Lance" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="81fc-8687-8042-f611" name="Natrix Shock Lance" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="81fc-8687-8042-f611" name="Natrix Shock Lance" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
@@ -10170,7 +10173,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Bypass, Draining, Shock</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Bypass, Specialised, Shock (Draining)</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -10182,6 +10185,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="a841-85ae-e145-f0b5" name="Bypass" hidden="false" targetId="719c-7b89-a08d-4acc" primary="false"/>
         <categoryLink id="d636-24c7-d448-ca54" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
         <categoryLink id="90c8-cb14-41fe-bec3" name="Shock" hidden="false" targetId="d3e0-093e-a13d-3deb" primary="false"/>
+        <categoryLink id="fc35-d22d-0a4d-b07b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="720f-f146-07e7-bc12" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
