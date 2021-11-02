@@ -1,34 +1,74 @@
 Adeptus Titanicus
-=================
+============================
 
-[![Latest release](https://img.shields.io/github/release/BSData/adeptus-titanicus.svg?style=flat-square)](https://github.com/BSData/adeptus-titanicus/releases/latest)
-[![Commits (since latest release)](https://img.shields.io/github/commits-since/BSData/adeptus-titanicus/latest.svg?style=flat-square)](https://github.com/BSData/adeptus-titanicus/releases)
-[![Open bugs](https://img.shields.io/github/issues/BSData/adeptus-titanicus/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/adeptus-titanicus/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
-[![Contributors](https://img.shields.io/github/contributors/BSData/adeptus-titanicus.svg?style=flat-square)](https://github.com/BSData/adeptus-titanicus/graphs/contributors)
-[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/adeptus-titanicus.svg?style=flat-square)](https://github.com/BSData/adeptus-titanicus/pulse/monthly)
+[![GitHub release](https://img.shields.io/github/release/BSData/adeptus-titanicus.svg?style=flat-square)](https://github.com/BSData/adeptus-titanicus/releases/latest)
+![Github commits (since latest release)](https://img.shields.io/github/commits-since/BSData/adeptus-titanicus/latest.svg?style=flat-square)
+[![Open Bug issues](https://img.shields.io/github/issues/bsdata/adeptus-titanicus/Type%3A%20bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/adeptus-titanicus/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+bug%22)
+[![GitHub contributors](https://img.shields.io/github/contributors/BSData/adeptus-titanicus.svg?style=flat-square)](https://github.com/BSData/adeptus-titanicus/graphs/contributors)
+![GitHub commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/adeptus-titanicus.svg?style=flat-square)
 
-[![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
+[![Chat on Discord](https://img.shields.io/discord/558412685981777922?style=popout-square)](https://www.bsdata.net/contact)
+
+
+## Important ##
+[Important]: #important
+
+__The Battlescribe data editor can cause problems when merging updates. Because of this, and also to avoid duplicated effort where multiple people are working on the same files, please join us on Discord before you commit changes to the files.__
+
+
+#### Contents ####
+[Contents]: #contents
+
+* [Important][]
+* [Overview][]
+* [Reporting bugs & contact us][]
+* [Links][]
+
+[Important]: #important
+[Overview]: #overview
+[Reporting bugs & contact us]: #reporting-bugs--contact-us
+[Links]: #links
+
 
 ## Overview ##
+[Overview]: #overview
 
-__What's this?__
+* __What's this?__
 
-BSData organisation created this project. It's a GitHub repository of datafiles.
-Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want
-to develop - cool! We need you! Take a look at [our homepage][BSData.net]
+  _BSData organisation created this project. It's a GitHub repository of datafiles. Maintained by the community, in no way endorsed by BattleScribe. If you want to develop - cool! We need you! Take a look at [Getting Started wiki][]_
 
-__Okay, nice project. Is it actually working?__ _I just want those files..._
+* __Okay, nice project. Is it actually working?__ _I just want those files..._
+ 
+  _Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]_
 
-Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
 
-__I found a bug!__ / *I have another request*
+## Reporting bugs & contact us ##
 
-Great, thank you! Please [Report a bug][bug report] - you can also suggest enhancements and raise other issues there.
+* __I found a bug!__
+ 
+  _Great, thank you! Now you have two options:_
+
+  1. [Report it on Appspot][] - it's anonymous and no account is needed - one downside, you will need to manually check the progress of your issue.
+  2. [Open Issue directly][] (green ```New Issue``` in upper-right) - you need a GitHub account and then can track progress (get notifications on it!), comment (i.e. answer our questions) and help us better!
+
+* __I'd just like to contact you.__
+
+  Then join us on Discord!
+  
+  [![Chat on Discord](https://img.shields.io/discord/558412685981777922?style=popout-square)](https://www.bsdata.net/contact)
+ 
+  _Otherwise, the easiest way is through issues mentioned above. We are a community and that's the only place we all have access to. We don't have any group e-mail. So if you want to stay anonymous, contact us by reporting bug on Appspot (point 1 above)._
+
+[Report it on Appspot]: http://battlescribedata.appspot.com/#/repo/adeptus-titanicus
+[Open Issue directly]: https://github.com/BSData/adeptus-titanicus/issues
 
 ## Links ##
 
-* [BSData organization homepage][BSData.net]
-* [BattleScribe app homepage](https://www.battlescribe.net/)
+* [BattleScribe homepage][]
+* [BattleScribe Data on Appspot][]
+* [Getting Started wiki][]
 
-[BSData.net]: https://www.bsdata.net/
-[bug report]: https://github.com/BSData/adeptus-titanicus/issues/new/choose
+
+[BattleScribe homepage]: http://www.battlescribe.net/
+[BattleScribe Data on Appspot]: http://battlescribedata.appspot.com/#/repos
+[Getting Started wiki]: https://github.com/BSData/catalogue-development/wiki/Getting-Started
