@@ -7112,7 +7112,7 @@ as this happens, the benefits from this piece of Wargear are lost for the remain
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc9b-74b0-ef46-c3b5" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae73-44f7-3a1e-c536" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae73-44f7-3a1e-c536" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -7259,7 +7259,7 @@ as this happens, the benefits from this piece of Wargear are lost for the remain
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="56b0-f155-3635-45da" name="Janissary Batteline Maniple" publicationId="975a-00f4-pubN87630" page="62" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="56b0-f155-3635-45da" name="Janissary Battleline Maniple" publicationId="975a-00f4-pubN87630" page="62" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="dc27-d11e-d3f4-85a8" name="Close Support" publicationId="975a-00f4-pubN87630" page="62" hidden="false">
           <description>Janissary Battleline maniples learn to coordinate their actions with Household Support units, and move to support them when needed. If a Titan in this maniple activated during the Movement phase, choose a Knight Banner within 6&quot; of activated Titan. Once the Titan has finished its movement, then chosen Knight Banner may now make its activation.</description>
@@ -9238,7 +9238,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2165-2206-85af-b273" name="Turbo Laser Destructor [WHD]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="2165-2206-85af-b273" name="Turbo Laser Destructor [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="46f4-f06b-9149-ebca" name="Turbo Laser Destructor  (Warhound)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -9435,7 +9435,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bd35-3f71-8bea-7e42" name="Plasma Blast Gun (WH)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="bd35-3f71-8bea-7e42" name="Plasma Blast Gun [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="f969-ff69-e466-aa5f" name="Plasma Blast Gun (Warhound)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -9570,7 +9570,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="087a-abff-3ffe-f488" name="Melta Cannon (RBT)" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="087a-abff-3ffe-f488" name="Melta Cannon [RVR]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="d10f-9630-c104-eb62" name="Melta Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
@@ -9645,7 +9645,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c7aa-80e5-43d2-0cfd" name="Inferno Gun (WH)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="c7aa-80e5-43d2-0cfd" name="Inferno Gun [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="9501-9bd3-1519-158a" name="Inferno Gun" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -9762,7 +9762,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="edcd-f43d-10ba-7f60" name="Vulcan Megabolter [WHD]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="edcd-f43d-10ba-7f60" name="Vulcan Megabolter [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="add" field="category" value="12b5-203d-86d9-3e60">
           <conditions>
@@ -10450,7 +10450,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ab89-eea6-1e3a-84dd" name="Inferno Gun (WM)" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ab89-eea6-1e3a-84dd" name="Inferno Gun [WM]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="c6eb-3543-2ce0-4c05" name="Inferno Gun" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -10482,7 +10482,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="39de-6938-1a9c-3ea6" name="Melta Cannon (WM)" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="39de-6938-1a9c-3ea6" name="Melta Cannon [WM]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="10b9-a4d6-6acc-0f35" name="Melta Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
@@ -10523,7 +10523,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0f5d-e59f-3d5f-21c3" name="Plasma Blast Gun (WM)" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="0f5d-e59f-3d5f-21c3" name="Plasma Blast Gun [WM]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="135f-3527-5519-5011" name="Plasma Blast Gun (WM)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -12597,7 +12597,7 @@ effectively cancelling it.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="e096-d673-4cf6-9a65" name="Legio Metalica" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="e096-d673-4cf6-9a65" name="Legio Metalica" publicationId="3401-191e-1333-8a1d" page="81" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -12974,7 +12974,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f29-8298-5888-bcc6" name="Volkite Eradicator WH" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2f29-8298-5888-bcc6" name="Volkite Eradicator [WH]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="5f78-03b9-5494-fec4" name="Volkite Eradicator WH" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -13003,7 +13003,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4f49-0fb1-426f-c152" name="Volkite Eradicator R" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4f49-0fb1-426f-c152" name="Volkite Eradicator [RVR]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="063c-efe9-9689-3cd2" name="Volkite Eradicator R" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -13085,6 +13085,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dd88-663a-9378-68c4" name="=Krytos= Destroyer of Cities" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" collective="false" import="true" type="unit">
@@ -13110,6 +13111,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -13194,7 +13196,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="57d8-eb61-62ff-370a" name="=Vulvcanum= Twinned Machine Spirits" hidden="true" collective="false" import="false" targetId="f9a9-0ee9-960e-960b" type="selectionEntry">
+        <entryLink id="57d8-eb61-62ff-370a" name="=Vulcanum= Twinned Machine Spirits" hidden="true" collective="false" import="false" targetId="f9a9-0ee9-960e-960b" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -13593,7 +13595,14 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <entryLink id="3ea6-1bed-f54a-c10f" name="Acastus Twin Lascannon" hidden="false" collective="false" import="false" targetId="a2a3-d4b5-189a-5f63" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="c354-c2bb-8d84-0770" name="Loyalist Wargear" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="c354-c2bb-8d84-0770" name="Loyalist Wargear" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <entryLinks>
         <entryLink id="43ce-7298-a62f-4d43" name="Aquila Benedictus " hidden="false" collective="false" import="true" targetId="420e-234b-ffd8-d613" type="selectionEntry"/>
         <entryLink id="3da8-5021-8fe3-20a1" name="Hunter Shells" hidden="false" collective="false" import="true" targetId="f595-8a61-ffd1-817a" type="selectionEntry"/>
@@ -13611,6 +13620,15 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <entryLink id="9204-a8c6-7202-0910" name="Ranging Auspex" hidden="false" collective="false" import="true" targetId="da3a-8e05-dcc0-bd3b" type="selectionEntry"/>
         <entryLink id="efe7-93fd-c4a7-3520" name="Tracking Gyroscopes" hidden="false" collective="false" import="true" targetId="28ac-d2b9-5667-854e" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3bce-46aa-99ca-8f60" name="Traitor Wargear" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
