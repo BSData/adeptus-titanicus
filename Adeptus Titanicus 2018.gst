@@ -12974,7 +12974,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f29-8298-5888-bcc6" name="Volkite Eradicator WH" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2f29-8298-5888-bcc6" name="Volkite Eradicator [WH]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="5f78-03b9-5494-fec4" name="Volkite Eradicator WH" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -13003,7 +13003,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4f49-0fb1-426f-c152" name="Volkite Eradicator R" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4f49-0fb1-426f-c152" name="Volkite Eradicator [RVR]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="063c-efe9-9689-3cd2" name="Volkite Eradicator R" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
