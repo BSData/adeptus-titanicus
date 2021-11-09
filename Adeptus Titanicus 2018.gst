@@ -9570,7 +9570,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="087a-abff-3ffe-f488" name="Melta Cannon [RBT]" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="087a-abff-3ffe-f488" name="Melta Cannon [RVR]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="d10f-9630-c104-eb62" name="Melta Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
