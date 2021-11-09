@@ -12597,7 +12597,7 @@ effectively cancelling it.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="e096-d673-4cf6-9a65" name="Legio Metalica" publicationId="3401-191e-1333-8a1d" page="81" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="e096-d673-4cf6-9a65" name="Legio Metalica" publicationId="3401-191e-1333-8a1d" page="81" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
