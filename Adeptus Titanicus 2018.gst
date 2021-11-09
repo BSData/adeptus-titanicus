@@ -12702,6 +12702,17 @@ effectively cancelling it.</description>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="d7d6-0e74-955c-4a69" name="3 Merciless" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="9f26-7e8e-024d-5a72" name="3 Merciless" publicationId="bf8b-27d7-039e-5df9" page="" hidden="false">
+                      <description>The presence of this Princeps within the battlegroup allows it to purchase the Legio Specific Stratagem Cull the Weak multiple time, it can only be played once per phase.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
