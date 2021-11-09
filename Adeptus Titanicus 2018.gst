@@ -6164,6 +6164,11 @@ A Titan that arrives in this way cannot be activated in the Strategy or Movement
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5c80-4c19-098e-4775" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="9953-2eb8-288f-b6b7" value="10.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7d6-0e74-955c-4a69" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9953-2eb8-288f-b6b7" type="max"/>
