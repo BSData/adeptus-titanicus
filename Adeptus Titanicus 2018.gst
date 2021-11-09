@@ -9435,7 +9435,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bd35-3f71-8bea-7e42" name="Plasma Blast Gun (WH)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="bd35-3f71-8bea-7e42" name="Plasma Blast Gun [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="f969-ff69-e466-aa5f" name="Plasma Blast Gun (Warhound)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -10523,7 +10523,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0f5d-e59f-3d5f-21c3" name="Plasma Blast Gun (WM)" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="0f5d-e59f-3d5f-21c3" name="Plasma Blast Gun [WM]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="135f-3527-5519-5011" name="Plasma Blast Gun (WM)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
