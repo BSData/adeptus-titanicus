@@ -7259,7 +7259,7 @@ as this happens, the benefits from this piece of Wargear are lost for the remain
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="56b0-f155-3635-45da" name="Janissary Batteline Maniple" publicationId="975a-00f4-pubN87630" page="62" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="56b0-f155-3635-45da" name="Janissary Battleline Maniple" publicationId="975a-00f4-pubN87630" page="62" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="dc27-d11e-d3f4-85a8" name="Close Support" publicationId="975a-00f4-pubN87630" page="62" hidden="false">
           <description>Janissary Battleline maniples learn to coordinate their actions with Household Support units, and move to support them when needed. If a Titan in this maniple activated during the Movement phase, choose a Knight Banner within 6&quot; of activated Titan. Once the Titan has finished its movement, then chosen Knight Banner may now make its activation.</description>
