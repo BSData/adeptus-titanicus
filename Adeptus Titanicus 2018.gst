@@ -13196,7 +13196,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="57d8-eb61-62ff-370a" name="=Vulvcanum= Twinned Machine Spirits" hidden="true" collective="false" import="false" targetId="f9a9-0ee9-960e-960b" type="selectionEntry">
+        <entryLink id="57d8-eb61-62ff-370a" name="=Vulcanum= Twinned Machine Spirits" hidden="true" collective="false" import="false" targetId="f9a9-0ee9-960e-960b" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -13595,7 +13595,14 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <entryLink id="3ea6-1bed-f54a-c10f" name="Acastus Twin Lascannon" hidden="false" collective="false" import="false" targetId="a2a3-d4b5-189a-5f63" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="c354-c2bb-8d84-0770" name="Loyalist Wargear" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="c354-c2bb-8d84-0770" name="Loyalist Wargear" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <entryLinks>
         <entryLink id="43ce-7298-a62f-4d43" name="Aquila Benedictus " hidden="false" collective="false" import="true" targetId="420e-234b-ffd8-d613" type="selectionEntry"/>
         <entryLink id="3da8-5021-8fe3-20a1" name="Hunter Shells" hidden="false" collective="false" import="true" targetId="f595-8a61-ffd1-817a" type="selectionEntry"/>
@@ -13613,6 +13620,15 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <entryLink id="9204-a8c6-7202-0910" name="Ranging Auspex" hidden="false" collective="false" import="true" targetId="da3a-8e05-dcc0-bd3b" type="selectionEntry"/>
         <entryLink id="efe7-93fd-c4a7-3520" name="Tracking Gyroscopes" hidden="false" collective="false" import="true" targetId="28ac-d2b9-5667-854e" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3bce-46aa-99ca-8f60" name="Traitor Wargear" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
