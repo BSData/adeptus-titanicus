@@ -12656,6 +12656,54 @@ effectively cancelling it.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="5fd1-28e3-408d-bb48" name="Legio Vulturum" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebdb-b12a-f11e-ef31" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="dbca-bfc0-0920-54ca" name="1 Experimental Vessel" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="88b3-9623-6d6c-8ad8" name="1 Experimental Vessel" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
+                      <description>Once per game, when the Princeps Senores&apos; Titan is activated during the Combat Phase, the Titan may immediately repair a single disabled weapon.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="42a3-a561-b652-cfb4" name="2 Enigmatic" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="4af9-952a-fe35-b181" name="2 Enigmatic" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
+                      <description></description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
