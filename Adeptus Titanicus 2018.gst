@@ -6164,6 +6164,11 @@ A Titan that arrives in this way cannot be activated in the Strategy or Movement
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5c80-4c19-098e-4775" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="9953-2eb8-288f-b6b7" value="10.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7d6-0e74-955c-4a69" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9953-2eb8-288f-b6b7" type="max"/>
@@ -12647,6 +12652,65 @@ effectively cancelling it.</description>
                   <rules>
                     <rule id="7d3a-b884-1ddb-3a9d" name="2 Diligent Commander" publicationId="3401-191e-1333-8a1d" page="81" hidden="false">
                       <description>Once per round, at the end of the strategy phase, the Legio Metalica player may chose a friendly Legio Metalica Titan withing 6&quot; ofthe Princeps Seniores Titan. Make a Command check for that Titan.  If the check is passed, the Titan may immediately be issued an Order, which replaces any Order it is currently issued, of the player&apos;s choice. The Strategy phase then ends.  Emergency Repairs orders cannot be replaced in this manner.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5fd1-28e3-408d-bb48" name="Legio Vulturum" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebdb-b12a-f11e-ef31" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="dbca-bfc0-0920-54ca" name="1 Experimental Vessel" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="88b3-9623-6d6c-8ad8" name="1 Experimental Vessel" publicationId="bf8b-27d7-039e-5df9" page="" hidden="false">
+                      <description>Once per game, when the Princeps Senores&apos; Titan is activated during the Combat Phase, the Titan may immediately repair a single disabled weapon.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="42a3-a561-b652-cfb4" name="2 Enigmatic" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="4af9-952a-fe35-b181" name="2 Enigmatic" publicationId="bf8b-27d7-039e-5df9" page="" hidden="false">
+                      <description>At the start of the Strategy phase of the first round, the Princep Seinores&apos; Titan may be redeployed; do this before either player issues any Orders. The Princep Seinores may be placed anywhere that they would normally be allowed to deploy by the mission being played.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d7d6-0e74-955c-4a69" name="3 Merciless" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="9f26-7e8e-024d-5a72" name="3 Merciless" publicationId="bf8b-27d7-039e-5df9" page="" hidden="false">
+                      <description>The presence of this Princeps within the battlegroup allows it to purchase the Legio Specific Stratagem Cull the Weak multiple time, it can only be played once per phase.</description>
                     </rule>
                   </rules>
                   <costs>
