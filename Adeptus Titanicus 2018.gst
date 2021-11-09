@@ -9645,7 +9645,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c7aa-80e5-43d2-0cfd" name="Inferno Gun (WH)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="c7aa-80e5-43d2-0cfd" name="Inferno Gun [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="9501-9bd3-1519-158a" name="Inferno Gun" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -10450,7 +10450,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ab89-eea6-1e3a-84dd" name="Inferno Gun (WM)" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ab89-eea6-1e3a-84dd" name="Inferno Gun [WM]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="c6eb-3543-2ce0-4c05" name="Inferno Gun" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -13085,6 +13085,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dd88-663a-9378-68c4" name="=Krytos= Destroyer of Cities" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" collective="false" import="true" type="unit">
@@ -13110,6 +13111,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
