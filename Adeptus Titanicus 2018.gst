@@ -12366,7 +12366,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="9fe9-64c5-cf2f-c134" name="Legio Tempestus" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="9fe9-64c5-cf2f-c134" name="Legio Tempestus" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -12414,9 +12414,8 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="4a82-4b8f-9531-21bd" name="1 Adamantium Resolve" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="357c-0e14-ca0f-f8ef" name="1 Adamantium Resolve" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
-                      <description>Once per battle, at any point, the controlling player can remove Shutdown orders from the Princeps Seniores&apos; Titan, even as the Shutdown order is issued,
-effectively cancelling it.</description>
+                    <rule id="357c-0e14-ca0f-f8ef" name="1 Adamantium Resolve" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
+                      <description>Once per battle, when the Princeps fails a Command check, they may instead choose to pass it.</description>
                     </rule>
                   </rules>
                   <costs>
