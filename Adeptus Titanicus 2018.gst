@@ -4823,8 +4823,7 @@ of its bolter or missile weapons, and may ignore the effects of the Draining tra
 Subtract 1 from all Hit rolls for attacks made in this way. After resolving any attacks, roll on the Catastrophic Damage table as normal.</description>
         </rule>
         <rule id="f9ba-465a-7aaa-e466" name="Fury of the Machine" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-          <description>When making an Awakened Machine Spiriti roll for a Legio Tempestus Titna, re-roll any results of 1,2 or 3.  IF the re-roll is a 1,2 or 3, the result stands
-                    </description>
+          <description>Once per round, when firing a weapon, a Legio Tempestus Titan that has one or more points of Critical Damage may add 1 to the Strength value of that weapon; the weapon must have a Strength value of 4 or higher, and the Strength value cannot be increased above 10. This can be used in conjunction with Glory In Death.</description>
         </rule>
       </rules>
       <categoryLinks>
