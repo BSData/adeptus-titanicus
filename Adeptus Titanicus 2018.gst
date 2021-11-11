@@ -4815,12 +4815,12 @@ of its bolter or missile weapons, and may ignore the effects of the Draining tra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus (Storm Lords)" publicationId="975a-00f4-pubN65537" page="92" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus (Storm Lords)" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="0e6c-1950-20a3-f0ae" name="Glory in Death" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
+        <rule id="0e6c-1950-20a3-f0ae" name="Glory in Death" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
           <description>Before making a Catastrophic Damage roll for a Legio Tempestus Titan, make a Command check for it.  If the test is passed, the Titan can immediatly attack with on eof its weapons (following the Combat Sequence) or with all of its weapons if the test is passed by 3 or more.</description>
         </rule>
-        <rule id="f9ba-465a-7aaa-e466" name="Fury of the Machine" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
+        <rule id="f9ba-465a-7aaa-e466" name="Fury of the Machine" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
           <description>When making an Awakened Machine Spiriti roll for a Legio Tempestus Titna, re-roll any results of 1,2 or 3.  IF the re-roll is a 1,2 or 3, the result stands
                     </description>
         </rule>
