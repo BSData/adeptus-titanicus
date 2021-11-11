@@ -4972,7 +4972,7 @@ it is required to roll a Reactor dice during the first and second round of the g
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="08c7-5efe-0712-c420" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="08c7-5efe-0712-c420" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" publicationId="3401-191e-1333-8a1d" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="dd46-08dc-7ea5-12b3" name="Chasmata Turbo Laser Destructor" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -5142,7 +5142,7 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8fee-61b8-1c39-b9ee" name="=Tempestus= Chasmata Turbo Laser Destructor [WH]" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="8fee-61b8-1c39-b9ee" name="=Tempestus= Chasmata Turbo Laser Destructor [WH]" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="7838-8984-7946-069e" name="Chasmata Turbo Laser Destructor" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -5176,9 +5176,9 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2699-bb53-cff4-a864" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="2699-bb53-cff4-a864" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="1253-3d06-27b8-28e7" name="Paired Chasmata Pattern Turbo Laser Destructor" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="1253-3d06-27b8-28e7" name="Paired Chasmata Pattern Turbo Laser Destructor" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -5248,7 +5248,7 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="01e4-e3f5-4396-d5c4" name="=Tempestus= Chasmata Laser Blaster" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="01e4-e3f5-4396-d5c4" name="=Tempestus= Chasmata Laser Blaster" publicationId="3401-191e-1333-8a1d" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
         <profile id="769f-b83a-baec-2e03" name="Chasmata Laser Blaster" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
