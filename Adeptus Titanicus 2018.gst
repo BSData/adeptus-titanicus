@@ -4974,7 +4974,7 @@ it is required to roll a Reactor dice during the first and second round of the g
     </selectionEntry>
     <selectionEntry id="08c7-5efe-0712-c420" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="dd46-08dc-7ea5-12b3" name="Chasmata Turbo Laser Destructor" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="dd46-08dc-7ea5-12b3" name="Chasmata Turbo Laser Destructor" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -5218,9 +5218,9 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">19&quot;</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">22&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
-            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">38&quot;</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">35&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
