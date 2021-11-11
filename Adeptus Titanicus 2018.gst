@@ -12403,8 +12403,8 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="091a-4ee0-87cd-92b3" name="3 Defiant Warrior" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="6ea2-2d42-11dd-f3a6" name="3 Defiant Warrior" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
-                      <description>If the Princeps Seniores&apos; Titan&apos;s void shields have collapsed, Hit rolls of I for its attacks can be re-rolled. </description>
+                    <rule id="6ea2-2d42-11dd-f3a6" name="3 Defiant Warrior" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
+                      <description>If the Princeps Seniores’ Titan has a Void Shield level of X, it may re-roll any Hit rolls of a 1 when making an attack.</description>
                     </rule>
                   </rules>
                   <costs>
