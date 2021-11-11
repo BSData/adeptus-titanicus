@@ -4815,14 +4815,15 @@ of its bolter or missile weapons, and may ignore the effects of the Draining tra
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus (Storm Lords)" publicationId="975a-00f4-pubN65537" page="92" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus (Storm Lords)" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="0e6c-1950-20a3-f0ae" name="Glory in Death" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
-          <description>Before making a Catastrophic Damage roll for a Legio Tempestus Titan, make a Command check for it.  If the test is passed, the Titan can immediatly attack with on eof its weapons (following the Combat Sequence) or with all of its weapons if the test is passed by 3 or more.</description>
+        <rule id="0e6c-1950-20a3-f0ae" name="Glory in Death" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
+          <description>Before making a Catastrophic Damage roll for a Legio Tempestus Titan, the controlling player may make a Command check for the Titan.  If the check is passed, the Titan may immediately make an attack with one of its weapons, chosen by the controlling player; if the check is passed by 3 or more, the Titan immediately attacks with all of its weapons instead.
+
+Subtract 1 from all Hit rolls for attacks made in this way. After resolving any attacks, roll on the Catastrophic Damage table as normal.</description>
         </rule>
-        <rule id="f9ba-465a-7aaa-e466" name="Fury of the Machine" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
-          <description>When making an Awakened Machine Spiriti roll for a Legio Tempestus Titna, re-roll any results of 1,2 or 3.  IF the re-roll is a 1,2 or 3, the result stands
-                    </description>
+        <rule id="f9ba-465a-7aaa-e466" name="Fury of the Machine" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
+          <description>Once per round, when firing a weapon, a Legio Tempestus Titan that has one or more points of Critical Damage may add 1 to the Strength value of that weapon; the weapon must have a Strength value of 4 or higher, and the Strength value cannot be increased above 10. This can be used in conjunction with Glory In Death.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4972,15 +4973,15 @@ it is required to roll a Reactor dice during the first and second round of the g
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="08c7-5efe-0712-c420" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="08c7-5efe-0712-c420" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" publicationId="3401-191e-1333-8a1d" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="dd46-08dc-7ea5-12b3" name="Chasmata Turbo Laser Destructor" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="dd46-08dc-7ea5-12b3" name="Chasmata Turbo Laser Destructor" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">21&quot;</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">24&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
-            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">38&quot;</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">35&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
@@ -5142,15 +5143,15 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8fee-61b8-1c39-b9ee" name="=Tempestus= Chasmata Turbo Laser Destructor [WHD]" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="8fee-61b8-1c39-b9ee" name="=Tempestus= Chasmata Turbo Laser Destructor [WH]" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="7838-8984-7946-069e" name="Chasmata Turbo Laser Destructor" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="7838-8984-7946-069e" name="Chasmata Turbo Laser Destructor" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">19&quot;</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">22&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
-            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">38&quot;</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">35&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
@@ -5176,15 +5177,15 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2699-bb53-cff4-a864" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="2699-bb53-cff4-a864" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="1253-3d06-27b8-28e7" name="Paired Chasmata Pattern Turbo Laser Destructor" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="1253-3d06-27b8-28e7" name="Paired Chasmata Pattern Turbo Laser Destructor" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">21&quot;</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">24&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
-            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">38&quot;</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">35&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
@@ -5218,9 +5219,9 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">19&quot;</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">22&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
-            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">38&quot;</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">35&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
@@ -5248,15 +5249,15 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="01e4-e3f5-4396-d5c4" name="=Tempestus= Chasmata Laser Blaster" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="01e4-e3f5-4396-d5c4" name="=Tempestus= Chasmata Laser Blaster" publicationId="3401-191e-1333-8a1d" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="769f-b83a-baec-2e03" name="Chasmata Laser Blaster" publicationId="975a-00f4-pubN65537" page="92" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="769f-b83a-baec-2e03" name="Chasmata Laser Blaster" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">19&quot;</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">22&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
-            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">38&quot;</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">35&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
@@ -12365,7 +12366,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="9fe9-64c5-cf2f-c134" name="Legio Tempestus" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="9fe9-64c5-cf2f-c134" name="Legio Tempestus" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -12391,8 +12392,8 @@ may immediately make a single attack with any of its non-disabled weapons agains
               <selectionEntries>
                 <selectionEntry id="13db-d26b-d90b-aeeb" name="2 Storm-born" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="ec1e-be84-ea60-47dc" name="2 Storm-born" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
-                      <description>When a Titan in the Princeps Seniores&apos; maniple that has Charge orders moves in the Movement phase, it uses its boosted Speed value without having to push its reactor.</description>
+                    <rule id="ec1e-be84-ea60-47dc" name="2 Storm-born" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
+                      <description>While the Princeps Seniores is on the battlefield, a Titan within the same maniple (including the Princeps Seniores’ Titan) issued with a Charge Order may declare Power to Locomotors without pushing its Reactor.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -12402,8 +12403,8 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="091a-4ee0-87cd-92b3" name="3 Defiant Warrior" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="6ea2-2d42-11dd-f3a6" name="3 Defiant Warrior" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
-                      <description>If the Princeps Seniores&apos; Titan&apos;s void shields have collapsed, Hit rolls of I for its attacks can be re-rolled. </description>
+                    <rule id="6ea2-2d42-11dd-f3a6" name="3 Defiant Warrior" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
+                      <description>If the Princeps Seniores’ Titan has a Void Shield level of X, it may re-roll any Hit rolls of a 1 when making an attack.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -12413,9 +12414,8 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="4a82-4b8f-9531-21bd" name="1 Adamantium Resolve" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="357c-0e14-ca0f-f8ef" name="1 Adamantium Resolve" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
-                      <description>Once per battle, at any point, the controlling player can remove Shutdown orders from the Princeps Seniores&apos; Titan, even as the Shutdown order is issued,
-effectively cancelling it.</description>
+                    <rule id="357c-0e14-ca0f-f8ef" name="1 Adamantium Resolve" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
+                      <description>Once per battle, when the Princeps fails a Command check, they may instead choose to pass it.</description>
                     </rule>
                   </rules>
                   <costs>
