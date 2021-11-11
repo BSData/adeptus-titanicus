@@ -12392,8 +12392,8 @@ may immediately make a single attack with any of its non-disabled weapons agains
               <selectionEntries>
                 <selectionEntry id="13db-d26b-d90b-aeeb" name="2 Storm-born" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="ec1e-be84-ea60-47dc" name="2 Storm-born" publicationId="975a-00f4-pubN65537" page="92" hidden="false">
-                      <description>When a Titan in the Princeps Seniores&apos; maniple that has Charge orders moves in the Movement phase, it uses its boosted Speed value without having to push its reactor.</description>
+                    <rule id="ec1e-be84-ea60-47dc" name="2 Storm-born" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
+                      <description>While the Princeps Seniores is on the battlefield, a Titan within the same maniple (including the Princeps Seniores’ Titan) issued with a Charge Order may declare Power to Locomotors without pushing its Reactor.</description>
                     </rule>
                   </rules>
                   <costs>
