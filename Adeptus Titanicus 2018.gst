@@ -4818,7 +4818,9 @@ of its bolter or missile weapons, and may ignore the effects of the Draining tra
     <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus (Storm Lords)" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="0e6c-1950-20a3-f0ae" name="Glory in Death" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-          <description>Before making a Catastrophic Damage roll for a Legio Tempestus Titan, make a Command check for it.  If the test is passed, the Titan can immediatly attack with on eof its weapons (following the Combat Sequence) or with all of its weapons if the test is passed by 3 or more.</description>
+          <description>Before making a Catastrophic Damage roll for a Legio Tempestus Titan, the controlling player may make a Command check for the Titan.  If the check is passed, the Titan may immediately make an attack with one of its weapons, chosen by the controlling player; if the check is passed by 3 or more, the Titan immediately attacks with all of its weapons instead.
+
+Subtract 1 from all Hit rolls for attacks made in this way. After resolving any attacks, roll on the Catastrophic Damage table as normal.</description>
         </rule>
         <rule id="f9ba-465a-7aaa-e466" name="Fury of the Machine" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
           <description>When making an Awakened Machine Spiriti roll for a Legio Tempestus Titna, re-roll any results of 1,2 or 3.  IF the re-roll is a 1,2 or 3, the result stands
