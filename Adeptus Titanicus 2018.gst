@@ -12245,7 +12245,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="1f4b-4c4a-456c-0ea9" name="2 World Burner" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="8d7a-c70e-0715-f6fd" name="2 World Burner" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+                    <rule id="8d7a-c70e-0715-f6fd" name="2 World Burner" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
                       <description>Once per round, during the Combat phase, the Princeps’ Titan may fire one of their Inferno Guns or Melta Cannon twice during its activation. If they do so, the weapon gains the Draining trait for the second attack.</description>
                     </rule>
                   </rules>
