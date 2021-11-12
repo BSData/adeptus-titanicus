@@ -11447,8 +11447,8 @@ when making Repair actions. </comment>
               <selectionEntries>
                 <selectionEntry id="ecdb-030a-8429-f898" name="2 World Bane" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="3f07-3d59-8c37-0b54" name="2 World Bane" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
-                      <description>Any Blocking terrain destroyed by the Princeps&apos; Titan becomes Dangerous terrain (see page 43 of the Adeptus Titanicus rulebook) if it was not already.</description>
+                    <rule id="3f07-3d59-8c37-0b54" name="2 World Bane" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
+                      <description>Any Blocking terrain destroyed by the Princeps’ Titan becomes Dangerous terrain (see the Adeptus Titanicus rulebook) if it was not already. If the optional rules for destroying terrain are not in use and this Personal Trait is randomly chosen, the controlling player may instead choose a different Personal Trait from this table.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -11458,8 +11458,8 @@ when making Repair actions. </comment>
                 </selectionEntry>
                 <selectionEntry id="1f67-1084-21b4-e26b" name="3 Path of Iron" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="5d0c-6c38-4a27-0620" name="3 Path of Iron" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
-                      <description>The Princeps may make a single Smash Attack (see page 36 of the Adeptus Titanicus rulebook) during the Movement phase, provided it is against an enemy model of Scale 3 or less. Stop the Titan when it comes within range of its target and resolve the attack, then complete its movement as normal. When making these kinds of Smash Attacks, rhe Titan may move through models of Scale 3 or less, provided chat they can completely cross the enemy model&apos;s base. This attack does not prohibit the Titan from making attacks in the following Combat phase. </description>
+                    <rule id="5d0c-6c38-4a27-0620" name="3 Path of Iron" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
+                      <description>ThePrinceps Seniores’ may make a single Smash Attack (see the Adeptus Titanicus rulebook) during the Movement phase, provided it is against an enemy model of a lower Scale than itself. Stop the Titan when it comes within range of its target and resolve the attack, then complete its movement as normal. When making these kinds of Smash Attacks, the Titan may move through models of Scale 3 or less, provided that they can completely cross the enemy model’s base. This attack does not prohibit the Titan from making attacks in the following Combat phase.</description>
                     </rule>
                   </rules>
                   <costs>
