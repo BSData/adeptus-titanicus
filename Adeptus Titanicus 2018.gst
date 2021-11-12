@@ -4501,7 +4501,7 @@ The fire then goes out.</description>
     </selectionEntry>
     <selectionEntry id="0d56-2ed6-8229-739e" name="=Fureans= Hunting Auspex" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="ec54-b467-379f-8edf" name="Hunting Auspex" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
+        <rule id="ec54-b467-379f-8edf" name="Hunting Auspex" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
           <description>Any Legio Fureans Titan may take a Hunting Auspex upgrade for +20 points. When making a ranged attack at over 12” away, a Legio Fureans Titan equipped with a Hunting Auspex may reduce any penalty to Hit by 1, to a minimum of 0.</description>
         </rule>
       </rules>
@@ -4942,11 +4942,13 @@ In addition, when fielding a Fortis maniple, a Legio Krytos player may take a si
     </selectionEntry>
     <selectionEntry id="1a92-f760-bf0e-ce26" name="Legio Fureans (Tiger Eyes)" publicationId="975a-00f4-pubN87630" page="49" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="ae03-90bb-549c-18cc" name="Machine Rage" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
-          <description>When rolling the Reactor dice (see page 43 of the Adeptus Titanicus rulebook) a Tiger Eyes player counds both the Machine Spirit symbol and the blank facing on the dice as a trigger for awakening their Titan&apos;s machine spirit.  However, if a Tiger Eyes player fails the Command check to quell the machine spirit, they may choose the result from the Awakened Machine Spirit table, rather than rolling randomly</description>
+        <rule id="ae03-90bb-549c-18cc" name="Machine Rage" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
+          <description>When rolling the Reactor dice (see page 43 of the Adeptus Titanicus rulebook) a Tiger Eyes player counds both the Machine Spirit symbol and the blank facing on the dice as a trigger for awakening their Titan&apos;s machine spiri; the blank face does not increase the Reactor level.
+However, if a Tiger Eyes player fails the Command check to quell the machine spirit, they may choose the result from the Awakened Machine Spirit table, rather than rolling randomly
+If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Entity table when called upon to do so, and chooses one of the results.</description>
         </rule>
-        <rule id="3956-1d81-32e8-2797" name="Many Faces of the Omnissiah" publicationId="25e8-c9ce-9330-c53b" page="50" hidden="false">
-          <description>In the first round of the game, any Tiger Eyes TItan may choose to forgo its activation in either the Movement phase and/or the Combat phase - in essence doing nothing for that phase but counting as one of the Tiger Eyes Player&apos;s activiations.  For each phase sacrificed by a Titan, either 1 or2, that Titan may re-roll any one dice later in the game.</description>
+        <rule id="3956-1d81-32e8-2797" name="Many Faces of the Omnissiah" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
+          <description>In the first round of the game, any Tiger Eyes TItan may choose to forgo its activation in either the Movement phase and/or the Combat phase - in essence doing nothing for that phase but counting as one of the Tiger Eyes Player&apos;s activiations.  For each phase sacrificed by a Titan, either 1 or2, that Titan may re-roll any one dice later in the game. A Titan chooses if it is sacrificing its phase when activated in that phase.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -11528,7 +11530,7 @@ lower, increase the Strength of any hits by 2. </comment>
               <selectionEntries>
                 <selectionEntry id="485e-495f-546f-d08d" name="2 Humardu Savage" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="2f2e-f9ad-b145-c0e7" name="2 Humardu Savage" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
+                    <rule id="2f2e-f9ad-b145-c0e7" name="2 Humardu Savage" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
                       <description>When the Princeps Seniores Titan makes a Smash Attack (see page 36 of the Adeptus Titanicus rulebook), add 2 to the Strength of the attack.</description>
                     </rule>
                   </rules>
@@ -11539,8 +11541,8 @@ lower, increase the Strength of any hits by 2. </comment>
                 </selectionEntry>
                 <selectionEntry id="09eb-ba65-24fc-19ab" name="3 Trophy Taker" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="8046-e643-bf4c-dfe3" name="3 Trophy Taker" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
-                      <description>Any weapon disabled by the Tiger Eyes Princeps using a Smash Attack, or a weapon with the Melee trait, is harder to repair; these require a dice score 1 higher than normal when making Repair actions. </description>
+                    <rule id="8046-e643-bf4c-dfe3" name="3 Trophy Taker" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
+                      <description>Any weapon disabled or Critical Damage caused by the Tiger Eyes Princeps using a Smash Attack, or a weapon with the Melee trait, is harder to repair; these require a dice score 1 higher than normal when making Repair actions. </description>
                     </rule>
                   </rules>
                   <costs>
@@ -11550,8 +11552,8 @@ lower, increase the Strength of any hits by 2. </comment>
                 </selectionEntry>
                 <selectionEntry id="1912-ef0f-15c1-16a1" name="1 Titan Stalker" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="49ab-f109-ce94-dba0" name="1 Titan Stalker" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
-                      <description>When targeting a Titan that is within 12&apos;&apos;, the Princeps Seniores may add r to the Armour rolls of any hits, provided that the targeted Titan has a Scale either equal to or greater than their own.
+                    <rule id="49ab-f109-ce94-dba0" name="1 Titan Stalker" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
+                      <description>When targeting a Titan that is within 8&apos;&apos;, the Princeps Seniores may add 1 to the Armour rolls of any hits, provided that the targeted Titan has a Scale either equal to or greater than their own.
 </description>
                     </rule>
                   </rules>
