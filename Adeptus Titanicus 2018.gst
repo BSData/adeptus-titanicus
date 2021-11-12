@@ -4947,8 +4947,8 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
     </selectionEntry>
     <selectionEntry id="7093-f8b3-b5f9-d38d" name="Legio Vulpa (Death Stalkers)" publicationId="975a-00f4-pubN87630" page="54" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="36fb-e4f2-82f5-8ba3" name="Honour and Blood" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
-          <description>A Death Stalkers Titan that is within 3&quot; of an enemy Titan increases its Weapons Skill by 1 an decreases its Ballistic Skill by 1</description>
+        <rule id="36fb-e4f2-82f5-8ba3" name="Honour and Blood" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
+          <description>A Death Stalkers Titan that is within 3&quot; of an enemy Titan, increases its Weapons Skill by 1 an decreases its Ballistic Skill by 1, to a maximum of 2+, and decrease its Ballistic Skill by 1, to a minimum of 6+.</description>
         </rule>
       </rules>
       <categoryLinks>
