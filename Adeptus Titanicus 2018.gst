@@ -4322,8 +4322,8 @@ The fire then goes out.</description>
     </selectionEntry>
     <selectionEntry id="4c8f-29c9-0c8e-67b6" name="=Krytos= Earthbreaker Missiles" publicationId="975a-00f4-pubN87630" page="45" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="107c-7e05-bf9d-8946" name="Earthbreaker Missiles" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
-          <description>Any Legio Krytos Titan with an Apocalypse Missile Launchers may take Earthbreaker pattern missiles as an upgrade, +20points on a Warlord Titan, +10points on a Reaver. When firing the Titan’s Apocalypse missile launchers, the player may choose to use either normal profile missiles or Earthbreaker missiles. Earthbreaker missiles reduce dice to 2 for a Warlord Titan and to 1 for a Reaver Titan. They have the added trait of Quake and increase their strength by +5 when resolving damage against terrain.</description>
+        <rule id="107c-7e05-bf9d-8946" name="Earthbreaker Missiles" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
+          <description>A Legio Krytos Warlord or Reaver Titan that is equipped with Apocalypse missile launchers or an Apocalypse missile launcher can take Earthbreaker missiles as an upgrade for +25 points for a Warlord Titan and +15 points for a Reaver Titan. When firing the Titan’s Apocalypse missile launchers, the player can choose to either use its normal profile, or reduce its Dice value to 4 for a Warlord Titan, or 2 for a Reaver Titan, and give it the Quake trait. Earthbreaker missiles increase their Strength by 5 when resolving damage against terrain</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4925,8 +4925,10 @@ it is required to roll a Reactor dice during the first and second round of the g
     </selectionEntry>
     <selectionEntry id="bffc-4266-a83d-cae6" name="Legio Krytos (God Breakers)" publicationId="975a-00f4-pubN87630" page="44" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="939f-b862-cf87-5c7b" name="Doom of Worlds" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
-          <description>When fielding a Myrmidon maniple (see page 59 of the Adeptus Titanicus rulebook) a Legio Krytos player may take a Warlord TItan in place of a Reaver Titan as part of the maniple&apos;s mandatory components.</description>
+        <rule id="939f-b862-cf87-5c7b" name="Doom of Worlds" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
+          <description>When fielding an Axiom maniple or Myrmidon maniple, a Legio Krytos player may take a Warlord Titan in place of a Reaver Titan as part of the maniple’s mandatory components.
+When fielding a Regia maniple or Precept maniple, a Legio Krytos maniple may take a Warbringer Nemesis Titan in place of a Warhound as part of its mandatory components. When a Warbringer Nemesis Titan is substituted into a Regia maniple in this way, Courtiers can merge their void shields with it as if the Warbringer were a King or Queen.
+In addition, when fielding a Fortis maniple, a Legio Krytos player may take a single Warlord Titan and/or a single Warbringer Nemesis Titan in place of a Reaver Titan as part of the maniple’s mandatory components.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -9357,6 +9359,21 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
+        <profile id="d5ca-a1c9-d50a-2335" name="Earthshaker Missiles [WL]" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Carapace, Paired, Quake</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="8f47-93ad-0ac9-6064" name="New CategoryLink" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
@@ -9541,7 +9558,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
     </selectionEntry>
     <selectionEntry id="54d9-e1d5-30b0-c357" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="531c-4242-6420-d01e" name="Apocalypse Missile Launcher" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="3221-7395-d057-b52d" name="Apocalypse Missile Launcher" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">5</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
@@ -9553,6 +9570,21 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Carapace</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+        <profile id="d57b-9161-2996-9145" name="Earthshaker Missiles [RVR]" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Carapace, Quake</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -11415,8 +11447,8 @@ when making Repair actions. </comment>
               <selectionEntries>
                 <selectionEntry id="ecdb-030a-8429-f898" name="2 World Bane" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="3f07-3d59-8c37-0b54" name="2 World Bane" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
-                      <description>Any Blocking terrain destroyed by the Princeps&apos; Titan becomes Dangerous terrain (see page 43 of the Adeptus Titanicus rulebook) if it was not already.</description>
+                    <rule id="3f07-3d59-8c37-0b54" name="2 World Bane" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
+                      <description>Any Blocking terrain destroyed by the Princeps’ Titan becomes Dangerous terrain (see the Adeptus Titanicus rulebook) if it was not already. If the optional rules for destroying terrain are not in use and this Personal Trait is randomly chosen, the controlling player may instead choose a different Personal Trait from this table.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -11426,8 +11458,8 @@ when making Repair actions. </comment>
                 </selectionEntry>
                 <selectionEntry id="1f67-1084-21b4-e26b" name="3 Path of Iron" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="5d0c-6c38-4a27-0620" name="3 Path of Iron" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
-                      <description>The Princeps may make a single Smash Attack (see page 36 of the Adeptus Titanicus rulebook) during the Movement phase, provided it is against an enemy model of Scale 3 or less. Stop the Titan when it comes within range of its target and resolve the attack, then complete its movement as normal. When making these kinds of Smash Attacks, rhe Titan may move through models of Scale 3 or less, provided chat they can completely cross the enemy model&apos;s base. This attack does not prohibit the Titan from making attacks in the following Combat phase. </description>
+                    <rule id="5d0c-6c38-4a27-0620" name="3 Path of Iron" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
+                      <description>ThePrinceps Seniores’ may make a single Smash Attack (see the Adeptus Titanicus rulebook) during the Movement phase, provided it is against an enemy model of a lower Scale than itself. Stop the Titan when it comes within range of its target and resolve the attack, then complete its movement as normal. When making these kinds of Smash Attacks, the Titan may move through models of Scale 3 or less, provided that they can completely cross the enemy model’s base. This attack does not prohibit the Titan from making attacks in the following Combat phase.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -11437,9 +11469,8 @@ when making Repair actions. </comment>
                 </selectionEntry>
                 <selectionEntry id="0e62-2249-1a97-f681" name="1 Godlike Contempt" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="0813-a80c-9ea2-3090" name="1 Godlike Contempt" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
-                      <description>The Princeps thinks little of the units chat support their maniple, and even smaller Titans are of only passing concern to them. The Princeps&apos; Titan may still make Command checks if a Knight Banner or a Titan with a smaller Scale than that of the Princeps Titan has failed its Command check.
-</description>
+                    <rule id="0813-a80c-9ea2-3090" name="1 Godlike Contempt" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
+                      <description>ThePrinceps’ Titan may still make Command checks even if another friendly unit has already failed its Command check.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -13411,12 +13442,12 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="a731-e220-2d8a-41bf" value="10.0">
+            <modifier type="set" field="a731-e220-2d8a-41bf" value="15.0">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d36f-5e44-2150-3428" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="a731-e220-2d8a-41bf" value="20.0">
+            <modifier type="set" field="a731-e220-2d8a-41bf" value="25.0">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7103-9316-d4a5-8caa" type="instanceOf"/>
               </conditions>
