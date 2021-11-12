@@ -5522,7 +5522,7 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
     </selectionEntry>
     <selectionEntry id="bd79-8c5d-3949-d89d" name="Legio Infernus (Fire Masters)" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="bd9d-832a-2eb6-b358" name="Masters of Flame" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+        <rule id="bd9d-832a-2eb6-b358" name="Masters of Flame" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
           <description>When making an attack with a Firestorm weapon, a Legio Infernus Titan may place the narrowest end of the Flame template within 2” of the firing weapon instead of just touching it. Both the narrowest end and the centre of the wide end must be within the weapon’s firing arc.</description>
         </rule>
       </rules>
