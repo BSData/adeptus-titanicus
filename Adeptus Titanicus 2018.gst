@@ -4649,10 +4649,10 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7689-d32b-cef1-edf0" name="=Infernus= Dark Blessing" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="7689-d32b-cef1-edf0" name="=Infernus= Dark Blessing" page="" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="397d-915b-8316-8a8d" name="Dark Blessing" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
-          <description>Any Legio Infernus Titan can take Dark Blessing for +5 points. Once per round, a Titan with this upgrade can re-roll a single dice. However, a Titan with this upgrade suffers a -1 modifier to any command check made when issuing Orders.</description>
+        <rule id="397d-915b-8316-8a8d" name="Dark Blessing" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
+          <description>The maximum number of Additional Mutations a Legio Infernus Corrupted Titan can purchase  is increased by 1.</description>
         </rule>
       </rules>
       <categoryLinks>
