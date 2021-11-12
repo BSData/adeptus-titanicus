@@ -13315,6 +13315,9 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
           <description>Any Traitor Titan can be upgraded with Marks of Conquest for +10 points. Any visible enemy Titan within 10&quot; of a Titan with this upgrade subtracts 1 from the result of any Command checks it makes.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -13827,7 +13830,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
