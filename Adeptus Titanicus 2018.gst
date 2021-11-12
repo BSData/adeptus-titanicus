@@ -4292,8 +4292,8 @@ targets (within the weapon’s firing arc, within range etc). Each target counts
     </selectionEntry>
     <selectionEntry id="630d-8221-b41f-1255" name="=Interfector= Static Rounds" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a116-9b12-9332-9dc7" name="Static Rounds" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
-          <description>Any Legio Interfector Titan Reaver or Warhound Titan armed with a Vulcan Mega-bolter may take static rounds for +15 points. A Titan equipped with static rounds uses a modified version if the Rapid trait when firing its Vulcan Mega-boler. Against a target with active void shields, each Hit roll of 5 or 6 causes 2 hits rather than 1. If a roll of 6 To Hit was required, this rule has no effect. Static rounds have no additional effects against targets without active void shields, although the weapon will retain the normal effects of the Rapid trait.</description>
+        <rule id="a116-9b12-9332-9dc7" name="Static Rounds" publicationId="bf8b-27d7-039e-5df9" page="81" hidden="false">
+          <description>Any Legio Interfector Titan Reaver or Warhound Titan armed with a Vulcan Mega-bolter may take static rounds for +15 points. A Titan equipped with static rounds uses a modified version if the Rapid trait when firing its Vulcan Mega-bolter. Against a target with active void shields, each Hit roll of 5 or 6 causes 2 hits rather than 1. If a roll of 6 To Hit was required, this rule has no effect. Static rounds have no additional effects against targets without active void shields, although the weapon will retain the normal effects of the Rapid trait.</description>
         </rule>
       </rules>
       <categoryLinks>
