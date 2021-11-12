@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="40" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="https://gitter.im/BSData/adeptus-titanicus" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="41" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Gryphonicus : Select your replacement titans from the Maniple level options.  We are working to clean up how you choose replacement titans.</readme>
   <publications>
@@ -8706,6 +8706,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         </entryLink>
         <entryLink id="78aa-e114-838d-a41b" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="ffab-831a-9c60-823a" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink id="53c0-a1cd-f7e8-eb5a" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
@@ -8825,6 +8826,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         </entryLink>
         <entryLink id="d423-0b55-e2dc-5814" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="390c-cf74-a2a8-27c1" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink id="b0c5-f29e-c8fb-9c63" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="385.0"/>
@@ -8939,6 +8941,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         </entryLink>
         <entryLink id="b8b1-c93b-014e-44ce" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="7046-1472-1c31-4540" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink id="d706-586f-da3d-d4d7" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="180.0"/>
@@ -10402,6 +10405,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="73ce-e513-8b62-aaca" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
         <entryLink id="b65c-9738-14e6-5ffc" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="4d5a-c123-302f-107e" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink id="efd6-6e25-6902-ee37" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="850.0"/>
@@ -13266,6 +13270,55 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="90bf-5637-cc2d-6098" name="Immateria Ward" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e286-d9db-3150-5f55" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5ac6-ccdb-ae18-cbbc" name="Immateria Ward" publicationId="bf8b-27d7-039e-5df9" page="171" hidden="false">
+          <description>Any Traitor Titan can be upgraded with an Immateria Ward for +20 points. A Titan with this upgrade counts as a Corrupted Titan for the purposes of determining if it is affected by a mutation. For example, a Titan with this upgrade is not affected by the Corrupting Presence Base Mutation. It does not count as a Corrupted Titan for any other reason. In addition, attacks made against a Titan with this upgrade by a weapon with the Psi trait reduce their Strength by 1.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ae4c-fe6c-3b47-c673" name="Corrosive Payload" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a351-869b-2725-02f3" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="a3be-83a8-192e-9e28" name="Corrosive Payload" publicationId="bf8b-27d7-039e-5df9" page="171" hidden="false">
+          <description>Any Traitor Titan equipped with a weapon with the Ordnance or Rapid trait can be upgraded with a Corrosive Payload for a cost equal to a points cost of 5 x the weapon’s Dice value (e.g., a Warhound’s Vulcan mega-bolter would be +30 points), so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Once per game, a weapon with this upgrade can fire its Corrosive Payload. When it does so, add 1 to all Armour rolls for that attack.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="a00e-f16d-89bf-b013" name="Unholy Benedictions" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f2-92f3-a0f9-5908" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8518-de98-d090-bf17" name="Unholy Benedictions" publicationId="bf8b-27d7-039e-5df9" page="171" hidden="false">
+          <description>Any Traitor Titan can be upgraded with Unholy Benedictions for +15 points. Once per game, a Titan with this upgrade can reroll a single dice roll – if more than one dice was rolled, all dice must be re-rolled. Placing a marker on the Titan’s Command Terminal as a reminder of this upgrade is useful and the marker should be removed once the upgrade has been used. Until it uses its re-roll, a Titan with this upgrade subtracts 1 from the result of all Command checks it makes.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="77b8-5cd1-45ed-9335" name="Marks of Conquest" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="186a-e0af-e0e8-4ae3" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="6fb6-add7-a17f-9008" name="Marks of Conquest" publicationId="bf8b-27d7-039e-5df9" page="171" hidden="false">
+          <description>Any Traitor Titan can be upgraded with Marks of Conquest for +10 points. Any visible enemy Titan within 10&quot; of a Titan with this upgrade subtracts 1 from the result of any Command checks it makes.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -13751,7 +13804,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -13777,10 +13830,15 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink id="8e53-11ef-b29c-8a47" name="Immateria Ward" hidden="false" collective="false" import="true" targetId="90bf-5637-cc2d-6098" type="selectionEntry"/>
+        <entryLink id="355b-decd-8ccd-4ac7" name="Marks of Conquest" hidden="false" collective="false" import="true" targetId="77b8-5cd1-45ed-9335" type="selectionEntry"/>
+        <entryLink id="ecf5-23d8-1941-761c" name="Unholy Benedictions" hidden="false" collective="false" import="true" targetId="a00e-f16d-89bf-b013" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
