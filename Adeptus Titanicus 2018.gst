@@ -12256,7 +12256,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="f117-1000-346e-c428" name="1 Butcher" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="cb59-a10f-dfd8-139c" name="1 Butcher" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+                    <rule id="cb59-a10f-dfd8-139c" name="1 Butcher" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
                       <description>When the Princeps’ Titan is activated during the Strategy phase, they can work themselves into a frenzy – this counts as their activation for that phase. If they do so, they can re-roll all Hit rolls of a 1 until the end of the round.</description>
                     </rule>
                   </rules>
