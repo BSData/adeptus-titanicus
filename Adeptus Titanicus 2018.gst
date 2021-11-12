@@ -11586,7 +11586,7 @@ lower, increase the Strength of any hits by 2. </comment>
                 </selectionEntry>
                 <selectionEntry id="12d5-5294-65fe-d7b2" name="3 Cruel" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="50b6-5a4f-4762-d37f" name="3 Cruel" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
+                    <rule id="50b6-5a4f-4762-d37f" name="3 Cruel" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
                       <description>When making attacks against units with a Scale of 5 or lower, increase the Strength of any hits by 2. </description>
                     </rule>
                   </rules>
