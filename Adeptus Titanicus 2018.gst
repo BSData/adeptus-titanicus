@@ -4636,8 +4636,8 @@ The fire then goes out.</description>
     </selectionEntry>
     <selectionEntry id="2133-4929-2061-f585" name="=Infernus= Clinging Phosphex" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="c863-1c58-e8a4-710f" name="=Infernus= Clinging Phosphex" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
-          <description>Any Legio Infernus Titan that is equipped with an Inferno Gun can take Clinging Phosphex for +20 points. When firing the Titan Inferno Gun, targets other than the one closest to the firing unit take 2 hits instead of 1.</description>
+        <rule id="c863-1c58-e8a4-710f" name="=Infernus= Clinging Phosphex" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
+          <description>Any Legio Infernus Titan that is equipped with an Inferno Gun can take Clinging Phosphex for +20 points. Each weapon a Titan is armed with must be upgraded separately. When firing the Titan Inferno Gun, targets other than the one closest to the firing unit take 2 hits instead of 1.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4645,14 +4645,14 @@ The fire then goes out.</description>
         <categoryLink id="fa51-6f90-b122-7583" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7689-d32b-cef1-edf0" name="=Infernus= Dark Blessing" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="7689-d32b-cef1-edf0" name="=Infernus= Dark Blessing" page="" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="397d-915b-8316-8a8d" name="Dark Blessing" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
-          <description>Any Legio Infernus Titan can take Dark Blessing for +5 points. Once per round, a Titan with this upgrade can re-roll a single dice. However, a Titan with this upgrade suffers a -1 modifier to any command check made when issuing Orders.</description>
+        <rule id="397d-915b-8316-8a8d" name="Dark Blessing" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
+          <description>The maximum number of Additional Mutations a Legio Infernus Corrupted Titan can purchase  is increased by 1.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5522,7 +5522,7 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
     </selectionEntry>
     <selectionEntry id="bd79-8c5d-3949-d89d" name="Legio Infernus (Fire Masters)" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="bd9d-832a-2eb6-b358" name="Masters of Flame" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+        <rule id="bd9d-832a-2eb6-b358" name="Masters of Flame" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
           <description>When making an attack with a Firestorm weapon, a Legio Infernus Titan may place the narrowest end of the Flame template within 2” of the firing weapon instead of just touching it. Both the narrowest end and the centre of the wide end must be within the weapon’s firing arc.</description>
         </rule>
       </rules>
@@ -12234,7 +12234,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
               <selectionEntries>
                 <selectionEntry id="47e1-cf97-7ff6-a72d" name="3 Methodical" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="cf62-1f00-c06c-6cc4" name="3 Methodical" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+                    <rule id="cf62-1f00-c06c-6cc4" name="3 Methodical" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
                       <description>Once per game, during the Strategy phase, when the Princeps’ Titan is successfully issued a First Fire order, any other Titan in the maniple can be issued the same order without the need for a Command check.</description>
                     </rule>
                   </rules>
@@ -12245,7 +12245,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="1f4b-4c4a-456c-0ea9" name="2 World Burner" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="8d7a-c70e-0715-f6fd" name="2 World Burner" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+                    <rule id="8d7a-c70e-0715-f6fd" name="2 World Burner" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
                       <description>Once per round, during the Combat phase, the Princeps’ Titan may fire one of their Inferno Guns or Melta Cannon twice during its activation. If they do so, the weapon gains the Draining trait for the second attack.</description>
                     </rule>
                   </rules>
@@ -12256,7 +12256,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="f117-1000-346e-c428" name="1 Butcher" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="cb59-a10f-dfd8-139c" name="1 Butcher" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+                    <rule id="cb59-a10f-dfd8-139c" name="1 Butcher" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
                       <description>When the Princeps’ Titan is activated during the Strategy phase, they can work themselves into a frenzy – this counts as their activation for that phase. If they do so, they can re-roll all Hit rolls of a 1 until the end of the round.</description>
                     </rule>
                   </rules>
@@ -13281,6 +13281,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ae4c-fe6c-3b47-c673" name="Corrosive Payload" hidden="false" collective="false" import="true" type="upgrade">
@@ -13292,6 +13293,10 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
           <description>Any Traitor Titan equipped with a weapon with the Ordnance or Rapid trait can be upgraded with a Corrosive Payload for a cost equal to a points cost of 5 x the weapon’s Dice value (e.g., a Warhound’s Vulcan mega-bolter would be +30 points), so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Once per game, a weapon with this upgrade can fire its Corrosive Payload. When it does so, add 1 to all Armour rolls for that attack.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a00e-f16d-89bf-b013" name="Unholy Benedictions" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -13304,6 +13309,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="77b8-5cd1-45ed-9335" name="Marks of Conquest" hidden="false" collective="false" import="true" type="upgrade">
@@ -13317,6 +13323,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
