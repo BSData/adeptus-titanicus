@@ -12752,6 +12752,28 @@ If the Princeps’ Titan is a Corrupted Titan, it instead rolls two dice, re-rol
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="0344-beef-f7b1-3b31" name="2 Pitiless" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="1944-e737-5f28-341e" name="2 Pitiless" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
+                      <description>ThePrinceps’ Titan adds 1 to the Strength of its weapons when targeting an enemy Titan that has suffered at least one point of Critical Damage.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9ebe-bd7d-709b-85b8" name="3 Ancient of Terra" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="fb94-4a05-6553-b5a6" name="3 Ancient of Terra" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
+                      <description>When the Princeps’ Titan must roll on the Reactor Overload table, only ever roll a D6, even if the Reactor Status marker is in a red hole.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
