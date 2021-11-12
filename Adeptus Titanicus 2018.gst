@@ -4636,8 +4636,8 @@ The fire then goes out.</description>
     </selectionEntry>
     <selectionEntry id="2133-4929-2061-f585" name="=Infernus= Clinging Phosphex" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="c863-1c58-e8a4-710f" name="=Infernus= Clinging Phosphex" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
-          <description>Any Legio Infernus Titan that is equipped with an Inferno Gun can take Clinging Phosphex for +20 points. When firing the Titan Inferno Gun, targets other than the one closest to the firing unit take 2 hits instead of 1.</description>
+        <rule id="c863-1c58-e8a4-710f" name="=Infernus= Clinging Phosphex" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
+          <description>Any Legio Infernus Titan that is equipped with an Inferno Gun can take Clinging Phosphex for +20 points. Each weapon a Titan is armed with must be upgraded separately. When firing the Titan Inferno Gun, targets other than the one closest to the firing unit take 2 hits instead of 1.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4645,7 +4645,7 @@ The fire then goes out.</description>
         <categoryLink id="fa51-6f90-b122-7583" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -13281,6 +13281,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ae4c-fe6c-3b47-c673" name="Corrosive Payload" hidden="false" collective="false" import="true" type="upgrade">
@@ -13292,6 +13293,10 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
           <description>Any Traitor Titan equipped with a weapon with the Ordnance or Rapid trait can be upgraded with a Corrosive Payload for a cost equal to a points cost of 5 x the weapon’s Dice value (e.g., a Warhound’s Vulcan mega-bolter would be +30 points), so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Once per game, a weapon with this upgrade can fire its Corrosive Payload. When it does so, add 1 to all Armour rolls for that attack.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a00e-f16d-89bf-b013" name="Unholy Benedictions" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -13304,6 +13309,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="77b8-5cd1-45ed-9335" name="Marks of Conquest" hidden="false" collective="false" import="true" type="upgrade">
@@ -13317,6 +13323,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
