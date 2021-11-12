@@ -4261,8 +4261,8 @@ If the result is 25, move the reactor tracker to its leftmost hole.
     </selectionEntry>
     <selectionEntry id="f9a9-0ee9-960e-960b" name="=Vulcanum= Twinned Machine Spirits" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="60b2-ad77-9e97-d0d8" name="Twinned Machine Spirits" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
-          <description>Any two Legio Vulcanum Titans may take twinned machine spirits for +20 points each.  Legio Vulcanum Titans with twinned machine spirits count as being part of a squadron with each other (see page 45 of the Adpetus Titanicus rulebook).   However, should a Titan with a twinned machine spirit roll the Machine Spirit symbol on the Reactor dice, both it and its paried Titan must make a Command check to see if their Titan&apos;s machine spirit awakens.  Note that multiple pairs of Titans in a Legio Vulcanum Battlegroup may be equipped to have twinned machine spirits, each forming their onw swuadron of two.</description>
+        <rule id="60b2-ad77-9e97-d0d8" name="Twinned Machine Spirits" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
+          <description>Any two Legio Vulcanum Titans may upgraded with twinned machine spirits for +20 points each.  Legio Vulcanum Titans with twinned machine spirits count as being part of a squadron with each other (see page 45 of the Adpetus Titanicus rulebook) – these Titans may not join another squadron. However, should a Titan with a twinned machine spirit roll the Machine Spirit symbol on the Reactor dice, both it and its paried Titan must make a Command check to see if their Titan&apos;s machine spirit awakens.  Note that multiple pairs of Titans in a Legio Vulcanum Battlegroup may be equipped to have twinned machine spirits, each forming their onw swuadron of two. A Titan with this upgrade cannot otherwise be part of a Squadron</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4274,10 +4274,11 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3dfc-85e0-9496-60ec" name="=Vulcanum= Janus Missiles" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="3dfc-85e0-9496-60ec" name="=Vulcanum= Janus Pattern Missiles" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a8c6-6592-fa07-3c94" name="Janus Missiles" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
-          <description>Any Legio Vulcanum Titan with an Apocalypse Missile Launcher or Paired Apocalypse Missile Launchers may take Janus pattern missiles for +20points. Legio Vulcanum Titans with Janus pattern missiles may split the dice of their missile launches between more than one target as the Janus warheads disperse in flight. The titan chooses a main target for its missiles, which will either be the same target as the rest of its weapons or one of its targets if has the Split Fire order, At least one dice must then be allocated to the Titan’s main target, The rest of the missile launcher’s dice can then either be applied to the main target or any other target within 12” Of the main target, provided that they are in range and line of sight of the weapon.</description>
+        <rule id="a8c6-6592-fa07-3c94" name="Janus Pattern Missiles" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
+          <description>Any Legio Vulcanum Titan with an Apocalypse missile launcher, Apocalypse missile array or paired Apocalypse missile launchers may take Janus pattern missiles for +20points. Legio Vulcanum Titans with Janus pattern missiles may split the dice of their missile launches between more than one target as the Janus warheads disperse in flight. The titan chooses a main target for its missiles, which will either be the same target as the rest of its weapons or one of its targets if has the Split Fire order, At least one dice must then be allocated to the Titan’s main target, The rest of the missile launcher’s dice can then either be applied to the main target or any other target within 12” of the main target, provided the new target(s) are eligible
+targets (within the weapon’s firing arc, within range etc). Each target counts as a separate attack for the purpose of calculating modifiers to Hit rolls, etc.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5075,10 +5076,11 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
     </selectionEntry>
     <selectionEntry id="1d02-6c17-cd84-a92f" name="Legio Vulcanum (Dark Fire/Lords of Ruin)" publicationId="975a-00f4-pubN89746" page="23" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="54af-693f-6c06-349d" name="Two-faced God" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
-          <description>When fielding a Legio Vulcanum battlegroup, a player may nominate two Legio Vulcanum Titans to be commanded by a Princeps Seniores (see page 55 of the Adeptus Titanicus rulebook). If one of the Princeps Seniores&apos; Titans is destroyed, for the remainder of the game count the other Princeps Seniores&apos; Titan as having suffered an unrepairable Princeps Wounded damage effect. [FAQ - 1.1]</description>
+        <rule id="54af-693f-6c06-349d" name="Two-faced God" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
+          <description>When fielding a Legio Vulcanum battlegroup, a player may nominate two Legio Vulcanum Titans to be commanded by a Princeps Senioresinstead of the usual one – each Princeps Seniores gains its own Personal Trait.
+ If one of the Princeps Seniores’ Titans in a maniple is destroyed, for the remainder of the game the other Princeps Seniores’ Titan in the maniple count as having suffered an unrepairable Princeps Wounded damage effect.</description>
         </rule>
-        <rule id="9edc-dbe9-0c2f-cc75" name="For the Fallan" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
+        <rule id="9edc-dbe9-0c2f-cc75" name="For the Fallen" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
           <description>For each Legio Vulcanum Titan in the battlegroup that has been destroyed, the Legio Vulcanum player gains a single re-roll that may be used once each round.  This re-roll may be used to re-roll the result of any single dice roll made by a Vulcanum Titans.</description>
         </rule>
       </rules>
@@ -11051,7 +11053,7 @@ can be re-rolled.</description>
               <selectionEntries>
                 <selectionEntry id="35a3-1af2-b79c-575d" name="1 True Born" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="737f-6e7b-86bc-56f3" name="1 True Born" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
+                    <rule id="737f-6e7b-86bc-56f3" name="1 True Born" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
                       <description>The Princeps adds 3 to Command checks when issuing Orders to their own Titan, rather than 2. If you roll a 1 when making a Command check, no further Command checks can be made for their Battlegroup, regardless of re-rolls or other special rules.
 </description>
                     </rule>
@@ -11063,9 +11065,8 @@ can be re-rolled.</description>
                 </selectionEntry>
                 <selectionEntry id="f7ab-7a36-2e90-c536" name="2 Divided of Mind" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="b78c-9303-b074-b56d" name="2 Divided of Mind" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
-                      <description>If the Princeps fails a Command check when issuing an Order to their Titan, roll the Order dice. The rolled Order is then applied to the Princeps&apos; Titan, unless it is a Shutdown order, in which case it may either be applied or ignored.
-</description>
+                    <rule id="b78c-9303-b074-b56d" name="2 Divided of Mind" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
+                      <description>If the Princeps fails a Command check when issuing an Order to their Titan, they may re-roll the check. However, if the re-roll also fails, remove all Orders (except for the Emergency Repair order) already issued to any Titan within the Princeps Seniores’ maniple.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -11075,8 +11076,8 @@ can be re-rolled.</description>
                 </selectionEntry>
                 <selectionEntry id="b0f1-6080-b5ab-bcf1" name="3 War&apos;s Orphan" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="3977-0bcb-1ac0-2511" name="3 War&apos;s Orphan" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
-                      <description>The Princep&apos;s Titan may push its reactor while the Reactor marker is in the last hole on its track, gaining the benefits of pushing the reactor as normal. The Reactor level does not advance - however, for each time it should have advanced, the Princeps&apos; Titan will suffer a Strength 9 hit
+                    <rule id="3977-0bcb-1ac0-2511" name="3 War&apos;s Orphan" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
+                      <description>The Princeps&apos; Titan may push its reactor while the Reactor marker is in the last hole on its track, gaining the benefits of pushing the reactor as normal. The Reactor level does not advance - however, for each time it should have advanced, the Princeps&apos; Titan will suffer a Strength 9 hit
 to its Body, bypassing void shields</description>
                     </rule>
                   </rules>
