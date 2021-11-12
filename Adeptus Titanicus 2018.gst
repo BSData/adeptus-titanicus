@@ -4514,7 +4514,7 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f8aa-6108-4447-0e90" name="=Mortis= Remains of the Fallen" publicationId="2988-f24d-39ef-352e" page="46" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="f8aa-6108-4447-0e90" name="=Mortis= Remains of the Fallen" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -4538,8 +4538,8 @@ The fire then goes out.</description>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a06c-86bf-4269-41b3" type="max"/>
       </constraints>
       <rules>
-        <rule id="f1ca-7438-e47a-6e56" name="Remains of the Fallen" publicationId="2988-f24d-39ef-352e" page="46" hidden="false">
-          <description>Any Legio Mortis Titan may be upgraded to have the Remains of the Fallen for +20 points. Enemy units within 8&quot; of a Titan with this upgrade must increase their Command characteristic by 1 to a maximum of 10.</description>
+        <rule id="f1ca-7438-e47a-6e56" name="Remains of the Fallen" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
+          <description>Any Legio Mortis Titan may be upgraded to have the Remains of the Fallen for +20 points. Enemy units within 8&quot; of one ormore Titans with this upgrade subtract 1 from the result of any Command check they make.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4551,7 +4551,7 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f5a-dccf-63ea-17ba" name="=Mortis= The Warmaster&apos;s Beneficence" publicationId="2988-f24d-39ef-352e" page="46" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="2f5a-dccf-63ea-17ba" name="=Mortis= The Warmaster&apos;s Beneficence" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -4575,10 +4575,8 @@ The fire then goes out.</description>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2197-e5be-b183-3068" type="max"/>
       </constraints>
       <rules>
-        <rule id="f0d8-d46c-f7c1-248e" name="The Warmaster&apos;s Beneficence" publicationId="2988-f24d-39ef-352e" page="46" hidden="false">
-          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +20 points. Until the end of
-the phase in which a Titan with this upgrade first makes an attack during a battle, it adds 1 to the Strength of any
-of its bolter or missile weapons, and may ignore the effects of the Draining trait.</description>
+        <rule id="f0d8-d46c-f7c1-248e" name="The Warmaster&apos;s Beneficence" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
+          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +25 points. Once per game, at the start of the Strategy phase, a Titan with this upgrade can increase the Strength value of a single weapon it is equipped with by 1. Thisincrease lasts until the end of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4586,7 +4584,7 @@ of its bolter or missile weapons, and may ignore the effects of the Draining tra
         <categoryLink id="42a9-a6aa-5290-8b19" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4909,11 +4907,11 @@ it is required to roll a Reactor dice during the first and second round of the g
     </selectionEntry>
     <selectionEntry id="1b13-8735-b4bf-0caf" name="Legio Mortis (Death&apos;s Heads)" publicationId="975a-00f4-pubN87630" page="39" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="82ab-6823-fda3-a4b8" name="Reapers Tally" publicationId="975a-00f4-pubN87630" page="40" hidden="false">
-          <description>Each time a Titan of the Legio Mortis destroys an enemy Titan, it gains the ability to re-roll a single dice roll of 1 each time it makes a shooting attack. These effects are cumulative, and for every enemy Titan destroyed, an additional 1 may be re-rolled.</description>
+        <rule id="82ab-6823-fda3-a4b8" name="Reapers Tally" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
+          <description>Each time a Legio Mortis Titan destroys an enemy Titan, it gains the ability to re-roll a single dice roll of a 1 each time it makes an attack with a weapon without the Melee trait. These effects are cumulative and for every enemy Titan destroyed, an additional dice may be re-rolled.</description>
         </rule>
-        <rule id="1497-f496-0508-beec" name="State of Decay" publicationId="975a-00f4-pubN87630" page="40" hidden="false">
-          <description>Once per game, any Legio Mortis Titan may ignore the effects of MIU Feedback, Moderati Wounded and Princeps Wounded for a round.  In a round that the Titan ignores these Critical Damage effects, it may not allocate any Repair dice to its Head.</description>
+        <rule id="1497-f496-0508-beec" name="State of Decay" publicationId="3401-191e-1333-8a1d" page="31" hidden="false">
+          <description>Once per game, a Legio Mortis Titan may ignore the effects of MIU Feedback, Moderati Wounded and Princeps Wounded for a round. In a round that the Titan ignores these Critical Damage effects, it may not allocate any Repair dice to its Head. Each Legio Mortis Titan can use this ability once per game.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -12711,6 +12709,64 @@ may immediately make a single attack with any of its non-disabled weapons agains
                   <rules>
                     <rule id="9f26-7e8e-024d-5a72" name="3 Merciless" publicationId="bf8b-27d7-039e-5df9" page="" hidden="false">
                       <description>The presence of this Princeps within the battlegroup allows it to purchase the Legio Specific Stratagem Cull the Weak multiple time, it can only be played once per phase.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="f7bc-b9d8-bdb4-bda9" name="Legio Mortis" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85f9-7332-78ec-42d8" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85f9-7332-78ec-42d8" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="7db1-098b-29a6-5dfe" name="1 Rotten Heart" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="7ac9-53f4-69e3-2268" name="1 Rotten Heart" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
+                      <description>When the Princeps Seniores’ Titan fails a Command check to quell the machine spirit, it may choose to pass it instead. If it does so, increase the Titan’s Reactor level by 2.
+
+If the Princeps’ Titan is a Corrupted Titan, it instead rolls two dice, re-rolling duplicates, when rolling on the Awakened Entity table and the controlling player may choose which result applies.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0344-beef-f7b1-3b31" name="2 Pitiless" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="1944-e737-5f28-341e" name="2 Pitiless" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
+                      <description>ThePrinceps’ Titan adds 1 to the Strength of its weapons when targeting an enemy Titan that has suffered at least one point of Critical Damage.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9ebe-bd7d-709b-85b8" name="3 Ancient of Terra" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="fb94-4a05-6553-b5a6" name="3 Ancient of Terra" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
+                      <description>When the Princeps’ Titan must roll on the Reactor Overload table, only ever roll a D6, even if the Reactor Status marker is in a red hole.</description>
                     </rule>
                   </rules>
                   <costs>
