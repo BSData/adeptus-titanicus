@@ -4925,8 +4925,10 @@ it is required to roll a Reactor dice during the first and second round of the g
     </selectionEntry>
     <selectionEntry id="bffc-4266-a83d-cae6" name="Legio Krytos (God Breakers)" publicationId="975a-00f4-pubN87630" page="44" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="939f-b862-cf87-5c7b" name="Doom of Worlds" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
-          <description>When fielding a Myrmidon maniple (see page 59 of the Adeptus Titanicus rulebook) a Legio Krytos player may take a Warlord TItan in place of a Reaver Titan as part of the maniple&apos;s mandatory components.</description>
+        <rule id="939f-b862-cf87-5c7b" name="Doom of Worlds" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
+          <description>When fielding an Axiom maniple or Myrmidon maniple, a Legio Krytos player may take a Warlord Titan in place of a Reaver Titan as part of the maniple’s mandatory components.
+When fielding a Regia maniple or Precept maniple, a Legio Krytos maniple may take a Warbringer Nemesis Titan in place of a Warhound as part of its mandatory components. When a Warbringer Nemesis Titan is substituted into a Regia maniple in this way, Courtiers can merge their void shields with it as if the Warbringer were a King or Queen.
+In addition, when fielding a Fortis maniple, a Legio Krytos player may take a single Warlord Titan and/or a single Warbringer Nemesis Titan in place of a Reaver Titan as part of the maniple’s mandatory components.</description>
         </rule>
       </rules>
       <categoryLinks>
