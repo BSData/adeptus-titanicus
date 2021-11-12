@@ -11053,7 +11053,7 @@ can be re-rolled.</description>
               <selectionEntries>
                 <selectionEntry id="35a3-1af2-b79c-575d" name="1 True Born" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="737f-6e7b-86bc-56f3" name="1 True Born" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
+                    <rule id="737f-6e7b-86bc-56f3" name="1 True Born" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
                       <description>The Princeps adds 3 to Command checks when issuing Orders to their own Titan, rather than 2. If you roll a 1 when making a Command check, no further Command checks can be made for their Battlegroup, regardless of re-rolls or other special rules.
 </description>
                     </rule>
