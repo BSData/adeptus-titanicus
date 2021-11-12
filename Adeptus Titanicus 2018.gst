@@ -4603,10 +4603,10 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ac1f-504e-5a1c-6a95" name="=Vulpa= Disruption Emitters" publicationId="975a-00f4-pubN87630" page="55" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ac1f-504e-5a1c-6a95" name="=Vulpa= Disruption Emitters" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="08c7-9190-61c4-2b2e" name="Disruption Emitters" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
-          <description>Any Legio Vulpa Titan may take Disruption Emitters for +30 points. The Titan adds 2 to the strength of any of its weapons with the Melee trait, and counts its Scale as 2 higher when making Smash Attacks.</description>
+        <rule id="08c7-9190-61c4-2b2e" name="Disruption Emitters" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
+          <description>Any Legio Vulpa Titan may take Disruption Emitters for +35 points. The Titan adds 2 to the strength of all of its weapons with the Melee trait, not including Smash Attacks, and counts its Scale as 2 higher when making Smash Attacks.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4614,7 +4614,7 @@ The fire then goes out.</description>
         <categoryLink id="dd40-0b68-2862-2a87" name="LegioVulpa" hidden="false" targetId="561a-cb05-d4b5-94fd" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
