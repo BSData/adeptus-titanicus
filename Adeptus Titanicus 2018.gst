@@ -4261,8 +4261,8 @@ If the result is 25, move the reactor tracker to its leftmost hole.
     </selectionEntry>
     <selectionEntry id="f9a9-0ee9-960e-960b" name="=Vulcanum= Twinned Machine Spirits" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="60b2-ad77-9e97-d0d8" name="Twinned Machine Spirits" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
-          <description>Any two Legio Vulcanum Titans may take twinned machine spirits for +20 points each.  Legio Vulcanum Titans with twinned machine spirits count as being part of a squadron with each other (see page 45 of the Adpetus Titanicus rulebook).   However, should a Titan with a twinned machine spirit roll the Machine Spirit symbol on the Reactor dice, both it and its paried Titan must make a Command check to see if their Titan&apos;s machine spirit awakens.  Note that multiple pairs of Titans in a Legio Vulcanum Battlegroup may be equipped to have twinned machine spirits, each forming their onw swuadron of two.</description>
+        <rule id="60b2-ad77-9e97-d0d8" name="Twinned Machine Spirits" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
+          <description>Any two Legio Vulcanum Titans may upgraded with twinned machine spirits for +20 points each.  Legio Vulcanum Titans with twinned machine spirits count as being part of a squadron with each other (see page 45 of the Adpetus Titanicus rulebook) – these Titans may not join another squadron. However, should a Titan with a twinned machine spirit roll the Machine Spirit symbol on the Reactor dice, both it and its paried Titan must make a Command check to see if their Titan&apos;s machine spirit awakens.  Note that multiple pairs of Titans in a Legio Vulcanum Battlegroup may be equipped to have twinned machine spirits, each forming their onw swuadron of two. A Titan with this upgrade cannot otherwise be part of a Squadron</description>
         </rule>
       </rules>
       <categoryLinks>
