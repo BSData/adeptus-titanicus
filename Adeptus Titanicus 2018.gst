@@ -11469,9 +11469,8 @@ when making Repair actions. </comment>
                 </selectionEntry>
                 <selectionEntry id="0e62-2249-1a97-f681" name="1 Godlike Contempt" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="0813-a80c-9ea2-3090" name="1 Godlike Contempt" publicationId="975a-00f4-pubN87630" page="45" hidden="false">
-                      <description>The Princeps thinks little of the units chat support their maniple, and even smaller Titans are of only passing concern to them. The Princeps&apos; Titan may still make Command checks if a Knight Banner or a Titan with a smaller Scale than that of the Princeps Titan has failed its Command check.
-</description>
+                    <rule id="0813-a80c-9ea2-3090" name="1 Godlike Contempt" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
+                      <description>ThePrinceps’ Titan may still make Command checks even if another friendly unit has already failed its Command check.</description>
                     </rule>
                   </rules>
                   <costs>
