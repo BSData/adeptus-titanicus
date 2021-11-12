@@ -4588,25 +4588,10 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b46d-e9ec-be67-c141" name="=Vulpa= Plasma Gargoyles" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ac1f-504e-5a1c-6a95" name="=Vulpa= Shikarian Conduits" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="66ff-7402-bfe7-f298" name="Plasma Gargoyles" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
-          <description>Any Legio Vulpa Titan may take plasma gargoyles for +15 points. Whenever the Titan uses Repair dice to Vent Plasma, all units (friend or foe) within 3&quot; take a hit with strength equal to 3 plus the number of levels the Titan&apos;s reactor is reduced by, e.g. if a Titan Vented Plasma reducing its reactor by 3 levels then all units within 3&quot; take a Strength 6 hit.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="75d8-dab9-8b95-e613" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
-        <categoryLink id="76db-84e5-fdef-0dd6" name="LegioVulpa" hidden="false" targetId="561a-cb05-d4b5-94fd" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ac1f-504e-5a1c-6a95" name="=Vulpa= Disruption Emitters" publicationId="975a-00f4-pubN87630" page="55" hidden="true" collective="false" import="false" type="upgrade">
-      <rules>
-        <rule id="08c7-9190-61c4-2b2e" name="Disruption Emitters" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
-          <description>Any Legio Vulpa Titan may take Disruption Emitters for +30 points. The Titan adds 2 to the strength of any of its weapons with the Melee trait, and counts its Scale as 2 higher when making Smash Attacks.</description>
+        <rule id="08c7-9190-61c4-2b2e" name="Shikarian Conduits" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
+          <description>Any Legio Vulpa Titan with a Scale of 7 or higher may take Shikarian Conduits for +20 points. A Titan with this upgrade increases its boosted speed 2&quot; and its boosted manoeuvre characteristics by 1. If, during a round, a Titan with this upgrade declares Power to Locomotors! or Power to Stabilisers! at least once, then, for the remainder of the round, that Titan decreases the Dice value of all its weapons without the Melee trait by 1, to a minimum of 1. In addition, the Titan suffers a -2 penalty to its Ballistic Skill, to a minimum of 6+.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4614,7 +4599,7 @@ The fire then goes out.</description>
         <categoryLink id="dd40-0b68-2862-2a87" name="LegioVulpa" hidden="false" targetId="561a-cb05-d4b5-94fd" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4962,8 +4947,8 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
     </selectionEntry>
     <selectionEntry id="7093-f8b3-b5f9-d38d" name="Legio Vulpa (Death Stalkers)" publicationId="975a-00f4-pubN87630" page="54" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="36fb-e4f2-82f5-8ba3" name="Honour and Blood" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
-          <description>A Death Stalkers Titan that is within 3&quot; of an enemy Titan increases its Weapons Skill by 1 an decreases its Ballistic Skill by 1</description>
+        <rule id="36fb-e4f2-82f5-8ba3" name="Honour and Blood" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
+          <description>A Death Stalkers Titan that is within 3&quot; of an enemy Titan, increases its Weapons Skill by 1 an decreases its Ballistic Skill by 1, to a maximum of 2+, and decrease its Ballistic Skill by 1, to a minimum of 6+.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -11590,7 +11575,7 @@ lower, increase the Strength of any hits by 2. </comment>
               <selectionEntries>
                 <selectionEntry id="041e-70a0-9760-927a" name="2 Bloodied but Unbroken" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="67d3-cbf0-f2f3-baea" name="2 Bloodied but Unbroken" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
+                    <rule id="67d3-cbf0-f2f3-baea" name="2 Bloodied but Unbroken" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
                       <description>For each point of Critical Damage the Princeps&apos; Titan has suffered (not including Critical Damage inflicted on weapons), increase the Strength of any weapons with the Melee trait and their Smash Attacks by 1, to a maximum of +3.</description>
                     </rule>
                   </rules>
@@ -11601,7 +11586,7 @@ lower, increase the Strength of any hits by 2. </comment>
                 </selectionEntry>
                 <selectionEntry id="12d5-5294-65fe-d7b2" name="3 Cruel" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="50b6-5a4f-4762-d37f" name="3 Cruel" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
+                    <rule id="50b6-5a4f-4762-d37f" name="3 Cruel" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
                       <description>When making attacks against units with a Scale of 5 or lower, increase the Strength of any hits by 2. </description>
                     </rule>
                   </rules>
@@ -11612,8 +11597,8 @@ lower, increase the Strength of any hits by 2. </comment>
                 </selectionEntry>
                 <selectionEntry id="2155-8ed5-1ad8-2d0d" name="1 Razor Tongue" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="86a6-eac4-3f8d-91a4" name="1 Razor Tongue" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
-                      <description>At the start of the round, the Princeps can choose an enemy Titan within 24&quot; of their own Titan. For the duration of the round, the chosen Titan&apos;s Command characteristic is increased by 2 , to a maxim um of 10.</description>
+                    <rule id="86a6-eac4-3f8d-91a4" name="1 Razor Tongue" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
+                      <description>At the start of the round, the Princeps can choose an enemy Titan within 24&quot; of their own Titan. For the duration of the round, the chosen Titan subtracts 2 from the result of any Command check it makes.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -13267,6 +13252,21 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="06db-3271-2bb0-7342" name="=Vulpa= Disruption Emitters" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="true" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="fbf6-caa0-b9c3-382f" name="Disruption Emitters" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
+          <description>Any Legio Vulpa Titan may take Disruption Emitters for +35 points. The Titan adds 2 to the strength of all of its weapons with the Melee trait, not including Smash Attacks, and counts its Scale as 2 higher when making Smash Attacks.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e0ad-2b55-dea4-ec50" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="0d4b-b0e6-98e3-6f14" name="LegioVulpa" hidden="false" targetId="561a-cb05-d4b5-94fd" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -13475,7 +13475,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         </entryLink>
         <entryLink id="2292-032b-7b1a-5570" name="=Mortis= Remains of the Fallen" hidden="false" collective="false" import="false" targetId="f8aa-6108-4447-0e90" type="selectionEntry"/>
         <entryLink id="6d89-f6d5-b0ab-86d9" name="=Mortis= The Warmaster&apos;s Beneficence" hidden="false" collective="false" import="false" targetId="2f5a-dccf-63ea-17ba" type="selectionEntry"/>
-        <entryLink id="f302-c072-c072-82ea" name="=Vulpa= Disruption Emitters" hidden="false" collective="false" import="false" targetId="ac1f-504e-5a1c-6a95" type="selectionEntry">
+        <entryLink id="f302-c072-c072-82ea" name="=Vulpa= Shikarian Conduits" hidden="false" collective="false" import="false" targetId="ac1f-504e-5a1c-6a95" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -13486,19 +13486,6 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0704-fee9-d576-9fe4" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ab3-e442-4f0a-28e2" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="8b21-a2b6-ef3d-1f60" name="=Vulpa= Plasma Gargoyles" hidden="false" collective="false" import="false" targetId="b46d-e9ec-be67-c141" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="561a-cb05-d4b5-94fd" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a1e-df03-83b9-5cda" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="033a-8544-0dde-d497" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="b1b7-81d6-7559-1192" name="=Defensor= Devotional War Sirens" hidden="true" collective="false" import="false" targetId="9646-5ac3-8725-8523" type="selectionEntry">
@@ -13734,6 +13721,19 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e526-b2e1-1213-55e9" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3325-89da-310d-04f4" name="=Vulpa= Disruption Emitters" hidden="false" collective="false" import="true" targetId="06db-3271-2bb0-7342" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="561a-cb05-d4b5-94fd" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7edc-cb03-0022-9d9b" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d76-a8f2-679f-57a9" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
