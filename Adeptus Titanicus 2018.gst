@@ -11125,8 +11125,8 @@ to its Body, bypassing void shields</description>
                 </selectionEntry>
                 <selectionEntry id="bd21-0607-7cb0-2523" name="3 Hollowed Out" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="76c0-826e-fcca-75c2" name="3 Hollowed Out" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
-                      <description>The Princeps&apos; Titan does not add 2 to its Command checks for being a Princeps Seniores. However, the Princeps&apos; Titan also ignores all damage effects resulting from Critical Damage to the Titan&apos;s Head.</description>
+                    <rule id="76c0-826e-fcca-75c2" name="3 Hollowed Out" publicationId="bf8b-27d7-039e-5df9" page="81" hidden="false">
+                      <description>ThePrinceps’ Titan ignores all damage effects resulting from Critical Damage to the Titan’s Head. If the Princeps’ Titan is a Corrupted Titan, it instead ignores all damage effects resulting from Critical Damage on any location. However, a Corrupted Titan with this Personal Trait subtracts 1 from the result of all Command checks it makes and does not add 2 to its Command checks for being a Princeps Seniores.</description>
                     </rule>
                   </rules>
                   <costs>
