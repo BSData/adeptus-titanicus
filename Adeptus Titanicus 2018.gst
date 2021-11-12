@@ -11530,7 +11530,7 @@ lower, increase the Strength of any hits by 2. </comment>
               <selectionEntries>
                 <selectionEntry id="485e-495f-546f-d08d" name="2 Humardu Savage" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="2f2e-f9ad-b145-c0e7" name="2 Humardu Savage" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
+                    <rule id="2f2e-f9ad-b145-c0e7" name="2 Humardu Savage" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
                       <description>When the Princeps Seniores Titan makes a Smash Attack (see page 36 of the Adeptus Titanicus rulebook), add 2 to the Strength of the attack.</description>
                     </rule>
                   </rules>
