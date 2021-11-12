@@ -11541,8 +11541,8 @@ lower, increase the Strength of any hits by 2. </comment>
                 </selectionEntry>
                 <selectionEntry id="09eb-ba65-24fc-19ab" name="3 Trophy Taker" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="8046-e643-bf4c-dfe3" name="3 Trophy Taker" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
-                      <description>Any weapon disabled by the Tiger Eyes Princeps using a Smash Attack, or a weapon with the Melee trait, is harder to repair; these require a dice score 1 higher than normal when making Repair actions. </description>
+                    <rule id="8046-e643-bf4c-dfe3" name="3 Trophy Taker" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
+                      <description>Any weapon disabled or Critical Damage caused by the Tiger Eyes Princeps using a Smash Attack, or a weapon with the Melee trait, is harder to repair; these require a dice score 1 higher than normal when making Repair actions. </description>
                     </rule>
                   </rules>
                   <costs>
