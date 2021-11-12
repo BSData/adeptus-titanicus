@@ -11065,9 +11065,8 @@ can be re-rolled.</description>
                 </selectionEntry>
                 <selectionEntry id="f7ab-7a36-2e90-c536" name="2 Divided of Mind" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="b78c-9303-b074-b56d" name="2 Divided of Mind" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
-                      <description>If the Princeps fails a Command check when issuing an Order to their Titan, roll the Order dice. The rolled Order is then applied to the Princeps&apos; Titan, unless it is a Shutdown order, in which case it may either be applied or ignored.
-</description>
+                    <rule id="b78c-9303-b074-b56d" name="2 Divided of Mind" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
+                      <description>If the Princeps fails a Command check when issuing an Order to their Titan, they may re-roll the check. However, if the re-roll also fails, remove all Orders (except for the Emergency Repair order) already issued to any Titan within the Princeps Seniores’ maniple.</description>
                     </rule>
                   </rules>
                   <costs>
