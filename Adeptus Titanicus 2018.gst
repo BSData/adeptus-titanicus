@@ -12234,7 +12234,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
               <selectionEntries>
                 <selectionEntry id="47e1-cf97-7ff6-a72d" name="3 Methodical" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="cf62-1f00-c06c-6cc4" name="3 Methodical" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="false">
+                    <rule id="cf62-1f00-c06c-6cc4" name="3 Methodical" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
                       <description>Once per game, during the Strategy phase, when the Princeps’ Titan is successfully issued a First Fire order, any other Titan in the maniple can be issued the same order without the need for a Command check.</description>
                     </rule>
                   </rules>
