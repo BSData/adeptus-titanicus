@@ -11138,8 +11138,8 @@ Princeps&apos; battle group can count any roll of 9 as a 6, or any roll of 6 as 
                 </selectionEntry>
                 <selectionEntry id="7fde-c683-2e81-550b" name="1 Dark Fanatic" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="ea5a-9f02-eb8c-d345" name="1 Dark Fanatic" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
-                      <description>The first rime the Princeps Titan suffers Catastrophic Damage, roll a Dro. On a 6107, 8 or 9, it is ignored and has no effect. On any other result, count the Catastrophic Damage roll as a Catastrophic Meltdown.
+                    <rule id="ea5a-9f02-eb8c-d345" name="1 Dark Fanatic" publicationId="bf8b-27d7-039e-5df9" page="81" hidden="false">
+                      <description>The first rime the Princeps Titan suffers Catastrophic Damage, roll a D10. On a 6,7, 8 or 9, it is ignored and has no effect. On any other result, count the Catastrophic Damage roll as a Catastrophic Meltdown.
 </description>
                     </rule>
                   </rules>
