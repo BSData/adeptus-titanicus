@@ -5079,7 +5079,7 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
         <rule id="54af-693f-6c06-349d" name="Two-faced God" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
           <description>When fielding a Legio Vulcanum battlegroup, a player may nominate two Legio Vulcanum Titans to be commanded by a Princeps Seniores (see page 55 of the Adeptus Titanicus rulebook). If one of the Princeps Seniores&apos; Titans is destroyed, for the remainder of the game count the other Princeps Seniores&apos; Titan as having suffered an unrepairable Princeps Wounded damage effect. [FAQ - 1.1]</description>
         </rule>
-        <rule id="9edc-dbe9-0c2f-cc75" name="For the Fallan" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
+        <rule id="9edc-dbe9-0c2f-cc75" name="For the Fallen" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
           <description>For each Legio Vulcanum Titan in the battlegroup that has been destroyed, the Legio Vulcanum player gains a single re-roll that may be used once each round.  This re-roll may be used to re-roll the result of any single dice roll made by a Vulcanum Titans.</description>
         </rule>
       </rules>
