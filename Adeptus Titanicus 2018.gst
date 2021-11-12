@@ -4551,7 +4551,7 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f5a-dccf-63ea-17ba" name="=Mortis= The Warmaster&apos;s Beneficence" publicationId="2988-f24d-39ef-352e" page="46" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="2f5a-dccf-63ea-17ba" name="=Mortis= The Warmaster&apos;s Beneficence" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -4575,10 +4575,8 @@ The fire then goes out.</description>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2197-e5be-b183-3068" type="max"/>
       </constraints>
       <rules>
-        <rule id="f0d8-d46c-f7c1-248e" name="The Warmaster&apos;s Beneficence" publicationId="2988-f24d-39ef-352e" page="46" hidden="false">
-          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +20 points. Until the end of
-the phase in which a Titan with this upgrade first makes an attack during a battle, it adds 1 to the Strength of any
-of its bolter or missile weapons, and may ignore the effects of the Draining trait.</description>
+        <rule id="f0d8-d46c-f7c1-248e" name="The Warmaster&apos;s Beneficence" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
+          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +25 points. Once per game, at the start of the Strategy phase, a Titan with this upgrade can increase the Strength value of a single weapon it is equipped with by 1. Thisincrease lasts until the end of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4586,7 +4584,7 @@ of its bolter or missile weapons, and may ignore the effects of the Draining tra
         <categoryLink id="42a9-a6aa-5290-8b19" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
