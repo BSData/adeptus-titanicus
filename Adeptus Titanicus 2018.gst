@@ -11597,8 +11597,8 @@ lower, increase the Strength of any hits by 2. </comment>
                 </selectionEntry>
                 <selectionEntry id="2155-8ed5-1ad8-2d0d" name="1 Razor Tongue" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="86a6-eac4-3f8d-91a4" name="1 Razor Tongue" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
-                      <description>At the start of the round, the Princeps can choose an enemy Titan within 24&quot; of their own Titan. For the duration of the round, the chosen Titan&apos;s Command characteristic is increased by 2 , to a maxim um of 10.</description>
+                    <rule id="86a6-eac4-3f8d-91a4" name="1 Razor Tongue" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
+                      <description>At the start of the round, the Princeps can choose an enemy Titan within 24&quot; of their own Titan. For the duration of the round, the chosen Titan subtracts 2 from the result of any Command check it makes.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -13475,7 +13475,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         </entryLink>
         <entryLink id="2292-032b-7b1a-5570" name="=Mortis= Remains of the Fallen" hidden="false" collective="false" import="false" targetId="f8aa-6108-4447-0e90" type="selectionEntry"/>
         <entryLink id="6d89-f6d5-b0ab-86d9" name="=Mortis= The Warmaster&apos;s Beneficence" hidden="false" collective="false" import="false" targetId="2f5a-dccf-63ea-17ba" type="selectionEntry"/>
-        <entryLink id="f302-c072-c072-82ea" name="=Vulpa= Disruption Emitters" hidden="false" collective="false" import="false" targetId="ac1f-504e-5a1c-6a95" type="selectionEntry">
+        <entryLink id="f302-c072-c072-82ea" name="=Vulpa= Shikarian Conduits" hidden="false" collective="false" import="false" targetId="ac1f-504e-5a1c-6a95" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -13721,6 +13721,19 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e526-b2e1-1213-55e9" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3325-89da-310d-04f4" name="=Vulpa= Disruption Emitters" hidden="false" collective="false" import="true" targetId="06db-3271-2bb0-7342" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="561a-cb05-d4b5-94fd" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7edc-cb03-0022-9d9b" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d76-a8f2-679f-57a9" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
