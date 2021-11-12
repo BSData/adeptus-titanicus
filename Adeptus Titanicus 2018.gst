@@ -4588,10 +4588,10 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ac1f-504e-5a1c-6a95" name="=Vulpa= Disruption Emitters" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ac1f-504e-5a1c-6a95" name="=Vulpa= Shikarian Conduits" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="08c7-9190-61c4-2b2e" name="Disruption Emitters" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
-          <description>Any Legio Vulpa Titan may take Disruption Emitters for +35 points. The Titan adds 2 to the strength of all of its weapons with the Melee trait, not including Smash Attacks, and counts its Scale as 2 higher when making Smash Attacks.</description>
+        <rule id="08c7-9190-61c4-2b2e" name="Shikarian Conduits" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
+          <description>Any Legio Vulpa Titan with a Scale of 7 or higher may take Shikarian Conduits for +20 points. A Titan with this upgrade increases its boosted speed 2&quot; and its boosted manoeuvre characteristics by 1. If, during a round, a Titan with this upgrade declares Power to Locomotors! or Power to Stabilisers! at least once, then, for the remainder of the round, that Titan decreases the Dice value of all its weapons without the Melee trait by 1, to a minimum of 1. In addition, the Titan suffers a -2 penalty to its Ballistic Skill, to a minimum of 6+.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4599,7 +4599,7 @@ The fire then goes out.</description>
         <categoryLink id="dd40-0b68-2862-2a87" name="LegioVulpa" hidden="false" targetId="561a-cb05-d4b5-94fd" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -13250,6 +13250,21 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="06db-3271-2bb0-7342" name="=Vulpa= Disruption Emitters" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="true" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="fbf6-caa0-b9c3-382f" name="Disruption Emitters" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
+          <description>Any Legio Vulpa Titan may take Disruption Emitters for +35 points. The Titan adds 2 to the strength of all of its weapons with the Melee trait, not including Smash Attacks, and counts its Scale as 2 higher when making Smash Attacks.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e0ad-2b55-dea4-ec50" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="0d4b-b0e6-98e3-6f14" name="LegioVulpa" hidden="false" targetId="561a-cb05-d4b5-94fd" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
