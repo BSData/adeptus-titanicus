@@ -11552,8 +11552,8 @@ lower, increase the Strength of any hits by 2. </comment>
                 </selectionEntry>
                 <selectionEntry id="1912-ef0f-15c1-16a1" name="1 Titan Stalker" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="49ab-f109-ce94-dba0" name="1 Titan Stalker" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
-                      <description>When targeting a Titan that is within 12&apos;&apos;, the Princeps Seniores may add r to the Armour rolls of any hits, provided that the targeted Titan has a Scale either equal to or greater than their own.
+                    <rule id="49ab-f109-ce94-dba0" name="1 Titan Stalker" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
+                      <description>When targeting a Titan that is within 8&apos;&apos;, the Princeps Seniores may add 1 to the Armour rolls of any hits, provided that the targeted Titan has a Scale either equal to or greater than their own.
 </description>
                     </rule>
                   </rules>
