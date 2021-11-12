@@ -12718,6 +12718,42 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="f7bc-b9d8-bdb4-bda9" name="Legio Mortis" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85f9-7332-78ec-42d8" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85f9-7332-78ec-42d8" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="7db1-098b-29a6-5dfe" name="1 Rotten Heart" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="7ac9-53f4-69e3-2268" name="1 Rotten Heart" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
+                      <description>When the Princeps Seniores’ Titan fails a Command check to quell the machine spirit, it may choose to pass it instead. If it does so, increase the Titan’s Reactor level by 2.
+
+If the Princeps’ Titan is a Corrupted Titan, it instead rolls two dice, re-rolling duplicates, when rolling on the Awakened Entity table and the controlling player may choose which result applies.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
