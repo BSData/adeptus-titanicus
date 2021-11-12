@@ -4910,8 +4910,8 @@ it is required to roll a Reactor dice during the first and second round of the g
         <rule id="82ab-6823-fda3-a4b8" name="Reapers Tally" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
           <description>Each time a Legio Mortis Titan destroys an enemy Titan, it gains the ability to re-roll a single dice roll of a 1 each time it makes an attack with a weapon without the Melee trait. These effects are cumulative and for every enemy Titan destroyed, an additional dice may be re-rolled.</description>
         </rule>
-        <rule id="1497-f496-0508-beec" name="State of Decay" publicationId="975a-00f4-pubN87630" page="40" hidden="false">
-          <description>Once per game, any Legio Mortis Titan may ignore the effects of MIU Feedback, Moderati Wounded and Princeps Wounded for a round.  In a round that the Titan ignores these Critical Damage effects, it may not allocate any Repair dice to its Head.</description>
+        <rule id="1497-f496-0508-beec" name="State of Decay" publicationId="3401-191e-1333-8a1d" page="31" hidden="false">
+          <description>Once per game, a Legio Mortis Titan may ignore the effects of MIU Feedback, Moderati Wounded and Princeps Wounded for a round. In a round that the Titan ignores these Critical Damage effects, it may not allocate any Repair dice to its Head. Each Legio Mortis Titan can use this ability once per game.</description>
         </rule>
       </rules>
       <categoryLinks>
