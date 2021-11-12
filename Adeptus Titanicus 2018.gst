@@ -11114,10 +11114,8 @@ to its Body, bypassing void shields</description>
               <selectionEntries>
                 <selectionEntry id="934a-9605-a3ff-5c8b" name="2 Raving Madman" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="4fa1-acbd-93d3-e2cb" name="2 Raving Madman" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
-                      <description>When rolling a D10, such as to determine the First Player or when making a Command check, the
-Princeps&apos; battle group can count any roll of 9 as a 6, or any roll of 6 as a 9.
-</description>
+                    <rule id="4fa1-acbd-93d3-e2cb" name="2 Raving Madman" publicationId="bf8b-27d7-039e-5df9" page="81" hidden="false">
+                      <description>Once per round, when rolling to determine the First Player or when making a Command check, the Princeps’ battlegroup can change the result of the roll to a 10. If used to determine who has First Player, the next time the Princeps battlegroup rolls to determine who has First Player, the results of the D10 must be changed to a 1. Likewise, if this trait was used to change the result of a Command check to a 10, the next Command check it makes must be changed to a 1. None of these results can be modified or re-rolled for any reason.</description>
                     </rule>
                   </rules>
                   <costs>
