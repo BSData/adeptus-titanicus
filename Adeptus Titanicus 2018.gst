@@ -4501,7 +4501,7 @@ The fire then goes out.</description>
     </selectionEntry>
     <selectionEntry id="0d56-2ed6-8229-739e" name="=Fureans= Hunting Auspex" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="ec54-b467-379f-8edf" name="Hunting Auspex" publicationId="975a-00f4-pubN87630" page="50" hidden="false">
+        <rule id="ec54-b467-379f-8edf" name="Hunting Auspex" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
           <description>Any Legio Fureans Titan may take a Hunting Auspex upgrade for +20 points. When making a ranged attack at over 12” away, a Legio Fureans Titan equipped with a Hunting Auspex may reduce any penalty to Hit by 1, to a minimum of 0.</description>
         </rule>
       </rules>
