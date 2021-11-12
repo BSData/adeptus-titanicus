@@ -11575,7 +11575,7 @@ lower, increase the Strength of any hits by 2. </comment>
               <selectionEntries>
                 <selectionEntry id="041e-70a0-9760-927a" name="2 Bloodied but Unbroken" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="67d3-cbf0-f2f3-baea" name="2 Bloodied but Unbroken" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
+                    <rule id="67d3-cbf0-f2f3-baea" name="2 Bloodied but Unbroken" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
                       <description>For each point of Critical Damage the Princeps&apos; Titan has suffered (not including Critical Damage inflicted on weapons), increase the Strength of any weapons with the Melee trait and their Smash Attacks by 1, to a maximum of +3.</description>
                     </rule>
                   </rules>
