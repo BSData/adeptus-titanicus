@@ -4514,7 +4514,7 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f8aa-6108-4447-0e90" name="=Mortis= Remains of the Fallen" publicationId="2988-f24d-39ef-352e" page="46" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="f8aa-6108-4447-0e90" name="=Mortis= Remains of the Fallen" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -4538,8 +4538,8 @@ The fire then goes out.</description>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a06c-86bf-4269-41b3" type="max"/>
       </constraints>
       <rules>
-        <rule id="f1ca-7438-e47a-6e56" name="Remains of the Fallen" publicationId="2988-f24d-39ef-352e" page="46" hidden="false">
-          <description>Any Legio Mortis Titan may be upgraded to have the Remains of the Fallen for +20 points. Enemy units within 8&quot; of a Titan with this upgrade must increase their Command characteristic by 1 to a maximum of 10.</description>
+        <rule id="f1ca-7438-e47a-6e56" name="Remains of the Fallen" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
+          <description>Any Legio Mortis Titan may be upgraded to have the Remains of the Fallen for +20 points. Enemy units within 8&quot; of one ormore Titans with this upgrade subtract 1 from the result of any Command check they make.</description>
         </rule>
       </rules>
       <categoryLinks>
