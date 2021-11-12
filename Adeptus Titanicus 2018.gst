@@ -11076,8 +11076,8 @@ can be re-rolled.</description>
                 </selectionEntry>
                 <selectionEntry id="b0f1-6080-b5ab-bcf1" name="3 War&apos;s Orphan" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="3977-0bcb-1ac0-2511" name="3 War&apos;s Orphan" publicationId="975a-00f4-pubN89746" page="23" hidden="false">
-                      <description>The Princep&apos;s Titan may push its reactor while the Reactor marker is in the last hole on its track, gaining the benefits of pushing the reactor as normal. The Reactor level does not advance - however, for each time it should have advanced, the Princeps&apos; Titan will suffer a Strength 9 hit
+                    <rule id="3977-0bcb-1ac0-2511" name="3 War&apos;s Orphan" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
+                      <description>The Princeps&apos; Titan may push its reactor while the Reactor marker is in the last hole on its track, gaining the benefits of pushing the reactor as normal. The Reactor level does not advance - however, for each time it should have advanced, the Princeps&apos; Titan will suffer a Strength 9 hit
 to its Body, bypassing void shields</description>
                     </rule>
                   </rules>
