@@ -4588,21 +4588,6 @@ The fire then goes out.</description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b46d-e9ec-be67-c141" name="=Vulpa= Plasma Gargoyles" hidden="true" collective="false" import="false" type="upgrade">
-      <rules>
-        <rule id="66ff-7402-bfe7-f298" name="Plasma Gargoyles" publicationId="975a-00f4-pubN87630" page="55" hidden="false">
-          <description>Any Legio Vulpa Titan may take plasma gargoyles for +15 points. Whenever the Titan uses Repair dice to Vent Plasma, all units (friend or foe) within 3&quot; take a hit with strength equal to 3 plus the number of levels the Titan&apos;s reactor is reduced by, e.g. if a Titan Vented Plasma reducing its reactor by 3 levels then all units within 3&quot; take a Strength 6 hit.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="75d8-dab9-8b95-e613" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
-        <categoryLink id="76db-84e5-fdef-0dd6" name="LegioVulpa" hidden="false" targetId="561a-cb05-d4b5-94fd" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="ac1f-504e-5a1c-6a95" name="=Vulpa= Disruption Emitters" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="08c7-9190-61c4-2b2e" name="Disruption Emitters" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
@@ -13486,19 +13471,6 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0704-fee9-d576-9fe4" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ab3-e442-4f0a-28e2" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="8b21-a2b6-ef3d-1f60" name="=Vulpa= Plasma Gargoyles" hidden="false" collective="false" import="false" targetId="b46d-e9ec-be67-c141" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="561a-cb05-d4b5-94fd" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a1e-df03-83b9-5cda" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="033a-8544-0dde-d497" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="b1b7-81d6-7559-1192" name="=Defensor= Devotional War Sirens" hidden="true" collective="false" import="false" targetId="9646-5ac3-8725-8523" type="selectionEntry">
