@@ -4784,9 +4784,9 @@ The fire then goes out.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="69f2-0efb-9085-02cb" name="=Audax= Reinforced Plating" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="69f2-0efb-9085-02cb" name="=Audax= Reinforced Plating" page="" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="775c-ba4c-b28d-9cdb" name="Reinforced Plating" hidden="false">
+        <rule id="775c-ba4c-b28d-9cdb" name="Reinforced Plating" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
           <description>A Legio Audax Titan of Scale 6 or lower can be fitted with Reinforced Plating for +15 points. Subtract 1 from the result of Armour rolls made against a Titan with Reinforced Plating.</description>
         </rule>
       </rules>
@@ -5557,11 +5557,13 @@ A model can only be affected by this rule once per round and Legio Mordaxis Tita
     </selectionEntry>
     <selectionEntry id="e9a0-229e-7cfb-4def" name="Legio Audax (Ember Wolves)" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="bf30-a997-26e1-4d0f" name="Stalk Unseen" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
+        <rule id="bf30-a997-26e1-4d0f" name="Stalk Unseen" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
           <description>For the duration of the first round, attacks made against Legio Audax Titans of Scale 6 or lower suffer a -2 modifier to Hit roll if the Titan is at least 25% obscured, rather than the usual -1.</description>
         </rule>
-        <rule id="4944-52b2-9a41-b0a2" name="Wolves Among Prey" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
-          <description>A Legio Audax maniple can consist only of Titans of Scale 6 or lower; any maniple which has a Mandatory or Optional components containing Titans of Scale 7 or higher cannot contain Legio Audax Titans. Any reinforcement Titans declared as Legio Audax must be of Scale 6 or lower. Legio Audax Titans can always form Squadrons with other Legio Audax Titans, even Titans that belong to another Legio Audax maniple or Legio Audax reinforcement Titans. Legio Audax Squadrons can contain up to 5 Titans, unless they can normally contain more.</description>
+        <rule id="4944-52b2-9a41-b0a2" name="Wolves Among Prey" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
+          <description>A Legio Audax maniple can consist only of Titans of Scale 6 or lower; any maniple which has a Mandatory or Optional components containing Titans of Scale 7 or higher cannot contain Legio Audax Titans. Any reinforcement Titans declared as Legio Audax must be of Scale 6 or lower. 
+All Legio Audax Titans gain the Squadron special rule if they do not already have it and may always form Squadrons with other Legio Audax Titan of any type. Thisincludes Titans that belong to another Legio Audax Maniple or Legio Audax reinforcement Titans.
+Legio Audax Squadrons can contain up to five Titans, unless they can normally contain more.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6902,12 +6904,12 @@ as this happens, the benefits from this piece of Wargear are lost for the remain
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f476-3a7b-5612-d96e" name="=Audax= Ursus Claw" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="f476-3a7b-5612-d96e" name="=Audax= Ursus Claw" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="a029-a99d-fea2-790d" name="Ursus Claw" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="a029-a99d-fea2-790d" name="Ursus Claw" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
-            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">12&quot;</characteristic>
@@ -6915,11 +6917,14 @@ as this happens, the benefits from this piece of Wargear are lost for the remain
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Impale, Specialised</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="0923-6716-153e-55b6" name="Specialised" hidden="false" targetId="8424-0cc4-1cc8-9e61" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="5185-8a1a-b5a3-7b04" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="f1a8-3723-ef40-939f" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
@@ -7946,8 +7951,8 @@ as this happens, the benefits from this piece of Wargear are lost for the remain
     </selectionEntry>
     <selectionEntry id="3a41-59a8-581b-0498" name="=Audax= Canis Light Maniple" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="true" collective="false" import="false" type="unit">
       <rules>
-        <rule id="e70f-0805-8c7e-5971" name="Hunting Pack" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="false">
-          <description>Canis Light Maniples can only include Legio Audax Titans. Warhound Titans within this maniple do not deploy as normal. Instead, at the start of the deployment phase, after arranging Titans into squadrons, the controlling player places a number of markers equal to the number of Warhounds in this maniple. These markers can be placed anywhere on the battlefield more than 6” from the enemy deployment zone. Titans from this maniple count as deployed for the purposes of determining which player finished deploying first. When both players have finished deploying as normal, Warhounds from this maniple can be deployed anywhere within 3” of a Pack Ambush marker. Any Warhound deployed in this manner outside of the controlling player’s deployment zone must be at least 50% obscured from any enemy unit within line of sight of that Warhound. If a Warhound cannot be placed within 3” of a Pack Ambush marker in this way, they must be deployed in the controlling player’s deployment zone, following all of the normal rules.
+        <rule id="e70f-0805-8c7e-5971" name="Hunting Pack" publicationId="bf8b-27d7-039e-5df9" page="17" hidden="false">
+          <description>Canis Light Maniples can only include Legio Audax Titans. Titans within this maniple do not deploy as normal. Instead, at the start of the deployment phase, after arranging Titans into squadrons, the controlling player places a number of markers equal to the number of Titans in this maniple. These markers can be placed anywhere on the battlefield more than 6” from the enemy deployment zone. Titans from this maniple count as deployed for the purposes of determining which player finished deploying first. When both players have finished deploying as normal, Titans from this maniple can be deployed anywhere within 3” of a Pack Ambush marker. Any Titan deployed in this manner outside of the controlling player’s deployment zone must be at least 50% obscured from any enemy unit within line of sight of that Titan. If a Titan cannot be placed within 3” of a Pack Ambush marker in this way, they must be deployed in the controlling player’s deployment zone, following all of the normal rules.
 
 If a player has more than one Canis Light Maniple, each maniple beyond the first gives only one extra Pack Ambush marker. Pack Ambush markers are shared between maniples.</description>
         </rule>
@@ -10114,6 +10119,9 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="5531-7873-1466-e68c" name="Specialised" hidden="false" targetId="8424-0cc4-1cc8-9e61" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="47c3-19d2-91e2-1f82" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="294c-9cb6-158f-e40c" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
@@ -12295,8 +12303,8 @@ may immediately make a single attack with any of its non-disabled weapons agains
               <selectionEntries>
                 <selectionEntry id="0428-b904-357f-c111" name="3 Pack Alpha" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="45d8-b6bb-9b22-82f8" name="3 Pack Alpha" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
-                      <description>Friendly Legio Audax Titans within 3&quot; of the Princeps’ Titan may re-roll rolls of 1 when makingCommand check</description>
+                    <rule id="45d8-b6bb-9b22-82f8" name="3 Pack Alpha" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
+                      <description>Friendly Legio Audax Titans within 3&quot; of the Princeps’ Titan may re-roll rolls of 1 when making Command checks.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -12306,7 +12314,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="a09c-2edf-fdf2-9403" name="2 Cull the Weak" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="4d86-0211-3581-dcd1" name="2 Cull the Weak" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
+                    <rule id="4d86-0211-3581-dcd1" name="2 Cull the Weak" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
                       <description>The Princeps’ Titan can re-roll failed Armour rolls against a location that has suffered Critical Damage.</description>
                     </rule>
                   </rules>
@@ -12317,7 +12325,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="4e53-ed58-a70e-5b9f" name="1 Master of Ambush" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="7b9a-7669-5bae-2986" name="1 Master of Ambush" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
+                    <rule id="7b9a-7669-5bae-2986" name="1 Master of Ambush" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
                       <description>The Stalk Unseen Legio Trait applies to the Princeps’ Titan for both the first and second round, instead of just the first.</description>
                     </rule>
                   </rules>
@@ -13955,6 +13963,9 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
     </rule>
     <rule id="4bcc-c9a8-70bd-fda4" name="Ionic Flare Shield" hidden="false">
       <description>Decrease the Strength of all attacks made by a weapon with the Blast trait against a Knight (Magaera/Styrix) Banner by 1, to a minimum of 3.</description>
+    </rule>
+    <rule id="8424-0cc4-1cc8-9e61" name="Specialised" publicationId="bf8b-27d7-039e-5df9" page="167" hidden="false">
+      <description>A specialised weapon relies upon expendable or delicate machinery, making it difficult to repair during battle. Unless otherwise stated, a disabled Specialised weapon cannot be repaired.</description>
     </rule>
   </sharedRules>
 </gameSystem>
