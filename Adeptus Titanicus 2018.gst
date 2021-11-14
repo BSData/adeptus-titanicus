@@ -5560,8 +5560,10 @@ A model can only be affected by this rule once per round and Legio Mordaxis Tita
         <rule id="bf30-a997-26e1-4d0f" name="Stalk Unseen" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
           <description>For the duration of the first round, attacks made against Legio Audax Titans of Scale 6 or lower suffer a -2 modifier to Hit roll if the Titan is at least 25% obscured, rather than the usual -1.</description>
         </rule>
-        <rule id="4944-52b2-9a41-b0a2" name="Wolves Among Prey" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
-          <description>A Legio Audax maniple can consist only of Titans of Scale 6 or lower; any maniple which has a Mandatory or Optional components containing Titans of Scale 7 or higher cannot contain Legio Audax Titans. Any reinforcement Titans declared as Legio Audax must be of Scale 6 or lower. Legio Audax Titans can always form Squadrons with other Legio Audax Titans, even Titans that belong to another Legio Audax maniple or Legio Audax reinforcement Titans. Legio Audax Squadrons can contain up to 5 Titans, unless they can normally contain more.</description>
+        <rule id="4944-52b2-9a41-b0a2" name="Wolves Among Prey" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
+          <description>A Legio Audax maniple can consist only of Titans of Scale 6 or lower; any maniple which has a Mandatory or Optional components containing Titans of Scale 7 or higher cannot contain Legio Audax Titans. Any reinforcement Titans declared as Legio Audax must be of Scale 6 or lower. 
+All Legio Audax Titans gain the Squadron special rule if they do not already have it and may always form Squadrons with other Legio Audax Titan of any type. Thisincludes Titans that belong to another Legio Audax Maniple or Legio Audax reinforcement Titans.
+Legio Audax Squadrons can contain up to five Titans, unless they can normally contain more.</description>
         </rule>
       </rules>
       <categoryLinks>
