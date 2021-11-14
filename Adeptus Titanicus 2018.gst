@@ -4771,7 +4771,7 @@ The fire then goes out.</description>
     </selectionEntry>
     <selectionEntry id="2351-970d-8215-e66c" name="=Mordaxis= Toxin Nodes" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a67d-f050-a56d-8313" name="Toxin Nodes" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
+        <rule id="a67d-f050-a56d-8313" name="Toxin Nodes" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
           <description>Any Legio Mordaxis Titan armed with a Blast (3&quot;) weapon may take Toxin Nodes for +20 points. Decrease the Strength value of the weapon by 1 (to a minimum of 4) and replace the Blast (3&quot;) trait with the Blast (5&quot;) trait.</description>
         </rule>
       </rules>
@@ -5537,11 +5537,13 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
     </selectionEntry>
     <selectionEntry id="4e6f-c618-89f4-d690" name="Legio Mordaxis (Deathdealers)" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="89f3-4f85-0d2f-455f" name="Inured to Pain" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
+        <rule id="89f3-4f85-0d2f-455f" name="Inured to Pain" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
           <description>Legio Mordaxis do not halve their speed when they suffer a hit from a Quake weapon that is not deflected by their shields, nor do they pivot when they suffer a Hit from a Concussive weapon that is not deflected by their shields. However, a Legio Mordaxis Titan cannot declare Power to Locomotors or Power to Stabilisers.</description>
         </rule>
-        <rule id="2ebe-35b3-fcaf-7fc4" name="Techno-toxin" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
-          <description>During the end phase, any unit (friend or foe) within 2” of a Legio Mordaxis Titan suffers D3 S4 hits. A unit can only be affected by this rule once per round. Legio Mordaxis Titans are not affected by this rule.</description>
+        <rule id="2ebe-35b3-fcaf-7fc4" name="Techno-toxin" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
+          <description>Subtract 1 from the result of all Repair rolls made for units within 4&quot; of a Legio Mordaxis Titan. In addition, at the start of the End phase, any Titan (friend or foe) that is within 4&quot; of a Legio Mordaxis Titan and has suffered at least one point of Critical Damage suffers D3 S5 hits on a random location,
+ignoring void shields. 
+A model can only be affected by this rule once per round and Legio Mordaxis Titans are not affected by this rule.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -12788,6 +12790,66 @@ If the Princeps’ Titan is a Corrupted Titan, it instead rolls two dice, re-rol
                   <rules>
                     <rule id="fb94-4a05-6553-b5a6" name="3 Ancient of Terra" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
                       <description>When the Princeps’ Titan must roll on the Reactor Overload table, only ever roll a D6, even if the Reactor Status marker is in a red hole.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="b2c5-6cea-c8e0-57c1" name="Legio Mordaxis" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-71ca-4d91-f370" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-71ca-4d91-f370" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="841e-9756-b660-389d" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="d362-cbfa-d720-fe64" name="1 Dulled Mind" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="9f51-5422-58b6-ae89" name="1 Dulled Mind" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
+                      <description>The Princeps’ Titan ignores the MIU Feedback and Princeps Wounded Damage effects.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="30f3-fac8-74df-6b43" name="2 Harbinger of Decay" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="41cf-9e52-4cd5-52c2" name="2 Harbinger of Decay" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
+                      <description>Models within 4&quot; of the Princeps’ Titan suffer D3+1 S7 hits from the Techno-toxin trait instead of D3 S5 hits.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e345-24eb-61cb-924b" name="3 Proud Protector" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="4dcf-e02e-36e7-b62d" name="3 Proud Protector" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
+                      <description>Once per round, when a friendly Legio Mordaxis Titan within 4&quot; of the Princeps suffers a Direct, Devastating, or Critical Hit, the Princeps’ Titan may 
+immediately push their reactor to make an attack with one of its weapons.</description>
                     </rule>
                   </rules>
                   <costs>
