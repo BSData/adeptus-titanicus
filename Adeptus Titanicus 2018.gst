@@ -5537,7 +5537,7 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
     </selectionEntry>
     <selectionEntry id="4e6f-c618-89f4-d690" name="Legio Mordaxis (Deathdealers)" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="89f3-4f85-0d2f-455f" name="Inured to Pain" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
+        <rule id="89f3-4f85-0d2f-455f" name="Inured to Pain" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
           <description>Legio Mordaxis do not halve their speed when they suffer a hit from a Quake weapon that is not deflected by their shields, nor do they pivot when they suffer a Hit from a Concussive weapon that is not deflected by their shields. However, a Legio Mordaxis Titan cannot declare Power to Locomotors or Power to Stabilisers.</description>
         </rule>
         <rule id="2ebe-35b3-fcaf-7fc4" name="Techno-toxin" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
