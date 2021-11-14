@@ -12297,8 +12297,8 @@ may immediately make a single attack with any of its non-disabled weapons agains
               <selectionEntries>
                 <selectionEntry id="0428-b904-357f-c111" name="3 Pack Alpha" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="45d8-b6bb-9b22-82f8" name="3 Pack Alpha" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
-                      <description>Friendly Legio Audax Titans within 3&quot; of the Princeps’ Titan may re-roll rolls of 1 when makingCommand check</description>
+                    <rule id="45d8-b6bb-9b22-82f8" name="3 Pack Alpha" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
+                      <description>Friendly Legio Audax Titans within 3&quot; of the Princeps’ Titan may re-roll rolls of 1 when making Command checks.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -12308,7 +12308,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="a09c-2edf-fdf2-9403" name="2 Cull the Weak" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="4d86-0211-3581-dcd1" name="2 Cull the Weak" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
+                    <rule id="4d86-0211-3581-dcd1" name="2 Cull the Weak" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
                       <description>The Princeps’ Titan can re-roll failed Armour rolls against a location that has suffered Critical Damage.</description>
                     </rule>
                   </rules>
@@ -12319,7 +12319,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="4e53-ed58-a70e-5b9f" name="1 Master of Ambush" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="7b9a-7669-5bae-2986" name="1 Master of Ambush" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
+                    <rule id="7b9a-7669-5bae-2986" name="1 Master of Ambush" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
                       <description>The Stalk Unseen Legio Trait applies to the Princeps’ Titan for both the first and second round, instead of just the first.</description>
                     </rule>
                   </rules>
