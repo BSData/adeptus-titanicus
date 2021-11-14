@@ -6046,7 +6046,7 @@ A Titan that arrives in this way cannot be activated in the Strategy or Movement
     </selectionEntry>
     <selectionEntry id="3009-299d-5b6d-7a0e" name="Legio Magna (Flaming Skulls)" publicationId="2988-f24d-39ef-352e" page="38" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="3833-32f9-04d3-0557" name="Howls of the Damned" publicationId="2988-f24d-39ef-352e" page="38" hidden="false">
+        <rule id="3833-32f9-04d3-0557" name="Howls of the Damned" publicationId="bf8b-27d7-039e-5df9" page="121" hidden="false">
           <description>Subtract 1 from the result of all Command checks made by Titans within 8&quot; of a Legio Magna Titan. In addition, Titans within 8&quot; of a Legio Magna Titan can never re-roll failed Command checks. Legio Magna Titans are not affected by this Legio Trait.</description>
         </rule>
       </rules>
