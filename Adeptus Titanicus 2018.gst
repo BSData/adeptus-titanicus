@@ -6123,8 +6123,8 @@ A Titan that arrives in this way cannot be activated in the Strategy or Movement
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c96-92ba-b07c-d53c" type="max"/>
       </constraints>
       <rules>
-        <rule id="47ad-2879-2551-f015" name="Directed Pressure Outlet" publicationId="2988-f24d-39ef-352e" page="38" hidden="false">
-          <description>Any Legio Magna Titan armed with a weapon with the Melta trait may be equipped with a Directed Pressure Outlet for +20 points. Each Melta weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
+        <rule id="47ad-2879-2551-f015" name="Directed Pressure Outlet" publicationId="bf8b-27d7-039e-5df9" page="121" hidden="false">
+          <description>Any Legio Magna Titan armed with a weapon with the Fusion trait may be equipped with a Directed Pressure Outlet for +20 points. Each Fusion weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
         </rule>
       </rules>
       <categoryLinks>
