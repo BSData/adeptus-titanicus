@@ -5540,8 +5540,10 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <rule id="89f3-4f85-0d2f-455f" name="Inured to Pain" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
           <description>Legio Mordaxis do not halve their speed when they suffer a hit from a Quake weapon that is not deflected by their shields, nor do they pivot when they suffer a Hit from a Concussive weapon that is not deflected by their shields. However, a Legio Mordaxis Titan cannot declare Power to Locomotors or Power to Stabilisers.</description>
         </rule>
-        <rule id="2ebe-35b3-fcaf-7fc4" name="Techno-toxin" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
-          <description>During the end phase, any unit (friend or foe) within 2” of a Legio Mordaxis Titan suffers D3 S4 hits. A unit can only be affected by this rule once per round. Legio Mordaxis Titans are not affected by this rule.</description>
+        <rule id="2ebe-35b3-fcaf-7fc4" name="Techno-toxin" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
+          <description>Subtract 1 from the result of all Repair rolls made for units within 4&quot; of a Legio Mordaxis Titan. In addition, at the start of the End phase, any Titan (friend or foe) that is within 4&quot; of a Legio Mordaxis Titan and has suffered at least one point of Critical Damage suffers D3 S5 hits on a random location,
+ignoring void shields. 
+A model can only be affected by this rule once per round and Legio Mordaxis Titans are not affected by this rule.</description>
         </rule>
       </rules>
       <categoryLinks>
