@@ -12799,6 +12799,66 @@ If the Princeps’ Titan is a Corrupted Titan, it instead rolls two dice, re-rol
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="b2c5-6cea-c8e0-57c1" name="Legio Mordaxis" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-71ca-4d91-f370" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-71ca-4d91-f370" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="841e-9756-b660-389d" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="d362-cbfa-d720-fe64" name="1 Dulled Mind" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="9f51-5422-58b6-ae89" name="1 Dulled Mind" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
+                      <description>The Princeps’ Titan ignores the MIU Feedback and Princeps Wounded Damage effects.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="30f3-fac8-74df-6b43" name="2 Harbinger of Decay" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="41cf-9e52-4cd5-52c2" name="2 Harbinger of Decay" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
+                      <description>Models within 4&quot; of the Princeps’ Titan suffer D3+1 S7 hits from the Techno-toxin trait instead of D3 S5 hits.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e345-24eb-61cb-924b" name="3 Proud Protector" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="4dcf-e02e-36e7-b62d" name="3 Proud Protector" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
+                      <description>Once per round, when a friendly Legio Mordaxis Titan within 4&quot; of the Princeps suffers a Direct, Devastating, or Critical Hit, the Princeps’ Titan may 
+immediately push their reactor to make an attack with one of its weapons.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
