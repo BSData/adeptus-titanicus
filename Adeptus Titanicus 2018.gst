@@ -5557,7 +5557,7 @@ A model can only be affected by this rule once per round and Legio Mordaxis Tita
     </selectionEntry>
     <selectionEntry id="e9a0-229e-7cfb-4def" name="Legio Audax (Ember Wolves)" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="bf30-a997-26e1-4d0f" name="Stalk Unseen" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
+        <rule id="bf30-a997-26e1-4d0f" name="Stalk Unseen" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
           <description>For the duration of the first round, attacks made against Legio Audax Titans of Scale 6 or lower suffer a -2 modifier to Hit roll if the Titan is at least 25% obscured, rather than the usual -1.</description>
         </rule>
         <rule id="4944-52b2-9a41-b0a2" name="Wolves Among Prey" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="false">
@@ -6902,12 +6902,12 @@ as this happens, the benefits from this piece of Wargear are lost for the remain
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f476-3a7b-5612-d96e" name="=Audax= Ursus Claw" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="f476-3a7b-5612-d96e" name="=Audax= Ursus Claw" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="a029-a99d-fea2-790d" name="Ursus Claw" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="a029-a99d-fea2-790d" name="Ursus Claw" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
-            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">12&quot;</characteristic>
@@ -6915,7 +6915,7 @@ as this happens, the benefits from this piece of Wargear are lost for the remain
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Impale, Specialised</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
