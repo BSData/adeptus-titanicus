@@ -4771,7 +4771,7 @@ The fire then goes out.</description>
     </selectionEntry>
     <selectionEntry id="2351-970d-8215-e66c" name="=Mordaxis= Toxin Nodes" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a67d-f050-a56d-8313" name="Toxin Nodes" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="false">
+        <rule id="a67d-f050-a56d-8313" name="Toxin Nodes" publicationId="bf8b-27d7-039e-5df9" page="101" hidden="false">
           <description>Any Legio Mordaxis Titan armed with a Blast (3&quot;) weapon may take Toxin Nodes for +20 points. Decrease the Strength value of the weapon by 1 (to a minimum of 4) and replace the Blast (3&quot;) trait with the Blast (5&quot;) trait.</description>
         </rule>
       </rules>
