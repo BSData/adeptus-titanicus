@@ -4784,9 +4784,9 @@ The fire then goes out.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="69f2-0efb-9085-02cb" name="=Audax= Reinforced Plating" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="69f2-0efb-9085-02cb" name="=Audax= Reinforced Plating" page="" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="775c-ba4c-b28d-9cdb" name="Reinforced Plating" hidden="false">
+        <rule id="775c-ba4c-b28d-9cdb" name="Reinforced Plating" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
           <description>A Legio Audax Titan of Scale 6 or lower can be fitted with Reinforced Plating for +15 points. Subtract 1 from the result of Armour rolls made against a Titan with Reinforced Plating.</description>
         </rule>
       </rules>
@@ -7946,7 +7946,7 @@ as this happens, the benefits from this piece of Wargear are lost for the remain
     </selectionEntry>
     <selectionEntry id="3a41-59a8-581b-0498" name="=Audax= Canis Light Maniple" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="true" collective="false" import="false" type="unit">
       <rules>
-        <rule id="e70f-0805-8c7e-5971" name="Hunting Pack" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="false">
+        <rule id="e70f-0805-8c7e-5971" name="Hunting Pack" publicationId="bf8b-27d7-039e-5df9" page="17" hidden="false">
           <description>Canis Light Maniples can only include Legio Audax Titans. Titans within this maniple do not deploy as normal. Instead, at the start of the deployment phase, after arranging Titans into squadrons, the controlling player places a number of markers equal to the number of Titans in this maniple. These markers can be placed anywhere on the battlefield more than 6” from the enemy deployment zone. Titans from this maniple count as deployed for the purposes of determining which player finished deploying first. When both players have finished deploying as normal, Titans from this maniple can be deployed anywhere within 3” of a Pack Ambush marker. Any Titan deployed in this manner outside of the controlling player’s deployment zone must be at least 50% obscured from any enemy unit within line of sight of that Titan. If a Titan cannot be placed within 3” of a Pack Ambush marker in this way, they must be deployed in the controlling player’s deployment zone, following all of the normal rules.
 
 If a player has more than one Canis Light Maniple, each maniple beyond the first gives only one extra Pack Ambush marker. Pack Ambush markers are shared between maniples.</description>
