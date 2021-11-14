@@ -12454,7 +12454,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f29d-a503-ff2c-f646" name="Legio Magna" publicationId="2988-f24d-39ef-352e" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="f29d-a503-ff2c-f646" name="Legio Magna" publicationId="bf8b-27d7-039e-5df9" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -12480,7 +12480,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
               <selectionEntries>
                 <selectionEntry id="7123-29c2-1b73-f87a" name="1 Messenger of Death" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="994d-5caf-b5fa-eaeb" name="1 Messenger of Death" publicationId="2988-f24d-39ef-352e" page="38" hidden="false">
+                    <rule id="994d-5caf-b5fa-eaeb" name="1 Messenger of Death" publicationId="bf8b-27d7-039e-5df9" page="121" hidden="false">
                       <description>The Legio Trait Howls of the Damned affects all units within 15&quot; of the Princeps Seniores’ Titan instead of 8&quot;.</description>
                     </rule>
                   </rules>
@@ -12491,7 +12491,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="478f-8177-8e24-2dd0" name="2 Slayer of Kings" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="9cfd-4358-8a41-af6d" name="2 Slayer of Kings" publicationId="2988-f24d-39ef-352e" page="38" hidden="false">
+                    <rule id="9cfd-4358-8a41-af6d" name="2 Slayer of Kings" publicationId="bf8b-27d7-039e-5df9" page="121" hidden="false">
                       <description>When targeting a Titan that is within 12&quot; of the Princeps’ Titan, the Princeps Seniores may add 1 to the Armour rolls of any hits, provided that the target Titan has a Scale equal to or greater than their own.</description>
                     </rule>
                   </rules>
@@ -12502,8 +12502,9 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="b1f9-2d65-eb1b-de55" name="3 Bloodthirsty" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="31de-149d-7a65-485c" name="3 Bloodthirsty" publicationId="2988-f24d-39ef-352e" page="38" hidden="false">
-                      <description>After resolving the effects of the weapon attack, the weapon suffers the Detonation Damage effect, using the highest detonation Strength value to resolve its effects (e.g., a Reaver Arm Laser Blaster would detonate at S9).</description>
+                    <rule id="31de-149d-7a65-485c" name="3 Bloodthirsty" publicationId="bf8b-27d7-039e-5df9" page="121" hidden="false">
+                      <description>Once per round, the Princeps may make an attack with a disabled weapon, as if the weapon had been repaired.
+After resolving the effects of the weapon attack, the weapon suffers the Detonation Damage effect, using the highest detonation Strength value to resolve its effects (e.g., a Reaver Arm Laser Blaster would detonate at S9).</description>
                     </rule>
                   </rules>
                   <costs>
