@@ -6922,6 +6922,9 @@ as this happens, the benefits from this piece of Wargear are lost for the remain
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="0923-6716-153e-55b6" name="Specialised" hidden="false" targetId="8424-0cc4-1cc8-9e61" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="5185-8a1a-b5a3-7b04" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="f1a8-3723-ef40-939f" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
@@ -10116,6 +10119,9 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="5531-7873-1466-e68c" name="Specialised" hidden="false" targetId="8424-0cc4-1cc8-9e61" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="47c3-19d2-91e2-1f82" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="294c-9cb6-158f-e40c" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
@@ -13957,6 +13963,9 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
     </rule>
     <rule id="4bcc-c9a8-70bd-fda4" name="Ionic Flare Shield" hidden="false">
       <description>Decrease the Strength of all attacks made by a weapon with the Blast trait against a Knight (Magaera/Styrix) Banner by 1, to a minimum of 3.</description>
+    </rule>
+    <rule id="8424-0cc4-1cc8-9e61" name="Specialised" publicationId="bf8b-27d7-039e-5df9" page="167" hidden="false">
+      <description>A specialised weapon relies upon expendable or delicate machinery, making it difficult to repair during battle. Unless otherwise stated, a disabled Specialised weapon cannot be repaired.</description>
     </rule>
   </sharedRules>
 </gameSystem>
