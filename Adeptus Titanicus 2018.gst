@@ -6220,7 +6220,7 @@ A Titan that arrives in this way cannot be activated in the Strategy or Movement
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8fc-2696-ade9-039e" type="max"/>
       </constraints>
       <rules>
-        <rule id="1920-b72e-b265-c21b" name="Storm Frag Shells" publicationId="2988-f24d-39ef-352e" page="42" hidden="false">
+        <rule id="1920-b72e-b265-c21b" name="Storm Frag Shells" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
           <description>Any Legio Vulturum Titan that is equipped with a vulcan mega-bolter or vulcan mega-bolter array can be upgraded with Storm Frag shells at a cost of +25 points for a vulcan megabolter and +45 points for a vulcan mega-bolter array. Each weapon a Titan is armed with must be upgraded separately. A weapon with this upgrade gains the Maximal Fire trait and increases the negative Acc modifier for the weapon’s Long range by 1 (i.e., a 0 becomes a -1, a -1 becomes a -2).</description>
         </rule>
       </rules>
