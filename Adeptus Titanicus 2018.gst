@@ -6561,8 +6561,9 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="dddd-cc44-e662-51a6" name="Legio Tritonis (Dark Tide)" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="e94f-0fd0-da07-b45c" name="Tide of Iron" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-          <description>May select a Warlord Titan instead of a reaver titan in a maniple as part of it&apos;s mandatory components </description>
+        <rule id="e94f-0fd0-da07-b45c" name="Tide of Iron" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
+          <description>Any Legio Tritonis maniple may select a Warlord Titan in place of any Reaver Titan as part of its mandatory components. 
+Note that for the purposes of the maniple’s rules, the replacement Titan does not count as the Titan type it is replacing</description>
         </rule>
         <rule id="8e3d-4535-dd80-887b" name="Revel in Slaugther" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
           <description>Add 1 to command checks for each enemy titan destroyed during the battle.  Capped at +3 </description>
