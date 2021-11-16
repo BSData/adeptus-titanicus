@@ -12717,7 +12717,7 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
               <selectionEntries>
                 <selectionEntry id="dbca-bfc0-0920-54ca" name="1 Experimental Vessel" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="88b3-9623-6d6c-8ad8" name="1 Experimental Vessel" publicationId="bf8b-27d7-039e-5df9" page="" hidden="false">
+                    <rule id="88b3-9623-6d6c-8ad8" name="1 Experimental Vessel" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
                       <description>Once per game, when the Princeps Senores&apos; Titan is activated during the Combat Phase, the Titan may immediately repair a single disabled weapon.</description>
                     </rule>
                   </rules>
@@ -12728,7 +12728,7 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
                 </selectionEntry>
                 <selectionEntry id="42a3-a561-b652-cfb4" name="2 Enigmatic" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="4af9-952a-fe35-b181" name="2 Enigmatic" publicationId="bf8b-27d7-039e-5df9" page="" hidden="false">
+                    <rule id="4af9-952a-fe35-b181" name="2 Enigmatic" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
                       <description>At the start of the Strategy phase of the first round, the Princep Seinores&apos; Titan may be redeployed; do this before either player issues any Orders. The Princep Seinores may be placed anywhere that they would normally be allowed to deploy by the mission being played.</description>
                     </rule>
                   </rules>
@@ -12739,7 +12739,7 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
                 </selectionEntry>
                 <selectionEntry id="d7d6-0e74-955c-4a69" name="3 Merciless" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="9f26-7e8e-024d-5a72" name="3 Merciless" publicationId="bf8b-27d7-039e-5df9" page="" hidden="false">
+                    <rule id="9f26-7e8e-024d-5a72" name="3 Merciless" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
                       <description>The presence of this Princeps within the battlegroup allows it to purchase the Legio Specific Stratagem Cull the Weak multiple time, it can only be played once per phase.</description>
                     </rule>
                   </rules>
