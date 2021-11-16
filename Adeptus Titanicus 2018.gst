@@ -6561,11 +6561,12 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="dddd-cc44-e662-51a6" name="Legio Tritonis (Dark Tide)" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="e94f-0fd0-da07-b45c" name="Tide of Iron" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-          <description>May select a Warlord Titan instead of a reaver titan in a maniple as part of it&apos;s mandatory components </description>
+        <rule id="e94f-0fd0-da07-b45c" name="Tide of Iron" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
+          <description>Any Legio Tritonis maniple may select a Warlord Titan in place of any Reaver Titan as part of its mandatory components. 
+Note that for the purposes of the maniple’s rules, the replacement Titan does not count as the Titan type it is replacing</description>
         </rule>
-        <rule id="8e3d-4535-dd80-887b" name="Revel in Slaugther" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-          <description>Add 1 to command checks for each enemy titan destroyed during the battle.  Capped at +3 </description>
+        <rule id="8e3d-4535-dd80-887b" name="Revel in Slaugther" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
+          <description>Add 1 to command checks made by friendly Legio Tritonis Titans for each enemy Titan previously destroyed during this battle. Capped at +3 </description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6677,11 +6678,10 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5b5c-2d02-7856-0dd8" name="=Tritonis= Radiative Warheads" publicationId="ce02-a882-fdad-dd36" page="52" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="5b5c-2d02-7856-0dd8" name="=Tritonis= Radiative Warheads" page="" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a211-039e-7883-c076" name="=Tritonis= Radiative Warheads" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-          <description>Any Legio Tritonis Titan armed with either Apocalypse Missile Launchers or an Apocalypse Missile Launcher may
-be equipped with Radiative Warheads for +25 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon a Titan is armed with must be upgraded separately. When making an attack with a weapon with this upgrade against a target with active Void Shields, each Hit roll of a 6 counts as two hits.</description>
+        <rule id="a211-039e-7883-c076" name="=Tritonis= Radiative Warheads" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
+          <description>Any Legio Tritonis Titan armed with either Apocalypse Missile Launchers or an Apocalypse Missile Launcher may be equipped with Radiative Warheads for +25 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon a Titan is armed with must be upgraded separately. When making an attack with a weapon with this upgrade against a target with active Void Shields, each Hit roll of a 6 counts as two hits.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -11944,10 +11944,9 @@ phase or Combat phase of that round as normal.</description>
               <selectionEntries>
                 <selectionEntry id="a0db-0cf6-d1f0-cdfb" name="2 Lust for Vengeance" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="acd6-55e1-63ed-c7a8" name="2 Lust for Vengeance" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
+                    <rule id="acd6-55e1-63ed-c7a8" name="2 Lust for Vengeance" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
                       <description>Once per game, when the Princeps’ Titan suffers Critical Damage, the Titan may respond in kind.
-After resolving all the effects of the attack that caused the Critical Damage, the Princeps’ Titan
-may immediately make a single attack with any of its non-disabled weapons against the unit that caused the Critical Damage. If this attack destroys the enemy unit, the opponent’s activation ends.
+After resolving all the effects of the attack that caused the Critical Damage, the Princeps’ Titan may immediately make a single attack with any of its non-disabled weapons against the unit that caused the Critical Damage. If this attack destroys the enemy unit, the opponent’s activation ends.
 </description>
                     </rule>
                   </rules>
@@ -11958,8 +11957,9 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="32b3-ae2a-58b1-8ecf" name="3 Leader of Arachnus" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="9774-b61b-bf91-44b2" name="3 Leader of Arachnus" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-                      <description>The presence of this Princeps within the battlegroupallows it to purchase the Legio Specific Stratagem: Stygian Veil multiple times. Though the Stratagem can be purchased multiple times, it can only be played once per phase.</description>
+                    <rule id="9774-b61b-bf91-44b2" name="3 Leader of Arachnus" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
+                      <description>The presence of this Princeps within the battlegroupallows it to purchase the Legio Specific Stratagem: Stygian Veil multiple times, with each purchase after the first costing 2 Stratagem points instead of 3. 
+	Though the Stratagem can be purchased multiple times, it can only be played once per phase.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -11969,8 +11969,8 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="35b7-0964-7275-003d" name="1 Tactical Genius" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="34a1-5241-c97e-cfee" name="1 Tactical Genius" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-                      <description>While the Princeps is on the battlefield, the player may re-roll the dice when determining who will be the First Player. If they do so, the Princeps’ Titan cannot be activated in the following Strategy phase. </description>
+                    <rule id="34a1-5241-c97e-cfee" name="1 Tactical Genius" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
+                      <description>While the Princeps is on the battlefield, the player may re-roll the dice when determining who will be the First Player. If they do so, the Princeps’ Titan cannot be activated in the following Strategy phase. 	</description>
                     </rule>
                   </rules>
                   <costs>
