@@ -6583,8 +6583,8 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
         <rule id="d3c7-aaff-af71-4482" name="Trifling pain " publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
           <description>When activated in movement phase, can ignore single critical damage effect until end of combat phase.  Repair critical damage on a 4+ .</description>
         </rule>
-        <rule id="b524-679d-2ba1-04f3" name="Envious" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
-          <description>Add 1 to command checks if an enemy titan of equal or larger scale is visible </description>
+        <rule id="b524-679d-2ba1-04f3" name="Envious" publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
+          <description>Add 1 to the result of all Command checks made by Legio Damicium Titans so long as at least one enemy Titan of an equal or larger Scale than their own is visible to them.</description>
         </rule>
       </rules>
       <categoryLinks>
