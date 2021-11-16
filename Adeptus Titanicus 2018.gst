@@ -6545,7 +6545,7 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="621d-d3d2-41c9-5052" name="Legio Kulisaetai (Gatekeepers)" publicationId="ce02-a882-fdad-dd36" page="48" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="5f05-ed1b-cf05-d89c" name="Callous" publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
+        <rule id="5f05-ed1b-cf05-d89c" name="Callous" publicationId="bf8b-27d7-039e-5df9" page="147" hidden="false">
           <description>Never suffer penalties to command checks and ignore rules forcing rerolls of successful command checks</description>
         </rule>
       </rules>
@@ -6646,9 +6646,9 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="170d-3f13-f670-3cc6" name="=Laniaskara= Mordantised Ceramite" publicationId="ce02-a882-fdad-dd36" page="44" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="170d-3f13-f670-3cc6" name="=Laniaskara= Mordantised Ceramite" publicationId="bf8b-27d7-039e-5df9" page="141" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a6dd-007e-daba-9d00" name="=Laniaskara= Mordantised Ceramite" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
+        <rule id="a6dd-007e-daba-9d00" name="=Laniaskara= Mordantised Ceramite" publicationId="bf8b-27d7-039e-5df9" page="141" hidden="false">
           <description>Any Legio Laniaskara Titan may be upgraded with Mordantised Ceramite for +10 points. Subtract 1 from the result of all Armour rolls for an attack made by a weapon with the Maximal Fire trait against a Titan with this upgrade. This negative modifier is applied even if the attacking unit is not using the Maximal Fire trait to increase their weapon’s Strength.</description>
         </rule>
       </rules>
@@ -6661,9 +6661,9 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7c51-55b9-4942-4061" name="=Kulisaetai= Accelerated Autoloaders " publicationId="ce02-a882-fdad-dd36" page="48" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="7c51-55b9-4942-4061" name="=Kulisaetai= Accelerated Autoloaders " page="" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="2257-4054-c57c-6ae9" name="=Kulisaetai= Accelerated Autoloaders " publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
+        <rule id="2257-4054-c57c-6ae9" name="=Kulisaetai= Accelerated Autoloaders " publicationId="bf8b-27d7-039e-5df9" page="147" hidden="false">
           <description>Any Legio Kulisaetai Titan armed with either Apocalypse Missile Launchers or an Apocalypse Missile Launcher may be equipped with Accelerated Autoloaders for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon a Titan is armed with must be upgraded separately. After resolving an attack made by a weapon with this upgrade, the Titan may immediately make a second attack with this weapon against the same target, applying a -1 modifier to all Hit rolls for that attack. After resolving the second attack, the weapon is disabled and the upgrade has no further effect for the remainder of the battle, even if the weapon is subsequently repaired.</description>
         </rule>
       </rules>
@@ -11884,7 +11884,7 @@ phase or Combat phase of that round as normal.</description>
               <selectionEntries>
                 <selectionEntry id="40fa-89b1-7982-e877" name="2 Infamous Warlord" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="a9b6-9f86-e369-a625" name=" 2 Infamous Warlord" publicationId="ce02-a882-fdad-dd36" page="46" hidden="false">
+                    <rule id="a9b6-9f86-e369-a625" name=" 2 Infamous Warlord" publicationId="bf8b-27d7-039e-5df9" page="147" hidden="false">
                       <description>Enemy units within 8&quot; of the Princeps’ Titan subtract 1 from any Command check they make. </description>
                     </rule>
                   </rules>
@@ -11895,7 +11895,7 @@ phase or Combat phase of that round as normal.</description>
                 </selectionEntry>
                 <selectionEntry id="8336-5a01-3d5d-a122" name="3 Corrupted" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="9f54-ae7b-ab41-1514" name="3 Corrupted" publicationId="ce02-a882-fdad-dd36" page="46" hidden="false">
+                    <rule id="9f54-ae7b-ab41-1514" name="3 Corrupted" publicationId="bf8b-27d7-039e-5df9" page="147" hidden="false">
                       <description>The Princeps Titan ignores the MIU Feedback and Princeps Wounded Damage effects.</description>
                     </rule>
                   </rules>
@@ -11906,7 +11906,7 @@ phase or Combat phase of that round as normal.</description>
                 </selectionEntry>
                 <selectionEntry id="57a6-5a37-599e-47b0" name="1 Ancient of Death" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="3c65-cd50-eca4-d888" name="1 Ancient of Death" publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
+                    <rule id="3c65-cd50-eca4-d888" name="1 Ancient of Death" publicationId="bf8b-27d7-039e-5df9" page="147" hidden="false">
                       <description>When the Princeps Titan must roll on the Reactor Overload table, only ever roll a D6, even if the Reactor Status marker is in a red hole.</description>
                     </rule>
                   </rules>
