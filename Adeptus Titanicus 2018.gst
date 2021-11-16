@@ -6565,8 +6565,8 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
           <description>Any Legio Tritonis maniple may select a Warlord Titan in place of any Reaver Titan as part of its mandatory components. 
 Note that for the purposes of the maniple’s rules, the replacement Titan does not count as the Titan type it is replacing</description>
         </rule>
-        <rule id="8e3d-4535-dd80-887b" name="Revel in Slaugther" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-          <description>Add 1 to command checks for each enemy titan destroyed during the battle.  Capped at +3 </description>
+        <rule id="8e3d-4535-dd80-887b" name="Revel in Slaugther" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
+          <description>Add 1 to command checks made by friendly Legio Tritonis Titans for each enemy Titan previously destroyed during this battle. Capped at +3 </description>
         </rule>
       </rules>
       <categoryLinks>
@@ -11944,10 +11944,9 @@ phase or Combat phase of that round as normal.</description>
               <selectionEntries>
                 <selectionEntry id="a0db-0cf6-d1f0-cdfb" name="2 Lust for Vengeance" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="acd6-55e1-63ed-c7a8" name="2 Lust for Vengeance" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
+                    <rule id="acd6-55e1-63ed-c7a8" name="2 Lust for Vengeance" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
                       <description>Once per game, when the Princeps’ Titan suffers Critical Damage, the Titan may respond in kind.
-After resolving all the effects of the attack that caused the Critical Damage, the Princeps’ Titan
-may immediately make a single attack with any of its non-disabled weapons against the unit that caused the Critical Damage. If this attack destroys the enemy unit, the opponent’s activation ends.
+After resolving all the effects of the attack that caused the Critical Damage, the Princeps’ Titan may immediately make a single attack with any of its non-disabled weapons against the unit that caused the Critical Damage. If this attack destroys the enemy unit, the opponent’s activation ends.
 </description>
                     </rule>
                   </rules>
@@ -11958,8 +11957,9 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="32b3-ae2a-58b1-8ecf" name="3 Leader of Arachnus" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="9774-b61b-bf91-44b2" name="3 Leader of Arachnus" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-                      <description>The presence of this Princeps within the battlegroupallows it to purchase the Legio Specific Stratagem: Stygian Veil multiple times. Though the Stratagem can be purchased multiple times, it can only be played once per phase.</description>
+                    <rule id="9774-b61b-bf91-44b2" name="3 Leader of Arachnus" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
+                      <description>The presence of this Princeps within the battlegroupallows it to purchase the Legio Specific Stratagem: Stygian Veil multiple times, with each purchase after the first costing 2 Stratagem points instead of 3. 
+	Though the Stratagem can be purchased multiple times, it can only be played once per phase.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -11969,8 +11969,8 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="35b7-0964-7275-003d" name="1 Tactical Genius" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="34a1-5241-c97e-cfee" name="1 Tactical Genius" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-                      <description>While the Princeps is on the battlefield, the player may re-roll the dice when determining who will be the First Player. If they do so, the Princeps’ Titan cannot be activated in the following Strategy phase. </description>
+                    <rule id="34a1-5241-c97e-cfee" name="1 Tactical Genius" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
+                      <description>While the Princeps is on the battlefield, the player may re-roll the dice when determining who will be the First Player. If they do so, the Princeps’ Titan cannot be activated in the following Strategy phase. 	</description>
                     </rule>
                   </rules>
                   <costs>
