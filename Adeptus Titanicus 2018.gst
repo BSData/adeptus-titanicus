@@ -6526,11 +6526,11 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="8d2d-07be-eb8c-6cce" name="Legio Laniaskara (Impalers)" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="5c80-cf1a-6506-a40e" name="Direct Measures" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false">
-          <description>Once per round, a single titan can move with boosted speed without pushing the reactor.</description>
+        <rule id="5c80-cf1a-6506-a40e" name="Direct Measures" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
+          <description>Once per round, a single Legio Laniaskara Titan can declare Power to Locomotors! without needing to push its reactor.</description>
         </rule>
-        <rule id="b478-8a65-10e7-00ac" name="Bullish" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false">
-          <description>When making attacks as part of a charge order, you may make a smash attack in addition any other attacks. </description>
+        <rule id="b478-8a65-10e7-00ac" name="Bullish" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
+          <description>When making attacks as part of a Charge order, a Legio Laniaskara Titan may make a Smash Attack and one other attack with a weapon with the Melee trait. The Smash Attack does not benefit from the additional dice from the Charge order.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6648,7 +6648,7 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="170d-3f13-f670-3cc6" name="=Laniaskara= Mordantised Ceramite" publicationId="ce02-a882-fdad-dd36" page="44" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a6dd-007e-daba-9d00" name="=Laniaskara= Mordantised Ceramite" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false">
+        <rule id="a6dd-007e-daba-9d00" name="=Laniaskara= Mordantised Ceramite" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
           <description>Any Legio Laniaskara Titan may be upgraded with Mordantised Ceramite for +10 points. Subtract 1 from the result of all Armour rolls for an attack made by a weapon with the Maximal Fire trait against a Titan with this upgrade. This negative modifier is applied even if the attacking unit is not using the Maximal Fire trait to increase their weapon’s Strength.</description>
         </rule>
       </rules>
@@ -11799,7 +11799,7 @@ phase or Combat phase of that round as normal.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="6ff2-0833-627d-896c" name="Legio Laniascara" publicationId="ce02-a882-fdad-dd36" page="44" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="6ff2-0833-627d-896c" name="Legio Laniaskara" page="" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -11825,7 +11825,7 @@ phase or Combat phase of that round as normal.</description>
               <selectionEntries>
                 <selectionEntry id="90f3-c0ca-cbae-7fcd" name="2 Titan Killer" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="a876-c26d-b59a-e2aa" name="2 Titan Killer" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false">
+                    <rule id="a876-c26d-b59a-e2aa" name="2 Titan Killer" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
                       <description>Once per round, the Princeps may re-roll all Armour rolls of a 1 for an attack made against an enemy Titan.</description>
                     </rule>
                   </rules>
@@ -11836,7 +11836,7 @@ phase or Combat phase of that round as normal.</description>
                 </selectionEntry>
                 <selectionEntry id="2a61-0965-f7b2-b8ec" name="3 Heedless Rage" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="1cd4-5fc6-cdbc-a81b" name="3 Heedless Rage" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false">
+                    <rule id="1cd4-5fc6-cdbc-a81b" name="3 Heedless Rage" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
                       <description>Once per round, the Princeps may make an attack with a disabled weapon with the Melee trait. Once the effects of the attack have been resolved, the Princeps’ Titan suffers a single S10 hit to its body</description>
                     </rule>
                   </rules>
@@ -11847,7 +11847,7 @@ phase or Combat phase of that round as normal.</description>
                 </selectionEntry>
                 <selectionEntry id="d389-cfd3-b2ee-c6a0" name="1 Cruel" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="fb9c-76f1-f9ae-8011" name="1 Cruel" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false">
+                    <rule id="fb9c-76f1-f9ae-8011" name="1 Cruel" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
                       <description>When making attacks against units with a Scale of 5 or lower, increase the Strength of any hits by 2.</description>
                     </rule>
                   </rules>
