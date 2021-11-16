@@ -6138,7 +6138,7 @@ A Titan that arrives in this way cannot be activated in the Strategy or Movement
     </selectionEntry>
     <selectionEntry id="5c80-4c19-098e-4775" name="Legio Vulturum (Gore Crows)" publicationId="2988-f24d-39ef-352e" page="42" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="7d1b-6216-c577-b26e" name="Relentless Killers" publicationId="2988-f24d-39ef-352e" page="42" hidden="false">
+        <rule id="7d1b-6216-c577-b26e" name="Relentless Killers" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
           <description>During the Combat phase, friendly Legio Vulturum Titans add 1 to all Hit rolls if, during the same round, an enemy Titan has suffered Catastrophic Damage, regardless of the source.</description>
         </rule>
       </rules>
@@ -6208,7 +6208,7 @@ A Titan that arrives in this way cannot be activated in the Strategy or Movement
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4b31-816a-2c3d-cb9d" name="=Vulturum= Storm Frag Shells" publicationId="2988-f24d-39ef-352e" page="42" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="4b31-816a-2c3d-cb9d" name="=Vulturum= Storm Frag Shells" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
