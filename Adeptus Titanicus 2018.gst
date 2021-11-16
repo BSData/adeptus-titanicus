@@ -6580,8 +6580,9 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="0fb5-613c-cbb2-90df" name="Legio Damicium (Unbroken Lords) " publicationId="ce02-a882-fdad-dd36" page="54" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="d3c7-aaff-af71-4482" name="Trifling pain " publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
-          <description>When activated in movement phase, can ignore single critical damage effect until end of combat phase.  Repair critical damage on a 4+ .</description>
+        <rule id="d3c7-aaff-af71-4482" name="Trifling pain " publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
+          <description>When activated in the Movement phase, a Legio Damicium Titan may choose to ignore a single Critical Damage effect.
+This lasts until the end of the Combat phase. In addition, Legio Damicium Titans can repair Critical Damage effects on a roll of a 4+ instead of a 5+.</description>
         </rule>
         <rule id="b524-679d-2ba1-04f3" name="Envious" publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
           <description>Add 1 to the result of all Command checks made by Legio Damicium Titans so long as at least one enemy Titan of an equal or larger Scale than their own is visible to them.</description>
