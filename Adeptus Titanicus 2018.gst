@@ -6648,7 +6648,7 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="170d-3f13-f670-3cc6" name="=Laniaskara= Mordantised Ceramite" publicationId="ce02-a882-fdad-dd36" page="44" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a6dd-007e-daba-9d00" name="=Laniaskara= Mordantised Ceramite" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false">
+        <rule id="a6dd-007e-daba-9d00" name="=Laniaskara= Mordantised Ceramite" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
           <description>Any Legio Laniaskara Titan may be upgraded with Mordantised Ceramite for +10 points. Subtract 1 from the result of all Armour rolls for an attack made by a weapon with the Maximal Fire trait against a Titan with this upgrade. This negative modifier is applied even if the attacking unit is not using the Maximal Fire trait to increase their weapon’s Strength.</description>
         </rule>
       </rules>
