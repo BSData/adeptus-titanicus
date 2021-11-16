@@ -6138,7 +6138,7 @@ A Titan that arrives in this way cannot be activated in the Strategy or Movement
     </selectionEntry>
     <selectionEntry id="5c80-4c19-098e-4775" name="Legio Vulturum (Gore Crows)" publicationId="2988-f24d-39ef-352e" page="42" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="7d1b-6216-c577-b26e" name="Relentless Killers" publicationId="2988-f24d-39ef-352e" page="42" hidden="false">
+        <rule id="7d1b-6216-c577-b26e" name="Relentless Killers" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
           <description>During the Combat phase, friendly Legio Vulturum Titans add 1 to all Hit rolls if, during the same round, an enemy Titan has suffered Catastrophic Damage, regardless of the source.</description>
         </rule>
       </rules>
@@ -6208,7 +6208,7 @@ A Titan that arrives in this way cannot be activated in the Strategy or Movement
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4b31-816a-2c3d-cb9d" name="=Vulturum= Storm Frag Shells" publicationId="2988-f24d-39ef-352e" page="42" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="4b31-816a-2c3d-cb9d" name="=Vulturum= Storm Frag Shells" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -6220,7 +6220,7 @@ A Titan that arrives in this way cannot be activated in the Strategy or Movement
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8fc-2696-ade9-039e" type="max"/>
       </constraints>
       <rules>
-        <rule id="1920-b72e-b265-c21b" name="Storm Frag Shells" publicationId="2988-f24d-39ef-352e" page="42" hidden="false">
+        <rule id="1920-b72e-b265-c21b" name="Storm Frag Shells" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
           <description>Any Legio Vulturum Titan that is equipped with a vulcan mega-bolter or vulcan mega-bolter array can be upgraded with Storm Frag shells at a cost of +25 points for a vulcan megabolter and +45 points for a vulcan mega-bolter array. Each weapon a Titan is armed with must be upgraded separately. A weapon with this upgrade gains the Maximal Fire trait and increases the negative Acc modifier for the weapon’s Long range by 1 (i.e., a 0 becomes a -1, a -1 becomes a -2).</description>
         </rule>
       </rules>
@@ -12717,7 +12717,7 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
               <selectionEntries>
                 <selectionEntry id="dbca-bfc0-0920-54ca" name="1 Experimental Vessel" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="88b3-9623-6d6c-8ad8" name="1 Experimental Vessel" publicationId="bf8b-27d7-039e-5df9" page="" hidden="false">
+                    <rule id="88b3-9623-6d6c-8ad8" name="1 Experimental Vessel" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
                       <description>Once per game, when the Princeps Senores&apos; Titan is activated during the Combat Phase, the Titan may immediately repair a single disabled weapon.</description>
                     </rule>
                   </rules>
@@ -12728,7 +12728,7 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
                 </selectionEntry>
                 <selectionEntry id="42a3-a561-b652-cfb4" name="2 Enigmatic" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="4af9-952a-fe35-b181" name="2 Enigmatic" publicationId="bf8b-27d7-039e-5df9" page="" hidden="false">
+                    <rule id="4af9-952a-fe35-b181" name="2 Enigmatic" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
                       <description>At the start of the Strategy phase of the first round, the Princep Seinores&apos; Titan may be redeployed; do this before either player issues any Orders. The Princep Seinores may be placed anywhere that they would normally be allowed to deploy by the mission being played.</description>
                     </rule>
                   </rules>
@@ -12739,7 +12739,7 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
                 </selectionEntry>
                 <selectionEntry id="d7d6-0e74-955c-4a69" name="3 Merciless" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="9f26-7e8e-024d-5a72" name="3 Merciless" publicationId="bf8b-27d7-039e-5df9" page="" hidden="false">
+                    <rule id="9f26-7e8e-024d-5a72" name="3 Merciless" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
                       <description>The presence of this Princeps within the battlegroup allows it to purchase the Legio Specific Stratagem Cull the Weak multiple time, it can only be played once per phase.</description>
                     </rule>
                   </rules>
