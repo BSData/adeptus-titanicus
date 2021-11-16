@@ -6545,7 +6545,7 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="621d-d3d2-41c9-5052" name="Legio Kulisaetai (Gatekeepers)" publicationId="ce02-a882-fdad-dd36" page="48" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="5f05-ed1b-cf05-d89c" name="Callous" publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
+        <rule id="5f05-ed1b-cf05-d89c" name="Callous" publicationId="bf8b-27d7-039e-5df9" page="147" hidden="false">
           <description>Never suffer penalties to command checks and ignore rules forcing rerolls of successful command checks</description>
         </rule>
       </rules>
