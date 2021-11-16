@@ -6677,11 +6677,10 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5b5c-2d02-7856-0dd8" name="=Tritonis= Radiative Warheads" publicationId="ce02-a882-fdad-dd36" page="52" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="5b5c-2d02-7856-0dd8" name="=Tritonis= Radiative Warheads" page="" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a211-039e-7883-c076" name="=Tritonis= Radiative Warheads" publicationId="ce02-a882-fdad-dd36" page="52" hidden="false">
-          <description>Any Legio Tritonis Titan armed with either Apocalypse Missile Launchers or an Apocalypse Missile Launcher may
-be equipped with Radiative Warheads for +25 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon a Titan is armed with must be upgraded separately. When making an attack with a weapon with this upgrade against a target with active Void Shields, each Hit roll of a 6 counts as two hits.</description>
+        <rule id="a211-039e-7883-c076" name="=Tritonis= Radiative Warheads" publicationId="bf8b-27d7-039e-5df9" page="159" hidden="false">
+          <description>Any Legio Tritonis Titan armed with either Apocalypse Missile Launchers or an Apocalypse Missile Launcher may be equipped with Radiative Warheads for +25 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon a Titan is armed with must be upgraded separately. When making an attack with a weapon with this upgrade against a target with active Void Shields, each Hit roll of a 6 counts as two hits.</description>
         </rule>
       </rules>
       <categoryLinks>
