@@ -6646,9 +6646,9 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="170d-3f13-f670-3cc6" name="=Laniaskara= Mordantised Ceramite" publicationId="ce02-a882-fdad-dd36" page="44" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="170d-3f13-f670-3cc6" name="=Laniaskara= Mordantised Ceramite" publicationId="bf8b-27d7-039e-5df9" page="141" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="a6dd-007e-daba-9d00" name="=Laniaskara= Mordantised Ceramite" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
+        <rule id="a6dd-007e-daba-9d00" name="=Laniaskara= Mordantised Ceramite" publicationId="bf8b-27d7-039e-5df9" page="141" hidden="false">
           <description>Any Legio Laniaskara Titan may be upgraded with Mordantised Ceramite for +10 points. Subtract 1 from the result of all Armour rolls for an attack made by a weapon with the Maximal Fire trait against a Titan with this upgrade. This negative modifier is applied even if the attacking unit is not using the Maximal Fire trait to increase their weapon’s Strength.</description>
         </rule>
       </rules>
@@ -6661,9 +6661,9 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7c51-55b9-4942-4061" name="=Kulisaetai= Accelerated Autoloaders " publicationId="ce02-a882-fdad-dd36" page="48" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="7c51-55b9-4942-4061" name="=Kulisaetai= Accelerated Autoloaders " page="" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="2257-4054-c57c-6ae9" name="=Kulisaetai= Accelerated Autoloaders " publicationId="ce02-a882-fdad-dd36" page="48" hidden="false">
+        <rule id="2257-4054-c57c-6ae9" name="=Kulisaetai= Accelerated Autoloaders " publicationId="bf8b-27d7-039e-5df9" page="147" hidden="false">
           <description>Any Legio Kulisaetai Titan armed with either Apocalypse Missile Launchers or an Apocalypse Missile Launcher may be equipped with Accelerated Autoloaders for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon a Titan is armed with must be upgraded separately. After resolving an attack made by a weapon with this upgrade, the Titan may immediately make a second attack with this weapon against the same target, applying a -1 modifier to all Hit rolls for that attack. After resolving the second attack, the weapon is disabled and the upgrade has no further effect for the remainder of the battle, even if the weapon is subsequently repaired.</description>
         </rule>
       </rules>
