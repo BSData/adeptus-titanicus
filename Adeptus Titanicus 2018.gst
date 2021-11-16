@@ -6580,11 +6580,12 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="0fb5-613c-cbb2-90df" name="Legio Damicium (Unbroken Lords) " publicationId="ce02-a882-fdad-dd36" page="54" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="d3c7-aaff-af71-4482" name="Trifling pain " publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
-          <description>When activated in movement phase, can ignore single critical damage effect until end of combat phase.  Repair critical damage on a 4+ .</description>
+        <rule id="d3c7-aaff-af71-4482" name="Trifling pain " publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
+          <description>When activated in the Movement phase, a Legio Damicium Titan may choose to ignore a single Critical Damage effect.
+This lasts until the end of the Combat phase. In addition, Legio Damicium Titans can repair Critical Damage effects on a roll of a 4+ instead of a 5+.</description>
         </rule>
-        <rule id="b524-679d-2ba1-04f3" name="Envious" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
-          <description>Add 1 to command checks if an enemy titan of equal or larger scale is visible </description>
+        <rule id="b524-679d-2ba1-04f3" name="Envious" publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
+          <description>Add 1 to the result of all Command checks made by Legio Damicium Titans so long as at least one enemy Titan of an equal or larger Scale than their own is visible to them.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6692,11 +6693,11 @@ be equipped with Radiative Warheads for +25 points, so long as that Titan does n
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dc14-b65e-acfb-906a" name="=Damicium= Secondary Plating" publicationId="ce02-a882-fdad-dd36" page="54" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="dc14-b65e-acfb-906a" name="=Damicium= Secondary Plating" page="" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="899c-50ef-d2bb-0ef1" name="=Damicium= Secondary Plating" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
-          <description>The first Critical Hit a Titan with this upgrade receives is downgraded to a Devastating Hit instead. As soon
-as this happens, the benefits from this piece of Wargear are lost for the remainder of the battle.</description>
+          <description>Any Legio Damicium Titan may take Secondary Plating for +10 points.
+The first Critical Hit a Titan with this upgrade receives is downgraded to a Devastating Hit instead. As soon as this happens, the benefits from this piece of Wargear are lost for the remainder of the battle.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -12005,7 +12006,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
               <selectionEntries>
                 <selectionEntry id="0ee0-89bd-e3f0-bd4c" name="2 Bitter Soul" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="5b74-e6a3-2b9d-61de" name="2 Bitter Soul" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
+                    <rule id="5b74-e6a3-2b9d-61de" name="2 Bitter Soul" publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
                       <description>The Princeps’ Titan does not halve their Speed when they suffer a hit from a Quake weapon that is not deflected by their shields, nor do they pivot (i.e., on a roll of a 1-2 or a 5-6) when they suffer a hit from a Concussive weapon that is not deflected by their shields.</description>
                     </rule>
                   </rules>
@@ -12016,7 +12017,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="0d85-fcb7-ba71-b933" name="3 Limitless" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="e420-581f-cf61-7608" name="3 Limitless" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
+                    <rule id="e420-581f-cf61-7608" name="3 Limitless" publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
                       <description>Once per game, during the Combat phase, the Princeps’ Titan may make a weapon attack with any and all of its disabled weapons as if they were not disabled.</description>
                     </rule>
                   </rules>
@@ -12027,7 +12028,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="8719-407f-2406-c3df" name="1 Beyond Death" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="f10f-6c10-f65b-96cc" name="1 Beyond Death" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
+                    <rule id="f10f-6c10-f65b-96cc" name="1 Beyond Death" publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
                       <description>When this Princeps suffers Catastrophic Damage, make a Command check for the Titan before rolling on the Catastrophic Damage table. If the check is successful, do not roll on the table. Instead, the Titan moves D6&quot; in a direction of the controlling player’s choice, stopping before it collides with an enemy unit. The Titan then immediately suffers a Magazine Detonation.</description>
                     </rule>
                   </rules>
