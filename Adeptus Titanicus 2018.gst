@@ -6526,8 +6526,8 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
     </selectionEntry>
     <selectionEntry id="8d2d-07be-eb8c-6cce" name="Legio Laniaskara (Impalers)" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="5c80-cf1a-6506-a40e" name="Direct Measures" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false">
-          <description>Once per round, a single titan can move with boosted speed without pushing the reactor.</description>
+        <rule id="5c80-cf1a-6506-a40e" name="Direct Measures" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="false">
+          <description>Once per round, a single Legio Laniaskara Titan can declare Power to Locomotors! without needing to push its reactor.</description>
         </rule>
         <rule id="b478-8a65-10e7-00ac" name="Bullish" publicationId="ce02-a882-fdad-dd36" page="44" hidden="false">
           <description>When making attacks as part of a charge order, you may make a smash attack in addition any other attacks. </description>
