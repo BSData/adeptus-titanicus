@@ -12006,7 +12006,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
               <selectionEntries>
                 <selectionEntry id="0ee0-89bd-e3f0-bd4c" name="2 Bitter Soul" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="5b74-e6a3-2b9d-61de" name="2 Bitter Soul" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
+                    <rule id="5b74-e6a3-2b9d-61de" name="2 Bitter Soul" publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
                       <description>The Princeps’ Titan does not halve their Speed when they suffer a hit from a Quake weapon that is not deflected by their shields, nor do they pivot (i.e., on a roll of a 1-2 or a 5-6) when they suffer a hit from a Concussive weapon that is not deflected by their shields.</description>
                     </rule>
                   </rules>
@@ -12017,7 +12017,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="0d85-fcb7-ba71-b933" name="3 Limitless" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="e420-581f-cf61-7608" name="3 Limitless" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
+                    <rule id="e420-581f-cf61-7608" name="3 Limitless" publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
                       <description>Once per game, during the Combat phase, the Princeps’ Titan may make a weapon attack with any and all of its disabled weapons as if they were not disabled.</description>
                     </rule>
                   </rules>
@@ -12028,7 +12028,7 @@ may immediately make a single attack with any of its non-disabled weapons agains
                 </selectionEntry>
                 <selectionEntry id="8719-407f-2406-c3df" name="1 Beyond Death" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
-                    <rule id="f10f-6c10-f65b-96cc" name="1 Beyond Death" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
+                    <rule id="f10f-6c10-f65b-96cc" name="1 Beyond Death" publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
                       <description>When this Princeps suffers Catastrophic Damage, make a Command check for the Titan before rolling on the Catastrophic Damage table. If the check is successful, do not roll on the table. Instead, the Titan moves D6&quot; in a direction of the controlling player’s choice, stopping before it collides with an enemy unit. The Titan then immediately suffers a Magazine Detonation.</description>
                     </rule>
                   </rules>
