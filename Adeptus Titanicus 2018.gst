@@ -13964,6 +13964,11 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="b38c-b8df-5341-b1ae" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6b6-2e17-4aaa-3ec0" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3082-6640-086b-1c00" type="max"/>
