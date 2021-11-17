@@ -13931,6 +13931,81 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <entryLink id="ecf5-23d8-1941-761c" name="Unholy Benedictions" hidden="false" collective="false" import="true" targetId="a00e-f16d-89bf-b013" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="f085-672c-f8c5-11c1" name="Mutations" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="458e-0b67-7c15-250f" name="Preternatural Grace" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="fcb4-7e3b-0784-945e" name="Preternatural Grace" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +20 points. Once per round, a Titan with this mutation can declare Power to Locomotors! or Power to Stabilisers! without pushing its reactor</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="61bc-8df3-46ca-23f6" name="Overwhelming Rage" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="aa51-90a8-b22f-2962" name="Overwhelming Rage" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +15 points. A Titan with this mutation adds 1 to the Dice value of any weapons with the Melee trait (including Smash Attacks) that it is armed with. In addition, a Titan with this mutation may be issued a Charge order without the need to make a Command check.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4797-4d85-5da3-7076" name="Warp Conduit" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="dea3-8d78-382f-bcce" name="Warp Conduit" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +20 points. Once per game, during the Combat phase, a Titan with this mutation may conjure an Aetheric Tempest. If they do so, choose a unit within 12&quot; of the Titan – the chosen unit can be a different unit to one chosen as a target of the Titan’s weapon but must be within the Titan’s Front arc and within its line of sight. Thatunit suffers a single S10 hit against a location of your choice, ignoring Void and Ion Shields.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="afc0-8e53-a682-34a0" name="Unholy Vigour" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="2d22-3e48-ac10-1216" name="Unholy Vigour" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +25 points. A Titan with this mutation counts as having suffered one less point of Critical Damage on each location for the purposes of determining Critical Damage Effects (but not for the purpose of determining when it suffers Catastrophic Damage). In addition, it repairs Critical Damage on a 4+ instead of a 5+.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="107e-eac1-83d7-8adb" name="Corrupting Presence" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="e29d-d8d5-6d5b-9380" name="Corrupting Presence" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +20 points. Whenever a unit within 6&quot; of one or more Titans with this mutation has to make void shield saves, it must make D3 additional saves. Corrupted Titans are not affected by this mutation.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6783-8f0d-7481-1b04" name="Frozen Soul" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1657-c53b-f9b5-ad51" name="Frozen Soul" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +15 points. During the Damage Control phase, a Titan with this upgrade may roll an additional two Repair dice. Thesedice can only be used on the Vent Plasma Repair Action.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="edbc-85ab-0ebf-5df1" name="Aetheric Conduit" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1b93-b2bd-7bc1-3c2a" name="Aetheric Conduit" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +10 points. Subtract 1 from the result of all Command checks made by units within 6&quot; of one or
+more Titans with this mutation. Corrupted Titans are not affected by this mutation.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="c491-319b-b9b1-adac" name="Weapon Characteristics" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
