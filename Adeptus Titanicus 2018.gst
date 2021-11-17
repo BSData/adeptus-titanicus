@@ -1038,7 +1038,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf9-b0c8-f280-b8be" type="max"/>
       </constraints>
       <rules>
-        <rule id="083d-5e82-a8b4-9d86" name="Unbridled Hatred" publicationId="2988-f24d-39ef-352e" page="84" hidden="false">
+        <rule id="083d-5e82-a8b4-9d86" name="Unbridled Hatred" publicationId="bf8b-27d7-039e-5df9" page="8" hidden="false">
           <description>Once per game, during the Movement phase, a single Traitor Titan can add 2&quot; to both their default and boosted Speed characteristic and add 1 to the Dice value of all weapons with the Melee trait that the Titan is equipped with. This lasts until the end of the round.</description>
         </rule>
       </rules>
