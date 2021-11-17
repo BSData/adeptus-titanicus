@@ -13398,6 +13398,18 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a6b6-2e17-4aaa-3ec0" name="Corrupt Titan" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="80f9-20d6-9523-c457" name="Corrupt Titan" publicationId="bf8b-27d7-039e-5df9" page="163" hidden="false">
+          <description>All Corrupted Titans must purchase a Base Mutation at the appropriate cost.
+All Corrupted Titans can purchase a number of Additional Mutations at the appropriate cost, chosen from the list of Additional Mutations.
+Corrupted Titan subtracts 1 from the result of any Command check it makes. If a Corrupted Titan has purchased one or more Additional Mutations, it instead subtracts 2 from the result of any Command check it makes.
+Theabove listed penalties to Command checks suffered by Corrupted Titans cannot be ignored due to Legio Traits (for example, the Legio Kulisaetai’s Callous Trait) or Princeps Seniores Personal Traits. However, these penalties can be ignored as a result of Stratagems, Titan Wargear or other special rules.
+If the machine spirit of a Corrupted Titan is awakened, roll a D6 and look up the result on the Awakened Entity table instead of rolling on the Awakened Machine Spirit table. Unless otherwise stated, a special rule that allows you to choose a result on the Awakened Machine Spirit table also allows you to choose the result on the Awakened Entity table.
+A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted Titan Personal Trait table (see page 164) instead of rolling a D6 on the Personal Trait table. If both players agree then they can each pick a Personal Trait instead of rolling a D6. A Corrupted Titan that has been declared as part of a Titan Legio may roll on, or pick from, its specific Personal Trait table.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
