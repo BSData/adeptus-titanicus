@@ -14075,10 +14075,12 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8e82-47d8-e01a-d169" name="Pestilence Cloud" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8e82-47d8-e01a-d169" name="Pestilence Cloud*" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="8855-fd28-a1ad-705d" name="Pestilence Cloud" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
-              <description>Subtract 1 from the result of all Repair rolls made for any units within 7&quot; of one or more Titans with this mutation. Units with the Unholy Vigour Base Mutation and Legio Mordaxis Titans are unaffected by this mutation.</description>
+              <description>Subtract 1 from the result of all Repair rolls made for any units within 7&quot; of one or more Titans with this mutation. Units with the Unholy Vigour Base Mutation and Legio Mordaxis Titans are unaffected by this mutation.
+
+If a Legio Mordaxis Titan takes this mutation, the above effects do not apply. Instead, the range of its Techno-Toxin effects increases to 6&quot; instead of 4&quot;. A Legio Mordaxis Titan does not need the Unholy Vigour Base Mutation to take Pestilence Cloud, though it does need a Base Mutation to do so.</description>
             </rule>
           </rules>
           <costs>
@@ -14130,10 +14132,11 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3275-05bb-dceb-6e26" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3275-05bb-dceb-6e26" name="Immaterial Shield*" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="967d-56ce-befc-61fd" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
-              <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
+            <rule id="967d-56ce-befc-61fd" name="Immaterial Shield" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Subtract 1 from all Hit rolls for attacks made against a Titan with this mutation while the Titan has active void shields. In addition, a Titan with this mutation gains a 5+ Shield save against attacks that normally bypass void shields, so long as the Titan has active void shields when attacked.
+If a unit targeting a Titan with this mutation is within 2&quot; of this Titan, the Immaterial Shield mutation has no effect.</description>
             </rule>
           </rules>
           <costs>
@@ -14168,6 +14171,17 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ac7d-48d2-8b09-6534" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="178b-4b94-ed16-0847" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
