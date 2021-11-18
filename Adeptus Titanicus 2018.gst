@@ -14133,6 +14133,16 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="daee-28d8-5463-ecef" name="Preternatural Regeneration" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f794-6c5e-361c-461e" name="Preternatural Regeneration" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>During the Damage Control phase, a Titan with this mutation rolls an additional 2 Repair dice when making a Repair roll.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
