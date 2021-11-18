@@ -14198,9 +14198,20 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a3dd-2df0-921b-6f1b" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a3dd-2df0-921b-6f1b" name="Malicious Cacophony" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="195c-2712-b826-9a7d" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+            <rule id="195c-2712-b826-9a7d" name="Malicious Cacophony*" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Subtract 1 from the result of any Command check made by a unit within 12&quot; of a Titan with this mutation. If the Command check is made as part of issuing orders, subtract 2 from the result of the Command check instead. Thiseffect is cumulative with the penalty suffered as part of the Aetheric Conduit Base Mutation. Corrupted Titans are not affected by this mutation.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c47b-64c6-464b-4381" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="e590-ce23-388d-b2e9" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
             </rule>
           </rules>
