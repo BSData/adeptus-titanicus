@@ -13408,7 +13408,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a6b6-2e17-4aaa-3ec0" name="Corrupt Titan" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a6b6-2e17-4aaa-3ec0" name="Corrupt Titan" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -13418,7 +13418,6 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bf6-2e65-1184-da12" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd7a-1f06-ca0c-2dc5" type="min"/>
       </constraints>
       <rules>
         <rule id="80f9-20d6-9523-c457" name="Corrupt Titan" publicationId="bf8b-27d7-039e-5df9" page="163" hidden="false">
@@ -13430,6 +13429,10 @@ If the machine spirit of a Corrupted Titan is awakened, roll a D6 and look up th
 A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted Titan Personal Trait table (see page 164) instead of rolling a D6 on the Personal Trait table. If both players agree then they can each pick a Personal Trait instead of rolling a D6. A Corrupted Titan that has been declared as part of a Titan Legio may roll on, or pick from, its specific Personal Trait table.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -13983,6 +13986,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="61bc-8df3-46ca-23f6" name="Overwhelming Rage" hidden="false" collective="false" import="true" type="upgrade">
@@ -13993,6 +13997,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4797-4d85-5da3-7076" name="Warp Conduit" hidden="false" collective="false" import="true" type="upgrade">
@@ -14003,6 +14008,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="afc0-8e53-a682-34a0" name="Unholy Vigour" hidden="false" collective="false" import="true" type="upgrade">
@@ -14013,6 +14019,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="107e-eac1-83d7-8adb" name="Corrupting Presence" hidden="false" collective="false" import="true" type="upgrade">
@@ -14023,6 +14030,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6783-8f0d-7481-1b04" name="Frozen Soul" hidden="false" collective="false" import="true" type="upgrade">
@@ -14033,6 +14041,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="edbc-85ab-0ebf-5df1" name="Aetheric Conduit" hidden="false" collective="false" import="true" type="upgrade">
@@ -14044,6 +14053,7 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
