@@ -14063,6 +14063,44 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab02-016d-25c8-2625" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9ead-a18d-a42b-8e7c" type="min"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry id="c0f6-b638-e7fa-5c21" name="Writhing Carapace" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="32d2-cca7-653f-8bc2" name="Writhing Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Any Corrupted Titan may be upgraded with the Writhing Carapace mutation for +15 points. Once per turn, at the start of the Strategy phase, a Titan with this mutation can replace their Carapace weapon for a different Carapace weapon their Titan class has access to of equal or lesser points value than their starting weapon. This counts as that Titan’s activation for that Phase. Writhing Carapace is not an Order and can still be used even if the Strategy phase ends early, for example due to the Vox Blackout Stratagem. This mutation has no effect while the Carapace weapon is disabled.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8e82-47d8-e01a-d169" name="Daemonic Bile" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="7464-871d-7506-962d" name="Daemonic Bile" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">D3</characteristic>
+                <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+                <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">T</characteristic>
+                <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+                <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
+                <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+                <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
+                <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+                <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+                <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Firestorm, Fusion</characteristic>
+                <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="8855-fd28-a1ad-705d" name="Daemonic Bile" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Any Corrupted Titan may be upgraded with the Daemonic Bile mutation for +15 points. Once per round, during the Combat phase, a Titan with this mutation can spew Daemonic Bile. Daemonic Bile counts as an additional weapon and follows the rules for attacking as normal (see page 33 of the Adeptus Titanicus rulebook). 
+Daemonic Bile has a Short Range of T, Long Range of -, Dice value of D3, S5 and the Firestorm and Fusion traits. 
+This mutation cannot be used if the Titan has suffered Critical Damage to its head. Daemonic Bile is unaffected by Titan Legion rules (such as the Legio Infernus’ Masters of Flame trait), Maniple rules (such as the Ignus Light Maniple) and cannot be upgraded with Wargear (such as the Legio Infernus’ Clinging Phosphex).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
