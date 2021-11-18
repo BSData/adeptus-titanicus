@@ -1038,7 +1038,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf9-b0c8-f280-b8be" type="max"/>
       </constraints>
       <rules>
-        <rule id="083d-5e82-a8b4-9d86" name="Unbridled Hatred" publicationId="2988-f24d-39ef-352e" page="84" hidden="false">
+        <rule id="083d-5e82-a8b4-9d86" name="Unbridled Hatred" publicationId="bf8b-27d7-039e-5df9" page="8" hidden="false">
           <description>Once per game, during the Movement phase, a single Traitor Titan can add 2&quot; to both their default and boosted Speed characteristic and add 1 to the Dice value of all weapons with the Melee trait that the Titan is equipped with. This lasts until the end of the round.</description>
         </rule>
       </rules>
@@ -8715,6 +8715,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="78aa-e114-838d-a41b" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="ffab-831a-9c60-823a" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
         <entryLink id="53c0-a1cd-f7e8-eb5a" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink id="2593-76d2-ff94-6091" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink id="f121-bc20-108d-b324" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
@@ -8835,6 +8837,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="d423-0b55-e2dc-5814" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="390c-cf74-a2a8-27c1" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
         <entryLink id="b0c5-f29e-c8fb-9c63" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink id="a562-625e-d1b3-ef8b" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="1583-f2be-fe73-2973" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="385.0"/>
@@ -8941,7 +8945,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="895d-6fe2-456c-f3da" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="fcd2-9d09-2af7-36de" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="fcd2-9d09-2af7-36de" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
         <entryLink id="34b6-b972-e7b1-1fb8" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
           <categoryLinks>
             <categoryLink id="89bc-e4ca-5d75-4e54" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
@@ -8950,6 +8954,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="b8b1-c93b-014e-44ce" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="7046-1472-1c31-4540" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
         <entryLink id="d706-586f-da3d-d4d7" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink id="a04a-64cc-1355-4074" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="2e81-60ef-d7af-a961" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="180.0"/>
@@ -10030,6 +10036,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         </entryLink>
         <entryLink id="9864-2da3-5f35-c2e7" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="ebdf-52f9-0ae0-c477" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink id="a4ba-8f7d-98d7-1127" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink id="8e0c-4aec-51bc-7494" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="325.0"/>
@@ -10417,6 +10425,8 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="b65c-9738-14e6-5ffc" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="4d5a-c123-302f-107e" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
         <entryLink id="efd6-6e25-6902-ee37" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink id="7b94-3a99-9ca7-4a5a" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="5553-6a55-7161-6e9f" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="850.0"/>
@@ -13398,6 +13408,29 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a6b6-2e17-4aaa-3ec0" name="Corrupt Titan" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bf6-2e65-1184-da12" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd7a-1f06-ca0c-2dc5" type="min"/>
+      </constraints>
+      <rules>
+        <rule id="80f9-20d6-9523-c457" name="Corrupt Titan" publicationId="bf8b-27d7-039e-5df9" page="163" hidden="false">
+          <description>All Corrupted Titans must purchase a Base Mutation at the appropriate cost.
+All Corrupted Titans can purchase a number of Additional Mutations at the appropriate cost, chosen from the list of Additional Mutations.
+Corrupted Titan subtracts 1 from the result of any Command check it makes. If a Corrupted Titan has purchased one or more Additional Mutations, it instead subtracts 2 from the result of any Command check it makes.
+Theabove listed penalties to Command checks suffered by Corrupted Titans cannot be ignored due to Legio Traits (for example, the Legio Kulisaetai’s Callous Trait) or Princeps Seniores Personal Traits. However, these penalties can be ignored as a result of Stratagems, Titan Wargear or other special rules.
+If the machine spirit of a Corrupted Titan is awakened, roll a D6 and look up the result on the Awakened Entity table instead of rolling on the Awakened Machine Spirit table. Unless otherwise stated, a special rule that allows you to choose a result on the Awakened Machine Spirit table also allows you to choose the result on the Awakened Entity table.
+A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted Titan Personal Trait table (see page 164) instead of rolling a D6 on the Personal Trait table. If both players agree then they can each pick a Personal Trait instead of rolling a D6. A Corrupted Titan that has been declared as part of a Titan Legio may roll on, or pick from, its specific Personal Trait table.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -13918,6 +13951,102 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <entryLink id="355b-decd-8ccd-4ac7" name="Marks of Conquest" hidden="false" collective="false" import="true" targetId="77b8-5cd1-45ed-9335" type="selectionEntry"/>
         <entryLink id="ecf5-23d8-1941-761c" name="Unholy Benedictions" hidden="false" collective="false" import="true" targetId="a00e-f16d-89bf-b013" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f085-672c-f8c5-11c1" name="Mutations" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6b6-2e17-4aaa-3ec0" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="b38c-b8df-5341-b1ae" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6b6-2e17-4aaa-3ec0" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3082-6640-086b-1c00" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b38c-b8df-5341-b1ae" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="458e-0b67-7c15-250f" name="Preternatural Grace" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="fcb4-7e3b-0784-945e" name="Preternatural Grace" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +20 points. Once per round, a Titan with this mutation can declare Power to Locomotors! or Power to Stabilisers! without pushing its reactor</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="61bc-8df3-46ca-23f6" name="Overwhelming Rage" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="aa51-90a8-b22f-2962" name="Overwhelming Rage" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +15 points. A Titan with this mutation adds 1 to the Dice value of any weapons with the Melee trait (including Smash Attacks) that it is armed with. In addition, a Titan with this mutation may be issued a Charge order without the need to make a Command check.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4797-4d85-5da3-7076" name="Warp Conduit" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="dea3-8d78-382f-bcce" name="Warp Conduit" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +20 points. Once per game, during the Combat phase, a Titan with this mutation may conjure an Aetheric Tempest. If they do so, choose a unit within 12&quot; of the Titan – the chosen unit can be a different unit to one chosen as a target of the Titan’s weapon but must be within the Titan’s Front arc and within its line of sight. Thatunit suffers a single S10 hit against a location of your choice, ignoring Void and Ion Shields.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="afc0-8e53-a682-34a0" name="Unholy Vigour" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="2d22-3e48-ac10-1216" name="Unholy Vigour" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +25 points. A Titan with this mutation counts as having suffered one less point of Critical Damage on each location for the purposes of determining Critical Damage Effects (but not for the purpose of determining when it suffers Catastrophic Damage). In addition, it repairs Critical Damage on a 4+ instead of a 5+.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="107e-eac1-83d7-8adb" name="Corrupting Presence" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="e29d-d8d5-6d5b-9380" name="Corrupting Presence" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +20 points. Whenever a unit within 6&quot; of one or more Titans with this mutation has to make void shield saves, it must make D3 additional saves. Corrupted Titans are not affected by this mutation.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6783-8f0d-7481-1b04" name="Frozen Soul" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1657-c53b-f9b5-ad51" name="Frozen Soul" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +15 points. During the Damage Control phase, a Titan with this upgrade may roll an additional two Repair dice. Thesedice can only be used on the Vent Plasma Repair Action.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="edbc-85ab-0ebf-5df1" name="Aetheric Conduit" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1b93-b2bd-7bc1-3c2a" name="Aetheric Conduit" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
+              <description>A Titan may be upgraded with this Base Mutation for +10 points. Subtract 1 from the result of all Command checks made by units within 6&quot; of one or
+more Titans with this mutation. Corrupted Titans are not affected by this mutation.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
