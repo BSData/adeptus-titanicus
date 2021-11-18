@@ -14174,18 +14174,18 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ac7d-48d2-8b09-6534" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ac7d-48d2-8b09-6534" name="Gelid Aura*" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="178b-4b94-ed16-0847" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
-              <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
+            <rule id="178b-4b94-ed16-0847" name="Gelid Aura" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>A Titan with this mutation, and all Titans within 6&quot; of one or more Titans with this mutation, can Vent Plasma on a 3+ instead of a 4+. However, a Titan within 6&quot; of one or more Titans with this mutation repairs Critical Damage to its Legs on a 6+. A Titan with the Frozen Soul Base Mutation is not affected by this condition and repairs Critical Damage to its Legs as normal.</description>
             </rule>
           </rules>
           <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1f0e-a904-95dd-4a8a" name="Aura of Fury" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1f0e-a904-95dd-4a8a" name="Aura of Fury*" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="706e-d3dd-6803-b8bc" name="Aura of Fury" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>During the Strategy phase, if any unit within 12&quot; of one or more Titans with this mutation is issued with an Order other than a Charge order it must make a Command check – this is done before the effects of the Order are resolved.
@@ -14195,6 +14195,17 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a3dd-2df0-921b-6f1b" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="195c-2712-b826-9a7d" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
