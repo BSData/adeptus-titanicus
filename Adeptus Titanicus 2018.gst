@@ -14113,6 +14113,16 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="66e1-6fd9-b0c8-954c" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="7a94-e5a6-f03c-fd2f" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
