@@ -14099,6 +14099,19 @@ Daemonic Bile has a Short Range of T, Long Range of -, Dice value of D3, S5 and 
 This mutation cannot be used if the Titan has suffered Critical Damage to its head. Daemonic Bile is unaffected by Titan Legion rules (such as the Legio Infernus’ Masters of Flame trait), Maniple rules (such as the Ignus Light Maniple) and cannot be upgraded with Wargear (such as the Legio Infernus’ Clinging Phosphex).</description>
             </rule>
           </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c676-c893-8eff-1169" name="Daemonic Ichor" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3cb0-23d5-92c5-e738" name="Daemonic Ichor" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>When a Titan with this mutation suffers Catastrophic Damage, add 2 to its Scale when resolving a Magazine Detonation or Catastrophic Meltdown.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
