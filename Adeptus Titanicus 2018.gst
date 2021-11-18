@@ -14123,14 +14123,14 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7dfc-59da-8424-81f3" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7dfc-59da-8424-81f3" name="Organic Protrusions" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="1f16-062f-2db4-2ce1" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
-              <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
+            <rule id="1f16-062f-2db4-2ce1" name="Organic Protrusions" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>A Titan with this mutation changes the Dice value of their Smash Attacks to 3. In addition, all Smash Attacks made by this Titan have a short range of 2&quot; instead of 1&quot;.</description>
             </rule>
           </rules>
           <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="daee-28d8-5463-ecef" name="Preternatural Regeneration" hidden="false" collective="false" import="true" type="upgrade">
@@ -14141,6 +14141,16 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3275-05bb-dceb-6e26" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="967d-56ce-befc-61fd" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
