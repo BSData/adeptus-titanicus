@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -17,17 +17,17 @@
           </constraints>
         </categoryLink>
         <categoryLink id="8870-d6d8-5519-9eb0" name="Squadron" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="false"/>
-        <categoryLink id="3546-6658-7a79-214d" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false">
+        <categoryLink id="3546-6658-7a79-214d" name="Princeps Seniores" publicationId="975a-00f4-pubN65537" hidden="false" targetId="c130-1260-4c15-147a" primary="false">
           <modifiers>
             <modifier type="increment" field="bf78-6b8f-80d8-996a" value="1.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4225-27f8-9c8b-e56e" type="atLeast"/>
-              </conditions>
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f28c-fa09-7512-e0c7" type="min"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf78-6b8f-80d8-996a" type="max"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f28c-fa09-7512-e0c7" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf78-6b8f-80d8-996a" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -112,7 +112,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="warmaster-support-battlegroup" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry"/>
-    <entryLink id="warhound-squadron-support-battlegroup" name="Warhound Squadron" hidden="false" collective="false" import="false" targetId="9fc6-f5ca-16a8-7515" type="selectionEntry"/>
     <entryLink id="573e-1025-b9ca-55d0" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ad03-604a-3a36-5298" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
