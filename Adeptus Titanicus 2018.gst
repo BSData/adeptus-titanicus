@@ -14140,7 +14140,7 @@ If a unit targeting a Titan with this mutation is within 2&quot; of this Titan, 
             </rule>
           </rules>
           <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -14182,6 +14182,19 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1f0e-a904-95dd-4a8a" name="Aura of Fury" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="706e-d3dd-6803-b8bc" name="Aura of Fury" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>During the Strategy phase, if any unit within 12&quot; of one or more Titans with this mutation is issued with an Order other than a Charge order it must make a Command check – this is done before the effects of the Order are resolved.
+
+If the check is failed, and the unit is a Titan, increase the Titan’s reactor level by 1, or by 2 if the check was failed by 3 or more. If the check is failed and the unit is a Knight Banner, it immediately becomes Shaken. Units with the Overwhelming Rage Base Mutation are not affected by this mutation.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
