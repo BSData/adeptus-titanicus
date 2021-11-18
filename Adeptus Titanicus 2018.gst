@@ -14072,11 +14072,78 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8e82-47d8-e01a-d169" name="Daemonic Bile" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8e82-47d8-e01a-d169" name="Pestilence Cloud" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="8855-fd28-a1ad-705d" name="Pestilence Cloud" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Subtract 1 from the result of all Repair rolls made for any units within 7&quot; of one or more Titans with this mutation. Units with the Unholy Vigour Base Mutation and Legio Mordaxis Titans are unaffected by this mutation.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c676-c893-8eff-1169" name="Daemonic Ichor" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3cb0-23d5-92c5-e738" name="Daemonic Ichor" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>When a Titan with this mutation suffers Catastrophic Damage, add 2 to its Scale when resolving a Magazine Detonation or Catastrophic Meltdown.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="66e1-6fd9-b0c8-954c" name="Empyrean Shroud*" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="7a94-e5a6-f03c-fd2f" name="Empyrean Shroud" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Subtract 1 from the result of any Hit roll for attacks made against a Titan with this mutation. If a unit attacking a Titan with this mutation is within a number of inches equal to the Scale of the target Titan (i.e., for a Warlord it would be 10&quot;, a Reaver 8&quot; etc.), the Empyrean Shroud ability has no effect.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7dfc-59da-8424-81f3" name="Organic Protrusions" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1f16-062f-2db4-2ce1" name="Organic Protrusions" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>A Titan with this mutation changes the Dice value of their Smash Attacks to 3. In addition, all Smash Attacks made by this Titan have a short range of 2&quot; instead of 1&quot;.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="daee-28d8-5463-ecef" name="Preternatural Regeneration" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f794-6c5e-361c-461e" name="Preternatural Regeneration" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>During the Damage Control phase, a Titan with this mutation rolls an additional 2 Repair dice when making a Repair roll.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3275-05bb-dceb-6e26" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="967d-56ce-befc-61fd" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="111c-924d-e71b-0c6d" name="Daemonic Bile" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="7464-871d-7506-962d" name="Daemonic Bile" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+            <profile id="d583-814d-0bf0-06ba" name="Daemonic Bile" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
               <characteristics>
                 <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">D3</characteristic>
                 <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
@@ -14093,7 +14160,7 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
             </profile>
           </profiles>
           <rules>
-            <rule id="8855-fd28-a1ad-705d" name="Daemonic Bile" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+            <rule id="b207-53df-089d-d5f0" name="Daemonic Bile" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>Any Corrupted Titan may be upgraded with the Daemonic Bile mutation for +15 points. Once per round, during the Combat phase, a Titan with this mutation can spew Daemonic Bile. Daemonic Bile counts as an additional weapon and follows the rules for attacking as normal (see page 33 of the Adeptus Titanicus rulebook). 
 Daemonic Bile has a Short Range of T, Long Range of -, Dice value of D3, S5 and the Firestorm and Fusion traits. 
 This mutation cannot be used if the Titan has suffered Critical Damage to its head. Daemonic Bile is unaffected by Titan Legion rules (such as the Legio Infernus’ Masters of Flame trait), Maniple rules (such as the Ignus Light Maniple) and cannot be upgraded with Wargear (such as the Legio Infernus’ Clinging Phosphex).</description>
@@ -14101,56 +14168,7 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c676-c893-8eff-1169" name="Daemonic Ichor" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="3cb0-23d5-92c5-e738" name="Daemonic Ichor" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
-              <description>When a Titan with this mutation suffers Catastrophic Damage, add 2 to its Scale when resolving a Magazine Detonation or Catastrophic Meltdown.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="66e1-6fd9-b0c8-954c" name="Empyrean Shroud*" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="7a94-e5a6-f03c-fd2f" name="Empyrean Shroud" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
-              <description>Subtract 1 from the result of any Hit roll for attacks made against a Titan with this mutation. If a unit attacking a Titan with this mutation is within a number of inches equal to the Scale of the target Titan (i.e., for a Warlord it would be 10&quot;, a Reaver 8&quot; etc.), the Empyrean Shroud ability has no effect.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7dfc-59da-8424-81f3" name="Organic Protrusions" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="1f16-062f-2db4-2ce1" name="Organic Protrusions" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
-              <description>A Titan with this mutation changes the Dice value of their Smash Attacks to 3. In addition, all Smash Attacks made by this Titan have a short range of 2&quot; instead of 1&quot;.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="daee-28d8-5463-ecef" name="Preternatural Regeneration" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="f794-6c5e-361c-461e" name="Preternatural Regeneration" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
-              <description>During the Damage Control phase, a Titan with this mutation rolls an additional 2 Repair dice when making a Repair roll.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3275-05bb-dceb-6e26" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
-          <rules>
-            <rule id="967d-56ce-befc-61fd" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
-              <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
