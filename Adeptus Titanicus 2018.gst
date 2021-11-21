@@ -10410,7 +10410,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                 <entryLink id="cbab-3005-6490-1352" name="Turbo Laser Destructor [WM]" hidden="false" collective="false" import="false" targetId="7c5c-cf20-958d-0b71" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="4294-3ea6-4ca6-2d70" name="Carapace Weapon" hidden="false" collective="false" import="false">
+            <selectionEntryGroup id="4294-3ea6-4ca6-2d70" name="Carapace Weapon" hidden="false" collective="false" import="false" defaultSelectionEntryId="2ee0-45ae-c50a-402e">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="893c-911a-11c7-e95d" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7941-486c-e594-5b0f" type="max"/>
@@ -10449,6 +10449,13 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="7b94-3a99-9ca7-4a5a" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
         <entryLink id="5553-6a55-7161-6e9f" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
         <entryLink id="e204-44a6-ebd1-636d" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="increment" field="6102-5061-22da-a0b6" value="1.0">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="99b7-5e2f-9ea4-bbdf" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6102-5061-22da-a0b6" type="max"/>
           </constraints>
