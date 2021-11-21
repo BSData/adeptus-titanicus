@@ -14324,7 +14324,19 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a3dd-2df0-921b-6f1b" name="Malicious Cacophony" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a3dd-2df0-921b-6f1b" name="Malicious Cacophony*" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="458e-0b67-7c15-250f" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edbc-85ab-0ebf-5df1" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7aa0-01ea-6a88-820d" type="max"/>
           </constraints>
