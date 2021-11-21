@@ -13440,6 +13440,16 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="326f-8021-11a4-bb48" name="Singular Purpose" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="696c-6f45-0ee4-254a" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="2e92-b1ef-73d2-4357" name="Singular Purpose" publicationId="bf8b-27d7-039e-5df9" page="171" hidden="false">
+          <description>At the start of the battle, a Titan with this upgrade can choose a single result from the Awakened Entity table. Until the end of the battle, whenever that Titan is required to roll on the Awakened Entity table, it applies the chosen result instead.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -13959,6 +13969,18 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <entryLink id="8e53-11ef-b29c-8a47" name="Immateria Ward" hidden="false" collective="false" import="true" targetId="90bf-5637-cc2d-6098" type="selectionEntry"/>
         <entryLink id="355b-decd-8ccd-4ac7" name="Marks of Conquest" hidden="false" collective="false" import="true" targetId="77b8-5cd1-45ed-9335" type="selectionEntry"/>
         <entryLink id="ecf5-23d8-1941-761c" name="Unholy Benedictions" hidden="false" collective="false" import="true" targetId="a00e-f16d-89bf-b013" type="selectionEntry"/>
+        <entryLink id="0750-83c9-f88d-6fbb" name="Singular Purpose" hidden="true" collective="false" import="true" targetId="326f-8021-11a4-bb48" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6b6-2e17-4aaa-3ec0" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f085-672c-f8c5-11c1" name="Mutations" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="true" collective="false" import="true">
