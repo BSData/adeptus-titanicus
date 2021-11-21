@@ -14135,6 +14135,13 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
           </costs>
         </selectionEntry>
         <selectionEntry id="8e82-47d8-e01a-d169" name="Pestilence Cloud*" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afc0-8e53-a682-34a0" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d162-711b-2633-962a" type="max"/>
           </constraints>
