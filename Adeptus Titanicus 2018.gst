@@ -14219,6 +14219,13 @@ If a Legio Mordaxis Titan takes this mutation, the above effects do not apply. I
           </costs>
         </selectionEntry>
         <selectionEntry id="3275-05bb-dceb-6e26" name="Immaterial Shield*" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="458e-0b67-7c15-250f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="783a-1e1f-0d4d-1eb7" type="max"/>
           </constraints>
