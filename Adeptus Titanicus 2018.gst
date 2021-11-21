@@ -14134,7 +14134,7 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8e82-47d8-e01a-d169" name="Pestilence Cloud*" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8e82-47d8-e01a-d169" name="Pestilence Cloud*" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -14225,7 +14225,7 @@ If a Legio Mordaxis Titan takes this mutation, the above effects do not apply. I
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3275-05bb-dceb-6e26" name="Immaterial Shield*" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3275-05bb-dceb-6e26" name="Immaterial Shield*" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -14301,7 +14301,14 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1f0e-a904-95dd-4a8a" name="Aura of Fury*" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1f0e-a904-95dd-4a8a" name="Aura of Fury*" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61bc-8df3-46ca-23f6" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="87ba-f7ba-cc8a-da2d" type="max"/>
           </constraints>
@@ -14322,7 +14329,7 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7aa0-01ea-6a88-820d" type="max"/>
           </constraints>
           <rules>
-            <rule id="195c-2712-b826-9a7d" name="Malicious Cacophony*" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+            <rule id="195c-2712-b826-9a7d" name="Malicious Cacophony" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>Subtract 1 from the result of any Command check made by a unit within 12&quot; of a Titan with this mutation. If the Command check is made as part of issuing orders, subtract 2 from the result of the Command check instead. Thiseffect is cumulative with the penalty suffered as part of the Aetheric Conduit Base Mutation. Corrupted Titans are not affected by this mutation.</description>
             </rule>
           </rules>
