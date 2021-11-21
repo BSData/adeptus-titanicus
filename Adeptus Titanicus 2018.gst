@@ -14266,7 +14266,14 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ac7d-48d2-8b09-6534" name="Gelid Aura*" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ac7d-48d2-8b09-6534" name="Gelid Aura*" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6783-8f0d-7481-1b04" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="33d2-b901-715e-e160" type="max"/>
           </constraints>
