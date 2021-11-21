@@ -14099,12 +14099,11 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
           </conditionGroups>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab02-016d-25c8-2625" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9ead-a18d-a42b-8e7c" type="min"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry id="c0f6-b638-e7fa-5c21" name="Writhing Carapace" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d34-7922-f9dc-e605" type="max"/>
+          </constraints>
           <rules>
             <rule id="32d2-cca7-653f-8bc2" name="Writhing Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>Any Corrupted Titan may be upgraded with the Writhing Carapace mutation for +15 points. Once per turn, at the start of the Strategy phase, a Titan with this mutation can replace their Carapace weapon for a different Carapace weapon their Titan class has access to of equal or lesser points value than their starting weapon. This counts as that Titan’s activation for that Phase. Writhing Carapace is not an Order and can still be used even if the Strategy phase ends early, for example due to the Vox Blackout Stratagem. This mutation has no effect while the Carapace weapon is disabled.</description>
@@ -14116,6 +14115,9 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
           </costs>
         </selectionEntry>
         <selectionEntry id="8e82-47d8-e01a-d169" name="Pestilence Cloud*" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d162-711b-2633-962a" type="max"/>
+          </constraints>
           <rules>
             <rule id="8855-fd28-a1ad-705d" name="Pestilence Cloud" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>Subtract 1 from the result of all Repair rolls made for any units within 7&quot; of one or more Titans with this mutation. Units with the Unholy Vigour Base Mutation and Legio Mordaxis Titans are unaffected by this mutation.
@@ -14129,6 +14131,9 @@ If a Legio Mordaxis Titan takes this mutation, the above effects do not apply. I
           </costs>
         </selectionEntry>
         <selectionEntry id="c676-c893-8eff-1169" name="Daemonic Ichor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="299d-3970-6d81-4fc2" type="max"/>
+          </constraints>
           <rules>
             <rule id="3cb0-23d5-92c5-e738" name="Daemonic Ichor" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>When a Titan with this mutation suffers Catastrophic Damage, add 2 to its Scale when resolving a Magazine Detonation or Catastrophic Meltdown.</description>
@@ -14140,6 +14145,9 @@ If a Legio Mordaxis Titan takes this mutation, the above effects do not apply. I
           </costs>
         </selectionEntry>
         <selectionEntry id="66e1-6fd9-b0c8-954c" name="Empyrean Shroud*" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="98ea-2ac1-1f5f-b63e" type="max"/>
+          </constraints>
           <rules>
             <rule id="7a94-e5a6-f03c-fd2f" name="Empyrean Shroud" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>Subtract 1 from the result of any Hit roll for attacks made against a Titan with this mutation. If a unit attacking a Titan with this mutation is within a number of inches equal to the Scale of the target Titan (i.e., for a Warlord it would be 10&quot;, a Reaver 8&quot; etc.), the Empyrean Shroud ability has no effect.</description>
@@ -14151,6 +14159,9 @@ If a Legio Mordaxis Titan takes this mutation, the above effects do not apply. I
           </costs>
         </selectionEntry>
         <selectionEntry id="7dfc-59da-8424-81f3" name="Organic Protrusions" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5627-3133-bde0-bf0a" type="max"/>
+          </constraints>
           <rules>
             <rule id="1f16-062f-2db4-2ce1" name="Organic Protrusions" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>A Titan with this mutation changes the Dice value of their Smash Attacks to 3. In addition, all Smash Attacks made by this Titan have a short range of 2&quot; instead of 1&quot;.</description>
@@ -14162,6 +14173,9 @@ If a Legio Mordaxis Titan takes this mutation, the above effects do not apply. I
           </costs>
         </selectionEntry>
         <selectionEntry id="daee-28d8-5463-ecef" name="Preternatural Regeneration" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e0c9-f695-09aa-a912" type="max"/>
+          </constraints>
           <rules>
             <rule id="f794-6c5e-361c-461e" name="Preternatural Regeneration" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>During the Damage Control phase, a Titan with this mutation rolls an additional 2 Repair dice when making a Repair roll.</description>
@@ -14173,6 +14187,9 @@ If a Legio Mordaxis Titan takes this mutation, the above effects do not apply. I
           </costs>
         </selectionEntry>
         <selectionEntry id="3275-05bb-dceb-6e26" name="Immaterial Shield*" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="783a-1e1f-0d4d-1eb7" type="max"/>
+          </constraints>
           <rules>
             <rule id="967d-56ce-befc-61fd" name="Immaterial Shield" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>Subtract 1 from all Hit rolls for attacks made against a Titan with this mutation while the Titan has active void shields. In addition, a Titan with this mutation gains a 5+ Shield save against attacks that normally bypass void shields, so long as the Titan has active void shields when attacked.
@@ -14185,6 +14202,9 @@ If a unit targeting a Titan with this mutation is within 2&quot; of this Titan, 
           </costs>
         </selectionEntry>
         <selectionEntry id="111c-924d-e71b-0c6d" name="Daemonic Bile" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0dd0-a934-9707-631e" type="max"/>
+          </constraints>
           <profiles>
             <profile id="d583-814d-0bf0-06ba" name="Daemonic Bile" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
               <characteristics>
@@ -14215,6 +14235,9 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
           </costs>
         </selectionEntry>
         <selectionEntry id="ac7d-48d2-8b09-6534" name="Gelid Aura*" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="33d2-b901-715e-e160" type="max"/>
+          </constraints>
           <rules>
             <rule id="178b-4b94-ed16-0847" name="Gelid Aura" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>A Titan with this mutation, and all Titans within 6&quot; of one or more Titans with this mutation, can Vent Plasma on a 3+ instead of a 4+. However, a Titan within 6&quot; of one or more Titans with this mutation repairs Critical Damage to its Legs on a 6+. A Titan with the Frozen Soul Base Mutation is not affected by this condition and repairs Critical Damage to its Legs as normal.</description>
@@ -14226,6 +14249,9 @@ This mutation cannot be used if the Titan has suffered Critical Damage to its he
           </costs>
         </selectionEntry>
         <selectionEntry id="1f0e-a904-95dd-4a8a" name="Aura of Fury*" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="87ba-f7ba-cc8a-da2d" type="max"/>
+          </constraints>
           <rules>
             <rule id="706e-d3dd-6803-b8bc" name="Aura of Fury" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>During the Strategy phase, if any unit within 12&quot; of one or more Titans with this mutation is issued with an Order other than a Charge order it must make a Command check – this is done before the effects of the Order are resolved.
@@ -14239,6 +14265,9 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
           </costs>
         </selectionEntry>
         <selectionEntry id="a3dd-2df0-921b-6f1b" name="Malicious Cacophony" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7aa0-01ea-6a88-820d" type="max"/>
+          </constraints>
           <rules>
             <rule id="195c-2712-b826-9a7d" name="Malicious Cacophony*" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>Subtract 1 from the result of any Command check made by a unit within 12&quot; of a Titan with this mutation. If the Command check is made as part of issuing orders, subtract 2 from the result of the Command check instead. Thiseffect is cumulative with the penalty suffered as part of the Aetheric Conduit Base Mutation. Corrupted Titans are not affected by this mutation.</description>
@@ -14250,6 +14279,9 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
           </costs>
         </selectionEntry>
         <selectionEntry id="c47b-64c6-464b-4381" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4dae-c9a5-f30b-b515" type="max"/>
+          </constraints>
           <rules>
             <rule id="e590-ce23-388d-b2e9" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
               <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
