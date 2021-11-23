@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="41" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="42" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Gryphonicus : Select your replacement titans from the Maniple level options.  We are working to clean up how you choose replacement titans.</readme>
   <publications>
@@ -8717,6 +8717,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="53c0-a1cd-f7e8-eb5a" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
         <entryLink id="2593-76d2-ff94-6091" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
         <entryLink id="f121-bc20-108d-b324" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="0c61-f0f0-067b-d873" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b4c-a5f1-3348-1cf3" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
@@ -8839,6 +8844,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="b0c5-f29e-c8fb-9c63" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
         <entryLink id="a562-625e-d1b3-ef8b" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
         <entryLink id="1583-f2be-fe73-2973" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink id="e04b-e35b-7bf7-0dcb" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c308-84df-cbd7-ae63" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="385.0"/>
@@ -8956,6 +8966,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="d706-586f-da3d-d4d7" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
         <entryLink id="a04a-64cc-1355-4074" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
         <entryLink id="2e81-60ef-d7af-a961" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink id="2156-5d00-20d0-0c3e" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a845-8974-9124-140a" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="180.0"/>
@@ -10038,6 +10053,12 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="ebdf-52f9-0ae0-c477" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
         <entryLink id="a4ba-8f7d-98d7-1127" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
         <entryLink id="8e0c-4aec-51bc-7494" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="b514-61b3-7daa-c0c2" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink id="8c7e-c5ec-6fbe-c7e1" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6fe8-5be7-02a5-0fb4" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="325.0"/>
@@ -10389,7 +10410,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                 <entryLink id="cbab-3005-6490-1352" name="Turbo Laser Destructor [WM]" hidden="false" collective="false" import="false" targetId="7c5c-cf20-958d-0b71" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="4294-3ea6-4ca6-2d70" name="Carapace Weapon" hidden="false" collective="false" import="false">
+            <selectionEntryGroup id="4294-3ea6-4ca6-2d70" name="Carapace Weapon" hidden="false" collective="false" import="false" defaultSelectionEntryId="2ee0-45ae-c50a-402e">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="893c-911a-11c7-e95d" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7941-486c-e594-5b0f" type="max"/>
@@ -10427,6 +10448,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="efd6-6e25-6902-ee37" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
         <entryLink id="7b94-3a99-9ca7-4a5a" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
         <entryLink id="5553-6a55-7161-6e9f" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink id="e204-44a6-ebd1-636d" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6102-5061-22da-a0b6" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="850.0"/>
@@ -13434,6 +13460,16 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="326f-8021-11a4-bb48" name="Singular Purpose" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="696c-6f45-0ee4-254a" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="2e92-b1ef-73d2-4357" name="Singular Purpose" publicationId="bf8b-27d7-039e-5df9" page="171" hidden="false">
+          <description>At the start of the battle, a Titan with this upgrade can choose a single result from the Awakened Entity table. Until the end of the battle, whenever that Titan is required to roll on the Awakened Entity table, it applies the chosen result instead.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -13953,6 +13989,18 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <entryLink id="8e53-11ef-b29c-8a47" name="Immateria Ward" hidden="false" collective="false" import="true" targetId="90bf-5637-cc2d-6098" type="selectionEntry"/>
         <entryLink id="355b-decd-8ccd-4ac7" name="Marks of Conquest" hidden="false" collective="false" import="true" targetId="77b8-5cd1-45ed-9335" type="selectionEntry"/>
         <entryLink id="ecf5-23d8-1941-761c" name="Unholy Benedictions" hidden="false" collective="false" import="true" targetId="a00e-f16d-89bf-b013" type="selectionEntry"/>
+        <entryLink id="0750-83c9-f88d-6fbb" name="Singular Purpose" hidden="true" collective="false" import="true" targetId="326f-8021-11a4-bb48" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6b6-2e17-4aaa-3ec0" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f085-672c-f8c5-11c1" name="Mutations" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="true" collective="false" import="true">
@@ -14053,6 +14101,271 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b29a-98ec-a821-54f9" name="Additional Mutations" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6b6-2e17-4aaa-3ec0" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry id="c0f6-b638-e7fa-5c21" name="Writhing Carapace" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d34-7922-f9dc-e605" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="32d2-cca7-653f-8bc2" name="Writhing Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Any Corrupted Titan may be upgraded with the Writhing Carapace mutation for +15 points. Once per turn, at the start of the Strategy phase, a Titan with this mutation can replace their Carapace weapon for a different Carapace weapon their Titan class has access to of equal or lesser points value than their starting weapon. This counts as that Titan’s activation for that Phase. Writhing Carapace is not an Order and can still be used even if the Strategy phase ends early, for example due to the Vox Blackout Stratagem. This mutation has no effect while the Carapace weapon is disabled.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8e82-47d8-e01a-d169" name="Pestilence Cloud*" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afc0-8e53-a682-34a0" type="atLeast"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d162-711b-2633-962a" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="8855-fd28-a1ad-705d" name="Pestilence Cloud" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Subtract 1 from the result of all Repair rolls made for any units within 7&quot; of one or more Titans with this mutation. Units with the Unholy Vigour Base Mutation and Legio Mordaxis Titans are unaffected by this mutation.
+
+If a Legio Mordaxis Titan takes this mutation, the above effects do not apply. Instead, the range of its Techno-Toxin effects increases to 6&quot; instead of 4&quot;. A Legio Mordaxis Titan does not need the Unholy Vigour Base Mutation to take Pestilence Cloud, though it does need a Base Mutation to do so.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c676-c893-8eff-1169" name="Daemonic Ichor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="299d-3970-6d81-4fc2" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="3cb0-23d5-92c5-e738" name="Daemonic Ichor" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>When a Titan with this mutation suffers Catastrophic Damage, add 2 to its Scale when resolving a Magazine Detonation or Catastrophic Meltdown.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="66e1-6fd9-b0c8-954c" name="Empyrean Shroud*" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4797-4d85-5da3-7076" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="107e-eac1-83d7-8adb" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="98ea-2ac1-1f5f-b63e" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="7a94-e5a6-f03c-fd2f" name="Empyrean Shroud" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Subtract 1 from the result of any Hit roll for attacks made against a Titan with this mutation. If a unit attacking a Titan with this mutation is within a number of inches equal to the Scale of the target Titan (i.e., for a Warlord it would be 10&quot;, a Reaver 8&quot; etc.), the Empyrean Shroud ability has no effect.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7dfc-59da-8424-81f3" name="Organic Protrusions" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5627-3133-bde0-bf0a" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="1f16-062f-2db4-2ce1" name="Organic Protrusions" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>A Titan with this mutation changes the Dice value of their Smash Attacks to 3. In addition, all Smash Attacks made by this Titan have a short range of 2&quot; instead of 1&quot;.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="daee-28d8-5463-ecef" name="Preternatural Regeneration" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e0c9-f695-09aa-a912" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="f794-6c5e-361c-461e" name="Preternatural Regeneration" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>During the Damage Control phase, a Titan with this mutation rolls an additional 2 Repair dice when making a Repair roll.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3275-05bb-dceb-6e26" name="Immaterial Shield*" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="458e-0b67-7c15-250f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="783a-1e1f-0d4d-1eb7" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="967d-56ce-befc-61fd" name="Immaterial Shield" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Subtract 1 from all Hit rolls for attacks made against a Titan with this mutation while the Titan has active void shields. In addition, a Titan with this mutation gains a 5+ Shield save against attacks that normally bypass void shields, so long as the Titan has active void shields when attacked.
+If a unit targeting a Titan with this mutation is within 2&quot; of this Titan, the Immaterial Shield mutation has no effect.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="111c-924d-e71b-0c6d" name="Daemonic Bile" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0dd0-a934-9707-631e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d583-814d-0bf0-06ba" name="Daemonic Bile" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">D3</characteristic>
+                <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+                <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">T</characteristic>
+                <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+                <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
+                <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+                <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
+                <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+                <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+                <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Firestorm, Fusion</characteristic>
+                <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="b207-53df-089d-d5f0" name="Daemonic Bile" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Any Corrupted Titan may be upgraded with the Daemonic Bile mutation for +15 points. Once per round, during the Combat phase, a Titan with this mutation can spew Daemonic Bile. Daemonic Bile counts as an additional weapon and follows the rules for attacking as normal (see page 33 of the Adeptus Titanicus rulebook). 
+Daemonic Bile has a Short Range of T, Long Range of -, Dice value of D3, S5 and the Firestorm and Fusion traits. 
+This mutation cannot be used if the Titan has suffered Critical Damage to its head. Daemonic Bile is unaffected by Titan Legion rules (such as the Legio Infernus’ Masters of Flame trait), Maniple rules (such as the Ignus Light Maniple) and cannot be upgraded with Wargear (such as the Legio Infernus’ Clinging Phosphex).</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ac7d-48d2-8b09-6534" name="Gelid Aura*" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6783-8f0d-7481-1b04" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="33d2-b901-715e-e160" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="178b-4b94-ed16-0847" name="Gelid Aura" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>A Titan with this mutation, and all Titans within 6&quot; of one or more Titans with this mutation, can Vent Plasma on a 3+ instead of a 4+. However, a Titan within 6&quot; of one or more Titans with this mutation repairs Critical Damage to its Legs on a 6+. A Titan with the Frozen Soul Base Mutation is not affected by this condition and repairs Critical Damage to its Legs as normal.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1f0e-a904-95dd-4a8a" name="Aura of Fury*" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61bc-8df3-46ca-23f6" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="87ba-f7ba-cc8a-da2d" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="706e-d3dd-6803-b8bc" name="Aura of Fury" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>During the Strategy phase, if any unit within 12&quot; of one or more Titans with this mutation is issued with an Order other than a Charge order it must make a Command check – this is done before the effects of the Order are resolved.
+
+If the check is failed, and the unit is a Titan, increase the Titan’s reactor level by 1, or by 2 if the check was failed by 3 or more. If the check is failed and the unit is a Knight Banner, it immediately becomes Shaken. Units with the Overwhelming Rage Base Mutation are not affected by this mutation.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a3dd-2df0-921b-6f1b" name="Malicious Cacophony*" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="458e-0b67-7c15-250f" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edbc-85ab-0ebf-5df1" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7aa0-01ea-6a88-820d" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="195c-2712-b826-9a7d" name="Malicious Cacophony" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>Subtract 1 from the result of any Command check made by a unit within 12&quot; of a Titan with this mutation. If the Command check is made as part of issuing orders, subtract 2 from the result of the Command check instead. Thiseffect is cumulative with the penalty suffered as part of the Aetheric Conduit Base Mutation. Corrupted Titans are not affected by this mutation.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c47b-64c6-464b-4381" name="Chitinous Carapace" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4dae-c9a5-f30b-b515" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="e590-ce23-388d-b2e9" name="Chitinous Carapace" publicationId="bf8b-27d7-039e-5df9" page="165" hidden="false">
+              <description>When a Titan with this mutation is hit in the Body or Carapace weapon by an attack, subtract 2 from the Armour roll. A Titan with this mutation cannot declare Power to Locomotors!</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
