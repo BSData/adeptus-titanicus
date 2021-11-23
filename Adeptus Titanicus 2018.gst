@@ -14140,8 +14140,8 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2c5-6cea-c8e0-57c1" type="atLeast"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afc0-8e53-a682-34a0" type="atLeast"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
