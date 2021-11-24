@@ -13469,6 +13469,10 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
           <description>At the start of the battle, a Titan with this upgrade can choose a single result from the Awakened Entity table. Until the end of the battle, whenever that Titan is required to roll on the Awakened Entity table, it applies the chosen result instead.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -14003,7 +14007,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="f085-672c-f8c5-11c1" name="Mutations" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="true" collective="false" import="true">
+    <selectionEntryGroup id="f085-672c-f8c5-11c1" name="Base Mutation" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
