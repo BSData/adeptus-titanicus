@@ -6695,7 +6695,7 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
     </selectionEntry>
     <selectionEntry id="dc14-b65e-acfb-906a" name="=Damicium= Secondary Plating" page="" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="899c-50ef-d2bb-0ef1" name="=Damicium= Secondary Plating" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
+        <rule id="899c-50ef-d2bb-0ef1" name="=Damicium= Secondary Plating" publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
           <description>Any Legio Damicium Titan may take Secondary Plating for +10 points.
 The first Critical Hit a Titan with this upgrade receives is downgraded to a Devastating Hit instead. As soon as this happens, the benefits from this piece of Wargear are lost for the remainder of the battle.</description>
         </rule>
