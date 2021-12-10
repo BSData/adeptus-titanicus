@@ -10239,9 +10239,10 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
               <entryLinks>
                 <entryLink id="7813-e4b3-7190-26f6" name="Arioch Titan Power Claw" hidden="false" collective="false" import="false" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry"/>
                 <entryLink id="5431-c26c-252a-59d1" name="Bellicosa Volcano Cannon" hidden="false" collective="false" import="false" targetId="fee8-4996-06cd-64bc" type="selectionEntry"/>
-                <entryLink id="6e57-8050-7c3d-26fd" name="Mori Quake Cannon" hidden="false" collective="false" import="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
+                <entryLink id="6e57-8050-7c3d-26fd" name="Mori Quake Cannon [WLD]" hidden="false" collective="false" import="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
                 <entryLink id="76a7-598f-cfbc-d7f7" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
                 <entryLink id="06a5-628c-5f03-7997" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
+                <entryLink id="b136-4ce4-df3e-f0aa" name="Volkite Destructor" hidden="false" collective="false" import="true" targetId="2e8a-92e8-a90e-545e" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="8003-d38f-5fe8-19b0" name="Carapace" hidden="false" collective="false" import="false">
