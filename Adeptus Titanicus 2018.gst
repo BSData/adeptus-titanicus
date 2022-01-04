@@ -13524,7 +13524,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
                 <entryLink id="22d1-c410-ab47-c5d7" name="Turbo Laser Destructor [WM]" hidden="false" collective="false" import="true" targetId="7c5c-cf20-958d-0b71" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="fb73-07e9-6881-8093" name="Carapace Weapon" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="fb73-07e9-6881-8093" name="Carapace Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6a70-d1f9-846f-23ae">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="100b-bf8a-913a-5429" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2550-97bc-eef8-5a8a" type="max"/>
@@ -13596,6 +13596,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9796-81cd-7844-051b" name="Desolator Chainsword" hidden="false" collective="false" import="true" type="upgrade">
