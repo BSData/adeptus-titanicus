@@ -13475,6 +13475,232 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c45d-04e4-f35f-8b20" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b154-60bc-1b63-3314" name="Warmaster Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">4&quot;/6&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">3+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/3</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">6</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b28a-80a5-9436-3e23" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7de5-7f04-9af4-48ad" name="Weapons" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="4194-33f7-0086-9095" name="Arms" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a9-acd0-6301-628e" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fee8-fa2b-b95f-c33e" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0b25-e079-dc2a-78e8" name="Desolator Chainsword" hidden="false" collective="false" import="true" targetId="9796-81cd-7844-051b" type="selectionEntry"/>
+                <entryLink id="4b87-8adb-590e-1597" name="Krius Siege Drill" hidden="false" collective="false" import="true" targetId="232a-afe2-64bb-c0a1" type="selectionEntry"/>
+                <entryLink id="420a-5e8c-bc32-7186" name="Krius Grav Imploder" hidden="false" collective="false" import="true" targetId="d0ae-adc7-c079-d005" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="57d9-eb42-b8e6-90f3" name="Shoulder Weapons" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca25-5029-5566-63f0" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="321d-673f-1f40-5f65" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="5039-3bc7-6820-6134" name="Apocalypse Missile Array" hidden="false" collective="false" import="true" targetId="81bb-fc59-dff5-2755" type="selectionEntry">
+                  <costs>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3869-ee44-fc07-9489" name="Inferno Gun (WM)" hidden="false" collective="false" import="true" targetId="ab89-eea6-1e3a-84dd" type="selectionEntry"/>
+                <entryLink id="20ee-3098-6876-8f40" name="Melta Cannon (WM)" hidden="false" collective="false" import="true" targetId="39de-6938-1a9c-3ea6" type="selectionEntry"/>
+                <entryLink id="c992-513d-ce8b-a3d1" name="Plasma Blast Gun (WM)" hidden="false" collective="false" import="true" targetId="0f5d-e59f-3d5f-21c3" type="selectionEntry"/>
+                <entryLink id="c1a7-2420-9494-895b" name="Vulcan Megabolter [WM]" hidden="false" collective="false" import="true" targetId="5da9-e647-8914-3264" type="selectionEntry"/>
+                <entryLink id="22d1-c410-ab47-c5d7" name="Turbo Laser Destructor [WM]" hidden="false" collective="false" import="true" targetId="7c5c-cf20-958d-0b71" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="fb73-07e9-6881-8093" name="Carapace Weapon" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="100b-bf8a-913a-5429" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2550-97bc-eef8-5a8a" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="6a70-d1f9-846f-23ae" name="Cruciator Gatling Array" hidden="false" collective="false" import="true" targetId="230c-f352-c94a-ee82" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="1a7f-0c43-4aa9-c634" name="Ardex Defensor Cannon" hidden="false" collective="false" import="true" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="568c-96f6-fca6-0476" name="Ancillary Reactor System" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="786b-b472-5438-c177" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="563e-8d05-dc4c-f2d4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ede8-a956-a18a-bdd1" name="Plasmatic Locomotors" hidden="false" collective="false" import="true" targetId="d152-f92c-fa32-dcfd" type="selectionEntry"/>
+            <entryLink id="6318-c324-7e31-614f" name="Infusive Supercoolant" hidden="false" collective="false" import="true" targetId="9850-b19f-11e0-2b54" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1bc1-e919-8b37-6d77" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7eae-f7e3-e737-d0b3" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4e7-2761-cd28-4590" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5658-d710-1366-1738" name="Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="d2b5-8a58-2fc0-ed72" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink id="db5c-2136-1b19-bcae" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink id="0011-5d08-3f1c-261e" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink id="892a-11a0-96a3-8e32" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="d471-78cc-7637-3047" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink id="50d0-c869-f15c-2c67" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f5f6-c908-6c0d-5aaf" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="850.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="230c-f352-c94a-ee82" name="Cruciator Gatling Array" publicationId="bf8b-27d7-039e-5df9" page="167" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c036-d578-810d-2da9" name="Cruciator Gatling Array" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">12</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">10&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">30&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">No</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Ordnance, Corridor Arc</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="1c90-cd4a-2ce0-b3b2" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9796-81cd-7844-051b" name="Desolator Chainsword" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6aa9-0e2a-baba-c16e" name="Desolator Chainsword" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">4&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Melee, Rending, Bypass</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ae3c-cc42-17b3-43c1" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="dfb7-b8ef-443d-7854" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="a019-6bfb-5b55-1e2a" name="New CategoryLink" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
+        <categoryLink id="b0c3-2b88-86cb-de39" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="b9d8-866e-4a33-e2c4" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
+        <categoryLink id="629e-44f2-7cf3-05da" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a505-6880-5939-fd32" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="232a-afe2-64bb-c0a1" name="Krius Siege Drill" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4175-b7f6-e9de-f2ee" name="Krius Siege Drill" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">13</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+2</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Melee, Fusion (Draining)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1c4f-c2dd-eb09-1488" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="c673-e1c1-0f3f-bb68" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="9048-af56-2b52-6c31" name="New CategoryLink" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
+        <categoryLink id="c924-949e-8ffc-01fa" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="c46d-26fb-404c-708c" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
+        <categoryLink id="d89d-0d5b-4096-52f8" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d99b-53d7-0a3d-6b1c" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d0ae-adc7-c079-d005" name="Krius Grav Imploder" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="237a-56be-890b-0886" name="Krius Grav Imploder" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">12</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+2</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">8&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Shot: Melee, Rending.
+Long: Concussive, Draining, Ordance, Quake</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e5c3-ce86-4e62-3c7e" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="38b6-b9fa-42c3-dcc7" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="14f4-7f55-347f-de41" name="New CategoryLink" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
+        <categoryLink id="c8fa-8df5-ca39-61fe" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="8d64-e06b-8238-7fb4" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
+        <categoryLink id="5a71-d40b-f6ab-329a" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d1cc-97ab-a150-63dd" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
