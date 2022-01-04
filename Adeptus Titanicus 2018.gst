@@ -13477,7 +13477,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
     </selectionEntry>
     <selectionEntry id="c45d-04e4-f35f-8b20" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="b154-60bc-1b63-3314" name="Warmaster Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+        <profile id="b154-60bc-1b63-3314" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
             <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">4&quot;/6&quot;</characteristic>
             <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">3+</characteristic>
@@ -13544,8 +13544,8 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="563e-8d05-dc4c-f2d4" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="ede8-a956-a18a-bdd1" name="Plasmatic Locomotors" hidden="false" collective="false" import="true" targetId="d152-f92c-fa32-dcfd" type="selectionEntry"/>
-            <entryLink id="6318-c324-7e31-614f" name="Infusive Supercoolant" hidden="false" collective="false" import="true" targetId="9850-b19f-11e0-2b54" type="selectionEntry"/>
+            <entryLink id="ede8-a956-a18a-bdd1" name="Kinetic Transducers" hidden="false" collective="false" import="true" targetId="f97e-efc7-c0a6-5035" type="selectionEntry"/>
+            <entryLink id="6318-c324-7e31-614f" name="Dedicated Void Shunts" hidden="false" collective="false" import="true" targetId="59ac-39c7-b7b9-ecb6" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -13700,6 +13700,34 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="59ac-39c7-b7b9-ecb6" name="Dedicated Void Shunts" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="af5d-66ce-5873-6869" name="Dedicated Void Shunts" hidden="false">
+          <description>Once per round, a Titan with this Reactor System may declare Voids to Full without pushing its reactor.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d3f3-952a-5e66-3302" name="New CategoryLink" hidden="false" targetId="3b8b-38d1-147a-f99d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f97e-efc7-c0a6-5035" name="Kinetic Transducers" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="892b-f693-c722-69da" name="Kinetic Transducers" hidden="false">
+          <description>If a Titan with this upgrade moves 5&quot; or more during the Movement phase, add 1 to the Strenght of all weapons with the Melee trait  it is equipped with for the remainder of that phase. In addition, a Titan with this upgrade may make a Smash Attack when moving as part of a Charge order, in addition ro any other attack it makes.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="8a9e-dcda-48c5-d616" name="New CategoryLink" hidden="false" targetId="3b8b-38d1-147a-f99d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
