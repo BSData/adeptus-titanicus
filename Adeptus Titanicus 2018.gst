@@ -4336,7 +4336,7 @@ The fire then goes out.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0dd0-2ee9-4657-776f" name="=Krytos= Reaver replacement Warlord" hidden="true" collective="false" import="false" type="model">
+    <selectionEntry id="0dd0-2ee9-4657-776f" name="=Krytos= Reaver replacement Warlord" hidden="false" collective="false" import="false" type="model">
       <profiles>
         <profile id="78a3-c9e7-5fdb-1400" name="Warlord Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -4355,58 +4355,6 @@ The fire then goes out.</description>
         <categoryLink id="568f-0301-4024-5955" name="New CategoryLink" hidden="false" targetId="7103-9316-d4a5-8caa" primary="true"/>
         <categoryLink id="4279-a840-9387-30b6" name="LegioKrytos" hidden="false" targetId="95e8-3d8e-a0ad-4ad3" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="219b-802c-2bde-7ef0" name="Void Shields" hidden="false" collective="false" import="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5daa-8d7c-c078-9db1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="483c-2a0d-deb7-62ce" type="min"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="3190-f0bb-5c9c-c7d1" name="Void Shields" hidden="false" collective="false" import="false" defaultSelectionEntryId="384e-6d00-a8b5-1936">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a6b-2e64-51f4-5c27" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e71-b0e2-8cb6-a723" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="384e-6d00-a8b5-1936" name="Void Shield (3+)" hidden="false" collective="false" import="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="955e-6903-1e69-2e59" name="Void Shield (3+) 2" hidden="false" collective="false" import="false" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="8c86-86d0-ce9b-98f5" name="Void Shield (3+) 3" hidden="false" collective="false" import="false" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="7f61-0771-cf74-d910" name="Void Shield (4+)" hidden="false" collective="false" import="false" targetId="c621-87a7-709b-daa0" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="5235-0694-ab1a-5561" name="Void Shield (4+) 2" hidden="false" collective="false" import="false" targetId="9219-813c-9bc8-e118" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦾"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="1065-cf16-ab01-5584" name="Void Shield (X)" hidden="false" collective="false" import="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="b0ae-c0d6-b92d-4dac" name="Weapons" hidden="false" collective="false" import="false">
           <selectionEntryGroups>
@@ -4428,6 +4376,7 @@ The fire then goes out.</description>
                 <entryLink id="d48d-bba5-a698-76bc" name="Mori Quake Cannon" hidden="false" collective="false" import="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
                 <entryLink id="a1a2-b626-b48b-069e" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
                 <entryLink id="8980-d170-10ab-45a7" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
+                <entryLink id="e5cb-bbcd-70b4-8a44" name="Volkite Destructor" hidden="false" collective="false" import="true" targetId="2e8a-92e8-a90e-545e" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="0bb7-328e-83bc-eabb" name="Carapace" hidden="false" collective="false" import="false">
@@ -4494,6 +4443,21 @@ The fire then goes out.</description>
           </constraints>
         </entryLink>
         <entryLink id="ffde-cc56-4834-33d9" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="7566-3a9a-fca8-9c01" name="Princeps Seniores" hidden="false" collective="false" import="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="f6f2-c3cd-b916-052e" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="4ddd-9b1c-04b1-06bf" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink id="2d7d-e0a1-80be-8b49" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink id="d452-4436-8c66-6218" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink id="423b-1853-e758-7637" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="6c24-6195-18a5-07d0" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink id="ef4c-ebcc-a869-944c" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8021-f30f-e551-3725" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="385.0"/>
