@@ -478,6 +478,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="b477-7f02-0efe-637c" name="Tactical Support" publicationId="3401-191e-1333-8a1d" page="175" hidden="false"/>
     <categoryEntry id="2afb-401e-9ec9-28b2" name="LegioMetalica" publicationId="3401-191e-1333-8a1d" page="81" hidden="false"/>
     <categoryEntry id="49cb-6b32-2241-ca58" name="Warp Trickery" hidden="false"/>
+    <categoryEntry id="1559-95d9-d618-ae2e" name="Krytos-Warbringer-Replace-Warhound" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -7383,19 +7384,52 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="d8b2-c626-6827-7351" name="Legio Trait: Doom of Worlds" publicationId="975a-00f4-pubN87630" page="" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="1110-1fda-000f-487a" name="=Krytos= Warhound replacement Warbringer Nemesis" hidden="false" collective="false" import="true" targetId="04be-ef73-b123-f140" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Warbringer Nemesis Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb6c-6db8-ef83-217d" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b0f-595e-f4b6-cd30" type="min"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="b06e-fdaa-0fa7-43dc" name="Krytos-Warbringer-Replace-Warhound" hidden="false" targetId="1559-95d9-d618-ae2e" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8bd5-b643-57b5-5c37" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="9c80-07d9-8233-0331" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
-              </conditions>
+            <modifier type="decrement" field="9c80-07d9-8233-0331" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1559-95d9-d618-ae2e" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
-            <modifier type="decrement" field="10e2-8a30-036e-fa3d" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
-              </conditions>
+            <modifier type="decrement" field="10e2-8a30-036e-fa3d" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1559-95d9-d618-ae2e" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
