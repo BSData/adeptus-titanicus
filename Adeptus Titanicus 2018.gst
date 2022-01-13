@@ -17495,10 +17495,13 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </profiles>
       <categoryLinks>
         <categoryLink id="34b1-0844-b92f-4352" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
-        <categoryLink id="a57d-ed71-5a7c-f574" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
+        <categoryLink id="a57d-ed71-5a7c-f574" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="f5ee-6ca8-458f-b8cf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="a25e-a4c3-d463-9d59" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="e65e-e5a1-190c-57fd" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -17527,6 +17530,9 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <categoryLink id="4dae-813a-858f-d2a5" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="false"/>
         <categoryLink id="4aef-7f11-00ba-89f9" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="707d-c397-ef99-6a3f" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -17552,12 +17558,15 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </profiles>
       <categoryLinks>
         <categoryLink id="7a18-29f1-1985-5963" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
-        <categoryLink id="0bc4-44ef-2564-069e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
+        <categoryLink id="0bc4-44ef-2564-069e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="e4a4-bbd8-e794-09ea" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="d546-6679-7d4c-f7c7" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
         <categoryLink id="85e3-3232-4627-b203" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
         <categoryLink id="ee6c-7629-e207-b1b1" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="cd14-9724-9dc5-2abe" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
