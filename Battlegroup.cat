@@ -27,7 +27,7 @@
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f28c-fa09-7512-e0c7" type="min"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf78-6b8f-80d8-996a" type="max"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf78-6b8f-80d8-996a" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
