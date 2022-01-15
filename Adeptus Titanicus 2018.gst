@@ -477,9 +477,9 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="b477-7f02-0efe-637c" name="Tactical Support" publicationId="3401-191e-1333-8a1d" page="175" hidden="false"/>
     <categoryEntry id="2afb-401e-9ec9-28b2" name="LegioMetalica" publicationId="3401-191e-1333-8a1d" page="81" hidden="false"/>
     <categoryEntry id="49cb-6b32-2241-ca58" name="Warp Trickery" hidden="false"/>
-    <categoryEntry id="1559-95d9-d618-ae2e" name="Krytos-Warbringer-Replace-Warhound" hidden="false"/>
     <categoryEntry id="cb32-33c1-1564-983e" name="Replace Reaver With Warlord" hidden="false"/>
-    <categoryEntry id="3467-3cbd-94c5-7a8b" name="Replace Reaver with Warbringer" hidden="false"/>
+    <categoryEntry id="e34d-9d04-97f4-777c" name="Replace Warhound With Warbringer Nemesis" hidden="false"/>
+    <categoryEntry id="3467-3cbd-94c5-7a8b" name="Replace Reaver with Warbringer Nemesis" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -7285,20 +7285,20 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               </conditions>
             </modifier>
           </modifiers>
-          <entryLinks>
-            <entryLink id="1110-1fda-000f-487a" name="=Krytos= Warhound replacement Warbringer Nemesis" hidden="false" collective="false" import="true" targetId="04be-ef73-b123-f140" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="Warbringer Nemesis Titan (Additional)"/>
-              </modifiers>
+          <selectionEntries>
+            <selectionEntry id="69ad-23fd-df55-dd79" name="Replace Warhound with Warbringer Nemesis Titan" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb6c-6db8-ef83-217d" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b0f-595e-f4b6-cd30" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a845-7d3d-589c-a6f4" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="b06e-fdaa-0fa7-43dc" name="Krytos-Warbringer-Replace-Warhound" hidden="false" targetId="1559-95d9-d618-ae2e" primary="false"/>
+                <categoryLink id="1540-0886-cf65-3f54" name="Replace Warhound With Warbringer Nemesis Titan" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
               </categoryLinks>
-            </entryLink>
-          </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -7309,7 +7309,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1559-95d9-d618-ae2e" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7319,7 +7319,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1559-95d9-d618-ae2e" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7352,6 +7352,24 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38f9-0a28-a7bb-708d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd12-c8f5-b461-0a5b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ef0e-51fe-9484-c3e2" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="2d03-b927-55b5-936e" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d03-b927-55b5-936e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f0-7a1e-65ac-7e27" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -8270,20 +8288,20 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
               </conditions>
             </modifier>
           </modifiers>
-          <entryLinks>
-            <entryLink id="d8ab-59ac-3fe0-8a29" name="=Krytos= Warhound replacement Warbringer Nemesis" hidden="false" collective="false" import="true" targetId="04be-ef73-b123-f140" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="Warbringer Nemesis Titan (Additional)"/>
-              </modifiers>
+          <selectionEntries>
+            <selectionEntry id="16d9-8b19-7037-1ff5" name="Replace Warhound with Warbringer Nemesis Titan" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24a2-5710-56a5-c937" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70ad-57fa-26b8-b03a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cc4-ad6d-5437-0628" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="b6a4-4f64-beb9-1a0d" name="Krytos-Warbringer-Replace-Warhound" hidden="false" targetId="1559-95d9-d618-ae2e" primary="false"/>
+                <categoryLink id="d25b-b143-4a9d-7dab" name="Replace Warhound With Warbringer Nemesis Titan" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
               </categoryLinks>
-            </entryLink>
-          </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -8306,6 +8324,18 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           </constraints>
         </entryLink>
         <entryLink id="1047-a812-0fd2-21d4" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="b23f-b6bf-9428-b19d" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="6c36-7b31-6b55-bbe7" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b23f-b6bf-9428-b19d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c36-7b31-6b55-bbe7" type="max"/>
@@ -8315,12 +8345,12 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           <modifiers>
             <modifier type="decrement" field="472e-ad61-3e09-f9f6" value="1.0">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1559-95d9-d618-ae2e" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
               </conditions>
             </modifier>
             <modifier type="decrement" field="09a9-9a9e-ecbc-c3ab" value="1.0">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1559-95d9-d618-ae2e" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -13814,138 +13844,6 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="04be-ef73-b123-f140" name="=Krytos= Warhound replacement Warbringer Nemesis" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="6683-010c-a019-6168" name="Warbringer Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
-          <characteristics>
-            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">5&quot;/7&quot;</characteristic>
-            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">4+</characteristic>
-            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
-            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
-            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">2/3</characteristic>
-            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">4</characteristic>
-            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">9</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="0547-1516-4a3d-a75e" name="New CategoryLink" hidden="false" targetId="c37f-5ca9-9d98-5cf0" primary="true"/>
-        <categoryLink id="4999-71b3-c5fb-4101" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
-        <categoryLink id="de20-086e-8534-18d1" name="LegioKrytos" hidden="false" targetId="95e8-3d8e-a0ad-4ad3" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="db0d-d016-229e-ffd1" name="Weapons" hidden="false" collective="false" import="true">
-          <selectionEntryGroups>
-            <selectionEntryGroup id="6807-7c63-f9f1-ff43" name="Arms" hidden="false" collective="false" import="true">
-              <modifiers>
-                <modifier type="set" field="a689-c85d-b132-5d52" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a689-c85d-b132-5d52" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="793b-b4b0-620d-e8ad" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="8d51-7335-05d9-f511" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
-                <entryLink id="6e21-f404-8531-f48e" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
-                <entryLink id="9a7f-33ce-3eb5-4800" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
-                <entryLink id="8a66-9254-d71d-fc04" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
-                <entryLink id="3986-5f5b-3d58-36d2" name="Chasmata Pattern Laser Blaster" hidden="true" collective="false" import="true" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="e8f2-caa1-ad9e-e81f" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" collective="false" import="true" targetId="d813-f8ae-081e-d421" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="9822-eb0d-b7c4-9bd6" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="true" targetId="5f42-557f-65e1-68b2" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="af57-0a11-56cf-fbfd" name="Carapace" hidden="false" collective="false" import="true">
-              <modifiers>
-                <modifier type="set" field="7c26-6529-9b62-c33d" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c26-6529-9b62-c33d" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3826-37a2-46ae-60fd" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="2238-de13-9a3f-ef6f" name="Bellicosa Volcano Cannon [WBG]" hidden="false" collective="false" import="true" targetId="02fe-12bb-3cc6-2dcf" type="selectionEntry"/>
-                <entryLink id="c84c-f9d2-1895-0461" name="Mori Quake Cannon (Warmonger)" hidden="false" collective="false" import="true" targetId="304a-a91b-5b0f-116e" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="8ada-910d-a541-547e" name="Ardex Defensor Cannon" hidden="false" collective="false" import="true" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="f801-9eb5-6f43-a6f8" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3344-6ff9-0838-9ae3" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3ec-924a-9494-b8af" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="97eb-3069-d6da-0702" name="Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
-        <entryLink id="df69-3e1e-1808-3b1a" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink id="06be-1bbe-5c24-d835" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-        <entryLink id="8d39-c47b-91b9-6f56" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
-        <entryLink id="3778-af2f-47b0-4f4d" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
-        <entryLink id="77f3-48b8-1d71-84e1" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
-        <entryLink id="d888-0bf5-66e9-11d0" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
-        <entryLink id="9fff-5d71-17e9-d839" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="bf72-52ef-d246-4c60" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38fa-c0aa-2668-915d" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="325.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
