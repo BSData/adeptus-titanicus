@@ -12729,7 +12729,7 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="5fd1-28e3-408d-bb48" name="Legio Vulturum" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="5fd1-28e3-408d-bb48" name="Legio Vulturum" publicationId="bf8b-27d7-039e-5df9" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -12788,18 +12788,18 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f7bc-b9d8-bdb4-bda9" name="Legio Mortis" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="f7bc-b9d8-bdb4-bda9" name="Legio Mortis" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85f9-7332-78ec-42d8" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="instanceOf"/>
                       </conditions>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85f9-7332-78ec-42d8" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="atLeast"/>
                             <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
                           </conditions>
                         </conditionGroup>
@@ -12846,18 +12846,18 @@ If the Princeps’ Titan is a Corrupted Titan, it instead rolls two dice, re-rol
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="b2c5-6cea-c8e0-57c1" name="Legio Mordaxis" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="b2c5-6cea-c8e0-57c1" name="Legio Mordaxis" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-71ca-4d91-f370" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e6f-c618-89f4-d690" type="instanceOf"/>
                       </conditions>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-71ca-4d91-f370" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e6f-c618-89f4-d690" type="atLeast"/>
                             <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
                           </conditions>
                         </conditionGroup>
