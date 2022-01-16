@@ -7297,7 +7297,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="increment" field="08e6-4218-264a-812c" value="1.0">
