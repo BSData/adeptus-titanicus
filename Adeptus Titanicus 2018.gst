@@ -6966,7 +6966,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b84d-101d-f6e2-db06" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2c74-3aeb-1a28-d45e" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
