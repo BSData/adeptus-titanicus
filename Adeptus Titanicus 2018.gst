@@ -9073,11 +9073,11 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70f3-8110-5885-3e62" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="3bef-a439-a1c4-c2cf" name="Replace Reaver with Warlord Titan" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7ae-1f74-60ca-90b5" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="17be-1e89-7e39-99c7" name="ReplaceReaverWithWarlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
               </categoryLinks>
@@ -9087,6 +9087,9 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               </costs>
             </selectionEntry>
             <selectionEntry id="5f2e-abfe-c7ce-9499" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e321-274b-5b9f-b3d6" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="3410-e2f9-a7bf-0d17" name="Replace Reaver with Warbringer" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
               </categoryLinks>
