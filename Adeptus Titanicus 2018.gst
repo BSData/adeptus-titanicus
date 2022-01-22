@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="42" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="43" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Gryphonicus : Select your replacement titans from the Maniple level options.  We are working to clean up how you choose replacement titans.</readme>
   <publications>
@@ -16413,6 +16413,9 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3839-80ab-6be7-a920" type="max"/>
+              </constraints>
               <selectionEntries>
                 <selectionEntry id="7db1-098b-29a6-5dfe" name="1 Rotten Heart" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
