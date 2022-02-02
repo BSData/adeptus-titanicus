@@ -554,7 +554,7 @@ can choose to pass the Command check instead of rolling. </description>
       <modifiers>
         <modifier type="increment" field="b4ed-04bf-182a-2fde" value="1.0">
           <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1c7-cb6c-5810-e9d9" repeats="1" roundUp="false"/>
+            <repeat field="forces" scope="5334-72bf-3cf7-d361" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94fe-00c9-e912-2e1a" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
