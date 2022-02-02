@@ -602,7 +602,11 @@ can choose to pass the Command check instead of rolling. </description>
       </categoryLinks>
     </entryLink>
     <entryLink id="warmaster-support-household" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry"/>
-    <entryLink id="warhound-squadron-household-support" name="Warhound Squadron" hidden="false" collective="false" import="false" targetId="9fc6-f5ca-16a8-7515" type="selectionEntry"/>
+    <entryLink id="warhound-squadron-household-support" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3750-e8c8-26e7-efec" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="lance-acheron" name="Lance Cerastus Acheron Banner" hidden="false" collective="false" import="true" targetId="b890-7a15-422e-eba5" type="selectionEntry">
       <modifierGroups>
         <modifierGroup>
