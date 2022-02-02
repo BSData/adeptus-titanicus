@@ -1355,66 +1355,6 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="be2a-f8b2-d34e-9e6d" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7913-6365-6ac3-f930" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b250-2794-6295-6ad2" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="76ff-29f5-f00f-bb59" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="fdad-331e-fdef-860d" name="Cerastus Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37a5-a199-8ecb-3baf" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1a1-64f4-afa8-0c90" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="365a-8cd0-d15a-2112" name="⦿⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="38b8-7e5f-5548-9980" name="⦿⦿⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0a33-795b-03ac-2571" name="⦿⦿⦿⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="88b6-7016-7d17-4da5" name="⦿⦿⦿⦿⦿(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2ff9-4cce-baa3-1bb1" name="⦿⦿⦿⦿⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="f982-cd2b-7e9e-d726" name="Cerastus Knight Acheron" hidden="false" collective="false" import="true" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry">
@@ -1522,66 +1462,6 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6f03-03c5-b739-976a" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f32-1f04-f54e-c27b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f508-f667-70b1-3ae6" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="332b-c797-5b47-974e" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="181d-8102-be2b-b125" name="Cerastus Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63bb-279b-b4f7-c949" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2288-ba73-42d2-d4d7" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="769a-7c82-d281-557a" name="⦿⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="e107-d080-3640-7f5d" name="⦿⦿⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="83d3-ed4e-8001-c088" name="⦿⦿⦿⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5c6d-53cc-d95e-cc65" name="⦿⦿⦿⦿⦿(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="df39-8cee-9bf5-4849" name="⦿⦿⦿⦿⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="d6a4-c8e5-01e2-ede2" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" targetId="aed6-0705-b201-ff96" type="selectionEntry">
@@ -1687,66 +1567,6 @@ can choose to pass the Command check instead of rolling. </description>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="70.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6d0d-099c-a16f-a18c" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84e6-51b2-208d-e221" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f8c-92be-3ff1-e8ac" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="a555-c974-278c-51ac" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="08c8-b001-f568-895b" name="Cerastus Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="932a-21b3-bb27-44e9" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d75c-cb51-fe02-c8d7" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="5cc9-a282-616d-97a8" name="⦿⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b63a-1262-8d3e-f6bb" name="⦿⦿⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ad5c-56af-6404-571d" name="⦿⦿⦿⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6154-95e8-3c88-4b49" name="⦿⦿⦿⦿⦿(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="3da8-65d1-bd82-1bab" name="⦿⦿⦿⦿⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1859,66 +1679,6 @@ can choose to pass the Command check instead of rolling. </description>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="70.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="04f7-595b-ef6c-9ee7" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee04-e6d0-062e-114b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="562e-9c99-09b6-49cf" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="bad9-fd90-721e-9a4c" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="7421-9a2e-bc59-2544" name="Cerastus Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9428-9a3e-325f-eb1a" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29c4-71a2-7ef1-7276" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="0833-9a1c-31ee-febd" name="⦿⦾⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a126-abb9-7890-2fdd" name="⦿⦿⦾⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="824b-0110-2db8-d27d" name="⦿⦿⦿⦾⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5524-3409-3cfe-e8ec" name="⦿⦿⦿⦿⦿(5)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5c17-67b0-4695-c288" name="⦿⦿⦿⦿⦾(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2083,60 +1843,6 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3b45-2eb9-a6f0-bcf5" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f3c-2f3d-e360-708f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4582-f99b-eb5c-9e51" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="6d5f-801e-c873-fca4" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="8581-9824-f97f-9767" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cae-850d-3c1d-987f" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2af3-d243-de39-f39e" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="8dcd-4a50-fb5a-ac29" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="fbee-0202-b6df-9f71" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="872d-6494-aff9-c967" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6614-0192-00dc-0951" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -2278,60 +1984,6 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="002f-14fa-b575-a9c4" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9995-3942-647e-3c91" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9f3-d83b-7e76-4635" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="e9be-7733-7f27-d705" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="25bd-2427-640f-fd49" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f70-a8bd-d9ee-7c21" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b6e-863c-7cb3-9f07" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="f06b-5843-425d-e4d7" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="71b1-6a08-c496-29e7" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="04d9-9c46-776a-a24a" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="8691-39b4-f8e0-3d20" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -2471,60 +2123,6 @@ can choose to pass the Command check instead of rolling. </description>
           <costs>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a803-87af-8c9a-6b0f" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a13e-3110-4c48-4cf0" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01da-23a0-15b4-2bc1" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="2c51-28a9-93c1-62e6" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="c92c-9fef-921d-83f0" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b62c-7fc0-9eed-2daf" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14cd-f679-6c16-0659" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="cc5f-e212-df65-dce6" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="bed8-e637-96d1-6567" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="3cea-097d-4c8d-a3c2" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="cfac-6eb0-99ce-81a9" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2678,60 +2276,6 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="11f9-1841-0db0-2710" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb6f-7dd1-55a3-15ea" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="900a-56af-5b9c-f5ac" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="4d4c-6abe-342f-a08d" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="2bcc-910c-c6a4-106b" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4343-7a21-1d12-1f60" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="053b-2ca0-8b7e-69fd" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="d8e7-0b90-4106-02f3" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6dfd-a8ab-a0d1-ce73" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1d35-8d60-c2ac-566a" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c46d-1231-37f7-1a0a" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -2883,60 +2427,6 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5724-972b-f58b-2d7f" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2bf3-84de-b7ff-60d5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dfbc-2c75-dc75-707d" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="c030-d491-05e7-6536" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="ff5e-b567-3591-fede" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8600-62ba-9905-e65f" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9573-3813-3266-93fb" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="116c-ae01-616e-a11e" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9a71-82fd-406d-4318" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6b0c-239a-22ed-bb14" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="53a8-cc71-b774-c9fe" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -3076,60 +2566,6 @@ can choose to pass the Command check instead of rolling. </description>
           <costs>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5a19-2e30-7c05-5644" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54da-b135-4d45-99d3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e64f-30a7-0f22-18ce" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="fcc8-9c6b-9abe-b9aa" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="5742-1c26-678c-1a68" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4df0-d968-e353-de09" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4716-5e9d-6ace-417c" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="4a72-2b5e-406d-acff" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f452-c76f-d8ed-56db" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="55a7-1b69-7f26-589e" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1953-307f-aca9-b2fb" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3283,60 +2719,6 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="225f-d1ba-1ff7-890b" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5205-9807-f3e6-64e5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0069-112c-5ef1-8195" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="47ca-a3cd-bd00-f436" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="cd07-633b-9faa-536b" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1adf-60ca-b57f-358d" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2413-fe74-ac19-2d56" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="6311-0e0e-5cf9-143e" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9281-795a-a158-e18e" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ae52-f61c-1b24-dd91" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7a76-755c-0472-5c2e" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -3476,60 +2858,6 @@ can choose to pass the Command check instead of rolling. </description>
           <costs>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a67d-d5b9-06e6-fce1" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7f8a-19b9-e58f-d99d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eae1-f310-dbbe-fc77" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="9f33-4d6e-71bf-1fd0" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="6661-9cf3-2275-b9ca" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb3b-70c5-8094-b991" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a660-75dd-cb07-d318" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="c408-e3f3-68a4-2346" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6f25-34c2-ecb9-9012" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="75dd-18d9-9755-e5db" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b9c7-6565-3fe9-b79d" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3682,60 +3010,6 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="37e2-022a-e60d-a6df" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="72ee-9832-8928-7fe8" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="473f-f400-e672-d7dd" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="69ba-cdf8-696e-942b" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="1a9d-1b81-89f9-9493" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="148f-c238-5c27-62a7" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6ad-64a5-e070-6adf" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="2f08-87df-fdb7-b69e" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a30f-306d-3a47-f7a1" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f34a-20c6-d262-c781" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a8c4-2d7f-1dce-730b" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="d9d3-7681-30df-0fec" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
@@ -3813,60 +3087,6 @@ can choose to pass the Command check instead of rolling. </description>
         <categoryLink id="194c-acb6-8a76-d619" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="204b-607f-f4c9-771f" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f1d-2257-2f33-3a85" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b320-6aa2-37ca-682a" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="d0b8-ad69-c95d-ad4f" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="53fd-20d1-384d-0bd2" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62a3-0b30-c927-1301" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d487-e08e-cece-9b08" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="045d-22a5-b47f-7eac" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f717-b889-538c-aae2" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2b5f-38d3-ac25-b606" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a445-d9f0-96e9-9439" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="c081-9d27-0a48-d95d" name="Questoris Knight Scion Magaera" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b5e-0995-8d57-ddcb" type="max"/>
@@ -4015,60 +3235,6 @@ can choose to pass the Command check instead of rolling. </description>
         <categoryLink id="ba2c-2593-7ced-ab17" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="63a2-84e0-4237-2067" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="57db-5068-00f1-51dc" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f3ec-d739-c113-d5c5" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="4ebc-9b2a-5ae2-1ecd" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="2ac3-03ad-de04-da7e" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ef3-609c-bd5d-206b" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b6-3238-58cc-89c6" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="77ae-e483-c92b-59af" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f86a-1467-d604-7999" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="fed7-3cc3-c2d8-7d92" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="031d-451a-aaa3-d7f1" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="e122-d30b-9ebf-2d50" name="Questoris Knight Scion Magaera" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb46-afa0-d9d0-8f02" type="max"/>
@@ -4217,60 +3383,6 @@ can choose to pass the Command check instead of rolling. </description>
         <categoryLink id="101e-6614-5894-58b6" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a399-99ed-81d9-8eb9" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5338-ac6d-86f0-524d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50e7-3e88-dae5-c639" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="848d-70c4-8717-4c0e" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="0143-5a3c-13e6-aa95" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dd3-d1c1-9e81-3afb" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="154a-944f-18b0-19e5" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="e29e-1ec9-3e58-f544" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2fcd-27b2-1a87-cd07" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="aa8f-3ba2-4268-4943" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="8fe8-4da6-2ad4-3679" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="29fe-0f31-144c-3eaf" name="Questoris Knight Scion Styrix" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29c7-1a62-14b1-2e53" type="max"/>
@@ -4425,60 +3537,6 @@ can choose to pass the Command check instead of rolling. </description>
         <categoryLink id="1a01-4468-5b4d-e600" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="b55c-b4bb-1788-7841" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e38-9baa-d6c9-c35f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee84-ba36-254c-7cc9" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="b495-12b9-ee30-16fc" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="a9ee-cb14-f052-172d" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccf6-cd1d-fe11-eaa5" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f09-4a42-3017-7056" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="9821-1cc6-863a-e1e9" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5152-76c0-b4c3-3c76" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b474-6993-5ef9-fa66" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2b3e-983f-c530-bfe7" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="77ba-27b5-ebcd-5045" name="Questoris Knight Scion Styrix" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c9b-8aca-a54c-a653" type="max"/>
@@ -4627,60 +3685,6 @@ can choose to pass the Command check instead of rolling. </description>
         <categoryLink id="fdba-1677-6717-9eb2" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="3514-65e9-48b8-64b1" name="Structure" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1b82-8c99-c3c3-ad32" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ff1-c4d9-7391-5cac" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="217c-3052-feae-f06a" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="3869-f1e0-cc9e-7531" name="Structure" hidden="false" targetId="1c43-76ab-b5e5-6baf" primary="false"/>
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="f1ea-8608-5152-0922" name="Questoris Structure Point" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cda8-d39c-64b5-fb19" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e02-78e4-7047-40f8" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="213a-e836-0108-71b9" name="⦿⦾⦾⦾(1)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ab68-d2ea-7d45-f2eb" name="⦿⦿⦾⦾(2)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ae8f-bfe7-330e-2dc5" name="⦿⦿⦿⦾(3)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d380-aea9-df00-35a8" name="⦿⦿⦿⦿(4)" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="84cd-e0bd-1759-fa9e" name="Questoris Knight Scion Styrix" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1d0-a69e-1410-fc77" type="max"/>
