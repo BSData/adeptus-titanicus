@@ -1218,6 +1218,180 @@ can choose to pass the Command check instead of rolling. </description>
         </modifierGroup>
       </modifierGroups>
     </entryLink>
+    <entryLink id="56e5-0d56-7344-9347" name="Armiger Knights Banner" hidden="false" collective="false" import="false" targetId="11c3-a34f-1748-cf07" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="23a7-fa5a-f1ad-7e10" name="Freeblades" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0ab9-7800-2ef7-e8bb" name="Mechanicum Moirax Knight Banner" hidden="false" collective="false" import="false" targetId="8be9-756b-a3a6-8622" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6f43-c9dc-4869-0c68" name="Freeblades" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9aad-2b81-dac9-74c7" name="Lance Armiger Helverins Banner" hidden="false" collective="false" import="true" targetId="27d2-856f-58e9-ea1e" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="38b4-7d4c-249e-ac54" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4716-ff5a-e360-9d46" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d949-6cac-367a-cd29" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e890-8314-7541-8f86" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd2b-22ed-c2e2-08ad" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79cb-8b6c-b922-a56a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd2b-22ed-c2e2-08ad" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79cb-8b6c-b922-a56a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e890-8314-7541-8f86" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfd2-0da8-b264-521a" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="f0c1-b7cf-f843-23c4" name="Lance Armiger Warglaives Banner" hidden="false" collective="false" import="true" targetId="4716-ff5a-e360-9d46" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27d2-856f-58e9-ea1e" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d949-6cac-367a-cd29" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="38b4-7d4c-249e-ac54" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e890-8314-7541-8f86" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd2b-22ed-c2e2-08ad" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79cb-8b6c-b922-a56a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd2b-22ed-c2e2-08ad" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79cb-8b6c-b922-a56a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e890-8314-7541-8f86" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95fb-670b-1df8-e122" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="4172-7821-4b76-5a83" name="Lance Mechanicum Moirax Dual Lightning Banner" hidden="false" collective="false" import="true" targetId="38b4-7d4c-249e-ac54" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d949-6cac-367a-cd29" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4716-ff5a-e360-9d46" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27d2-856f-58e9-ea1e" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e890-8314-7541-8f86" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd2b-22ed-c2e2-08ad" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79cb-8b6c-b922-a56a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd2b-22ed-c2e2-08ad" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79cb-8b6c-b922-a56a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e890-8314-7541-8f86" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ff4-364d-3af2-6909" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="15e0-415d-8385-249b" name="Lance Mechanicum Moirax Volkite Gyges Banner" hidden="false" collective="false" import="true" targetId="d949-6cac-367a-cd29" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="38b4-7d4c-249e-ac54" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4716-ff5a-e360-9d46" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="27d2-856f-58e9-ea1e" type="atLeast"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e890-8314-7541-8f86" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd2b-22ed-c2e2-08ad" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79cb-8b6c-b922-a56a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd2b-22ed-c2e2-08ad" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79cb-8b6c-b922-a56a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e890-8314-7541-8f86" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5942-211d-4834-28bc" type="max"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2d80-35d6-4ab0-19ca" name="Seneschal" hidden="false" collective="false" import="true" type="upgrade">
@@ -3772,6 +3946,50 @@ can choose to pass the Command check instead of rolling. </description>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d949-6cac-367a-cd29" name="Lance Mechanicum Moirax Volkite Gyges Banner" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="6096-9f77-aebe-7c53" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="68e2-95d9-b6bc-88b5" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="305b-a6ff-53f9-3b3a" name="Lance Armiger" hidden="false" targetId="bfbe-067a-bd84-41c0" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4716-ff5a-e360-9d46" name="Lance Armiger Warglaives Banner" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="e800-ffcf-4e5c-81bf" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="f2ba-05ef-2d9a-8338" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="2bb4-1520-db0c-52f8" name="Lance Armiger" hidden="false" targetId="bfbe-067a-bd84-41c0" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="27d2-856f-58e9-ea1e" name="Lance Armiger Helverins Banner" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="c0ea-67aa-a625-edb5" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="b2c9-ee18-4520-26f8" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="7d9f-7e22-b355-9377" name="Lance Armiger" hidden="false" targetId="bfbe-067a-bd84-41c0" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="38b4-7d4c-249e-ac54" name="Lance Mechanicum Moirax Dual Lightning Banner" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="f380-2f15-4f28-ba55" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="6c77-bbce-7ad4-f420" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="e146-ba06-5f03-9c87" name="Lance Armiger" hidden="false" targetId="bfbe-067a-bd84-41c0" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7183-c0e8-3027-d054" name="Knight House" publicationId="975a-00f4-pubN89746" page="44" hidden="false" collective="false" import="false">
@@ -5630,6 +5848,10 @@ Banners of the same type in a Lance)</description>
         <entryLink id="e00e-261f-7294-14ae" name="Lance Questoris Styrix Double Hekaton Banner" hidden="false" collective="false" import="true" targetId="420b-f7e2-d1cf-d6c5" type="selectionEntry"/>
         <entryLink id="4c5b-962a-b680-af63" name="Lance Questoris Styrix Double Volkite Banner" hidden="false" collective="false" import="true" targetId="68f5-fc0f-4d9b-2a55" type="selectionEntry"/>
         <entryLink id="20d2-5012-881f-8ad4" name="Lance Questoris Warden Banner" hidden="false" collective="false" import="true" targetId="6121-bcbe-2544-3ef9" type="selectionEntry"/>
+        <entryLink id="2e76-9f6a-18f3-3cec" name="Lance Mechanicum Moirax Dual Lightning Banner" hidden="false" collective="false" import="true" targetId="38b4-7d4c-249e-ac54" type="selectionEntry"/>
+        <entryLink id="8255-4dbe-ea7d-1774" name="Lance Mechanicum Moirax Volkite Gyges Banner" hidden="false" collective="false" import="true" targetId="d949-6cac-367a-cd29" type="selectionEntry"/>
+        <entryLink id="7344-1c17-f0e8-b748" name="Lance Armiger Helverins Banner" hidden="false" collective="false" import="true" targetId="27d2-856f-58e9-ea1e" type="selectionEntry"/>
+        <entryLink id="a09d-1435-a163-ece1" name="Lance Armiger Warglaives Banner" hidden="false" collective="false" import="true" targetId="4716-ff5a-e360-9d46" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
