@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -867,6 +867,10 @@
         <categoryLink id="d316-0996-34ef-a634" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="02ae-1f94-83f2-f648" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" targetId="c45d-04e4-f35f-8b20" type="selectionEntry"/>
+    <entryLink id="502a-2bbe-319d-42f8" name="Knight Armiger Banner" hidden="false" collective="false" import="true" targetId="dc34-6fe6-b565-e2ca" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="371c-ee5d-7316-81b9" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>

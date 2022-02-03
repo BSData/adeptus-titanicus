@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="43" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="42" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Gryphonicus : Select your replacement titans from the Maniple level options.  We are working to clean up how you choose replacement titans.</readme>
   <publications>
@@ -316,9 +316,11 @@ After resolving the attack, leave the Vortex template where it is. In the End ph
     <categoryEntry id="4225-27f8-9c8b-e56e" name="LegioVulcanum" hidden="false"/>
     <categoryEntry id="8129-9843-a287-cd8e" name="LegioFortidus" hidden="false"/>
     <categoryEntry id="f0a4-f7dc-25cf-21c8" name="LegioInterfector" hidden="false"/>
+    <categoryEntry id="9ae1-d839-f9ca-7ef5" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false"/>
     <categoryEntry id="d36f-5e44-2150-3428" name="ReaverTitan" hidden="false"/>
     <categoryEntry id="223f-6e71-9e4f-939e" name="WarhoundTitan" hidden="false"/>
     <categoryEntry id="7103-9316-d4a5-8caa" name="WarlordTitan" hidden="false"/>
+    <categoryEntry id="dd70-1324-743e-7dfe" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false"/>
     <categoryEntry id="2841-67b5-15d0-8908" name="Allegiance" hidden="false"/>
     <categoryEntry id="0b8b-755a-cabc-6d70" name="Battlefield Assets" publicationId="975a-00f4-pubN65537" page="65" hidden="false">
       <profiles>
@@ -348,6 +350,7 @@ Units can move across Battlefield Assets without penalty. If a Titan&apos;s base
     <categoryEntry id="91bd-c88a-f6bb-bb3d" name="LegioSpecificWargear" hidden="false"/>
     <categoryEntry id="06ab-258d-46aa-3b1f" name="Qualifier-SpecialMissiles" hidden="false"/>
     <categoryEntry id="f7cb-94c3-1bc4-1d94" name="Qualifier-BolterWeapons" hidden="false"/>
+    <categoryEntry id="aa16-6b7c-879b-6682" name="Krytos-Warlord-Replace-Reaver" hidden="false"/>
     <categoryEntry id="5959-24a2-6bd7-ad76" name="Qualifier-Blast3Weapons" hidden="false"/>
     <categoryEntry id="87f5-9eef-f2bc-d248" name="Impale" hidden="false">
       <rules>
@@ -475,20 +478,13 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="b477-7f02-0efe-637c" name="Tactical Support" publicationId="3401-191e-1333-8a1d" page="175" hidden="false"/>
     <categoryEntry id="2afb-401e-9ec9-28b2" name="LegioMetalica" publicationId="3401-191e-1333-8a1d" page="81" hidden="false"/>
     <categoryEntry id="49cb-6b32-2241-ca58" name="Warp Trickery" hidden="false"/>
-    <categoryEntry id="cb32-33c1-1564-983e" name="Replace Reaver with Warlord" hidden="false"/>
-    <categoryEntry id="e34d-9d04-97f4-777c" name="Replace Warhound with Warbringer Nemesis" hidden="false"/>
-    <categoryEntry id="3467-3cbd-94c5-7a8b" name="Replace Reaver with Warbringer Nemesis" hidden="false"/>
-    <categoryEntry id="2910-5e72-a7de-f973" name="Replace Warhound with Reaver" hidden="false"/>
-    <categoryEntry id="241f-bfe6-fc92-62a6" name="Replace Warlord with Reaver" hidden="false"/>
-    <categoryEntry id="7b35-6cd7-d914-c133" name="Replace Warhound with Warlord" hidden="false"/>
-    <categoryEntry id="8020-a880-c25c-f4d3" name="Replace Warbringer Nemesis with Warhound" hidden="false"/>
-    <categoryEntry id="7831-176e-a10c-4f17" name="Replace Warbringer Nemesis with Reaver" hidden="false"/>
-    <categoryEntry id="d8f4-fa76-75b2-5faf" name="Replace Warbringer Nemesis with Warlord" hidden="false"/>
-    <categoryEntry id="ed65-de2a-f1d6-a6f0" name="Replace Warlord with Warbringer Nemesis" hidden="false"/>
-    <categoryEntry id="a2ce-dd49-ecfa-5ee8" name="Replace Warlord with Warhound" hidden="false"/>
-    <categoryEntry id="30ae-04ab-aaad-4429" name="Replace Reaver with Warhound" hidden="false"/>
-    <categoryEntry id="26af-393b-729b-3e2a" name="Replace optional Reaver with Warbringer Nemesis" hidden="false"/>
-    <categoryEntry id="029d-c629-c563-9f4e" name="Replace optional Warlord with Warbringer Nemesis" hidden="false"/>
+    <categoryEntry id="29ee-9f70-3737-d6e4" name="Retainers" hidden="false">
+      <rules>
+        <rule id="5e95-a8fa-5174-4b00" name="Retainers" hidden="false">
+          <description>A battlegroup may include a single Banner of Retainers as Reinforcements for every non-Retainer Knight Banner in the battlegroup. Banners of Retainers cannot be taken as part of a maniple, while Khight Lances can only include a maximum of one Retainer Banner. Banners of Retainers do not count towards the maximum number of Knight Banners allowed per maniple in a Legio battlegroup.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -4347,6 +4343,170 @@ The fire then goes out.</description>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0dd0-2ee9-4657-776f" name="=Krytos= Reaver replacement Warlord" hidden="true" collective="false" import="false" type="model">
+      <profiles>
+        <profile id="78a3-c9e7-5fdb-1400" name="Warlord Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">4&quot;/6&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">3+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/2</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">4</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a140-3fbe-61ac-a7cd" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink id="568f-0301-4024-5955" name="New CategoryLink" hidden="false" targetId="7103-9316-d4a5-8caa" primary="true"/>
+        <categoryLink id="4279-a840-9387-30b6" name="LegioKrytos" hidden="false" targetId="95e8-3d8e-a0ad-4ad3" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="219b-802c-2bde-7ef0" name="Void Shields" hidden="false" collective="false" import="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5daa-8d7c-c078-9db1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="483c-2a0d-deb7-62ce" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3190-f0bb-5c9c-c7d1" name="Void Shields" hidden="false" collective="false" import="false" defaultSelectionEntryId="384e-6d00-a8b5-1936">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a6b-2e64-51f4-5c27" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e71-b0e2-8cb6-a723" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="384e-6d00-a8b5-1936" name="Void Shield (3+)" hidden="false" collective="false" import="false" targetId="e7f3-4f09-8dc2-5b18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦾⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="955e-6903-1e69-2e59" name="Void Shield (3+) 2" hidden="false" collective="false" import="false" targetId="cecc-5283-0f3c-0325" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦾⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="8c86-86d0-ce9b-98f5" name="Void Shield (3+) 3" hidden="false" collective="false" import="false" targetId="dbfc-74f9-0c2f-9ff0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦾⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="7f61-0771-cf74-d910" name="Void Shield (4+)" hidden="false" collective="false" import="false" targetId="c621-87a7-709b-daa0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦾⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="5235-0694-ab1a-5561" name="Void Shield (4+) 2" hidden="false" collective="false" import="false" targetId="9219-813c-9bc8-e118" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦾"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="1065-cf16-ab01-5584" name="Void Shield (X)" hidden="false" collective="false" import="false" targetId="fb11-17c8-3ecb-3006" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="append" field="name" value="⦿⦿⦿⦿⦿⦿"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b0ae-c0d6-b92d-4dac" name="Weapons" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c0b5-bcd0-6833-517c" name="Arms" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" field="8aa2-f9ae-608b-bf91" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f370-0272-40af-4578" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aa2-f9ae-608b-bf91" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="97ba-9b8a-f8fc-c412" name="Arioch Titan Power Claw" hidden="false" collective="false" import="false" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry"/>
+                <entryLink id="88a4-2bcd-0a51-766c" name="Bellicosa Volcano Cannon" hidden="false" collective="false" import="false" targetId="fee8-4996-06cd-64bc" type="selectionEntry"/>
+                <entryLink id="d48d-bba5-a698-76bc" name="Mori Quake Cannon" hidden="false" collective="false" import="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
+                <entryLink id="a1a2-b626-b48b-069e" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
+                <entryLink id="8980-d170-10ab-45a7" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="0bb7-328e-83bc-eabb" name="Carapace" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" field="01e5-f362-f3f3-2211" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01e5-f362-f3f3-2211" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5875-210c-cb9e-9977" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0f91-929c-14c8-1c85" name="Apocalypse Missile Launchers" hidden="false" collective="false" import="false" targetId="bd33-0564-6277-6dc1" type="selectionEntry"/>
+                <entryLink id="d267-03ec-b80e-6a4a" name="Paired Gatling Blasters" hidden="false" collective="false" import="false" targetId="bfdb-4953-f838-7d21" type="selectionEntry"/>
+                <entryLink id="54b1-d30f-9532-8497" name="Paired Laser Blaster" hidden="false" collective="false" import="false" targetId="5fc7-120d-623b-8b5a" type="selectionEntry"/>
+                <entryLink id="c0d9-c09d-70c7-9ffc" name="Paired Turbo Laser Destructor (Warlord)" hidden="false" collective="false" import="false" targetId="bfee-3947-a004-3a4e" type="selectionEntry"/>
+                <entryLink id="497e-9006-8b68-f990" name="Vulcan Megabolter Array" hidden="false" collective="false" import="false" targetId="f2ae-e883-28c4-dbcc" type="selectionEntry"/>
+                <entryLink id="f047-4da8-eedf-36c0" name="Paired Chasmata Pattern Laser Blaster" hidden="true" collective="false" import="false" targetId="fe03-8e18-b108-5853" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="a7b9-0894-543b-01c8" name="Paired Chasmata Pattern Turbo Laser Destructor" hidden="true" collective="false" import="false" targetId="2699-bb53-cff4-a864" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="8f15-ae5a-ee32-65b6" name="Ardex Defensor Cannon" hidden="false" collective="false" import="false" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6b27-6b8d-4432-f4c0" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0758-fcf2-c01d-1e03" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8395-ff04-2970-c22d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ffde-cc56-4834-33d9" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="385.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="0d56-2ed6-8229-739e" name="=Fureans= Hunting Auspex" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="ec54-b467-379f-8edf" name="Hunting Auspex" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
@@ -5117,6 +5277,196 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c07c-f050-45e2-1376" name="=Gryphonicus= Warhound replacement Reaver" hidden="true" collective="false" import="false" type="model">
+      <profiles>
+        <profile id="fd15-1beb-af88-6378" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">6&quot;/9&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">4+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">2/3</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">3</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="21c2-8f6a-78f3-bde8" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink id="4fc4-a9c2-3fd9-2d80" name="New CategoryLink" hidden="false" targetId="d36f-5e44-2150-3428" primary="false"/>
+        <categoryLink id="a118-7547-ea6e-049d" name="LegioGryphonicus" hidden="false" targetId="0796-178c-50ce-2d1f" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9fdc-6d46-4162-4abe" name="Weapons" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0170-4341-5ae8-473c" name="Arms" hidden="false" collective="false" import="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f461-0891-3f02-d548" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a734-4563-7ecc-6677" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0957-3041-9446-efc1" name="Gatling Blaster" hidden="false" collective="false" import="false" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
+                <entryLink id="5864-dd5a-c36d-82cd" name="Laser Blaster" hidden="false" collective="false" import="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
+                <entryLink id="9d4d-fa92-bd4e-dfec" name="Melta Cannon" hidden="false" collective="false" import="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
+                <entryLink id="5465-3a83-08aa-2b85" name="Reaver Titan Chainfist" hidden="false" collective="false" import="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
+                <entryLink id="1874-d868-c73d-92d4" name="Reaver Titan Power Fist" hidden="false" collective="false" import="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
+                <entryLink id="a50e-0a96-bb92-4745" name="Volcano Cannon" hidden="false" collective="false" import="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
+                <entryLink id="a53a-b1e5-49c1-f824" name="Chasmata Pattern Laser Blaster" hidden="true" collective="false" import="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="735a-5759-2182-7746" name="Carapace" hidden="false" collective="false" import="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cc3-682c-ea41-d203" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5851-3fb0-8639-2354" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="a258-a802-b086-39da" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
+                <entryLink id="532b-1b8a-fff7-cba3" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
+                <entryLink id="e707-da89-dcec-fdac" name="Warp Missile Support Rack" hidden="false" collective="false" import="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
+                <entryLink id="502b-4f5d-28bb-14ca" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" import="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink id="34ef-ca64-2072-04f8" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" import="false" targetId="08c7-5efe-0712-c420" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="48cb-e20b-1a01-b012" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16aa-6a8c-a064-5080" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ed-43b4-4284-9375" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="11e8-a64a-ce3a-37d8" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2c74-3aeb-1a28-d45e" name="=Gryphonicus= Warlord replacement Reaver" hidden="true" collective="false" import="false" type="model">
+      <profiles>
+        <profile id="2a72-55d8-fc95-9058" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">6&quot;/9&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">4+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">2/3</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">3</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d7ec-7b89-dd6f-5400" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink id="f229-35c5-d1e0-f7fb" name="New CategoryLink" hidden="false" targetId="d36f-5e44-2150-3428" primary="false"/>
+        <categoryLink id="a8bb-647b-8953-75e9" name="LegioGryphonicus" hidden="false" targetId="0796-178c-50ce-2d1f" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4b56-5f30-cda0-99fa" name="Weapons" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="093f-d072-0b5f-dc9f" name="Arms" hidden="false" collective="false" import="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91b6-6401-d8a6-4dd1" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bc3-3ece-cb03-a155" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="4933-260f-d3eb-b3b7" name="Gatling Blaster" hidden="false" collective="false" import="false" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
+                <entryLink id="8a88-24cb-f6ee-9b4b" name="Laser Blaster" hidden="false" collective="false" import="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
+                <entryLink id="88d3-d4b3-73b8-82b5" name="Melta Cannon" hidden="false" collective="false" import="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
+                <entryLink id="eff4-4fdf-b1a2-b4e3" name="Reaver Titan Chainfist" hidden="false" collective="false" import="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
+                <entryLink id="b2ca-2aae-a8f9-8805" name="Reaver Titan Power Fist" hidden="false" collective="false" import="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
+                <entryLink id="67b3-4848-0715-94c7" name="Volcano Cannon" hidden="false" collective="false" import="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
+                <entryLink id="a0c6-f768-021c-d060" name="Chasmata Pattern Laser Blaster" hidden="true" collective="false" import="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="46bd-2854-e7e6-55ff" name="Carapace" hidden="false" collective="false" import="false">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8164-2e3d-5598-85ed" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="438b-e69d-a2ef-69ff" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="2c73-2ddc-198e-4658" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
+                <entryLink id="8c3c-aab5-c5cd-d6df" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
+                <entryLink id="05e9-76ee-0844-dbeb" name="Warp Missile Support Rack" hidden="false" collective="false" import="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
+                <entryLink id="7eb9-5d3b-0d1e-5f2b" name="Vulcan Megabolter (Reaver)" hidden="false" collective="false" import="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink id="e199-f670-3556-139b" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" import="false" targetId="08c7-5efe-0712-c420" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bdb5-169d-1379-91b7" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42db-8b1d-0fb3-d445" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46d1-cd25-c00d-3e61" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f4fa-d534-2066-eeaa" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -6352,7 +6702,7 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
     </selectionEntry>
     <selectionEntry id="dc14-b65e-acfb-906a" name="=Damicium= Secondary Plating" page="" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
-        <rule id="899c-50ef-d2bb-0ef1" name="=Damicium= Secondary Plating" publicationId="bf8b-27d7-039e-5df9" page="153" hidden="false">
+        <rule id="899c-50ef-d2bb-0ef1" name="=Damicium= Secondary Plating" publicationId="ce02-a882-fdad-dd36" page="54" hidden="false">
           <description>Any Legio Damicium Titan may take Secondary Plating for +10 points.
 The first Critical Hit a Titan with this upgrade receives is downgraded to a Devastating Hit instead. As soon as this happens, the benefits from this piece of Wargear are lost for the remainder of the battle.</description>
         </rule>
@@ -6613,179 +6963,28 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry id="80d1-1fe7-6c82-8c88" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="f702-1c9a-19d8-0d38" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c19-77bd-e793-6ceb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cfe-f41b-7ba0-3484" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d40-e327-f6ab-f49d" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="8dc4-d9f9-bd72-ed99" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+                <categoryLink id="d877-2de9-64fb-adc0" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="de70-e0d4-7808-b5b0" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43f4-da2f-d545-dcc1" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="63f0-4eca-9fbd-5d8d" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="75dd-f5d3-e912-432c" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2ac5-1fc7-e86d-f4aa" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="e75f-2f21-a067-308f" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="bce5-9648-06cd-ee6f" name="Replace Warhound with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="e129-2bda-1774-7abd" name="Replace Warhound with Warbringer Nemesis" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="59f8-c06c-a0a0-c336" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="de50-538f-794f-d658" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c5ae-688c-d666-575e" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="eae6-592c-65a3-b7a9" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="211f-1d27-e26b-9795" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="b66d-82e0-d37c-c86a" name="Replace Reaver with Warbringer Nemesis" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="afc4-e427-4888-d31d" name="Legio Trait: Tide of Iron" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="adc5-5c53-6a33-d211" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2e1-4193-16bf-f6a7" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="a7e1-6db6-975f-ade0" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="4b9b-df98-1449-2364" name="Legio Trait: Wolfpacks" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="f359-8e61-2786-2a7e" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b17-eb58-f779-d5d0" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="2940-6e0c-54be-3e12" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="486d-f659-0c62-2155" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="db35-3484-5e03-49ad" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="9434-7d69-d629-379c" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9434-7d69-d629-379c" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="db35-3484-5e03-49ad" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db35-3484-5e03-49ad" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9434-7d69-d629-379c" type="min"/>
@@ -6793,29 +6992,15 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         </entryLink>
         <entryLink id="50fe-fac4-704d-2dde" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="124a-743e-536c-5546" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="124a-743e-536c-5546" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
-            <modifier type="decrement" field="19f5-95fb-9e80-96d3" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="19f5-95fb-9e80-96d3" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="124a-743e-536c-5546" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="19f5-95fb-9e80-96d3" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -6827,66 +7012,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7fc-682b-f1b2-a4f8" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="585b-38ce-e35a-c13d" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="0e15-da78-b3df-3970" name="Warlord Titan" hidden="true" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="4ad9-7922-f4d9-bdcf" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="929e-44b1-794b-4dfa" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ad9-7922-f4d9-bdcf" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="929e-44b1-794b-4dfa" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="82c2-cfd2-43b1-d54a" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="cc84-9e5f-b62d-a7ac" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="d3c4-82af-4144-8e01" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc84-9e5f-b62d-a7ac" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c4-82af-4144-8e01" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -6909,240 +7034,61 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry id="2030-8747-b6b3-54a3" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="0fd2-00e1-22b9-f037" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b047-905f-ef80-5bd4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6467-4bdd-6b6b-b944" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0706-1233-0c50-0f54" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="281e-5457-69b2-0f8f" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+                <categoryLink id="ea51-8a94-a8e8-e01b" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false" targetId="dd70-1324-743e-7dfe" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="17bc-7abc-16e6-480e" name="Legio Trait: Doom of Worlds" publicationId="975a-00f4-pubN87630" page="" hidden="true" collective="false" import="false">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry id="0ebb-4fa4-5f65-9aaa" name="Replace Reaver with Warlord Titan" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="8870-c740-9662-abb7" name="=Krytos= Reaver replacement Warlord" hidden="false" collective="false" import="false" targetId="0dd0-2ee9-4657-776f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Warlord Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5da-d753-a567-d486" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4110-26c2-692f-fb32" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86fc-5a92-d259-2b49" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="2c57-0be7-e62f-3457" name="ReplaceReaverWithWarlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+                <categoryLink id="d203-1b97-2e40-716e" name="Krytos-Warlord-Replace-Reaver" hidden="false" targetId="aa16-6b7c-879b-6682" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="aa94-7cc8-430a-7082" name="Legio Trait: Founding Tenets" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cd4a-3c69-5fc8-0773" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="3844-0889-9672-3a53" name="Replace mandatory Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6edd-9518-4540-322e" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="06f4-b4ed-91ce-3f90" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="405c-a524-1461-0755" name="Replace optional" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2809-89a5-8867-9a21" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="f00b-e6ec-a7da-72dc" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-                  <categoryLinks>
-                    <categoryLink id="ee7f-80cc-2792-cc16" name="Replace optional Reaver with Warbringer Nemesis" hidden="false" targetId="26af-393b-729b-3e2a" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ed97-48a2-05e6-ae52" name="Replace Warlord with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-                  <categoryLinks>
-                    <categoryLink id="57e5-e9e2-40ea-9380" name="Replace optional Warlord with Warbringer Nemesis" hidden="false" targetId="029d-c629-c563-9f4e" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="0ba5-9e06-5187-50fb" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8965-d254-c84c-1d00" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="eabe-bdf4-c842-8abe" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="3380-6dd0-4544-d1d3" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c8d2-1df9-3ca5-fa39" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="286a-9c71-ee14-51d3" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6bb2-65d8-1f88-712b" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="dda6-667b-71de-63a0" name="Replace Reaver with Warbringer Nemesis" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="550b-59ac-0665-012e" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="1ac1-e992-aa2c-3b98" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d912-7cc0-ffb4-00d3" name="Replace Warlord with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="7647-f611-fe1d-2f94" name="Replace Warlord with Warbringer Nemesis" hidden="false" targetId="ed65-de2a-f1d6-a6f0" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="03da-061b-48be-c3ee" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="195d-c906-0325-8ea1" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="f79f-6780-f5a3-52d7" name="Legio Trait: Tide of Iron" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="906e-cc81-cba3-2fb9" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d32b-4ea9-7f32-2ad6" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="f1c5-7ae4-7014-892a" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="c090-bbe8-c542-22e4" name="Legio Trait: Wolfpacks" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="0b30-a740-2589-eb4a" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c567-c884-72f1-810b" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="7b43-56bf-6bd5-e665" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d020-5fd1-a571-ddf2" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="baf4-9b7f-f9b7-e2d9" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="029d-c629-c563-9f4e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="baf4-9b7f-f9b7-e2d9" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
             </modifier>
-            <modifier type="decrement" field="8bf1-e26a-82a0-d5ba" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="8bf1-e26a-82a0-d5ba" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="baf4-9b7f-f9b7-e2d9" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="8bf1-e26a-82a0-d5ba" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -7159,119 +7105,24 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         <entryLink id="7a71-c75b-9812-f807" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="dc9b-74b0-ef46-c3b5" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa16-6b7c-879b-6682" type="atLeast"/>
+              </conditions>
             </modifier>
             <modifier type="decrement" field="ae73-44f7-3a1e-c536" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
-              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa16-6b7c-879b-6682" type="atLeast"/>
+              </conditions>
             </modifier>
             <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="ae73-44f7-3a1e-c536" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="dc9b-74b0-ef46-c3b5" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa16-6b7c-879b-6682" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc9b-74b0-ef46-c3b5" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae73-44f7-3a1e-c536" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ad57-aa15-d6ad-d392" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="8a46-1ab8-a597-7234" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="029d-c629-c563-9f4e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="029d-c629-c563-9f4e" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="561e-ed1a-8e80-f9fd" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="561e-ed1a-8e80-f9fd" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a46-1ab8-a597-7234" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="6fea-96a7-d54a-83cc" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="ccc4-6433-9852-2195" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="edc9-9014-7beb-f351" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edc9-9014-7beb-f351" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccc4-6433-9852-2195" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -7294,308 +7145,44 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="c0c1-b38d-a68c-c8e9" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a0-df92-92e4-5f05" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="2f4a-3e8f-4f73-6133" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4367-429e-1980-8ab0" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c481-1016-7cbc-d1e7" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="2d8b-e9ab-9557-1c51" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="26e4-e3ae-7b2c-ecb0" name="Legio Trait: Doom of Worlds" publicationId="975a-00f4-pubN87630" page="" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="37e4-6490-c0da-016b" name="Replace Reaver with Warlord Titan" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9397-cd3a-3f4b-2ac3" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="cf18-b287-04dc-b2ca" name="ReplaceReaverWithWarlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="4c9d-4949-1ab5-a546" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e6a-ee12-089b-8354" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85c8-eea7-2808-a267" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a02-8d5e-e18e-8215" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="099d-6987-8c97-1809" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="6053-061a-02f0-644a" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c5da-6ecc-4bbf-fa92" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="0a81-4411-d5be-7ff4" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6fdb-e40b-9e66-ceec" name="Replace Warhound with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="97d2-d0bb-3ab9-3a72" name="Replace Warhound with Warbringer Nemesis" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3dd3-f214-a7e4-977f" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="5d93-ba4c-ad14-b005" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="24c5-49b7-0cdb-e768" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="c6ec-8d8f-f8c6-61d2" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5b30-e216-c49c-e59a" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="ab33-2134-a9dd-0e49" name="Replace Reaver with Warbringer Nemesis" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6f63-da3b-ee7a-6514" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="236d-9c35-c66c-7d62" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4cf0-40c5-9bfe-4cd9" name="Replace Warlord with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="185b-c6fe-42a8-bf6d" name="Replace Warlord with Warbringer Nemesis" hidden="false" targetId="ed65-de2a-f1d6-a6f0" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="01b4-b4ea-3261-1dcf" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="04a9-052e-e284-736f" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="e5fb-aba8-8ede-acba" name="Legio Trait: Founding Tenets" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cd4a-3c69-5fc8-0773" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="b6ac-b7a7-b09b-9f28" name="Replace optional Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="2580-6e3c-ce91-dda1" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="498e-2d4e-9289-4402" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32ab-21c4-b7ad-e5b0" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ba5-1375-87ea-641b" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="a0e7-1772-f014-c82d" name="Replace optional Reaver with Warbringer Nemesis" hidden="false" targetId="26af-393b-729b-3e2a" primary="false"/>
+                <categoryLink id="98da-f116-35d7-618e" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0919-b1fc-2132-7db7" name="Replace mandatory Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+            </entryLink>
+            <entryLink id="1401-aa72-5974-496c" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e30-1609-888a-f2ce" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20cd-a066-d442-cf32" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a654-83c7-489a-eb1e" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="d2cb-e7bd-297c-74dc" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+                <categoryLink id="7352-4f25-3b60-19d6" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false" targetId="dd70-1324-743e-7dfe" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="379a-d6f1-593a-259d" name="Warhound" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f60-8455-fbf0-8bba" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="4f81-5815-e80c-ceba" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-                  <categoryLinks>
-                    <categoryLink id="00fb-83c5-9b92-05ce" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="e9fd-6631-8e00-4165" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-                  <categoryLinks>
-                    <categoryLink id="c207-a5a0-b57b-aa7f" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d1a2-6f40-0d6a-7ff6" name="Legio Trait: Wolfpacks" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="8528-ccb2-4067-bf66" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f59-73b4-a129-3372" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="1f18-77e2-bf8a-65b2" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="b574-66c8-c254-f159" name="Legio Trait: Tide of Iron" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="59ce-ced3-b4e8-f401" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da47-4398-9460-fe04" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="a378-14d6-06e4-758c" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="228f-f7a7-d85a-c515" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="9aa0-2e76-da99-3f1a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="3a16-e37f-de62-e329" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9aa0-2e76-da99-3f1a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="3a16-e37f-de62-e329" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="notEqualTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a16-e37f-de62-e329" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aa0-2e76-da99-3f1a" type="min"/>
@@ -7603,44 +7190,20 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         </entryLink>
         <entryLink id="430c-0860-5432-11ea" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
+            <modifier type="set" field="72f4-ef46-bd95-4ba9" value="0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="08e6-4218-264a-812c" value="0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="08e6-4218-264a-812c" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="72f4-ef46-bd95-4ba9" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="08e6-4218-264a-812c" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="72f4-ef46-bd95-4ba9" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -7650,33 +7213,15 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         </entryLink>
         <entryLink id="6922-4409-37e6-3201" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="d217-c30c-b3e5-f142" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="d217-c30c-b3e5-f142" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
-            <modifier type="decrement" field="d011-abe9-ffd9-10b6" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="d011-abe9-ffd9-10b6" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="d217-c30c-b3e5-f142" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="d011-abe9-ffd9-10b6" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -7688,42 +7233,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afa0-e9f7-7314-8a0c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8508-eb9b-e33b-45e1" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="f955-a603-59af-826e" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="b748-294a-79f4-8fe0" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="4a92-925d-ed87-f1bb" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b748-294a-79f4-8fe0" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a92-925d-ed87-f1bb" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -7741,113 +7250,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
       <categoryLinks>
         <categoryLink id="12ab-a07e-2599-714f" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="456d-0cbd-8efc-6e6c" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd79-cb7e-be87-0e02" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="3d68-51e6-1d5a-5330" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="eca1-53ac-5ecf-bead" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3260-8ce3-8a52-038f" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="5c90-8b3f-cd70-975e" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5b8f-c354-0219-e725" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="58c1-446d-bc70-3693" name="Replace Reaver with Warbringer Nemesis" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="7e5e-df57-bc17-3bca" name="Legio Trait: Tide of Iron" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="0392-5cca-a3ad-11c5" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1340-8be2-bbd2-6ebb" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="a45f-f8ca-38d4-4d7e" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="2074-211c-987f-7d3b" name="Legio Trait: Wolfpacks" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="c79b-9f95-11b4-6df6" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33ab-23ee-cd01-36d5" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="011b-f747-9628-9216" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d2ae-05d2-2fcb-0798" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="1a83-28f9-39f2-6a12" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="3201-7f9d-bbe4-e121" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3201-7f9d-bbe4-e121" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a83-28f9-39f2-6a12" type="min"/>
@@ -7857,97 +7261,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b570-e434-172f-b4ad" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a03-26e1-7b91-83db" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="bf95-6fad-b7f7-4c54" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="1e20-713d-c554-9fd0" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="6005-492d-47db-db39" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="1e20-713d-c554-9fd0" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="6005-492d-47db-db39" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e20-713d-c554-9fd0" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6005-492d-47db-db39" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ede6-6b51-acc3-1c1e" name="Warlord Titan" hidden="true" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="c2b2-0549-8f3d-89ec" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="53c4-d809-5b8c-7d9f" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2b2-0549-8f3d-89ec" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53c4-d809-5b8c-7d9f" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="f63f-989c-ade7-8065" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="7604-79f8-fbee-275d" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="d2a6-8728-fe69-34ad" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7604-79f8-fbee-275d" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2a6-8728-fe69-34ad" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -7970,168 +7283,28 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry id="a124-b697-8764-88ca" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="079f-7edd-53c0-2ba0" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5848-14fa-e069-c2e4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9030-7b3c-13c1-4ad0" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a2-4992-4ce4-7e23" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="3999-933c-6a8e-ca07" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+                <categoryLink id="8680-3cc6-f07b-caea" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="12f0-7a42-ef01-a1c5" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="217c-2c29-c219-8e2e" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="e453-6a50-c856-1ea6" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="94ae-751d-a81c-0cab" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4081-357b-6721-0533" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="a28e-3c12-4b03-7eab" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d663-b3e6-3f9a-6f4b" name="Replace Warhound with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="f8fe-f69a-7953-0064" name="Replace Warhound with Warbringer Nemesis" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2edd-c059-d1a3-894a" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="d79a-45b6-0c6b-b03d" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d98d-be73-345c-9287" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="5617-9f7c-153b-a444" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f4cb-7cab-7acb-84f4" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="81ae-d285-d4bd-1595" name="Replace Reaver with Warbringer Nemesis" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="a405-2fb9-2909-85ed" name="Legio Trait: Wolfpacks" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="d2e1-5b8f-4c4c-324f" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8277-8d9e-d664-e09a" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="269f-1a62-9e67-6ece" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="c488-765e-536a-49fc" name="Legio Trait: Tide of Iron" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="06e8-0d38-6bae-2a12" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ca-d04d-9c73-c8cb" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="b397-b08b-81f5-cfab" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fbf6-2b08-3998-d83e" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="db7d-8f30-ca24-e30e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="db7d-8f30-ca24-e30e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="db7d-8f30-ca24-e30e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="a3b6-c6b9-ac60-617d" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3b6-c6b9-ac60-617d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db7d-8f30-ca24-e30e" type="min"/>
@@ -8139,29 +7312,15 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         </entryLink>
         <entryLink id="1ace-3985-55cd-6c93" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="6f37-979e-47fe-7098" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="803f-03a2-c313-9c2a" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
-            <modifier type="decrement" field="803f-03a2-c313-9c2a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="6f37-979e-47fe-7098" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="803f-03a2-c313-9c2a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="6f37-979e-47fe-7098" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -8173,68 +7332,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0fc-bfe1-0e38-29f0" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d26-5fc3-ad8e-a5df" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ab26-c662-10be-aea4" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="8e9c-c165-411e-b536" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="4d6f-1b5d-714b-7858" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e9c-c165-411e-b536" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d6f-1b5d-714b-7858" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="0ac5-72e4-b09d-a451" name="Warlord Titan" hidden="true" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="c984-e085-f422-be97" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="3e4c-d43b-a93b-f057" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c984-e085-f422-be97" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e4c-d43b-a93b-f057" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -8259,162 +7356,53 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="8073-bdb2-6abf-5bad" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4ff-47ee-4451-71eb" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="c9ce-8a18-59d9-82e7" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c9ba-6683-53ae-5077" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78d0-55d1-9f07-8c8d" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="32f2-211e-b4cf-c877" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d8b2-c626-6827-7351" name="Legio Trait: Doom of Worlds" publicationId="975a-00f4-pubN87630" page="" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="69ad-23fd-df55-dd79" name="Replace Warhound with Warbringer Nemesis Titan" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a845-7d3d-589c-a6f4" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="1540-0886-cf65-3f54" name="Replace Warhound With Warbringer Nemesis Titan" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="36e9-4ca8-9acb-559d" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b55-219f-dee1-a0e1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="917b-e156-ede6-ab23" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5023-c360-3cd0-a9e3" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="e1e0-ba9a-85f2-ab24" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="02cb-6efe-41a7-abd1" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a88-ff57-a27f-5342" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a1c-b2a1-a0bf-6f7c" type="min"/>
+              </constraints>
               <categoryLinks>
-                <categoryLink id="c4e9-64c9-1099-9205" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+                <categoryLink id="2bf0-6592-9ac7-bf7b" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="13ea-0328-1d45-8031" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+            </entryLink>
+            <entryLink id="0ee9-f77b-20dc-c09d" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8dd-326e-eddb-c2d2" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d20-daad-cdfd-b3b0" type="min"/>
+              </constraints>
               <categoryLinks>
-                <categoryLink id="0c3e-c389-33ee-6a6d" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+                <categoryLink id="6ec2-37f2-89e1-cd21" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false" targetId="dd70-1324-743e-7dfe" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b6d7-09df-f162-7fd2" name="Replace Warhound with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="f71f-6e2f-a16c-8a46" name="Replace Warhound with Warbringer Nemesis" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2b65-3b46-8533-ccd6" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="fc33-f833-2852-9be7" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="16db-0cfa-3e69-71c9" name="Replace Warlord with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="0e0f-282d-fbc1-7f2b" name="Replace Warlord with Warbringer Nemesis" hidden="false" targetId="ed65-de2a-f1d6-a6f0" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9a18-573b-d8dd-2c70" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="e736-b2e7-4a76-1565" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8bd5-b643-57b5-5c37" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="9c80-07d9-8233-0331" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" field="10e2-8a30-036e-fa3d" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="10e2-8a30-036e-fa3d" value="1.0">
+            <modifier type="decrement" field="9c80-07d9-8233-0331" value="1">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="9c80-07d9-8233-0331" value="1.0">
+            <modifier type="decrement" field="10e2-8a30-036e-fa3d" value="1">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8425,33 +7413,14 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         </entryLink>
         <entryLink id="2b1d-c2a1-5fb1-5f26" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="c5e4-a8b8-d00f-44dd" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="8032-04c4-538f-85ad" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="c5e4-a8b8-d00f-44dd" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="8032-04c4-538f-85ad" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="decrement" field="c5e4-a8b8-d00f-44dd" value="1">
               <conditions>
-                <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="8032-04c4-538f-85ad" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8464,68 +7433,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38f9-0a28-a7bb-708d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd12-c8f5-b461-0a5b" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ef0e-51fe-9484-c3e2" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="02f0-7a1e-65ac-7e27" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="2d03-b927-55b5-936e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d03-b927-55b5-936e" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f0-7a1e-65ac-7e27" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="a55c-37fd-4026-a648" name="Reaver Titan" hidden="true" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="342a-8f57-54a4-7bdb" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="4f57-d4aa-a735-88d6" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342a-8f57-54a4-7bdb" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f57-d4aa-a735-88d6" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -8548,83 +7455,38 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry id="5584-7ea1-624c-89e1" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="4454-8649-f807-58ed" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ba-bcbc-1038-4e66" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fe5-f115-b735-bbed" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eaa-2bf7-144d-f7d5" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="0631-11cf-b7cd-43d1" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+                <categoryLink id="a5a5-07b9-18fc-4a50" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="c807-5df4-4762-ab33" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c1f-ee49-941f-c530" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="2f34-2e1a-72e5-99b2" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="8f08-f62a-23b9-8278" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8552-8b0e-2653-fd25" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="8251-ba2a-5034-cbbf" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="aefb-1a9b-68af-27df" name="Replace Warhound with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="88c9-2e47-78c4-0303" name="Replace Warhound with Warbringer Nemesis" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="888e-a4ff-c051-e2ab" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="e1c2-3492-0032-293a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="e1c2-3492-0032-293a" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
-            <modifier type="decrement" field="f6a3-2c2d-9562-dac0" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="f6a3-2c2d-9562-dac0" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -8636,75 +7498,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5618-6159-c341-4759" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78b4-10d1-1405-d994" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="8746-b83c-71b2-1849" name="Reaver Titan" hidden="true" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="3ce4-3d74-8f1e-a95e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="dc74-71c0-0219-78a4" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ce4-3d74-8f1e-a95e" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc74-71c0-0219-78a4" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="11e7-9307-5f09-2748" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="2bba-60bd-fc1e-1601" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="9103-dcf7-48c1-0e76" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bba-60bd-fc1e-1601" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9103-dcf7-48c1-0e76" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ed65-56e4-124d-2d61" name="Warlord Titan" hidden="true" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="89be-de96-6ecb-e393" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="cd9a-9ca8-ca53-75ac" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89be-de96-6ecb-e393" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd9a-9ca8-ca53-75ac" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -8743,154 +7536,49 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="d31f-80e4-ae01-4e47" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="960c-200d-3574-808d" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="5534-c208-b59d-6426" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d142-037b-98c3-8b4a" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd7a-907d-2237-64d1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f3a-ec8a-ae3d-2c50" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a98-77b6-1207-96c4" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="dcfd-0bd5-d0f4-fa93" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="c4f2-e3bd-5b1f-d0ea" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7c4c-aace-45b6-e1aa" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="de95-3147-f684-1baf" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d08c-5a37-ae58-ed13" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="dbdd-59d7-182a-77fc" name="Replace Reaver with Warbringer Nemesis" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1d5f-15e0-d56f-b383" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="1f99-609a-324f-f08c" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7c63-950d-b26a-0379" name="Replace Warlord with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="55ae-ccc3-9188-fed2" name="Replace Warlord with Warbringer Nemesis" hidden="false" targetId="ed65-de2a-f1d6-a6f0" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8bde-c251-312c-767c" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="5162-bfcd-00d2-d153" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="6bdf-4162-f0f2-4619" name="Legio Trait: Tide of Iron" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="4579-4adb-5ccc-ead1" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="d581-29e1-d1a3-0823" name="=Gryphonicus= Warhound replacement Reaver" hidden="false" collective="false" import="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60dc-a756-6b0c-4957" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31c8-cd02-a158-e63e" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b9f-45f1-9410-115f" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="e2bb-3cd6-c548-6b2d" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+                <categoryLink id="e445-8421-bb61-4671" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="97fb-65ee-b93b-57ae" name="Legio Trait: Wolfpacks" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="22c0-8311-1790-cd21" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+            </entryLink>
+            <entryLink id="7ef8-368d-cd7d-3f32" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="167f-0ef8-a2b0-2cbe" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aea2-e25f-eece-c264" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="986c-2aa4-f9d7-d3c8" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="a611-de88-7f17-6635" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+                <categoryLink id="4357-08a1-f18f-2199" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false" targetId="dd70-1324-743e-7dfe" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6703-2cd9-77b8-bded" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
-            <modifier type="increment" field="4450-239e-952e-b8e9" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="78e6-e56f-6e3d-30ad" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="4450-239e-952e-b8e9" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -8899,89 +7587,24 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </constraints>
         </entryLink>
         <entryLink id="1557-41db-9051-3271" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" field="3578-3bfa-02f4-09e0" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="ca1b-bd28-2557-a917" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="3578-3bfa-02f4-09e0" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ca1b-bd28-2557-a917" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
+              <modifiers>
+                <modifier type="decrement" field="3578-3bfa-02f4-09e0" value="1.0"/>
+                <modifier type="decrement" field="ca1b-bd28-2557-a917" value="1.0"/>
+                <modifier type="set" field="hidden" value="true"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca1b-bd28-2557-a917" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3578-3bfa-02f4-09e0" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="09fb-74c1-051c-8094" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="c052-2f9b-24c5-16bb" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="7ce4-9226-0a1a-3f99" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="c052-2f9b-24c5-16bb" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="7ce4-9226-0a1a-3f99" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ce4-9226-0a1a-3f99" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c052-2f9b-24c5-16bb" type="min"/>
@@ -8991,38 +7614,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7158-6d00-7714-6882" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a5b-0580-c68d-72e2" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ec10-55f0-fde0-7875" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="d8d9-5601-838b-e1cd" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="fafd-cc47-e385-e85c" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fafd-cc47-e385-e85c" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8d9-5601-838b-e1cd" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -9046,252 +7637,38 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry id="1955-9917-1f91-9d76" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="b84d-101d-f6e2-db06" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="730b-b2f5-3e48-e594" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb1e-e534-c949-6d33" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9c6-7ff5-1444-37d5" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="769f-e435-d10f-9228" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+                <categoryLink id="c5e1-a816-9b97-e2dc" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false" targetId="dd70-1324-743e-7dfe" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="8234-e9fe-2fc7-d2a8" name="Legio Trait: Doom of Worlds" publicationId="975a-00f4-pubN87630" page="" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="3bef-a439-a1c4-c2cf" name="Replace Reaver with Warlord Titan" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7ae-1f74-60ca-90b5" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="17be-1e89-7e39-99c7" name="ReplaceReaverWithWarlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5f2e-abfe-c7ce-9499" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e321-274b-5b9f-b3d6" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="3410-e2f9-a7bf-0d17" name="Replace Reaver with Warbringer" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="27b8-4afb-92b6-2150" name="Legio Trait: Founding Tenets" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cd4a-3c69-5fc8-0773" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="94ef-681b-1f2e-43d2" name="Replace mandatory Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b35-93c7-a282-69bb" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="41af-786c-c058-3d45" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="5213-0dc0-f2ed-fa7b" name="Replace optional" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2f1-95b1-18f5-4ec0" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="0fa6-c231-d38f-e531" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-                  <categoryLinks>
-                    <categoryLink id="7d3f-213b-40e9-b256" name="Replace optional Reaver with Warbringer Nemesis" hidden="false" targetId="26af-393b-729b-3e2a" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a48c-cc13-7429-3333" name="Replace Warlord with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-                  <categoryLinks>
-                    <categoryLink id="9e76-4dde-be4c-2231" name="Replace optional Warlord with Warbringer Nemesis" hidden="false" targetId="029d-c629-c563-9f4e" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="5be6-ef3a-40f2-491a" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf2b-e4ea-701d-962d" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="bea1-b9c6-0328-6074" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="3136-b50f-15e3-e195" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a763-58e5-d4de-2da4" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="a80c-6d72-0a12-0fe3" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8c66-c524-5d15-b739" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="92c0-fccb-1c86-bba5" name="Replace Reaver with Warbringer Nemesis" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d49b-d819-8af6-1a21" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="bdaf-7f11-0570-f060" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="179c-5800-f240-8300" name="Replace Warlord with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="3e48-c2e3-7733-58ec" name="Replace Warlord with Warbringer Nemesis" hidden="false" targetId="ed65-de2a-f1d6-a6f0" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="403a-05eb-5d54-17d7" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="346e-6a2d-c7d7-4457" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d89f-f302-e25b-1e01" name="Legio Trait: Tide of Iron" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="080d-8d39-f229-e23c" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff68-cc43-353f-c005" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="e789-be40-426d-79b1" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="4170-73a5-a678-f02c" name="Legio Trait: Wolfpacks" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="8bc5-26f5-dcbb-cb63" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9841-8c94-7cf2-e5eb" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="4ee4-7ca7-2d6d-a484" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2276-d58d-a919-6ecc" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="54a7-7b7a-7e79-fd2e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="029d-c629-c563-9f4e" repeats="1" roundUp="false"/>
-              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
             </modifier>
-            <modifier type="decrement" field="97f2-88f1-367e-4aee" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="54a7-7b7a-7e79-fd2e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="97f2-88f1-367e-4aee" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="97f2-88f1-367e-4aee" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -9300,43 +7677,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </constraints>
         </entryLink>
         <entryLink id="9187-74a9-9d6f-2f7e" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="0367-10c5-5cf5-71a2" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="a001-f8b7-d5de-905b" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="0367-10c5-5cf5-71a2" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="a001-f8b7-d5de-905b" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb32-33c1-1564-983e" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26af-393b-729b-3e2a" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0367-10c5-5cf5-71a2" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a001-f8b7-d5de-905b" type="min"/>
@@ -9346,72 +7686,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5ea-c8a7-dbe0-d372" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="213c-1b2e-1597-55e4" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="1f36-2c7f-f51e-e7d3" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="notEqualTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="notEqualTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26af-393b-729b-3e2a" type="notEqualTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="029d-c629-c563-9f4e" type="notEqualTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="c7de-8a2a-2ba7-b6ef" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="029d-c629-c563-9f4e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="2f53-b43a-2f7c-83cb" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="029d-c629-c563-9f4e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f53-b43a-2f7c-83cb" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7de-8a2a-2ba7-b6ef" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c514-6fb1-4db4-e26c" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="3cc7-d840-2984-a2da" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="1a62-ccb7-168f-cfbf" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="notEqualTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" type="notEqualTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cc7-d840-2984-a2da" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a62-ccb7-168f-cfbf" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -9434,168 +7708,38 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry id="50b2-01aa-3618-2cf5" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="6d2d-b6b7-027c-782c" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="088a-2e16-19a9-dd82" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c72-3cd9-7b65-da59" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7b4-818d-160e-c1ac" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="52df-9eaf-50b3-1c0e" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+                <categoryLink id="d37a-5338-9ba5-adcf" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="a1bc-90ec-fccb-cd41" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5905-97df-85c7-12bd" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="f43c-3879-c08f-87b7" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="06e9-4fec-7f56-9657" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="bb88-5de6-e1ea-eef1" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="d7d6-0c05-a191-cc27" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8aa8-ecb6-705f-6330" name="Replace Warhound with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="58b9-d363-1282-fcbb" name="Replace Warhound with Warbringer Nemesis" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="415a-ed3b-5b57-e9e4" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="f239-94ea-b040-8d10" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6ae7-54ec-7293-f266" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="6b4a-8751-00e1-cdc2" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2cbd-e002-5847-1dbf" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="4162-1309-b10d-8c24" name="Replace Reaver with Warbringer Nemesis" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="49ca-8e91-976f-e619" name="Legio Trait: Wolfpacks" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="b88d-ff05-e90b-b61e" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4264-f49e-c3ed-fe6d" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="770c-0ef4-7e67-fdb8" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="5420-70dc-a30a-fe7c" name="Legio Trait: Tide of Iron" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="a23c-d726-81be-30dc" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37e5-0ee9-e65d-df1e" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="53fc-2265-19bb-023d" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e55d-c4aa-9307-146d" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="7d26-0a5d-3cbd-4c28" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="7d26-0a5d-3cbd-4c28" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
-            <modifier type="decrement" field="8e65-1872-3677-b75a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="8e65-1872-3677-b75a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="7d26-0a5d-3cbd-4c28" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="decrement" field="8e65-1872-3677-b75a" value="1">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -9604,36 +7748,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </constraints>
         </entryLink>
         <entryLink id="f5a4-35c2-f497-ef23" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="a0be-9463-3ea5-50b7" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="997f-69f2-59b5-a4e2" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="a0be-9463-3ea5-50b7" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="997f-69f2-59b5-a4e2" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="997f-69f2-59b5-a4e2" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0be-9463-3ea5-50b7" type="min"/>
@@ -9643,66 +7757,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d31-c274-d528-f841" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a595-2c07-a80b-9196" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="aaf1-3896-ce14-5c72" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="7538-3a11-b1a4-668f" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="3691-7891-675c-849f" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3691-7891-675c-849f" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7538-3a11-b1a4-668f" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="3ba3-6147-bf40-fa38" name="Warlord Titan" hidden="true" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="1210-30af-7cfb-8e75" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="e29d-e122-e71c-542d" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1210-30af-7cfb-8e75" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e29d-e122-e71c-542d" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -9725,120 +7779,28 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry id="7cd7-4f63-cea5-3cd8" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="5dde-9f31-c9b1-5513" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f872-b67f-b110-a6a4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="358d-efb1-9efb-a509" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff58-a796-7389-7049" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="6194-d618-b11b-42c1" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+                <categoryLink id="2dbe-5f3c-abc5-c86d" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="e52a-d0c9-8c0a-6282" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f39d-2b06-98d0-8fd5" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="8369-95b7-d3ae-c013" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="72bb-ee73-9515-bdda" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f3cc-b07f-6260-412a" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="0a43-247c-1d20-bdb1" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e7d4-a5d1-2c3c-5c95" name="Replace Warhound with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="75ba-c66a-c1e9-6e87" name="Replace Warhound with Warbringer Nemesis" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b77d-3511-24c7-c8b9" name="Replace Warbringer Nemesis with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="bbad-f859-910c-614b" name="Replace Warbringer Nemsis with Reaver" hidden="false" targetId="7831-176e-a10c-4f17" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="36a5-848a-cf1a-2ab7" name="Replace Warbringer Nemesis with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="9f62-6617-2ae4-ebdd" name="Replace Warbringer Nemsis with Warlord" hidden="false" targetId="d8f4-fa76-75b2-5faf" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8f5e-508b-4607-0c6f" name="Replace Warbringer Nemesis with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="c019-eecf-4f17-4e98" name="Replace Warbringer Nemsis with Warhound" hidden="false" targetId="8020-a880-c25c-f4d3" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ae58-fccd-53f3-e7d5" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="a10c-04b0-24c7-38cf" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="c4c4-9670-0378-b53e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="a10c-04b0-24c7-38cf" value="1.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="c4c4-9670-0378-b53e" value="1.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a10c-04b0-24c7-38cf" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c4-9670-0378-b53e" type="min"/>
@@ -9851,114 +7813,9 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </constraints>
         </entryLink>
         <entryLink id="8f2b-3305-bc4d-c259" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="8e0b-858e-9d1a-1fdf" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="8bc7-c484-7b00-d2cb" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="8e0b-858e-9d1a-1fdf" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" field="8bc7-c484-7b00-d2cb" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bc7-c484-7b00-d2cb" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e0b-858e-9d1a-1fdf" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="a7c8-27c9-1117-656c" name="Reaver Titan" hidden="true" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="98a2-d530-c326-bcb0" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="1a37-8998-8e52-7205" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1a37-8998-8e52-7205" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98a2-d530-c326-bcb0" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="cf9b-3341-4a3b-7235" name="Warlord Titan" hidden="true" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="fc2f-7f2a-f971-e2c9" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="b4ef-de62-5aa9-7186" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4ef-de62-5aa9-7186" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc2f-7f2a-f971-e2c9" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -9977,150 +7834,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
       <categoryLinks>
         <categoryLink id="d30c-c977-21ff-4248" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="4254-c9ac-3c28-bcac" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f879-acdc-016d-9b33" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="9124-585b-53cb-a5f0" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="2b50-e619-c156-6c24" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8203-b82d-9616-45e1" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="b10f-e385-38a3-2425" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e148-f7df-61bf-4c7a" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="3213-0f9a-4e66-b885" name="Replace Reaver with Warbringer Nemesis" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3faa-832c-27a3-f0aa" name="Replace Warbringer Nemesis with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="b886-c5ed-f9cf-5a17" name="Replace Warbringer Nemesis with Reaver" hidden="false" targetId="7831-176e-a10c-4f17" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="73c7-95be-db1d-3d3d" name="Replace Warbringer Nemesis with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="5af9-2875-0f7d-e4d9" name="Replace Warbringer Nemesis with Warlord" hidden="false" targetId="d8f4-fa76-75b2-5faf" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4257-ad2a-f4f7-951c" name="Replace Warbringer Nemesis with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="4a54-dad7-610a-c0a3" name="Replace Warbringer Nemesis with Warhound" hidden="false" targetId="8020-a880-c25c-f4d3" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="51bb-53d1-3c56-c725" name="Legio Trait: Tide of Iron" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="ff22-71fc-2bf6-0fd3" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21f5-0afb-3f32-e9f9" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="1713-649d-9f75-ac79" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="4383-32cc-6b42-99e6" name="Legio Trait: Wolfpacks" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="e44b-5d5a-e09a-23f0" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46e7-99e7-57d3-0946" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="e744-61b5-eef9-2a0d" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ece9-d720-9039-e293" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="201c-0e6d-752f-9f44" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="d049-710a-cfe3-2097" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="d049-710a-cfe3-2097" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="201c-0e6d-752f-9f44" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d049-710a-cfe3-2097" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="201c-0e6d-752f-9f44" type="min"/>
@@ -10133,95 +7848,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </constraints>
         </entryLink>
         <entryLink id="dfab-de0a-7560-01c3" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="4d19-e17c-9d1a-e7ad" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="2f63-daf3-deb5-d0b9" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="4d19-e17c-9d1a-e7ad" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="2f63-daf3-deb5-d0b9" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d19-e17c-9d1a-e7ad" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f63-daf3-deb5-d0b9" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="0b77-7de4-68d8-dc0f" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="813f-dd55-3078-659e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="96d4-4c82-efd1-f76d" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96d4-4c82-efd1-f76d" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="813f-dd55-3078-659e" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="7b01-8aae-d48f-e807" name="Warlord Titan" hidden="true" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="b88d-e347-9470-cbaa" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9c4e-913f-59f7-0d21" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b88d-e347-9470-cbaa" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c4e-913f-59f7-0d21" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -10244,132 +7872,54 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="5d10-308b-d4d7-4df2" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e423-dbbc-a976-6f0a" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="29d9-42cb-e5d0-41b5" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0881-6364-b3b6-70b7" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12d5-1528-35bd-2183" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="0a76-e6c7-c68f-3fd5" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ad75-6a81-a262-b12a" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7249-e620-d3de-c7d1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd7-1b6d-197e-7dfd" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c006-978f-6f46-886f" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="00e3-8e38-b76f-3a20" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="158e-3ad5-eddb-43e6" name="Replace 1 Warhound with a Reaver" hidden="false" collective="false" import="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbab-6dd4-f146-c2ba" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75ab-b868-fdfc-e2cf" type="min"/>
+              </constraints>
               <categoryLinks>
-                <categoryLink id="985d-f5dc-43e8-2584" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+                <categoryLink id="0900-771c-86ff-2c06" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="fff1-119b-ea84-04ad" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+            </entryLink>
+            <entryLink id="20de-0a07-ab34-ebd0" name="Replace 1 Warlord with a Reaver" hidden="false" collective="false" import="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52ec-b618-6717-fe7c" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee36-ef68-4833-75a1" type="min"/>
+              </constraints>
               <categoryLinks>
-                <categoryLink id="ba9f-07b5-2c75-36ea" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+                <categoryLink id="fc30-336e-4ebf-9dc1" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false" targetId="dd70-1324-743e-7dfe" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="13f7-d172-078b-5837" name="Replace Warhound with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="89fa-a9bb-4004-5daa" name="Replace Warhound with Warbringer Nemesis" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="461d-b3f6-6c5c-887f" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="7c2b-efea-e14a-33dd" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4fce-a02c-5eb0-58e3" name="Replace Warlord with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="bb48-d2b5-85b3-aa51" name="Replace Warlord with Warbringer Nemesis" hidden="false" targetId="ed65-de2a-f1d6-a6f0" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e59b-5e16-1c35-d237" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="54f9-77e1-3856-7e2f" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8366-f454-1d97-b4f0" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="9c21-219f-eb16-73a0" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
             <modifier type="decrement" field="dcd4-8604-cbc2-2e44" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9c21-219f-eb16-73a0" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="dcd4-8604-cbc2-2e44" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -10380,39 +7930,14 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         <entryLink id="9ff5-3f81-977e-5db1" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="373a-02ba-7869-caa9" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
             </modifier>
             <modifier type="decrement" field="41de-b58c-83df-e3f8" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="373a-02ba-7869-caa9" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="41de-b58c-83df-e3f8" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -10426,73 +7951,13 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aa4-8bf5-9cd9-519d" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="04f4-05ab-ea50-84f6" name="Reaver Titan" hidden="true" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="b616-6445-60ac-19be" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="8096-d2f9-2aa8-3a55" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8096-d2f9-2aa8-3a55" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b616-6445-60ac-19be" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="6ac1-52f7-1681-f644" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="c25f-9215-b689-1cfb" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="90d0-5886-7f73-2cb7" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c25f-9215-b689-1cfb" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90d0-5886-7f73-2cb7" type="max"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3a41-59a8-581b-0498" name="=Audax= Canis Light Maniple" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="3a41-59a8-581b-0498" name="=Audax= Canis Light Maniple" publicationId="3265-f408-cc9b-bfa3" page="40" hidden="true" collective="false" import="false" type="unit">
       <rules>
         <rule id="e70f-0805-8c7e-5971" name="Hunting Pack" publicationId="bf8b-27d7-039e-5df9" page="17" hidden="false">
           <description>Canis Light Maniples can only include Legio Audax Titans. Titans within this maniple do not deploy as normal. Instead, at the start of the deployment phase, after arranging Titans into squadrons, the controlling player places a number of markers equal to the number of Titans in this maniple. These markers can be placed anywhere on the battlefield more than 6” from the enemy deployment zone. Titans from this maniple count as deployed for the purposes of determining which player finished deploying first. When both players have finished deploying as normal, Titans from this maniple can be deployed anywhere within 3” of a Pack Ambush marker. Any Titan deployed in this manner outside of the controlling player’s deployment zone must be at least 50% obscured from any enemy unit within line of sight of that Titan. If a Titan cannot be placed within 3” of a Pack Ambush marker in this way, they must be deployed in the controlling player’s deployment zone, following all of the normal rules.
@@ -10536,138 +8001,28 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="d09f-0911-8005-a8a3" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b93c-fb81-ae93-319b" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="b13e-df20-2a3f-44d1" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="1446-dfe3-bde3-080c" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85c0-e398-2a20-1137" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6da-a480-bf2e-2edd" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c81-fb62-23e4-76f9" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="a5db-2df7-1fc7-042c" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="ae8d-3cba-bc7d-4173" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f973-2752-f2e0-1bbe" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="65a3-51cc-3e23-594a" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d939-5ec0-800a-eae2" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="0170-a112-e7cf-f4e1" name="Replace Reaver with Warbringer Nemesis" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d038-35f3-f435-53f1" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="fad7-2000-4e7c-ba81" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d6b4-b965-2f31-1bf8" name="Replace Warlord with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="e1db-24f8-bb96-b8ea" name="Replace Warlord with Warbringer Nemesis" hidden="false" targetId="ed65-de2a-f1d6-a6f0" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="60d9-d9b7-ca21-0af6" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="2ce2-48cd-69a5-7191" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="4cb0-a82a-580c-16c6" name="Legio Trait: Tide of Iron" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="ef8b-4ab1-320c-1892" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="e4a4-6db7-a219-312a" name="=Gryphonicus= Warlord replacement Reaver" hidden="false" collective="false" import="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c943-2bf0-e181-df95" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="114b-4d67-ad6c-5f3d" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f995-fd67-7bdd-e4f0" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="7810-041d-af3b-f3b9" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+                <categoryLink id="aa98-7b96-b7cf-3cb6" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false" targetId="dd70-1324-743e-7dfe" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="0d7c-1499-b6dd-7070" name="Legio Trait: Wolfpacks" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="40cd-67ee-6bbe-1866" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="accf-931a-69f7-c98b" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="c9e1-9d71-aabf-9cb7" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -10678,138 +8033,27 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           </constraints>
         </entryLink>
         <entryLink id="6bc0-66ae-032b-448a" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" field="e28f-47ce-7c9c-e45a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="e28f-47ce-7c9c-e45a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="e28f-47ce-7c9c-e45a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="10e3-d657-4ea1-db2f" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
+              <modifiers>
+                <modifier type="decrement" field="e28f-47ce-7c9c-e45a" value="1.0"/>
+                <modifier type="decrement" field="10e3-d657-4ea1-db2f" value="1.0"/>
+                <modifier type="set" field="hidden" value="true"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e28f-47ce-7c9c-e45a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e3-d657-4ea1-db2f" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="c8f7-588c-d32c-51ec" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="aeb5-826c-2be3-7ffb" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="079a-2edc-cbc9-fb63" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="079a-2edc-cbc9-fb63" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="aeb5-826c-2be3-7ffb" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeb5-826c-2be3-7ffb" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="079a-2edc-cbc9-fb63" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c506-4f0e-9c40-03bc" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="36b6-501b-6149-ccaa" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="8d93-f134-e169-e8c3" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d93-f134-e169-e8c3" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36b6-501b-6149-ccaa" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ad73-978f-868f-ad77" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="6792-9fb9-bdc9-ff0d" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="702b-02a0-0a10-c4e6" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="702b-02a0-0a10-c4e6" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6792-9fb9-bdc9-ff0d" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -10832,65 +8076,28 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="4fcb-8688-83c2-f5c9" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f0f-d140-950b-eeaf" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="3fa1-4a26-1847-0c78" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="c330-3537-fd0a-898e" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b9b-910d-c74b-2746" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f92-5103-2640-a23d" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd1e-d1ce-63cf-7d47" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="5eec-833e-badc-2bfb" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="072c-59f3-9173-4047" name="=Gryphonicus= Warlord replacement Reaver" hidden="false" collective="false" import="false" targetId="2c74-3aeb-1a28-d45e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03f3-c90f-c77c-332d" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="442f-ed08-3b68-b461" type="min"/>
+              </constraints>
               <categoryLinks>
-                <categoryLink id="8fee-98b3-f0a4-c573" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+                <categoryLink id="a7e0-61ed-7d2b-a419" name="Gryphonicus-Reaver-Replace-Warlord" hidden="false" targetId="dd70-1324-743e-7dfe" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f583-4082-126b-ab96" name="Replace Warlord with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="7894-b1e1-c0ac-e246" name="Replace Warlord with Warbringer Nemesis" hidden="false" targetId="ed65-de2a-f1d6-a6f0" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3e28-0bde-4e15-878d" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="c2ad-e77d-6731-0c1f" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -10902,19 +8109,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         </entryLink>
         <entryLink id="fc56-35c1-3e51-cc81" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="4fac-1855-976e-8b33" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
             <modifier type="decrement" field="fed8-b66a-4f3c-c863" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd70-1324-743e-7dfe" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -10923,67 +8121,9 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           </constraints>
         </entryLink>
         <entryLink id="1210-246a-0686-6e7c" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="e79e-ea17-2ea0-9992" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="0bdc-ca5c-ae75-5b1c" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bdc-ca5c-ae75-5b1c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e79e-ea17-2ea0-9992" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="670c-d598-ca59-21e3" name="Reaver Titan" hidden="true" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="e847-33b6-4ed1-5d0d" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="1d93-9d68-407d-c14e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e847-33b6-4ed1-5d0d" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d93-9d68-407d-c14e" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="563d-2d15-da18-14ec" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="4879-82ea-f07e-b6c0" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="aaaa-518f-3fd3-a19c" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaaa-518f-3fd3-a19c" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4879-82ea-f07e-b6c0" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -11008,138 +8148,28 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="71b4-7242-7e46-9b90" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="329a-ec9d-2a03-d094" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="df4b-8737-978b-fc3e" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="352c-1be9-015e-cf94" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1479-25ed-46b0-d229" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b004-4aa4-602a-171e" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74fa-c22a-41c4-3a8f" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="50a4-4349-23cc-aa8e" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="e8ac-39f0-fdab-f167" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="599e-b3cb-0648-1271" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="d79f-e60c-f3ee-47b0" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="950e-d06b-3f4c-3c8e" name="Replace Warhound with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="cfd4-9c72-f155-c727" name="Replace Warhound with Warbringer Nemesis" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2d05-53ed-c6cc-efa4" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="56f7-dc59-9220-1e75" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="cbde-1c0f-c144-54ed" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="1769-e0ca-2ac2-3e3a" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2aa8-8ed9-5f2e-4b64" name="Replace Reaver with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="5769-9097-c199-ea1a" name="Replace Reaver with Warbringer Nemesis" hidden="false" targetId="3467-3cbd-94c5-7a8b" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="60db-b719-5da1-dd9a" name="Legio Trait: Tide of Iron" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="af9a-4b9e-8bc6-59e2" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="347e-4272-f795-999c" name="=Gryphonicus= Warhound replacement Reaver" hidden="false" collective="false" import="false" targetId="c07c-f050-45e2-1376" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaver Titan (Additional)"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acce-0572-dff1-64ba" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1113-b711-c880-4d36" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f1e-65cd-ea39-6f0d" type="min"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="93da-c5d7-f9be-3d8d" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+                <categoryLink id="c3d7-e523-a24f-91e4" name="Gryphonicus-Reaver-Replace-Warhound" hidden="false" targetId="9ae1-d839-f9ca-7ef5" primary="false"/>
               </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="3d61-3b73-ad84-d5a9" name="Legio Trait: Wolfpacks" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="e6af-fcd9-a761-4d1e" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ee0-66a3-5a40-af59" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="dcb0-78c6-728d-eba8" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -11150,36 +8180,6 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           </constraints>
         </entryLink>
         <entryLink id="4f57-1c05-ef91-4322" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="8fc1-f430-7854-6e63" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="8fc1-f430-7854-6e63" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="68d8-bb12-3a46-32ad" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="68d8-bb12-3a46-32ad" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68d8-bb12-3a46-32ad" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fc1-f430-7854-6e63" type="max"/>
@@ -11187,101 +8187,15 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         </entryLink>
         <entryLink id="b22b-b7c2-6ded-3736" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
-            <modifier type="increment" field="1eb0-8515-9f97-8f1a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="1bb3-7b3b-ed32-c8f7" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
             <modifier type="decrement" field="1eb0-8515-9f97-8f1a" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="1bb3-7b3b-ed32-c8f7" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ae1-d839-f9ca-7ef5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eb0-8515-9f97-8f1a" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bb3-7b3b-ed32-c8f7" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="0e11-f981-8345-03bc" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="fde4-00d6-14cd-1ee7" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="eabb-75d7-928c-4aef" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eabb-75d7-928c-4aef" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fde4-00d6-14cd-1ee7" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="56e2-47f8-c9de-eb71" name="Warlord Titan" hidden="true" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="8d51-2be0-816e-625d" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="4951-4619-b32a-4ad4" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d51-2be0-816e-625d" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4951-4619-b32a-4ad4" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -11314,89 +8228,9 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <entryLink id="b39b-559d-ebf9-41e7" name="Cerastus Knight Banner" hidden="false" collective="false" import="false" targetId="3900-cfb6-52f2-c83c" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c5c0-f16a-e637-6518" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51c1-ff2e-74a2-0e32" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="93ba-e7a6-85ef-deaa" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="1c47-b961-29e2-fe52" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b028-38a2-c913-72b6" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="77be-f3da-010d-956c" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="906a-82f3-ce5e-7b51" name="Replace Warhound with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="0da7-74b9-01b3-64df" name="Replace Warhound with Warbringer Nemesis" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="330c-963c-749a-1e99" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="a610-1ad6-8462-67ab" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9324-dd5b-f4b7-622b" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="e742-a384-23b8-bea1" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4f88-cfa9-250f-b4fb" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="fb74-a086-4d5c-6596" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="816c-1cc6-323d-5a01" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb74-a086-4d5c-6596" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="816c-1cc6-323d-5a01" type="min"/>
@@ -11406,75 +8240,6 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33f6-0fab-c0d5-09e3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee92-f27c-beff-eac9" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="424a-68c7-04f4-a94e" name="Reaver Titan" hidden="true" collective="false" import="true" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="6b15-4c86-58c5-ab8d" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="b0da-2d3e-73fb-85da" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0da-2d3e-73fb-85da" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b15-4c86-58c5-ab8d" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="39e0-afbe-c34f-ab53" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="b2bc-624f-8010-08eb" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="0367-4177-7829-27cc" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0367-4177-7829-27cc" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2bc-624f-8010-08eb" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="e2f1-fde0-b87f-5614" name="Warlord Titan" hidden="true" collective="false" import="true" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="c7b4-856b-9829-6099" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="ad20-9182-65da-6600" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad20-9182-65da-6600" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7b4-856b-9829-6099" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -11492,218 +8257,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
       <categoryLinks>
         <categoryLink id="8020-94b0-7642-e9f9" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="427e-5f16-faf9-bc38" name="Legio Trait: Doom of Worlds" publicationId="975a-00f4-pubN87630" page="" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="16d9-8b19-7037-1ff5" name="Replace Warhound with Warbringer Nemesis Titan" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cc4-ad6d-5437-0628" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="d25b-b143-4a9d-7dab" name="Replace Warhound With Warbringer Nemesis Titan" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="cb5b-f53d-9c4b-14e4" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="840a-bc0e-e9da-1429" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="38bd-4cf9-b3fd-87df" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="f846-a888-2152-88c7" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="921d-1631-311e-7e21" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="72d8-648e-17c7-ea9b" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="79c4-888c-de2c-1245" name="Replace Warhound with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="5fc3-2992-4d32-c290" name="Replace Warhound with Warbringer Nemesis" hidden="false" targetId="e34d-9d04-97f4-777c" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7ccd-fecf-e0f0-6a17" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="d274-6507-4247-1ffb" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="069d-dbc1-ae57-3c10" name="Replace Warlord with Warbringer Nemesis" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="1755-1312-daba-60b6" name="Replace Warlord with Warbringer Nemesis" hidden="false" targetId="ed65-de2a-f1d6-a6f0" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7d56-0700-61da-44bc" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="e25e-9d90-7c55-3e86" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="41ac-5f8e-97d3-7a8e" name="Replace Warbringer Nemesis with Warhound" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="3d3e-2057-0ca7-333c" name="Replace Warbringer Nemesis with Warhound" hidden="false" targetId="8020-a880-c25c-f4d3" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8b2d-6858-9443-2d7a" name="Replace Warbringer Nemesis with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="9a5f-4286-db80-b0a4" name="Replace Warbringer Nemesis with Reaver" hidden="false" targetId="7831-176e-a10c-4f17" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="487a-0b50-3c68-7d53" name="Replace Warbringer Nemesis with Warlord" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="b167-bd2a-6745-e75e" name="Replace Warbringer Nemesis with Warlord" hidden="false" targetId="d8f4-fa76-75b2-5faf" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d76a-d912-1bef-0ec8" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="9362-6c3f-d55a-873f" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4019-0c38-ec16-1f01" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="cd32-eac8-385e-0a74" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="17bf-0981-753d-1322" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b77d-90e6-b42a-2996" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="48c3-85e0-56fb-9bb9" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="f1de-3bec-c19b-eef1" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="3b87-a57d-fcc3-b067" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" field="33ca-aac3-3d14-f7ae" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="33ca-aac3-3d14-f7ae" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="3b87-a57d-fcc3-b067" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33ca-aac3-3d14-f7ae" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b87-a57d-fcc3-b067" type="min"/>
@@ -11716,133 +8271,18 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           </constraints>
         </entryLink>
         <entryLink id="3cde-05b2-b4bf-d04a" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="dc34-e2b6-5615-d3e2" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="9016-fc67-e2dd-0af6" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc34-e2b6-5615-d3e2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9016-fc67-e2dd-0af6" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="1047-a812-0fd2-21d4" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="b23f-b6bf-9428-b19d" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="6c36-7b31-6b55-bbe7" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" field="b23f-b6bf-9428-b19d" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" field="6c36-7b31-6b55-bbe7" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8f4-fa76-75b2-5faf" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b23f-b6bf-9428-b19d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c36-7b31-6b55-bbe7" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="7616-e76b-3d0d-5ce2" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
-          <modifiers>
-            <modifier type="decrement" field="472e-ad61-3e09-f9f6" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" field="09a9-9a9e-ecbc-c3ab" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="09a9-9a9e-ecbc-c3ab" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="472e-ad61-3e09-f9f6" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8020-a880-c25c-f4d3" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="472e-ad61-3e09-f9f6" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09a9-9a9e-ecbc-c3ab" type="max"/>
@@ -12947,26 +9387,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
-        <profile id="d5ca-a1c9-d50a-2335" name="Earthbreaker Missiles [WL]" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" typeId="b054-6896-e395-0e91" typeName="Weapon">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+        <profile id="d5ca-a1c9-d50a-2335" name="Earthshaker Missiles [WL]" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
@@ -13180,26 +9601,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
-        <profile id="d57b-9161-2996-9145" name="Earthbreaker Missiles [RVR]" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" typeId="b054-6896-e395-0e91" typeName="Weapon">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+        <profile id="d57b-9161-2996-9145" name="Earthshaker Missiles [RVR]" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
@@ -13844,10 +10246,9 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
               <entryLinks>
                 <entryLink id="7813-e4b3-7190-26f6" name="Arioch Titan Power Claw" hidden="false" collective="false" import="false" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry"/>
                 <entryLink id="5431-c26c-252a-59d1" name="Bellicosa Volcano Cannon" hidden="false" collective="false" import="false" targetId="fee8-4996-06cd-64bc" type="selectionEntry"/>
-                <entryLink id="6e57-8050-7c3d-26fd" name="Mori Quake Cannon [WLD]" hidden="false" collective="false" import="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
+                <entryLink id="6e57-8050-7c3d-26fd" name="Mori Quake Cannon" hidden="false" collective="false" import="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
                 <entryLink id="76a7-598f-cfbc-d7f7" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
                 <entryLink id="06a5-628c-5f03-7997" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
-                <entryLink id="b136-4ce4-df3e-f0aa" name="Volkite Destructor" hidden="false" collective="false" import="true" targetId="2e8a-92e8-a90e-545e" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="8003-d38f-5fe8-19b0" name="Carapace" hidden="false" collective="false" import="false">
@@ -16334,7 +12735,7 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="5fd1-28e3-408d-bb48" name="Legio Vulturum" publicationId="bf8b-27d7-039e-5df9" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="5fd1-28e3-408d-bb48" name="Legio Vulturum" publicationId="bf8b-27d7-039e-5df9" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -16393,18 +12794,18 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f7bc-b9d8-bdb4-bda9" name="Legio Mortis" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="f7bc-b9d8-bdb4-bda9" name="Legio Mortis" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85f9-7332-78ec-42d8" type="instanceOf"/>
                       </conditions>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85f9-7332-78ec-42d8" type="atLeast"/>
                             <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
                           </conditions>
                         </conditionGroup>
@@ -16413,9 +12814,6 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
                   </conditionGroups>
                 </modifier>
               </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3839-80ab-6be7-a920" type="max"/>
-              </constraints>
               <selectionEntries>
                 <selectionEntry id="7db1-098b-29a6-5dfe" name="1 Rotten Heart" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
@@ -16454,18 +12852,18 @@ If the Princeps’ Titan is a Corrupted Titan, it instead rolls two dice, re-rol
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="b2c5-6cea-c8e0-57c1" name="Legio Mordaxis" hidden="true" collective="false" import="true">
+            <selectionEntryGroup id="b2c5-6cea-c8e0-57c1" name="Legio Mordaxis" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e6f-c618-89f4-d690" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-71ca-4d91-f370" type="instanceOf"/>
                       </conditions>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e6f-c618-89f4-d690" type="atLeast"/>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-71ca-4d91-f370" type="atLeast"/>
                             <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
                           </conditions>
                         </conditionGroup>
@@ -17083,259 +13481,304 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c45d-04e4-f35f-8b20" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="dc34-6fe6-b565-e2ca" name="Knight Armiger Banner" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="b154-60bc-1b63-3314" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+        <profile id="2d7d-9653-d97d-ac04" name="Knight Armiger " hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
-            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">4&quot;/6&quot;</characteristic>
-            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">3+</characteristic>
-            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
-            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
-            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/3</characteristic>
-            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">6</characteristic>
-            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">12</characteristic>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">11&apos;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">7+ (6+ with Scion Martial)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">2 (Greatis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2293-98d0-5c77-3072" name="1 Knight Armiger Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">-</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="803c-2cf3-e50e-e622" name="2-4 Knight Armiger Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7118-bd66-8974-cbe0" name="5+ Knight Armiger Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3e9a-71b3-4a0f-8211" name="Knight Armiger Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-10</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">11-13</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">14+</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="b28a-80a5-9436-3e23" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="afa6-29e3-db94-f7f7" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="c2ea-91d9-2b51-4c66" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
+        <categoryLink id="d1dc-eb7b-0269-8c46" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="41dd-0a78-550b-b5d9" name="Retainers" hidden="false" targetId="29ee-9f70-3737-d6e4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1ea0-3fb4-b6a1-573e" name="Knight Armiger Scion Martial" hidden="false" collective="false" import="true" targetId="3981-8858-454c-2c3f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a9-9425-eda4-8f8b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fa4-58cf-3cd8-97ed" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="773e-7005-36a7-90f7" name="Knight Armiger Scion Auxilia" hidden="false" collective="false" import="true" targetId="b37f-aea6-29ad-7ba1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="580c-286d-b9b1-984d" type="min"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af08-f434-2c00-4346" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="63bf-d82d-2573-6541" name="Knight Armiger" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="4c7e-0060-7e56-4ba2" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="11e2-b9ce-2eb7-baf9" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="b749-7bef-2b7a-8985" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7de5-7f04-9af4-48ad" name="Weapons" hidden="false" collective="false" import="true">
-          <selectionEntryGroups>
-            <selectionEntryGroup id="4194-33f7-0086-9095" name="Arms" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a9-acd0-6301-628e" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fee8-fa2b-b95f-c33e" type="min"/>
-              </constraints>
+        <selectionEntryGroup id="9226-15f7-516c-a749" name="Arms" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3873-6080-86a9-9db5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2bd-052e-6202-9f16" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f84d-8281-f6cb-ecca" name="Thermal Spear and Reaper Chain-Cleaver" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="0b25-e079-dc2a-78e8" name="Desolator Chainsword" hidden="false" collective="false" import="true" targetId="9796-81cd-7844-051b" type="selectionEntry"/>
-                <entryLink id="4b87-8adb-590e-1597" name="Krius Siege Drill" hidden="false" collective="false" import="true" targetId="232a-afe2-64bb-c0a1" type="selectionEntry"/>
-                <entryLink id="420a-5e8c-bc32-7186" name="Krius Grav Imploder" hidden="false" collective="false" import="true" targetId="d0ae-adc7-c079-d005" type="selectionEntry"/>
+                <entryLink id="dc9a-580f-d56c-9dda" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="ac1a-2781-c367-051b" type="selectionEntry"/>
+                <entryLink id="6ce1-aa81-6f14-e573" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="8b75-f761-de20-5487" type="selectionEntry"/>
               </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="57d9-eb42-b8e6-90f3" name="Shoulder Weapons" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca25-5029-5566-63f0" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="321d-673f-1f40-5f65" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="5039-3bc7-6820-6134" name="Apocalypse Missile Array" hidden="false" collective="false" import="true" targetId="81bb-fc59-dff5-2755" type="selectionEntry">
-                  <costs>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="3869-ee44-fc07-9489" name="Inferno Gun (WM)" hidden="false" collective="false" import="true" targetId="ab89-eea6-1e3a-84dd" type="selectionEntry"/>
-                <entryLink id="20ee-3098-6876-8f40" name="Melta Cannon (WM)" hidden="false" collective="false" import="true" targetId="39de-6938-1a9c-3ea6" type="selectionEntry"/>
-                <entryLink id="c992-513d-ce8b-a3d1" name="Plasma Blast Gun (WM)" hidden="false" collective="false" import="true" targetId="0f5d-e59f-3d5f-21c3" type="selectionEntry"/>
-                <entryLink id="c1a7-2420-9494-895b" name="Vulcan Megabolter [WM]" hidden="false" collective="false" import="true" targetId="5da9-e647-8914-3264" type="selectionEntry"/>
-                <entryLink id="22d1-c410-ab47-c5d7" name="Turbo Laser Destructor [WM]" hidden="false" collective="false" import="true" targetId="7c5c-cf20-958d-0b71" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="fb73-07e9-6881-8093" name="Carapace Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6a70-d1f9-846f-23ae">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="100b-bf8a-913a-5429" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2550-97bc-eef8-5a8a" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="6a70-d1f9-846f-23ae" name="Cruciator Gatling Array" hidden="false" collective="false" import="true" targetId="230c-f352-c94a-ee82" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
-            <entryLink id="1a7f-0c43-4aa9-c634" name="Ardex Defensor Cannon" hidden="false" collective="false" import="true" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
+            <entryLink id="2026-365f-d545-05db" name="Armiger Autocannon" hidden="false" collective="false" import="true" targetId="4870-f35f-28bf-1315" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="568c-96f6-fca6-0476" name="Ancillary Reactor System" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="786b-b472-5438-c177" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="563e-8d05-dc4c-f2d4" type="max"/>
-          </constraints>
+        <selectionEntryGroup id="653e-7091-f3fd-a8b5" name="Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="ede8-a956-a18a-bdd1" name="Kinetic Transducers" hidden="false" collective="false" import="true" targetId="f97e-efc7-c0a6-5035" type="selectionEntry"/>
-            <entryLink id="6318-c324-7e31-614f" name="Dedicated Void Shunts" hidden="false" collective="false" import="true" targetId="59ac-39c7-b7b9-ecb6" type="selectionEntry"/>
+            <entryLink id="d1be-98d6-7e08-207c" name="Meltagun (Knight Armiger)" hidden="false" collective="false" import="true" targetId="bb0d-4063-34a1-c71a" type="selectionEntry">
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="1bc1-e919-8b37-6d77" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7eae-f7e3-e737-d0b3" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4e7-2761-cd28-4590" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="5658-d710-1366-1738" name="Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
-        <entryLink id="d2b5-8a58-2fc0-ed72" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
-        <entryLink id="db5c-2136-1b19-bcae" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
-        <entryLink id="0011-5d08-3f1c-261e" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="892a-11a0-96a3-8e32" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
-        <entryLink id="d471-78cc-7637-3047" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
-        <entryLink id="50d0-c869-f15c-2c67" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f5f6-c908-6c0d-5aaf" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="850.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="230c-f352-c94a-ee82" name="Cruciator Gatling Array" publicationId="bf8b-27d7-039e-5df9" page="167" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4870-f35f-28bf-1315" name="Armiger Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="c036-d578-810d-2da9" name="Cruciator Gatling Array" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="54b2-ca0a-355a-6dbc" name="Armiger Autocannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
-            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">12</characteristic>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">6&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">16&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Ordnance</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1c2b-c6ac-9e4e-5a42" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="2b01-82d1-3ede-fa56" name="Ordnance" hidden="false" targetId="5ad8-0ca8-4bb7-83b6" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8b75-f761-de20-5487" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9dba-aa4e-8c6c-2d37" name="Reaper Chain-Cleaver" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">10&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
-            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">30&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">No</characteristic>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Ordnance, Corridor Arc</characteristic>
-            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <entryLinks>
-        <entryLink id="1c90-cd4a-2ce0-b3b2" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9796-81cd-7844-051b" name="Desolator Chainsword" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="6aa9-0e2a-baba-c16e" name="Desolator Chainsword" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
-            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">4&quot;</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Melee, Rending, Bypass</characteristic>
-            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Melee</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="ae3c-cc42-17b3-43c1" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
-        <categoryLink id="dfb7-b8ef-443d-7854" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
-        <categoryLink id="a019-6bfb-5b55-1e2a" name="New CategoryLink" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
-        <categoryLink id="b0c3-2b88-86cb-de39" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="b9d8-866e-4a33-e2c4" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
-        <categoryLink id="629e-44f2-7cf3-05da" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink id="9cdd-a918-e8a1-e2ea" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="d875-e57d-7283-0cfc" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="a505-6880-5939-fd32" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="232a-afe2-64bb-c0a1" name="Krius Siege Drill" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ac1a-2781-c367-051b" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="4175-b7f6-e9de-f2ee" name="Krius Siege Drill" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="3c99-00c7-ec6a-8cdb" name="Thermal Spear" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
-            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
-            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">13</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+2</characteristic>
-            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Melee, Fusion (Draining)</characteristic>
-            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="1c4f-c2dd-eb09-1488" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
-        <categoryLink id="c673-e1c1-0f3f-bb68" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
-        <categoryLink id="9048-af56-2b52-6c31" name="New CategoryLink" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
-        <categoryLink id="c924-949e-8ffc-01fa" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="c46d-26fb-404c-708c" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
-        <categoryLink id="d89d-0d5b-4096-52f8" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="d99b-53d7-0a3d-6b1c" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d0ae-adc7-c079-d005" name="Krius Grav Imploder" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="237a-56be-890b-0886" name="Krius Grav Imploder" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
-            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">12</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+2</characteristic>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">5&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">8&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Shot: Melee, Rending.
-Long: Concussive, Draining, Ordance, Quake</characteristic>
-            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="e5c3-ce86-4e62-3c7e" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
-        <categoryLink id="38b6-b9fa-42c3-dcc7" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
-        <categoryLink id="14f4-7f55-347f-de41" name="New CategoryLink" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
-        <categoryLink id="c8fa-8df5-ca39-61fe" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="8d64-e06b-8238-7fb4" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
-        <categoryLink id="5a71-d40b-f6ab-329a" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="d1cc-97ab-a150-63dd" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="59ac-39c7-b7b9-ecb6" name="Dedicated Void Shunts" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="af5d-66ce-5873-6869" name="Dedicated Void Shunts" hidden="false">
-          <description>Once per round, a Titan with this Reactor System may declare Voids to Full without pushing its reactor.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="d3f3-952a-5e66-3302" name="New CategoryLink" hidden="false" targetId="3b8b-38d1-147a-f99d" primary="true"/>
+        <categoryLink id="1bf3-a384-1760-7ce7" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="e046-de11-0bdd-ed0c" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f97e-efc7-c0a6-5035" name="Kinetic Transducers" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bb0d-4063-34a1-c71a" name="Meltagun (Knight Armiger)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3259-35b2-4a64-1b0f" type="max"/>
+      </constraints>
       <rules>
-        <rule id="892b-f693-c722-69da" name="Kinetic Transducers" hidden="false">
-          <description>If a Titan with this upgrade moves 5&quot; or more during the Movement phase, add 1 to the Strenght of all weapons with the Melee trait  it is equipped with for the remainder of that phase. In addition, a Titan with this upgrade may make a Smash Attack when moving as part of a Charge order, in addition ro any other attack it makes.</description>
+        <rule id="167b-bc2c-14c5-8371" name="Meltagun" hidden="false">
+          <description>When the banner is activated in the Combat phase, each Knight with a Meltagun upgrade can target an enemy unit within 3&quot;.That unit suffers a Strength 8 hit.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="8a9e-dcda-48c5-d616" name="New CategoryLink" hidden="false" targetId="3b8b-38d1-147a-f99d" primary="true"/>
+        <categoryLink id="9f21-49aa-6acd-3ca5" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3981-8858-454c-2c3f" name="Knight Armiger Scion Martial" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="3a5b-b28f-c0dd-54ca" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="6f84-9730-2605-a063" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="75c8-0562-4efd-a176" name="Arms" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b11b-a761-6f27-e672" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f82-3db9-6dee-43fd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9493-38d7-2c29-db45" name="Thermal Spear and Reaper Chain-Cleaver" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="90d0-52e3-fb61-28c9" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="ac1a-2781-c367-051b" type="selectionEntry"/>
+                <entryLink id="adb1-9376-c8fd-7e36" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="8b75-f761-de20-5487" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="1bfc-86d8-d3ac-d806" name="Armiger Autocannon" hidden="false" collective="false" import="true" targetId="4870-f35f-28bf-1315" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="58e9-d695-f50b-9e51" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="45ef-4267-0def-1d4b" name="Meltagun (Knight Armiger)" hidden="false" collective="false" import="true" targetId="bb0d-4063-34a1-c71a" type="selectionEntry">
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b37f-aea6-29ad-7ba1" name="Knight Armiger Scion Auxilia" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="36d4-d642-4b3f-8597" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="67cd-e5d6-6681-be70" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9a68-55f9-883e-cb91" name="Arms" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8070-7832-08e0-598a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d44-451a-c2b5-5863" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7b36-7926-d753-7a66" name="Thermal Spear and Reaper Chain-Cleaver" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="8ddf-b834-5869-573a" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="ac1a-2781-c367-051b" type="selectionEntry"/>
+                <entryLink id="ed8c-4991-1de4-d41f" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="8b75-f761-de20-5487" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="340b-653d-9160-3568" name="Armiger Autocannon" hidden="false" collective="false" import="true" targetId="4870-f35f-28bf-1315" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="03d4-ce22-2ed3-58a4" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="382a-5d57-fd06-9608" name="Meltagun (Knight Armiger)" hidden="false" collective="false" import="true" targetId="bb0d-4063-34a1-c71a" type="selectionEntry">
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -17871,7 +14314,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="f085-672c-f8c5-11c1" name="Base Mutation" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="true" collective="false" import="true">
+    <selectionEntryGroup id="f085-672c-f8c5-11c1" name="Mutations" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
