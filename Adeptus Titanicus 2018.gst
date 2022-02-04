@@ -3627,7 +3627,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
           <description>If an Acastus Knight Banner is issued First Fire or Split Fire orders during the Strategy phase, their BS is increased to 3+ until the End phase</description>
         </rule>
         <rule id="3ef4-e452-b5b7-159a" name="Auxilliary Knight Banner" publicationId="25e8-c9ce-9330-c53b" page="5" hidden="false">
-          <description>A Battlegroup can include a maximum of one Acastus Knight Banner per maniple as reinforcements. A Knight Household Force can include a maximum of one Auxiliary Knight Banner per Lance as reinforcements. No Knight Banner within a Lance may be an Auxiliary Knight Banner</description>
+          <description>A Battlegroup can include a maximum of one Auxiliary Knight Banner per maniple as reinforcements. A Knight Household Force can include a maximum of one Auxiliary Knight Banner per Lance as reinforcements. No Knight Banner within a Lance, other than the Seneschal’s Banner, may be an Auxiliary Knight Banner</description>
         </rule>
       </rules>
       <categoryLinks>
