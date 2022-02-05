@@ -1228,12 +1228,14 @@ can choose to pass the Command check instead of rolling. </description>
     </entryLink>
     <entryLink id="56e5-0d56-7344-9347" name="Armiger Knights Banner" hidden="false" collective="false" import="false" targetId="11c3-a34f-1748-cf07" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="23a7-fa5a-f1ad-7e10" name="Freeblades" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+        <categoryLink id="2d4c-1b16-51f4-375e" name="Freeblades" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+        <categoryLink id="cfab-43d4-2b8e-fed5" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0ab9-7800-2ef7-e8bb" name="Mechanicum Moirax Knight Banner" hidden="false" collective="false" import="false" targetId="8be9-756b-a3a6-8622" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="6f43-c9dc-4869-0c68" name="Freeblades" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+        <categoryLink id="b170-e6bd-5554-1668" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9aad-2b81-dac9-74c7" name="Lance Armiger Helverins Banner" hidden="false" collective="false" import="true" targetId="27d2-856f-58e9-ea1e" type="selectionEntry">

@@ -489,7 +489,23 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="30ae-04ab-aaad-4429" name="Replace Reaver with Warhound" hidden="false"/>
     <categoryEntry id="26af-393b-729b-3e2a" name="Replace optional Reaver with Warbringer Nemesis" hidden="false"/>
     <categoryEntry id="029d-c629-c563-9f4e" name="Replace optional Warlord with Warbringer Nemesis" hidden="false"/>
-    <categoryEntry id="5063-b6aa-3590-30fb" name="Retainers" hidden="false"/>
+    <categoryEntry id="5063-b6aa-3590-30fb" name="Retainers" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="cf67-a51a-b403-9501" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="917a-77ef-30e4-b812" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="cf67-a51a-b403-9501" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5063-b6aa-3590-30fb" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf67-a51a-b403-9501" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -17345,10 +17361,9 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <infoLink id="0664-26f6-50d6-0e4c" name="Ionic Flare Shield" hidden="false" targetId="4bcc-c9a8-70bd-fda4" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="0c38-9af6-de5a-b9e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
         <categoryLink id="6687-9fe3-9d47-d818" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="1712-48d1-49c9-721e" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
-        <categoryLink id="8bd4-6576-0c82-6089" name="Retainers" hidden="false" targetId="5063-b6aa-3590-30fb" primary="false"/>
+        <categoryLink id="8bd4-6576-0c82-6089" name="Retainers" hidden="false" targetId="5063-b6aa-3590-30fb" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -17360,10 +17375,9 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <infoLink id="5f7c-a9b7-46ae-fd63" name="Retainers" hidden="false" targetId="8239-240b-bf2f-fba5" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="4a35-2301-e3ba-5647" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
         <categoryLink id="7cc0-82cf-583a-2a8c" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="db1f-2103-513e-619e" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
-        <categoryLink id="daf4-6417-8a9a-93c2" name="Retainers" hidden="false" targetId="5063-b6aa-3590-30fb" primary="false"/>
+        <categoryLink id="daf4-6417-8a9a-93c2" name="Retainers" hidden="false" targetId="5063-b6aa-3590-30fb" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
