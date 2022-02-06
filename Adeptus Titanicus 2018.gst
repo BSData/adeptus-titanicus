@@ -17502,7 +17502,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="351b-f42a-196e-447b" name="Mechanicum Moirax Knight" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="351b-f42a-196e-447b" name="Moirax Knight" hidden="false" collective="false" import="true" type="model">
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -17532,8 +17532,18 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             </selectionEntry>
             <selectionEntry id="6681-b18c-aac0-5c67" name="Thermal Spear and Reaper Chain-Cleaver" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="80c9-6b4d-894d-dd30" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="883e-d464-9efa-600d" type="selectionEntry"/>
-                <entryLink id="9096-3729-73c1-5845" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="3dfb-5a93-4b27-5b39" type="selectionEntry"/>
+                <entryLink id="80c9-6b4d-894d-dd30" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="883e-d464-9efa-600d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3494-5889-dcbe-36d6" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74da-6758-2766-06e7" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="9096-3729-73c1-5845" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="3dfb-5a93-4b27-5b39" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="758e-fbbd-9387-b579" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a8d-679b-6caf-f386" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -17559,7 +17569,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
     </selectionEntry>
     <selectionEntry id="3ccd-476c-5c16-3c5b" name="Armiger Knight Scion Auxilia" hidden="false" collective="false" import="true" type="model">
       <selectionEntryGroups>
-        <selectionEntryGroup id="3670-cfaa-2342-73fc" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="005f-959b-699f-55bd">
+        <selectionEntryGroup id="3670-cfaa-2342-73fc" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="bff6-de91-a7f4-7cf6">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb2d-478e-fbf3-d27e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd3b-0ff1-dc56-dca6" type="max"/>
@@ -17581,8 +17591,18 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             </selectionEntry>
             <selectionEntry id="bff6-de91-a7f4-7cf6" name="Thermal Spear and Reaper Chain-Cleaver" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="1176-2930-0105-7c98" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="883e-d464-9efa-600d" type="selectionEntry"/>
-                <entryLink id="4dca-4f12-c4fd-7bd9" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="3dfb-5a93-4b27-5b39" type="selectionEntry"/>
+                <entryLink id="1176-2930-0105-7c98" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="883e-d464-9efa-600d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d35e-0070-1006-089b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8085-4660-0467-6ad1" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="4dca-4f12-c4fd-7bd9" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="3dfb-5a93-4b27-5b39" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88a2-7945-dce0-7516" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed6c-bc89-8f04-97bc" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>

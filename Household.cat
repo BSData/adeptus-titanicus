@@ -3924,22 +3924,156 @@ can choose to pass the Command check instead of rolling. </description>
       </costs>
     </selectionEntry>
     <selectionEntry id="4716-ff5a-e360-9d46" name="Lance Armiger Warglaives Banner" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="897d-fee1-dd52-50c1" name="Armiger Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">11&apos;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">7+ (6+ with Scion Martial)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">2 (Greatis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d39e-c254-89c6-561a" name="1 Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">-</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="633f-91d0-4d41-b5d4" name="2-4 Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cfd7-2724-0718-2475" name="5+ Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e0af-8389-c172-5daa" name="Armiger Knights Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-10</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">11-13</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">14+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f76e-a21b-90cf-fb35" name="Retainers" hidden="false" targetId="8239-240b-bf2f-fba5" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="e800-ffcf-4e5c-81bf" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
         <categoryLink id="f2ba-05ef-2d9a-8338" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="2bb4-1520-db0c-52f8" name="Lance Armiger" hidden="false" targetId="bfbe-067a-bd84-41c0" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="7c53-3237-fed0-1763" name="Armiger Knight Warglaves Scion Auxilia" hidden="false" collective="false" import="true" targetId="c3cc-3503-3fc3-a499" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f207-72e1-2e29-0e04" type="min"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8428-3205-27ad-7bd0" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fbea-6c72-ed2c-4de4" name="Armiger Knight Warglaves Scion Martial" hidden="false" collective="false" import="true" targetId="709a-2331-160d-3244" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a69-ea30-ec4b-3cc3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e69-9d72-bc2f-19cd" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="27d2-856f-58e9-ea1e" name="Lance Armiger Helverins Banner" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="82d0-ac43-f6b6-19dc" name="Armiger Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">11&apos;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">7+ (6+ with Scion Martial)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">2 (Greatis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c9de-a244-425f-0e44" name="1 Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">-</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="24fe-6e2a-b4b8-966e" name="2-4 Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="22a8-a49d-c7e3-9368" name="5+ Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a4c9-24b2-a8ef-648e" name="Armiger Knights Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-10</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">11-13</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">14+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="be17-6b67-1071-b52e" name="Retainers" hidden="false" targetId="8239-240b-bf2f-fba5" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c0ea-67aa-a625-edb5" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
         <categoryLink id="b2c9-ee18-4520-26f8" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="7d9f-7e22-b355-9377" name="Lance Armiger" hidden="false" targetId="bfbe-067a-bd84-41c0" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="f835-ceb3-7481-7af6" name="Armiger Knight Helverin Scion Martial" hidden="false" collective="false" import="true" targetId="374b-ebd3-069c-e57e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1afc-eaf7-bebf-08f2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1250-366f-e868-8b3c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6ddd-f14e-53be-96cd" name="Armiger Knight Helverin Scion Auxilia" hidden="false" collective="false" import="true" targetId="b8f1-a8f4-bed3-e97e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5870-5419-9d44-5181" type="min"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab74-4abb-9588-ba54" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -3954,6 +4088,138 @@ can choose to pass the Command check instead of rolling. </description>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b8f1-a8f4-bed3-e97e" name="Armiger Knight Helverin Scion Auxilia" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="1801-3002-acce-ecb9" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="c3a5-85bc-ea9e-4ecf" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="2dd3-f593-45ed-8c84" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="92b5-c401-8e0c-e8b1" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="09b2-c357-5e21-4fdf" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry">
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2099-a676-55be-3c84" name="Armiger Autocannon" hidden="false" collective="false" import="true" targetId="9f10-b828-80c9-d6fe" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f35f-073b-7258-ab9a" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05fc-b6b6-25c5-a78b" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="374b-ebd3-069c-e57e" name="Armiger Knight Helverin Scion Martial" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="0cd5-68bb-e29e-a758" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="f831-070a-6bbc-07d1" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="ecdb-b37e-ae63-c5f0" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8976-3456-bfcc-edae" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="a705-33cd-2e8c-999f" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry">
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="77f5-dd66-dba8-bcd5" name="Armiger Autocannon" hidden="false" collective="false" import="true" targetId="9f10-b828-80c9-d6fe" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1654-b277-e2c5-d70c" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caa2-a779-2ecc-4b8f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c3cc-3503-3fc3-a499" name="Armiger Knight Warglaives Scion Auxilia" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="8f02-0845-c30a-bdae" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="0981-f008-e495-d903" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="6f59-4fca-6a59-34f9" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a08d-d7b3-6d39-5b63" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="674c-eeb1-41fc-0359" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry">
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ea53-550b-f85c-ad44" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="3dfb-5a93-4b27-5b39" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fab-b5b2-c6da-5d32" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81b2-930e-a820-6e58" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0012-b101-6e3e-fd62" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="883e-d464-9efa-600d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c6e-4e0b-7012-4dc9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e45-deb9-5cbc-ac1c" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="709a-2331-160d-3244" name="Armiger Knight Warglaives Scion Martial" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="61a1-2892-f663-a12a" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="aeaf-7726-303b-a0a1" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="43ff-c3c6-be6b-6b44" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e51b-baa7-a47b-2ab5" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="16d1-c574-b40e-41e7" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry">
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5550-42c8-b3c0-d5ad" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="3dfb-5a93-4b27-5b39" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bafe-cd7e-b3da-71ce" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f904-907b-70f1-f791" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6ca4-876f-9eec-4f02" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="883e-d464-9efa-600d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc97-ee64-4d68-c423" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dee-98f0-e353-0bb4" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
