@@ -17425,100 +17425,12 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b7-d8ef-037a-86a0" type="min"/>
             <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ff4-ec8c-b826-6920" type="max"/>
           </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="416e-883e-35a8-3573" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="d756-d4d0-c009-3cc6">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cee1-98d5-3dd9-5f84" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3a8-1add-992f-54ca" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="d756-d4d0-c009-3cc6" name="Two Lightning Locks" hidden="false" collective="false" import="true" type="upgrade">
-                  <entryLinks>
-                    <entryLink id="38f9-3b6b-2f0e-3535" name="Lightning Lock" hidden="false" collective="false" import="true" targetId="1c8c-5516-1c2d-5124" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3436-f37a-af2d-10ba" type="min"/>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3a7-40fb-fdba-94a6" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="da9c-8ced-4b30-f50d" name="Volkite Veuglaire and Gyges Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
-                  <entryLinks>
-                    <entryLink id="031b-20a7-7aa0-8150" name="Volkite Veuglaire" hidden="false" collective="false" import="true" targetId="1c3e-d7b2-c0f1-5345" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bb6-d0f5-a84b-d43a" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d125-aadc-2492-22bd" type="min"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="d12f-434f-fb81-62a1" name="Gyges Siege Claw" hidden="false" collective="false" import="true" targetId="7f23-dafa-b324-105c" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ee-f291-54b7-48bc" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad86-b3bb-fde1-86c0" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </entryLink>
         <entryLink id="ed8e-725e-95cc-cfce" name="Moirax Knight Scion Martial" hidden="false" collective="false" import="true" targetId="1497-e03b-3ed2-3ebe" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a718-9eda-a4ea-45d6" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c802-b747-0f11-36f4" type="max"/>
           </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="2285-390a-1453-82e3" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="5c67-596f-8bae-bd32">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f187-00f6-9b6d-5890" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45e6-8b86-0832-747c" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="7e0d-4477-f1bf-2cf5" name="Two Lightning Locks" hidden="false" collective="false" import="true" type="upgrade">
-                  <entryLinks>
-                    <entryLink id="a735-22a8-2a71-9de7" name="Lightning Lock" hidden="false" collective="false" import="true" targetId="1c8c-5516-1c2d-5124" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6be5-c56a-a3ba-0fdf" type="min"/>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0de7-6aa8-3127-7f64" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5c67-596f-8bae-bd32" name="Volkite Veuglaire and Gyges Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
-                  <entryLinks>
-                    <entryLink id="3cdf-4369-3ef9-50bf" name="Volkite Veuglaire" hidden="false" collective="false" import="true" targetId="1c3e-d7b2-c0f1-5345" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c78b-0c08-c9eb-43fe" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b2c-121d-6d14-2355" type="min"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="0df0-1942-eac7-76f5" name="Gyges Siege Claw" hidden="false" collective="false" import="true" targetId="7f23-dafa-b324-105c" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33cc-4bea-819a-1c4f" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc39-8e30-c82f-dc9b" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </entryLink>
       </entryLinks>
       <costs>
@@ -17870,13 +17782,103 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="1497-e03b-3ed2-3ebe" name="Moirax Knight Scion Martial" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a3e2-3392-3b01-3bed" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="5c90-f7e5-76d9-7e2e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e246-9df0-2e80-25c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ec-e6e5-978d-8862" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a531-ff03-28df-2f6a" name="Two Lightning Locks" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="eaed-7c7b-803c-23c3" name="Lightning Lock" hidden="false" collective="false" import="true" targetId="1c8c-5516-1c2d-5124" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f7-3c59-9517-0fc7" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac78-d3d0-e3ef-af7b" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5c90-f7e5-76d9-7e2e" name="Volkite Veuglaire and Gyges Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="90f0-efb1-7a65-3b01" name="Volkite Veuglaire" hidden="false" collective="false" import="true" targetId="1c3e-d7b2-c0f1-5345" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1d6-e726-ad04-16b1" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9346-6839-1333-6a94" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="9ab5-9ca0-f5bb-c34c" name="Gyges Siege Claw" hidden="false" collective="false" import="true" targetId="7f23-dafa-b324-105c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2dc-253f-1daa-1d94" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46a4-143f-6dbb-40eb" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b364-f730-c1ca-208b" name="Moirax Knight Scion Auxilia" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1052-65cd-1fd4-1ff1" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="318e-6406-15b7-9588">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3602-3f1f-d4be-7ce4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6119-a96c-7067-a721" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="318e-6406-15b7-9588" name="Two Lightning Locks" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="3e7a-c859-3aa8-da06" name="Lightning Lock" hidden="false" collective="false" import="true" targetId="1c8c-5516-1c2d-5124" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31e0-2e01-4c08-a42c" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bec-40e3-019a-680f" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6736-999f-3f6d-10bc" name="Volkite Veuglaire and Gyges Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="2463-0487-1e5b-a4b7" name="Volkite Veuglaire" hidden="false" collective="false" import="true" targetId="1c3e-d7b2-c0f1-5345" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbd7-e745-3d26-7b72" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db65-c3ff-630a-a037" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="92c1-7876-6d24-5225" name="Gyges Siege Claw" hidden="false" collective="false" import="true" targetId="7f23-dafa-b324-105c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fdb-324d-76c7-0dc0" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ad8-35b2-bb49-8b7c" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1c3e-d7b2-c0f1-5345" name="Volkite Veuglaire" hidden="false" collective="false" import="true" type="upgrade">
@@ -17897,6 +17899,10 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7f23-dafa-b324-105c" name="Gyges Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -17916,6 +17922,10 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1c8c-5516-1c2d-5124" name="Lightning Lock" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -17935,6 +17945,10 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
