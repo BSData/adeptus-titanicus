@@ -3965,7 +3965,6 @@ can choose to pass the Command check instead of rolling. </description>
       </profiles>
       <infoLinks>
         <infoLink id="34b6-5ea3-ff89-7dac" name="Retainers" hidden="false" targetId="8239-240b-bf2f-fba5" type="rule"/>
-        <infoLink id="0f6e-3584-e0dd-1125" name="Ionic Flare Shield" hidden="false" targetId="4bcc-c9a8-70bd-fda4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6096-9f77-aebe-7c53" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
@@ -3983,6 +3982,12 @@ can choose to pass the Command check instead of rolling. </description>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1d9-8480-628b-f9a7" type="min"/>
             <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f31-f353-26f7-d8a4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ff23-a029-68ac-9254" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d43-74cf-3419-4cf7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dffd-88e2-63c2-bfd3" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -4200,7 +4205,6 @@ can choose to pass the Command check instead of rolling. </description>
       </profiles>
       <infoLinks>
         <infoLink id="5d60-8db9-b1bc-0676" name="Retainers" hidden="false" targetId="8239-240b-bf2f-fba5" type="rule"/>
-        <infoLink id="eb60-e41d-b5b0-67cc" name="Ionic Flare Shield" hidden="false" targetId="4bcc-c9a8-70bd-fda4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f380-2f15-4f28-ba55" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
@@ -4218,6 +4222,12 @@ can choose to pass the Command check instead of rolling. </description>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b6-c433-3ff3-93a9" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a7e-2a1c-65a4-e3be" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b258-9e06-c7ad-f04f" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c571-56d7-f32e-8ab4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8999-bf36-8e16-06b3" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>

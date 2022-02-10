@@ -17412,7 +17412,6 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       </profiles>
       <infoLinks>
         <infoLink id="a2cb-b8ac-0dba-b35e" name="Retainers" hidden="false" targetId="8239-240b-bf2f-fba5" type="rule"/>
-        <infoLink id="0664-26f6-50d6-0e4c" name="Ionic Flare Shield" hidden="false" targetId="4bcc-c9a8-70bd-fda4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6687-9fe3-9d47-d818" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
@@ -17430,6 +17429,12 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a718-9eda-a4ea-45d6" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c802-b747-0f11-36f4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3a3e-672a-651e-7d92" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2788-d5bd-9ea1-befa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d8-df5f-d587-dfd7" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
