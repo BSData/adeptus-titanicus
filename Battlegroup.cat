@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -155,7 +155,7 @@
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e1-5f6d-1da1-6370" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="e475-b3db-6c86-b828" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="2f6d-7ec0-5d32-a1bc" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4ef2-2fba-7456-a7f7" name="Auspex Bafflers" hidden="false" collective="false" import="false" targetId="92b5-e290-3859-ee00" type="selectionEntry">
@@ -868,5 +868,15 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="02ae-1f94-83f2-f648" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" targetId="c45d-04e4-f35f-8b20" type="selectionEntry"/>
+    <entryLink id="4174-c2c4-e29b-7ed7" name="Armiger Knights Banner" hidden="false" collective="false" import="false" targetId="11c3-a34f-1748-cf07" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ec0d-3c08-8cbc-7888" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6924-fe7d-2cb3-7473" name="Mechanicum Moirax Knight Banner" page="" hidden="false" collective="false" import="false" targetId="8be9-756b-a3a6-8622" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7481-4c0c-ca6a-ec46" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>

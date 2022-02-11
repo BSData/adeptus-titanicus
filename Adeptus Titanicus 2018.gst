@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="43" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
-  <readme>Gryphonicus : Select your replacement titans from the Maniple level options.  We are working to clean up how you choose replacement titans.</readme>
+  <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
+
+To create a Household Battlegroup add a Household to your Roster. Each Lance is a separate Force that needs to be added to your Household. Reinforcements can then be added directly to your Household, or each of your added Lance forces!
+
+</readme>
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
@@ -489,6 +493,23 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="30ae-04ab-aaad-4429" name="Replace Reaver with Warhound" hidden="false"/>
     <categoryEntry id="26af-393b-729b-3e2a" name="Replace optional Reaver with Warbringer Nemesis" hidden="false"/>
     <categoryEntry id="029d-c629-c563-9f4e" name="Replace optional Warlord with Warbringer Nemesis" hidden="false"/>
+    <categoryEntry id="5063-b6aa-3590-30fb" name="Retainers" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="cf67-a51a-b403-9501" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="917a-77ef-30e4-b812" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="cf67-a51a-b403-9501" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5063-b6aa-3590-30fb" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf67-a51a-b403-9501" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -3064,7 +3085,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d056-b40b-a1bc-43fb" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="793e-5fcb-118c-f908" name="Acastus Knight Porhpyrion" hidden="false" collective="false" import="false" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry"/>
+            <entryLink id="793e-5fcb-118c-f908" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="false" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry"/>
             <entryLink id="7353-9144-2106-3591" name="Acastus Knight Asterius" hidden="false" collective="false" import="false" targetId="2dee-7316-3a42-5507" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -3626,7 +3647,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
           <description>If an Acastus Knight Banner is issued First Fire or Split Fire orders during the Strategy phase, their BS is increased to 3+ until the End phase</description>
         </rule>
         <rule id="3ef4-e452-b5b7-159a" name="Auxilliary Knight Banner" publicationId="25e8-c9ce-9330-c53b" page="5" hidden="false">
-          <description>A Battlegroup can include a maximum of one Acastus Knight Banner per maniple as reinforcements. A Knight Household Force can include a maximum of one Auxiliary Knight Banner per Lance as reinforcements. No Knight Banner within a Lance may be an Auxiliary Knight Banner</description>
+          <description>A Battlegroup can include a maximum of one Auxiliary Knight Banner per maniple as reinforcements. A Knight Household Force can include a maximum of one Auxiliary Knight Banner per Lance as reinforcements. No Knight Banner within a Lance, other than the Seneschal’s Banner, may be an Auxiliary Knight Banner</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -17338,6 +17359,602 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8be9-756b-a3a6-8622" name="Moirax Knight Banner" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="d3fe-b05f-eb86-7dc2" name="Moirax Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">11&apos;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">7+ (6+ with Scion Martial)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">2 (Greatis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1494-2f07-0c08-9b50" name="1 Moirax Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">-</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1a7c-9def-0543-30f0" name="2-4 Moirax Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="175a-eb8d-5128-f341" name="5+ Moirax Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e6d8-85d4-efb6-013d" name="Moirax Knights Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-10</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">11-13</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">14+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a2cb-b8ac-0dba-b35e" name="Retainers" hidden="false" targetId="8239-240b-bf2f-fba5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6687-9fe3-9d47-d818" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="1712-48d1-49c9-721e" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="8bd4-6576-0c82-6089" name="Retainers" hidden="false" targetId="5063-b6aa-3590-30fb" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="aff1-0776-4452-3e33" name="Moirax Knight Scion Auxilia" hidden="false" collective="false" import="true" targetId="b364-f730-c1ca-208b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b7-d8ef-037a-86a0" type="min"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ff4-ec8c-b826-6920" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ed8e-725e-95cc-cfce" name="Moirax Knight Scion Martial" hidden="false" collective="false" import="true" targetId="1497-e03b-3ed2-3ebe" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a718-9eda-a4ea-45d6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c802-b747-0f11-36f4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3a3e-672a-651e-7d92" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2788-d5bd-9ea1-befa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d8-df5f-d587-dfd7" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="11c3-a34f-1748-cf07" name="Armiger Knights Banner" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="ec8a-48a8-484a-ce54" name="Armiger Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">11&apos;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">7+ (6+ with Scion Martial)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">2 (Greatis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dc4d-0338-04e6-a7ac" name="1 Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">-</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1842-5064-bd00-00a0" name="2-4 Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="022d-f1fa-a505-9a8b" name="5+ Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fa75-24d7-691f-bbab" name="Armiger Knights Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-10</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">11-13</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">14+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5f7c-a9b7-46ae-fd63" name="Retainers" hidden="false" targetId="8239-240b-bf2f-fba5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7cc0-82cf-583a-2a8c" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="db1f-2103-513e-619e" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="daf4-6417-8a9a-93c2" name="Retainers" hidden="false" targetId="5063-b6aa-3590-30fb" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c20c-e9bf-2370-4bf1" name="Armiger Knight Scion Martial" hidden="false" collective="false" import="true" targetId="37bd-1bf3-0df2-2cb5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bebf-57bb-7069-1604" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5db1-c359-f16b-e1f8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a5df-3bb8-97ee-85d4" name="Armiger Knight Scion Auxilia" hidden="false" collective="false" import="true" targetId="3ccd-476c-5c16-3c5b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a14c-6e4d-2f6f-ce69" type="min"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f05c-f474-285d-e220" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7df5-f56c-c89a-ee52" name="Armiger Knight" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="4c7e-0060-7e56-4ba2" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="11e2-b9ce-2eb7-baf9" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="b749-7bef-2b7a-8985" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9226-15f7-516c-a749" name="Arms" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac0a-e38d-7804-0eaf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce8e-5afd-342d-ec22" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8452-63de-c1a6-444a" name="Two Armiger Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="8975-bb98-1c94-8ad1" name="Armiger Autocannon" hidden="false" collective="false" import="true" targetId="9f10-b828-80c9-d6fe" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18ed-f776-bd23-b355" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42bd-6d10-98aa-f27e" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="88f7-72fa-bf16-5ee3" name="Thermal Spear and Reaper Chain-Cleaver" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="7705-0231-17c6-e134" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="883e-d464-9efa-600d" type="selectionEntry"/>
+                <entryLink id="244f-d05d-deeb-9a39" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="3dfb-5a93-4b27-5b39" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="653e-7091-f3fd-a8b5" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="d1be-98d6-7e08-207c" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry">
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="351b-f42a-196e-447b" name="Moirax Knight" hidden="false" collective="false" import="true" type="model">
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="37bd-1bf3-0df2-2cb5" name="Armiger Knight Scion Martial" hidden="false" collective="false" import="true" type="model">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a862-dfb3-f136-c997" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd78-6334-e863-f281">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ef-32a0-c04d-a99e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f7a-b7be-086e-e6e8" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cd78-6334-e863-f281" name="Two Armiger Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="41aa-5557-0e6d-7904" name="Armiger Autocannon" hidden="false" collective="false" import="true" targetId="9f10-b828-80c9-d6fe" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efea-87e8-e105-4862" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ace-4f2c-6f7c-db64" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6681-b18c-aac0-5c67" name="Thermal Spear and Reaper Chain-Cleaver" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="80c9-6b4d-894d-dd30" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="883e-d464-9efa-600d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3494-5889-dcbe-36d6" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74da-6758-2766-06e7" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="9096-3729-73c1-5845" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="3dfb-5a93-4b27-5b39" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="758e-fbbd-9387-b579" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a8d-679b-6caf-f386" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="026f-9900-c230-b4b8" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="44b9-5d50-4123-182d" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry">
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3ccd-476c-5c16-3c5b" name="Armiger Knight Scion Auxilia" hidden="false" collective="false" import="true" type="model">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3670-cfaa-2342-73fc" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="bff6-de91-a7f4-7cf6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb2d-478e-fbf3-d27e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd3b-0ff1-dc56-dca6" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="005f-959b-699f-55bd" name="Two Armiger Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="4aa2-e040-c6f7-7db6" name="Armiger Autocannon" hidden="false" collective="false" import="true" targetId="9f10-b828-80c9-d6fe" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c412-07c6-8674-7973" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="555e-580c-3063-4048" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bff6-de91-a7f4-7cf6" name="Thermal Spear and Reaper Chain-Cleaver" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="1176-2930-0105-7c98" name="Thermal Spear" hidden="false" collective="false" import="true" targetId="883e-d464-9efa-600d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d35e-0070-1006-089b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8085-4660-0467-6ad1" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="4dca-4f12-c4fd-7bd9" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" targetId="3dfb-5a93-4b27-5b39" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88a2-7945-dce0-7516" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed6c-bc89-8f04-97bc" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7c15-09f6-9173-a6fe" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="1cf6-62e4-5997-d031" name="Meltagun" hidden="false" collective="false" import="true" targetId="5fef-e84f-c8eb-791b" type="selectionEntry">
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4fad-6b99-5215-5198" name="Armiger Knight Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3dfb-5a93-4b27-5b39" name="Reaper Chain-Cleaver" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1452-fb82-26da-1c49" name="Reaper Chain-Cleaver" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Melee</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c562-10f2-da37-4095" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="62e8-e21d-1c83-2c19" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="883e-d464-9efa-600d" name="Thermal Spear" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2039-5531-0123-2a87" name="Thermal Spear" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">5&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">8&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e777-b157-bcff-5419" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
+        <categoryLink id="82eb-8b84-4b5c-d529" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f10-b828-80c9-d6fe" name="Armiger Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a98b-0992-0ca4-2ae6" name="Armiger Autocannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">6&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">16&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Ordnance</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b897-b786-141c-3295" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="385e-6d55-0099-9f0f" name="Ordnance" hidden="false" targetId="5ad8-0ca8-4bb7-83b6" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1497-e03b-3ed2-3ebe" name="Moirax Knight Scion Martial" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a3e2-3392-3b01-3bed" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="5c90-f7e5-76d9-7e2e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e246-9df0-2e80-25c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ec-e6e5-978d-8862" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a531-ff03-28df-2f6a" name="Two Lightning Locks" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="eaed-7c7b-803c-23c3" name="Lightning Lock" hidden="false" collective="false" import="true" targetId="1c8c-5516-1c2d-5124" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f7-3c59-9517-0fc7" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac78-d3d0-e3ef-af7b" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5c90-f7e5-76d9-7e2e" name="Volkite Veuglaire and Gyges Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="90f0-efb1-7a65-3b01" name="Volkite Veuglaire" hidden="false" collective="false" import="true" targetId="1c3e-d7b2-c0f1-5345" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1d6-e726-ad04-16b1" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9346-6839-1333-6a94" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="9ab5-9ca0-f5bb-c34c" name="Gyges Siege Claw" hidden="false" collective="false" import="true" targetId="7f23-dafa-b324-105c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2dc-253f-1daa-1d94" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46a4-143f-6dbb-40eb" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b364-f730-c1ca-208b" name="Moirax Knight Scion Auxilia" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1052-65cd-1fd4-1ff1" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="318e-6406-15b7-9588">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3602-3f1f-d4be-7ce4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6119-a96c-7067-a721" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="318e-6406-15b7-9588" name="Two Lightning Locks" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="3e7a-c859-3aa8-da06" name="Lightning Lock" hidden="false" collective="false" import="true" targetId="1c8c-5516-1c2d-5124" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31e0-2e01-4c08-a42c" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bec-40e3-019a-680f" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6736-999f-3f6d-10bc" name="Volkite Veuglaire and Gyges Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="2463-0487-1e5b-a4b7" name="Volkite Veuglaire" hidden="false" collective="false" import="true" targetId="1c3e-d7b2-c0f1-5345" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbd7-e745-3d26-7b72" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db65-c3ff-630a-a037" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="92c1-7876-6d24-5225" name="Gyges Siege Claw" hidden="false" collective="false" import="true" targetId="7f23-dafa-b324-105c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fdb-324d-76c7-0dc0" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ad8-35b2-bb49-8b7c" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1c3e-d7b2-c0f1-5345" name="Volkite Veuglaire" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2b65-8abf-7605-a76b" name="Volkite Veuglaire" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">16&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (1)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7f23-dafa-b324-105c" name="Gyges Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6f5e-657d-dde2-0452" name="Gyges Siege Claw" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Melee, Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1c8c-5516-1c2d-5124" name="Lightning Lock" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="cb87-4655-f6d1-ee2c" name="Lightning Lock" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">14&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -18288,6 +18905,9 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
     </rule>
     <rule id="8424-0cc4-1cc8-9e61" name="Specialised" publicationId="bf8b-27d7-039e-5df9" page="167" hidden="false">
       <description>A specialised weapon relies upon expendable or delicate machinery, making it difficult to repair during battle. Unless otherwise stated, a disabled Specialised weapon cannot be repaired.</description>
+    </rule>
+    <rule id="8239-240b-bf2f-fba5" name="Retainers" hidden="false">
+      <description>A battlegroup may include a single Banner of Retainers as Reinforcements for every non-Retainer Knight Banner in the battlegroup. Banners of Retainers cannot be taken as part of a maniple, while Knight Lances can only include a maximum of one Retainer Banner. Banners of Retainers do not count towards the maximum number of Knight Banners allowed per maniple in a Legio battlegroup.</description>
     </rule>
   </sharedRules>
 </gameSystem>
