@@ -3563,7 +3563,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c43f-7db6-59e3-66c2" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="da9c-6b24-1899-466a" name="Acastus Knight Porhpyrion" hidden="false" collective="false" import="false" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry"/>
+            <entryLink id="da9c-6b24-1899-466a" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="false" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry"/>
             <entryLink id="4d4d-f6df-c9aa-161c" name="Acastus Knight Asterius" hidden="false" collective="false" import="false" targetId="2dee-7316-3a42-5507" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -3609,29 +3609,19 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">-</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
           </characteristics>
         </profile>
-        <profile id="d39b-b1d9-2b45-1910" name="2-3 Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+        <profile id="d39b-b1d9-2b45-1910" name="2 Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-3</characteristic>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
-          </characteristics>
-        </profile>
-        <profile id="faef-c4b7-b375-4a09" name="4+ Acastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
           </characteristics>
         </profile>
         <profile id="12d5-624c-c777-479a" name="Acastus Knight Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
