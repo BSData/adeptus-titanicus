@@ -3541,7 +3541,6 @@ can choose to pass the Command check instead of rolling. </description>
               <entryLinks>
                 <entryLink id="e5e4-20e1-1864-e927" name="Volkite Chieorovile" hidden="false" collective="false" import="true" targetId="3595-8b4e-3496-ad5f" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6672-ad38-e951-944b" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c87c-a468-ce4d-0b51" type="min"/>
                   </constraints>
                 </entryLink>
@@ -3563,7 +3562,7 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f6df-7620-0a88-f863" name="Questoris Knight Lord Magaera" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="f6df-7620-0a88-f863" name="Questoris Knight Lord Styrix" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8da6-6d2e-76d6-7652" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0c3-069c-f5e4-20b0" type="max"/>
@@ -3581,7 +3580,12 @@ can choose to pass the Command check instead of rolling. </description>
               <entryLinks>
                 <entryLink id="4703-80e4-5f56-365f" name="Volkite Chieorovile" hidden="false" collective="false" import="true" targetId="3595-8b4e-3496-ad5f" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac66-19bf-883e-2e91" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac66-19bf-883e-2e91" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="6264-d3e7-6f63-04f4" name="Hekaton Siege Claw" hidden="false" collective="false" import="true" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="774d-5de9-4a42-825c" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
