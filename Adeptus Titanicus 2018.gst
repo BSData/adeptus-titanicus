@@ -3790,6 +3790,19 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="6685-93da-bc92-172e" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="a901-f5ba-596d-d304" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5626-d833-9689-d56b" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a301-9ddb-9d3f-bcd5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6942-deec-2c9c-3cc8" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="01d0-0a6c-8504-f4f6" name="Blessed Autosimulacra" hidden="false">
+              <description>During the Damage Control phase, roll a D6 for each Knight Styrix within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="6dec-b5d7-faf0-4c13" name="Questoris Knight Lord Styrix" hidden="false" collective="false" import="false" targetId="e393-1183-33fd-d14d" type="selectionEntry">
           <constraints>
@@ -3871,6 +3884,19 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="d92e-a23e-0b64-8679" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="7970-2070-0821-999f" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="009f-a8cf-de0d-c07a" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cb2-8137-3c5a-32f4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81b3-06f0-1593-199b" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="a729-4f23-c44d-7322" name="Blessed Autosimulacra" hidden="false">
+              <description>During the Damage Control phase, roll a D6 for each Knight Magaera within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="23a7-c61e-575a-87a4" name="Questoris Knight Lord Magaera" hidden="false" collective="false" import="false" targetId="be8e-e48f-d3f1-580c" type="selectionEntry">
           <constraints>
@@ -18020,15 +18046,25 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <rule id="34f6-0ecd-d47e-eef3" name="Auxilliary Knight Banner" publicationId="25e8-c9ce-9330-c53b" page="5" hidden="false">
           <description>A Battlegroup can include a maximum of one Acastus Knight Banner or  Acastus Knight Asterius Banner per maniple as reinforcements. A Knight Household Force can include a maximum of one of these Banners per Lance as reinforcements. No Knight Banner, other than the Seneschal’s Banner, within a Lance may be an Auxiliary Knight Banner.</description>
         </rule>
-        <rule id="45f5-0dbc-3140-190d" name="Blessed Autosimulacra" hidden="false">
-          <description>During the Damage Control phase, roll a D6 for each Knight Asterius within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
-        </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="f0eb-04ad-ef59-6031" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="aeb2-ef75-2cf2-dfd9" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="41c6-be07-3eae-944d" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="fbc8-58ae-3e54-9f50" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cbf-7ba3-6724-7b40" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52b9-18ff-a2e7-8a18" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="a79a-5f29-e9d9-b5c4" name="Blessed Autosimulacra" hidden="false">
+              <description>During the Damage Control phase, roll a D6 for each Knight Asterius within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="b39a-e024-61c9-f187" name="Acastus Knight Asterius Lord Scion" hidden="false" collective="false" import="true" targetId="61e0-5e19-03b9-077d" type="selectionEntry">
           <constraints>

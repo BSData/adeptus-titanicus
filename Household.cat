@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="43" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="abef-007d-766a-b940" name="Seneschal" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
       <rules>
@@ -3152,6 +3152,17 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="6e24-f54c-92c2-908a" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef20-4ad0-48cb-2578" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14a2-8815-a3f2-bf2d" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="4a91-54ae-3b67-9472" name="Blessed Autosimulacra" hidden="false">
+              <description>During the Damage Control phase, roll a D6 for each Knight Magaera within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="d9d3-7681-30df-0fec" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
@@ -3300,6 +3311,17 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="bdd6-3007-7024-7ad3" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9852-26c4-4d8a-f45f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5efb-6512-a54c-243b" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="7f4e-6a60-e690-ae23" name="Blessed Autosimulacra" hidden="false">
+              <description>During the Damage Control phase, roll a D6 for each Knight Magaera within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3450,6 +3472,17 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="6380-0587-97db-13c5" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a068-279c-6f54-a6ae" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05da-7db6-c0ca-396e" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="d0e6-c89d-6132-83dd" name="Blessed Autosimulacra" hidden="false">
+              <description>During the Damage Control phase, roll a D6 for each Knight Magaera within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="ca53-0d15-09ea-adfe" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
@@ -3514,7 +3547,7 @@ can choose to pass the Command check instead of rolling. </description>
             <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
           </characteristics>
         </profile>
-        <profile id="0694-d310-e318-df0a" name="Questoris Knight Magaera Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+        <profile id="0694-d310-e318-df0a" name="Questoris Knight Styrix Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
           <characteristics>
             <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-12</characteristic>
             <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-15</characteristic>
@@ -3609,6 +3642,17 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="a90e-dbf3-74b0-6c2f" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad30-4a5c-e541-734d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b715-ec58-0372-0343" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="27db-3e9a-a2da-2495" name="Blessed Autosimulacra" hidden="false">
+              <description>During the Damage Control phase, roll a D6 for each Knight Styrix within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="b020-c781-553f-baa9" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
@@ -3673,7 +3717,7 @@ can choose to pass the Command check instead of rolling. </description>
             <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
           </characteristics>
         </profile>
-        <profile id="fdd9-b041-9339-2d4f" name="Questoris Knight Magaera Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+        <profile id="fdd9-b041-9339-2d4f" name="Questoris Knight Styrix Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
           <characteristics>
             <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-12</characteristic>
             <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-15</characteristic>
@@ -3758,6 +3802,17 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="cebb-0ecc-24ce-8c48" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b93-60ed-bbc6-db91" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60fc-4a2a-e6f7-1381" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="ec49-b0c6-2354-18fd" name="Blessed Autosimulacra" hidden="false">
+              <description>During the Damage Control phase, roll a D6 for each Knight Styrix within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="e147-8e57-f760-7247" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
@@ -3822,7 +3877,7 @@ can choose to pass the Command check instead of rolling. </description>
             <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
           </characteristics>
         </profile>
-        <profile id="3e8b-2405-379b-a23c" name="Questoris Knight Magaera Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+        <profile id="3e8b-2405-379b-a23c" name="Questoris Knight Styrix Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
           <characteristics>
             <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-12</characteristic>
             <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-15</characteristic>
@@ -3906,6 +3961,17 @@ can choose to pass the Command check instead of rolling. </description>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="1ab9-b314-433d-0ff3" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dabe-3cd7-f9fc-2d03" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6db4-104d-1527-7259" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="2d30-6988-1963-73e5" name="Blessed Autosimulacra" hidden="false">
+              <description>During the Damage Control phase, roll a D6 for each Knight Styrix within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
