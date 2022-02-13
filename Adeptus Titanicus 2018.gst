@@ -3156,7 +3156,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">*3&quot;/**5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Paired</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Paired, Blast</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
