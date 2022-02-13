@@ -498,6 +498,11 @@ can choose to pass the Command check instead of rolling. </description>
                 <categoryLink id="f908-d5f9-d5f1-90a1" name="Lance Acastus" hidden="false" targetId="79cb-8b6c-b922-a56a" primary="false"/>
               </categoryLinks>
             </entryLink>
+            <entryLink id="44a8-3df1-2942-8305" name="Acastus Knight Asterius Banner" hidden="false" collective="false" import="true" targetId="3997-93d3-81f3-8802" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value=", Baronial Court"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>

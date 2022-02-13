@@ -17967,6 +17967,138 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3997-93d3-81f3-8802" name="Acastus Knight Asterius Banner" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="fe13-d035-9a55-e94b" name="Acastus Knight Asterius" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">7&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">5 (3 with Lord Scion)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">5 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44c9-d30a-372d-52ea" name="1 Acastus Knight Asterius Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">-</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="852d-0624-d68b-18e2" name="2 Acastus Knight Asterius Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">-</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7efe-04b1-11a8-73e7" name="Acastus Knight Asterius Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">10-14</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">15-16</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">17+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1e39-5ff3-026b-fcb3" name="Acastus Knight Artillery" hidden="false">
+          <description>If an Acastus Knight Asterius Banner is issued First Fire or Split Fire orders during the Strategy phase, their BS is increased to 3+ until the End phase.</description>
+        </rule>
+        <rule id="34f6-0ecd-d47e-eef3" name="Auxilliary Knight Banner" publicationId="25e8-c9ce-9330-c53b" page="5" hidden="false">
+          <description>A Battlegroup can include a maximum of one Acastus Knight Banner or  Acastus Knight Asterius Banner per maniple as reinforcements. A Knight Household Force can include a maximum of one of these Banners per Lance as reinforcements. No Knight Banner, other than the Seneschal’s Banner, within a Lance may be an Auxiliary Knight Banner.</description>
+        </rule>
+        <rule id="45f5-0dbc-3140-190d" name="Blessed Autosimulacra" hidden="false">
+          <description>During the Damage Control phase, roll a D6 for each Knight Asterius within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f0eb-04ad-ef59-6031" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="aeb2-ef75-2cf2-dfd9" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="41c6-be07-3eae-944d" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b39a-e024-61c9-f187" name="Acastus Knight Asterius Lord Scion" hidden="false" collective="false" import="true" targetId="61e0-5e19-03b9-077d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b74d-6d26-8faf-f99e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="522c-0980-adf7-0412" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5671-38ad-923a-d39d" name="Acastus Knight Asterius Scion Martial" hidden="false" collective="false" import="true" targetId="f3d0-12a4-51a2-b8ce" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b0c-3508-2186-60db" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6d3-7623-8a26-0408" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="61e0-5e19-03b9-077d" name="Acastus Knight Asterius Lord Scion" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="3805-d0aa-034f-8a00" name="Asterius Karacnos Mortar Battery" hidden="false" collective="false" import="true" targetId="5893-d4c8-461e-ea79" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df45-780b-99f0-dede" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fdf-67cb-b4a0-ec56" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c12b-44dc-653c-87da" name="Asterius Twin Conversion Beam Cannon" hidden="false" collective="false" import="true" targetId="93c8-d5c9-575d-d1ac" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d764-7690-f22b-740a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5afe-cb13-9a86-1b06" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1c4d-c4d5-7080-5e31" name="Asterius Twin Volkite Culverins" hidden="false" collective="false" import="true" targetId="497b-094c-d532-2f6a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c06d-b07f-7ce6-5184" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17e0-79fa-0883-541a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="210.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f3d0-12a4-51a2-b8ce" name="Acastus Knight Asterius Scion Martial" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="473d-3c70-ef7e-3619" name="Asterius Karacnos Mortar Battery" hidden="false" collective="false" import="true" targetId="5893-d4c8-461e-ea79" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8157-40c7-0a78-7b4e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8c9-c11d-f164-138d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6f8e-d8a8-6422-d779" name="Asterius Twin Conversion Beam Cannon" hidden="false" collective="false" import="true" targetId="93c8-d5c9-575d-d1ac" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b75-bee3-0e07-7cfe" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52d1-0b90-27e4-7381" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="75c7-5cc5-29e7-9bdf" name="Asterius Twin Volkite Culverins" hidden="false" collective="false" import="true" targetId="497b-094c-d532-2f6a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb85-9cf4-2ecd-999e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a83-bad6-004b-ee94" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="190.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

@@ -150,6 +150,11 @@
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="decrement" field="d0e1-5f6d-1da1-6370" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3997-93d3-81f3-8802" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e1-5f6d-1da1-6370" type="max"/>
@@ -876,6 +881,26 @@
     <entryLink id="6924-fe7d-2cb3-7473" name="Mechanicum Moirax Knight Banner" page="" hidden="false" collective="false" import="false" targetId="8be9-756b-a3a6-8622" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7481-4c0c-ca6a-ec46" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b539-98b2-4d19-2ed2" name="Acastus Knight Asterius Banner" hidden="false" collective="false" import="true" targetId="3997-93d3-81f3-8802" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="d0b4-c318-58f4-43db" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="d0b4-c318-58f4-43db" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b77-15d2-9ca8-5cf7" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b4-c318-58f4-43db" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="447d-74bf-dbd3-c004" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
