@@ -18249,6 +18249,10 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
               <description>During the Damage Control phase, roll a D6 for each Knight Atrapos within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
