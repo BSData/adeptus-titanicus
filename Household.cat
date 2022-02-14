@@ -85,29 +85,15 @@
     <selectionEntry id="7f42-4355-fed3-0274" name="Questoris Imperialis" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="8b99-8c09-b929-62dc" name="Questoris Imperialis" publicationId="2988-f24d-39ef-352e" page="87" hidden="false">
-          <description>All Knight Banners within a Lance as part of a
-Questoris Imperialis Household force are referred
-to as Questoris Imperialis Banners and the player a
-Questoris Imperialis player. 
-• A Questoris Imperialis Household force can purchase
-Stratagems available to any Knight Household and to
-Questoris Imperialis Households. 
-• A Questoris Imperialis Household force can include Loyalist
-Titans of Legend as reinforcements. 
-• A Questoris Imperialis Household force cannot include any
-Corrupted Titans or Renegade Knight Banners (these will be
-explored in future supplements). 
-• A Questoris Imperialis Household force cannot include
-any Traitor Titans of Legend or Blackshield Titans of
-Legend as reinforcements. 
-• A Questoris Imperialis Household force cannot purchase
-Stratagems specific to Questoris Mechanicus, Questoris
-Traitoris, or Questoris Oblitus Households.</description>
+          <description>All Knight Banners within a Lance as part of a Questoris Imperialis Household force are referred to as Questoris Imperialis Banners and the player a Questoris Imperialis player. 
+• A Questoris Imperialis Household force can purchase Stratagems available to any Knight Household and to Questoris Imperialis Households. 
+• A Questoris Imperialis Household force can include Loyalist Titans of Legend as reinforcements. 
+• A Questoris Imperialis Household force cannot include any Corrupted Titans or Renegade Knight Banners (these will be explored in future supplements). 
+• A Questoris Imperialis Household force cannot include any Traitor Titans of Legend or Blackshield Titans of Legend as reinforcements. 
+• A Questoris Imperialis Household force cannot purchase Stratagems specific to Questoris Mechanicus, Questoris Traitoris, or Questoris Oblitus Households.</description>
         </rule>
         <rule id="9834-0a99-b893-de71" name="Valorous Charge" publicationId="2988-f24d-39ef-352e" page="87" hidden="false">
-          <description>Once per game, during the Movement phase, a single Questoris
-Imperialis Lance of the player’s choice can add 2&quot; to their Speed
-characteristic for the remainder of that phase.</description>
+          <description>Once per game, during the Movement phase, a single Questoris Imperialis Lance of the player’s choice can add 2&quot; to their Speed characteristic for the remainder of that phase.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -121,26 +107,15 @@ characteristic for the remainder of that phase.</description>
     <selectionEntry id="fa19-c8d7-464f-de6f" name="Questoris Mechanicus" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="bc16-e4eb-9ec0-49f7" name="Questoris Mechanicus" publicationId="2988-f24d-39ef-352e" page="87" hidden="false">
-          <description>• All Knight Banners within a Lance as part of a Questoris Mechanicus Household force are referred to as
-Questoris Mechanicus Banners. 
-• A Questoris Mechanicus Household force can purchase
-Stratagems available to any Knight Household and to
-Questoris Mechanicus Households. 
-• A Questoris Mechanicus Household force can include either
-Loyalist Titans of Legend or Traitor Titans of Legend as
-reinforcements, but not both. 
+          <description>• All Knight Banners within a Lance as part of a Questoris Mechanicus Household force are referred to as Questoris Mechanicus Banners. 
+• A Questoris Mechanicus Household force can purchase Stratagems available to any Knight Household and to Questoris Mechanicus Households. 
+• A Questoris Mechanicus Household force can include either Loyalist Titans of Legend or Traitor Titans of Legend as reinforcements, but not both. 
 • A Questoris Mechanicus Household force cannot include any Corrupted Titans or Renegade Knight Banners (explored in future supplements). 
-• A Questoris Mechanicus Household Force cannot include Blackshield Titans of Legend as reinforcements (these will be 
-explored in future supplements). 
-• A Questoris Mechanicus Household force cannot purchase
-Stratagems specific to Questoris Imperialis, Questoris
-Traitoris, or Questoris Oblitus Households.</description>
+• A Questoris Mechanicus Household Force cannot include Blackshield Titans of Legend as reinforcements (these will be explored in future supplements). 
+• A Questoris Mechanicus Household force cannot purchase Stratagems specific to Questoris Imperialis, Questoris Traitoris, or Questoris Oblitus Households.</description>
         </rule>
         <rule id="ee5c-b0da-aa3b-62d6" name="Targeting Solutions" publicationId="2988-f24d-39ef-352e" page="89" hidden="false">
-          <description>Once per game, all Banners within a single Questoris
-Mechanicus Lance can be issued a Coordinated Strike, Split
-Fire or First Fire Order without the need to make a Command
-check. Each Banner can be given a separate Order.</description>
+          <description>Once per game, all Banners within a single Questoris Mechanicus Lance can be issued a Coordinated Strike, Split Fire or First Fire Order without the need to make a Command check. Each Banner can be given a separate Order.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -154,28 +129,15 @@ check. Each Banner can be given a separate Order.</description>
     <selectionEntry id="e516-cef8-4e79-4615" name="Questoris Traitorus" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="bb9e-8cb5-7e6e-16cb" name="Questoris Traitorus" publicationId="2988-f24d-39ef-352e" page="91" hidden="false">
-          <description>• All Knight Banners within a Lance as part of a Questoris Traitoris Household force are referred to as
-Questoris Traitoris Banners. 
+          <description>• All Knight Banners within a Lance as part of a Questoris Traitoris Household force are referred to as Questoris Traitoris Banners. 
 • A Questoris Traitoris Household force can purchase Stratagems available to any Knight Household and to Questoris Traitoris Households.
- • A Questoris Traitoris Household force can include Traitor
-Titans of Legend as reinforcements. 
-• A Questoris Traitoris Household force can include any
-Corrupted Titans or Renegade Knight Banners (these will be
-explored in future supplements). 
-• A Questoris Traitoris Household force cannot include any
-Loyalist Titans of Legend or Blackshield Titans of Legend. 
-• A Questoris Traitoris Household force cannot purchase
-Stratagems available to Questoris Imperialis, Questoris
-Mechanicus, or Questoris Oblitus Households.</description>
+ • A Questoris Traitoris Household force can include Traitor Titans of Legend as reinforcements. 
+• A Questoris Traitoris Household force can include any Corrupted Titans or Renegade Knight Banners (these will be explored in future supplements). 
+• A Questoris Traitoris Household force cannot include any Loyalist Titans of Legend or Blackshield Titans of Legend. 
+• A Questoris Traitoris Household force cannot purchase Stratagems available to Questoris Imperialis, Questoris Mechanicus, or Questoris Oblitus Households.</description>
         </rule>
         <rule id="a702-f75c-a9f7-58df" name="Lust for Blood" publicationId="2988-f24d-39ef-352e" page="91" hidden="false">
-          <description>Once per game, during the Combat phase, a single Questoris
-Traitoris Banner can add 1 to the Dice value of a single
-weapon with the Melee trait of their choice for the remainder
-of the phase. All Knights in the Banner are affected by
-the rule. Only one weapon may be chosen for the entire
-Banner, and all Knights with this weapon add 1 to their Dice
-value for this weapon.</description>
+          <description>Once per game, during the Combat phase, a single Questoris Traitoris Banner can add 1 to the Dice value of a single weapon with the Melee trait of their choice for the remainder of the phase. All Knights in the Banner are affected by the rule. Only one weapon may be chosen for the entire Banner, and all Knights with this weapon add 1 to their Dice value for this weapon.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -190,28 +152,15 @@ value for this weapon.</description>
     <selectionEntry id="f324-b829-8cb6-1bad" name="Questoris Oblitus " hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="e121-f012-6712-4b12" name="Questoris Oblitus " publicationId="2988-f24d-39ef-352e" page="91" hidden="false">
-          <description>• All Knight Banners within a Lance as part of a
-Questoris Oblitus Household force are referred to as
-Questoris Oblitus Banners. 
-• A Questoris Oblitus Household force can purchase
-Stratagems available to any Knight Household and to
-Questoris Oblitus Households.
-• A Questoris Oblitus Household force can include
-Blackshield Titans of Legend as reinforcements.
-• A Questoris Oblitus Household force cannot include
-Loyalist Titans of Legend or Traitor Titans of
-Legend as reinforcements. 
-• A Questoris Oblitus Household force cannot include any
-Psi-Titan, Corrupted Titans or Renegade Knight Banners
-(these will be explored in future supplements).
-• A Questoris Oblitus Household force cannot purchase
-Stratagems available to Questor Imperialis, Questoris
-Mechanicus, or Questoris Traitoris Households.</description>
+          <description>• All Knight Banners within a Lance as part of a Questoris Oblitus Household force are referred to as Questoris Oblitus Banners. 
+• A Questoris Oblitus Household force can purchase Stratagems available to any Knight Household and to Questoris Oblitus Households.
+• A Questoris Oblitus Household force can include Blackshield Titans of Legend as reinforcements.
+• A Questoris Oblitus Household force cannot include Loyalist Titans of Legend or Traitor Titans of Legend as reinforcements. 
+• A Questoris Oblitus Household force cannot include any Psi-Titan, Corrupted Titans or Renegade Knight Banners (these will be explored in future supplements).
+• A Questoris Oblitus Household force cannot purchase Stratagems available to Questor Imperialis, Questoris Mechanicus, or Questoris Traitoris Households.</description>
         </rule>
         <rule id="3809-e722-b503-5a20" name="Firm Resolve" publicationId="2988-f24d-39ef-352e" page="91" hidden="false">
-          <description>Once per round, a Banner within a Questoris Oblitus Lance
-that must take a Command check to see if they become Shaken
-can choose to pass the Command check instead of rolling. </description>
+          <description>Once per round, a Banner within a Questoris Oblitus Lance that must take a Command check to see if they become Shaken can choose to pass the Command check instead of rolling. </description>
         </rule>
       </rules>
       <categoryLinks>
@@ -324,8 +273,7 @@ can choose to pass the Command check instead of rolling. </description>
     <selectionEntry id="5959-611c-3937-8d9b" name="Vengeance" publicationId="975a-00f4-pubN89746" page="40" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="04f9-5b83-a033-adc2" name="Vengeance" publicationId="975a-00f4-pubN89746" page="40" hidden="false">
-          <description> Play this at the end of the battle. At the start of the battle, secretly nominate one enemy unit and make a note of this. At the end of the battle, reveal the nominated unit. If the nominated unit is a Titan, score 2 additional Victory points if it is Structurally Compromised, 3 additional Victory points if it is destroyed. If the nominated unit is a Knight Banner, score l additional Victory point if it is below half of its starting strength
-(rounding up), or 2 additional Victory points if it is destroyed. </description>
+          <description> Play this at the end of the battle. At the start of the battle, secretly nominate one enemy unit and make a note of this. At the end of the battle, reveal the nominated unit. If the nominated unit is a Titan, score 2 additional Victory points if it is Structurally Compromised, 3 additional Victory points if it is destroyed. If the nominated unit is a Knight Banner, score l additional Victory point if it is below half of its starting strength (rounding up), or 2 additional Victory points if it is destroyed. </description>
         </rule>
       </rules>
       <categoryLinks>
