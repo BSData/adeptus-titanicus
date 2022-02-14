@@ -2753,7 +2753,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <entryLink id="3f9b-7dda-849d-ccee" name="Cerastus Knight Acheron" hidden="false" collective="false" import="false" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
             <entryLink id="2895-85a1-7497-c104" name="Cerastus Knight Castigator" hidden="false" collective="false" import="false" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
             <entryLink id="4c38-5159-b94b-514d" name="Cerastus Knight Lancer" hidden="false" collective="false" import="false" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
-            <entryLink id="2134-c88b-f873-a067" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="false" targetId="aed6-0705-b201-ff96" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3516,7 +3515,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <entryLink id="1d50-244f-2c4a-d063" name="Cerastus Knight Acheron" hidden="false" collective="false" import="false" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
             <entryLink id="54dd-da5d-c4ed-dbd2" name="Cerastus Knight Castigator" hidden="false" collective="false" import="false" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
             <entryLink id="697b-e89f-105c-2a4a" name="Cerastus Knight Lancer" hidden="false" collective="false" import="false" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
-            <entryLink id="cf4f-000e-0eeb-cd7e" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="false" targetId="aed6-0705-b201-ff96" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3543,7 +3541,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <entryLink id="cc58-0ba1-67a3-aab5" name="Cerastus Knight Acheron" hidden="false" collective="false" import="false" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry"/>
             <entryLink id="135c-87a4-773f-eb85" name="Cerastus Knight Castigator" hidden="false" collective="false" import="false" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
             <entryLink id="d06d-c78c-32d6-2b12" name="Cerastus Knight Lancer" hidden="false" collective="false" import="false" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
-            <entryLink id="c9b6-ca3b-c09e-a2ce" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="false" targetId="aed6-0705-b201-ff96" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -18133,6 +18130,137 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="190.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9167-7d32-6d19-739d" name="Cerastus Knight Atrapos Banner" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="de21-acab-b7eb-96b0" name="Cerastus Knight" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">12&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">5 (3 with Lord Scion)</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">ignores</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">4 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ca9-efa9-c9af-683c" name="1 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="ce51-a0ec-61b1-2f03" name="2 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f"/>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="785e-7f38-5161-9b59" name="3+ Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
+          <characteristics>
+            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">3+</characteristic>
+            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
+            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
+            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
+            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">6+</characteristic>
+            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4"/>
+          </characteristics>
+        </profile>
+        <profile id="6515-54cc-a38e-d253" name="Cerastus Knight Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">9-12</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-15</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="566d-2f94-666f-e240" name="Macro-Extinction Protocols" hidden="false">
+          <description>A Knight Atrapos may re-roll Hit rolls of  a 1 when targeting units with a Scale 7 of higher.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="8176-d5e9-e21a-d3a9" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
+        <categoryLink id="1fad-75b8-0f95-0922" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+        <categoryLink id="316c-e22a-e3c8-93be" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4882-65c1-6a18-b1fc" name="Cerastus Knight Atrapos Lord Scion" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e180-921c-3e18-8446" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="772a-2825-35cd-577f" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="d7bb-9757-fc36-82ce" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+            <categoryLink id="0c55-d310-fd66-aa5f" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink id="1065-a995-a8b3-81aa" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" targetId="aed6-0705-b201-ff96" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="502c-4cb9-5b03-beec" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1620-964d-32ee-ad93" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="105.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c5a9-52de-3f3a-3174" name="Cerastus Knight Atrapos Scion Martial" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdde-301c-2ac5-fdc6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="067f-fd3e-eabb-0f5a" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="a3f5-7a7a-bd07-820f" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
+            <categoryLink id="e945-be5b-8695-53c5" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink id="cc8a-0ec7-a1f5-70b5" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="true" targetId="aed6-0705-b201-ff96" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a437-34f1-2bd3-132c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e00-4c06-ffe1-d513" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="95.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b89a-99ce-6bce-d05e" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fea0-7fc6-fd97-fa5b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b4c-d6e3-a4b7-b762" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="163b-b970-59fa-74b3" name="Blessed Autosimulacra" hidden="false">
+              <description>During the Damage Control phase, roll a D6 for each Knight Atrapos within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="8fe2-61b1-086b-3864" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="746a-b5de-658c-ae99" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c84-853e-8838-dbe8" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>

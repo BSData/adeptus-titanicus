@@ -1325,6 +1325,12 @@
       </constraints>
       <categoryLinks>
         <categoryLink id="4da5-bb7a-c3e3-f011" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+ 	  </categoryLinks>
+    </entryLink>
+    <entryLink id="abd1-78de-36d9-33fc" name="Cerastus Knight Atrapos Banner" hidden="false" collective="false" import="true" targetId="9167-7d32-6d19-739d" type="selectionEntry">
+      <comment>Freeblade</comment>
+      <categoryLinks>
+        <categoryLink id="18c5-f5d1-adff-9b39" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
