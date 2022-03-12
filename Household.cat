@@ -1311,6 +1311,22 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5942-211d-4834-28bc" type="max"/>
       </constraints>
     </entryLink>
+    <entryLink id="a311-6183-fe16-3256" name="Acastus Knight Asterius Banner" hidden="false" collective="false" import="true" targetId="3997-93d3-81f3-8802" type="selectionEntry">
+      <comment>Freeblade</comment>
+      <modifiers>
+        <modifier type="increment" field="e4a9-c1f7-2e2f-2825" value="1.0">
+          <repeats>
+            <repeat field="forces" scope="5334-72bf-3cf7-d361" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94fe-00c9-e912-2e1a" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4a9-c1f7-2e2f-2825" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4da5-bb7a-c3e3-f011" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2d80-35d6-4ab0-19ca" name="Seneschal" hidden="false" collective="false" import="true" type="upgrade">
@@ -3110,6 +3126,10 @@
               <description>During the Damage Control phase, roll a D6 for each Knight Magaera within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3270,6 +3290,10 @@
               <description>During the Damage Control phase, roll a D6 for each Knight Magaera within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3430,6 +3454,10 @@
               <description>During the Damage Control phase, roll a D6 for each Knight Magaera within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3600,6 +3628,10 @@
               <description>During the Damage Control phase, roll a D6 for each Knight Styrix within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3760,6 +3792,10 @@
               <description>During the Damage Control phase, roll a D6 for each Knight Styrix within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3920,6 +3956,10 @@
               <description>During the Damage Control phase, roll a D6 for each Knight Styrix within the Banner. For each 6+ that is rolled, the Banner recovers one lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
