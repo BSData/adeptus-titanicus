@@ -2340,7 +2340,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5eed-80b3-369c-9e2d" name="House Devine" publicationId="975a-00f4-pubN89746" page="33" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="5eed-80b3-369c-9e2d" name="House Devine" publicationId="bf8b-27d7-039e-5df9" page="74" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="a91f-c8d9-e85c-1236" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
@@ -2439,19 +2439,19 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0e9d-9505-9f03-58ca" name="House Morbidia" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="0e9d-9505-9f03-58ca" name="House Morbidia" publicationId="bf8b-27d7-039e-5df9" page="34" hidden="false" collective="false" import="false" type="upgrade">
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c282-fbc0-ae2d-ab64" name="House Ioeden" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="c282-fbc0-ae2d-ab64" name="House Ioeden" publicationId="bf8b-27d7-039e-5df9" page="114" hidden="false" collective="false" import="false" type="upgrade">
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6f48-de7c-452b-a00f" name="House Oroborn" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="6f48-de7c-452b-a00f" name="House Oroborn" publicationId="bf8b-27d7-039e-5df9" page="124" hidden="false" collective="false" import="false" type="upgrade">
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -2475,19 +2475,19 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="005d-30aa-c2b1-ccef" name="House Mordred" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="005d-30aa-c2b1-ccef" name="House Mordred" publicationId="bf8b-27d7-039e-5df9" page="94" hidden="false" collective="false" import="false" type="upgrade">
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e75d-9086-133f-4411" name="House Malinax" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="e75d-9086-133f-4411" name="House Malinax" publicationId="bf8b-27d7-039e-5df9" page="134" hidden="false" collective="false" import="false" type="upgrade">
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3705-412c-1e49-53bd" name="House Ærthegn" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="3705-412c-1e49-53bd" name="House Ærthegn" publicationId="bf8b-27d7-039e-5df9" page="24" hidden="false" collective="false" import="false" type="upgrade">
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -2505,13 +2505,13 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3536-9bfa-f7ee-4411" name="House Gotrith" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="3536-9bfa-f7ee-4411" name="House Gotrith" publicationId="bf8b-27d7-039e-5df9" page="84" hidden="false" collective="false" import="false" type="upgrade">
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1bc9-96d5-2af4-dafd" name="House Vextrix" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="1bc9-96d5-2af4-dafd" name="House Vextrix" publicationId="bf8b-27d7-039e-5df9" page="104" hidden="false" collective="false" import="false" type="upgrade">
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
