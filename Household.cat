@@ -4530,6 +4530,10 @@
         <entryLink id="3391-3e71-ae84-9910" name="House Caesarean" hidden="false" collective="false" import="true" targetId="4398-fdec-5dfe-f00f" type="selectionEntry"/>
         <entryLink id="1ba9-23aa-5277-c5a4" name="House Hyborax" hidden="false" collective="false" import="true" targetId="e3f0-497f-8920-c64d" type="selectionEntry"/>
         <entryLink id="ed91-51f6-6596-2273" name="House Perdaxia" hidden="false" collective="false" import="true" targetId="5b72-f43b-13d6-e491" type="selectionEntry"/>
+        <entryLink id="8f24-904c-e330-798c" name="House Coldshroud" hidden="false" collective="false" import="true" targetId="81f8-da5d-2144-8760" type="selectionEntry"/>
+        <entryLink id="ae91-6613-e265-6d7f" name="House Terryn" hidden="false" collective="false" import="true" targetId="e41d-b0b7-4694-932a" type="selectionEntry"/>
+        <entryLink id="18bf-ac30-7a23-5d06" name="House Procon Vi" hidden="false" collective="false" import="true" targetId="b7f1-78e4-4115-4b83" type="selectionEntry"/>
+        <entryLink id="2962-c282-c82d-9286" name="House Krast" hidden="false" collective="false" import="true" targetId="b107-461a-0bdc-5bf6" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="43a7-dba2-f75d-3b99" name="Nobility" publicationId="975a-00f4-pubN89746" page="37" hidden="false" collective="false" import="true">
@@ -6357,6 +6361,10 @@ Banners of the same type in a Lance)</description>
                   <description>For the duration of the first round, attacks made against the Seneschal&apos;s Lance suffer a -1 modifier to all Hit rolls.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="46af-502c-3c7b-3cab" name="2 Lightning Assault" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
@@ -6364,6 +6372,10 @@ Banners of the same type in a Lance)</description>
                   <description>In the Movement phase, Banners within the Seneschal&apos;s Lance add 2&quot; to their Speed characteristic when acting with Charge orders.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="1b58-a6e4-5c9b-5abf" name="3 Esteemed Ancestry" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
@@ -6371,6 +6383,10 @@ Banners of the same type in a Lance)</description>
                   <description>As long as the Seneschal is on  the battlefield, Banners within the Seneschal&apos;s Lance cannot be Shaken. However, the Seneschal&apos;s Banner does not add 3 to the result of any of its Command checks, as described in Adeptus Titanicus: Doom of Molech.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -6396,6 +6412,10 @@ Banners of the same type in a Lance)</description>
                   <description>Banners within the Seneschal&apos;s Lance may purchase the Legio Fureans Hunting Auspex Wargear at a cost of +20 points; if the Seneschal&apos;s Banner is an Acastus Knight Banner, the upgrade has a cost of +20 per Knight in the Banner instead. The Hunting Auspex gives the same benefits to the Knights as it does a Titan.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="fb0a-a3f2-c220-39f2" name="2 Chosen Warlord" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
@@ -6403,6 +6423,10 @@ Banners of the same type in a Lance)</description>
                   <description>Banners within the Seneschal&apos;s Lance can never become Shaken. However, from round 2 onwards, the first Order issued with a Banner within the Seneschal&apos;s Lance must be a Charge order.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8fc1-6681-426d-df82" name="3 Ritualistic" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
@@ -6410,6 +6434,10 @@ Banners of the same type in a Lance)</description>
                   <description>In the first round of the game, the Seneschalls Lance may choose to forgo their activation in the Combat phase - in essence doing nothing for that phase but counting as one of the House Perdaxia player&apos;s activations. If they do so, Banners in the Seneschal&apos;s Lance can be issued orders during the second round of the game without the need to make a Command check.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -6435,6 +6463,10 @@ Banners of the same type in a Lance)</description>
                   <description>For each Hit roll of 6 made by the Seneschal&apos;s Banner when attacking with a weapon with the Melee trait, it causes 2 hits rather than 1. However, add 1 to the rsult of all Armour rolls for attacks made with a weapon with the Melee trait against the Seneschal&apos;s Banner.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="75bc-f589-695e-ea0c" name="3 Legacy of Blood" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
@@ -6442,6 +6474,10 @@ Banners of the same type in a Lance)</description>
                   <description>At the end of the Movement phase, enemy Knight Banners within 6&quot; of the Seneschal&apos;s Banner must check to see if they are Shaken, as if one or more Knights within their Banner had been destroyed.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="94ec-4025-a393-cd86" name="1 Boastful Hunter" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
@@ -6449,6 +6485,214 @@ Banners of the same type in a Lance)</description>
                   <description>Banners within the Senescha&apos;ls Lance add 1 to the result of all Armour rolls when making an atack with a weapon with a Melee trait against a unit whose Scale is 3 or more greater than the Banner&apos;s Scale.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2b4a-1779-4638-9bee" name="Coldshroud Qualities" publicationId="3401-191e-1333-8a1d" page="35" hidden="false" collective="false" import="true">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="81f8-da5d-2144-8760" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="8901-85b6-4b83-3e76" value="0.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8901-85b6-4b83-3e76" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="69ab-174f-7f48-b485" name="1 Skirmisher" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="113e-8f76-84b9-9563" name="Skirmisher" publicationId="3401-191e-1333-8a1d" page="35" hidden="false">
+                  <description>Banners within the Seneschal’s Lance may attack in the Combat phase if issued with the Full Stride order. They can only attack with weapons without the Melee trait, can only attack before they move, and apply a -2 modifier to the Hit roll in addition to any other modifiers. However, Banners in the Seneschal’s Lance cannot be issued First Fire orders.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2c3f-c661-ab70-83b1" name="2 Vanguard Leader" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="5ffd-3a50-31a7-b785" name="Vanguard Leader" publicationId="3401-191e-1333-8a1d" page="35" hidden="false">
+                  <description>After deployment but before the first round, Banners within the Seneschal’s Lance may move up to 6&quot;. This can take them outside their normal deployment zone.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="95c9-f5db-a96f-d38d" name="3 Esteemed Ancestry" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="bf5c-dcb7-d474-99cc" name="Esteemed Ancestry" publicationId="3401-191e-1333-8a1d" page="35" hidden="false">
+                  <description>Banners within the Seneschal’s Lance may re-roll Hit rolls of a 1 when attacking an enemy unit with a Scale of double or more than their own.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="346a-2f1c-229c-7e94" name="Terryn Qualities" publicationId="3401-191e-1333-8a1d" page="35" hidden="false" collective="false" import="true">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e41d-b0b7-4694-932a" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="d934-5018-ad86-3230" value="0.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d934-5018-ad86-3230" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3a50-9608-1550-05c3" name="1 Glory Hound" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="94c1-fafd-5721-8665" name="Glory Hound" publicationId="3401-191e-1333-8a1d" page="45" hidden="false">
+                  <description>The Seneschal may issue Charge orders to Banners within their Lance without the need to make a Command check. However, if a Banner within the Seneschal’s Lance fails a Command check when being issued with any other Order, it does not act on its own initiative; instead it must act under Charge orders.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2157-ce9e-632d-f4db" name="2 Peerless Leader" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="d94b-5119-7318-004b" name="Peerless Leader" publicationId="3401-191e-1333-8a1d" page="45" hidden="false">
+                  <description>Once per game, during the Strategy phase, the Seneschal can give commands. If they do so, any Knight Banner with at least one model within 8&quot; of the Seneschal can be issued an Order without the need to make a Command check.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9659-3064-82cf-b1e1" name="3 Resolute" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="dcba-e36f-b14a-0dfb" name="Resolute" publicationId="3401-191e-1333-8a1d" page="45" hidden="false">
+                  <description>When making a Command check to see if they become Shaken, all Banners within 12&quot; of the Seneschal add 1 to the result. In addition, the Seneschal’s Banner can never be Shaken.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9f26-8b8b-14ac-1048" name="Procon Vi Qualities" publicationId="3401-191e-1333-8a1d" page="35" hidden="false" collective="false" import="true">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7f1-78e4-4115-4b83" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="df28-6812-d9d5-425f" value="0.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df28-6812-d9d5-425f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8c70-a4d9-8348-e378" name="1 Shared Lineage" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="76e4-d637-3237-02b5" name="Shared Lineage" publicationId="3401-191e-1333-8a1d" page="65" hidden="false">
+                  <description>Banners in the Seneschal’s Lance can re-roll failed Command checks and cannot be Shaken while within 6&quot; of a friendly Titan.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6f2c-56c2-0703-d78b" name="2 Ancient Bulwark" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="da81-d096-88d2-4c7d" name="Ancient Bulwark" publicationId="3401-191e-1333-8a1d" page="65" hidden="false">
+                  <description>Models in the Seneschal’s Banner always have at least a 6+ Ion Shield save against weapon attacks, regardless of the weapon’s Strength or number of Knights in the Banner.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7722-f73b-5e15-0a7b" name="3 Swift Hunter" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="e8cb-1d4c-6e72-469b" name="Swift Hunter" publicationId="3401-191e-1333-8a1d" page="65" hidden="false">
+                  <description>Banners within the Seneschal’s Lance may be issued Full Stride orders without the need to make a Command check. If a Banner is issued a Full Stride order in this way, subtract 1 from the result of all Hit rolls made against that Banner until the end of the round.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d6b9-3b31-498a-3b20" name="Krast Qualities" publicationId="3401-191e-1333-8a1d" page="35" hidden="false" collective="false" import="true">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b107-461a-0bdc-5bf6" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="08d5-d7c4-a9e8-1fc1" value="0.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08d5-d7c4-a9e8-1fc1" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8638-51ae-6857-e6af" name="1 Vengeance Above All" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="5e71-5e55-bdc9-3358" name="Vengeance Above All" publicationId="3401-191e-1333-8a1d" page="85" hidden="false">
+                  <description>Once per round, the Seneschal’s Banner can choose to activate a second time during the Combat phase. If they do, after resolving the effects of the activation the Banner immediately suffers a Critical Hit, ignoring ion shields.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8701-5a0d-59cf-58a0" name="2 Charismatic Leader" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="39c2-ba97-6cdc-8d8b" name="Charismatic Leader" publicationId="3401-191e-1333-8a1d" page="85" hidden="false">
+                  <description>Friendly Knight Banners within 12&quot; of the Seneschal may re-roll Command checks to see if they become Shaken. Freeblade Banners can benefit from this rule.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="158e-a9e0-290e-8420" name="3 Unwavering" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="1abc-68a2-85db-ae29" name="Unwavering" publicationId="3401-191e-1333-8a1d" page="85" hidden="false">
+                  <description>Each time the Seneschal’s Banner suffers a Critical Hit, roll a D6. On a 5+, that hit becomes a Devastating Hit instead.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

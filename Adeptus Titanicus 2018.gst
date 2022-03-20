@@ -2394,7 +2394,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1b4e-7d7e-d6de-47ae" name="House Tazkhar" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="1b4e-7d7e-d6de-47ae" name="House Tazkhar" publicationId="975a-00f4-pubN89746" page="58" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="5a0c-cec7-a6a1-2d60" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
@@ -2404,33 +2404,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </costs>
     </selectionEntry>
     <selectionEntry id="ce42-548a-1d40-a806" name="House Sidus" publicationId="3401-191e-1333-8a1d" page="124" hidden="false" collective="false" import="false" type="upgrade">
-      <comment>
-                1 Bombard Commander: The Seneschal favours a less direct
-                approach, using the superior speed of their Scions to avoid
-                enemy fire and unleash devastating volleys in return.
-                Once per game, all Banners within the Seneschal’s
-                Lance can be issued a Coordinated Strike, Split Fire or
-                First Fire order without the need to make a Command
-                check. Not all Banners need to be issued an order in
-                this way, but all Banners must be issued the same Order. 2 Scion of Ryza:The Seneschal has served Ryza honourably
-                for centuries, kept alive by ancient technology and bearing
-                the greatest artifice its world has to offer. The weapons carried by the Seneschal’s Banner are of
-                a higher quality than normal. Increase the Strength
-                value of any weapon in the Seneschal’s Banner with
-                a starting Strength value of 4 or higher by 1, to a
-                maximum of Strength 8.
-                3 Favoured Scion: The Seneschal is blessed by the patronage
-                of a prominent Magos of Ryza, granted their favour so long
-                as they bring no dishonour to their name. One model in the Seneschal’s Banner may be upgraded
-                with the Battle Standard Mark of the Omnissiah
-                (see page 104) for free. This model must be part of
-                a Questor Mechanicus Household to do so and the
-                Household Force cannot contain another Battle
-                Standard. However, if the Seneschal’s Banner is ever
-                Shaken, for the remainder of the battle the Battle
-                Standard has no effect and the Seneschal cannot benefit
-                from the Noble Sacrifice rules (see page 38 of Adeptus
-                Titanicus: Doom of Molech).</comment>
+      <comment></comment>
       <categoryLinks>
         <categoryLink id="61ff-631c-ee04-6f50" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
@@ -2439,7 +2413,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6f6c-3458-6a80-f6f0" name="House Taranis" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="6f6c-3458-6a80-f6f0" name="House Taranis" publicationId="3401-191e-1333-8a1d" page="24" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="cfa7-2d31-7a54-5f4c" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
@@ -2448,7 +2422,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2d90-7c1b-b26b-71b9" name="House Zavora" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="2d90-7c1b-b26b-71b9" name="House Zavora" publicationId="3401-191e-1333-8a1d" page="134" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="f0eb-b0ca-b671-ed06" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
@@ -2484,7 +2458,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="700b-e893-eb9d-7104" name="House Orhlacc" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="700b-e893-eb9d-7104" name="House Orhlacc" publicationId="3401-191e-1333-8a1d" page="54" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="c8be-21a4-a52f-e08b" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
@@ -2493,7 +2467,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0ab2-5a39-8159-2e25" name="House Vornherr" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="0ab2-5a39-8159-2e25" name="House Vornherr" publicationId="3401-191e-1333-8a1d" page="104" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="2aa2-24c9-fd6b-c9e8" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
@@ -2502,7 +2476,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="37eb-0ed0-40c5-ebec" name="House Vyronii" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="37eb-0ed0-40c5-ebec" name="House Vyronii" publicationId="3401-191e-1333-8a1d" page="114" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="7948-2a0d-5a6c-d18a" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
@@ -2538,7 +2512,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4087-38c1-1197-7128" name="House Col&apos;Khak" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="4087-38c1-1197-7128" name="House Col&apos;Khak" publicationId="3401-191e-1333-8a1d" page="74" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="1684-90f1-fb7e-7357" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
@@ -2547,7 +2521,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7ef0-68aa-a251-c72e" name="House Moritain" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="7ef0-68aa-a251-c72e" name="House Moritain" publicationId="3401-191e-1333-8a1d" page="94" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
         <categoryLink id="294a-f8f9-3a20-0222" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
@@ -18350,6 +18324,26 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
     <selectionEntry id="e3f0-497f-8920-c64d" name="House Hyboras" publicationId="bf8b-27d7-039e-5df9" page="54" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="f808-6c7c-e602-e496" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="81f8-da5d-2144-8760" name="House Coldshroud" publicationId="3401-191e-1333-8a1d" page="34" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="820c-f55a-389e-bbb2" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="e41d-b0b7-4694-932a" name="House Terryn" publicationId="3401-191e-1333-8a1d" page="44" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="fd4d-271c-3d22-d295" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="b7f1-78e4-4115-4b83" name="House Procon Vi" publicationId="3401-191e-1333-8a1d" page="64" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ee4e-d7ad-a3e3-c792" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="b107-461a-0bdc-5bf6" name="House Krast" publicationId="3401-191e-1333-8a1d" page="84" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a17c-f2cf-40c6-60ac" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
