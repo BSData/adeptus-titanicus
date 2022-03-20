@@ -2359,6 +2359,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </costs>
     </selectionEntry>
     <selectionEntry id="0a25-c423-8854-5b77" name="House Indra" publicationId="975a-00f4-pubN89746" page="50" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2f8a-91df-679c-1599" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -2383,12 +2386,18 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </costs>
     </selectionEntry>
     <selectionEntry id="7741-0027-541e-964c" name="House Mamaragon" publicationId="975a-00f4-pubN89746" page="56" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="dca4-82a4-4afe-24c4" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1b4e-7d7e-d6de-47ae" name="House Tazkhar" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5a0c-cec7-a6a1-2d60" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -2422,96 +2431,144 @@ If the result is 25, move the reactor tracker to its leftmost hole.
                 Standard has no effect and the Seneschal cannot benefit
                 from the Noble Sacrifice rules (see page 38 of Adeptus
                 Titanicus: Doom of Molech).</comment>
+      <categoryLinks>
+        <categoryLink id="61ff-631c-ee04-6f50" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f6c-3458-6a80-f6f0" name="House Taranis" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="cfa7-2d31-7a54-5f4c" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2d90-7c1b-b26b-71b9" name="House Zavora" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f0eb-b0ca-b671-ed06" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0e9d-9505-9f03-58ca" name="House Morbidia" publicationId="bf8b-27d7-039e-5df9" page="34" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a1f5-c368-1ffd-329d" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c282-fbc0-ae2d-ab64" name="House Ioeden" publicationId="bf8b-27d7-039e-5df9" page="114" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ccf3-39e6-4ab7-2df0" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f48-de7c-452b-a00f" name="House Oroborn" publicationId="bf8b-27d7-039e-5df9" page="124" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2740-d8ad-2a01-43fa" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="700b-e893-eb9d-7104" name="House Orhlacc" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c8be-21a4-a52f-e08b" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0ab2-5a39-8159-2e25" name="House Vornherr" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2aa2-24c9-fd6b-c9e8" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="37eb-0ed0-40c5-ebec" name="House Vyronii" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7948-2a0d-5a6c-d18a" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="005d-30aa-c2b1-ccef" name="House Mordred" publicationId="bf8b-27d7-039e-5df9" page="94" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ac62-7f17-91c7-acaa" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e75d-9086-133f-4411" name="House Malinax" publicationId="bf8b-27d7-039e-5df9" page="134" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="16dc-dc30-5b0c-1e24" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3705-412c-1e49-53bd" name="House Ærthegn" publicationId="bf8b-27d7-039e-5df9" page="24" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7729-a31c-9ab0-e48c" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4087-38c1-1197-7128" name="House Col&apos;Khak" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1684-90f1-fb7e-7357" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7ef0-68aa-a251-c72e" name="House Moritain" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="294a-f8f9-3a20-0222" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3536-9bfa-f7ee-4411" name="House Gotrith" publicationId="bf8b-27d7-039e-5df9" page="84" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ec82-b5f3-3379-9db1" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1bc9-96d5-2af4-dafd" name="House Vextrix" publicationId="bf8b-27d7-039e-5df9" page="104" hidden="false" collective="false" import="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2159-c704-6a25-e572" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
