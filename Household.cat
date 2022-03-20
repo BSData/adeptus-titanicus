@@ -4528,7 +4528,7 @@
         <entryLink id="adbb-32f2-5673-c9cc" name="House Gotrith" hidden="false" collective="false" import="false" targetId="3536-9bfa-f7ee-4411" type="selectionEntry"/>
         <entryLink id="ace2-363b-2730-6722" name="House Vextrix" hidden="false" collective="false" import="false" targetId="1bc9-96d5-2af4-dafd" type="selectionEntry"/>
         <entryLink id="3391-3e71-ae84-9910" name="House Caesarean" hidden="false" collective="false" import="true" targetId="4398-fdec-5dfe-f00f" type="selectionEntry"/>
-        <entryLink id="1ba9-23aa-5277-c5a4" name="House Hyborax" hidden="false" collective="false" import="true" targetId="e3f0-497f-8920-c64d" type="selectionEntry"/>
+        <entryLink id="1ba9-23aa-5277-c5a4" name="House Hyboras" hidden="false" collective="false" import="true" targetId="e3f0-497f-8920-c64d" type="selectionEntry"/>
         <entryLink id="ed91-51f6-6596-2273" name="House Perdaxia" hidden="false" collective="false" import="true" targetId="5b72-f43b-13d6-e491" type="selectionEntry"/>
         <entryLink id="8f24-904c-e330-798c" name="House Coldshroud" hidden="false" collective="false" import="true" targetId="81f8-da5d-2144-8760" type="selectionEntry"/>
         <entryLink id="ae91-6613-e265-6d7f" name="House Terryn" hidden="false" collective="false" import="true" targetId="e41d-b0b7-4694-932a" type="selectionEntry"/>
