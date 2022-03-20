@@ -18337,6 +18337,21 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="4398-fdec-5dfe-f00f" name="House Caesarean" publicationId="bf8b-27d7-039e-5df9" page="44" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="dcd9-628f-e6bd-7dcd" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="5b72-f43b-13d6-e491" name="House Perdaxia" publicationId="bf8b-27d7-039e-5df9" page="54" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1ba6-2ffc-2fcb-8890" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="e3f0-497f-8920-c64d" name="House Hyboras" publicationId="bf8b-27d7-039e-5df9" page="54" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f808-6c7c-e602-e496" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">

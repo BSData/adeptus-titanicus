@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="abef-007d-766a-b940" name="Seneschal" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
       <rules>
@@ -4527,6 +4527,9 @@
         <entryLink id="089f-3114-def0-6ffe" name="House Moritain" hidden="false" collective="false" import="false" targetId="7ef0-68aa-a251-c72e" type="selectionEntry"/>
         <entryLink id="adbb-32f2-5673-c9cc" name="House Gotrith" hidden="false" collective="false" import="false" targetId="3536-9bfa-f7ee-4411" type="selectionEntry"/>
         <entryLink id="ace2-363b-2730-6722" name="House Vextrix" hidden="false" collective="false" import="false" targetId="1bc9-96d5-2af4-dafd" type="selectionEntry"/>
+        <entryLink id="3391-3e71-ae84-9910" name="House Caesarean" hidden="false" collective="false" import="true" targetId="4398-fdec-5dfe-f00f" type="selectionEntry"/>
+        <entryLink id="1ba9-23aa-5277-c5a4" name="House Hyborax" hidden="false" collective="false" import="true" targetId="e3f0-497f-8920-c64d" type="selectionEntry"/>
+        <entryLink id="ed91-51f6-6596-2273" name="House Perdaxia" hidden="false" collective="false" import="true" targetId="5b72-f43b-13d6-e491" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="43a7-dba2-f75d-3b99" name="Nobility" publicationId="975a-00f4-pubN89746" page="37" hidden="false" collective="false" import="true">
@@ -6330,6 +6333,123 @@ Banners of the same type in a Lance)</description>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
               </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4cbb-cd5a-8ffe-9b02" name="Caesarean Qualities" publicationId="bf8b-27d7-039e-5df9" page="44" hidden="false" collective="false" import="true">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4398-fdec-5dfe-f00f" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="0831-d96f-74d3-37de" value="0.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0831-d96f-74d3-37de" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="249d-5271-48bb-f752" name="1 Urban Fighter" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="3881-f4e5-a87c-992d" name="Urban Fighter" publicationId="bf8b-27d7-039e-5df9" page="45" hidden="false">
+                  <description>For the duration of the first round, attacks made against the Seneschal&apos;s Lance suffer a -1 modifier to all Hit rolls.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="46af-502c-3c7b-3cab" name="2 Lightning Assault" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="f7a3-6150-2026-0ced" name="Lightning Assault" publicationId="bf8b-27d7-039e-5df9" page="45" hidden="false">
+                  <description>In the Movement phase, Banners within the Seneschal&apos;s Lance add 2&quot; to their Speed characteristic when acting with Charge orders.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="1b58-a6e4-5c9b-5abf" name="3 Esteemed Ancestry" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="602c-6073-34ac-2e42" name="Esteemed Ancestry" publicationId="bf8b-27d7-039e-5df9" page="45" hidden="false">
+                  <description>As long as the Seneschal is on  the battlefield, Banners within the Seneschal&apos;s Lance cannot be Shaken. However, the Seneschal&apos;s Banner does not add 3 to the result of any of its Command checks, as described in Adeptus Titanicus: Doom of Molech.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9b9b-8064-2a01-3685" name="Perdaxia Qualities" publicationId="bf8b-27d7-039e-5df9" page="54" hidden="false" collective="false" import="true">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b72-f43b-13d6-e491" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="662e-afa3-7a23-49c7" value="0.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="662e-afa3-7a23-49c7" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7c79-9298-0cd3-edce" name="1 Devoted Scion" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="288e-170c-4b7e-1bd7" name="Devoted Scion" publicationId="bf8b-27d7-039e-5df9" page="55" hidden="false">
+                  <description>Banners within the Seneschal&apos;s Lance may purchase the Legio Fureans Hunting Auspex Wargear at a cost of +20 points; if the Seneschal&apos;s Banner is an Acastus Knight Banner, the upgrade has a cost of +20 per Knight in the Banner instead. The Hunting Auspex gives the same benefits to the Knights as it does a Titan.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="fb0a-a3f2-c220-39f2" name="2 Chosen Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="397d-171f-d340-4dd6" name="Chosen Warlord" publicationId="bf8b-27d7-039e-5df9" page="55" hidden="false">
+                  <description>Banners within the Seneschal&apos;s Lance can never become Shaken. However, from round 2 onwards, the first Order issued with a Banner within the Seneschal&apos;s Lance must be a Charge order.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="8fc1-6681-426d-df82" name="3 Ritualistic" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="f31d-a0f1-d91d-f195" name="Ritualistic" publicationId="bf8b-27d7-039e-5df9" page="55" hidden="false">
+                  <description>In the first round of the game, the Seneschalls Lance may choose to forgo their activation in the Combat phase - in essence doing nothing for that phase but counting as one of the House Perdaxia player&apos;s activations. If they do so, Banners in the Seneschal&apos;s Lance can be issued orders during the second round of the game without the need to make a Command check.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="019c-c576-4324-8942" name="Hyboras Qualities" publicationId="bf8b-27d7-039e-5df9" page="64" hidden="false" collective="false" import="true">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e3f0-497f-8920-c64d" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="af6b-372d-6be0-49ca" value="0.0"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af6b-372d-6be0-49ca" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ae6e-bf0d-85cd-6e6c" name="2 Savage Fighter" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="a1d5-be1b-4a26-120f" name="Savage Fighter" publicationId="bf8b-27d7-039e-5df9" page="65" hidden="false">
+                  <description>For each Hit roll of 6 made by the Seneschal&apos;s Banner when attacking with a weapon with the Melee trait, it causes 2 hits rather than 1. However, add 1 to the rsult of all Armour rolls for attacks made with a weapon with the Melee trait against the Seneschal&apos;s Banner.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="75bc-f589-695e-ea0c" name="3 Legacy of Blood" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="b26a-357d-ea44-949e" name="Legacy of Blood" publicationId="bf8b-27d7-039e-5df9" page="65" hidden="false">
+                  <description>At the end of the Movement phase, enemy Knight Banners within 6&quot; of the Seneschal&apos;s Banner must check to see if they are Shaken, as if one or more Knights within their Banner had been destroyed.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="94ec-4025-a393-cd86" name="1 Boastful Hunter" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="3bef-63be-6523-504b" name="Boastful Hunter" publicationId="bf8b-27d7-039e-5df9" page="65" hidden="false">
+                  <description>Banners within the Senescha&apos;ls Lance add 1 to the result of all Armour rolls when making an atack with a weapon with a Melee trait against a unit whose Scale is 3 or more greater than the Banner&apos;s Scale.</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
