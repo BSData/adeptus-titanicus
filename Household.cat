@@ -4547,7 +4547,7 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d11-b53f-6331-dd5e" type="max"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="86e3-494c-e17b-d089" name="Divine Qualities" publicationId="975a-00f4-pubN89746" page="46" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="86e3-494c-e17b-d089" name="Devine Qualities" publicationId="bf8b-27d7-039e-5df9" page="74" hidden="false" collective="false" import="true">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -4568,7 +4568,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37b9-6f2b-37a7-1aa4" type="max"/>
               </constraints>
               <rules>
-                <rule id="6df4-0852-c3a1-835b" name="Serpent Cultist" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
+                <rule id="6df4-0852-c3a1-835b" name="Serpent Cultist" publicationId="bf8b-27d7-039e-5df9" page="75" hidden="false">
                   <description>The Seneschal is a secret member of the forbidden Serpent Cult, their personality warped and their bravery increased by its dark. and disturbing rituals. When making a Command check to see if they become Shaken, all Banners within the Seneschal&apos;s Lance add 1 to the dice roll.
 </description>
                 </rule>
@@ -4583,7 +4583,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc22-70d1-b48f-1d24" type="max"/>
               </constraints>
               <rules>
-                <rule id="db96-a363-5cce-6f21" name="Prideful Hunter" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
+                <rule id="db96-a363-5cce-6f21" name="Prideful Hunter" publicationId="bf8b-27d7-039e-5df9" page="75" hidden="false">
                   <description>The Seneschal is drawn to the glory of the Rill and cannot resist when the opportunity presents to bring down the largest and most impressive prey. The Seneschal may issue Charge orders to Banners within their Lance without the need to make a Command check. Additionally, Banners within the Seneschal&apos;s Lance add D3&quot; to their Speed when acting under Charge orders. However, Banners in the Seneschal&apos;s Lance cannot be issued First Fire orders.</description>
                 </rule>
               </rules>
@@ -4597,7 +4597,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8291-e82c-1044-2380" type="max"/>
               </constraints>
               <rules>
-                <rule id="4691-b3e9-3dee-7d6d" name=" Old Guard" publicationId="975a-00f4-pubN89746" page="46" hidden="false">
+                <rule id="4691-b3e9-3dee-7d6d" name=" Old Guard" publicationId="bf8b-27d7-039e-5df9" page="75" hidden="false">
                   <description>The Seneschal is one of Cyprian Devine&apos;s old inner circle and doggedly adheres to their duty and the traditions of the House no matter the cost. Banners within the Seneschal&apos;s Lance can never become Shaken. However, at least one Banner within the Seneschal&apos;s Lance must be given Charge orders in every round from round 2 onwards. </description>
                 </rule>
               </rules>
@@ -5145,7 +5145,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="2a1f-0f2e-e52a-76c8" name="Morbidia Qualities" publicationId="2988-f24d-39ef-352e" page="62" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2a1f-0f2e-e52a-76c8" name="Morbidia Qualities" publicationId="bf8b-27d7-039e-5df9" page="34" hidden="false" collective="false" import="true">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -5166,7 +5166,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73c8-04a8-d33a-7f01" type="max"/>
               </constraints>
               <rules>
-                <rule id="e6e6-d349-19d7-62a6" name="1 Blackhearted" publicationId="2988-f24d-39ef-352e" page="62" hidden="false">
+                <rule id="e6e6-d349-19d7-62a6" name="Blackhearted" publicationId="bf8b-27d7-039e-5df9" page="35" hidden="false">
                   <description>The Seneschal cares not for the weakness of mercy and revels in the cries of fear and the shedding of blood. When making an attack during the Movement phase as part of a Charge order, Knights within the Seneschal’s Banner may re-roll Hit rolls of a 1.</description>
                 </rule>
               </rules>
@@ -5180,7 +5180,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aaf-9fef-e677-8643" type="max"/>
               </constraints>
               <rules>
-                <rule id="73ae-f1bd-3c2e-6cbc" name="Devoid of Virtue" publicationId="2988-f24d-39ef-352e" page="62" hidden="false">
+                <rule id="73ae-f1bd-3c2e-6cbc" name="Devoid of Virtue" publicationId="bf8b-27d7-039e-5df9" page="35" hidden="false">
                   <description>The Seneschal possesses a dread reputation, striking fear into the hearts of any that oppose them. At the end of the Movement phase, enemy Knight Banners within 6&quot; of the Seneschal’s Banner must check to see if they are Shaken, as if one or more Knights within their Banner had been destroyed.</description>
                 </rule>
               </rules>
@@ -5194,7 +5194,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a567-0d58-7b5f-4564" type="max"/>
               </constraints>
               <rules>
-                <rule id="f454-bed8-d1a4-2c80" name="Rule through Fear" publicationId="2988-f24d-39ef-352e" page="62" hidden="false">
+                <rule id="f454-bed8-d1a4-2c80" name="Rule through Fear" publicationId="bf8b-27d7-039e-5df9" page="35" hidden="false">
                   <description>The Seneschal controls their warriors through terror, knowing they will not break if they fear their commander more than their enemy. Banners within the Seneschal’s Lance cannot be Shaken while the Seneschal is on the battlefield. However, the Seneschal’s Banner does not add 3 to the result of any of its Command checks, as described on page 38 of Adeptus Titanicus: Doom of Molech.</description>
                 </rule>
               </rules>
@@ -5205,7 +5205,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="59d6-56fd-aefc-26eb" name="Ioeden Qualities" publicationId="2988-f24d-39ef-352e" page="62" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="59d6-56fd-aefc-26eb" name="Ioeden Qualities" publicationId="bf8b-27d7-039e-5df9" page="114" hidden="false" collective="false" import="true">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -5226,7 +5226,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17c8-fa1c-ed03-bfcb" type="max"/>
               </constraints>
               <rules>
-                <rule id="dab3-044d-1e0d-54f6" name="Hidden Loyalties" publicationId="2988-f24d-39ef-352e" page="64" hidden="false">
+                <rule id="dab3-044d-1e0d-54f6" name="Hidden Loyalties" publicationId="bf8b-27d7-039e-5df9" page="115" hidden="false">
                   <description>The Seneschal is a snake, concealing their loyalties until betrayal will deliver the deadliest of blows. During the Movement phase of the first round, so long as the Seneschal is on the battlefield, Banners within the Seneschal’s Lance can not be targeted by an enemy attack as long as they have not been activated yet that phase. </description>
                 </rule>
               </rules>
@@ -5240,7 +5240,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a315-ad6b-4063-94eb" type="max"/>
               </constraints>
               <rules>
-                <rule id="57d7-1520-da5d-08ad" name="Dishonourable" publicationId="2988-f24d-39ef-352e" page="64" hidden="false">
+                <rule id="57d7-1520-da5d-08ad" name="Dishonourable" publicationId="bf8b-27d7-039e-5df9" page="115" hidden="false">
                   <description>The Seneschal believes a fair fight is one already lost and seeks victory through any means. Models within the Seneschal’s Banner add 1 to their Armour rolls when making attacks against enemy units while within that unit’s Side or Rear arc, in addition to any other modifiers.</description>
                 </rule>
               </rules>
@@ -5254,7 +5254,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07bb-88cc-92a4-ddbd" type="max"/>
               </constraints>
               <rules>
-                <rule id="cba8-2a09-30f5-6f72" name="From the Shadows" publicationId="2988-f24d-39ef-352e" page="64" hidden="false">
+                <rule id="cba8-2a09-30f5-6f72" name="From the Shadows" publicationId="bf8b-27d7-039e-5df9" page="115" hidden="false">
                   <description>: The Seneschal wields misdirection like a weapon, never revealing their plan until the last possible moment. At the start of the Strategy phase of the first round, Banners within the Seneschal’s Lance may be redeployed. These redeployed units can be placed anywhere that they would normally be allowed to deploy by the mission being played.</description>
                 </rule>
               </rules>
@@ -5265,7 +5265,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ca88-f44e-6692-0e72" name="Oroborn Qualities" publicationId="2988-f24d-39ef-352e" page="66" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ca88-f44e-6692-0e72" name="Oroborn Qualities" publicationId="bf8b-27d7-039e-5df9" page="124" hidden="false" collective="false" import="true">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -5286,7 +5286,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf20-fea5-6b64-234a" type="max"/>
               </constraints>
               <rules>
-                <rule id="4bcd-b082-cb7f-6b92" name="All But Dead" publicationId="2988-f24d-39ef-352e" page="66" hidden="false">
+                <rule id="4bcd-b082-cb7f-6b92" name="All But Dead" publicationId="bf8b-27d7-039e-5df9" page="125" hidden="false">
                   <description>A foul change has gripped the Seneschal, for they feel neither pain nor joy, driven only by a burning need to conquer in the name of the Warmaster. As long as the Seneschal is on the battlefield, the Seneschal’s Banner cannot be Shaken. In addition, reduce the Strength value of any attack made against the Seneschal’s Banner by 1, to a minimum of 1. However, the Seneschal’s Banner does not add 3 to the result of any of its Command checks, as described on page 38 of Adeptus Titanicus: Doom of Molech</description>
                 </rule>
               </rules>
@@ -5300,7 +5300,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05b2-6a1f-e6df-d1c4" type="max"/>
               </constraints>
               <rules>
-                <rule id="c317-7b6d-34a4-d9fd" name="Noxious" publicationId="2988-f24d-39ef-352e" page="60" hidden="false">
+                <rule id="c317-7b6d-34a4-d9fd" name="Noxious" publicationId="bf8b-27d7-039e-5df9" page="125" hidden="false">
                   <description>The joints of the Seneschal’s armour weep foul fluids, each drop rusting armour and decaying flesh. Any unit, friend or foe, within 2&quot; of the Seneschal’s Banner when it is activated in the Combat phase suffers D3 S4 hits. Titans suffer these hits to their Legs. House Oroborn units are not affected by this rule. However, the Seneschal’s Banner may not include a Battle Standard.</description>
                 </rule>
               </rules>
@@ -5314,7 +5314,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85df-f246-0d3c-b41f" type="max"/>
               </constraints>
               <rules>
-                <rule id="b2a6-9ab7-396c-dcbc" name="Broken Soul" publicationId="2988-f24d-39ef-352e" page="60" hidden="false">
+                <rule id="b2a6-9ab7-396c-dcbc" name="Broken Soul" publicationId="bf8b-27d7-039e-5df9" page="125" hidden="false">
                   <description> 3 Last of their Line: The Seneschal has so far staved off the worst of the corruption rooted within their Household and seeks an honourable death before they too are consumed. As long as the Seneschal is on the battlefield, Banners within the Seneschal’s Lance may be issued Charge orders without the need to make a Command check. However, at least one Banner within the Seneschal’s Lance must be given Charge orders in every round from round 2 onwards if possible.</description>
                 </rule>
               </rules>
@@ -5505,7 +5505,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="8819-25c1-8384-a0e9" name="Mordred Qualities" publicationId="3265-f408-cc9b-bfa3" page="56" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8819-25c1-8384-a0e9" name="Mordred Qualities" publicationId="bf8b-27d7-039e-5df9" page="94" hidden="false" collective="false" import="true">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -5526,7 +5526,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e16e-2cc4-1637-f6d2" type="max"/>
               </constraints>
               <rules>
-                <rule id="7be1-5dd1-3025-e182" name="Ancestral Pride" publicationId="3265-f408-cc9b-bfa3" page="56" hidden="false">
+                <rule id="7be1-5dd1-3025-e182" name="Ancestral Pride" publicationId="bf8b-27d7-039e-5df9" page="95" hidden="false">
                   <description>The Seneschal holds unshakeable faith in the rites and rituals performed by their ancestors, believing they are the key to victory against all odds. In the first round of the game, the Seneschal’s Lance may choose to forgo their activation in the Combat phase – in essence doing nothing for that phase but counting as one of the House Mordred player’s activations. If they do so, Banners in the Seneschal’s Lance can be issued orders during the second round of the game without the need to make a Command check.</description>
                 </rule>
               </rules>
@@ -5540,7 +5540,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f94-4b26-1fd3-922a" type="max"/>
               </constraints>
               <rules>
-                <rule id="2440-b613-031d-889e" name="Tapestry of Deeds" publicationId="3265-f408-cc9b-bfa3" page="56" hidden="false">
+                <rule id="2440-b613-031d-889e" name="Tapestry of Deeds" publicationId="bf8b-27d7-039e-5df9" page="95" hidden="false">
                   <description>Each victory the Seneschal achieves is immortalised upon their standard to inspire all who look upon it. If the Seneschal’s Banner contains a Battle Standard, and the Knight carrying the Battle Standard is part of the Banner, friendly Banners within 12&quot; of the Seneschal’s Banner cannot be Shaken</description>
                 </rule>
               </rules>
@@ -5554,7 +5554,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bd7-c4ef-85c1-0dcb" type="max"/>
               </constraints>
               <rules>
-                <rule id="fc47-9dee-0238-2032" name="Aggression Unbound" publicationId="3265-f408-cc9b-bfa3" page="56" hidden="false">
+                <rule id="fc47-9dee-0238-2032" name="Aggression Unbound" publicationId="bf8b-27d7-039e-5df9" page="95" hidden="false">
                   <description>The field of battle is the Seneschal’s true home and the only place they feel alive. When acting under Charge orders during the Movement phase, one Knight per Banner within the Seneschal’s Lance may add D3 to the Dice value of a single weapon</description>
                 </rule>
               </rules>
@@ -5565,7 +5565,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6766-9a39-0de7-e3e5" name="Malinax Qualities" publicationId="3265-f408-cc9b-bfa3" page="56" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="6766-9a39-0de7-e3e5" name="Malinax Qualities" publicationId="bf8b-27d7-039e-5df9" page="134" hidden="false" collective="false" import="true">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -5586,7 +5586,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b62f-2ad9-b278-a1f2" type="max"/>
               </constraints>
               <rules>
-                <rule id="d00d-5d0d-c66b-2fc4" name="Elusive" publicationId="3265-f408-cc9b-bfa3" page="58" hidden="false">
+                <rule id="d00d-5d0d-c66b-2fc4" name="Elusive" publicationId="bf8b-27d7-039e-5df9" page="135" hidden="false">
                   <description>The Seneschal is secretive and reserved by nature, surrounded by a web of lies that conceals their true identity. If the Seneschal is destroyed, the player may choose a friendly Banner of the same type as the Seneschal’s Banner to designate as the new Seneschal’s Banner. One model of your choice within that Banner is designated as the Seneschal, replacing the Lord Scion or High Scion if one is present. The Banner follows all rules for containing a Seneschal’s Banner but has no Knightly Quality. Only the Lance designated as the Seneschal’s Lance during battlegroup selection counts for the purpose of determining Victory points and other scenario effects, however the new Banner counts as the Seneschal’s Banner for the same purpose. When choosing Stratagems, the presence of the Seneschal does not add additional Stratagem points.</description>
                 </rule>
               </rules>
@@ -5600,7 +5600,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7532-07da-90bb-c32e" type="max"/>
               </constraints>
               <rules>
-                <rule id="3d2f-5a95-4c68-0146" name="Trusted Bearer" publicationId="3265-f408-cc9b-bfa3" page="58" hidden="false">
+                <rule id="3d2f-5a95-4c68-0146" name="Trusted Bearer" publicationId="bf8b-27d7-039e-5df9" page="135" hidden="false">
                   <description>The Seneschal is trusted with ancient technology designed to enhance the weaponry of its bearer and must be preserved no matter the cost. Knights within the Seneschal’s Banner may re-roll any Armour rolls of a 1 for any attacks they make with a weapon without the Melee trait. However, the Seneschal’s Banner cannot be issued Charge orders.</description>
                 </rule>
               </rules>
@@ -5614,7 +5614,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3c0-366b-8da0-a86c" type="max"/>
               </constraints>
               <rules>
-                <rule id="3c43-d43d-f6dd-9a4b" name="Favoured Scion" publicationId="3265-f408-cc9b-bfa3" page="58" hidden="false">
+                <rule id="3c43-d43d-f6dd-9a4b" name="Favoured Scion" publicationId="bf8b-27d7-039e-5df9" page="135" hidden="false">
                   <description>The Seneschal is a favoured child of Xana II and has access to advanced modifications for their suits, a display of favouritism that displeases other Scions. When the Seneschal’s Banner suffers a Direct Hit, roll a D6. On the roll of a 5 or 6, the hit is ignored. However, the Seneschal’s Banner does not add 3 to the result of any of its Command checks, as described on page 38 of Adeptus Titanicus: Doom of Molech.</description>
                 </rule>
               </rules>
@@ -5625,7 +5625,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d2b9-a633-e3a8-581e" name="Ærthegn Qualities" publicationId="3265-f408-cc9b-bfa3" page="60" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="d2b9-a633-e3a8-581e" name="Ærthegn Qualities" publicationId="bf8b-27d7-039e-5df9" page="24" hidden="false" collective="false" import="true">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -5646,7 +5646,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6271-707d-5240-9e07" type="max"/>
               </constraints>
               <rules>
-                <rule id="8a6b-e339-6e77-d354" name="Methodical Butcher" publicationId="3265-f408-cc9b-bfa3" page="60" hidden="false">
+                <rule id="8a6b-e339-6e77-d354" name="Methodical Butcher" publicationId="bf8b-27d7-039e-5df9" page="25" hidden="false">
                   <description>The Seneschal is infamous for the brutal efficiency with which they destroy their foes. Knights in the Seneschal’s Banner may re-roll Armour rolls of a 1 for attacks made with a Melee weapon if they are issued a Charge order. However, the Seneschal’s Banner cannot be issued Coordinated Strike orders.</description>
                 </rule>
               </rules>
@@ -5660,7 +5660,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="548b-591f-0b1d-42b6" type="max"/>
               </constraints>
               <rules>
-                <rule id="a143-fd6f-0260-df51" name="Bloodlust" publicationId="3265-f408-cc9b-bfa3" page="60" hidden="false">
+                <rule id="a143-fd6f-0260-df51" name="Bloodlust" publicationId="bf8b-27d7-039e-5df9" page="25" hidden="false">
                   <description>The Seneschal becomes little more than a frothing madman during battle, throwing aside rational behaviour in search of a kill. The Seneschal may issue Charge orders to Banners within their Lance without the need to make a Command check. However, if a Banner within the Seneschal’s Lance fails a Command test when being issued with any other order, it does not act on its own initiative; instead it must act under Charge orders.</description>
                 </rule>
               </rules>
@@ -5674,7 +5674,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e314-99da-6c5e-56cc" type="max"/>
               </constraints>
               <rules>
-                <rule id="fc29-4daf-33d6-df90" name="Furious Assault" publicationId="3265-f408-cc9b-bfa3" page="60" hidden="false">
+                <rule id="fc29-4daf-33d6-df90" name="Furious Assault" publicationId="bf8b-27d7-039e-5df9" page="25" hidden="false">
                   <description>The Seneschal revels in fighting up close and rains blow after blow upon their opponents with no thought to their own safety. For each Hit roll of 6 made by the Seneschal’s banner when attacking with a Melee weapon, it causes 2 hits rather than 1. However, add 1 to the Armour roll for attacks made with a Melee weapon against the Seneschal’s banner.</description>
                 </rule>
               </rules>
@@ -5805,7 +5805,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b3fb-3062-2790-3555" name="Gotrith Qualities" publicationId="ce02-a882-fdad-dd36" page="64" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="b3fb-3062-2790-3555" name="Gotrith Qualities" publicationId="bf8b-27d7-039e-5df9" page="84" hidden="false" collective="false" import="true">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -5826,7 +5826,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a265-ce51-c884-f8b6" type="max"/>
               </constraints>
               <rules>
-                <rule id="5ee1-ad4b-194d-ee90" name="Destroyer of Civilisations" publicationId="ce02-a882-fdad-dd36" page="64" hidden="false">
+                <rule id="5ee1-ad4b-194d-ee90" name="Destroyer of Civilisations" publicationId="bf8b-27d7-039e-5df9" page="85" hidden="false">
                   <description>The Seneschal has overseen the fall of entire worlds, feeling truly alive only when crushing all before them. Models within the Seneschal’s Banner add 1 to the result of all Armour rolls for attacks made against a target of a Scale at least 6 higher than themselves.</description>
                 </rule>
               </rules>
@@ -5840,7 +5840,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="590a-f57c-ecc0-b806" type="max"/>
               </constraints>
               <rules>
-                <rule id="a531-fa4b-51d7-5922" name="Furious Assault" publicationId="ce02-a882-fdad-dd36" page="64" hidden="false">
+                <rule id="a531-fa4b-51d7-5922" name="Furious Assault" publicationId="bf8b-27d7-039e-5df9" page="85" hidden="false">
                   <description>The Seneschal revels in fighting up close and rains blow after blow upon their opponents with no thought to their own safety. For each Hit roll of 6 made by the Seneschal’s Banner when attacking with a weapon with the Melee trait, it causes 2 hits rather than 1. However, add 1 to the result of all Armour rolls for attacks made with a weapon with the Melee trait against the Seneschal’s </description>
                 </rule>
               </rules>
@@ -5854,9 +5854,8 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e64f-fee0-ece1-bde6" type="max"/>
               </constraints>
               <rules>
-                <rule id="6854-b39e-7783-c6e9" name="Urban Fighter" publicationId="ce02-a882-fdad-dd36" page="64" hidden="false">
-                  <description>The Seneschal has a reputation for their skill in urban warfare, able to stalk the streets and strike before anyone knows they are there. For the duration of the first round, attacks made against a Banner within the Seneschal’s Lance suffer a
--2 modifier to the Hit roll if the target model is at least 25% obscured, rather than the usual -1.</description>
+                <rule id="6854-b39e-7783-c6e9" name="Urban Fighter" publicationId="bf8b-27d7-039e-5df9" page="85" hidden="false">
+                  <description>The Seneschal has a reputation for their skill in urban warfare, able to stalk the streets and strike before anyone knows they are there. For the duration of the first round, attacks made against a Banner within the Seneschal’s Lance suffer a -2 modifier to the Hit roll if the target model is at least 25% obscured, rather than the usual -1.</description>
                 </rule>
               </rules>
               <costs>
@@ -5866,7 +5865,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3135-27be-8ef4-771c" name="Vextrix Qualities" publicationId="ce02-a882-fdad-dd36" page="66" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="3135-27be-8ef4-771c" name="Vextrix Qualities" publicationId="bf8b-27d7-039e-5df9" page="104" hidden="false" collective="false" import="true">
           <modifierGroups>
             <modifierGroup>
               <conditions>
@@ -5887,7 +5886,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2fe-f0c4-05ce-5508" type="max"/>
               </constraints>
               <rules>
-                <rule id="69fb-ea31-ca74-135e" name="Dauntless" publicationId="ce02-a882-fdad-dd36" page="66" hidden="false">
+                <rule id="69fb-ea31-ca74-135e" name="Dauntless" publicationId="bf8b-27d7-039e-5df9" page="105" hidden="false">
                   <description>A veteran of war, the Seneschal has strode dozens of battlefields and nothing will stop them from achieving victory. As long as the Seneschal is on the battlefield, the Seneschal’s Banner cannot be Shaken.</description>
                 </rule>
               </rules>
@@ -5901,7 +5900,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd63-948e-0c86-aa66" type="max"/>
               </constraints>
               <rules>
-                <rule id="fbcf-3b4d-e57f-beb9" name="2 Soul of Decay" publicationId="ce02-a882-fdad-dd36" page="66" hidden="false">
+                <rule id="fbcf-3b4d-e57f-beb9" name="Soul of Decay" publicationId="bf8b-27d7-039e-5df9" page="105" hidden="false">
                   <description>A rot has taken hold within the Seneschal, changing their very being into a creature seemingly immune to pain. Whenever the Seneschal’s Banner suffers Critical or Devastating Damage, roll a D6. On a 6, the damage is reduced by one level, i.e., a Critical Hit becomes Devastating Hit, a Devastating Hit becomes a Direct Hit.</description>
                 </rule>
               </rules>
@@ -5915,7 +5914,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a651-975b-25b5-05af" type="max"/>
               </constraints>
               <rules>
-                <rule id="2bbe-9039-9957-7a07" name="Implacable Foe" publicationId="ce02-a882-fdad-dd36" page="66" hidden="false">
+                <rule id="2bbe-9039-9957-7a07" name="Implacable Foe" publicationId="bf8b-27d7-039e-5df9" page="105" hidden="false">
                   <description>The Seneschal has never met a foe they cannot kill, laying waste to some of the greatest champions of civilisations across the galaxy. Knights within the Seneschal’s Banner may re-roll Armour rolls of a 1 when making an attack during the Movement phase as part of a Charge </description>
                 </rule>
               </rules>
