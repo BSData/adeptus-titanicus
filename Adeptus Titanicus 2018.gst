@@ -18389,6 +18389,9 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="17bf-670a-47ec-a737" name="Stalker" hidden="false" targetId="c349-f29d-fbef-76c9" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="39eb-22c8-e3d6-e6ff" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink id="d001-0b93-f45c-01e4" name="DireWolfTitan" hidden="false" targetId="d173-87e6-9f1b-1aaa" primary="true"/>
@@ -18451,6 +18454,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="210.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b967-d555-0090-2218" name="Ardex Defensor Mega-Bolter" hidden="false" collective="false" import="true" type="upgrade">
@@ -18480,6 +18484,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d178-20d4-d7ab-992d" name="Neutron Laser" hidden="false" collective="false" import="true" type="upgrade">
@@ -18510,6 +18515,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f374-419b-269d-50e3" name="Volcano Cannon [DW]" hidden="false" collective="false" import="true" type="upgrade">
@@ -19494,6 +19500,9 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
     </rule>
     <rule id="8239-240b-bf2f-fba5" name="Retainers" hidden="false">
       <description>A battlegroup may include a single Banner of Retainers as Reinforcements for every non-Retainer Knight Banner in the battlegroup. Banners of Retainers cannot be taken as part of a maniple, while Knight Lances can only include a maximum of one Retainer Banner. Banners of Retainers do not count towards the maximum number of Knight Banners allowed per maniple in a Legio battlegroup.</description>
+    </rule>
+    <rule id="c349-f29d-fbef-76c9" name="Stalker" hidden="false">
+      <description>This Titan is deployed after all other units. Players take it in turns, starting with the player who has control of the battlefield, to deploy one Titan with the Stalker rule anywhere on the battlefield. The Titan must be at least 8&quot;, and at least 50% obscured, from enemy units - these conditions do not apply if it is deployed in the controlling player&apos;s deployment zone. This Titan counts as deployed for the purposes of detemining which player finished deploying first.</description>
     </rule>
   </sharedRules>
 </gameSystem>
