@@ -512,6 +512,11 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     </categoryEntry>
     <categoryEntry id="d173-87e6-9f1b-1aaa" name="DireWolfTitan" hidden="false"/>
     <categoryEntry id="0917-7b11-20d7-2296" name="Torso" hidden="false"/>
+    <categoryEntry id="b2c2-c5d6-ee00-6736" name="Auxiliary Titan" hidden="false">
+      <infoLinks>
+        <infoLink id="fe83-c22c-b0d9-dd08" name="Auxiliary Titan" hidden="false" targetId="8e9d-aea7-06fc-55f7" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -13627,9 +13632,13 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="eba8-4123-b6e8-8cb8" name="Auxiliary Titan" hidden="false" targetId="8e9d-aea7-06fc-55f7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="6c54-363e-23cf-0e6c" name="New CategoryLink" hidden="false" targetId="c37f-5ca9-9d98-5cf0" primary="true"/>
         <categoryLink id="e5dd-4763-2ead-cde7" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink id="581e-fe63-34ff-c79b" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="91e8-4476-60da-5d84" name="Weapons" hidden="false" collective="false" import="false">
@@ -14043,8 +14052,12 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="3467-1b55-7511-fb65" name="Auxiliary Titan" hidden="false" targetId="8e9d-aea7-06fc-55f7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c23d-49ed-df0a-056c" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="cbff-0ef8-f81c-c21d" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f27e-cbf0-3fe6-58e0" name="Weapons" hidden="false" collective="false" import="false">
@@ -17171,8 +17184,12 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="cf18-e17a-3996-fa63" name="Auxiliary Titan" hidden="false" targetId="8e9d-aea7-06fc-55f7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="b28a-80a5-9436-3e23" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="1014-03f9-469f-bc52" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7de5-7f04-9af4-48ad" name="Weapons" hidden="false" collective="false" import="true">
@@ -18391,10 +18408,12 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       </profiles>
       <infoLinks>
         <infoLink id="17bf-670a-47ec-a737" name="Stalker" hidden="false" targetId="c349-f29d-fbef-76c9" type="rule"/>
+        <infoLink id="90f9-aa5f-fbf1-7f37" name="Auxiliary Titan" hidden="false" targetId="8e9d-aea7-06fc-55f7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="39eb-22c8-e3d6-e6ff" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink id="d001-0b93-f45c-01e4" name="DireWolfTitan" hidden="false" targetId="d173-87e6-9f1b-1aaa" primary="true"/>
+        <categoryLink id="0f9d-1fcf-293c-116c" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0bf3-b565-0a0b-83f8" name="Weapons" hidden="false" collective="false" import="true">
@@ -19503,6 +19522,9 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
     </rule>
     <rule id="c349-f29d-fbef-76c9" name="Stalker" hidden="false">
       <description>This Titan is deployed after all other units. Players take it in turns, starting with the player who has control of the battlefield, to deploy one Titan with the Stalker rule anywhere on the battlefield. The Titan must be at least 8&quot;, and at least 50% obscured, from enemy units - these conditions do not apply if it is deployed in the controlling player&apos;s deployment zone. This Titan counts as deployed for the purposes of detemining which player finished deploying first.</description>
+    </rule>
+    <rule id="8e9d-aea7-06fc-55f7" name="Auxiliary Titan" hidden="false">
+      <description>This Titan is an Auxiliary Titan. A battlegroup can include a maximum of 1 Auxiliary Titan as Reinforcements per maniple or Knight Lance in the battlegroup.</description>
     </rule>
   </sharedRules>
 </gameSystem>
