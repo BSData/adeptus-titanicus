@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="abef-007d-766a-b940" name="Seneschal" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
       <rules>
@@ -1334,6 +1334,11 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="a3d6-1592-4820-8678" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" targetId="c45d-04e4-f35f-8b20" type="selectionEntry"/>
+    <entryLink id="cfc9-8061-b6b9-8a78" name="Dire Wolf Titan" hidden="false" collective="false" import="true" targetId="76b8-ecdb-cbf6-0c45" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b416-7d3e-0ce1-88ab" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2d80-35d6-4ab0-19ca" name="Seneschal" hidden="false" collective="false" import="true" type="upgrade">

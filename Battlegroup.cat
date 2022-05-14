@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -906,6 +906,11 @@
     <entryLink id="abe4-c85c-73b6-1aaf" name="Cerastus Knight Atrapos Banner" hidden="false" collective="false" import="true" targetId="9167-7d32-6d19-739d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="8b07-8368-d9c0-056e" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cd15-0d60-20eb-9426" name="Dire Wolf Titan" hidden="false" collective="false" import="true" targetId="76b8-ecdb-cbf6-0c45" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="79bc-1d9a-779e-55a5" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
