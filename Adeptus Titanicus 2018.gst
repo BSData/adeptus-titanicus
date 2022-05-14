@@ -511,6 +511,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </constraints>
     </categoryEntry>
     <categoryEntry id="d173-87e6-9f1b-1aaa" name="DireWolfTitan" hidden="false"/>
+    <categoryEntry id="0917-7b11-20d7-2296" name="Torso" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -18395,11 +18396,24 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup id="0bf3-b565-0a0b-83f8" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
-            <selectionEntryGroup id="e784-1a99-6384-3040" name="Arms" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="8126-1aec-8408-b5dd" name="Carapace" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f68-b449-cdba-ce0f" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50e0-201a-ea4c-c034" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de20-e2ac-ec1a-9477" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8301-7ebb-2535-7652" type="max"/>
               </constraints>
+              <entryLinks>
+                <entryLink id="68e4-c7c8-4547-6f61" name="Neutron Laser" hidden="false" collective="false" import="true" targetId="d178-20d4-d7ab-992d" type="selectionEntry"/>
+                <entryLink id="4b99-39d1-1564-0722" name="Volcano Cannon [DW]" hidden="false" collective="false" import="true" targetId="f374-419b-269d-50e3" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="18e3-70a6-6b01-5c60" name="Torso" hidden="false" collective="false" import="true" defaultSelectionEntryId="09a9-fa35-d484-a36d">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bc3-6799-6be8-89dc" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0be-6de0-b668-9d7b" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="09a9-fa35-d484-a36d" name="Ardex Defensor Mega-Bolter" hidden="false" collective="false" import="true" targetId="b967-d555-0090-2218" type="selectionEntry"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -18437,6 +18451,94 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="210.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b967-d555-0090-2218" name="Ardex Defensor Mega-Bolter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f2cb-a7bb-b245-5f1c" name="Ardex Defensor Mega-Bolter" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">10&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">20&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Paired, Rapid</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d5db-4adc-f2ab-8fa8" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="a79d-98a7-f7e9-2ac9" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="83bf-0352-a634-4264" name="Paired" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false"/>
+        <categoryLink id="35f2-269d-684d-0dc6" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
+        <categoryLink id="2965-af54-b96f-6170" name="Torso" hidden="false" targetId="0917-7b11-20d7-2296" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d178-20d4-d7ab-992d" name="Neutron Laser" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b49d-af61-d33c-8a31" name="Neutron Laser" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">7</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">60&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Bypass, Carapace, Draining, Shock</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="37a8-bbe3-897e-cadf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="2187-d1b0-1bda-fea6" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="b1d3-0c08-d1b8-df83" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink id="6803-f5b5-f93e-a161" name="Shock" hidden="false" targetId="d3e0-093e-a13d-3deb" primary="false"/>
+        <categoryLink id="3256-a45c-fb63-d8d6" name="Bypass" hidden="false" targetId="719c-7b89-a08d-4acc" primary="false"/>
+        <categoryLink id="de8b-236b-d961-08f5" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f374-419b-269d-50e3" name="Volcano Cannon [DW]" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="650a-1497-8a2d-9e00" name="Volcano Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">60&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Draining, Carapace</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6885-aaa1-3e58-eb6a" name="New CategoryLink" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="7c3f-b195-ab4e-56d9" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink id="112f-5e1b-24db-0c65" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="cc9d-232f-1203-7cd0" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
