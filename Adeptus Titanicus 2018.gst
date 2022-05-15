@@ -353,13 +353,14 @@ Units can move across Battlefield Assets without penalty. If a Titan&apos;s base
     <categoryEntry id="06ab-258d-46aa-3b1f" name="Qualifier-SpecialMissiles" hidden="false"/>
     <categoryEntry id="f7cb-94c3-1bc4-1d94" name="Qualifier-BolterWeapons" hidden="false"/>
     <categoryEntry id="5959-24a2-6bd7-ad76" name="Qualifier-Blast3Weapons" hidden="false"/>
-    <categoryEntry id="87f5-9eef-f2bc-d248" name="Impale" hidden="false">
+    <categoryEntry id="87f5-9eef-f2bc-d248" name="Impale" publicationId="bf8b-27d7-039e-5df9" page="167" hidden="false">
       <rules>
         <rule id="c660-4152-ef3e-aeba" name="Impale" publicationId="3265-f408-cc9b-bfa3" page="95" hidden="false">
-          <description>After resolving an attack from an Impale weapon against a Titan, do not make an Armour roll. Instead, if the attack Hits, roll a D6 and add the strength of the weapon. if resolving an attack from an Impale weapon as part of a Coordinated Strike, resolve the attacks of all contributing Titans first, making a note of how many attacks from Impale weapons successfully hit. Then roll a D6, adding the Strength value of all contributing weapons, and apply a +1 modifier for each Impale weapon beyond the first that successfully hit.
- If the total of the roll is equal to the target unit&apos;s Scale, roll a D6. On a 1-3, the target unit turns 90° to its right. On a 4-6, the target unit turns to 90° to its left. If the total of the roll is higher than the target unit&apos;s Scale, the target unit turns as described above and the immediately suffers D3+1 Devastating Hits to its Legs. If the target unit suffers Catastrophic Damage table - the target unit automatically suffers the Laid Low result instead. If the total of the roll is lower that the target unit&apos;s Scale, or a natural 1 is rolled, each unit contributing to the attack immediately suffers a Devastating Hit to their Legs and a S7 hit against and Impale weapons that successfully hit as part of the Coordinated Strike.
-Attacks made by Impale weapon bypass void shields.
-                    </description>
+          <description>After resolving an attack from an Impale weapon against a Titan, do not make an Armour roll. Instead, roll a D6 if the attack hit, adding the Strength of the weapon to the result. If resolving an attack from an Impale weapon as part of a Coordinated Strike, resolve the attacks of all contributing Titans first, making a note of how many attacks from Impale weapons successfully hit. 
+Then roll a D6, adding the Strenght value of the Impale weapon, using the highest Strenght value of all contributing weapons, and apply a +1 modifier for each Impale weapon beyond the first that successfully hit to the result of the roll.
+
+If the total of the roll is equal to or lower than the target unit&apos;s Scale, roll a D6. On a 1-3, the target unit turns 90° to its right. On a 4-6, the target unit turns to 90° to its left. If the total of the roll is higher than the target unit&apos;s Scale, the target unit turns as described above and the immediately suffers D3+1 Devastating Hits to its Legs. If the target unit suffers Catastrophic Damage as a result of this attack, do not roll on the the Catastrophic Damage table - the target unit automatically suffers the Laid Low result instead. If a natural 1 is rolled, nothing happens to the target unit and each unit that contributed to the attack and scored one or more hits against the target unit immediately suffers a Devastating Hit to their Legs and a S7 hit against any Impale weapons that successfully hit as part of the Coordinated Strike. 
+Attacks made by Impale weapons bypass void shields.</description>
         </rule>
       </rules>
     </categoryEntry>
