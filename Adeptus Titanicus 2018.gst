@@ -5,6 +5,8 @@
 
 To create a Household Battlegroup add a Household to your Roster. Each Lance is a separate Force that needs to be added to your Household. Reinforcements can then be added directly to your Household, or each of your added Lance forces!
 
+NOTE: On mobile, the &apos;add force&apos; dialog adds a Lance automatically when selecting the &apos;Household&apos; catalog in the &apos;Select Catalogue&apos; step (so basically you select &apos;Household&apos; twice). This is more clear on the desktop version of the app where you can clearly see you are selecting a Lance. This is an issue with BS, most likely because there is only 1 Force to choose from.
+
 </readme>
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
