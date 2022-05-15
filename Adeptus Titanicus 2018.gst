@@ -365,8 +365,8 @@ Attacks made by Impale weapon bypass void shields.
     </categoryEntry>
     <categoryEntry id="d3e0-093e-a13d-3deb" name="Shock" hidden="false">
       <rules>
-        <rule id="ba56-ef3a-5e94-2516" name="Shock" publicationId="3265-f408-cc9b-bfa3" page="95" hidden="false">
-          <description>If an attack from a Shock weapon causes a Direct, Devastating or Critical Hit on a Titan, roll a D6. on a 4+, the Titan is immediately issued Shutdown order, replacing any order it already has. Any Shutdown Order received due to an attack from a Shock weapon is removed during the End phase of the round it was issued.</description>
+        <rule id="ba56-ef3a-5e94-2516" name="Shock" publicationId="bf8b-27d7-039e-5df9" page="167" hidden="false">
+          <description>If an attack from a Shock weapon causes a Direct, Devastating or Critical Hit on a Titan, roll a D6. On a 3+, the Titan is immediately issued a Shutdown order, replacing any order it already has. If an attack from a Shock weapon causes a Superficial Hit, then roll a D6. On a 6+, the target Titan is immediately issued a Shutdown order. Any Shutdown order received due to an atack from a Shock weapon is removed during the End phase of the round it was issued.</description>
         </rule>
       </rules>
     </categoryEntry>
