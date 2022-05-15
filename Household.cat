@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="46" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="abef-007d-766a-b940" name="Seneschal" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
       <rules>
@@ -551,27 +551,146 @@
       </entryLinks>
     </entryLink>
     <entryLink id="reaver-support-household" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="1c5d-06d5-421b-bbd1" value="1.0">
+          <repeats>
+            <repeat field="forces" scope="5334-72bf-3cf7-d361" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94fe-00c9-e912-2e1a" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="1c5d-06d5-421b-bbd1" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5122-cb02-8703-ce88" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dfeb-83af-7b26-622a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ad7-cd10-8d6e-8c2e" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c5d-06d5-421b-bbd1" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="0237-b896-cf2d-fd8c" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="warlord-support-household" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="1d07-87e1-9cb3-ac5e" value="1.0">
+          <repeats>
+            <repeat field="forces" scope="5334-72bf-3cf7-d361" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94fe-00c9-e912-2e1a" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="1d07-87e1-9cb3-ac5e" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ff1-81bc-203d-620c" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dfeb-83af-7b26-622a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ad7-cd10-8d6e-8c2e" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d07-87e1-9cb3-ac5e" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="fd7f-32e2-ba13-32eb" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="warbringer-support-household" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="c374-86bb-b9ff-c4a7" value="1.0">
+          <conditions>
+            <condition field="forces" scope="5334-72bf-3cf7-d361" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94fe-00c9-e912-2e1a" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="c374-86bb-b9ff-c4a7" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c374-86bb-b9ff-c4a7" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="adde-353e-0207-cfb6" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="sinister-support-household" name="Warlord-Sinister Titan" hidden="false" collective="false" import="false" targetId="dfeb-83af-7b26-622a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="8db0-06e6-80fa-5512" value="1.0">
+          <conditions>
+            <condition field="forces" scope="5334-72bf-3cf7-d361" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94fe-00c9-e912-2e1a" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8db0-06e6-80fa-5512" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="3542-a0f1-8d51-4ad7" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="warmaster-support-household" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry"/>
+    <entryLink id="warmaster-support-household" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="ddc2-b383-3fe2-af44" value="1.0">
+          <conditions>
+            <condition field="forces" scope="5334-72bf-3cf7-d361" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94fe-00c9-e912-2e1a" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="ddc2-b383-3fe2-af44" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddc2-b383-3fe2-af44" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6ae6-7720-7f93-0719" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="warhound-squadron-household-support" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
+      <modifiers>
+        <modifier type="decrement" field="37bd-218a-2218-7907" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5122-cb02-8703-ce88" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dfeb-83af-7b26-622a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9ff1-81bc-203d-620c" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="37bd-218a-2218-7907" value="1.0">
+          <repeats>
+            <repeat field="forces" scope="5334-72bf-3cf7-d361" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94fe-00c9-e912-2e1a" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37bd-218a-2218-7907" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="3750-e8c8-26e7-efec" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
@@ -1333,7 +1452,58 @@
         <categoryLink id="18c5-f5d1-adff-9b39" name="New CategoryLink" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a3d6-1592-4820-8678" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" targetId="c45d-04e4-f35f-8b20" type="selectionEntry"/>
+    <entryLink id="a3d6-1592-4820-8678" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" targetId="c45d-04e4-f35f-8b20" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="7c33-aa53-19b0-5ba4" value="1.0">
+          <conditions>
+            <condition field="forces" scope="5334-72bf-3cf7-d361" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94fe-00c9-e912-2e1a" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="7c33-aa53-19b0-5ba4" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c33-aa53-19b0-5ba4" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c1fd-8938-7362-64da" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cfc9-8061-b6b9-8a78" name="Dire Wolf Titan" hidden="false" collective="false" import="true" targetId="76b8-ecdb-cbf6-0c45" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="1667-22cf-4940-065f" value="1.0">
+          <conditions>
+            <condition field="forces" scope="5334-72bf-3cf7-d361" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94fe-00c9-e912-2e1a" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="1667-22cf-4940-065f" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1667-22cf-4940-065f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b416-7d3e-0ce1-88ab" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2d80-35d6-4ab0-19ca" name="Seneschal" hidden="false" collective="false" import="true" type="upgrade">
