@@ -103,6 +103,23 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="warbringer-support-battlegroup" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
+      <modifiers>
+        <modifier type="decrement" field="899d-e89e-d228-8aa9" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="0b8b-755a-cabc-6d70" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="899d-e89e-d228-8aa9" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="899d-e89e-d228-8aa9" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="adde-353e-0207-cfb6" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
@@ -112,7 +129,25 @@
         <categoryLink id="3542-a0f1-8d51-4ad7" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="warmaster-support-battlegroup" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry"/>
+    <entryLink id="warmaster-support-battlegroup" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry">
+      <modifiers>
+        <modifier type="decrement" field="f4cb-602c-5bdb-858d" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="f4cb-602c-5bdb-858d" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4cb-602c-5bdb-858d" type="max"/>
+      </constraints>
+    </entryLink>
     <entryLink id="573e-1025-b9ca-55d0" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ad03-604a-3a36-5298" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
@@ -872,7 +907,25 @@
         <categoryLink id="d316-0996-34ef-a634" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="02ae-1f94-83f2-f648" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" targetId="c45d-04e4-f35f-8b20" type="selectionEntry"/>
+    <entryLink id="02ae-1f94-83f2-f648" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" targetId="c45d-04e4-f35f-8b20" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="40c5-e5d3-834b-64bf" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="40c5-e5d3-834b-64bf" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40c5-e5d3-834b-64bf" type="max"/>
+      </constraints>
+    </entryLink>
     <entryLink id="4174-c2c4-e29b-7ed7" name="Armiger Knights Banner" hidden="false" collective="false" import="false" targetId="11c3-a34f-1748-cf07" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ec0d-3c08-8cbc-7888" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
@@ -915,9 +968,16 @@
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="decrement" field="d1f4-e731-c0e0-30de" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1f4-e731-c0e0-30de" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1f4-e731-c0e0-30de" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="79bc-1d9a-779e-55a5" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
