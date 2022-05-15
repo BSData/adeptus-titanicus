@@ -7632,6 +7632,22 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="8b79-c28b-2c9d-b806" name="Heavy Scout Titan" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3301-d943-92a4-d5b6" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8b60-39ad-ef1f-66e5" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="8d7a-93c8-860c-ea0f" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="228f-f7a7-d85a-c515" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -7743,6 +7759,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="d011-abe9-ffd9-10b6" value="1.0">
@@ -7805,6 +7822,29 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b748-294a-79f4-8fe0" type="min"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a92-925d-ed87-f1bb" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6232-e6cb-e49c-5747" name="Dire Wolf Titan" hidden="true" collective="false" import="true" targetId="76b8-ecdb-cbf6-0c45" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="055e-09da-4524-d5a3" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="f5d3-89bc-e622-8efb" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5d3-89bc-e622-8efb" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="055e-09da-4524-d5a3" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -9926,6 +9966,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="a10c-04b0-24c7-38cf" value="1.0">
