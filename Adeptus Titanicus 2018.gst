@@ -533,7 +533,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="bad0-317f-20ed-813e" name="Weapon Destroyed" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bad0-317f-20ed-813e" name="Weapon Destroyed" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7459-5184-5cda-9065" type="max"/>
       </constraints>
@@ -4621,7 +4621,7 @@ The fire then goes out.</description>
         <categoryLink id="4218-83ed-2b66-dbd6" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="407c-0b10-4319-984d" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="407c-0b10-4319-984d" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
@@ -4656,7 +4656,7 @@ The fire then goes out.</description>
         <categoryLink id="c6e8-1b72-e14c-9e8e" name="Maximal Fire" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="489d-4d8a-9ab0-8ebe" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="489d-4d8a-9ab0-8ebe" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -4691,7 +4691,7 @@ The fire then goes out.</description>
         <categoryLink id="13f6-915b-f8d1-4281" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="130f-8533-e7be-2428" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="130f-8533-e7be-2428" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
@@ -4918,7 +4918,7 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
         <categoryLink id="0860-bcbf-6fa9-175b" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c6df-3abd-589f-c90e" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="c6df-3abd-589f-c90e" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
@@ -5088,7 +5088,7 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <categoryLink id="b4ac-e296-2579-a493" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b522-48c9-380c-21bf" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="b522-48c9-380c-21bf" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
@@ -5124,7 +5124,7 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <categoryLink id="e9d3-ce0a-60fc-44a1" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="84e0-fcbd-06f5-a4b4" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="84e0-fcbd-06f5-a4b4" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
@@ -5160,7 +5160,7 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <categoryLink id="3869-edca-ad10-4c32" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f24c-29c1-442a-c465" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="f24c-29c1-442a-c465" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="80.0"/>
@@ -5195,7 +5195,7 @@ Fortidus may re-roll Command checks to avoid becoming Shaken provided they are w
         <categoryLink id="761b-052c-8de7-2d14" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b4c1-3e8f-38df-6400" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="b4c1-3e8f-38df-6400" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
@@ -6674,7 +6674,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         <categoryLink id="d49c-b8f4-a52c-728d" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="46c0-b1a7-4fc8-7f42" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="46c0-b1a7-4fc8-7f42" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -13212,7 +13212,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="8653-959b-23d3-cd5a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9fdf-0495-68b4-07cb" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="9fdf-0495-68b4-07cb" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
@@ -13244,7 +13244,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="b7e8-44d6-7cbd-f450" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6167-9d9f-9f79-3867" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="6167-9d9f-9f79-3867" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -13277,7 +13277,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="de9b-186c-462e-de11" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5e93-1c88-a70c-fc1b" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="5e93-1c88-a70c-fc1b" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
@@ -13310,7 +13310,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="e12b-9239-334b-6ac5" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f188-d23d-d7e1-1c3f" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="f188-d23d-d7e1-1c3f" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
@@ -13343,7 +13343,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="f92d-1497-f2a6-ae30" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b5df-841b-210b-a0a4" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="b5df-841b-210b-a0a4" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
@@ -13376,7 +13376,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="e6e2-d4cb-b0fa-d569" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5d09-d8ed-7360-0d4a" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="5d09-d8ed-7360-0d4a" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -13408,7 +13408,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="99d8-7869-619e-c643" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="57a3-180b-0f7d-7ffd" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="57a3-180b-0f7d-7ffd" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
@@ -13455,7 +13455,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="6e19-0b5e-f4ac-5902" name="Qualifier-StaticRounds" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="558c-ae48-6cc0-ebf6" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="558c-ae48-6cc0-ebf6" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="c49c-97f7-5e62-6d41" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
@@ -13493,7 +13493,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="f171-36ff-f4eb-082e" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="ef15-4c97-4ef7-9c43" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="ef15-4c97-4ef7-9c43" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -13525,7 +13525,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="4fef-31c0-7c78-47a6" name="Ordnance" hidden="false" targetId="5ad8-0ca8-4bb7-83b6" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f73b-291c-5e1a-f3ad" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="f73b-291c-5e1a-f3ad" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
@@ -13558,7 +13558,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="c1b3-6cc6-b28d-ce25" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2623-4f1a-6a29-25af" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="2623-4f1a-6a29-25af" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -13626,7 +13626,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="5ca4-19fb-d2bb-3e89" name="JanusQualifier" hidden="false" targetId="06ab-258d-46aa-3b1f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6303-cfd0-6a1a-c9ee" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="6303-cfd0-6a1a-c9ee" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
@@ -13658,7 +13658,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="1e8e-830d-91dc-42be" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3b7a-76d2-d1eb-7257" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="3b7a-76d2-d1eb-7257" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
@@ -13691,7 +13691,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="ed33-27bc-886f-1fe9" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b747-4979-9ec0-5205" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="b747-4979-9ec0-5205" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -13724,7 +13724,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="0a1d-e8c3-acb5-aa1f" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="1da7-b1ca-378b-6d13" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="1da7-b1ca-378b-6d13" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
@@ -13757,7 +13757,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="186e-5993-6e22-fecf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="38ed-3d00-a5ec-8a60" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="38ed-3d00-a5ec-8a60" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -13791,7 +13791,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="0b1d-b3d5-b057-5fec" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3ce4-21dc-baa0-9567" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="3ce4-21dc-baa0-9567" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -13860,7 +13860,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="79c0-8961-c4ea-c5d9" name="JanusQualifier" hidden="false" targetId="06ab-258d-46aa-3b1f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5fa1-9b8c-18ec-c87c" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="5fa1-9b8c-18ec-c87c" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -13900,7 +13900,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="decb-1557-2de8-c50e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3142-627e-de68-5a41" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="3142-627e-de68-5a41" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="f488-be0f-7490-948b" name="=Magna= Directed Pressure Outlet" hidden="false" collective="false" import="false" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -13935,7 +13935,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="6637-327e-bf82-7190" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e993-7231-9458-b05d" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="e993-7231-9458-b05d" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
@@ -13967,7 +13967,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="294a-ed52-cda5-cea6" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="cd2f-c7a0-0f89-8198" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="cd2f-c7a0-0f89-8198" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -13999,7 +13999,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="cafa-ef6a-f696-7e3e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0487-6aac-5294-3b10" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="0487-6aac-5294-3b10" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
@@ -14047,7 +14047,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="e7fe-318f-0686-817d" name="Qualifier-StaticRounds" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9ec9-aebc-d6ca-d60d" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="9ec9-aebc-d6ca-d60d" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="5b8e-af29-b85a-e157" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
@@ -14099,7 +14099,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="13f1-7b0c-63e2-efdb" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b36b-f4ee-e2a9-f796" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="b36b-f4ee-e2a9-f796" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="1e76-599c-c07e-26b7" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
@@ -14335,7 +14335,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="768d-0cfc-9a53-fa70" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="3b7f-aa92-4cd2-e209" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="3b7f-aa92-4cd2-e209" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="55.0"/>
@@ -14368,7 +14368,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="6dc2-3e2e-cadf-636a" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b44a-29bc-48ed-5ba3" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="b44a-29bc-48ed-5ba3" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -14404,7 +14404,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="db4a-4f94-e290-3d69" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="429d-427a-9e98-67c3" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="429d-427a-9e98-67c3" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -14439,7 +14439,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="fc35-d22d-0a4d-b07b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="720f-f146-07e7-bc12" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="720f-f146-07e7-bc12" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -14587,7 +14587,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="35c6-657f-fef4-0013" name="Taxing" hidden="false" targetId="d9b5-b91c-0693-fc39" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5c3b-0ff4-ed3e-6672" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="5c3b-0ff4-ed3e-6672" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -14735,7 +14735,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="1aa7-5da7-275f-0dd0" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="77d3-4fb2-1c06-318c" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="77d3-4fb2-1c06-318c" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="70.0"/>
@@ -14768,7 +14768,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="0ede-c55f-a5d0-a3f0" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="4f75-d279-028b-c888" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="4f75-d279-028b-c888" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -14800,7 +14800,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="8b4c-0fba-7864-cb6c" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="8adf-0ace-ba97-fe5e" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="8adf-0ace-ba97-fe5e" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -14840,7 +14840,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="acea-cf4f-491d-c894" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c5bd-e809-c7bb-1655" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="c5bd-e809-c7bb-1655" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="aa63-be01-3e1a-895a" name="=Magna= Directed Pressure Outlet" hidden="false" collective="false" import="false" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -14874,7 +14874,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="3493-e7cd-e9b1-c439" name="New CategoryLink" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="abb1-a002-5836-d4b8" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="abb1-a002-5836-d4b8" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
@@ -14906,7 +14906,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="a769-62e5-7329-3f2a" name="New CategoryLink" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="8cc6-206d-ae93-a902" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="8cc6-206d-ae93-a902" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
@@ -14953,7 +14953,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="dd45-0ee3-9662-d5c1" name="New CategoryLink" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d44c-32a4-9a5c-2b55" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="d44c-32a4-9a5c-2b55" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="7a5d-6ca3-e345-9e83" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
@@ -14991,7 +14991,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <categoryLink id="305d-910d-21e1-5e2f" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5e58-4f29-485f-3681" name="Weapon Destroyed" hidden="false" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="5e58-4f29-485f-3681" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -17495,10 +17495,13 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </profiles>
       <categoryLinks>
         <categoryLink id="34b1-0844-b92f-4352" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
-        <categoryLink id="a57d-ed71-5a7c-f574" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
+        <categoryLink id="a57d-ed71-5a7c-f574" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="f5ee-6ca8-458f-b8cf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="a25e-a4c3-d463-9d59" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="e65e-e5a1-190c-57fd" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -17527,6 +17530,9 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <categoryLink id="4dae-813a-858f-d2a5" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="false"/>
         <categoryLink id="4aef-7f11-00ba-89f9" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="707d-c397-ef99-6a3f" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -17552,12 +17558,15 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </profiles>
       <categoryLinks>
         <categoryLink id="7a18-29f1-1985-5963" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
-        <categoryLink id="0bc4-44ef-2564-069e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
+        <categoryLink id="0bc4-44ef-2564-069e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="e4a4-bbd8-e794-09ea" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="d546-6679-7d4c-f7c7" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
         <categoryLink id="85e3-3232-4627-b203" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
         <categoryLink id="ee6c-7629-e207-b1b1" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="cd14-9724-9dc5-2abe" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -17847,7 +17856,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink id="1c90-cd4a-2ce0-b3b2" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="1c90-cd4a-2ce0-b3b2" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
@@ -17881,7 +17890,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <categoryLink id="629e-44f2-7cf3-05da" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a505-6880-5939-fd32" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="a505-6880-5939-fd32" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -17915,7 +17924,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <categoryLink id="d89d-0d5b-4096-52f8" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d99b-53d7-0a3d-6b1c" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="d99b-53d7-0a3d-6b1c" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -17950,7 +17959,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink id="5a71-d40b-f6ab-329a" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d1cc-97ab-a150-63dd" name="Weapon Destroyed" hidden="false" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="d1cc-97ab-a150-63dd" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
