@@ -522,6 +522,28 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     </categoryEntry>
     <categoryEntry id="e1ea-4e6f-d353-2cc4" name="Replace optional Warhound with Dire Wolf" hidden="false"/>
     <categoryEntry id="fbd3-5e33-6755-835f" name="Replace Reaver with Dire Wolf" hidden="false"/>
+    <categoryEntry id="9329-8448-1502-f1d1" name="LegioCrusade" publicationId="3265-f408-cc9b-bfa3" page="p93" hidden="false"/>
+    <categoryEntry id="c473-fa3e-8002-49ab" name="Ablative Ceramite Plating" hidden="false"/>
+    <categoryEntry id="3a3a-b384-c49f-61ff" name="Armour Spikes" hidden="false"/>
+    <categoryEntry id="fd5d-c162-4f07-94c2" name="Auxiliary Shield Capacitors" hidden="false"/>
+    <categoryEntry id="1566-6904-d727-7f9c" name="Blind Missiles" hidden="false"/>
+    <categoryEntry id="3bdf-54e8-437f-6bff" name="Crusade Banners" hidden="false"/>
+    <categoryEntry id="be9e-bd56-3125-b325" name="Macro Magazines" hidden="false"/>
+    <categoryEntry id="1ec7-9af8-fe78-c873" name="Multiple Warhead Launchers" hidden="false"/>
+    <categoryEntry id="598e-5696-26c9-54b0" name="Plasma Rifling" hidden="false"/>
+    <categoryEntry id="df4a-a746-5049-5c6f" name="Ranging Auspexes" hidden="false"/>
+    <categoryEntry id="2f60-f408-aebe-f8cd" name="Reactor Fetters" hidden="false"/>
+    <categoryEntry id="f03e-2c70-6202-e81c" name="Secondary Shield Generators" hidden="false"/>
+    <categoryEntry id="97c9-0bce-fc01-46f4" name="Autoloaders" hidden="false"/>
+    <categoryEntry id="5221-b61f-f881-45e7" name="Macro Charges" hidden="false"/>
+    <categoryEntry id="8eed-a57c-a7f9-6ec6" name="Tracking Gyroscopes" hidden="false"/>
+    <categoryEntry id="40cd-b4c6-809f-9acf" name="Fusion Missiles" hidden="false"/>
+    <categoryEntry id="7318-705d-7b35-c278" name="Gravitonic Stabilisers" hidden="false"/>
+    <categoryEntry id="f834-a2e8-bf06-4d7c" name="Diabatic Warheads" hidden="false"/>
+    <categoryEntry id="eac2-b1e4-777f-0f0f" name="Seismic Auspex" hidden="false"/>
+    <categoryEntry id="e5b2-df10-f0a7-0c6f" name="Hunting Motives" hidden="false"/>
+    <categoryEntry id="cf86-f025-9c57-043d" name="Unguis Stabilisers" hidden="false"/>
+    <categoryEntry id="fbc7-50e2-22e0-38b4" name="Vox Screech" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -12614,6 +12636,14 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d00-c954-d909-610e" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="b00e-0f50-4b4a-4e21" name="Crusade Legion" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="c040-29dd-6042-3b8d" name="Legio Astorum (Warp Runners)" hidden="false" collective="false" import="false" targetId="dbd6-65fd-6354-a154" type="selectionEntry">
               <categoryLinks>
@@ -12782,6 +12812,585 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
               </categoryLinks>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7708-bf77-5df8-acb1" name="Crusade Legion" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b00e-0f50-4b4a-4e21" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e33b-6374-0144-3866" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="c238-f93f-553a-bd44" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+            <categoryLink id="c769-3087-9574-66bb" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="068f-3e79-3e36-81bb" name="Legio Stratagems" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e3d-ddb7-f9a4-f79f" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="7f0f-4037-7081-96d7" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="f5f7-7cd8-70a3-7ee2" name="Marked Prey" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa3e-4d9b-85f6-d79f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="592f-e062-c3b6-8edb" name="Opening Salvo" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e980-2d5f-953d-1fcf" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="17bf-5782-8c48-5e29" name="Blistering March" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f303-3d91-700a-6e9a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="967e-0695-68c7-7644" name="Fuelled by Hatred" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9173-9444-97fd-39d4" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3802-c07b-d2d2-52d3" name="Target Lock" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6aa3-767d-7816-b92b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f176-1745-657b-4292" name="Enduring Gods" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a12-9a7f-3f4f-ade6" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="27d1-6609-7a35-3119" name="Reactionary Fire" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b75e-7112-b7a9-c91f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="eaad-75e1-baf8-6df3" name="Electromagnetic Overload" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a330-e8ab-d684-4e0f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b8d3-4a7c-67b4-ee14" name="Vindictive in Death" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dab-97bf-2416-6826" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="bc41-d235-5b44-8bde" name="Eye for an Eye" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="718c-80d7-4860-a0ad" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7808-ed0b-6271-7304" name="Locomotive Override" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f33-8e6d-b64e-dce9" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3654-9cff-85be-76e1" name="Directed Radburst" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b3c-f798-1fd2-b306" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2162-3997-7d07-8b28" name="Scouting Run" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="946e-fa15-1831-b131" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d64a-2fab-a22b-f7ff" name="Power Reserves" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad15-b93a-0bd3-67a6" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6ce0-2da0-5e4e-2be1" name="Reactor Surge" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2413-9ccb-7f3e-a3b0" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="2426-d3ce-660d-7025" name="Legio Traits" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e71d-324c-5284-f228" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="1597-0b00-cb8d-6db6" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="57a7-f8b0-ba3f-d5e8" name="Dark Reputation" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6b8-af88-b2f8-423c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="eb74-1645-c41b-abeb" name="Elite Magos" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba5a-c1c8-61a4-34c4" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4d51-0946-7e85-111b" name="Engines of War" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff62-7b39-9550-5c18" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9b32-4201-6a3d-451f" name="Fury of the Fallen" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3def-2127-2dc5-8aaf" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5e9c-9a4a-c117-4aff" name="Gunnery Command" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67c7-03b2-e73f-5757" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="73f1-da25-84e9-5c66" name="Loci of the Cause" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7856-67ca-6d23-b95b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1ea3-be67-29bb-b10f" name="Motive Mastery" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b17-fbeb-2258-53b5" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ce55-2dda-75b8-1e9f" name="Plaything of the Gods" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e094-7885-d773-8208" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0be8-6136-987c-2cc5" name="Duty and Honour" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c93-6a03-938a-67af" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3d91-31de-5703-c02e" name="The Path to Ascension" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ca8-5716-85ea-67f1" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="28bc-b530-df52-c02e" name="Noble Lineage" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1707-bba4-a1d8-8ec9" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7cab-7968-7507-fc35" name="Towering Exemplar" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9999-3417-a7ba-26fc" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5cfe-906b-4e61-5f70" name="Blood-fuelled" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b3-3fe5-a94b-d784" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d79b-13fc-a77b-3225" name="Forwards to Glory" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcfe-3584-68bd-277d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6da4-f625-47bc-c1ad" name="Vanguard Fighters" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4458-5d30-4ce9-3510" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5b72-bfec-73c2-4924" name="Masters of Defence" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49d0-ab33-06f6-c11e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="dbb9-de76-dd5e-2138" name="Legio Wargear" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5703-7e78-3edb-5166" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="6226-596c-78ca-9235" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="ab76-e8ba-eece-5405" name="Ablative Ceramite Plating" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7844-e56f-7335-2d92" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="7c4f-e672-3f0c-4ff3" name="Ablative Ceramite Plating" hidden="false" targetId="c473-fa3e-8002-49ab" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c812-47e1-3b14-817c" name="Armour Spikes" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5526-389d-bff1-2283" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="4901-b504-7e6a-20fd" name="Armour Spikes" hidden="false" targetId="3a3a-b384-c49f-61ff" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1f03-2b50-3cff-9efa" name="Auxiliary Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6278-5d0a-ed9d-2a40" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="44bc-0faa-5167-e821" name="Auxiliary Shield Capacitors" hidden="false" targetId="fd5d-c162-4f07-94c2" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0650-92fc-8cbf-7fd8" name="Blind Missiles" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f86a-acdb-80cf-24b0" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="fc8c-2d7e-f9b8-ca28" name="Blind Missiles" hidden="false" targetId="1566-6904-d727-7f9c" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5edd-107f-a5bc-1333" name="Crusade Banners" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b1b-d7b6-e8be-c984" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="0b5c-f201-390a-f120" name="Crusade Banners" hidden="false" targetId="3bdf-54e8-437f-6bff" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="06d1-5ccc-9983-7ad9" name="Macro Magazines" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d376-0127-8ac7-1877" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="f2f8-4786-5bac-0011" name="Macro Magazines" hidden="false" targetId="be9e-bd56-3125-b325" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3140-6b36-9c57-f59e" name="Multiple Warhead Launchers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cc5-ae18-97ec-2823" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="34a5-3a8a-be60-0dd4" name="Multiple Warhead Launchers" hidden="false" targetId="1ec7-9af8-fe78-c873" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8ae0-021b-312c-fa7b" name="Plasma Rifling" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da86-a0f3-b0ce-4705" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="4cdb-3558-51b0-48df" name="Plasma Rifling" hidden="false" targetId="598e-5696-26c9-54b0" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="17bc-23b6-c375-94f4" name="Ranging Auspexes" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8058-c9f3-41cf-3c91" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="9d20-655c-e98a-81ea" name="Ranging Auspexes" hidden="false" targetId="df4a-a746-5049-5c6f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4492-a379-acb9-f987" name="Reactor Fetters" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aba4-ccc8-9f29-d473" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="05ce-45d9-441e-3ee8" name="Reactor Fetters" hidden="false" targetId="2f60-f408-aebe-f8cd" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="db6e-57f8-1f49-7215" name="Secondary Shield Generators" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a0c-5c8d-a24b-b34d" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="4fe7-17c4-0db0-400c" name="Secondary Shield Generators" hidden="false" targetId="f03e-2c70-6202-e81c" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e533-372b-c9b4-4f13" name="Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce10-a9d1-86f1-2bea" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="9116-6ea7-a642-039f" name="Autoloaders" hidden="false" targetId="97c9-0bce-fc01-46f4" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="42a0-b785-3b00-b618" name="Macro Charges" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7df-5fb7-fd10-0d83" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="e19a-39b5-9efe-1733" name="Macro Charges" hidden="false" targetId="5221-b61f-f881-45e7" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="12ae-a386-868d-be5b" name="Tracking Gyroscopes" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12e8-9f0d-3662-f2aa" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="e2e2-d879-e8d6-ffde" name="Tracking Gyroscopes" hidden="false" targetId="8eed-a57c-a7f9-6ec6" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2697-d70b-3ae9-8d57" name="Fusion Missiles" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7375-073c-c77f-7fa5" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="a657-fbeb-5281-3fe4" name="Fusion Missiles" hidden="false" targetId="40cd-b4c6-809f-9acf" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6e6e-a651-c9ba-d4c7" name="Gravitonic Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23dd-db97-15e6-265d" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="d11f-f668-f8ff-3c8c" name="Gravitonic Stabilisers" hidden="false" targetId="7318-705d-7b35-c278" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e5e5-23b9-1241-9c08" name="Diabatic Warheads" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36e9-c327-7012-4ffb" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="d6a3-ed0a-10f2-de31" name="Diabatic Warheads" hidden="false" targetId="f834-a2e8-bf06-4d7c" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="711d-2ce1-d701-2cbc" name="Hunting Motives" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b187-ae90-04a8-a15b" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="ad9f-3110-7b53-f669" name="Hunting Motives" hidden="false" targetId="e5b2-df10-f0a7-0c6f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9b5b-50de-d969-1921" name="Unguis Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3259-e09f-018c-ad5b" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="fb27-cc29-1d68-59af" name="Unguis Stabilisers" hidden="false" targetId="cf86-f025-9c57-043d" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="db5d-3fea-6278-f6f9" name="Vox Screech" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5387-1c0b-5180-d44e" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="321a-9eab-df20-c91e" name="Vox Screech" hidden="false" targetId="fbc7-50e2-22e0-38b4" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fc82-977a-8274-1b59" name="Seismic Auspex" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4e3-375d-2061-d2f0" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="cf07-f0b5-64af-88e4" name="Seismic Auspex" hidden="false" targetId="eac2-b1e4-777f-0f0f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -14315,7 +14924,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0a2-bcaf-7f29-9ee3" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="fc7a-b856-2fe3-566f" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="fc7a-b856-2fe3-566f" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
         <entryLink id="014f-fb41-12dd-1860" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
           <categoryLinks>
             <categoryLink id="d8ba-fd36-d3a1-e997" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
@@ -19191,6 +19800,39 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="985e-c339-0b77-e617" name="=Crusade= Ablative Ceramite Plating" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ca7-eb51-2c59-e143" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="085a-e2c2-3bdf-737a" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="c364-44a7-cf77-ea90" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ec20-60be-dbf7-f2b9" name="=Crusade= Armour Spikes" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9329-8448-1502-f1d1" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da91-c598-1518-fac5" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e047-3969-8906-d036" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="3e47-166f-eb9d-aaac" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -19659,6 +20301,24 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7edc-cb03-0022-9d9b" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d76-a8f2-679f-57a9" type="min"/>
           </constraints>
+        </entryLink>
+        <entryLink id="5295-962a-086a-1a36" name="=Crusade= Ablative Ceramite Plating" hidden="true" collective="false" import="true" targetId="985e-c339-0b77-e617" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="c473-fa3e-8002-49ab" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="0ef7-aa6b-c1a5-6783" name="=Crusade= Armour Spikes" hidden="true" collective="false" import="true" targetId="ec20-60be-dbf7-f2b9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="3a3a-b384-c49f-61ff" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
