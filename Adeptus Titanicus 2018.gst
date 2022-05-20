@@ -18541,6 +18541,10 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="7ee4-d018-8fa9-7060" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+        <categoryLink id="bc29-f799-f6ea-4de9" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -18564,6 +18568,11 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="fb8d-794d-b4bb-3893" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="610d-9e61-a406-4bf3" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+        <categoryLink id="468e-b467-341f-4926" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -18587,6 +18596,10 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="43b8-f425-88a6-3d6d" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
+        <categoryLink id="f449-9834-e6a3-ac02" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
