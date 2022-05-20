@@ -4216,7 +4216,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </constraints>
       <rules>
         <rule id="d85f-d09f-29ca-2379" name="Phased Plasma-Fusil" hidden="false">
-          <description>When the banner is activated in the Combat phase, each Knight with a Meltagun upgrade can target an enemy unit within 3&quot;.That unit suffers two Strength 4 hits.</description>
+          <description>When the Banner is activated in the Combat phase, each Knight equipped with a phased plasma-fusil upgrade can target an enemy unit within 3&quot;.That unit suffers two Strength 4 hits.</description>
         </rule>
       </rules>
       <categoryLinks>
