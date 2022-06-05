@@ -110,9 +110,10 @@ NOTE: On mobile, the &apos;add force&apos; dialog adds a Lance automatically whe
       <rules>
         <rule id="e6cb-1739-3d22-76d9" name="Blast (X)" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
           <description>Before rolling To Hit with a Blast weapon, place the 3&quot; Blast marker or 5&quot; Blast marker (determined by the number in brackets) so that its central hole is completely over the target model’s base and within line of sight of the attacking weapon, and no part of the marker is touching any friendly models. Then, check to see whether the central hole is within range and arc. If it is not within arc, the shot is wasted and has no effect. If it is not within range, do not roll To Hit. Instead, draw an imaginary 1&quot; wide line between the chosen target and the attacking unit, placing the central hole of the Blast marker along this line a number of inches away from the attacking unit equal to the weapon’s Long range characteristic – each shot scatters as follows:
-                        Once the marker has been placed, roll To Hit as normal. If the roll is successful, the marker is not moved; otherwise, roll the Scatter dice and move the Blast marker D10&quot; in the direction that is shown - if a Hit is rolled, use the small arrow to determine the direction of scatter. Note that the Blast marker can scatter out of the Titan’s line of sight, or out of the weapon’s range or arc this represents the shot ricocheting or blasting clear through intervening terrain. The centre of the firing Titan’s base should still be used as a reference point to determine which of the target’s arcs is hit.
-                        Whether or not the marker moves, each model that is touched by the marker is hit once. If the central hole of the Blast marker is fully over a model’s base, that model is hit twice.
-                        If a Blast weapon has a Dice value of 2 or more, make each Hit roll separately (scattering any missed shots individually). If more than one model is hit, the attacking player chooses the order in which to resolve them. Blast weapons cannot make Targeted Attacks. [FAQ - 1.1]</description>
+	Once the marker has been placed, roll To Hit as normal. If the roll is successful, the marker is not moved; otherwise, roll the Scatter dice and move the Blast marker D10&quot; in the direction that is shown - if a Hit is rolled, use the small arrow to determine the direction of scatter. Note that the Blast marker can scatter out of the Titan’s line of sight, or out of the weapon’s range or arc this represents the shot ricocheting or blasting clear through intervening terrain. The centre of the firing Titan’s base should still be used as a reference point to determine which of the target’s arcs is hit.
+	Whether or not the marker moves, each model that is touched by the marker is hit once. If the central hole of the Blast marker is fully over a model’s base, that model is hit twice.
+	If a Blast weapon has a Dice value of 2 or more, make each Hit roll separately (scattering any missed shots individually). If more than one model is hit, the attacking player chooses the order in which to resolve them. Blast weapons cannot make Targeted Attacks.
+	If a Titan targets a unit with a weapon that has both the Blast (3&quot;/5&quot;) and Carapace traits, and that unit is within a number of inches equal to the firing Titan’s Scale (i.e., cannot be targeted), the attack automatically misses. If that is the case, place the central hole of the Blast template a number of inches away from the firing unit equal to the unit’s Scale — draw a line from the firing weapon directly though the target unit to determine where the hole lands, then scatter the template. [FAQ - 1.4]</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -229,9 +230,8 @@ Note that it is not necessary to make the Hit rolls - these hits are automatic. 
     </categoryEntry>
     <categoryEntry id="3ac7-c1bd-98ce-fdb8" name="Vortex" hidden="false">
       <rules>
-        <rule id="8a76-8edc-073a-cd65" name="Vortex" publicationId="7236-e1d8-c886-f5fd" page="39" hidden="false">
-          <description>Vortex weapons make use of bewildering technology to open an unstable warp rift at the target point. They follow use all of the rules for Blast weapons, but use the 3&quot; Vortex template instead. Each model that is touched by the template suffers D6 Strength 10 hits, bypassing void shields.
-After resolving the attack, leave the Vortex template where it is. In the End phase of each turn, the template is moved D6&quot; in a random direction, hitting anything it touches as it moves. If a Hit is rolled, the template is removed instead.</description>
+        <rule id="8a76-8edc-073a-cd65" name="Vortex" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
+          <description>Vortex weapons make use of bewildering technology to open an unstable warp rift at the target point. They follow use all of the rules for Blast weapons, but use the 3&quot; Vortex template instead. Each model that is touched by the template suffers D3+1 Strength 10 hits, bypassing void shields. After resolving the attack, leave the Vortex template where it is. In the End phase of each turn, the template is moved D6&quot; in a random direction, hitting anything it touches as it moves. If a Hit is rolled, the template is removed instead. [FAQ - 1.4]</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -4733,12 +4733,12 @@ The fire then goes out.</description>
     <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus (Storm Lords)" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="0e6c-1950-20a3-f0ae" name="Glory in Death" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-          <description>Before making a Catastrophic Damage roll for a Legio Tempestus Titan, the controlling player may make a Command check for the Titan.  If the check is passed, the Titan may immediately make an attack with one of its weapons, chosen by the controlling player; if the check is passed by 3 or more, the Titan immediately attacks with all of its weapons instead.
+          <description>Before making a Catastrophic Damage roll for a Legio Tempestus Titan, the controlling player may make a Command check for the Titan. If the check is passed, the Titan may immediately make an attack with one of its weapons, chosen by the controlling player; if the check is passed by 3 or more, the Titan immediately attacks with all of its weapons instead.
 
-Subtract 1 from all Hit rolls for attacks made in this way. After resolving any attacks, roll on the Catastrophic Damage table as normal.</description>
+Subtract 1 from all Hit rolls for attacks made in this way. After resolving any attacks, roll on the Catastrophic Damage table as normal. [FAQ - 1.4]</description>
         </rule>
         <rule id="f9ba-465a-7aaa-e466" name="Fury of the Machine" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-          <description>Once per round, when firing a weapon, a Legio Tempestus Titan that has one or more points of Critical Damage may add 1 to the Strength value of that weapon; the weapon must have a Strength value of 4 or higher, and the Strength value cannot be increased above 10. This can be used in conjunction with Glory In Death.</description>
+          <description>Once per round, when firing a weapon, a Legio Tempestus Titan that has one or more points of Critical Damage may add 1 to the Strength value of that weapon; the weapon must have a Strength value of 4 or higher, and the Strength value cannot be increased above 10. This may be used in conjunction with Glory In Death. [FAQ - 1.4]</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5560,11 +5560,11 @@ Legio Audax Squadrons can contain up to five Titans, unless they can normally co
       </constraints>
       <rules>
         <rule id="eb20-0124-4019-ea50" name="Combat Drop" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Tempestus player. Play this Stratagem at the start of deployment, before any units have been placed on the battlefield. Choose a friendly Legio Tempestus Titan of Scale 7 or lower to be kept in reserve; that unit is not deployed as normal and instead will arrive by combat drop.
+          <description>This Stratagem can be purchased by any Legio Tempestus player. Play this Stratagem at the start of deployment, before any units have been placed upon the battlefield. Choose a friendly Legio Tempestus Titan of Scale 7 or lower to be kept in reserve; that unit is not deployed as normal and instead will arrive by combat drop.
 
-At the start of any Strategy phase from the second round onwards, the chosen Titan is deployed by combat drop. Place the Titan anywhere on the battlefield more than 3&quot; away from an enemy unit then scatter the Titan D6&quot;. If the Titan scatters into a piece of terrain, it stops before moving into it and suffers D3+2 Strength 9 hits (Void Shield saves are allowed). If, after it scatters, the Titan&apos;s bse overlaps with another model, friend or foe, with a Scale lower than the Titan&apos;s, move the Titan the shortest distance so its base is not overlapping then resolve the effects of a Collision. If the Titan&apos;s base overlaps that of a unit with a Scale equal to or greater than its own, the Titan is destroyed; do not roll on the Catastrophic Damage table. The unit it overlapped with suffers a Collision as normal.
+At the start of any Strategy phase from the second round onwards, the chosen Titan is deployed by combat drop. Place the Titan anywhere on the battlefield more than 3&quot; away from an enemy unit then scatter the Titan D6&quot;. If the Titan scatters into a piece of Terrain, it stops before moving into it and suffers D3+2 Strength 9 hits (Void Shield saves are allowed). If, after it scatters, the Titan’s base overlaps with another model, friend or foe, with a Scale lower than the Titan’s, move the Titan the shortest distance so its base is not overlapping then resolve the effects of a Collision. If the Titan’s base overlaps that of a unit with a Scale equal to or greater than its own, the Titan is destroyed; do not roll on the Catastrophic Damage table. The unit it overlapped with suffers a Collision as normal.
 
-A Titan that arrives in this way cannot be activated in the Strategy or Movement phase in the round it arrived.</description>
+A Titan that arrives in this way cannot be activated in the Strategy phase or Movement phase in the round it arrives. [FAQ - 1.4]</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -16706,7 +16706,7 @@ After resolving all the effects of the attack that caused the Critical Damage, t
                 <selectionEntry id="13db-d26b-d90b-aeeb" name="2 Storm-born" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
                     <rule id="ec1e-be84-ea60-47dc" name="2 Storm-born" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-                      <description>While the Princeps Seniores is on the battlefield, a Titan within the same maniple (including the Princeps Seniores’ Titan) issued with a Charge Order may declare Power to Locomotors without pushing its Reactor.</description>
+                      <description>While the Princeps Seniores is on the battlefield, a Titan within the same maniple (including the Princeps Seniores’ Titan) issued with a Charge Order may declare Power to Locomotors! without pushing its Reactor.</description>
                     </rule>
                   </rules>
                   <costs>
