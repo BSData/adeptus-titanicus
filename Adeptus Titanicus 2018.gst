@@ -14675,16 +14675,6 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <entryLink id="b310-fb35-9127-0eb2" name="Ardex Defensor Cannon" hidden="false" collective="false" import="false" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9b84-a1e8-d7ba-74b2" name="Ancillary Reactor System" hidden="false" collective="false" import="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd3b-5c2f-6651-1ec8" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c33b-179f-b606-fea7" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="739e-6a76-044d-acca" name="Plasmatic Locomotors" hidden="false" collective="false" import="false" targetId="d152-f92c-fa32-dcfd" type="selectionEntry"/>
-            <entryLink id="2447-db21-193b-6fe0" name="Infusive Supercoolant" hidden="false" collective="false" import="false" targetId="9850-b19f-11e0-2b54" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c80e-97e4-8ebb-3a55" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
@@ -14693,15 +14683,21 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5218-ff2f-3ac3-5acd" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="73ce-e513-8b62-aaca" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="73ce-e513-8b62-aaca" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
         <entryLink id="b65c-9738-14e6-5ffc" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="4d5a-c123-302f-107e" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
         <entryLink id="efd6-6e25-6902-ee37" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="7b94-3a99-9ca7-4a5a" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="7b94-3a99-9ca7-4a5a" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
         <entryLink id="5553-6a55-7161-6e9f" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
         <entryLink id="e204-44a6-ebd1-636d" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6102-5061-22da-a0b6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4242-2e7d-2598-ed46" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5550-4382-a169-feb8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dcb-9cfa-c8d5-c393" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -17804,16 +17800,6 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
             <entryLink id="1a7f-0c43-4aa9-c634" name="Ardex Defensor Cannon" hidden="false" collective="false" import="true" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="568c-96f6-fca6-0476" name="Ancillary Reactor System" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="786b-b472-5438-c177" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="563e-8d05-dc4c-f2d4" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ede8-a956-a18a-bdd1" name="Kinetic Transducers" hidden="false" collective="false" import="true" targetId="f97e-efc7-c0a6-5035" type="selectionEntry"/>
-            <entryLink id="6318-c324-7e31-614f" name="Dedicated Void Shunts" hidden="false" collective="false" import="true" targetId="59ac-39c7-b7b9-ecb6" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1bc1-e919-8b37-6d77" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
@@ -17822,15 +17808,21 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4e7-2761-cd28-4590" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="5658-d710-1366-1738" name="Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="5658-d710-1366-1738" name="Legio Specific Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
         <entryLink id="d2b5-8a58-2fc0-ed72" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="db5c-2136-1b19-bcae" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
         <entryLink id="0011-5d08-3f1c-261e" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="892a-11a0-96a3-8e32" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="892a-11a0-96a3-8e32" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
         <entryLink id="d471-78cc-7637-3047" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
         <entryLink id="50d0-c869-f15c-2c67" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f5f6-c908-6c0d-5aaf" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2150-108b-8691-fad4" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5efe-d557-fbe9-1521" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="405a-7e80-db56-6f6d" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -20047,6 +20039,14 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4714-166b-0f6a-5260" name="Ancillary Reactor System" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="f2ca-5dc8-35bb-d3ac" name="Kinetic Transducers" hidden="false" collective="false" import="true" targetId="f97e-efc7-c0a6-5035" type="selectionEntry"/>
+        <entryLink id="fc4c-01c8-6889-f1c3" name="Dedicated Void Shunts" hidden="false" collective="false" import="true" targetId="59ac-39c7-b7b9-ecb6" type="selectionEntry"/>
+        <entryLink id="e3bb-5f52-88ce-a3ed" name="Infusive Supercoolant" hidden="false" collective="false" import="true" targetId="9850-b19f-11e0-2b54" type="selectionEntry"/>
+        <entryLink id="9b3b-9bbb-845d-f383" name="Plasmatic Locomotors" hidden="false" collective="false" import="true" targetId="d152-f92c-fa32-dcfd" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
