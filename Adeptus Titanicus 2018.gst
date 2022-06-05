@@ -13733,6 +13733,18 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
       </costs>
     </selectionEntry>
     <selectionEntry id="be6b-8894-c7d1-bdba" name="Warp Missile Support Rack" hidden="false" collective="false" import="false" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="3ac7-c1bd-98ce-fdb8">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="405e-ee62-a0ec-ede0" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="7130-bbeb-02e3-de28">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="405e-ee62-a0ec-ede0" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="daea-6b05-7a54-7156" name="Warp Missile Support Rack" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -13743,9 +13755,24 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">80&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">1</characteristic>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Limited, Warp</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+        <profile id="b429-5072-239d-cd5c" name="Vortex Missile Support Rack" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">X</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">20&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">80&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">1</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Limited, Vortex</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -17348,16 +17375,26 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="405e-ee62-a0ec-ede0" name="Vortex Payload" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="405e-ee62-a0ec-ede0" name="Vortex Payload" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false"/>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be6b-8894-c7d1-bdba" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="706f-6074-c1e5-e759" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d7d-b4fd-47f7-add9" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="706f-6074-c1e5-e759" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="badc-72f8-1211-daff" type="max"/>
       </constraints>
       <rules>
         <rule id="6738-5ca3-c24e-40ae" name="Vortex Payload" hidden="false">
-          <description>Any Loyalist Titan equipped with a Warp Missile can be upgraded with a Vortex Payload for +20 points. Each of the Titan’s weapons must be upgraded separately. A Warp Missile upgraded with a Vortex Payload loses the Warp trait and gains the Vortex trait. However, the X value of the Limited trait cannot be changed in any way, i.e., it will always be Limited (1).</description>
+          <description>Any Loyalist Titan equipped with a Warp Missile can be upgraded with a Vortex Payload for +20 points. A maximum of one Titan with a Warp Missile may be upgraded with a Vortex Payload for each maniple within the battlegroup. The upgraded Titans do not have to be part of different maniples so long as the requirement is met. Each of the Titan’s weapons must be upgraded separately. A Warp Missile upgraded with a Vortex Payload loses the Warp trait and gains the Vortex trait. However, the X value of the Limited trait cannot be changed in any way, i.e., it will always be Limited (1).</description>
         </rule>
       </rules>
       <costs>
