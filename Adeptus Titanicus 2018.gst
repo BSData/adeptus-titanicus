@@ -17485,7 +17485,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">(2)</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2)</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2), Beam (2) {Draining}</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -17495,6 +17495,8 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <categoryLink id="a57d-ed71-5a7c-f574" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="f5ee-6ca8-458f-b8cf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="a25e-a4c3-d463-9d59" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+        <categoryLink id="6ed0-3800-85fd-2980" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
+        <categoryLink id="0d1f-2137-6887-6a93" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e65e-e5a1-190c-57fd" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -17517,7 +17519,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">(2)</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2)</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2), Beam (2) {Draining}</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">2+</characteristic>
           </characteristics>
         </profile>
@@ -17526,6 +17528,8 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <categoryLink id="e248-b9d3-c22d-3a26" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
         <categoryLink id="4dae-813a-858f-d2a5" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="false"/>
         <categoryLink id="4aef-7f11-00ba-89f9" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+        <categoryLink id="6695-5bb0-714c-7190" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
+        <categoryLink id="f382-ccb5-69e0-a8d2" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="707d-c397-ef99-6a3f" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
