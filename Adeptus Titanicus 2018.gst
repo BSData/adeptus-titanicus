@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="49" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="50" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -110,9 +110,10 @@ NOTE: On mobile, the &apos;add force&apos; dialog adds a Lance automatically whe
       <rules>
         <rule id="e6cb-1739-3d22-76d9" name="Blast (X)" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
           <description>Before rolling To Hit with a Blast weapon, place the 3&quot; Blast marker or 5&quot; Blast marker (determined by the number in brackets) so that its central hole is completely over the target model’s base and within line of sight of the attacking weapon, and no part of the marker is touching any friendly models. Then, check to see whether the central hole is within range and arc. If it is not within arc, the shot is wasted and has no effect. If it is not within range, do not roll To Hit. Instead, draw an imaginary 1&quot; wide line between the chosen target and the attacking unit, placing the central hole of the Blast marker along this line a number of inches away from the attacking unit equal to the weapon’s Long range characteristic – each shot scatters as follows:
-                        Once the marker has been placed, roll To Hit as normal. If the roll is successful, the marker is not moved; otherwise, roll the Scatter dice and move the Blast marker D10&quot; in the direction that is shown - if a Hit is rolled, use the small arrow to determine the direction of scatter. Note that the Blast marker can scatter out of the Titan’s line of sight, or out of the weapon’s range or arc this represents the shot ricocheting or blasting clear through intervening terrain. The centre of the firing Titan’s base should still be used as a reference point to determine which of the target’s arcs is hit.
-                        Whether or not the marker moves, each model that is touched by the marker is hit once. If the central hole of the Blast marker is fully over a model’s base, that model is hit twice.
-                        If a Blast weapon has a Dice value of 2 or more, make each Hit roll separately (scattering any missed shots individually). If more than one model is hit, the attacking player chooses the order in which to resolve them. Blast weapons cannot make Targeted Attacks. [FAQ - 1.1]</description>
+	Once the marker has been placed, roll To Hit as normal. If the roll is successful, the marker is not moved; otherwise, roll the Scatter dice and move the Blast marker D10&quot; in the direction that is shown - if a Hit is rolled, use the small arrow to determine the direction of scatter. Note that the Blast marker can scatter out of the Titan’s line of sight, or out of the weapon’s range or arc this represents the shot ricocheting or blasting clear through intervening terrain. The centre of the firing Titan’s base should still be used as a reference point to determine which of the target’s arcs is hit.
+	Whether or not the marker moves, each model that is touched by the marker is hit once. If the central hole of the Blast marker is fully over a model’s base, that model is hit twice.
+	If a Blast weapon has a Dice value of 2 or more, make each Hit roll separately (scattering any missed shots individually). If more than one model is hit, the attacking player chooses the order in which to resolve them. Blast weapons cannot make Targeted Attacks.
+	If a Titan targets a unit with a weapon that has both the Blast (3&quot;/5&quot;) and Carapace traits, and that unit is within a number of inches equal to the firing Titan’s Scale (i.e., cannot be targeted), the attack automatically misses. If that is the case, place the central hole of the Blast template a number of inches away from the firing unit equal to the unit’s Scale — draw a line from the firing weapon directly though the target unit to determine where the hole lands, then scatter the template. [FAQ - 1.4]</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -229,9 +230,8 @@ Note that it is not necessary to make the Hit rolls - these hits are automatic. 
     </categoryEntry>
     <categoryEntry id="3ac7-c1bd-98ce-fdb8" name="Vortex" hidden="false">
       <rules>
-        <rule id="8a76-8edc-073a-cd65" name="Vortex" publicationId="7236-e1d8-c886-f5fd" page="39" hidden="false">
-          <description>Vortex weapons make use of bewildering technology to open an unstable warp rift at the target point. They follow use all of the rules for Blast weapons, but use the 3&quot; Vortex template instead. Each model that is touched by the template suffers D6 Strength 10 hits, bypassing void shields.
-After resolving the attack, leave the Vortex template where it is. In the End phase of each turn, the template is moved D6&quot; in a random direction, hitting anything it touches as it moves. If a Hit is rolled, the template is removed instead.</description>
+        <rule id="8a76-8edc-073a-cd65" name="Vortex" publicationId="975a-00f4-pubN65537" page="39" hidden="false">
+          <description>Vortex weapons make use of bewildering technology to open an unstable warp rift at the target point. They follow use all of the rules for Blast weapons, but use the 3&quot; Vortex template instead. Each model that is touched by the template suffers D3+1 Strength 10 hits, bypassing void shields. After resolving the attack, leave the Vortex template where it is. In the End phase of each turn, the template is moved D6&quot; in a random direction, hitting anything it touches as it moves. If a Hit is rolled, the template is removed instead. [FAQ - 1.4]</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -4471,7 +4471,7 @@ The fire then goes out.</description>
       </constraints>
       <rules>
         <rule id="f1ca-7438-e47a-6e56" name="Remains of the Fallen" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
-          <description>Any Legio Mortis Titan may be upgraded to have the Remains of the Fallen for +20 points. Enemy units within 8&quot; of one ormore Titans with this upgrade subtract 1 from the result of any Command check they make.</description>
+          <description>Any Legio Mortis Titan may be upgraded to have the Remains of the Fallen for +20 points. Enemy units within 8&quot; of one or more Titans with this upgrade subtract 1 from the result of any Command check they make.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4508,7 +4508,7 @@ The fire then goes out.</description>
       </constraints>
       <rules>
         <rule id="f0d8-d46c-f7c1-248e" name="The Warmaster&apos;s Beneficence" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
-          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +25 points. Once per game, at the start of the Strategy phase, a Titan with this upgrade can increase the Strength value of a single weapon it is equipped with by 1. Thisincrease lasts until the end of the round.</description>
+          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +25 points. Once per game, at the start of the Strategy phase, a Titan with this upgrade can increase the Strength value of a single weapon it is equipped with by 1. This increase lasts until the end of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4733,12 +4733,12 @@ The fire then goes out.</description>
     <selectionEntry id="cbc6-216c-8a22-c1b4" name="Legio Tempestus (Storm Lords)" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="0e6c-1950-20a3-f0ae" name="Glory in Death" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-          <description>Before making a Catastrophic Damage roll for a Legio Tempestus Titan, the controlling player may make a Command check for the Titan.  If the check is passed, the Titan may immediately make an attack with one of its weapons, chosen by the controlling player; if the check is passed by 3 or more, the Titan immediately attacks with all of its weapons instead.
+          <description>Before making a Catastrophic Damage roll for a Legio Tempestus Titan, the controlling player may make a Command check for the Titan. If the check is passed, the Titan may immediately make an attack with one of its weapons, chosen by the controlling player; if the check is passed by 3 or more, the Titan immediately attacks with all of its weapons instead.
 
-Subtract 1 from all Hit rolls for attacks made in this way. After resolving any attacks, roll on the Catastrophic Damage table as normal.</description>
+Subtract 1 from all Hit rolls for attacks made in this way. After resolving any attacks, roll on the Catastrophic Damage table as normal. [FAQ - 1.4]</description>
         </rule>
         <rule id="f9ba-465a-7aaa-e466" name="Fury of the Machine" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-          <description>Once per round, when firing a weapon, a Legio Tempestus Titan that has one or more points of Critical Damage may add 1 to the Strength value of that weapon; the weapon must have a Strength value of 4 or higher, and the Strength value cannot be increased above 10. This can be used in conjunction with Glory In Death.</description>
+          <description>Once per round, when firing a weapon, a Legio Tempestus Titan that has one or more points of Critical Damage may add 1 to the Strength value of that weapon; the weapon must have a Strength value of 4 or higher, and the Strength value cannot be increased above 10. This may be used in conjunction with Glory In Death. [FAQ - 1.4]</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4843,8 +4843,8 @@ it is required to roll a Reactor dice during the first and second round of the g
     <selectionEntry id="bffc-4266-a83d-cae6" name="Legio Krytos (God Breakers)" publicationId="975a-00f4-pubN87630" page="44" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="939f-b862-cf87-5c7b" name="Doom of Worlds" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
-          <description>When fielding an Axiom maniple or Myrmidon maniple, a Legio Krytos player may take a Warlord Titan in place of a Reaver Titan as part of the maniple’s mandatory components.
-When fielding a Regia maniple or Precept maniple, a Legio Krytos maniple may take a Warbringer Nemesis Titan in place of a Warhound as part of its mandatory components. When a Warbringer Nemesis Titan is substituted into a Regia maniple in this way, Courtiers can merge their void shields with it as if the Warbringer were a King or Queen.
+          <description>When fielding an Axiom maniple or Myrmidon maniple, a Legio Krytos player may take a Warlord Titan in place of a Reaver Titan as part of the maniple’s mandatory components. When fielding a Regia maniple or Precept maniple, a Legio Krytos maniple may take a Warbringer Nemesis Titan in place of a Warhound as part of its mandatory components. When a Warbringer Nemesis Titan is substituted into a Regia maniple in this way, Courtiers can merge their void shields with it as if the Warbringer were a King or Queen. 
+
 In addition, when fielding a Fortis maniple, a Legio Krytos player may take a single Warlord Titan and/or a single Warbringer Nemesis Titan in place of a Reaver Titan as part of the maniple’s mandatory components.</description>
         </rule>
       </rules>
@@ -5008,7 +5008,7 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
     <selectionEntry id="1d02-6c17-cd84-a92f" name="Legio Vulcanum (Dark Fire/Lords of Ruin)" publicationId="975a-00f4-pubN89746" page="23" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="54af-693f-6c06-349d" name="Two-faced God" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
-          <description>When fielding a Legio Vulcanum battlegroup, a player may nominate two Legio Vulcanum Titans to be commanded by a Princeps Senioresinstead of the usual one – each Princeps Seniores gains its own Personal Trait.
+          <description>When fielding a Legio Vulcanum battlegroup, a player may nominate two Legio Vulcanum Titans to be commanded by a Princeps Seniores instead of the usual one – each Princeps Seniores gains its own Personal Trait.
  If one of the Princeps Seniores’ Titans in a maniple is destroyed, for the remainder of the game the other Princeps Seniores’ Titan in the maniple count as having suffered an unrepairable Princeps Wounded damage effect.</description>
         </rule>
         <rule id="9edc-dbe9-0c2f-cc75" name="For the Fallen" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
@@ -5027,8 +5027,7 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
     <selectionEntry id="02ce-a62d-4e4b-d7cc" name="Legio Fortidus (Dauntless)" publicationId="3401-191e-1333-8a1d" page="111" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="41a8-f791-55f3-5ade" name="Children of Mars" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
-          <description>Legio Fortidus Titans never suffer penalties to their Command checks and may ignore effects that force them to re-roll successful Command checks. Knight Banners bonded to Legio
-Fortidus may re-roll Command checks to avoid becoming Shaken provided they are within line of sight of at least one friendly Legio Fortidus Titan.</description>
+          <description>Legio Fortidus Titans never suffer penalties to their Command checks and may ignore effects that force them to re-roll successful Command checks. Knight Banners bonded to Legio Fortidus may re-roll Command checks to avoid becoming Shaken provided they are within line of sight of at least one friendly Legio Fortidus Titan.</description>
         </rule>
         <rule id="749b-0dd5-ea9b-37ba" name="Lost Sons" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
           <description>A Legio Fortidus battlegroup may alter one of the mandatory Titan components of any of its maniples, exchanging this mandatory component for a Titan of Scale 10 or lower. Note that for the purposes of the maniple’s rules, the replacement Titan does not count as the Titan type it is replacing.</description>
@@ -5560,11 +5559,11 @@ Legio Audax Squadrons can contain up to five Titans, unless they can normally co
       </constraints>
       <rules>
         <rule id="eb20-0124-4019-ea50" name="Combat Drop" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Tempestus player. Play this Stratagem at the start of deployment, before any units have been placed on the battlefield. Choose a friendly Legio Tempestus Titan of Scale 7 or lower to be kept in reserve; that unit is not deployed as normal and instead will arrive by combat drop.
+          <description>This Stratagem can be purchased by any Legio Tempestus player. Play this Stratagem at the start of deployment, before any units have been placed upon the battlefield. Choose a friendly Legio Tempestus Titan of Scale 7 or lower to be kept in reserve; that unit is not deployed as normal and instead will arrive by combat drop.
 
-At the start of any Strategy phase from the second round onwards, the chosen Titan is deployed by combat drop. Place the Titan anywhere on the battlefield more than 3&quot; away from an enemy unit then scatter the Titan D6&quot;. If the Titan scatters into a piece of terrain, it stops before moving into it and suffers D3+2 Strength 9 hits (Void Shield saves are allowed). If, after it scatters, the Titan&apos;s bse overlaps with another model, friend or foe, with a Scale lower than the Titan&apos;s, move the Titan the shortest distance so its base is not overlapping then resolve the effects of a Collision. If the Titan&apos;s base overlaps that of a unit with a Scale equal to or greater than its own, the Titan is destroyed; do not roll on the Catastrophic Damage table. The unit it overlapped with suffers a Collision as normal.
+At the start of any Strategy phase from the second round onwards, the chosen Titan is deployed by combat drop. Place the Titan anywhere on the battlefield more than 3&quot; away from an enemy unit then scatter the Titan D6&quot;. If the Titan scatters into a piece of Terrain, it stops before moving into it and suffers D3+2 Strength 9 hits (Void Shield saves are allowed). If, after it scatters, the Titan’s base overlaps with another model, friend or foe, with a Scale lower than the Titan’s, move the Titan the shortest distance so its base is not overlapping then resolve the effects of a Collision. If the Titan’s base overlaps that of a unit with a Scale equal to or greater than its own, the Titan is destroyed; do not roll on the Catastrophic Damage table. The unit it overlapped with suffers a Collision as normal.
 
-A Titan that arrives in this way cannot be activated in the Strategy or Movement phase in the round it arrived.</description>
+A Titan that arrives in this way cannot be activated in the Strategy phase or Movement phase in the round it arrives. [FAQ - 1.4]</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -13734,6 +13733,18 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
       </costs>
     </selectionEntry>
     <selectionEntry id="be6b-8894-c7d1-bdba" name="Warp Missile Support Rack" hidden="false" collective="false" import="false" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="3ac7-c1bd-98ce-fdb8">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="405e-ee62-a0ec-ede0" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="7130-bbeb-02e3-de28">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="405e-ee62-a0ec-ede0" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="daea-6b05-7a54-7156" name="Warp Missile Support Rack" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
@@ -13744,9 +13755,24 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">80&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">1</characteristic>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Limited, Warp</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+        <profile id="b429-5072-239d-cd5c" name="Vortex Missile Support Rack" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">X</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">20&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">80&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">1</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Limited, Vortex</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -15743,7 +15769,7 @@ when making Repair actions. </comment>
                 <selectionEntry id="1f67-1084-21b4-e26b" name="3 Path of Iron" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
                     <rule id="5d0c-6c38-4a27-0620" name="3 Path of Iron" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
-                      <description>ThePrinceps Seniores’ may make a single Smash Attack (see the Adeptus Titanicus rulebook) during the Movement phase, provided it is against an enemy model of a lower Scale than itself. Stop the Titan when it comes within range of its target and resolve the attack, then complete its movement as normal. When making these kinds of Smash Attacks, the Titan may move through models of Scale 3 or less, provided that they can completely cross the enemy model’s base. This attack does not prohibit the Titan from making attacks in the following Combat phase.</description>
+                      <description>The Princeps Seniores’ may make a single Smash Attack (see the Adeptus Titanicus rulebook) during the Movement phase, provided it is against an enemy model of a lower Scale than itself. Stop the Titan when it comes within range of its target and resolve the attack, then complete its movement as normal. When making these kinds of Smash Attacks, the Titan may move through models of Scale 3 or less, provided that they can completely cross the enemy model’s base. This attack does not prohibit the Titan from making attacks in the following Combat phase.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -15754,7 +15780,7 @@ when making Repair actions. </comment>
                 <selectionEntry id="0e62-2249-1a97-f681" name="1 Godlike Contempt" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
                     <rule id="0813-a80c-9ea2-3090" name="1 Godlike Contempt" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
-                      <description>ThePrinceps’ Titan may still make Command checks even if another friendly unit has already failed its Command check.</description>
+                      <description>The Princeps’ Titan may still make Command checks even if another friendly unit has already failed its Command check.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -16706,7 +16732,7 @@ After resolving all the effects of the attack that caused the Critical Damage, t
                 <selectionEntry id="13db-d26b-d90b-aeeb" name="2 Storm-born" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
                     <rule id="ec1e-be84-ea60-47dc" name="2 Storm-born" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-                      <description>While the Princeps Seniores is on the battlefield, a Titan within the same maniple (including the Princeps Seniores’ Titan) issued with a Charge Order may declare Power to Locomotors without pushing its Reactor.</description>
+                      <description>While the Princeps Seniores is on the battlefield, a Titan within the same maniple (including the Princeps Seniores’ Titan) issued with a Charge Order may declare Power to Locomotors! without pushing its Reactor.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17074,7 +17100,7 @@ If the Princeps’ Titan is a Corrupted Titan, it instead rolls two dice, re-rol
                 <selectionEntry id="0344-beef-f7b1-3b31" name="2 Pitiless" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
                     <rule id="1944-e737-5f28-341e" name="2 Pitiless" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
-                      <description>ThePrinceps’ Titan adds 1 to the Strength of its weapons when targeting an enemy Titan that has suffered at least one point of Critical Damage.</description>
+                      <description>The Princeps’ Titan adds 1 to the Strength of its weapons when targeting an enemy Titan that has suffered at least one point of Critical Damage.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17291,7 +17317,19 @@ immediately push their reactor to make an attack with one of its weapons.</descr
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f595-8a61-ffd1-817a" name="Hunter Shells" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f595-8a61-ffd1-817a" name="Hunter Shells" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa7a-74f4-180e-3b5e" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cea-d272-fa57-5553" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2133-dad8-77a1-472c" type="max"/>
       </constraints>
@@ -17349,16 +17387,26 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="405e-ee62-a0ec-ede0" name="Vortex Payload" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="405e-ee62-a0ec-ede0" name="Vortex Payload" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false"/>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be6b-8894-c7d1-bdba" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="706f-6074-c1e5-e759" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d7d-b4fd-47f7-add9" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="706f-6074-c1e5-e759" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="badc-72f8-1211-daff" type="max"/>
       </constraints>
       <rules>
         <rule id="6738-5ca3-c24e-40ae" name="Vortex Payload" hidden="false">
-          <description>Any Loyalist Titan equipped with a Warp Missile can be upgraded with a Vortex Payload for +20 points. Each of the Titan’s weapons must be upgraded separately. A Warp Missile upgraded with a Vortex Payload loses the Warp trait and gains the Vortex trait. However, the X value of the Limited trait cannot be changed in any way, i.e., it will always be Limited (1).</description>
+          <description>Any Loyalist Titan equipped with a Warp Missile can be upgraded with a Vortex Payload for +20 points. A maximum of one Titan with a Warp Missile may be upgraded with a Vortex Payload for each maniple within the battlegroup. The upgraded Titans do not have to be part of different maniples so long as the requirement is met. Each of the Titan’s weapons must be upgraded separately. A Warp Missile upgraded with a Vortex Payload loses the Warp trait and gains the Vortex trait. However, the X value of the Limited trait cannot be changed in any way, i.e., it will always be Limited (1).</description>
         </rule>
       </rules>
       <costs>
@@ -17486,8 +17534,8 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">(2)</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2)</characteristic>
-            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"></characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2), Beam (2) {Draining}</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
       </profiles>
@@ -17496,6 +17544,8 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <categoryLink id="a57d-ed71-5a7c-f574" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="f5ee-6ca8-458f-b8cf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="a25e-a4c3-d463-9d59" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+        <categoryLink id="6ed0-3800-85fd-2980" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
+        <categoryLink id="0d1f-2137-6887-6a93" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e65e-e5a1-190c-57fd" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -17518,7 +17568,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">(2)</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2)</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2), Beam (2) {Draining}</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">2+</characteristic>
           </characteristics>
         </profile>
@@ -17527,6 +17577,8 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <categoryLink id="e248-b9d3-c22d-3a26" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
         <categoryLink id="4dae-813a-858f-d2a5" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="false"/>
         <categoryLink id="4aef-7f11-00ba-89f9" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+        <categoryLink id="6695-5bb0-714c-7190" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
+        <categoryLink id="f382-ccb5-69e0-a8d2" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="707d-c397-ef99-6a3f" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
