@@ -983,5 +983,23 @@
         <categoryLink id="79bc-1d9a-779e-55a5" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="57be-9c1f-e989-e2d9" name="=Krytos= Civilisation&apos;s Ruin" hidden="true" collective="false" import="true" targetId="a6aa-ba0e-b76f-7b43" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="257b-889d-45d0-d7b3" name="=Krytos= Destroyer of Cities" hidden="true" collective="false" import="true" targetId="dd88-663a-9378-68c4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
 </catalogue>
