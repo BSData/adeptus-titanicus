@@ -4471,7 +4471,7 @@ The fire then goes out.</description>
       </constraints>
       <rules>
         <rule id="f1ca-7438-e47a-6e56" name="Remains of the Fallen" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
-          <description>Any Legio Mortis Titan may be upgraded to have the Remains of the Fallen for +20 points. Enemy units within 8&quot; of one ormore Titans with this upgrade subtract 1 from the result of any Command check they make.</description>
+          <description>Any Legio Mortis Titan may be upgraded to have the Remains of the Fallen for +20 points. Enemy units within 8&quot; of one or more Titans with this upgrade subtract 1 from the result of any Command check they make.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4508,7 +4508,7 @@ The fire then goes out.</description>
       </constraints>
       <rules>
         <rule id="f0d8-d46c-f7c1-248e" name="The Warmaster&apos;s Beneficence" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
-          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +25 points. Once per game, at the start of the Strategy phase, a Titan with this upgrade can increase the Strength value of a single weapon it is equipped with by 1. Thisincrease lasts until the end of the round.</description>
+          <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +25 points. Once per game, at the start of the Strategy phase, a Titan with this upgrade can increase the Strength value of a single weapon it is equipped with by 1. This increase lasts until the end of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4843,8 +4843,8 @@ it is required to roll a Reactor dice during the first and second round of the g
     <selectionEntry id="bffc-4266-a83d-cae6" name="Legio Krytos (God Breakers)" publicationId="975a-00f4-pubN87630" page="44" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="939f-b862-cf87-5c7b" name="Doom of Worlds" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
-          <description>When fielding an Axiom maniple or Myrmidon maniple, a Legio Krytos player may take a Warlord Titan in place of a Reaver Titan as part of the maniple’s mandatory components.
-When fielding a Regia maniple or Precept maniple, a Legio Krytos maniple may take a Warbringer Nemesis Titan in place of a Warhound as part of its mandatory components. When a Warbringer Nemesis Titan is substituted into a Regia maniple in this way, Courtiers can merge their void shields with it as if the Warbringer were a King or Queen.
+          <description>When fielding an Axiom maniple or Myrmidon maniple, a Legio Krytos player may take a Warlord Titan in place of a Reaver Titan as part of the maniple’s mandatory components. When fielding a Regia maniple or Precept maniple, a Legio Krytos maniple may take a Warbringer Nemesis Titan in place of a Warhound as part of its mandatory components. When a Warbringer Nemesis Titan is substituted into a Regia maniple in this way, Courtiers can merge their void shields with it as if the Warbringer were a King or Queen. 
+
 In addition, when fielding a Fortis maniple, a Legio Krytos player may take a single Warlord Titan and/or a single Warbringer Nemesis Titan in place of a Reaver Titan as part of the maniple’s mandatory components.</description>
         </rule>
       </rules>
@@ -5008,7 +5008,7 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
     <selectionEntry id="1d02-6c17-cd84-a92f" name="Legio Vulcanum (Dark Fire/Lords of Ruin)" publicationId="975a-00f4-pubN89746" page="23" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="54af-693f-6c06-349d" name="Two-faced God" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
-          <description>When fielding a Legio Vulcanum battlegroup, a player may nominate two Legio Vulcanum Titans to be commanded by a Princeps Senioresinstead of the usual one – each Princeps Seniores gains its own Personal Trait.
+          <description>When fielding a Legio Vulcanum battlegroup, a player may nominate two Legio Vulcanum Titans to be commanded by a Princeps Seniores instead of the usual one – each Princeps Seniores gains its own Personal Trait.
  If one of the Princeps Seniores’ Titans in a maniple is destroyed, for the remainder of the game the other Princeps Seniores’ Titan in the maniple count as having suffered an unrepairable Princeps Wounded damage effect.</description>
         </rule>
         <rule id="9edc-dbe9-0c2f-cc75" name="For the Fallen" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
@@ -5027,8 +5027,7 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
     <selectionEntry id="02ce-a62d-4e4b-d7cc" name="Legio Fortidus (Dauntless)" publicationId="3401-191e-1333-8a1d" page="111" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="41a8-f791-55f3-5ade" name="Children of Mars" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
-          <description>Legio Fortidus Titans never suffer penalties to their Command checks and may ignore effects that force them to re-roll successful Command checks. Knight Banners bonded to Legio
-Fortidus may re-roll Command checks to avoid becoming Shaken provided they are within line of sight of at least one friendly Legio Fortidus Titan.</description>
+          <description>Legio Fortidus Titans never suffer penalties to their Command checks and may ignore effects that force them to re-roll successful Command checks. Knight Banners bonded to Legio Fortidus may re-roll Command checks to avoid becoming Shaken provided they are within line of sight of at least one friendly Legio Fortidus Titan.</description>
         </rule>
         <rule id="749b-0dd5-ea9b-37ba" name="Lost Sons" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
           <description>A Legio Fortidus battlegroup may alter one of the mandatory Titan components of any of its maniples, exchanging this mandatory component for a Titan of Scale 10 or lower. Note that for the purposes of the maniple’s rules, the replacement Titan does not count as the Titan type it is replacing.</description>
@@ -15743,7 +15742,7 @@ when making Repair actions. </comment>
                 <selectionEntry id="1f67-1084-21b4-e26b" name="3 Path of Iron" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
                     <rule id="5d0c-6c38-4a27-0620" name="3 Path of Iron" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
-                      <description>ThePrinceps Seniores’ may make a single Smash Attack (see the Adeptus Titanicus rulebook) during the Movement phase, provided it is against an enemy model of a lower Scale than itself. Stop the Titan when it comes within range of its target and resolve the attack, then complete its movement as normal. When making these kinds of Smash Attacks, the Titan may move through models of Scale 3 or less, provided that they can completely cross the enemy model’s base. This attack does not prohibit the Titan from making attacks in the following Combat phase.</description>
+                      <description>The Princeps Seniores’ may make a single Smash Attack (see the Adeptus Titanicus rulebook) during the Movement phase, provided it is against an enemy model of a lower Scale than itself. Stop the Titan when it comes within range of its target and resolve the attack, then complete its movement as normal. When making these kinds of Smash Attacks, the Titan may move through models of Scale 3 or less, provided that they can completely cross the enemy model’s base. This attack does not prohibit the Titan from making attacks in the following Combat phase.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -15754,7 +15753,7 @@ when making Repair actions. </comment>
                 <selectionEntry id="0e62-2249-1a97-f681" name="1 Godlike Contempt" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
                     <rule id="0813-a80c-9ea2-3090" name="1 Godlike Contempt" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
-                      <description>ThePrinceps’ Titan may still make Command checks even if another friendly unit has already failed its Command check.</description>
+                      <description>The Princeps’ Titan may still make Command checks even if another friendly unit has already failed its Command check.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17074,7 +17073,7 @@ If the Princeps’ Titan is a Corrupted Titan, it instead rolls two dice, re-rol
                 <selectionEntry id="0344-beef-f7b1-3b31" name="2 Pitiless" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
                     <rule id="1944-e737-5f28-341e" name="2 Pitiless" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
-                      <description>ThePrinceps’ Titan adds 1 to the Strength of its weapons when targeting an enemy Titan that has suffered at least one point of Critical Damage.</description>
+                      <description>The Princeps’ Titan adds 1 to the Strength of its weapons when targeting an enemy Titan that has suffered at least one point of Critical Damage.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -17487,7 +17486,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">(2)</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2)</characteristic>
-            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"></characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
       </profiles>
