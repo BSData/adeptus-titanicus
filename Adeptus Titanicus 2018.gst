@@ -12637,7 +12637,10 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d00-c954-d909-610e" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b00e-0f50-4b4a-4e21" name="Crusade Legion" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b00e-0f50-4b4a-4e21" name="Crusade Legio (Custom)" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="ec64-ec82-e150-eb76" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -12813,7 +12816,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7708-bf77-5df8-acb1" name="Crusade Legion" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="7708-bf77-5df8-acb1" name="Crusade Legio" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -12841,17 +12844,32 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa3e-4d9b-85f6-d79f" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="9aa0-d228-a512-b885" name="Marked Prey" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem at the start of any round. Choose an enemy Titan to be Marked. For the remainder of the battle, all friendly Titans from this Crusade Legio add 1 to all To Hit rolls and Armour rolls made against the Marked Titan.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="cc31-29f1-3c75-935f" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="592f-e062-c3b6-8edb" name="Opening Salvo" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="592f-e062-c3b6-8edb" name="Opening Salvo" page="" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e980-2d5f-953d-1fcf" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="f9f7-6af8-77de-33c7" name="Opening Salvo" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem during the Strategy phase of the first round. All Titans from this Crusade Legio may immediately attack with a single weapon of their choice as if it was the Combat phase. A Titan that attacks in this way must advance their Plasma Reactor Status track by two places, in addition to any other advances associated with weapons fire. If the player uses this Stratagem, their opponent automatically becomes the First Player for the remainder of the first game round.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="5956-0e48-883c-bb81" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12859,17 +12877,33 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f303-3d91-700a-6e9a" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="3934-e138-280c-8b55" name="Blistering March" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem during any Combat phase. For the remainder of the phase, any Titan from this Crusade Legio with the Full Stride order may fire one weapon during their activation. If it does so, increase its Reactor Status level by 1 in addition to any other advances associated with weapons fire.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="e503-3ff5-f506-3a20" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="967e-0695-68c7-7644" name="Fuelled by Hatred" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="967e-0695-68c7-7644" name="Fuelled by Hatred" page="" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9173-9444-97fd-39d4" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="6afa-38db-bcf7-1cf4" name="Fuelled by Hatred" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio that is issued with a Charge order destroys an enemy unit in the Movement phase due to a Melee weapon or Smash attack made as part of the Order – they may immediately make a new Charge move. TheTitan can make a single turn before moving as part of this second Charge move and can move no more than 5&quot; during it.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="09d6-d48e-8d0e-6e7f" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12877,8 +12911,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6aa3-767d-7816-b92b" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="399e-5ca3-4223-269d" name="Target Lock" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem when activating a Titan from this Crusade Legio in the Combat phase. Choose an enemy unit within 12&quot; of the activating Titan. For the remainder of the phase, any attacks made against the chosen enemy unit suffer no penalties to their Hit rolls for obscured line of sight or for making Targeted Attacks. Thiscounts as the activating Titan’s activation for this phase. If the activated Titan is destroyed before the end of the phase, this Stratagem has no effect for the remainder of the phase.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="773e-4054-fa27-8c14" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12886,8 +12928,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a12-9a7f-3f4f-ade6" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="3e2f-5459-ae29-0dc4" name="Enduring Gods" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem during any Strategy phase. Any Titan from this Crusade Legio may immediately be issued Emergency Repair orders without the need to make a Command check. After all Repair rolls have been resolved, make a Command check for any Titan issued an order in this way. If the check is successful, discard the Order. After the effects of this Stratagem have been resolved, the player may issue no more Orders for the remainder of this round.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="d670-a712-02be-d344" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12895,8 +12945,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b75e-7112-b7a9-c91f" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="3182-6dd7-0c60-bc94" name="Reactionary Fire" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem during any Movement phase, when an enemy Titan issued with a Charge order is activated. A friendly Titan from this Crusade Legio that has not been activated this phase may immediately make an attack with one of its weapons, or two if the chosen Titan is issued with the First Fire order. Theseattacks must be made against the activated enemy Titan and count as the chosen Titan’s activation for that phase.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="f1a1-efbd-8ce4-7b98" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12904,8 +12962,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a330-e8ab-d684-4e0f" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="e06e-f791-79bb-df58" name="Electromagnetic Overload" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem during any Combat phase, when activating a friendly Titan from this Crusade Legio that has active void shields. Any unit, friend or foe, with active void shields within 3&quot; of the activated Titan must immediately make a number of Save rolls equal to the number of remaining holes on the Titan’s Void Shield status tracker, as if hit by a weapon with the Shieldbane trait. Theactivated Titan’s Void Shield level then immediately drops to X and the Titan takes a Critical Hit to its Body. This counts as the Titan’s activation this phase.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="a7bb-28b7-6b8c-34e6" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12913,8 +12979,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dab-97bf-2416-6826" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="1756-b9ca-0902-cbc8" name="Vindictive in Death" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio suffers Catastrophic Damage. Do not roll on the Catastrophic Damage table – instead, the Titan suffers the Catastrophic Meltdown result.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="68f0-a0d8-88f2-24aa" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12922,8 +12996,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="718c-80d7-4860-a0ad" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="47cd-2612-8b97-88e3" name="Eye for an Eye" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem when a Titan from this Legio is destroyed by the opposing player. Until the end of the round, all friendly Titans from this Crusade Legio can re-roll Hit rolls of a 1.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="2755-ea94-e3be-ebc3" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12931,8 +13013,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f33-8e6d-b64e-dce9" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="fba3-f01a-d504-ceab" name="Locomotive Override" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem during any Combat phase. A friendly Titan from this Crusade Legio of Scale 9 or 10 may immediately make up to a 180o turn. If it does so, it suffers 1 point of Critical Damage to its Legs after resolving the turn.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="ad62-4ec9-9d87-ca71" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12940,8 +13030,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b3c-f798-1fd2-b306" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="1e37-5134-40da-5250" name="Directed Radburst" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem during any Movement phase when activating a Titan from this Legio. Increase the activating Titan’s Reactor Status level by 1. Place a 5&quot; Blast marker on the table, with the central hole anywhere within 2&quot; of the activating Titan. Thiscounts as the Titan’s activation for that phase. For the remainder of the round, any Titan underneath the Blast marker must roll an extra dice when making Void Shield saves, while Knight Banners count the Strength of attacks as one higher for the purposes of working out their Ion Shield saves. At the end of the round, remove the Blast marker. ThisStratagem can be purchased multiple times, however it can only be played once per activation.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="ad3a-d168-8c38-71a7" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12949,8 +13047,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="946e-fa15-1831-b131" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="7f03-2a32-d566-51c0" name="Scouting Run" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem after both players have deployed but before rolling to determine who is the First Player. A Titan from this Crusade Legio with a Scale of 6 or lower may immediately make a move. TheTitan cannot declare Power to Locomotors! or Power to Stabilisers! during this move and cannot move more than 6&quot;. ThisStratagem can be purchased multiple times.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="8f23-eed5-2a8f-7ede" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12958,8 +13064,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad15-b93a-0bd3-67a6" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="f318-1d42-d15d-52a3" name="Power Reserves" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio pushes their reactor, before rolling the Reactor dice. Do not roll the dice; the result is treated as if a blank face was rolled. ThisStratagem can be purchased multiple times, but a Titan can only be the target of this Stratagem once per round.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="7d09-9a4f-7a0c-2456" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -12967,8 +13081,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2413-9ccb-7f3e-a3b0" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="6f30-d5ee-e8d9-81d4" name="Reactor Surge" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio pushes their reactor, before rolling the Reactor dice. For the remainder of the phase, the result subsequently rolled on the Reactor dice applies to any attempt to push the reactor, e.g., if a Titan pushed their reactor after declaring Power to Locomotors! and rolled a blank face, all subsequently attempts to push the Titan’s reactor this phase would not increase the Reactor level. If, after playing this Stratagem, a Machine Spirit symbol is rolled, the Stratagem is discarded and has no effect; the Titan must roll each time they push their reactor as normal.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="0720-49c1-eb92-999d" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
                   <costs>
-                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
