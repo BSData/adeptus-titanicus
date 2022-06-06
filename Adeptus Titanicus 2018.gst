@@ -13108,6 +13108,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6b8-af88-b2f8-423c" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="12a4-c1dd-abcd-9ed4" name="Dark Reputation" publicationId="2988-f24d-39ef-352e" page="93" hidden="false">
+                      <description>At the end of the Movement phase, enemy Knight Banners within 3&quot; of a Titan from this Legio immediately become Shaken (see the Adeptus Titanicus rulebook).</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13117,6 +13122,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba5a-c1c8-61a4-34c4" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="e4af-8b24-d6d0-00d0" name="Elite Magos" publicationId="2988-f24d-39ef-352e" page="93" hidden="false">
+                      <description>During the Damage Control phase, a Titan from this Legio can re-roll a single Repair dice. The second roll must be accepted, even if it is worse.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13126,6 +13136,13 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff62-7b39-9550-5c18" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="5768-fd9a-dd90-7e43" name="Engines of War" publicationId="2988-f24d-39ef-352e" page="93" hidden="false">
+                      <description>Choose a class of Titan from the following list: Warlord, Reaver, or Warhound. TheTitan Legion may always substitute one of the mandatory Titans in a maniple with a Titan of this type. Note, this substitute Titan only benefits from maniple rules that reference Titans but does not benefit from maniple rules that reference a specific class of Titan.
+
+For example, if the Reaver from a Venator Light Maniple was replaced with a Warlord Titan, the Warlord would not benefit from the Opportunistic Strike rule – this rule specifically references a Reaver Titan. However, if a Reaver from an Axiom Battleline Maniple was replaced by a Warlord, the Warlord would benefit from the Might of the Omnissiah rule as that refers to Titans in the maniple.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13135,6 +13152,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3def-2127-2dc5-8aaf" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="d39d-3525-7fe2-833d" name="Fury of the Fallen" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>When one of the Legio’s Titans is activated in the Combat phase, it can fire each of its active weapons twice. After the Titan has completed its shooting, immediately roll on the Catastrophic Damage table and apply the results to the Titan. In addition, add 1 to all Armour rolls for attacks made by friendly Titans if a Titan from this Legio has suffered Catastrophic Damage that round.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13144,6 +13166,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67c7-03b2-e73f-5757" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="4283-9e05-8e54-c36e" name="Gunnery Command" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>Titans fielded as part of this Legio add 2 to the result of any Command checks made when issuing a First Fire or Split Fire order.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13153,6 +13180,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7856-67ca-6d23-b95b" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="59e8-ca62-1073-776a" name="Loci of the Cause" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>During the Strategy phase, allied Knight Banners add 2 to the result of any Command check when issuing an Order that has already been successfully issued to one or more of the Legio’s Titans.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13162,33 +13194,74 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b17-fbeb-2258-53b5" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="85d0-d57f-1600-d3c9" name="Motive Mastery" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>Titans fielded as part of this Legio add 2 to the result of any Command checks when issuing Charge or Full Stride orders.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ce55-2dda-75b8-1e9f" name="Plaything of the Gods" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="ce55-2dda-75b8-1e9f" name="Plaything of the Gods" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e094-7885-d773-8208" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="efc8-c8f6-5298-c74e" name="Plaything of the Gods" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>This Trait can only be taken by a Traitor Legio. When a friendly Titan from this Legio is activated in the Strategy phase, roll a D6. On a 4+, it recovers a point of Structure, in a location of the controlling player’s choice, lost earlier in the battle. This cannot recover a point of Structure on a location that has suffered Critical Damage. If a natural 6 is rolled, the Titan can repair a single point of Critical Damage instead, on a location of the controlling player’s choice.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="0be8-6136-987c-2cc5" name="Duty and Honour" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="0be8-6136-987c-2cc5" name="Duty and Honour" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c93-6a03-938a-67af" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="9d81-34d5-cb44-a527" name="Duty and Honour" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>This Trait can only be taken by a Loyalist Legio. A friendly Titan from this Legio may be issued a different Order via the Adaptive Tactics Allegiance Ability (see page 83) once per round, instead of once per game.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3d91-31de-5703-c02e" name="The Path to Ascension" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="3d91-31de-5703-c02e" name="The Path to Ascension" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8cc-e33c-46ed-058d" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ca8-5716-85ea-67f1" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="86ff-997c-99e2-0198" name="The Path to Ascension" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>This Trait can only be taken by a Blackshield Legio. Titans from this Legio may re-roll failed Command checks provided they are within 12&quot; of two or more other friendly Titans from this Legio. In addition, Titans from this Legio can share shields with friendly Titans from this Legio that are currently under the effects of the Shutdown order as if they were in the same Squadron.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13198,6 +13271,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1707-bba4-a1d8-8ec9" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="656c-c424-f1a7-fbe2" name="Noble Lineage" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>During deployment, before any units have been deployed, Reaver Battle Titans from this Legio can be paired; to do this, choose two Reaver Titans from the Legio within your battlegroup – these do not have to be part of the same maniple and a battlegroup can contain one or more pairs of Reavers. At the beginning of each round, paired Reaver Titans may be formed into a Squadron with each other (see the Adeptus Titanicus rulebook). TheseSquadrons last until the end of the round. However, paired Reaver Titans in a Squadron may not merge void shields.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13207,6 +13285,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9999-3417-a7ba-26fc" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="6164-e511-f818-e52b" name="Towering Exemplar" publicationId="2988-f24d-39ef-352e" page="95" hidden="false">
+                      <description>At the start of each Strategy phase, choose a friendly Titan from this Legio within 6&quot; of a Princeps Seniores from the same Legio. Thechosen Titan adds 1 to the result of all Command checks they make this round. In addition, they can re-roll Hit rolls of a 1 for the remainder of the round.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13216,6 +13299,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b3-3fe5-a94b-d784" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="5d4c-d623-474f-eb97" name="Blood-fuelled" publicationId="2988-f24d-39ef-352e" page="95" hidden="false">
+                      <description>Titans from this Legio armed with one or more weapons with the Melee trait increase their Weapon Skill by 1 (to a maximum of 2+) and decrease their Ballistic Skill by 1 (to a minimum of 6+). In addition, once per round each Titan from this Legio can add 1 to the Dice value of a Smash attack or an attack with a weapon with the Melee trait made as part of a Charge order, in addition to any dice added as part of the Order.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13225,6 +13313,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcfe-3584-68bd-277d" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="da5d-2944-8006-0483" name="Forwards to Glory" publicationId="2988-f24d-39ef-352e" page="95" hidden="false">
+                      <description>Titans from this Legio add 1 to the result of all Command checks made while they are within 8&quot; of an enemy Titan. If they are within 8&quot; of an enemy Titan with a Scale at least 3 greater than their own, they can instead be issued Orders without the need to make a Command check.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13234,6 +13327,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4458-5d30-4ce9-3510" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="659b-c315-cd87-edbc" name="Vanguard Fighters" publicationId="2988-f24d-39ef-352e" page="95" hidden="false">
+                      <description>Titans from this Legio with a Scale of 7 or less add 1 to all To Hit rolls, and can be issued Full Stride and First Fire orders without the need to make a Command check while there is no friendly Titan (from any Legio) within 6&quot; of them.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13243,6 +13341,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49d0-ab33-06f6-c11e" type="max"/>
                   </constraints>
+                  <rules>
+                    <rule id="d93d-0e95-a1a3-853e" name="Masters of Defence" publicationId="2988-f24d-39ef-352e" page="95" hidden="false">
+                      <description>Titans from this Legio can move at full speed when Backing Up (see the Adeptus Titanicus rulebook). In addition, when a Titan from this Legio is attacked as part of a Charge order, it may immediately move backwards up to 3&quot; and make a single weapon attack at the unit that attacked them. If they do this, increase the Titan’s Reactor Status level by 1. Each Titan can only do this once per round. Thismove and attack is resolved after the effects of the Charge order and the subsequent attack have been resolved.</description>
+                    </rule>
+                  </rules>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
