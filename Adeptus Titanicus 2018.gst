@@ -20925,34 +20925,303 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ca7-eb51-2c59-e143" type="max"/>
       </constraints>
+      <rules>
+        <rule id="4659-4ef5-fa8f-5c62" name="Ablative Ceramite Plating" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Ablative Ceramite Plating for +30 points. At the start of the battle, a Titan equipped with Ablative Ceramite Plating can choose either its Body, Legs or Head. The Titan ignores the bonus to the attacker’s armour roll as a result of damage already inflicted on the chosen location, as indicated by the Command Terminal (see the Adeptus Titanicus rulebook).
+
+Additionally, if the Head is chosen, in a campaign the Titan’s crew will always survive the destruction of their Titan on a 2+ (see page 87 of Adeptus Titanicus: Titandeath).</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="085a-e2c2-3bdf-737a" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
         <categoryLink id="c364-44a7-cf77-ea90" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ec20-60be-dbf7-f2b9" name="=Crusade= Armour Spikes" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9329-8448-1502-f1d1" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da91-c598-1518-fac5" type="max"/>
       </constraints>
+      <rules>
+        <rule id="69c2-ab1c-4b28-a76d" name="Armour Spikes" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Armour Spikes for +20 points. A Titan with Armour Spikes increases the number of dice it generates when making a Smash attack from D3 to D6 (see the Adeptus Titanicus rulebook).</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="e047-3969-8906-d036" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="3e47-166f-eb9d-aaac" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="8990-ddd7-37d3-0666" name="=Crusade= Auxiliary Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a3f-a2d8-89c7-841d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="c05e-a059-986d-0d03" name="Auxiliary Shield Capacitors" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Auxiliary Shield Capacitors for +20 points. Once per round, a Titan with this upgrade can declare Voids to Full! (see the Adeptus Titanicus rulebook) without having to push the reactor. As soon as the Titan’s shields collapse, the benefits from this piece of Wargear are lost for the remainder of the battle, even if the Titan’s shields are later reignited.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="90f6-de3e-c348-9893" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="7908-987b-b868-c96c" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="75f9-5be1-91bd-4a04" name="=Crusade= Blind Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3fb-b264-0de8-a67e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="bcaf-d6f4-42fd-9595" name="Blind Missiles" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any of the Legio’s Titans armed with either Apocalypse missile launchers or an Apocalypse missile launcher can be upgraded to have Blind Missiles for +20 points. Each of the Titan’s weapons must be upgraded separately. Once per game, a Titan armed with Blind Missiles may fire a blind salvo with its Apocalypse missile launchers rather than firing them normally. Place the 5&quot; Blast marker anywhere within range and firing arc of the missile launchers – they do not need line of sight. This marker remains in place until the end of the round and blocks line of sight through it.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2a44-2875-c0ee-aeef" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="a009-37de-3ce6-81ce" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="b942-4f45-a1e2-18c8" name="=Crusade= Crusade Banners" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379c-b331-7436-842f" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="f449-df36-c3f7-0208" name="Crusade Banners" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Crusade Banners for +15 points. Friendly Knight Banners with at least one model within 6&quot; of a Titan with this upgrade cannot be Shaken for any reason.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="47b4-ffcd-5df8-b69b" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="e3ae-253c-661d-ecdb" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="628a-c5e1-1d3f-065e" name="=Crusade= Macro Magazines" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db4e-bfba-7fde-3256" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5f3f-2bf8-86e5-6f4e" name="Macro Magazines" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any weapon with the Rapid trait equipped by a Titan from this Legio can be upgraded to have Macro Magazines for +30 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon with the Rapid trait a Titan is armed with must be upgraded separately. Increase the Dice value of that weapon by 2. Add 2 to the result when rolling on the Catastrophic Damage table for a Titan with Macro Magazines – this effective is cumulative (i.e., a Titan with two Macro Magazines would add 4 to the result).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="cd2d-7936-acdc-8960" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="221d-44f8-ccbc-0284" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="6010-6066-629e-1305" name="=Crusade= Multiple Warhead Launchers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ff0-6aca-d51f-c213" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e66e-da2e-f273-841f" name="Multiple Warhead Launchers" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any of the Legio’s Titans armed with Apocalypse missile launchers or an Apocalypse missile launcher can be upgraded to have Multiple Warhead Launchers for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Any Apocalypse missile launcher equipped with this upgrade adds 5 to their Dice value and gains the Rapid and Limited (2) traits. A Titan can upgrade a weapon with Multiple Warhead Launchers and Autoloaders, however the base cost of the weapon includes the +20 points, which is applied before determining the cost of the Autoloaders.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0bd9-036f-02ae-b032" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="00c6-a9eb-fb03-1824" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="241e-6a16-8744-e27d" name="=Crusade= Plasma Rifling" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e957-1db4-4135-b7c0" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="be0d-f120-1c58-aafb" name="Plasma Rifling" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Plasma Rifling for +15 points per Titan. When firing a weapon with the word ‘plasma’ or ‘laser’ in its name (i.e., plasma blastgun, paired laser blasters, etc) the Titan can push its reactor to increase both the Short range and Long range of the weapon by 6&quot;.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f4af-e725-2223-e3a1" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="b564-55db-c125-27bb" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="8f3a-1f0f-7807-e137" name="=Crusade= Ranging Auspexes" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b83-6d56-6e2e-0c68" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="f9ab-c925-3890-e345" name="Ranging Auspexes" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Ranging Auspexes for +10 points per Titan. In the Combat phase, a Titan equipped with Ranging Auspexes can premeasure the range and check weapon arcs between itself and potential targets before selecting a target.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d275-240b-6c7e-be6e" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="f263-100e-cd49-243a" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="d0f2-9a3d-50d1-6958" name="=Crusade= Reactor Fetters" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77a1-5536-ce38-a0ea" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="b981-5bb4-7f47-5837" name="Reactor Fetters" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Reactor Fetters for +25 points. A Titan with Reactor Fetters may Vent Plasma in the Damage Control phase on a Repair dice roll of 3+ rather than 4+. However, it may not voluntarily push its reactor more than once in each phase.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f203-18f0-83f2-7924" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="9fae-544b-59ac-85b4" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="7385-7f1f-2c1d-6963" name="=Crusade= Secondary Shield Generators" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d051-fe61-8757-c0d6" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="10d3-0524-7bdf-2a9c" name="Secondary Shield Generators" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded with Secondary Shield Generators for +25 points. Once per game, when a Titan with this upgrade has a Void Shield level of X and is chosen as the target of a weapon attack, it may engage its Secondary Shield Generators – this must be done before any dice are rolled. Immediately increase the Titan’s Void Shield level by D3 and the Titan’s Reactor Level by the same amount (i.e., if a 2 is rolled, the Titan’s Void Shield level moves left along the tracker twice and the Reactor Level marker moves right along the Reactor Status tracker twice). A Titan cannot use their Emergency Shield Generators if they are suffering from the VSG Burnout Critical Damage effect.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0a9a-93e4-ef01-79bc" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="75ed-cd2e-300b-4049" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="b44a-669d-a9d2-6cdc" name="=Crusade= Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e90f-708d-6f3a-e005" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="805e-e75f-f270-6661" name="Autoloaders" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any Titan that is equipped with a Limited (X) Carapace weapon can take Autoloaders for a cost equal to the base cost of the weapon +5 points. Each of the Titan’s weapons must be upgraded separately. A weapon equipped with Autoloaders increases the (X) value by 1. Thisupgrade can be bought multiple times for the same weapon, increasing the cost to take Autoloaders by +10 points for each additional purchase, e.g., a Reaver warp missile could be upgraded twice (upgrading Limited (1) trait to a Limited (3) trait) with Autoloaders at a cost of +50 points – +15 points for the first upgrade and +25 points for the second.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c84a-7256-6798-6f18" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="cb53-189a-8a56-3e4a" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="56fe-a07d-b73f-a576" name="=Crusade= Macro Charges" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ac4-c82a-cb63-9397" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="68b8-aab2-8492-9df0" name="Macro Charges" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any Titan from this Legio equipped with a Blast 3&quot; weapon may be equipped with Macro Charges for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with Macro Charges replaces the Blast (3&quot;) trait with the Blast (5&quot;) trait and increases its Strength value by 1. However, when a weapon equipped with Macro Charges detonates, the Strength of any hit taken is increased by 2.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4804-d323-a4e3-d9dd" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="e277-a3de-732d-92da" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="cd35-17bf-d32f-5e60" name="=Crusade= Tracking Gyroscopes" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9881-b6f9-6f35-d16d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e537-e7ca-39e0-f677" name="Tracking Gyroscopes" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Titan from this Legio may be equipped with Tracking Gyroscopes for +10 points. A Titan with this upgrade changes the Fire Arc of their carapace weapons to include the entire Front Arc of the Titan.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e43d-947a-1b06-8cba" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="1d3f-81bf-57b5-03ba" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="617d-4ecf-2753-447a" name="=Crusade= Fusion Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4c7-a70b-dee8-6060" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="eafd-811c-116b-e0ee" name="Fusion Missiles" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Titan from this Legio armed with an apocalypse missile launcher or paired apocalypse missile launchers may take Fusion Missiles as an upgrade for +25 points. Each of the Titan’s weapons must be upgraded separately. When firing a weapon equipped with Fusion Missiles, the player can choose to either use its normal profile, or fire using Fusion Missiles; if they do this, for the duration of the attack the weapon gains the Fusion trait and reduces its Dice value to 3 if the original Dice value is 8 or more, or to 2 if the original Dice value is 7 or less.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="724f-d933-8960-529b" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="6c64-1697-0dd4-4f73" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="ef97-0bcb-8db6-0a9f" name="=Crusade= Gravitonic Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d52-902e-bb3a-75da" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8f05-9be4-cebc-4edc" name="Gravitonic Stabilisers" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Titan from this Legio may take Gravitonic Stabilisers for +10 points. If a Titan with this upgrade is hit by a weapon with the Concussive and/or Quake traits that is not deflected by the shields, roll a D6. On a 2+, that Titan is unaffected by the Concussive and/or Quake traits, although it still suffers any other damage effects. However, a Titan with this upgrade cannot declare Power to Locomotors!</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2000-237f-5613-8297" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="cf30-1119-e02c-0706" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="f474-9d16-9408-0a7d" name="=Crusade= Diabatic Warheads" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4a0-c4c4-7f52-fb7c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="dbf8-966c-9c0e-df53" name="Diabatic Warheads" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Titan from this Legio armed with an Apocalypse missile launcher or paired Apocalypse missile launchers may take Diabatic Warheads for +15 points. Each of the Titan’s weapons must be upgraded separately. When firing a weapon equipped with Diabatic Warheads, the player can choose to use its normal profile, or fire using Diabatic Warheads; if they do this, reduce the weapon’s Strength value to 1. If an attack made with Diabatic Warheads scores at least 3 hits, regardless of whether the Void Shield saves are passed or not, increase the target Titan’s Reactor Status Level by 1. If 8 or more hits are scored, increase the target’s Reactor Status level by 2 instead. Diabatic Warheads have no additional effect on Knight Banners, beyond any damage they may inflict.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e694-1925-e567-8d71" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="63b6-386d-629d-b7d7" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="9a0b-a568-117f-b54b" name="=Crusade= Seismic Auspex" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a9b-4c80-1c5c-902e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="6b74-3421-ab9b-72ee" name="Seismic Auspex" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Warbringer Nemesis Titan from this Legio can be upgraded for 5 x half the Strength of the weapon (e.g., a volcano cannon would be +30 points). Theweapon gains the Barrage trait and applies only a -1 modifier rather than a -2 modifier when making attacks at targets it does not have line of sight to. TheBarrage trait can only be used if the Warbringer Nemesis Titan has not moved this turn (voluntarily or involuntarily).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f928-bf1e-0464-2fab" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="5d81-5587-389b-01d0" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="10b4-44bc-24de-8dcc" name="=Crusade= Hunting Motives" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b9-ac6f-4e0e-e045" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="f06b-7cf9-502a-6c9e" name="Hunting Motives" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Titan from this Legio of Scale 6 or lower may be equipped with Hunting Motives for +20 points. A Titan with this upgrade increases their default Speed value by 2&quot; during the Movement phase. However, they may not declare Power to Stabilisers!</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6f80-425b-7970-dbcd" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="bc55-b4dd-5105-8f62" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="9168-bb42-d17a-5391" name="=Crusade= Unguis Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca7a-535b-e792-dfab" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5791-4e53-a909-f3af" name="Unguis Stabilisers" publicationId="2988-f24d-39ef-352e" page="101" hidden="false">
+          <description>Any Titan from this Legio with a Scale of 9 or greater may be equipped with Unguis Stabilisers for +20 points. When activated in the Strategy phase, a Titan with this upgrade may deploy their Unguis Stabilisers. If they do so, until the end of the round they may be issued a First Fire order or Split Fire order without the need to make a Command check. However, they may not move or make turns, voluntarily or otherwise for the remainder of the round (e.g., by Critical Damage effects, Stratagems, the Concussive weapon trait, etc.).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="811b-b141-221d-8a8f" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="1e09-1aa7-d304-76b7" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="df26-6cc5-c1e1-4f71" name="=Crusade= Vox Screech" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b18e-edc2-701a-4f53" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="09d8-fce7-d42b-1915" name="Vox Screech" publicationId="2988-f24d-39ef-352e" page="101" hidden="false">
+          <description>A Titan from this Legio may be equipped with a Vox Screech for +30 points. Once per game, when a Titan with this upgrade is activated during the Movement phase they may issue a Vox Screech. Any Titan within 6&quot; of a Titan that issued a Vox Screech discards any Orders that it had issued, unless that Order was an Emergency Repairs order. This counts as the activating Titan’s activation for that phase. Friendly Titans from this Legio are not affected by a Vox Screech.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0636-3041-2547-90a6" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="e224-4d29-639b-8e15" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -21437,6 +21706,168 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="3a3a-b384-c49f-61ff" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="cdf8-888a-2086-3612" name="=Crusade= Autoloaders" hidden="true" collective="false" import="true" targetId="b44a-669d-a9d2-6cdc" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="97c9-0bce-fc01-46f4" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4d45-2010-5417-235d" name="=Crusade= Auxiliary Shield Capacitors" hidden="true" collective="false" import="true" targetId="8990-ddd7-37d3-0666" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fd5d-c162-4f07-94c2" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="281a-6e4c-6622-cddf" name="=Crusade= Blind Missiles" hidden="true" collective="false" import="true" targetId="75f9-5be1-91bd-4a04" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1566-6904-d727-7f9c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="3a55-0e66-aa74-11e0" name="=Crusade= Crusade Banners" hidden="true" collective="false" import="true" targetId="b942-4f45-a1e2-18c8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="3bdf-54e8-437f-6bff" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="e195-86da-88c3-316d" name="=Crusade= Diabatic Warheads" hidden="true" collective="false" import="true" targetId="f474-9d16-9408-0a7d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f834-a2e8-bf06-4d7c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="9526-baed-0234-2ae0" name="=Crusade= Fusion Missiles" hidden="true" collective="false" import="true" targetId="617d-4ecf-2753-447a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="40cd-b4c6-809f-9acf" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b8bf-372f-b1d9-35c0" name="=Crusade= Gravitonic Stabilisers" hidden="true" collective="false" import="true" targetId="ef97-0bcb-8db6-0a9f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7318-705d-7b35-c278" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="f803-f1bf-6d6d-0310" name="=Crusade= Hunting Motives" hidden="true" collective="false" import="true" targetId="10b4-44bc-24de-8dcc" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="e5b2-df10-f0a7-0c6f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="3d1e-fb7a-aee5-acff" name="=Crusade= Macro Charges" hidden="true" collective="false" import="true" targetId="56fe-a07d-b73f-a576" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="5221-b61f-f881-45e7" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="afd5-6419-898f-7543" name="=Crusade= Macro Magazines" hidden="true" collective="false" import="true" targetId="628a-c5e1-1d3f-065e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="be9e-bd56-3125-b325" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="9e09-2e0f-0afb-a0f8" name="=Crusade= Multiple Warhead Launchers" hidden="true" collective="false" import="true" targetId="6010-6066-629e-1305" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1ec7-9af8-fe78-c873" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="20e9-a8df-f8ea-3740" name="=Crusade= Plasma Rifling" hidden="true" collective="false" import="true" targetId="241e-6a16-8744-e27d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="598e-5696-26c9-54b0" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4df1-3eba-1648-e530" name="=Crusade= Ranging Auspexes" hidden="true" collective="false" import="true" targetId="8f3a-1f0f-7807-e137" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="df4a-a746-5049-5c6f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b594-a5fb-b1f8-401e" name="=Crusade= Reactor Fetters" hidden="true" collective="false" import="true" targetId="d0f2-9a3d-50d1-6958" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="2f60-f408-aebe-f8cd" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="6e38-3dc3-b745-7746" name="=Crusade= Secondary Shield Generators" hidden="true" collective="false" import="true" targetId="7385-7f1f-2c1d-6963" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f03e-2c70-6202-e81c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="66a8-ff76-c95b-d994" name="=Crusade= Tracking Gyroscopes" hidden="true" collective="false" import="true" targetId="cd35-17bf-d32f-5e60" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8eed-a57c-a7f9-6ec6" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="d1b8-0b07-e58e-73bb" name="=Crusade= Unguis Stabilisers" hidden="true" collective="false" import="true" targetId="9168-bb42-d17a-5391" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cf86-f025-9c57-043d" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="2c06-2a69-6377-38eb" name="=Crusade= Vox Screech" hidden="true" collective="false" import="true" targetId="df26-6cc5-c1e1-4f71" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fbc7-50e2-22e0-38b4" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
