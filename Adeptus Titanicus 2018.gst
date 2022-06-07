@@ -544,6 +544,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="e5b2-df10-f0a7-0c6f" name="Hunting Motives" hidden="false"/>
     <categoryEntry id="cf86-f025-9c57-043d" name="Unguis Stabilisers" hidden="false"/>
     <categoryEntry id="fbc7-50e2-22e0-38b4" name="Vox Screech" hidden="false"/>
+    <categoryEntry id="1d7e-139e-16d4-2208" name="Engines of War" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -6874,6 +6875,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="a046-e20d-df6b-a170" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a510-473e-9559-f43d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4a22-d0de-9acc-3dfc" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="5961-74c1-7b9d-2982" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fc45-3c98-de41-fc93" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="e7cc-2350-d9d0-51e6" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0833-01f0-31ea-e235" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="99ae-1a11-97be-77f1" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a92c-9411-f128-67c6" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="e8eb-8253-8037-220b" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="486d-f659-0c62-2155" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -7279,6 +7330,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               </constraints>
               <categoryLinks>
                 <categoryLink id="7b43-56bf-6bd5-e665" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c055-f54b-766a-1fbc" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98ce-e8c8-90c1-bce4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="89a5-ffd6-0f6e-8140" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="7e1c-c364-59c0-96eb" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7722-3eff-d9a4-0943" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="f769-05de-da91-04bc" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="938c-443b-a36f-0375" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="d0cc-c688-2d91-356f" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6355-2180-ef34-ae99" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="fa6e-6404-f5f5-6381" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -7739,6 +7840,74 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="f2da-70e0-99b4-4f48" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="357b-c1e8-6abc-eebe" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dd78-df07-ce4c-5749" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="df1f-3c61-c419-0dfc" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="47ed-60b7-b9d2-9742" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="e38c-4f2e-1df4-0455" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d92a-820f-df4b-2f4f" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="6ba0-6eb9-be7e-c146" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2632-454a-1b85-cab4" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c046-7c21-c6d2-d487" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ae9a-dd21-6569-7275" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9578-167e-1d0f-42ee" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="446e-505a-d396-949d" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="839d-33d9-b05e-3bb9" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="228f-f7a7-d85a-c515" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -8041,6 +8210,38 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="c246-9459-5696-e5c8" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a0-5ee9-34eb-3019" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f7f1-d2dc-4f7e-daaa" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="7fdf-7cd1-43a7-05ba" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dd4e-e4ea-9617-35b7" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="3091-1695-09c5-2618" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d2ae-05d2-2fcb-0798" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -8330,6 +8531,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="b7c1-fd0e-1f98-32b8" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="ff35-5b66-01e6-d6b3" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4d14-99aa-4ad8-7c80" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f139-d48e-d83f-39be" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="83bb-520e-3d9e-95fc" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="f96d-6728-e7c6-9c01" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="029d-e345-18ee-906d" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9570-efc8-d0cf-26ba" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5421-9892-83dc-d867" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="1c51-30ed-7dd6-ec6b" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="27e7-5179-a7db-a18d" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c673-ac8e-4324-c0e5" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -8676,6 +8927,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="fb82-9449-6c9a-6690" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aca-44ee-caac-e93c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="34a1-4695-133a-622d" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="a360-3cd5-ce4b-2fde" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="85cb-898b-534c-d1ca" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c176-a9d5-e561-c025" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a64e-465e-8341-a461" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="27d2-4a46-641c-2066" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1ade-770e-5593-98c1" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="0937-0178-12c7-3deb" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8bd5-b643-57b5-5c37" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -8935,6 +9236,38 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="2f6f-c0f2-daf5-0517" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="0502-c325-cea5-dd42" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8413-d8c9-e507-58c4" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f54-1726-048f-18a6" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="36e4-40c1-0254-a8cc" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4137-4db0-e5ed-298e" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9c1d-fd62-4798-a48d" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c1e4-242f-fe22-89a5" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -9243,6 +9576,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="c158-5bb4-31ec-ac58" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="fb6f-b405-8c67-fbd9" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8eb0-f344-ea85-b7c7" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b06b-05c0-4bd4-b288" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9019-4fd4-b5e2-c275" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c078-a9e3-13fb-d32e" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cffd-5aca-f96a-bf5b" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="7698-8bb1-baaf-8f37" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5d1d-147c-b773-44cc" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="46cf-2c23-419f-68aa" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0b4a-9656-c45c-7bc6" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="2437-6921-d6c9-a955" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -9667,6 +10050,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="67a2-4469-712b-263b" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0563-f282-1b31-5931" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b783-ec66-4a36-a8ca" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="f229-a24b-c2c4-d54b" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5c62-f971-336a-87e0" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4bc0-7b36-1953-cf79" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="74f6-b030-7597-e0af" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="cdfc-d760-7d4c-272a" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0deb-afe2-b8a9-7009" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="538a-53a2-830b-56cf" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2276-d58d-a919-6ecc" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
@@ -9993,6 +10426,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="acc9-5855-b712-2cf4" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a01-1622-195e-52c4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cc9d-1628-ccce-4aed" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c29c-fccc-c02d-b235" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ae0d-3cf1-8966-cd15" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="0c62-c8ab-a958-a3c5" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5abb-c1ab-51ed-af0a" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="498c-bcca-9d5d-1ebd" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b0ac-89d7-497f-1d67" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="183a-702e-8d32-764e" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e55d-c4aa-9307-146d" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -10293,6 +10776,65 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="95e1-829e-6cc0-61bf" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="5f35-c04d-c014-58e5" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bf0d-e2cd-4327-4aa3" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a737-5577-6aa3-3135" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f403-8e59-99f0-c92d" name="Replace Warbringer Nemesis with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="30e4-5d25-8d07-a453" name="Replace Warbringer Nemsis with Reaver" hidden="false" targetId="7831-176e-a10c-4f17" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b284-79d0-50fa-cfec" name="Replace Warbringer Nemesis with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="105e-9e44-d285-0afb" name="Replace Warbringer Nemsis with Warhound" hidden="false" targetId="8020-a880-c25c-f4d3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c6e0-7b0c-b23a-8614" name="Replace Warbringer Nemesis with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4d5d-a403-898b-ce96" name="Replace Warbringer Nemsis with Warlord" hidden="false" targetId="d8f4-fa76-75b2-5faf" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e7c4-a076-80e9-baf6" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="e3b5-2fb0-03a5-38f3" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9fb8-2a48-89c9-6aff" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="1260-137b-603f-525e" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -10606,6 +11148,65 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="c206-266a-e53d-a4d3" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9292-f939-b55e-8354" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e8b1-48b6-3479-566e" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9a67-03ae-7450-c203" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="51ea-be00-a96c-16de" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="42dc-19cb-5af0-733a" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="361e-8300-b09a-8ebe" name="Replace Warbringer Nemesis with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="b6da-f0b2-0bd0-3bfe" name="Replace Warbringer Nemesis with Reaver" hidden="false" targetId="7831-176e-a10c-4f17" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4e30-e040-4085-9e78" name="Replace Warbringer Nemesis with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="f454-de37-b23e-c3bb" name="Replace Warbringer Nemesis with Warhound" hidden="false" targetId="8020-a880-c25c-f4d3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a575-3fbc-17e3-a988" name="Replace Warbringer Nemesis with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9aef-4498-e99a-cb4f" name="Replace Warbringer Nemesis with Warlord" hidden="false" targetId="d8f4-fa76-75b2-5faf" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ece9-d720-9039-e293" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -10865,6 +11466,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="ce8f-1768-eac9-2712" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="2e4d-5d92-5c04-68d4" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="3b45-dda8-be57-97a9" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aac2-eb35-3775-8195" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="775f-0db5-cbc1-40aa" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="8cb2-0cdc-0630-8a06" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0c69-0d4f-a74c-febe" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="81fc-5690-1887-d621" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6614-9be0-d01d-5d16" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4284-0374-0b3c-a625" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d7f0-a249-e2ce-9776" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9191-f11f-e0cc-e2e4" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -11223,6 +11874,56 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="2d48-be4d-c04c-51d0" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce06-60e2-20e2-b008" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7a65-553c-c750-84c3" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="1143-8176-4373-6ec5" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="65d2-cc72-3828-d997" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="d082-344e-8ece-ac2e" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f5b1-1198-d60c-b543" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="24fc-ec77-1149-f07d" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="929b-13ab-64bf-b2c8" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="30a2-6d2c-c912-e00f" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6222-235f-9835-8d12" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
@@ -11438,6 +12139,38 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <selectionEntry id="3e28-0bde-4e15-878d" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="c2ad-e77d-6731-0c1f" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5840-3efa-697d-7cce" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b174-bda7-af23-1e7c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ce0f-f973-c32e-bf7c" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="aa6b-d683-59ad-b0a7" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="94b0-4785-9e48-1797" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="6a81-3391-1ecf-d973" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -11687,6 +12420,56 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
               </constraints>
               <categoryLinks>
                 <categoryLink id="dcb0-78c6-728d-eba8" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d634-e65a-3fd7-6a33" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="187e-e276-59b5-fff3" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bb79-ece6-674b-578c" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4ee7-a626-4227-0a72" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4296-2dae-2243-3524" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="8e88-6556-1328-670c" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b302-3ecc-6bf6-6688" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="3da7-67a4-8d00-879e" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="094d-1984-960b-0d5f" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="eeb0-c42d-e779-4883" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -11968,6 +12751,38 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <selectionEntry id="3724-4078-b4cd-29ba" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="dd3b-1e52-cbd9-58c9" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6a24-82c3-e515-ee4e" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a030-90b0-14f8-c94a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5a7f-96f8-0022-be9a" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="5392-abcf-d8bf-b184" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7f7f-b402-f963-242f" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="b3b0-6f71-8db2-b6be" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -12276,6 +13091,83 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <selectionEntry id="aeee-4ccb-9611-0e99" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="b762-8d06-aeae-575e" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8840-2a11-5c75-7bcb" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f07-ab33-0b1c-d8dc" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f0f6-39d1-6db5-a6a8" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="972f-558a-6eaf-50f8" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="db46-67dc-969e-08e5" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="226a-2aca-a1aa-3627" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="13a1-3618-a0ea-44a5" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="68b7-e49e-56ae-c03b" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bb61-ff5d-f110-de60" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9b5a-ebfe-b95a-4647" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2237-350b-918e-04fe" name="Replace Warbringer Nemesis with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4071-5f6e-f0e4-c662" name="Replace Warbringer Nemesis with Reaver" hidden="false" targetId="7831-176e-a10c-4f17" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4bb8-1ebf-20f1-52f1" name="Replace Warbringer Nemesis with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="6f7d-c56f-0152-b9a6" name="Replace Warbringer Nemesis with Warhound" hidden="false" targetId="8020-a880-c25c-f4d3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2c77-69b4-2169-9985" name="Replace Warbringer Nemesis with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="f9b7-f435-6b82-6c07" name="Replace Warbringer Nemesis with Warlord" hidden="false" targetId="d8f4-fa76-75b2-5faf" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -12854,6 +13746,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   </categoryLinks>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="592f-e062-c3b6-8edb" name="Opening Salvo" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -13138,11 +14031,14 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   </constraints>
                   <rules>
                     <rule id="5768-fd9a-dd90-7e43" name="Engines of War" publicationId="2988-f24d-39ef-352e" page="93" hidden="false">
-                      <description>Choose a class of Titan from the following list: Warlord, Reaver, or Warhound. TheTitan Legion may always substitute one of the mandatory Titans in a maniple with a Titan of this type. Note, this substitute Titan only benefits from maniple rules that reference Titans but does not benefit from maniple rules that reference a specific class of Titan.
+                      <description>Choose a class of Titan from the following list: Warlord, Reaver, or Warhound. The Titan Legion may always substitute one of the mandatory Titans in a maniple with a Titan of this type. Note, this substitute Titan only benefits from maniple rules that reference Titans but does not benefit from maniple rules that reference a specific class of Titan.
 
 For example, if the Reaver from a Venator Light Maniple was replaced with a Warlord Titan, the Warlord would not benefit from the Opportunistic Strike rule – this rule specifically references a Reaver Titan. However, if a Reaver from an Axiom Battleline Maniple was replaced by a Warlord, the Warlord would benefit from the Might of the Omnissiah rule as that refers to Titans in the maniple.</description>
                     </rule>
                   </rules>
+                  <categoryLinks>
+                    <categoryLink id="25cd-bf6a-e9e0-4daa" name="Engines of War" hidden="false" targetId="1d7e-139e-16d4-2208" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
@@ -13930,7 +14826,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <entryLink id="23f0-ce15-158e-d8f5" name="Plasma Blast Gun (WH)" hidden="false" collective="false" import="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
                 <entryLink id="fc86-6790-bf6c-3f0a" name="Turbo Laser Destructor [WHD]" hidden="false" collective="false" import="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
                 <entryLink id="1524-5b2a-1e79-12e8" name="Vulcan Megabolter [WHD]" hidden="false" collective="false" import="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
-                <entryLink id="3ee3-eda0-0fc6-d1e0" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="true" collective="false" import="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry">
+                <entryLink id="3ee3-eda0-0fc6-d1e0" name="=Tempestus= Chasmata Turbo Laser Destructor [WH]" hidden="true" collective="false" import="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
