@@ -20938,6 +20938,7 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ec20-60be-dbf7-f2b9" name="=Crusade= Armour Spikes" hidden="false" collective="false" import="true" type="upgrade">
@@ -20955,6 +20956,7 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
       </categoryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8990-ddd7-37d3-0666" name="=Crusade= Auxiliary Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -20970,8 +20972,12 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="90f6-de3e-c348-9893" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="7908-987b-b868-c96c" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="75f9-5be1-91bd-4a04" name="=Crusade= Blind Missiles" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="75f9-5be1-91bd-4a04" name="=Crusade= Blind Missiles" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3fb-b264-0de8-a67e" type="max"/>
       </constraints>
@@ -20984,6 +20990,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="2a44-2875-c0ee-aeef" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="a009-37de-3ce6-81ce" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b942-4f45-a1e2-18c8" name="=Crusade= Crusade Banners" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -20998,20 +21008,27 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="47b4-ffcd-5df8-b69b" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="e3ae-253c-661d-ecdb" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="628a-c5e1-1d3f-065e" name="=Crusade= Macro Magazines" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db4e-bfba-7fde-3256" type="max"/>
-      </constraints>
       <rules>
         <rule id="5f3f-2bf8-86e5-6f4e" name="Macro Magazines" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
-          <description>Any weapon with the Rapid trait equipped by a Titan from this Legio can be upgraded to have Macro Magazines for +30 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon with the Rapid trait a Titan is armed with must be upgraded separately. Increase the Dice value of that weapon by 2. Add 2 to the result when rolling on the Catastrophic Damage table for a Titan with Macro Magazines – this effective is cumulative (i.e., a Titan with two Macro Magazines would add 4 to the result).</description>
+          <description>Any weapon with the Rapid trait equipped by a Titan from this Legio can be upgraded to have Macro Magazines for +30 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon with the Rapid trait a Titan is armed with must be upgraded separately. Increase the Dice value of that weapon by 2. Add 2 to the result when rolling on the Catastrophic Damage table for a Titan with Macro Magazines – this effective is cumulative (i.e., a Titan with two Macro Magazines would add 4 to the result).
+
+Take 1 selection for each weapon you are upgrading.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="cd2d-7936-acdc-8960" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="221d-44f8-ccbc-0284" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6010-6066-629e-1305" name="=Crusade= Multiple Warhead Launchers" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21026,6 +21043,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="0bd9-036f-02ae-b032" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="00c6-a9eb-fb03-1824" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="241e-6a16-8744-e27d" name="=Crusade= Plasma Rifling" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21040,6 +21061,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="f4af-e725-2223-e3a1" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="b564-55db-c125-27bb" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8f3a-1f0f-7807-e137" name="=Crusade= Ranging Auspexes" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21054,6 +21079,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="d275-240b-6c7e-be6e" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="f263-100e-cd49-243a" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d0f2-9a3d-50d1-6958" name="=Crusade= Reactor Fetters" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21068,6 +21097,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="f203-18f0-83f2-7924" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="9fae-544b-59ac-85b4" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7385-7f1f-2c1d-6963" name="=Crusade= Secondary Shield Generators" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21082,34 +21115,44 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="0a9a-93e4-ef01-79bc" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="75ed-cd2e-300b-4049" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b44a-669d-a9d2-6cdc" name="=Crusade= Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e90f-708d-6f3a-e005" type="max"/>
-      </constraints>
       <rules>
         <rule id="805e-e75f-f270-6661" name="Autoloaders" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
-          <description>Any Titan that is equipped with a Limited (X) Carapace weapon can take Autoloaders for a cost equal to the base cost of the weapon +5 points. Each of the Titan’s weapons must be upgraded separately. A weapon equipped with Autoloaders increases the (X) value by 1. Thisupgrade can be bought multiple times for the same weapon, increasing the cost to take Autoloaders by +10 points for each additional purchase, e.g., a Reaver warp missile could be upgraded twice (upgrading Limited (1) trait to a Limited (3) trait) with Autoloaders at a cost of +50 points – +15 points for the first upgrade and +25 points for the second.</description>
+          <description>Any Titan that is equipped with a Limited (X) Carapace weapon can take Autoloaders for a cost equal to the base cost of the weapon +5 points. Each of the Titan’s weapons must be upgraded separately. A weapon equipped with Autoloaders increases the (X) value by 1. This upgrade can be bought multiple times for the same weapon, increasing the cost to take Autoloaders by +10 points for each additional purchase, e.g., a Reaver warp missile could be upgraded twice (upgrading Limited (1) trait to a Limited (3) trait) with Autoloaders at a cost of +50 points – +15 points for the first upgrade and +25 points for the second.
+
+Take the correct amount of selections to come to the total cost for the upgrade as described above.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="c84a-7256-6798-6f18" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="cb53-189a-8a56-3e4a" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="56fe-a07d-b73f-a576" name="=Crusade= Macro Charges" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ac4-c82a-cb63-9397" type="max"/>
-      </constraints>
       <rules>
         <rule id="68b8-aab2-8492-9df0" name="Macro Charges" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
-          <description>Any Titan from this Legio equipped with a Blast 3&quot; weapon may be equipped with Macro Charges for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with Macro Charges replaces the Blast (3&quot;) trait with the Blast (5&quot;) trait and increases its Strength value by 1. However, when a weapon equipped with Macro Charges detonates, the Strength of any hit taken is increased by 2.</description>
+          <description>Any Titan from this Legio equipped with a Blast 3&quot; weapon may be equipped with Macro Charges for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with Macro Charges replaces the Blast (3&quot;) trait with the Blast (5&quot;) trait and increases its Strength value by 1. However, when a weapon equipped with Macro Charges detonates, the Strength of any hit taken is increased by 2.
+
+Take 1 selection for each weapon you are upgrading.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="4804-d323-a4e3-d9dd" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="e277-a3de-732d-92da" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="cd35-17bf-d32f-5e60" name="=Crusade= Tracking Gyroscopes" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21124,6 +21167,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="e43d-947a-1b06-8cba" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="1d3f-81bf-57b5-03ba" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="617d-4ecf-2753-447a" name="=Crusade= Fusion Missiles" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21138,6 +21185,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="724f-d933-8960-529b" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="6c64-1697-0dd4-4f73" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ef97-0bcb-8db6-0a9f" name="=Crusade= Gravitonic Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21152,6 +21203,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="2000-237f-5613-8297" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="cf30-1119-e02c-0706" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f474-9d16-9408-0a7d" name="=Crusade= Diabatic Warheads" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21166,20 +21221,27 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="e694-1925-e567-8d71" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="63b6-386d-629d-b7d7" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9a0b-a568-117f-b54b" name="=Crusade= Seismic Auspex" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a9b-4c80-1c5c-902e" type="max"/>
-      </constraints>
       <rules>
         <rule id="6b74-3421-ab9b-72ee" name="Seismic Auspex" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
-          <description>Any Warbringer Nemesis Titan from this Legio can be upgraded for 5 x half the Strength of the weapon (e.g., a volcano cannon would be +30 points). Theweapon gains the Barrage trait and applies only a -1 modifier rather than a -2 modifier when making attacks at targets it does not have line of sight to. TheBarrage trait can only be used if the Warbringer Nemesis Titan has not moved this turn (voluntarily or involuntarily).</description>
+          <description>Any Warbringer Nemesis Titan from this Legio can be upgraded for 5 x half the Strength of the weapon (e.g., a volcano cannon would be +30 points). The weapon gains the Barrage trait and applies only a -1 modifier rather than a -2 modifier when making attacks at targets it does not have line of sight to. The Barrage trait can only be used if the Warbringer Nemesis Titan has not moved this turn (voluntarily or involuntarily).
+
+Take 1 selection for each half strength of the weapon you are upgrading.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="f928-bf1e-0464-2fab" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="5d81-5587-389b-01d0" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="10b4-44bc-24de-8dcc" name="=Crusade= Hunting Motives" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21194,6 +21256,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="6f80-425b-7970-dbcd" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="bc55-b4dd-5105-8f62" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9168-bb42-d17a-5391" name="=Crusade= Unguis Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21208,6 +21274,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="811b-b141-221d-8a8f" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="1e09-1aa7-d304-76b7" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="df26-6cc5-c1e1-4f71" name="=Crusade= Vox Screech" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -21222,6 +21292,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <categoryLink id="0636-3041-2547-90a6" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="e224-4d29-639b-8e15" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -21735,6 +21809,7 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
                 <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1566-6904-d727-7f9c" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="hidden" value="false"/>
           </modifiers>
         </entryLink>
         <entryLink id="3a55-0e66-aa74-11e0" name="=Crusade= Crusade Banners" hidden="true" collective="false" import="true" targetId="b942-4f45-a1e2-18c8" type="selectionEntry">
@@ -21776,9 +21851,14 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <entryLink id="f803-f1bf-6d6d-0310" name="=Crusade= Hunting Motives" hidden="true" collective="false" import="true" targetId="10b4-44bc-24de-8dcc" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="e5b2-df10-f0a7-0c6f" type="atLeast"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ad7-cd10-8d6e-8c2e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="e5b2-df10-f0a7-0c6f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -21857,9 +21937,21 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
         <entryLink id="d1b8-0b07-e58e-73bb" name="=Crusade= Unguis Stabilisers" hidden="true" collective="false" import="true" targetId="9168-bb42-d17a-5391" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cf86-f025-9c57-043d" type="atLeast"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cf86-f025-9c57-043d" type="atLeast"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5122-cb02-8703-ce88" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -21869,6 +21961,20 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
               <conditions>
                 <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fbc7-50e2-22e0-38b4" type="atLeast"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="09ed-6300-0202-49c3" name="=Crusade= Seismic Auspex" hidden="true" collective="false" import="true" targetId="9a0b-a568-117f-b54b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c2-cfd2-43b1-d54a" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="eac2-b1e4-777f-0f0f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
