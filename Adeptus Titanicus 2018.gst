@@ -15469,6 +15469,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="405e-ee62-a0ec-ede0" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="name" value="Warp Missile Support Rack (Vortex)">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="405e-ee62-a0ec-ede0" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="remove" field="category" value="7130-bbeb-02e3-de28">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="405e-ee62-a0ec-ede0" type="atLeast"/>
@@ -15491,7 +15496,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
-        <profile id="b429-5072-239d-cd5c" name="Vortex Missile Support Rack" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="10e7-e99b-c32c-c384" name="Warp Missile Support Rack (Vortex)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">X</characteristic>
