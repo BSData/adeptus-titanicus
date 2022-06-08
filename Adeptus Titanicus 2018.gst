@@ -522,6 +522,29 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     </categoryEntry>
     <categoryEntry id="e1ea-4e6f-d353-2cc4" name="Replace optional Warhound with Dire Wolf" hidden="false"/>
     <categoryEntry id="fbd3-5e33-6755-835f" name="Replace Reaver with Dire Wolf" hidden="false"/>
+    <categoryEntry id="9329-8448-1502-f1d1" name="LegioCrusade" publicationId="3265-f408-cc9b-bfa3" page="p93" hidden="false"/>
+    <categoryEntry id="c473-fa3e-8002-49ab" name="Ablative Ceramite Plating" hidden="false"/>
+    <categoryEntry id="3a3a-b384-c49f-61ff" name="Armour Spikes" hidden="false"/>
+    <categoryEntry id="fd5d-c162-4f07-94c2" name="Auxiliary Shield Capacitors" hidden="false"/>
+    <categoryEntry id="1566-6904-d727-7f9c" name="Blind Missiles" hidden="false"/>
+    <categoryEntry id="3bdf-54e8-437f-6bff" name="Crusade Banners" hidden="false"/>
+    <categoryEntry id="be9e-bd56-3125-b325" name="Macro Magazines" hidden="false"/>
+    <categoryEntry id="1ec7-9af8-fe78-c873" name="Multiple Warhead Launchers" hidden="false"/>
+    <categoryEntry id="598e-5696-26c9-54b0" name="Plasma Rifling" hidden="false"/>
+    <categoryEntry id="df4a-a746-5049-5c6f" name="Ranging Auspexes" hidden="false"/>
+    <categoryEntry id="2f60-f408-aebe-f8cd" name="Reactor Fetters" hidden="false"/>
+    <categoryEntry id="f03e-2c70-6202-e81c" name="Secondary Shield Generators" hidden="false"/>
+    <categoryEntry id="97c9-0bce-fc01-46f4" name="Autoloaders" hidden="false"/>
+    <categoryEntry id="5221-b61f-f881-45e7" name="Macro Charges" hidden="false"/>
+    <categoryEntry id="8eed-a57c-a7f9-6ec6" name="Tracking Gyroscopes" hidden="false"/>
+    <categoryEntry id="40cd-b4c6-809f-9acf" name="Fusion Missiles" hidden="false"/>
+    <categoryEntry id="7318-705d-7b35-c278" name="Gravitonic Stabilisers" hidden="false"/>
+    <categoryEntry id="f834-a2e8-bf06-4d7c" name="Diabatic Warheads" hidden="false"/>
+    <categoryEntry id="eac2-b1e4-777f-0f0f" name="Seismic Auspex" hidden="false"/>
+    <categoryEntry id="e5b2-df10-f0a7-0c6f" name="Hunting Motives" hidden="false"/>
+    <categoryEntry id="cf86-f025-9c57-043d" name="Unguis Stabilisers" hidden="false"/>
+    <categoryEntry id="fbc7-50e2-22e0-38b4" name="Vox Screech" hidden="false"/>
+    <categoryEntry id="1d7e-139e-16d4-2208" name="Engines of War" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -6852,6 +6875,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="a046-e20d-df6b-a170" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a510-473e-9559-f43d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4a22-d0de-9acc-3dfc" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="5961-74c1-7b9d-2982" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fc45-3c98-de41-fc93" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="e7cc-2350-d9d0-51e6" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0833-01f0-31ea-e235" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="99ae-1a11-97be-77f1" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a92c-9411-f128-67c6" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="e8eb-8253-8037-220b" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="486d-f659-0c62-2155" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -7257,6 +7330,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               </constraints>
               <categoryLinks>
                 <categoryLink id="7b43-56bf-6bd5-e665" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c055-f54b-766a-1fbc" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98ce-e8c8-90c1-bce4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="89a5-ffd6-0f6e-8140" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="7e1c-c364-59c0-96eb" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7722-3eff-d9a4-0943" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="f769-05de-da91-04bc" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="938c-443b-a36f-0375" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="d0cc-c688-2d91-356f" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6355-2180-ef34-ae99" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="fa6e-6404-f5f5-6381" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -7717,6 +7840,74 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="f2da-70e0-99b4-4f48" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="357b-c1e8-6abc-eebe" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dd78-df07-ce4c-5749" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="df1f-3c61-c419-0dfc" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="47ed-60b7-b9d2-9742" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="e38c-4f2e-1df4-0455" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d92a-820f-df4b-2f4f" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="6ba0-6eb9-be7e-c146" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2632-454a-1b85-cab4" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c046-7c21-c6d2-d487" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ae9a-dd21-6569-7275" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9578-167e-1d0f-42ee" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="446e-505a-d396-949d" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="839d-33d9-b05e-3bb9" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="228f-f7a7-d85a-c515" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -8019,6 +8210,38 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="c246-9459-5696-e5c8" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a0-5ee9-34eb-3019" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f7f1-d2dc-4f7e-daaa" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="7fdf-7cd1-43a7-05ba" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dd4e-e4ea-9617-35b7" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="3091-1695-09c5-2618" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d2ae-05d2-2fcb-0798" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -8308,6 +8531,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="b7c1-fd0e-1f98-32b8" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="ff35-5b66-01e6-d6b3" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4d14-99aa-4ad8-7c80" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f139-d48e-d83f-39be" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="83bb-520e-3d9e-95fc" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="f96d-6728-e7c6-9c01" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="029d-e345-18ee-906d" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9570-efc8-d0cf-26ba" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5421-9892-83dc-d867" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="1c51-30ed-7dd6-ec6b" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="27e7-5179-a7db-a18d" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c673-ac8e-4324-c0e5" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -8654,6 +8927,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="fb82-9449-6c9a-6690" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aca-44ee-caac-e93c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="34a1-4695-133a-622d" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="a360-3cd5-ce4b-2fde" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="85cb-898b-534c-d1ca" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c176-a9d5-e561-c025" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a64e-465e-8341-a461" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="27d2-4a46-641c-2066" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1ade-770e-5593-98c1" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="0937-0178-12c7-3deb" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8bd5-b643-57b5-5c37" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -8913,6 +9236,38 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="2f6f-c0f2-daf5-0517" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="0502-c325-cea5-dd42" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8413-d8c9-e507-58c4" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f54-1726-048f-18a6" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="36e4-40c1-0254-a8cc" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4137-4db0-e5ed-298e" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9c1d-fd62-4798-a48d" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c1e4-242f-fe22-89a5" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -9221,6 +9576,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="c158-5bb4-31ec-ac58" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="fb6f-b405-8c67-fbd9" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8eb0-f344-ea85-b7c7" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b06b-05c0-4bd4-b288" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9019-4fd4-b5e2-c275" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c078-a9e3-13fb-d32e" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cffd-5aca-f96a-bf5b" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="7698-8bb1-baaf-8f37" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5d1d-147c-b773-44cc" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="46cf-2c23-419f-68aa" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0b4a-9656-c45c-7bc6" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="2437-6921-d6c9-a955" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -9645,6 +10050,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="67a2-4469-712b-263b" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0563-f282-1b31-5931" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b783-ec66-4a36-a8ca" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="f229-a24b-c2c4-d54b" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5c62-f971-336a-87e0" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4bc0-7b36-1953-cf79" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="74f6-b030-7597-e0af" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="cdfc-d760-7d4c-272a" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0deb-afe2-b8a9-7009" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="538a-53a2-830b-56cf" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2276-d58d-a919-6ecc" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
@@ -9971,6 +10426,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="acc9-5855-b712-2cf4" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a01-1622-195e-52c4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cc9d-1628-ccce-4aed" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="c29c-fccc-c02d-b235" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ae0d-3cf1-8966-cd15" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="0c62-c8ab-a958-a3c5" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5abb-c1ab-51ed-af0a" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="498c-bcca-9d5d-1ebd" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b0ac-89d7-497f-1d67" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="183a-702e-8d32-764e" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e55d-c4aa-9307-146d" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -10271,6 +10776,65 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="95e1-829e-6cc0-61bf" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="5f35-c04d-c014-58e5" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bf0d-e2cd-4327-4aa3" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a737-5577-6aa3-3135" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f403-8e59-99f0-c92d" name="Replace Warbringer Nemesis with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="30e4-5d25-8d07-a453" name="Replace Warbringer Nemsis with Reaver" hidden="false" targetId="7831-176e-a10c-4f17" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b284-79d0-50fa-cfec" name="Replace Warbringer Nemesis with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="105e-9e44-d285-0afb" name="Replace Warbringer Nemsis with Warhound" hidden="false" targetId="8020-a880-c25c-f4d3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c6e0-7b0c-b23a-8614" name="Replace Warbringer Nemesis with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4d5d-a403-898b-ce96" name="Replace Warbringer Nemsis with Warlord" hidden="false" targetId="d8f4-fa76-75b2-5faf" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e7c4-a076-80e9-baf6" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="e3b5-2fb0-03a5-38f3" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9fb8-2a48-89c9-6aff" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="1260-137b-603f-525e" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -10584,6 +11148,65 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="c206-266a-e53d-a4d3" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9292-f939-b55e-8354" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e8b1-48b6-3479-566e" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9a67-03ae-7450-c203" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="51ea-be00-a96c-16de" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="42dc-19cb-5af0-733a" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="361e-8300-b09a-8ebe" name="Replace Warbringer Nemesis with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="b6da-f0b2-0bd0-3bfe" name="Replace Warbringer Nemesis with Reaver" hidden="false" targetId="7831-176e-a10c-4f17" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4e30-e040-4085-9e78" name="Replace Warbringer Nemesis with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="f454-de37-b23e-c3bb" name="Replace Warbringer Nemesis with Warhound" hidden="false" targetId="8020-a880-c25c-f4d3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a575-3fbc-17e3-a988" name="Replace Warbringer Nemesis with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9aef-4498-e99a-cb4f" name="Replace Warbringer Nemesis with Warlord" hidden="false" targetId="d8f4-fa76-75b2-5faf" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ece9-d720-9039-e293" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -10843,6 +11466,56 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="ce8f-1768-eac9-2712" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="2e4d-5d92-5c04-68d4" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="3b45-dda8-be57-97a9" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aac2-eb35-3775-8195" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="775f-0db5-cbc1-40aa" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="8cb2-0cdc-0630-8a06" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0c69-0d4f-a74c-febe" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="81fc-5690-1887-d621" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6614-9be0-d01d-5d16" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4284-0374-0b3c-a625" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d7f0-a249-e2ce-9776" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9191-f11f-e0cc-e2e4" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -11201,6 +11874,56 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="2d48-be4d-c04c-51d0" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce06-60e2-20e2-b008" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7a65-553c-c750-84c3" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="1143-8176-4373-6ec5" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="65d2-cc72-3828-d997" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="d082-344e-8ece-ac2e" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f5b1-1198-d60c-b543" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="24fc-ec77-1149-f07d" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="929b-13ab-64bf-b2c8" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="30a2-6d2c-c912-e00f" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6222-235f-9835-8d12" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
@@ -11416,6 +12139,38 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <selectionEntry id="3e28-0bde-4e15-878d" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="c2ad-e77d-6731-0c1f" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5840-3efa-697d-7cce" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b174-bda7-af23-1e7c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ce0f-f973-c32e-bf7c" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="aa6b-d683-59ad-b0a7" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="94b0-4785-9e48-1797" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="6a81-3391-1ecf-d973" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -11665,6 +12420,56 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
               </constraints>
               <categoryLinks>
                 <categoryLink id="dcb0-78c6-728d-eba8" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d634-e65a-3fd7-6a33" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="187e-e276-59b5-fff3" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bb79-ece6-674b-578c" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4ee7-a626-4227-0a72" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4296-2dae-2243-3524" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="8e88-6556-1328-670c" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b302-3ecc-6bf6-6688" name="Replace Reaver with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="3da7-67a4-8d00-879e" name="Replace Reaver with Warhound" hidden="false" targetId="30ae-04ab-aaad-4429" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="094d-1984-960b-0d5f" name="Replace Reaver with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="eeb0-c42d-e779-4883" name="Replace Reaver with Warlord" hidden="false" targetId="cb32-33c1-1564-983e" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -11946,6 +12751,38 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <selectionEntry id="3724-4078-b4cd-29ba" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="dd3b-1e52-cbd9-58c9" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6a24-82c3-e515-ee4e" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a030-90b0-14f8-c94a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5a7f-96f8-0022-be9a" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="5392-abcf-d8bf-b184" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7f7f-b402-f963-242f" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="b3b0-6f71-8db2-b6be" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -12254,6 +13091,83 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <selectionEntry id="aeee-4ccb-9611-0e99" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="b762-8d06-aeae-575e" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8840-2a11-5c75-7bcb" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1d7e-139e-16d4-2208" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f07-ab33-0b1c-d8dc" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f0f6-39d1-6db5-a6a8" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="972f-558a-6eaf-50f8" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="db46-67dc-969e-08e5" name="Replace Warhound with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="226a-2aca-a1aa-3627" name="Replace Warhound with Warlord" hidden="false" targetId="7b35-6cd7-d914-c133" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="13a1-3618-a0ea-44a5" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="68b7-e49e-56ae-c03b" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bb61-ff5d-f110-de60" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9b5a-ebfe-b95a-4647" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2237-350b-918e-04fe" name="Replace Warbringer Nemesis with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="4071-5f6e-f0e4-c662" name="Replace Warbringer Nemesis with Reaver" hidden="false" targetId="7831-176e-a10c-4f17" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4bb8-1ebf-20f1-52f1" name="Replace Warbringer Nemesis with Warhound" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="6f7d-c56f-0152-b9a6" name="Replace Warbringer Nemesis with Warhound" hidden="false" targetId="8020-a880-c25c-f4d3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2c77-69b4-2169-9985" name="Replace Warbringer Nemesis with Warlord" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="f9b7-f435-6b82-6c07" name="Replace Warbringer Nemesis with Warlord" hidden="false" targetId="d8f4-fa76-75b2-5faf" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -12614,6 +13528,17 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d00-c954-d909-610e" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="b00e-0f50-4b4a-4e21" name="Crusade Legio (Custom)" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="ec64-ec82-e150-eb76" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="c040-29dd-6042-3b8d" name="Legio Astorum (Warp Runners)" hidden="false" collective="false" import="false" targetId="dbd6-65fd-6354-a154" type="selectionEntry">
               <categoryLinks>
@@ -12782,6 +13707,811 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
               </categoryLinks>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7708-bf77-5df8-acb1" name="Crusade Legio" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b00e-0f50-4b4a-4e21" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e33b-6374-0144-3866" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="c238-f93f-553a-bd44" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
+            <categoryLink id="c769-3087-9574-66bb" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="068f-3e79-3e36-81bb" name="Legio Stratagems" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e3d-ddb7-f9a4-f79f" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="7f0f-4037-7081-96d7" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="f5f7-7cd8-70a3-7ee2" name="Marked Prey" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa3e-4d9b-85f6-d79f" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="9aa0-d228-a512-b885" name="Marked Prey" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem at the start of any round. Choose an enemy Titan to be Marked. For the remainder of the battle, all friendly Titans from this Crusade Legio add 1 to all To Hit rolls and Armour rolls made against the Marked Titan.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="cc31-29f1-3c75-935f" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="592f-e062-c3b6-8edb" name="Opening Salvo" page="" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e980-2d5f-953d-1fcf" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="f9f7-6af8-77de-33c7" name="Opening Salvo" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem during the Strategy phase of the first round. All Titans from this Crusade Legio may immediately attack with a single weapon of their choice as if it was the Combat phase. A Titan that attacks in this way must advance their Plasma Reactor Status track by two places, in addition to any other advances associated with weapons fire. If the player uses this Stratagem, their opponent automatically becomes the First Player for the remainder of the first game round.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="5956-0e48-883c-bb81" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="17bf-5782-8c48-5e29" name="Blistering March" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f303-3d91-700a-6e9a" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="3934-e138-280c-8b55" name="Blistering March" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem during any Combat phase. For the remainder of the phase, any Titan from this Crusade Legio with the Full Stride order may fire one weapon during their activation. If it does so, increase its Reactor Status level by 1 in addition to any other advances associated with weapons fire.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="e503-3ff5-f506-3a20" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="967e-0695-68c7-7644" name="Fuelled by Hatred" page="" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9173-9444-97fd-39d4" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6afa-38db-bcf7-1cf4" name="Fuelled by Hatred" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio that is issued with a Charge order destroys an enemy unit in the Movement phase due to a Melee weapon or Smash attack made as part of the Order – they may immediately make a new Charge move. TheTitan can make a single turn before moving as part of this second Charge move and can move no more than 5&quot; during it.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="09d6-d48e-8d0e-6e7f" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3802-c07b-d2d2-52d3" name="Target Lock" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6aa3-767d-7816-b92b" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="399e-5ca3-4223-269d" name="Target Lock" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem when activating a Titan from this Crusade Legio in the Combat phase. Choose an enemy unit within 12&quot; of the activating Titan. For the remainder of the phase, any attacks made against the chosen enemy unit suffer no penalties to their Hit rolls for obscured line of sight or for making Targeted Attacks. Thiscounts as the activating Titan’s activation for this phase. If the activated Titan is destroyed before the end of the phase, this Stratagem has no effect for the remainder of the phase.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="773e-4054-fa27-8c14" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f176-1745-657b-4292" name="Enduring Gods" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a12-9a7f-3f4f-ade6" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="3e2f-5459-ae29-0dc4" name="Enduring Gods" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem during any Strategy phase. Any Titan from this Crusade Legio may immediately be issued Emergency Repair orders without the need to make a Command check. After all Repair rolls have been resolved, make a Command check for any Titan issued an order in this way. If the check is successful, discard the Order. After the effects of this Stratagem have been resolved, the player may issue no more Orders for the remainder of this round.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="d670-a712-02be-d344" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="27d1-6609-7a35-3119" name="Reactionary Fire" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b75e-7112-b7a9-c91f" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="3182-6dd7-0c60-bc94" name="Reactionary Fire" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
+                      <description>Play this Stratagem during any Movement phase, when an enemy Titan issued with a Charge order is activated. A friendly Titan from this Crusade Legio that has not been activated this phase may immediately make an attack with one of its weapons, or two if the chosen Titan is issued with the First Fire order. Theseattacks must be made against the activated enemy Titan and count as the chosen Titan’s activation for that phase.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="f1a1-efbd-8ce4-7b98" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="eaad-75e1-baf8-6df3" name="Electromagnetic Overload" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a330-e8ab-d684-4e0f" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="e06e-f791-79bb-df58" name="Electromagnetic Overload" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem during any Combat phase, when activating a friendly Titan from this Crusade Legio that has active void shields. Any unit, friend or foe, with active void shields within 3&quot; of the activated Titan must immediately make a number of Save rolls equal to the number of remaining holes on the Titan’s Void Shield status tracker, as if hit by a weapon with the Shieldbane trait. Theactivated Titan’s Void Shield level then immediately drops to X and the Titan takes a Critical Hit to its Body. This counts as the Titan’s activation this phase.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="a7bb-28b7-6b8c-34e6" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b8d3-4a7c-67b4-ee14" name="Vindictive in Death" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dab-97bf-2416-6826" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="1756-b9ca-0902-cbc8" name="Vindictive in Death" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio suffers Catastrophic Damage. Do not roll on the Catastrophic Damage table – instead, the Titan suffers the Catastrophic Meltdown result.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="68f0-a0d8-88f2-24aa" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="bc41-d235-5b44-8bde" name="Eye for an Eye" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="718c-80d7-4860-a0ad" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="47cd-2612-8b97-88e3" name="Eye for an Eye" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem when a Titan from this Legio is destroyed by the opposing player. Until the end of the round, all friendly Titans from this Crusade Legio can re-roll Hit rolls of a 1.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="2755-ea94-e3be-ebc3" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7808-ed0b-6271-7304" name="Locomotive Override" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f33-8e6d-b64e-dce9" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="fba3-f01a-d504-ceab" name="Locomotive Override" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem during any Combat phase. A friendly Titan from this Crusade Legio of Scale 9 or 10 may immediately make up to a 180o turn. If it does so, it suffers 1 point of Critical Damage to its Legs after resolving the turn.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="ad62-4ec9-9d87-ca71" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3654-9cff-85be-76e1" name="Directed Radburst" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b3c-f798-1fd2-b306" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="1e37-5134-40da-5250" name="Directed Radburst" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem during any Movement phase when activating a Titan from this Legio. Increase the activating Titan’s Reactor Status level by 1. Place a 5&quot; Blast marker on the table, with the central hole anywhere within 2&quot; of the activating Titan. Thiscounts as the Titan’s activation for that phase. For the remainder of the round, any Titan underneath the Blast marker must roll an extra dice when making Void Shield saves, while Knight Banners count the Strength of attacks as one higher for the purposes of working out their Ion Shield saves. At the end of the round, remove the Blast marker. ThisStratagem can be purchased multiple times, however it can only be played once per activation.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="ad3a-d168-8c38-71a7" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2162-3997-7d07-8b28" name="Scouting Run" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="946e-fa15-1831-b131" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="7f03-2a32-d566-51c0" name="Scouting Run" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem after both players have deployed but before rolling to determine who is the First Player. A Titan from this Crusade Legio with a Scale of 6 or lower may immediately make a move. TheTitan cannot declare Power to Locomotors! or Power to Stabilisers! during this move and cannot move more than 6&quot;. ThisStratagem can be purchased multiple times.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="8f23-eed5-2a8f-7ede" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d64a-2fab-a22b-f7ff" name="Power Reserves" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad15-b93a-0bd3-67a6" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="f318-1d42-d15d-52a3" name="Power Reserves" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio pushes their reactor, before rolling the Reactor dice. Do not roll the dice; the result is treated as if a blank face was rolled. ThisStratagem can be purchased multiple times, but a Titan can only be the target of this Stratagem once per round.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="7d09-9a4f-7a0c-2456" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6ce0-2da0-5e4e-2be1" name="Reactor Surge" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2413-9ccb-7f3e-a3b0" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6f30-d5ee-e8d9-81d4" name="Reactor Surge" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
+                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio pushes their reactor, before rolling the Reactor dice. For the remainder of the phase, the result subsequently rolled on the Reactor dice applies to any attempt to push the reactor, e.g., if a Titan pushed their reactor after declaring Power to Locomotors! and rolled a blank face, all subsequently attempts to push the Titan’s reactor this phase would not increase the Reactor level. If, after playing this Stratagem, a Machine Spirit symbol is rolled, the Stratagem is discarded and has no effect; the Titan must roll each time they push their reactor as normal.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="0720-49c1-eb92-999d" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="2426-d3ce-660d-7025" name="Legio Traits" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e71d-324c-5284-f228" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="1597-0b00-cb8d-6db6" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="57a7-f8b0-ba3f-d5e8" name="Dark Reputation" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6b8-af88-b2f8-423c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="12a4-c1dd-abcd-9ed4" name="Dark Reputation" publicationId="2988-f24d-39ef-352e" page="93" hidden="false">
+                      <description>At the end of the Movement phase, enemy Knight Banners within 3&quot; of a Titan from this Legio immediately become Shaken (see the Adeptus Titanicus rulebook).</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="eb74-1645-c41b-abeb" name="Elite Magos" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba5a-c1c8-61a4-34c4" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="e4af-8b24-d6d0-00d0" name="Elite Magos" publicationId="2988-f24d-39ef-352e" page="93" hidden="false">
+                      <description>During the Damage Control phase, a Titan from this Legio can re-roll a single Repair dice. The second roll must be accepted, even if it is worse.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4d51-0946-7e85-111b" name="Engines of War" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff62-7b39-9550-5c18" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5768-fd9a-dd90-7e43" name="Engines of War" publicationId="2988-f24d-39ef-352e" page="93" hidden="false">
+                      <description>Choose a class of Titan from the following list: Warlord, Reaver, or Warhound. The Titan Legion may always substitute one of the mandatory Titans in a maniple with a Titan of this type. Note, this substitute Titan only benefits from maniple rules that reference Titans but does not benefit from maniple rules that reference a specific class of Titan.
+
+For example, if the Reaver from a Venator Light Maniple was replaced with a Warlord Titan, the Warlord would not benefit from the Opportunistic Strike rule – this rule specifically references a Reaver Titan. However, if a Reaver from an Axiom Battleline Maniple was replaced by a Warlord, the Warlord would benefit from the Might of the Omnissiah rule as that refers to Titans in the maniple.</description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="25cd-bf6a-e9e0-4daa" name="Engines of War" hidden="false" targetId="1d7e-139e-16d4-2208" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9b32-4201-6a3d-451f" name="Fury of the Fallen" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3def-2127-2dc5-8aaf" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="d39d-3525-7fe2-833d" name="Fury of the Fallen" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>When one of the Legio’s Titans is activated in the Combat phase, it can fire each of its active weapons twice. After the Titan has completed its shooting, immediately roll on the Catastrophic Damage table and apply the results to the Titan. In addition, add 1 to all Armour rolls for attacks made by friendly Titans if a Titan from this Legio has suffered Catastrophic Damage that round.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5e9c-9a4a-c117-4aff" name="Gunnery Command" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67c7-03b2-e73f-5757" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="4283-9e05-8e54-c36e" name="Gunnery Command" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>Titans fielded as part of this Legio add 2 to the result of any Command checks made when issuing a First Fire or Split Fire order.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="73f1-da25-84e9-5c66" name="Loci of the Cause" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7856-67ca-6d23-b95b" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="59e8-ca62-1073-776a" name="Loci of the Cause" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>During the Strategy phase, allied Knight Banners add 2 to the result of any Command check when issuing an Order that has already been successfully issued to one or more of the Legio’s Titans.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1ea3-be67-29bb-b10f" name="Motive Mastery" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b17-fbeb-2258-53b5" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="85d0-d57f-1600-d3c9" name="Motive Mastery" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>Titans fielded as part of this Legio add 2 to the result of any Command checks when issuing Charge or Full Stride orders.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ce55-2dda-75b8-1e9f" name="Plaything of the Gods" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e094-7885-d773-8208" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="efc8-c8f6-5298-c74e" name="Plaything of the Gods" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>This Trait can only be taken by a Traitor Legio. When a friendly Titan from this Legio is activated in the Strategy phase, roll a D6. On a 4+, it recovers a point of Structure, in a location of the controlling player’s choice, lost earlier in the battle. This cannot recover a point of Structure on a location that has suffered Critical Damage. If a natural 6 is rolled, the Titan can repair a single point of Critical Damage instead, on a location of the controlling player’s choice.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0be8-6136-987c-2cc5" name="Duty and Honour" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c93-6a03-938a-67af" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="9d81-34d5-cb44-a527" name="Duty and Honour" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>This Trait can only be taken by a Loyalist Legio. A friendly Titan from this Legio may be issued a different Order via the Adaptive Tactics Allegiance Ability (see page 83) once per round, instead of once per game.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3d91-31de-5703-c02e" name="The Path to Ascension" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8cc-e33c-46ed-058d" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ca8-5716-85ea-67f1" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="86ff-997c-99e2-0198" name="The Path to Ascension" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>This Trait can only be taken by a Blackshield Legio. Titans from this Legio may re-roll failed Command checks provided they are within 12&quot; of two or more other friendly Titans from this Legio. In addition, Titans from this Legio can share shields with friendly Titans from this Legio that are currently under the effects of the Shutdown order as if they were in the same Squadron.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="28bc-b530-df52-c02e" name="Noble Lineage" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1707-bba4-a1d8-8ec9" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="656c-c424-f1a7-fbe2" name="Noble Lineage" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
+                      <description>During deployment, before any units have been deployed, Reaver Battle Titans from this Legio can be paired; to do this, choose two Reaver Titans from the Legio within your battlegroup – these do not have to be part of the same maniple and a battlegroup can contain one or more pairs of Reavers. At the beginning of each round, paired Reaver Titans may be formed into a Squadron with each other (see the Adeptus Titanicus rulebook). TheseSquadrons last until the end of the round. However, paired Reaver Titans in a Squadron may not merge void shields.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7cab-7968-7507-fc35" name="Towering Exemplar" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9999-3417-a7ba-26fc" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6164-e511-f818-e52b" name="Towering Exemplar" publicationId="2988-f24d-39ef-352e" page="95" hidden="false">
+                      <description>At the start of each Strategy phase, choose a friendly Titan from this Legio within 6&quot; of a Princeps Seniores from the same Legio. Thechosen Titan adds 1 to the result of all Command checks they make this round. In addition, they can re-roll Hit rolls of a 1 for the remainder of the round.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5cfe-906b-4e61-5f70" name="Blood-fuelled" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b3-3fe5-a94b-d784" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5d4c-d623-474f-eb97" name="Blood-fuelled" publicationId="2988-f24d-39ef-352e" page="95" hidden="false">
+                      <description>Titans from this Legio armed with one or more weapons with the Melee trait increase their Weapon Skill by 1 (to a maximum of 2+) and decrease their Ballistic Skill by 1 (to a minimum of 6+). In addition, once per round each Titan from this Legio can add 1 to the Dice value of a Smash attack or an attack with a weapon with the Melee trait made as part of a Charge order, in addition to any dice added as part of the Order.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d79b-13fc-a77b-3225" name="Forwards to Glory" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcfe-3584-68bd-277d" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="da5d-2944-8006-0483" name="Forwards to Glory" publicationId="2988-f24d-39ef-352e" page="95" hidden="false">
+                      <description>Titans from this Legio add 1 to the result of all Command checks made while they are within 8&quot; of an enemy Titan. If they are within 8&quot; of an enemy Titan with a Scale at least 3 greater than their own, they can instead be issued Orders without the need to make a Command check.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6da4-f625-47bc-c1ad" name="Vanguard Fighters" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4458-5d30-4ce9-3510" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="659b-c315-cd87-edbc" name="Vanguard Fighters" publicationId="2988-f24d-39ef-352e" page="95" hidden="false">
+                      <description>Titans from this Legio with a Scale of 7 or less add 1 to all To Hit rolls, and can be issued Full Stride and First Fire orders without the need to make a Command check while there is no friendly Titan (from any Legio) within 6&quot; of them.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5b72-bfec-73c2-4924" name="Masters of Defence" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49d0-ab33-06f6-c11e" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="d93d-0e95-a1a3-853e" name="Masters of Defence" publicationId="2988-f24d-39ef-352e" page="95" hidden="false">
+                      <description>Titans from this Legio can move at full speed when Backing Up (see the Adeptus Titanicus rulebook). In addition, when a Titan from this Legio is attacked as part of a Charge order, it may immediately move backwards up to 3&quot; and make a single weapon attack at the unit that attacked them. If they do this, increase the Titan’s Reactor Status level by 1. Each Titan can only do this once per round. Thismove and attack is resolved after the effects of the Charge order and the subsequent attack have been resolved.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="dbb9-de76-dd5e-2138" name="Legio Wargear" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5703-7e78-3edb-5166" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="6226-596c-78ca-9235" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="ab76-e8ba-eece-5405" name="Ablative Ceramite Plating" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7844-e56f-7335-2d92" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="7c4f-e672-3f0c-4ff3" name="Ablative Ceramite Plating" hidden="false" targetId="c473-fa3e-8002-49ab" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c812-47e1-3b14-817c" name="Armour Spikes" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5526-389d-bff1-2283" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="4901-b504-7e6a-20fd" name="Armour Spikes" hidden="false" targetId="3a3a-b384-c49f-61ff" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1f03-2b50-3cff-9efa" name="Auxiliary Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6278-5d0a-ed9d-2a40" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="44bc-0faa-5167-e821" name="Auxiliary Shield Capacitors" hidden="false" targetId="fd5d-c162-4f07-94c2" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0650-92fc-8cbf-7fd8" name="Blind Missiles" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f86a-acdb-80cf-24b0" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="fc8c-2d7e-f9b8-ca28" name="Blind Missiles" hidden="false" targetId="1566-6904-d727-7f9c" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5edd-107f-a5bc-1333" name="Crusade Banners" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b1b-d7b6-e8be-c984" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="0b5c-f201-390a-f120" name="Crusade Banners" hidden="false" targetId="3bdf-54e8-437f-6bff" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="06d1-5ccc-9983-7ad9" name="Macro Magazines" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d376-0127-8ac7-1877" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="f2f8-4786-5bac-0011" name="Macro Magazines" hidden="false" targetId="be9e-bd56-3125-b325" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3140-6b36-9c57-f59e" name="Multiple Warhead Launchers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cc5-ae18-97ec-2823" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="34a5-3a8a-be60-0dd4" name="Multiple Warhead Launchers" hidden="false" targetId="1ec7-9af8-fe78-c873" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8ae0-021b-312c-fa7b" name="Plasma Rifling" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da86-a0f3-b0ce-4705" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="4cdb-3558-51b0-48df" name="Plasma Rifling" hidden="false" targetId="598e-5696-26c9-54b0" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="17bc-23b6-c375-94f4" name="Ranging Auspexes" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8058-c9f3-41cf-3c91" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="9d20-655c-e98a-81ea" name="Ranging Auspexes" hidden="false" targetId="df4a-a746-5049-5c6f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4492-a379-acb9-f987" name="Reactor Fetters" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aba4-ccc8-9f29-d473" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="05ce-45d9-441e-3ee8" name="Reactor Fetters" hidden="false" targetId="2f60-f408-aebe-f8cd" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="db6e-57f8-1f49-7215" name="Secondary Shield Generators" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a0c-5c8d-a24b-b34d" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="4fe7-17c4-0db0-400c" name="Secondary Shield Generators" hidden="false" targetId="f03e-2c70-6202-e81c" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e533-372b-c9b4-4f13" name="Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce10-a9d1-86f1-2bea" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="9116-6ea7-a642-039f" name="Autoloaders" hidden="false" targetId="97c9-0bce-fc01-46f4" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="42a0-b785-3b00-b618" name="Macro Charges" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7df-5fb7-fd10-0d83" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="e19a-39b5-9efe-1733" name="Macro Charges" hidden="false" targetId="5221-b61f-f881-45e7" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="12ae-a386-868d-be5b" name="Tracking Gyroscopes" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12e8-9f0d-3662-f2aa" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="e2e2-d879-e8d6-ffde" name="Tracking Gyroscopes" hidden="false" targetId="8eed-a57c-a7f9-6ec6" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2697-d70b-3ae9-8d57" name="Fusion Missiles" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7375-073c-c77f-7fa5" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="a657-fbeb-5281-3fe4" name="Fusion Missiles" hidden="false" targetId="40cd-b4c6-809f-9acf" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6e6e-a651-c9ba-d4c7" name="Gravitonic Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23dd-db97-15e6-265d" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="d11f-f668-f8ff-3c8c" name="Gravitonic Stabilisers" hidden="false" targetId="7318-705d-7b35-c278" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e5e5-23b9-1241-9c08" name="Diabatic Warheads" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36e9-c327-7012-4ffb" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="d6a3-ed0a-10f2-de31" name="Diabatic Warheads" hidden="false" targetId="f834-a2e8-bf06-4d7c" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="711d-2ce1-d701-2cbc" name="Hunting Motives" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b187-ae90-04a8-a15b" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="ad9f-3110-7b53-f669" name="Hunting Motives" hidden="false" targetId="e5b2-df10-f0a7-0c6f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9b5b-50de-d969-1921" name="Unguis Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3259-e09f-018c-ad5b" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="fb27-cc29-1d68-59af" name="Unguis Stabilisers" hidden="false" targetId="cf86-f025-9c57-043d" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="db5d-3fea-6278-f6f9" name="Vox Screech" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5387-1c0b-5180-d44e" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="321a-9eab-df20-c91e" name="Vox Screech" hidden="false" targetId="fbc7-50e2-22e0-38b4" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fc82-977a-8274-1b59" name="Seismic Auspex" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4e3-375d-2061-d2f0" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="cf07-f0b5-64af-88e4" name="Seismic Auspex" hidden="false" targetId="eac2-b1e4-777f-0f0f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                    <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -13096,7 +14826,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                 <entryLink id="23f0-ce15-158e-d8f5" name="Plasma Blast Gun (WH)" hidden="false" collective="false" import="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
                 <entryLink id="fc86-6790-bf6c-3f0a" name="Turbo Laser Destructor [WHD]" hidden="false" collective="false" import="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
                 <entryLink id="1524-5b2a-1e79-12e8" name="Vulcan Megabolter [WHD]" hidden="false" collective="false" import="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
-                <entryLink id="3ee3-eda0-0fc6-d1e0" name="Chasmata Pattern Turbo Laser Destructor (Warhound)" hidden="true" collective="false" import="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry">
+                <entryLink id="3ee3-eda0-0fc6-d1e0" name="=Tempestus= Chasmata Turbo Laser Destructor [WH]" hidden="true" collective="false" import="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -13739,6 +15469,11 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="405e-ee62-a0ec-ede0" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="name" value="Warp Missile Support Rack (Vortex)">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="405e-ee62-a0ec-ede0" type="atLeast"/>
+          </conditions>
+        </modifier>
         <modifier type="remove" field="category" value="7130-bbeb-02e3-de28">
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="405e-ee62-a0ec-ede0" type="atLeast"/>
@@ -13761,7 +15496,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
-        <profile id="b429-5072-239d-cd5c" name="Vortex Missile Support Rack" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="10e7-e99b-c32c-c384" name="Warp Missile Support Rack (Vortex)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">X</characteristic>
@@ -14315,7 +16050,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0a2-bcaf-7f29-9ee3" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="fc7a-b856-2fe3-566f" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="fc7a-b856-2fe3-566f" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
         <entryLink id="014f-fb41-12dd-1860" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
           <categoryLinks>
             <categoryLink id="d8ba-fd36-d3a1-e997" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
@@ -19191,6 +20926,382 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="985e-c339-0b77-e617" name="=Crusade= Ablative Ceramite Plating" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ca7-eb51-2c59-e143" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="4659-4ef5-fa8f-5c62" name="Ablative Ceramite Plating" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Ablative Ceramite Plating for +30 points. At the start of the battle, a Titan equipped with Ablative Ceramite Plating can choose either its Body, Legs or Head. The Titan ignores the bonus to the attacker’s armour roll as a result of damage already inflicted on the chosen location, as indicated by the Command Terminal (see the Adeptus Titanicus rulebook).
+
+Additionally, if the Head is chosen, in a campaign the Titan’s crew will always survive the destruction of their Titan on a 2+ (see page 87 of Adeptus Titanicus: Titandeath).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="085a-e2c2-3bdf-737a" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="c364-44a7-cf77-ea90" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ec20-60be-dbf7-f2b9" name="=Crusade= Armour Spikes" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da91-c598-1518-fac5" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="69c2-ab1c-4b28-a76d" name="Armour Spikes" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Armour Spikes for +20 points. A Titan with Armour Spikes increases the number of dice it generates when making a Smash attack from D3 to D6 (see the Adeptus Titanicus rulebook).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e047-3969-8906-d036" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="3e47-166f-eb9d-aaac" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8990-ddd7-37d3-0666" name="=Crusade= Auxiliary Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a3f-a2d8-89c7-841d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="c05e-a059-986d-0d03" name="Auxiliary Shield Capacitors" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Auxiliary Shield Capacitors for +20 points. Once per round, a Titan with this upgrade can declare Voids to Full! (see the Adeptus Titanicus rulebook) without having to push the reactor. As soon as the Titan’s shields collapse, the benefits from this piece of Wargear are lost for the remainder of the battle, even if the Titan’s shields are later reignited.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="90f6-de3e-c348-9893" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="7908-987b-b868-c96c" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="75f9-5be1-91bd-4a04" name="=Crusade= Blind Missiles" hidden="true" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3fb-b264-0de8-a67e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="bcaf-d6f4-42fd-9595" name="Blind Missiles" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any of the Legio’s Titans armed with either Apocalypse missile launchers or an Apocalypse missile launcher can be upgraded to have Blind Missiles for +20 points. Each of the Titan’s weapons must be upgraded separately. Once per game, a Titan armed with Blind Missiles may fire a blind salvo with its Apocalypse missile launchers rather than firing them normally. Place the 5&quot; Blast marker anywhere within range and firing arc of the missile launchers – they do not need line of sight. This marker remains in place until the end of the round and blocks line of sight through it.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2a44-2875-c0ee-aeef" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="a009-37de-3ce6-81ce" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b942-4f45-a1e2-18c8" name="=Crusade= Crusade Banners" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379c-b331-7436-842f" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="f449-df36-c3f7-0208" name="Crusade Banners" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Crusade Banners for +15 points. Friendly Knight Banners with at least one model within 6&quot; of a Titan with this upgrade cannot be Shaken for any reason.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="47b4-ffcd-5df8-b69b" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="e3ae-253c-661d-ecdb" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="628a-c5e1-1d3f-065e" name="=Crusade= Macro Magazines" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="5f3f-2bf8-86e5-6f4e" name="Macro Magazines" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
+          <description>Any weapon with the Rapid trait equipped by a Titan from this Legio can be upgraded to have Macro Magazines for +30 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon with the Rapid trait a Titan is armed with must be upgraded separately. Increase the Dice value of that weapon by 2. Add 2 to the result when rolling on the Catastrophic Damage table for a Titan with Macro Magazines – this effective is cumulative (i.e., a Titan with two Macro Magazines would add 4 to the result).
+
+Take 1 selection for each weapon you are upgrading.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="cd2d-7936-acdc-8960" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="221d-44f8-ccbc-0284" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6010-6066-629e-1305" name="=Crusade= Multiple Warhead Launchers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ff0-6aca-d51f-c213" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e66e-da2e-f273-841f" name="Multiple Warhead Launchers" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any of the Legio’s Titans armed with Apocalypse missile launchers or an Apocalypse missile launcher can be upgraded to have Multiple Warhead Launchers for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Any Apocalypse missile launcher equipped with this upgrade adds 5 to their Dice value and gains the Rapid and Limited (2) traits. A Titan can upgrade a weapon with Multiple Warhead Launchers and Autoloaders, however the base cost of the weapon includes the +20 points, which is applied before determining the cost of the Autoloaders.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0bd9-036f-02ae-b032" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="00c6-a9eb-fb03-1824" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="241e-6a16-8744-e27d" name="=Crusade= Plasma Rifling" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e957-1db4-4135-b7c0" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="be0d-f120-1c58-aafb" name="Plasma Rifling" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Plasma Rifling for +15 points per Titan. When firing a weapon with the word ‘plasma’ or ‘laser’ in its name (i.e., plasma blastgun, paired laser blasters, etc) the Titan can push its reactor to increase both the Short range and Long range of the weapon by 6&quot;.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f4af-e725-2223-e3a1" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="b564-55db-c125-27bb" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8f3a-1f0f-7807-e137" name="=Crusade= Ranging Auspexes" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b83-6d56-6e2e-0c68" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="f9ab-c925-3890-e345" name="Ranging Auspexes" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Ranging Auspexes for +10 points per Titan. In the Combat phase, a Titan equipped with Ranging Auspexes can premeasure the range and check weapon arcs between itself and potential targets before selecting a target.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d275-240b-6c7e-be6e" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="f263-100e-cd49-243a" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d0f2-9a3d-50d1-6958" name="=Crusade= Reactor Fetters" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77a1-5536-ce38-a0ea" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="b981-5bb4-7f47-5837" name="Reactor Fetters" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded to have Reactor Fetters for +25 points. A Titan with Reactor Fetters may Vent Plasma in the Damage Control phase on a Repair dice roll of 3+ rather than 4+. However, it may not voluntarily push its reactor more than once in each phase.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f203-18f0-83f2-7924" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="9fae-544b-59ac-85b4" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7385-7f1f-2c1d-6963" name="=Crusade= Secondary Shield Generators" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d051-fe61-8757-c0d6" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="10d3-0524-7bdf-2a9c" name="Secondary Shield Generators" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any of the Legio’s Titans can be upgraded with Secondary Shield Generators for +25 points. Once per game, when a Titan with this upgrade has a Void Shield level of X and is chosen as the target of a weapon attack, it may engage its Secondary Shield Generators – this must be done before any dice are rolled. Immediately increase the Titan’s Void Shield level by D3 and the Titan’s Reactor Level by the same amount (i.e., if a 2 is rolled, the Titan’s Void Shield level moves left along the tracker twice and the Reactor Level marker moves right along the Reactor Status tracker twice). A Titan cannot use their Emergency Shield Generators if they are suffering from the VSG Burnout Critical Damage effect.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0a9a-93e4-ef01-79bc" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="75ed-cd2e-300b-4049" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b44a-669d-a9d2-6cdc" name="=Crusade= Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="805e-e75f-f270-6661" name="Autoloaders" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any Titan that is equipped with a Limited (X) Carapace weapon can take Autoloaders for a cost equal to the base cost of the weapon +5 points. Each of the Titan’s weapons must be upgraded separately. A weapon equipped with Autoloaders increases the (X) value by 1. This upgrade can be bought multiple times for the same weapon, increasing the cost to take Autoloaders by +10 points for each additional purchase, e.g., a Reaver warp missile could be upgraded twice (upgrading Limited (1) trait to a Limited (3) trait) with Autoloaders at a cost of +50 points – +15 points for the first upgrade and +25 points for the second.
+
+Take the correct amount of selections to come to the total cost for the upgrade as described above.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c84a-7256-6798-6f18" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="cb53-189a-8a56-3e4a" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="56fe-a07d-b73f-a576" name="=Crusade= Macro Charges" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="68b8-aab2-8492-9df0" name="Macro Charges" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
+          <description>Any Titan from this Legio equipped with a Blast 3&quot; weapon may be equipped with Macro Charges for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with Macro Charges replaces the Blast (3&quot;) trait with the Blast (5&quot;) trait and increases its Strength value by 1. However, when a weapon equipped with Macro Charges detonates, the Strength of any hit taken is increased by 2.
+
+Take 1 selection for each weapon you are upgrading.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4804-d323-a4e3-d9dd" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="e277-a3de-732d-92da" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cd35-17bf-d32f-5e60" name="=Crusade= Tracking Gyroscopes" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9881-b6f9-6f35-d16d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e537-e7ca-39e0-f677" name="Tracking Gyroscopes" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Titan from this Legio may be equipped with Tracking Gyroscopes for +10 points. A Titan with this upgrade changes the Fire Arc of their carapace weapons to include the entire Front Arc of the Titan.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e43d-947a-1b06-8cba" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="1d3f-81bf-57b5-03ba" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="617d-4ecf-2753-447a" name="=Crusade= Fusion Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4c7-a70b-dee8-6060" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="eafd-811c-116b-e0ee" name="Fusion Missiles" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Titan from this Legio armed with an apocalypse missile launcher or paired apocalypse missile launchers may take Fusion Missiles as an upgrade for +25 points. Each of the Titan’s weapons must be upgraded separately. When firing a weapon equipped with Fusion Missiles, the player can choose to either use its normal profile, or fire using Fusion Missiles; if they do this, for the duration of the attack the weapon gains the Fusion trait and reduces its Dice value to 3 if the original Dice value is 8 or more, or to 2 if the original Dice value is 7 or less.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="724f-d933-8960-529b" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="6c64-1697-0dd4-4f73" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ef97-0bcb-8db6-0a9f" name="=Crusade= Gravitonic Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d52-902e-bb3a-75da" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8f05-9be4-cebc-4edc" name="Gravitonic Stabilisers" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Titan from this Legio may take Gravitonic Stabilisers for +10 points. If a Titan with this upgrade is hit by a weapon with the Concussive and/or Quake traits that is not deflected by the shields, roll a D6. On a 2+, that Titan is unaffected by the Concussive and/or Quake traits, although it still suffers any other damage effects. However, a Titan with this upgrade cannot declare Power to Locomotors!</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2000-237f-5613-8297" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="cf30-1119-e02c-0706" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f474-9d16-9408-0a7d" name="=Crusade= Diabatic Warheads" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4a0-c4c4-7f52-fb7c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="dbf8-966c-9c0e-df53" name="Diabatic Warheads" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Titan from this Legio armed with an Apocalypse missile launcher or paired Apocalypse missile launchers may take Diabatic Warheads for +15 points. Each of the Titan’s weapons must be upgraded separately. When firing a weapon equipped with Diabatic Warheads, the player can choose to use its normal profile, or fire using Diabatic Warheads; if they do this, reduce the weapon’s Strength value to 1. If an attack made with Diabatic Warheads scores at least 3 hits, regardless of whether the Void Shield saves are passed or not, increase the target Titan’s Reactor Status Level by 1. If 8 or more hits are scored, increase the target’s Reactor Status level by 2 instead. Diabatic Warheads have no additional effect on Knight Banners, beyond any damage they may inflict.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e694-1925-e567-8d71" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="63b6-386d-629d-b7d7" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a0b-a568-117f-b54b" name="=Crusade= Seismic Auspex" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="6b74-3421-ab9b-72ee" name="Seismic Auspex" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Warbringer Nemesis Titan from this Legio can be upgraded for 5 x half the Strength of the weapon (e.g., a volcano cannon would be +30 points). The weapon gains the Barrage trait and applies only a -1 modifier rather than a -2 modifier when making attacks at targets it does not have line of sight to. The Barrage trait can only be used if the Warbringer Nemesis Titan has not moved this turn (voluntarily or involuntarily).
+
+Take 1 selection for each half strength of the weapon you are upgrading.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f928-bf1e-0464-2fab" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="5d81-5587-389b-01d0" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="10b4-44bc-24de-8dcc" name="=Crusade= Hunting Motives" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b9-ac6f-4e0e-e045" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="f06b-7cf9-502a-6c9e" name="Hunting Motives" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
+          <description>Any Titan from this Legio of Scale 6 or lower may be equipped with Hunting Motives for +20 points. A Titan with this upgrade increases their default Speed value by 2&quot; during the Movement phase. However, they may not declare Power to Stabilisers!</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6f80-425b-7970-dbcd" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="bc55-b4dd-5105-8f62" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9168-bb42-d17a-5391" name="=Crusade= Unguis Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca7a-535b-e792-dfab" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5791-4e53-a909-f3af" name="Unguis Stabilisers" publicationId="2988-f24d-39ef-352e" page="101" hidden="false">
+          <description>Any Titan from this Legio with a Scale of 9 or greater may be equipped with Unguis Stabilisers for +20 points. When activated in the Strategy phase, a Titan with this upgrade may deploy their Unguis Stabilisers. If they do so, until the end of the round they may be issued a First Fire order or Split Fire order without the need to make a Command check. However, they may not move or make turns, voluntarily or otherwise for the remainder of the round (e.g., by Critical Damage effects, Stratagems, the Concussive weapon trait, etc.).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="811b-b141-221d-8a8f" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="1e09-1aa7-d304-76b7" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="df26-6cc5-c1e1-4f71" name="=Crusade= Vox Screech" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b18e-edc2-701a-4f53" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="09d8-fce7-d42b-1915" name="Vox Screech" publicationId="2988-f24d-39ef-352e" page="101" hidden="false">
+          <description>A Titan from this Legio may be equipped with a Vox Screech for +30 points. Once per game, when a Titan with this upgrade is activated during the Movement phase they may issue a Vox Screech. Any Titan within 6&quot; of a Titan that issued a Vox Screech discards any Orders that it had issued, unless that Order was an Emergency Repairs order. This counts as the activating Titan’s activation for that phase. Friendly Titans from this Legio are not affected by a Vox Screech.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0636-3041-2547-90a6" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
+        <categoryLink id="e224-4d29-639b-8e15" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -19659,6 +21770,218 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7edc-cb03-0022-9d9b" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d76-a8f2-679f-57a9" type="min"/>
           </constraints>
+        </entryLink>
+        <entryLink id="5295-962a-086a-1a36" name="=Crusade= Ablative Ceramite Plating" hidden="true" collective="false" import="true" targetId="985e-c339-0b77-e617" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="c473-fa3e-8002-49ab" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="0ef7-aa6b-c1a5-6783" name="=Crusade= Armour Spikes" hidden="true" collective="false" import="true" targetId="ec20-60be-dbf7-f2b9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="3a3a-b384-c49f-61ff" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="cdf8-888a-2086-3612" name="=Crusade= Autoloaders" hidden="true" collective="false" import="true" targetId="b44a-669d-a9d2-6cdc" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="97c9-0bce-fc01-46f4" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4d45-2010-5417-235d" name="=Crusade= Auxiliary Shield Capacitors" hidden="true" collective="false" import="true" targetId="8990-ddd7-37d3-0666" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fd5d-c162-4f07-94c2" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="281a-6e4c-6622-cddf" name="=Crusade= Blind Missiles" hidden="true" collective="false" import="true" targetId="75f9-5be1-91bd-4a04" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1566-6904-d727-7f9c" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="false"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="3a55-0e66-aa74-11e0" name="=Crusade= Crusade Banners" hidden="true" collective="false" import="true" targetId="b942-4f45-a1e2-18c8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="3bdf-54e8-437f-6bff" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="e195-86da-88c3-316d" name="=Crusade= Diabatic Warheads" hidden="true" collective="false" import="true" targetId="f474-9d16-9408-0a7d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f834-a2e8-bf06-4d7c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="9526-baed-0234-2ae0" name="=Crusade= Fusion Missiles" hidden="true" collective="false" import="true" targetId="617d-4ecf-2753-447a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="40cd-b4c6-809f-9acf" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b8bf-372f-b1d9-35c0" name="=Crusade= Gravitonic Stabilisers" hidden="true" collective="false" import="true" targetId="ef97-0bcb-8db6-0a9f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7318-705d-7b35-c278" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="f803-f1bf-6d6d-0310" name="=Crusade= Hunting Motives" hidden="true" collective="false" import="true" targetId="10b4-44bc-24de-8dcc" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ad7-cd10-8d6e-8c2e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="e5b2-df10-f0a7-0c6f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="3d1e-fb7a-aee5-acff" name="=Crusade= Macro Charges" hidden="true" collective="false" import="true" targetId="56fe-a07d-b73f-a576" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="5221-b61f-f881-45e7" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="afd5-6419-898f-7543" name="=Crusade= Macro Magazines" hidden="true" collective="false" import="true" targetId="628a-c5e1-1d3f-065e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="be9e-bd56-3125-b325" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="9e09-2e0f-0afb-a0f8" name="=Crusade= Multiple Warhead Launchers" hidden="true" collective="false" import="true" targetId="6010-6066-629e-1305" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1ec7-9af8-fe78-c873" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="20e9-a8df-f8ea-3740" name="=Crusade= Plasma Rifling" hidden="true" collective="false" import="true" targetId="241e-6a16-8744-e27d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="598e-5696-26c9-54b0" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4df1-3eba-1648-e530" name="=Crusade= Ranging Auspexes" hidden="true" collective="false" import="true" targetId="8f3a-1f0f-7807-e137" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="df4a-a746-5049-5c6f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b594-a5fb-b1f8-401e" name="=Crusade= Reactor Fetters" hidden="true" collective="false" import="true" targetId="d0f2-9a3d-50d1-6958" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="2f60-f408-aebe-f8cd" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="6e38-3dc3-b745-7746" name="=Crusade= Secondary Shield Generators" hidden="true" collective="false" import="true" targetId="7385-7f1f-2c1d-6963" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f03e-2c70-6202-e81c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="66a8-ff76-c95b-d994" name="=Crusade= Tracking Gyroscopes" hidden="true" collective="false" import="true" targetId="cd35-17bf-d32f-5e60" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8eed-a57c-a7f9-6ec6" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="d1b8-0b07-e58e-73bb" name="=Crusade= Unguis Stabilisers" hidden="true" collective="false" import="true" targetId="9168-bb42-d17a-5391" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cf86-f025-9c57-043d" type="atLeast"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5122-cb02-8703-ce88" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="2c06-2a69-6377-38eb" name="=Crusade= Vox Screech" hidden="true" collective="false" import="true" targetId="df26-6cc5-c1e1-4f71" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fbc7-50e2-22e0-38b4" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="09ed-6300-0202-49c3" name="=Crusade= Seismic Auspex" hidden="true" collective="false" import="true" targetId="9a0b-a568-117f-b54b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c2-cfd2-43b1-d54a" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="eac2-b1e4-777f-0f0f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
