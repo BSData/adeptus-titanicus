@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="51" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="52" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -21814,7 +21814,6 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1566-6904-d727-7f9c" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="hidden" value="false"/>
           </modifiers>
         </entryLink>
         <entryLink id="3a55-0e66-aa74-11e0" name="=Crusade= Crusade Banners" hidden="true" collective="false" import="true" targetId="b942-4f45-a1e2-18c8" type="selectionEntry">
