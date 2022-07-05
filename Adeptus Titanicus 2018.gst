@@ -3746,7 +3746,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
