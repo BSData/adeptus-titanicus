@@ -15398,6 +15398,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b4c-a5f1-3348-1cf3" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="0969-2a69-0c81-c174" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="250.0"/>
@@ -15525,6 +15526,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c308-84df-cbd7-ae63" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="608f-49c3-ac17-ba10" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="385.0"/>
@@ -15647,6 +15649,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a845-8974-9124-140a" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="3095-5097-cede-0c0d" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="180.0"/>
@@ -19546,6 +19549,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fc8-6bca-46dc-7954" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="959b-ce0c-0b58-a493" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="210.0"/>
