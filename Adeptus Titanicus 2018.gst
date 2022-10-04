@@ -5926,7 +5926,7 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
         </modifier>
         <modifier type="set" field="9953-2eb8-288f-b6b7" value="10.0">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7d6-0e74-955c-4a69" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9ce-1386-1303-6e1e" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -16802,13 +16802,15 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <entryLink id="9864-2da3-5f35-c2e7" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="ebdf-52f9-0ae0-c477" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
         <entryLink id="a4ba-8f7d-98d7-1127" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
-        <entryLink id="8e0c-4aec-51bc-7494" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="8e0c-4aec-51bc-7494" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
         <entryLink id="b514-61b3-7daa-c0c2" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
         <entryLink id="8c7e-c5ec-6fbe-c7e1" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6fe8-5be7-02a5-0fb4" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="9540-58af-076e-b2d1" name="Corrupted Titan Personal Trait" hidden="false" collective="false" import="true" targetId="73d7-5048-a287-3359" type="selectionEntryGroup"/>
+        <entryLink id="80c3-d1c5-44bc-595c" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="325.0"/>
@@ -17611,7 +17613,6 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52f0-7a81-15a5-b780" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="981b-2cfa-ed36-ae90" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2337-45e1-87e4-f282" type="max"/>
       </constraints>
       <rules>
@@ -17695,7 +17696,7 @@ After assembling their battlegroup, the player should pick one Titan in their ma
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="04ca-3b60-6464-0531" name=" d6" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="04ca-3b60-6464-0531" name="d6" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c79-557c-4d64-185b" type="max"/>
               </constraints>
@@ -19656,6 +19657,62 @@ immediately push their reactor to make an attack with one of its weapons.</descr
                     <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
                     <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
                   </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a4a0-82a9-4188-9753" name="d6" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6b6-2e17-4aaa-3ec0" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bddd-f3f5-dc4c-be62" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="c9a7-1b5c-2a42-f0ac" name="1 Tormentor" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="c2f2-8f25-693b-a8a3" name="Tormentor" hidden="false">
+                      <description>When making a Targeted attack against a Titan, the Princeps’ Titan adds 1 to the result of all Hit rolls it makes against a location that has not suffered Critical Damage. This is in addition to any negative modifiers.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry id="a75f-c012-d334-2a5b" name="2 Examplar of Fear" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="f7ed-d550-7bff-70d8" name="Examplar of Fear" hidden="false">
+                      <description>Once per round, when an enemy Titan within 12&quot; of the Princeps’ Titan successfully makes a Command check to issue an Order, they can be made to re-roll it.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry id="944b-7815-863e-3ba0" name="3 Strong of Essence" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="b711-e377-103b-2abb" name="Strong of Essence" hidden="false">
+                      <description>If the Princeps’ Titan is destroyed, before rolling on the Catastrophic Damage table, the player may choose a friendly non-Corrupted Titan within 8&quot; of the Princeps’ Titan. The chosen Titan must be of the same class as the Princeps’. The chosen Titan is overtaken by the warp entity’s essence and follows all rules for being a Princeps Seniores. In addition, roll a D6. On a 4+, it retains the Strong of Essence Personal Trait, otherwise it has no Personal Trait. The new Titan gains the same Base Mutation as the destroyed Titan but does not gain any Additional Mutations. Only a Princeps Seniores chosen during Battlegroup selection counts for the purpose of determining Victory points and other scenario effects.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry id="2928-66c1-80fb-24d0" name="4 Beast of Aeons" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="3e41-1dbe-0f41-d650" name="Beast of Aeons" hidden="false">
+                      <description>The Princeps’ Titan can be issued an Order without the need to make a Command check. If the Princeps’ Titan is issued with an order in this manner, other Titans in the Princeps’ maniple can only be issued the same Order for the remainder of that phase.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry id="f04b-7858-2c93-7849" name="5 Distorted Form" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="934d-554c-592f-d2f1" name="Distorted Form" hidden="false">
+                      <description>At the start of each round’s Movement phase, the Princeps Titan may distort its form. When it does so, the Titan may increase its base speed characteristic by 1&quot; or increase its base manoeuvre characteristic by 1. Thiseffect lasts until the end of the phase.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry id="9d05-6225-a12b-1465" name="6 Shackled" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="745e-6157-d7f1-efa4" name="Shackled" hidden="false">
+                      <description>When the Princeps’ Titan is required to roll on the Awakened Entity table, they may roll two dice and pick which result applies. Thesame result can be rolled twice</description>
+                    </rule>
+                  </rules>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
