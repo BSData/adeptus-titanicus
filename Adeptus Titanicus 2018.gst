@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="58" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="59" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -15348,7 +15348,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <entryLink id="b0db-882e-0d36-f524" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
                 <entryLink id="73f2-7386-528b-89a6" name="Warp Missile Support Rack" hidden="false" collective="false" import="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
                 <entryLink id="c860-31b1-1c90-21a4" name="Vulcan Megabolter [RVR]" hidden="false" collective="false" import="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
-                <entryLink id="0c2b-34ac-a75d-59d0" name="Chasmata Pattern Turbo Laser Destructor (Reaver)" hidden="true" collective="false" import="false" targetId="08c7-5efe-0712-c420" type="selectionEntry">
+                <entryLink id="0c2b-34ac-a75d-59d0" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" hidden="true" collective="false" import="false" targetId="08c7-5efe-0712-c420" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -15358,6 +15358,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   </modifiers>
                 </entryLink>
                 <entryLink id="14de-4175-9e2f-e718" name="Volkite Eradicator R" hidden="false" collective="false" import="true" targetId="4f49-0fb1-426f-c152" type="selectionEntry"/>
+                <entryLink id="4b7b-2dc9-c500-a30e" name="Graviton Destructor [RVR]" hidden="false" collective="false" import="true" targetId="7093-9a5b-12c0-f7ed" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -15445,6 +15446,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <entryLink id="b4ae-a574-74b8-b907" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
                 <entryLink id="03f5-016e-81d3-8475" name="Arioch Titan Power Claw" hidden="false" collective="false" import="false" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry"/>
                 <entryLink id="6d64-2797-31df-45a2" name="Volkite Destructor" hidden="false" collective="false" import="true" targetId="2e8a-92e8-a90e-545e" type="selectionEntry"/>
+                <entryLink id="2a83-d51e-e2c0-28c0" name="Graviton Ruinator" hidden="false" collective="false" import="true" targetId="3322-b111-508b-cf74" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fd46-9b21-ec00-bd85" name="Carapace" hidden="false" collective="false" import="false">
@@ -15609,6 +15611,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 </entryLink>
                 <entryLink id="6a38-658a-3b64-348d" name="Natrix Shock Lance" hidden="false" collective="false" import="false" targetId="59e1-0284-05e3-4c67" type="selectionEntry"/>
                 <entryLink id="c1c4-f64d-0ddf-86cb" name="Volkite Eradicator WH" hidden="false" collective="false" import="true" targetId="2f29-8298-5888-bcc6" type="selectionEntry"/>
+                <entryLink id="5e07-1d57-c8cf-bed1" name="Graviton Destructor [WH]" hidden="false" collective="false" import="true" targetId="cfff-d280-9b0e-aadb" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -20020,6 +20023,101 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7093-9a5b-12c0-f7ed" name="Graviton Destructor [RVR]" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3c0e-3b09-7b86-cd74" name="Graviton Destructor [RVR]" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">18&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">38&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Concussive, Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c936-b7e0-f4f3-d96b" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="e793-a7db-ec6e-9a9c" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="7a3a-c1c0-864d-88c5" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
+        <categoryLink id="8df6-b718-30b4-3ec2" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="45fe-0eb8-705a-8273" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cfff-d280-9b0e-aadb" name="Graviton Destructor [WH]" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3824-e129-9812-a54f" name="Graviton Destructor [WH]" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">18&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">38&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Concussive, Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0eb0-7336-1012-f371" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="56ce-d8b8-fb6d-bd57" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="2642-5c67-68ac-aaa3" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="1c8c-3b31-0a1f-8ee2" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
+        <categoryLink id="358c-4420-51f8-6fc6" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="17b4-084a-864a-9c45" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3322-b111-508b-cf74" name="Graviton Ruinator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1703-6843-6743-79ea" name="Graviton Ruinator" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">22&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">45&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Concussive, Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7ebf-38d4-6ec2-8469" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="cded-d151-00d5-a200" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
+        <categoryLink id="d990-0557-46e8-a5d2" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+        <categoryLink id="dfb0-dae8-4772-8d3a" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="f508-558b-7a64-ef09" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5fb0-a5aa-c207-ef4b" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
