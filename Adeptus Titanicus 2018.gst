@@ -500,12 +500,12 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       <modifiers>
         <modifier type="increment" field="cf67-a51a-b403-9501" value="1.0">
           <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="917a-77ef-30e4-b812" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="917a-77ef-30e4-b812" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
         <modifier type="decrement" field="cf67-a51a-b403-9501" value="1.0">
           <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5063-b6aa-3590-30fb" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5063-b6aa-3590-30fb" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
