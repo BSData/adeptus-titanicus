@@ -14193,6 +14193,16 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="efbf-52f7-fd08-f329" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="351b-f42a-196e-447b" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7df5-f56c-c89a-ee52" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <rules>
         <rule id="379f-458f-52f0-f90c" name="Outflank" publicationId="bf8b-27d7-039e-5df9" page="172" hidden="false">
@@ -14250,6 +14260,16 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
               </modifiers>
             </entryLink>
             <entryLink id="b4ad-d62d-005c-5894" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="ce9e-1984-75ea-719a" name="Moirax Knight" hidden="false" collective="false" import="true" targetId="351b-f42a-196e-447b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8f1d-3561-f086-7d3b" name="Armiger Knight" hidden="false" collective="false" import="true" targetId="7df5-f56c-c89a-ee52" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
