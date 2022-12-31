@@ -20119,6 +20119,31 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="acd5-32cf-09c2-f234" name="Corrupted Payload" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="b992-b5cc-d8b2-e9cb" name="Corrupted Payload" publicationId="bf8b-27d7-039e-5df9" page="171" hidden="false">
+          <description>Any Traitor Titan equipped with a weapon with the Ordnance or Rapid trait can be upgraded with a Corrosive Payload for a cost equal to a points cost of 5x the weapon’s Dice value (e.g., a Warhound’s Vulcan mega-bolter would be +30 points), so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Once per game, a weapon with this upgrade can fire its Corrosive Payload. When it does so, add 1 to all Armour rolls for that attack.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3159-88a9-3acf-c133" name="Focused Capacitors" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="5486-85cc-7f58-c9a8" name="Focused Capacitors" hidden="false">
+          <description>Any Traitor Titan equipped with a weapon with the Maximal Fire trait can be upgraded with a Focused Capacitors for a cost equal to a points cost of 10 points + 5x the weapon’s
+Dice value (e.g., a Warhound’s plasma blastgun would be +20 points), so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be
+upgraded separately.
+
+When firing a weapon with this upgrade, the player may choose to use its Focused Capacitors. If it does so, the Maximal Fire trait increases the Strength of the weapon by 3 instead of 2. However, for the duration of the attack, the weapon has a Long Range of ‘-’, meaning it can only target units within its Short Range.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -20870,6 +20895,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
           </costs>
         </entryLink>
+        <entryLink id="5169-2027-214d-f6d5" name="Corrupted Payload" hidden="false" collective="false" import="true" targetId="acd5-32cf-09c2-f234" type="selectionEntry"/>
+        <entryLink id="1825-cf45-e251-9b7d" name="Focused Capacitors" hidden="false" collective="false" import="true" targetId="3159-88a9-3acf-c133" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f085-672c-f8c5-11c1" name="Base Mutation" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="true" collective="false" import="true">
