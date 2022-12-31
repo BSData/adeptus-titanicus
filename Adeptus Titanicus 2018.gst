@@ -1176,12 +1176,12 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1fc1-6634-8b70-9b23" name="Blind Barage" publicationId="bf8b-27d7-039e-5df9" page="172" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1fc1-6634-8b70-9b23" name="Blind Barrage" publicationId="bf8b-27d7-039e-5df9" page="172" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a952-0638-9e96-d99e" type="max"/>
       </constraints>
       <rules>
-        <rule id="a4be-3ed9-4bfa-cb1e" name="Blind Barage" publicationId="bf8b-27d7-039e-5df9" page="172" hidden="false">
+        <rule id="a4be-3ed9-4bfa-cb1e" name="Blind Barrage" publicationId="bf8b-27d7-039e-5df9" page="172" hidden="false">
           <description>Once per battle, play this during the Strategy phase. Pick a unit on the battlefield. Any attacks that target it or are made by it suffer a -2 To Hit penalty for the duration of the round.</description>
         </rule>
       </rules>
@@ -18463,7 +18463,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Shot: Melee, Rending.
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Short: Melee, Rending.
 Long: Concussive, Draining, Ordance, Quake</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
