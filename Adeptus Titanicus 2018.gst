@@ -17000,6 +17000,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <entryLink id="76a7-598f-cfbc-d7f7" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
                 <entryLink id="06a5-628c-5f03-7997" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
                 <entryLink id="b136-4ce4-df3e-f0aa" name="Volkite Destructor" hidden="false" collective="false" import="true" targetId="2e8a-92e8-a90e-545e" type="selectionEntry"/>
+                <entryLink id="eb4b-e650-9fab-2652" name="Graviton Ruinator" hidden="false" collective="false" import="true" targetId="3322-b111-508b-cf74" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="8003-d38f-5fe8-19b0" name="Carapace" hidden="false" collective="false" import="false">
