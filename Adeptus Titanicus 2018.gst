@@ -4596,7 +4596,7 @@ The fire then goes out.</description>
     <selectionEntry id="2133-4929-2061-f585" name="=Infernus= Clinging Phosphex" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="c863-1c58-e8a4-710f" name="=Infernus= Clinging Phosphex" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
-          <description>Any Legio Infernus Titan that is equipped with an Inferno Gun can take Clinging Phosphex for +20 points. Each weapon a Titan is armed with must be upgraded separately. When firing the Titan Inferno Gun, targets other than the one closest to the firing unit take 2 hits instead of 1.</description>
+          <description>Any Legio Infernus Titan that is equipped with an Inferno Gun can take Clinging Phosphex for +15 points. Each weapon a Titan is armed with must be upgraded separately. When firing the Titan Inferno Gun, targets other than the one closest to the firing unit take 2 hits instead of 1.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -20409,7 +20409,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="208b-e30f-2f88-9a9a" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09ee-6804-709c-59ff" type="min"/>
           </constraints>
         </entryLink>
