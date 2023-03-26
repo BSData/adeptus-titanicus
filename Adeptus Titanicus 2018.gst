@@ -7438,6 +7438,29 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="2e5f-e50c-35c6-d2ad" name="Legio Trait: Mobile Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43b6-60b3-8111-290c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="9bc7-7a4f-1637-6d01" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4e8-dbc3-ee28-7749" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="d703-566a-2882-9704" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d020-5fd1-a571-ddf2" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
@@ -8011,6 +8034,29 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="446e-505a-d396-949d" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="839d-33d9-b05e-3bb9" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a1e4-7609-3948-0ea6" name="Legio Trait: Mobile Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43b6-60b3-8111-290c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="be94-905a-f0ac-0692" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9512-afaa-6cf1-001d" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="f91c-411a-4488-5004" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -9192,6 +9238,29 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="0b57-0e4f-158c-9932" name="Legio Trait: Mobile Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43b6-60b3-8111-290c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="e18a-80c9-d822-a7f4" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aaa-058b-ff5b-824d" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="cbfb-cb31-6e36-adca" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8bd5-b643-57b5-5c37" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -9891,6 +9960,29 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="2475-3d41-deba-f632" name="Legio Trait: Mobile Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43b6-60b3-8111-290c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="b2c1-b60b-97af-ef25" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="671f-4014-0ab6-0b73" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="9d14-04cf-aaa6-09be" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6703-2cd9-77b8-bded" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -10381,6 +10473,29 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <selectionEntry id="0deb-afe2-b8a9-7009" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="538a-53a2-830b-56cf" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c229-6904-17dc-f2a7" name="Legio Trait: Mobile Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43b6-60b3-8111-290c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="19fc-3e33-72c5-2a1e" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed86-e8b5-a50e-8e57" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="be98-4c3a-cbad-2c1c" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -11967,6 +12082,29 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="86ef-33d5-64e5-0769" name="Legio Trait: Mobile Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43b6-60b3-8111-290c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="b6f1-4209-1027-8474" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e38-f732-fb3d-be0e" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="c1cf-038c-562a-bd5b" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8366-f454-1d97-b4f0" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -12448,6 +12586,29 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="8130-b93e-481f-6849" name="Legio Trait: Mobile Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43b6-60b3-8111-290c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="ab99-72da-c6aa-a74f" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c015-f162-7895-e835" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="5051-c699-6393-3a15" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6222-235f-9835-8d12" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
@@ -12739,6 +12900,29 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <selectionEntry id="94b0-4785-9e48-1797" name="Replace Warlord with Warhound" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="6a81-3391-1ecf-d973" name="Replace Warlord with Warhound" hidden="false" targetId="a2ce-dd49-ecfa-5ee8" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5290-fca7-a494-35c8" name="Legio Trait: Mobile Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43b6-60b3-8111-290c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="61fa-1a42-4e8f-df51" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45c4-6d5f-5b8a-18e7" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="7619-e6d4-c725-72a8" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -13871,6 +14055,29 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <selectionEntry id="2c77-69b4-2169-9985" name="Replace Warbringer Nemesis with Warlord" hidden="false" collective="false" import="true" type="upgrade">
               <categoryLinks>
                 <categoryLink id="f9b7-f435-6b82-6c07" name="Replace Warbringer Nemesis with Warlord" hidden="false" targetId="d8f4-fa76-75b2-5faf" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b996-b624-35cc-ac57" name="Legio Trait: Mobile Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="43b6-60b3-8111-290c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry id="b12e-c840-1223-daf6" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f39-000f-0c0d-4255" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="061a-6e17-c2ee-6390" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -20075,6 +20282,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cfff-d280-9b0e-aadb" name="Graviton Destructor [WH]" hidden="false" collective="false" import="true" type="upgrade">
@@ -20107,6 +20315,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3322-b111-508b-cf74" name="Graviton Ruinator" hidden="false" collective="false" import="true" type="upgrade">
@@ -20150,6 +20359,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3159-88a9-3acf-c133" name="Focused Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -20164,6 +20374,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
