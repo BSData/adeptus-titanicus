@@ -9378,7 +9378,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
     <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" publicationId="975a-00f4-pubN87630" page="66" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="6068-bc44-f6a2-c418" name="Hunting Pack" publicationId="975a-00f4-pubN87630" page="66" hidden="false">
-          <description>Working closely together, the Warhound Titans can surround and pick off foes many times their size. At the beggining of each round, any or all of the Warhounds within the maniple may be formed into a Squadron with other members of their maniple. These squadrons last until the end of the round. In addition, when making Coordinated Strikes (see p.45 of the AT2018 Rulebook), Warhounds in this maniple add +2 to any Armour rolls they make, rather than +1.</description>
+          <description>Working closely together, the Warhound Titans can surround and pick off foes many times their size. At the beggining of each round, any or all of the Warhounds within the maniple may be formed into a Squadron with other members of their maniple. These squadrons last until the end of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
