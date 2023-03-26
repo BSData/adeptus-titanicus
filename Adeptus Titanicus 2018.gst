@@ -20887,7 +20887,20 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <entryLink id="3f5f-b100-1958-84f3" name="Hardened Casing" hidden="false" collective="false" import="true" targetId="fc6c-b6b9-51a0-b7b0" type="selectionEntry"/>
         <entryLink id="9f27-dfb1-6771-73ef" name="Oath Banner" hidden="false" collective="false" import="true" targetId="e37d-f716-228b-5c9d" type="selectionEntry"/>
         <entryLink id="9204-a8c6-7202-0910" name="Ranging Auspex" hidden="false" collective="false" import="true" targetId="da3a-8e05-dcc0-bd3b" type="selectionEntry"/>
-        <entryLink id="efe7-93fd-c4a7-3520" name="Tracking Gyroscopes" hidden="false" collective="false" import="true" targetId="28ac-d2b9-5667-854e" type="selectionEntry"/>
+        <entryLink id="efe7-93fd-c4a7-3520" name="Tracking Gyroscopes" hidden="false" collective="false" import="true" targetId="28ac-d2b9-5667-854e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3bce-46aa-99ca-8f60" name="Traitor Wargear" hidden="true" collective="false" import="true">
