@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="63" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="64" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -7,7 +7,7 @@ To create a Household Battlegroup add a Household to your Roster. Each Lance is 
 
 NOTE: On mobile, the &apos;add force&apos; dialog adds a Lance automatically when selecting the &apos;Household&apos; catalog in the &apos;Select Catalogue&apos; step (so basically you select &apos;Household&apos; twice). This is more clear on the desktop version of the app where you can clearly see you are selecting a Lance. This is an issue with BS, most likely because there is only 1 Force to choose from.
 
-NOTE 2: If after this you can see the Lance, but can&apos;t add any banners to it, please make sure that the &apos;force navigation&apos; option from the kebab menu (top right), is NOT set to merged. &apos;Nested&apos; will make the Lance clickable and you then you can add banners, or if you set it to &apos;flattened&apos; everything will work normally.
+NOTE 2: If after this you can see the Lance,but can&apos;t add any banners to it, please make sure that the &apos;force navigation&apos; option from the kebab menu (top right), is NOT set to merged. &apos;Nested&apos; will make the Lance clickable and you then you can add banners, or if you set it to &apos;flattened&apos; everything will work normally.
 
 </readme>
   <publications>
@@ -15586,6 +15586,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 </entryLink>
                 <entryLink id="14de-4175-9e2f-e718" name="Volkite Eradicator R" hidden="false" collective="false" import="true" targetId="4f49-0fb1-426f-c152" type="selectionEntry"/>
                 <entryLink id="4b7b-2dc9-c500-a30e" name="Graviton Destructor [RVR]" hidden="false" collective="false" import="true" targetId="7093-9a5b-12c0-f7ed" type="selectionEntry"/>
+                <entryLink id="dbdd-17d8-ae92-20db" name="Conversion Beam Dissolutor [RVR]" hidden="false" collective="false" import="true" targetId="22d3-59fd-2b09-5980" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -15674,6 +15675,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <entryLink id="03f5-016e-81d3-8475" name="Arioch Titan Power Claw" hidden="false" collective="false" import="false" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry"/>
                 <entryLink id="6d64-2797-31df-45a2" name="Volkite Destructor" hidden="false" collective="false" import="true" targetId="2e8a-92e8-a90e-545e" type="selectionEntry"/>
                 <entryLink id="2a83-d51e-e2c0-28c0" name="Graviton Ruinator" hidden="false" collective="false" import="true" targetId="3322-b111-508b-cf74" type="selectionEntry"/>
+                <entryLink id="e2f0-3450-b676-7af6" name="Conversion Beam Extirpator" hidden="false" collective="false" import="true" targetId="7ead-bff0-82f7-29ed" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fd46-9b21-ec00-bd85" name="Carapace" hidden="false" collective="false" import="false">
@@ -15839,6 +15841,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <entryLink id="6a38-658a-3b64-348d" name="Natrix Shock Lance" hidden="false" collective="false" import="false" targetId="59e1-0284-05e3-4c67" type="selectionEntry"/>
                 <entryLink id="c1c4-f64d-0ddf-86cb" name="Volkite Eradicator WH" hidden="false" collective="false" import="true" targetId="2f29-8298-5888-bcc6" type="selectionEntry"/>
                 <entryLink id="5e07-1d57-c8cf-bed1" name="Graviton Destructor [WH]" hidden="false" collective="false" import="true" targetId="cfff-d280-9b0e-aadb" type="selectionEntry"/>
+                <entryLink id="0dea-e6ef-2c3d-04ca" name="Conversion Beam Dissolutor [WH]" hidden="false" collective="false" import="true" targetId="8bc9-6a75-d799-0d56" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -20375,6 +20378,97 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8bc9-6a75-d799-0d56" name="Conversion Beam Dissolutor [WH]" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="136d-68e5-76be-e938" name="Conversion Beam Dissolutor [WH]" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9/11*</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">20&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">40&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Draining (long)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6d06-14cd-4dcb-b0a7" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="9fac-8754-8396-3120" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="7115-07f2-4789-2e89" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink id="7a27-8148-6c7e-7296" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8faf-4029-53e8-e427" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="22d3-59fd-2b09-5980" name="Conversion Beam Dissolutor [RVR]" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e789-df00-9888-c320" name="Conversion Beam Dissolutor [RVR]" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9/11*</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">20&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">40&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Draining (long), Carapace</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0cb9-8745-270f-9db0" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="015a-64ea-ecaf-a5d4" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="00df-6ca1-63ef-46fd" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink id="f6a2-8df1-80d6-aff4" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7ead-bff0-82f7-29ed" name="Conversion Beam Extirpator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0e1b-ab8c-474b-9b94" name="Conversion Beam Extirpator" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10/12*</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">25&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">50&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Draining (long), Maximal Fire (long)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f191-3e8b-e675-446e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="54cf-ac3e-e839-af39" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="c131-edd1-c0d4-76cc" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink id="30b1-cf0b-24c4-77f8" name="Maximal Fire" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
+        <categoryLink id="2d1a-fbbd-0406-2c0e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5c5f-1dcc-eb91-7951" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
