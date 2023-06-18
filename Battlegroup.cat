@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="50" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="64" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -62,7 +62,7 @@
         <categoryLink id="0ef9-c148-2af9-5234" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="566c-1a88-34b9-7781" name="Blind Barage" hidden="false" collective="false" import="true" targetId="1fc1-6634-8b70-9b23" type="selectionEntry">
+    <entryLink id="566c-1a88-34b9-7781" name="Blind Barrage" hidden="false" collective="false" import="true" targetId="1fc1-6634-8b70-9b23" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="1a3d-7b97-7d83-d0fe" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="d2d6-50e0-45f9-c4f8" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
@@ -103,26 +103,12 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="warbringer-support-battlegroup" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
-      <modifiers>
-        <modifier type="decrement" field="899d-e89e-d228-8aa9" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="0b8b-755a-cabc-6d70" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" field="899d-e89e-d228-8aa9" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="899d-e89e-d228-8aa9" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="adde-353e-0207-cfb6" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="6aa3-6d2a-1c55-5f2a" name="Auxiliary Titan" hidden="false" collective="false" import="true" targetId="4c64-8a28-7368-156d" type="selectionEntry"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="sinister-support-battlegroup" name="Warlord-Sinister Titan" hidden="false" collective="false" import="false" targetId="dfeb-83af-7b26-622a" type="selectionEntry">
       <categoryLinks>
@@ -130,23 +116,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="warmaster-support-battlegroup" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry">
-      <modifiers>
-        <modifier type="decrement" field="f4cb-602c-5bdb-858d" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" field="f4cb-602c-5bdb-858d" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4cb-602c-5bdb-858d" type="max"/>
-      </constraints>
+      <entryLinks>
+        <entryLink id="bf69-b24a-bca7-73f6" name="Auxiliary Titan" hidden="false" collective="false" import="true" targetId="4c64-8a28-7368-156d" type="selectionEntry"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="573e-1025-b9ca-55d0" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
       <categoryLinks>
@@ -908,23 +880,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="02ae-1f94-83f2-f648" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" targetId="c45d-04e4-f35f-8b20" type="selectionEntry">
-      <modifiers>
-        <modifier type="increment" field="40c5-e5d3-834b-64bf" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" field="40c5-e5d3-834b-64bf" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76b8-ecdb-cbf6-0c45" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40c5-e5d3-834b-64bf" type="max"/>
-      </constraints>
+      <entryLinks>
+        <entryLink id="03af-1f12-71f0-afe0" name="Auxiliary Titan" hidden="false" collective="false" import="true" targetId="4c64-8a28-7368-156d" type="selectionEntry"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="4174-c2c4-e29b-7ed7" name="Armiger Knights Banner" hidden="false" collective="false" import="false" targetId="11c3-a34f-1748-cf07" type="selectionEntry">
       <categoryLinks>
@@ -962,26 +920,12 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="cd15-0d60-20eb-9426" name="Dire Wolf Titan" hidden="false" collective="false" import="true" targetId="76b8-ecdb-cbf6-0c45" type="selectionEntry">
-      <modifiers>
-        <modifier type="increment" field="d1f4-e731-c0e0-30de" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" field="d1f4-e731-c0e0-30de" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="3f71-3a59-3b75-4ecf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1f4-e731-c0e0-30de" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="79bc-1d9a-779e-55a5" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="5da2-7a6f-7f3d-4fc9" name="Auxiliary Titan" hidden="false" collective="false" import="true" targetId="4c64-8a28-7368-156d" type="selectionEntry"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="57be-9c1f-e989-e2d9" name="=Krytos= Civilisation&apos;s Ruin" hidden="true" collective="false" import="true" targetId="a6aa-ba0e-b76f-7b43" type="selectionEntry">
       <modifiers>
@@ -1002,4 +946,20 @@
       </modifiers>
     </entryLink>
   </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="4c64-8a28-7368-156d" name="Auxiliary Titan" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="increment" field="24f8-e31a-7275-eab2" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="24f8-e31a-7275-eab2" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a0-1f89-67e9-af2b" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70e4-6146-61bf-1602" type="max"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>
