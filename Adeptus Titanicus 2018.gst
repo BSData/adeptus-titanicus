@@ -20888,17 +20888,22 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="c725-815f-945b-712d" name="=Solaria= Cameleoline Shrouding" hidden="false" collective="false" import="true" targetId="1c9d-16db-f94b-c0ec" type="selectionEntry">
+        <entryLink id="c725-815f-945b-712d" name="=Solaria= Cameleoline Shrouding" hidden="true" collective="false" import="true" targetId="1c9d-16db-f94b-c0ec" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="223f-6e71-9e4f-939e" type="instanceOf"/>
-              </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="56c0-1162-173d-b052" type="atLeast"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d173-87e6-9f1b-1aaa" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="223f-6e71-9e4f-939e" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -20907,7 +20912,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a8b-6f6e-5b5d-f062" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="388b-7562-3259-42db" name="=Solaria= Fortis Motivators" hidden="false" collective="false" import="true" targetId="19c8-d226-1d72-28e4" type="selectionEntry">
+        <entryLink id="388b-7562-3259-42db" name="=Solaria= Fortis Motivators" hidden="true" collective="false" import="true" targetId="19c8-d226-1d72-28e4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
