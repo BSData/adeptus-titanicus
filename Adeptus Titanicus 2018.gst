@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="65" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="66" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -17231,6 +17231,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <entryLink id="06a5-628c-5f03-7997" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
                 <entryLink id="b136-4ce4-df3e-f0aa" name="Volkite Destructor" hidden="false" collective="false" import="true" targetId="2e8a-92e8-a90e-545e" type="selectionEntry"/>
                 <entryLink id="eb4b-e650-9fab-2652" name="Graviton Ruinator" hidden="false" collective="false" import="true" targetId="3322-b111-508b-cf74" type="selectionEntry"/>
+                <entryLink id="2b5f-339c-365d-e0e7" name="Conversion Beam Extirpator" hidden="false" collective="false" import="true" targetId="7ead-bff0-82f7-29ed" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="8003-d38f-5fe8-19b0" name="Carapace" hidden="false" collective="false" import="false">
@@ -20409,6 +20410,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="22d3-59fd-2b09-5980" name="Conversion Beam Dissolutor [RVR]" hidden="false" collective="false" import="true" type="upgrade">
@@ -20437,6 +20439,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7ead-bff0-82f7-29ed" name="Conversion Beam Extirpator" hidden="false" collective="false" import="true" type="upgrade">
@@ -20469,6 +20472,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
