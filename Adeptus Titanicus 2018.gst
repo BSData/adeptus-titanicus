@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="68" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="69" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -15827,6 +15827,9 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <entryLink id="c1c4-f64d-0ddf-86cb" name="Volkite Eradicator WH" hidden="false" collective="false" import="true" targetId="2f29-8298-5888-bcc6" type="selectionEntry"/>
                 <entryLink id="5e07-1d57-c8cf-bed1" name="Graviton Destructor [WH]" hidden="false" collective="false" import="true" targetId="cfff-d280-9b0e-aadb" type="selectionEntry"/>
                 <entryLink id="0dea-e6ef-2c3d-04ca" name="Conversion Beam Dissolutor [WH]" hidden="false" collective="false" import="true" targetId="8bc9-6a75-d799-0d56" type="selectionEntry"/>
+                <entryLink id="5abd-8e94-b242-4de4" name="Incisor Pattern Melta Lance" hidden="false" collective="false" import="true" targetId="9cfc-2c4f-fa54-e935" type="selectionEntry"/>
+                <entryLink id="b753-8a62-1c29-040e" name="Swarmer Missiles" hidden="false" collective="false" import="true" targetId="834a-4f80-00fb-a341" type="selectionEntry"/>
+                <entryLink id="5396-b199-b493-f705" name="Shudder Missiles" hidden="false" collective="false" import="true" targetId="6268-9937-423c-55d9" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -20492,6 +20495,103 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9cfc-2c4f-fa54-e935" name="Incisor Pattern Melta Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f852-5929-9ae6-b6d7" name="Incisor Pattern Melta Lance" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">6&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">10&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0f3b-49e8-ef59-4b52" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="1f2a-1d92-4126-780c" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="a1c3-bb5d-7df2-40d3" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="8a75-7fa1-5a71-7caf" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6208-97b6-0cfa-66ac" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="834a-4f80-00fb-a341" name="Swarmer Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="362c-4bcc-42d0-dd9d" name="Swarmer Missiles" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">5</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">40&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Rapid</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4b41-41c7-0fc8-5fda" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="d128-5650-069e-8265" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="5ff7-84a6-293f-5341" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="de08-e467-d352-574f" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cedc-1b84-85fe-418a" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6268-9937-423c-55d9" name="Shudder Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6665-24c0-79c0-2ee8" name="Shudder Missiles" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">40&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Quake</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="31a6-b842-cd70-29a8" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="d756-14fd-9b12-ba83" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="1bf1-6cbe-0257-c69d" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="7eb6-488c-ea1a-e52c" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="008f-2733-668f-4763" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b7e5-361f-b1bb-bd89" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
