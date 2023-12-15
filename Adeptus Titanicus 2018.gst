@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="67" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="68" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -4411,21 +4411,6 @@ targets (within the weapon’s firing arc, within range etc). Each target counts
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="630d-8221-b41f-1255" name="=Interfector= Static Rounds" publicationId="975a-00f4-pubN89746" page="26" hidden="true" collective="false" import="false" type="upgrade">
-      <rules>
-        <rule id="a116-9b12-9332-9dc7" name="Static Rounds" publicationId="bf8b-27d7-039e-5df9" page="81" hidden="false">
-          <description>Any Legio Interfector Titan Reaver or Warhound Titan armed with a Vulcan Mega-bolter may take static rounds for +15 points. A Titan equipped with static rounds uses a modified version if the Rapid trait when firing its Vulcan Mega-bolter. Against a target with active void shields, each Hit roll of 5 or 6 causes 2 hits rather than 1. If a roll of 6 To Hit was required, this rule has no effect. Static rounds have no additional effects against targets without active void shields, although the weapon will retain the normal effects of the Rapid trait.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="b6b3-be6c-2821-d36f" name="LegioInterfector" hidden="false" targetId="f0a4-f7dc-25cf-21c8" primary="false"/>
-        <categoryLink id="a407-4ac1-2c10-920b" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ba6a-6565-fd40-3645" name="=Atarus= Infernus Missiles" publicationId="3401-191e-1333-8a1d" page="71" hidden="true" collective="false" import="false" type="upgrade">
@@ -16171,6 +16156,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
           </costs>
         </entryLink>
+        <entryLink id="097f-672b-ba10-1aa9" name="=Interfector= Static Rounds" page="" hidden="false" collective="false" import="true" targetId="9851-51aa-c013-d644" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -16847,6 +16833,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
           </costs>
         </entryLink>
+        <entryLink id="a9c6-d72f-8984-da4a" name="=Interfector= Static Rounds" hidden="false" collective="false" import="true" targetId="9851-51aa-c013-d644" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
@@ -20482,6 +20469,31 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9851-51aa-c013-d644" name="=Interfector= Static Rounds" publicationId="bf8b-27d7-039e-5df9" page="81" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3d0-92f8-3bf7-4799" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92d6-1314-a857-81c6" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="3533-730a-d50f-6e6f" name="Static Rounds" publicationId="bf8b-27d7-039e-5df9" page="81" hidden="false">
+          <description>Any Legio Interfector Reaver or Warhound Titan armed with a Vulcan mega-bolter may take Static Rounds for +15 points. Each weapon must be upgraded separately. A Titan equipped with Static Rounds uses a modified version of the Rapid trait when firing its Vulcan mega-bolter. Against a target with active void shields, each Hit roll of 5 or 6 causes 2 hits, rather than 1. If a roll of 6 To Hit was required, this rule has no effect. Static Rounds have no additional effects against targets without active void shields, although the weapon will retain the normal effects of the Rapid trait.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2c8f-4d07-81c4-1c25" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="ff0d-f86b-7f7e-6a4c" name="LegioInterfector" hidden="false" targetId="f0a4-f7dc-25cf-21c8" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -20595,26 +20607,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e74-2e29-ab97-1ef8" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bff-b758-cf1f-1433" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="346e-9d63-d3da-7d43" name="=Interfector= Static Rounds" hidden="true" collective="false" import="false" targetId="630d-8221-b41f-1255" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f0a4-f7dc-25cf-21c8" type="atLeast"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7cb-94c3-1bc4-1d94" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="272d-d325-dd7e-c50a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c27b-4c47-7be8-2b2f" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="81d8-7987-ad17-9804" name="=Atarus= Infernus Missiles" hidden="false" collective="false" import="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
