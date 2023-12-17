@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="69" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="70" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -6716,7 +6716,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <selectionEntries>
             <selectionEntry id="80d1-1fe7-6c82-8c88" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c19-77bd-e793-6ceb" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c19-77bd-e793-6ceb" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="8dc4-d9f9-bd72-ed99" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
@@ -7156,7 +7156,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <selectionEntries>
             <selectionEntry id="2030-8747-b6b3-54a3" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b047-905f-ef80-5bd4" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b047-905f-ef80-5bd4" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="281e-5457-69b2-0f8f" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
@@ -7666,7 +7666,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <selectionEntries>
             <selectionEntry id="c0c1-b38d-a68c-c8e9" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a0-df92-92e4-5f05" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a0-df92-92e4-5f05" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="2f4a-3e8f-4f73-6133" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
@@ -8590,7 +8590,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <selectionEntries>
             <selectionEntry id="a124-b697-8764-88ca" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5848-14fa-e069-c2e4" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5848-14fa-e069-c2e4" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="3999-933c-6a8e-ca07" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
@@ -9024,7 +9024,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <selectionEntries>
             <selectionEntry id="8073-bdb2-6abf-5bad" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4ff-47ee-4451-71eb" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4ff-47ee-4451-71eb" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="c9ce-8a18-59d9-82e7" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
@@ -9450,7 +9450,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <selectionEntries>
             <selectionEntry id="5584-7ea1-624c-89e1" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ba-bcbc-1038-4e66" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ba-bcbc-1038-4e66" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="0631-11cf-b7cd-43d1" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
@@ -9745,6 +9745,18 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="2fef-0913-8102-4e94" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ccb-194b-2b3d-bc62" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="ac3a-dc1b-ef6a-1dc8" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="d142-037b-98c3-8b4a" name="Legio Trait: Lost Sons" hidden="true" collective="false" import="true">
@@ -9987,6 +9999,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <modifier type="decrement" field="4450-239e-952e-b8e9" value="1.0">
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -10187,7 +10200,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <selectionEntries>
             <selectionEntry id="1955-9917-1f91-9d76" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="730b-b2f5-3e48-e594" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="730b-b2f5-3e48-e594" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="769f-e435-d10f-9228" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
@@ -10700,7 +10713,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <selectionEntries>
             <selectionEntry id="50b2-01aa-3618-2cf5" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="088a-2e16-19a9-dd82" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="088a-2e16-19a9-dd82" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="52df-9eaf-50b3-1c0e" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
@@ -11131,7 +11144,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <selectionEntries>
             <selectionEntry id="7cd7-4f63-cea5-3cd8" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f872-b67f-b110-a6a4" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f872-b67f-b110-a6a4" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="6194-d618-b11b-42c1" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
@@ -11891,7 +11904,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <selectionEntries>
             <selectionEntry id="5d10-308b-d4d7-4df2" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e423-dbbc-a976-6f0a" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e423-dbbc-a976-6f0a" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="29d9-42cb-e5d0-41b5" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
@@ -12799,7 +12812,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           <selectionEntries>
             <selectionEntry id="4fcb-8688-83c2-f5c9" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f0f-d140-950b-eeaf" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f0f-d140-950b-eeaf" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="3fa1-4a26-1847-0c78" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
@@ -13567,7 +13580,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           <selectionEntries>
             <selectionEntry id="a610-1ad6-8462-67ab" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9324-dd5b-f4b7-622b" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9324-dd5b-f4b7-622b" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="e742-a384-23b8-bea1" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
@@ -13931,7 +13944,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           <selectionEntries>
             <selectionEntry id="9362-6c3f-d55a-873f" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4019-0c38-ec16-1f01" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4019-0c38-ec16-1f01" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="cd32-eac8-385e-0a74" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
