@@ -13944,7 +13944,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           <selectionEntries>
             <selectionEntry id="9362-6c3f-d55a-873f" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4019-0c38-ec16-1f01" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4019-0c38-ec16-1f01" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="cd32-eac8-385e-0a74" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
