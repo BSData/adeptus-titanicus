@@ -12812,7 +12812,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           <selectionEntries>
             <selectionEntry id="4fcb-8688-83c2-f5c9" name="Replace Warlord with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f0f-d140-950b-eeaf" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f0f-d140-950b-eeaf" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="3fa1-4a26-1847-0c78" name="Replace Warlord with Reaver" hidden="false" targetId="241f-bfe6-fc92-62a6" primary="false"/>
