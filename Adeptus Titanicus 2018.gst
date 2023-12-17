@@ -11904,7 +11904,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <selectionEntries>
             <selectionEntry id="5d10-308b-d4d7-4df2" name="Replace Warhound with Reaver" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e423-dbbc-a976-6f0a" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e423-dbbc-a976-6f0a" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="29d9-42cb-e5d0-41b5" name="Replace Warhound with Reaver" hidden="false" targetId="2910-5e72-a7de-f973" primary="false"/>
