@@ -632,7 +632,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </constraints>
       <rules>
         <rule id="d289-a08c-7084-5177" name="Ablative Armour" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this Stratagem in any Stratagy phase. The player chooses one of their Titans and places a marker next to its Command Terminal. The first Direct, Devastating or Critical Hit suffered by the Titan is ignored. Then discad this stratagem.</description>
+          <description>Play this Stratagem in any Stratagy phase. The player chooses one of their Titans and places a marker next to its Command Terminal. The first Direct, Devastating or Critical Hit suffered by the Titan is ignored. Then discard this stratagem.</description>
         </rule>
       </rules>
       <categoryLinks>
