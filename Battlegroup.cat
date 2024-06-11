@@ -6,9 +6,6 @@
   <forceEntries>
     <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
       <categoryLinks>
-        <categoryLink id="09c3-4572-186e-436f" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="false"/>
-        <categoryLink id="7a3b-42f9-f60d-696a" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
-        <categoryLink id="0606-1d0c-defb-d6e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="adf7-4e73-ff4d-9814" name="Configuration" hidden="false" targetId="8e3e-2c21-301b-653e" primary="false"/>
         <categoryLink id="f372-1970-b16d-17a5" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false">
           <constraints>
@@ -16,6 +13,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70d7-a543-a930-24fe" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="09c3-4572-186e-436f" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="false"/>
+        <categoryLink id="7a3b-42f9-f60d-696a" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink id="0606-1d0c-defb-d6e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="4f07-d070-7d91-0291" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="8870-d6d8-5519-9eb0" name="Squadron" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="false"/>
         <categoryLink id="3546-6658-7a79-214d" name="Princeps Seniores" publicationId="975a-00f4-pubN65537" hidden="false" targetId="c130-1260-4c15-147a" primary="false">
