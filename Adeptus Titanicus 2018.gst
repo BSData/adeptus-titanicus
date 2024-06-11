@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="71" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="72" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -276,41 +276,26 @@ Note that it is not necessary to make the Hit rolls - these hits are automatic. 
     <categoryEntry id="6740-1e8a-8e25-88fd" name="LegioKulisaetai" hidden="false"/>
     <categoryEntry id="ccee-936e-87d6-bf29" name="LegioTritonis" hidden="false"/>
     <categoryEntry id="ae2e-5751-1800-545a" name="LegioDamicium" hidden="false"/>
-    <categoryEntry id="b539-a35c-fe3f-9c34" name="Stratagem" hidden="false">
+    <categoryEntry id="b539-a35c-fe3f-9c34" name="Stratagem Hand" hidden="false">
       <modifiers>
-        <modifier type="increment" field="916e-a7f5-ea1f-c24e" value="2.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="a731-e220-2d8a-41bf" scope="roster" value="700.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1250.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="any" type="atMost"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" field="2567-1956-8edb-ada6" value="8.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b06-96f9-d261-74a5" type="equalTo"/>
+          </conditions>
         </modifier>
-        <modifier type="increment" field="916e-a7f5-ea1f-c24e" value="3.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1250.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="any" type="greaterThan"/>
-                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1750.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="any" type="atMost"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" field="2567-1956-8edb-ada6" value="6.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc46-ebe7-6f60-0715" type="equalTo"/>
+          </conditions>
         </modifier>
-        <modifier type="increment" field="916e-a7f5-ea1f-c24e" value="4.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="a731-e220-2d8a-41bf" scope="roster" value="1750.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="greaterThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" field="2567-1956-8edb-ada6" value="4.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d62c-9fdc-3593-e056" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="efbf-52f7-fd08-f329" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="916e-a7f5-ea1f-c24e" type="max"/>
-        <constraint field="efbf-52f7-fd08-f329" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="db22-9e54-c120-3e5c" type="min"/>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2567-1956-8edb-ada6" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="7b17-f14f-4709-e96c" name="LegioDefensor" hidden="false"/>
@@ -550,6 +535,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="fc0d-eb8b-2ed0-a798" name="Replace Warhound with Dire Wolf" hidden="false"/>
     <categoryEntry id="e5c6-a7a6-1315-09b8" name="Replace Warlord with Dire Wolf" hidden="false"/>
     <categoryEntry id="b754-867c-2d0e-538b" name="Replace Warbringer Nemesis with Dire Wolf" hidden="false"/>
+    <categoryEntry id="8e3e-2c21-301b-653e" name="Configuration" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -20522,7 +20508,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">10&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-1</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
@@ -20552,9 +20538,9 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">40&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Rapid</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
@@ -20584,9 +20570,9 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">40&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Quake</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
@@ -20639,6 +20625,53 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="35.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="270a-cdcc-91b8-0787" name="Battle Level" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b58d-c3a6-81ad-9037" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ab31-9f8b-000a-ad10" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1594-3ddd-6051-38eb" name="Configuration" hidden="false" targetId="8e3e-2c21-301b-653e" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3dbc-acd2-7f8c-89e6" name="Battle Level" hidden="false" collective="false" import="true" defaultSelectionEntryId="d62c-9fdc-3593-e056">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69eb-af09-5000-df93" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6d4-5832-5435-e2f4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d62c-9fdc-3593-e056" name="1. Skirmish (&lt; 1250 Battle rating)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fc46-ebe7-6f60-0715" name="2. Confrontation (1250 - 1750 Battle rating)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6b06-96f9-d261-74a5" name="3. Epic Clash (&gt; 1750 Battle rating)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="38a6-8feb-6113-6c4f" name="4. Open Play" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
