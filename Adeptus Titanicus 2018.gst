@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="72" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="73" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -4607,7 +4607,7 @@ The fire then goes out.</description>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Fusion</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -4642,7 +4642,7 @@ The fire then goes out.</description>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Maximal Fire</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -4677,7 +4677,7 @@ The fire then goes out.</description>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Draining</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -17391,6 +17391,24 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <entryLink id="364a-e1ba-cfdc-77fe" name="Plasma Blast Gun (WM)" hidden="false" collective="false" import="false" targetId="0f5d-e59f-3d5f-21c3" type="selectionEntry"/>
                 <entryLink id="9656-492a-fab4-55bf" name="Vulcan Megabolter [WM]" hidden="false" collective="false" import="false" targetId="5da9-e647-8914-3264" type="selectionEntry"/>
                 <entryLink id="cbab-3005-6490-1352" name="Turbo Laser Destructor [WM]" hidden="false" collective="false" import="false" targetId="7c5c-cf20-958d-0b71" type="selectionEntry"/>
+                <entryLink id="9d43-fc92-4c7c-c40f" name="=Mordaxis= Melta Cannon with Toxin Nodes [WM]" hidden="false" collective="false" import="true" targetId="6775-cf80-8ca0-60cc" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="fd21-c496-9459-8683" name="=Mordaxis= Plasma Blastgun with Toxin Nodes [WM]" hidden="false" collective="false" import="true" targetId="1b40-7701-03cc-2909" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="4294-3ea6-4ca6-2d70" name="Carapace Weapon" hidden="false" collective="false" import="false" defaultSelectionEntryId="2ee0-45ae-c50a-402e">
@@ -18516,6 +18534,24 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
                 <entryLink id="c992-513d-ce8b-a3d1" name="Plasma Blast Gun (WM)" hidden="false" collective="false" import="true" targetId="0f5d-e59f-3d5f-21c3" type="selectionEntry"/>
                 <entryLink id="c1a7-2420-9494-895b" name="Vulcan Megabolter [WM]" hidden="false" collective="false" import="true" targetId="5da9-e647-8914-3264" type="selectionEntry"/>
                 <entryLink id="22d1-c410-ab47-c5d7" name="Turbo Laser Destructor [WM]" hidden="false" collective="false" import="true" targetId="7c5c-cf20-958d-0b71" type="selectionEntry"/>
+                <entryLink id="ecab-d55a-bc73-d476" name="=Mordaxis= Melta Cannon with Toxin Nodes [WM]" hidden="false" collective="false" import="true" targetId="6775-cf80-8ca0-60cc" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="0cb1-c15a-3278-9141" name="=Mordaxis= Plasma Blastgun with Toxin Nodes [WM]" hidden="false" collective="false" import="true" targetId="1b40-7701-03cc-2909" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fb73-07e9-6881-8093" name="Carapace Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6a70-d1f9-846f-23ae">
@@ -19732,6 +19768,15 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
                 <entryLink id="68e4-c7c8-4547-6f61" name="Neutron Laser" hidden="false" collective="false" import="true" targetId="d178-20d4-d7ab-992d" type="selectionEntry"/>
                 <entryLink id="4b99-39d1-1564-0722" name="Volcano Cannon [DW]" hidden="false" collective="false" import="true" targetId="f374-419b-269d-50e3" type="selectionEntry"/>
                 <entryLink id="ce19-680c-0b07-74ac" name="Conversion Beam Dissipator" hidden="false" collective="false" import="true" targetId="d6d1-fb21-8e6b-67c4" type="selectionEntry"/>
+                <entryLink id="ade4-29b5-9702-d8ae" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="false" collective="false" import="true" targetId="a227-a4f3-df4e-7446" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="18e3-70a6-6b01-5c60" name="Torso" hidden="false" collective="false" import="true" defaultSelectionEntryId="09a9-fa35-d484-a36d">
@@ -20672,6 +20717,111 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a227-a4f3-df4e-7446" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="da74-75bf-a933-3434" name="Volcano Cannon with Toxin Nodes" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">60&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Carapace, Draining</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0d06-f5bf-b92a-b010" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="1cbc-52ea-b131-7d34" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="f4e4-4950-6bf9-35a6" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="53d1-fb78-c42f-f606" name="Blast" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="87bf-af26-525d-a75a" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
+        <categoryLink id="bd21-e26c-3a45-ad7f" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink id="db34-6a5f-bed9-735c" name="New CategoryLink" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fffa-866a-0cd0-9860" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="45.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6775-cf80-8ca0-60cc" name="=Mordaxis= Melta Cannon with Toxin Nodes [WM]" hidden="true" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="528b-11a3-5398-f146" name="Melta Cannon with Toxin Nodes" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">16&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Fusion</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f910-5bc4-c9a4-96e6" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="de72-ef3d-4760-b4c4" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="4489-dafe-087c-fb94" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="2505-6020-16d1-1c84" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
+        <categoryLink id="11db-a6ba-d1d3-d191" name="Blast" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="0da4-2154-b8c9-a54f" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
+        <categoryLink id="ca82-0dd8-5285-2815" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1e18-b65f-fd46-c4ac" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1b40-7701-03cc-2909" name="=Mordaxis= Plasma Blastgun with Toxin Nodes [WM]" hidden="true" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="761f-b296-f70d-eb6d" name="Plasma Blastgun with Toxin Nodes" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">7</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Maximal Fire</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a53c-b0ec-d078-3d03" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="dc4e-05bd-6096-83fa" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="8ad9-b989-04d0-8fbd" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="17ea-fea8-fc35-e969" name="Blast" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="3363-f548-3f5c-b875" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
+        <categoryLink id="0538-3542-5391-4743" name="Maximal Fire" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
+        <categoryLink id="dcf5-d266-4f05-c71b" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0990-f5fa-5659-61a3" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
