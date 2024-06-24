@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="73" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="74" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -4879,7 +4879,7 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
     <selectionEntry id="7093-f8b3-b5f9-d38d" name="Legio Vulpa (Death Stalkers)" publicationId="975a-00f4-pubN87630" page="54" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="36fb-e4f2-82f5-8ba3" name="Honour and Blood" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
-          <description>A Death Stalkers Titan that is within 3&quot; of an enemy Titan, increases its Weapons Skill by 1 an decreases its Ballistic Skill by 1, to a maximum of 2+, and decrease its Ballistic Skill by 1, to a minimum of 6+.</description>
+          <description>If a Legio Vulpa Titan is within 5&quot; of an enemy Titan, increase its Weapon Skill by 1, to a maximum of 2+, and increase its Ballistic Skill by 1, to a minimum of 6+.</description>
         </rule>
       </rules>
       <categoryLinks>
