@@ -49,7 +49,7 @@
       <forceEntries>
         <forceEntry id="94fe-00c9-e912-2e1a" name="Lance" hidden="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e85f-1b78-055f-7791" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="e85f-1b78-055f-7791" type="min"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="b745-75d7-9dbe-c305" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false">
