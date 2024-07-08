@@ -17792,11 +17792,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8a7d-3ead-16e2-1979" name="=Honorum= Basilus Throne" publicationId="3401-191e-1333-8a1d" page="131" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8a7d-3ead-16e2-1979" name="=Honorum= Basilius Throne" publicationId="3401-191e-1333-8a1d" page="131" hidden="true" collective="false" import="true" type="upgrade">
       <modifierGroups>
         <modifierGroup>
           <conditions>
-            <condition field="selections" scope="6982-2d18-55cb-61e5" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd4a-3c69-5fc8-0773" type="notInstanceOf"/>
+            <condition field="selections" scope="6982-2d18-55cb-61e5" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd4a-3c69-5fc8-0773" type="instanceOf"/>
           </conditions>
           <modifiers>
             <modifier type="set" field="1f21-002f-5510-587f" value="0.0"/>
@@ -17814,7 +17814,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       </rules>
       <categoryLinks>
         <categoryLink id="2104-df3a-cefb-d060" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="4608-bf7a-a1fa-df32" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+        <categoryLink id="89fb-efe0-5b84-d0cb" name="LegioHonorum" hidden="false" targetId="cd4a-3c69-5fc8-0773" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
@@ -17876,7 +17876,7 @@ After assembling their battlegroup, the player should pick one Titan in their ma
         <categoryLink id="d7fc-5f6b-234f-fd37" name="Princeps Senioris" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="18df-cf47-fde1-6f3d" name="=Honorum= Basilus Throne" hidden="false" collective="false" import="true" targetId="8a7d-3ead-16e2-1979" type="selectionEntry"/>
+        <entryLink id="18df-cf47-fde1-6f3d" name="=Honorum= Basilius Throne" hidden="false" collective="false" import="true" targetId="8a7d-3ead-16e2-1979" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
@@ -21211,7 +21211,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="499b-3294-6b78-4417" name="=Honorum= Basilus Throne" hidden="false" collective="false" import="true" targetId="8a7d-3ead-16e2-1979" type="selectionEntry">
+        <entryLink id="499b-3294-6b78-4417" name="=Honorum= Basilius Throne" hidden="false" collective="false" import="true" targetId="8a7d-3ead-16e2-1979" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
