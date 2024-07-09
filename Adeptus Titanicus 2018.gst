@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="75" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="76" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>Now with a whole lot less STRUCTURE</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -17847,10 +17847,16 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="notInstanceOf"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="2" field="52f0-7a81-15a5-b780">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="unit" childId="4225-27f8-9c8b-e56e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52f0-7a81-15a5-b780" type="max"/>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2337-45e1-87e4-f282" type="max"/>
+        <constraint field="selections" scope="unit" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="52f0-7a81-15a5-b780" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4fb-c096-d797-e4ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="9769-4600-28eb-2cf7" includeChildSelections="true"/>
       </constraints>
       <rules>
         <rule id="69df-cbc9-f278-290d" name="Princeps Seniores" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
