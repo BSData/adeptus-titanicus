@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="72" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="72" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -9,8 +9,8 @@
         <categoryLink id="adf7-4e73-ff4d-9814" name="Configuration" hidden="false" targetId="8e3e-2c21-301b-653e" primary="false"/>
         <categoryLink id="f372-1970-b16d-17a5" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42d9-cf94-91d9-2571" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70d7-a543-a930-24fe" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42d9-cf94-91d9-2571" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70d7-a543-a930-24fe" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="09c3-4572-186e-436f" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="false"/>
@@ -20,16 +20,16 @@
         <categoryLink id="8870-d6d8-5519-9eb0" name="Squadron" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="false"/>
         <categoryLink id="3546-6658-7a79-214d" name="Princeps Seniores" publicationId="975a-00f4-pubN65537" hidden="false" targetId="c130-1260-4c15-147a" primary="false">
           <modifiers>
-            <modifier type="increment" field="bf78-6b8f-80d8-996a" value="1.0">
+            <modifier type="increment" field="bf78-6b8f-80d8-996a" value="1">
               <repeats>
-                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4225-27f8-9c8b-e56e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4225-27f8-9c8b-e56e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f28c-fa09-7512-e0c7" type="min"/>
-            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf78-6b8f-80d8-996a" type="max"/>
+            <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f28c-fa09-7512-e0c7" type="min"/>
+            <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf78-6b8f-80d8-996a" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -38,13 +38,13 @@
   <entryLinks>
     <entryLink id="0205-57f2-c304-39aa" name="Command Bastion" hidden="false" collective="false" import="true" targetId="6d49-58e1-e625-0ceb" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="3b86-c5c4-6ed1-b977" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="3b86-c5c4-6ed1-b977" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="eeaf-3dee-b41c-6e4a" name="Apocalypse Missile Strongpoint" hidden="false" collective="false" import="true" targetId="2aaf-da08-f744-14f6" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="f866-412b-f8ba-963e" name="Battlefield Assets" hidden="false" targetId="0b8b-755a-cabc-6d70" primary="false"/>
-        <categoryLink id="c218-26bf-13e8-b4cd" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="c218-26bf-13e8-b4cd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3e59-cb55-8ab9-782e" name="Plasma Generator" hidden="false" collective="false" import="true" targetId="43a6-b634-7e41-d6c9" type="selectionEntry"/>
@@ -53,59 +53,59 @@
     <entryLink id="bb3f-38cf-716a-a1df" name="Void Shield Relay" hidden="false" collective="false" import="true" targetId="2cb4-be64-ab48-66fb" type="selectionEntry"/>
     <entryLink id="36b2-11b4-2e3e-7073" name="Artillery Bombardment" hidden="false" collective="false" import="true" targetId="a0b2-b8fc-58d2-90f3" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="a9d7-01ee-3500-8753" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="a9d7-01ee-3500-8753" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="3827-c930-377a-6ebe" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b1fa-6a57-27c3-5e8a" name="Orbital Lance Strike" hidden="false" collective="false" import="true" targetId="4537-cab6-8147-aebe" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="2ae3-be5e-42a7-7f90" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="2ae3-be5e-42a7-7f90" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="0ef9-c148-2af9-5234" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="566c-1a88-34b9-7781" name="Blind Barrage" hidden="false" collective="false" import="true" targetId="1fc1-6634-8b70-9b23" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="1a3d-7b97-7d83-d0fe" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="1a3d-7b97-7d83-d0fe" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="d2d6-50e0-45f9-c4f8" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5eb8-e159-27a4-34ee" name="Cripple the Foe" hidden="false" collective="false" import="true" targetId="2536-756b-a090-24dd" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="b567-0052-5f31-dc57" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="b567-0052-5f31-dc57" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="d65b-cf93-8b60-c567" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1ecd-2dca-4087-d22b" name="Decapitating Strike" hidden="false" collective="false" import="true" targetId="f752-af34-e90c-eb00" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="1841-8323-66b4-f043" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="1841-8323-66b4-f043" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="f66c-e396-f81a-ff15" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="22c6-70a4-c657-3203" name="Break Through" hidden="false" collective="false" import="true" targetId="45d2-33d8-2a8c-321a" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="37ab-82a1-09d4-63aa" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="37ab-82a1-09d4-63aa" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="d9ed-312b-b726-635b" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7953-f3dc-7456-e438" name="A Score to Settle" hidden="false" collective="false" import="true" targetId="1505-ad33-6414-78ff" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c796-5ee4-90d7-b290" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
-        <categoryLink id="1e70-f882-1adc-5c7a" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="1e70-f882-1adc-5c7a" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="reaver-support-battlegroup" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="0237-b896-cf2d-fd8c" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="0237-b896-cf2d-fd8c" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="warlord-support-battlegroup" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="fd7f-32e2-ba13-32eb" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="fd7f-32e2-ba13-32eb" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="warbringer-support-battlegroup" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="adde-353e-0207-cfb6" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="adde-353e-0207-cfb6" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6aa3-6d2a-1c55-5f2a" name="Auxiliary Titan" hidden="false" collective="false" import="true" targetId="4c64-8a28-7368-156d" type="selectionEntry"/>
@@ -113,7 +113,7 @@
     </entryLink>
     <entryLink id="sinister-support-battlegroup" name="Warlord-Sinister Titan" hidden="false" collective="false" import="false" targetId="dfeb-83af-7b26-622a" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="3542-a0f1-8d51-4ad7" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="3542-a0f1-8d51-4ad7" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="warmaster-support-battlegroup" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry">
@@ -123,17 +123,17 @@
     </entryLink>
     <entryLink id="573e-1025-b9ca-55d0" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="ad03-604a-3a36-5298" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="ad03-604a-3a36-5298" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1df3-98f5-9d87-11f1" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="false" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="ee08-c741-e4b4-9a6b" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="ee08-c741-e4b4-9a6b" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="af14-0d8e-c0ed-ae81" name="Questoris Knight Banner" hidden="false" collective="false" import="false" targetId="812b-786b-9435-cd20" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="983b-08b8-edf6-a8e6" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="983b-08b8-edf6-a8e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d63c-4bb8-d8a9-b777" name="Axiom Battleline Maniple" hidden="false" collective="false" import="false" targetId="3ca3-42a8-26bb-5676" type="selectionEntry"/>
@@ -141,11 +141,11 @@
     <entryLink id="c4cd-e7fe-d858-9ac7" name="Myrmidon Battleline Maniple" hidden="false" collective="false" import="false" targetId="740e-52e8-27ed-bf22" type="selectionEntry"/>
     <entryLink id="ee61-27d4-5330-1a0d" name="Cerastus Knight Banner" hidden="false" collective="false" import="false" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="7a2b-24b9-a677-80f3" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="7a2b-24b9-a677-80f3" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a061-9137-013f-cf00" name="Corsair Battleline Maniple" hidden="false" collective="false" import="false" targetId="241d-3394-9612-08c7" type="selectionEntry"/>
-    <entryLink id="bf2f-3118-8d0b-fa4b" name="Janissary Batteline Maniple" hidden="false" collective="false" import="false" targetId="56b0-f155-3635-45da" type="selectionEntry"/>
+    <entryLink id="bf2f-3118-8d0b-fa4b" name="Janissary Battleline Maniple" hidden="false" collective="false" import="false" targetId="56b0-f155-3635-45da" type="selectionEntry"/>
     <entryLink id="cea6-93b6-5d50-2f23" name="Regia Battleline Maniple" hidden="false" collective="false" import="false" targetId="51b7-df68-7254-8f21" type="selectionEntry"/>
     <entryLink id="7e16-91e5-f646-3e5e" name="Lupercal Light Maniple" hidden="false" collective="false" import="false" targetId="26ca-c6f5-04b3-10c1" type="selectionEntry"/>
     <entryLink id="a9ee-6217-2e69-f7f6" name="Dominus Battleforce Maniple" hidden="false" collective="false" import="false" targetId="22ac-d1cf-8596-c057" type="selectionEntry"/>
@@ -153,19 +153,19 @@
     <entryLink id="f87f-52a5-0f04-ba5a" name="Fortis Battle Maniple" hidden="false" collective="false" import="false" targetId="2004-6a18-7dac-156c" type="selectionEntry"/>
     <entryLink id="34d0-7019-8dcc-71c5" name="Acastus Knight Banner" hidden="false" collective="false" import="false" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
       <modifiers>
-        <modifier type="increment" field="d0e1-5f6d-1da1-6370" value="1.0">
+        <modifier type="increment" field="d0e1-5f6d-1da1-6370" value="1">
           <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="decrement" field="d0e1-5f6d-1da1-6370" value="1.0">
+        <modifier type="decrement" field="d0e1-5f6d-1da1-6370" value="1">
           <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3997-93d3-81f3-8802" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3997-93d3-81f3-8802" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e1-5f6d-1da1-6370" type="max"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e1-5f6d-1da1-6370" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="2f6d-7ec0-5d32-a1bc" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
@@ -173,127 +173,127 @@
     </entryLink>
     <entryLink id="4ef2-2fba-7456-a7f7" name="Auspex Bafflers" hidden="false" collective="false" import="false" targetId="92b5-e290-3859-ee00" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="10ed-ff38-f212-f9e9" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="10ed-ff38-f212-f9e9" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="c5c6-1d98-8ea6-40e7" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b738-85bb-1e85-c066" name="Ablative Armour" hidden="false" collective="false" import="false" targetId="1911-abf3-ac1a-dc24" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="1474-d98d-950d-a6d0" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
-        <categoryLink id="6ed1-88cb-943b-215a" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="6ed1-88cb-943b-215a" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bc2e-e78d-5f9c-9bf7" name="Bloodthirst" hidden="false" collective="false" import="false" targetId="7d57-58b8-78e2-ef41" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="0ec2-f2ee-4666-54ab" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="0ec2-f2ee-4666-54ab" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="ab1b-9070-8457-9664" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f9c0-e186-04d6-567e" name="Cursed Earth" hidden="false" collective="false" import="false" targetId="1de7-d898-28ca-df04" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="8768-5ac8-78c9-a191" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="8768-5ac8-78c9-a191" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5d91-7c03-b695-d546" name="Dawn Attack" hidden="false" collective="false" import="false" targetId="25d9-b5e3-6243-ba14" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="383f-5a54-47c3-01c9" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="383f-5a54-47c3-01c9" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="8aae-983c-aba8-f56d" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f38b-5cfd-e337-36c6" name="Endurance of Terra" hidden="false" collective="false" import="false" targetId="7d4f-7971-bacc-d50e" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="b8a6-b31d-32fc-5165" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="b8a6-b31d-32fc-5165" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2f4c-8dfe-c9aa-f6e1" name="Experimental Weapon" hidden="false" collective="false" import="false" targetId="cb69-65f4-f95f-62d3" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="3dd4-f65c-1502-7635" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="3dd4-f65c-1502-7635" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="ea4d-3277-57f9-aa3b" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1afe-606b-3a7c-66eb" name="Gifts of the Dark Mechanicum" hidden="false" collective="false" import="false" targetId="9ed4-ecf1-c67b-b64e" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="6350-b80c-03ee-8315" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="6350-b80c-03ee-8315" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="59f5-d669-4811-d189" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e29b-1aad-06e7-6c39" name="Great Crusade Titans" hidden="false" collective="false" import="false" targetId="b8c9-6ea9-db00-80ad" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="c259-1db2-5c81-5a5f" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="c259-1db2-5c81-5a5f" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="12d7-e855-5c7d-8585" name="Living Armour" hidden="false" collective="false" import="false" targetId="63e5-c3bf-0f5b-a8ae" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="1d70-08c3-e587-2bbd" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="1d70-08c3-e587-2bbd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="a71b-de46-28fd-701a" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f5ef-713a-72ed-ec43" name="Martian Servitor Clades" hidden="false" collective="false" import="false" targetId="9c4a-cc01-9454-b339" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="662a-dc0a-d670-156f" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="662a-dc0a-d670-156f" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="1ebd-2191-7a0e-c01b" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e24c-6eb3-56f6-e47d" name="Overcharged Cannon" hidden="false" collective="false" import="false" targetId="2f53-6658-d606-ad5c" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="e484-825c-5faa-4652" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e484-825c-5faa-4652" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="d485-e41f-edbe-d5ed" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="37aa-360e-4388-691d" name="Sabotage" hidden="false" collective="false" import="false" targetId="c88b-b85f-1703-59c7" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="a65a-8c3e-45fd-dfec" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="a65a-8c3e-45fd-dfec" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9b56-1358-c725-e4cc" name="Secutarii Battalion" hidden="false" collective="false" import="false" targetId="82dc-135c-6241-dcca" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="1da1-678a-a035-1da3" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="1da1-678a-a035-1da3" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="e9a2-5635-b013-bfb1" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b3bb-4292-f19e-6e43" name="The Long Retreat" hidden="false" collective="false" import="false" targetId="68a2-d06c-8ad8-9ea0" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="5b26-685c-bfe0-bb64" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="5b26-685c-bfe0-bb64" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="531f-1f21-25c6-2c76" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e299-9701-63d5-7b4b" name="Thermal Mines" hidden="false" collective="false" import="false" targetId="3195-2ce6-0ecc-7d2e" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="ab77-734b-771c-798e" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="ab77-734b-771c-798e" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="049f-63a2-6a3a-7481" name="Voidbreaker Field" hidden="false" collective="false" import="false" targetId="b9c7-8740-586c-af80" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="f353-0733-fed7-e13a" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="f353-0733-fed7-e13a" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="089f-e3d9-41de-5f56" name="Wages of Betrayal" hidden="false" collective="false" import="false" targetId="3ef1-098e-a603-9111" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="c085-583b-4ee2-9613" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="c085-583b-4ee2-9613" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="7ce2-ea1e-8c8f-a6ef" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c0af-5409-60f5-a02a" name="Vox Blackout" hidden="false" collective="false" import="false" targetId="211c-5c02-080a-eeb4" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="11f0-6de5-b655-fa29" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="11f0-6de5-b655-fa29" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="81e1-518c-6b5d-7cbe" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e853-ad80-9567-e560" name="War Lust" hidden="false" collective="false" import="false" targetId="19e6-b0cc-5b61-4583" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="f9af-c89e-f98a-baf2" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="f9af-c89e-f98a-baf2" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="35de-4f9d-0d35-b673" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="44b5-d3c5-280a-b351" name="War of Fates" hidden="false" collective="false" import="false" targetId="5fff-7fff-159a-06b8" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="66d0-2ff2-2051-d272" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="66d0-2ff2-2051-d272" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="4256-0786-345a-93c3" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8aee-29e2-f85b-f0e3" name="Warmaster&apos;s Portion" hidden="false" collective="false" import="false" targetId="6f84-544d-c82b-ae95" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="c7b6-19f8-a5be-cf3e" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="c7b6-19f8-a5be-cf3e" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="442d-9348-1056-e858" name="Tricks and Tactics" hidden="false" targetId="9e2e-c35f-34a4-d245" primary="false"/>
       </categoryLinks>
     </entryLink>
@@ -304,7 +304,7 @@
     <entryLink id="9320-eb20-eb33-deca" name="Ruptura Battleline Maniple" hidden="false" collective="false" import="false" targetId="719e-13a7-d3cd-19bc" type="selectionEntry"/>
     <entryLink id="aebf-4a76-813a-494e" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="a24d-4887-5c00-01a9" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="a24d-4887-5c00-01a9" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2bf7-b386-a4ee-2043" name="Mandatum Battleline Maniple" hidden="false" collective="false" import="false" targetId="f969-b5c4-4b5d-1723" type="selectionEntry"/>
@@ -313,23 +313,23 @@
     <entryLink id="ded3-1fde-114c-273e" name="Wails of the Damned" hidden="false" collective="false" import="false" targetId="9aff-f954-d10d-1a6b" type="selectionEntry"/>
     <entryLink id="d83c-04f9-69a0-a5c6" name="Warp Displacement" hidden="false" collective="false" import="false" targetId="076f-49cf-0bc3-d5b0" type="selectionEntry"/>
     <entryLink id="f51a-8ed5-b314-aabc" name="Profane Blessing" hidden="false" collective="false" import="false" targetId="74cc-351e-33ce-fd95" type="selectionEntry"/>
-    <entryLink id="94ef-8461-c91e-b59d" name="Unholy Ground" hidden="false" collective="false" import="false" targetId="c00f-99e1-ceee-6ab8" type="selectionEntry"/>
+    <entryLink id="94ef-8461-c91e-b59d" name="Unhallowed Ground" hidden="false" collective="false" import="false" targetId="c00f-99e1-ceee-6ab8" type="selectionEntry"/>
     <entryLink id="36ee-b38b-303e-963b" name="Aetheric Infusion" hidden="false" collective="false" import="false" targetId="5ab8-ac68-cbd2-18e7" type="selectionEntry"/>
     <entryLink id="7267-08a6-2be3-fc40" name="Iron Resolve" hidden="false" collective="false" import="false" targetId="d225-d951-ec1f-68ed" type="selectionEntry"/>
     <entryLink id="8d02-d498-f574-a720" name="EMP Discharge" hidden="false" collective="false" import="false" targetId="0e98-ad0d-4899-fa29" type="selectionEntry"/>
     <entryLink id="6eef-d1f7-d9e3-d79e" name="Only Forwards" hidden="false" collective="false" import="false" targetId="e033-a991-5c12-4e9a" type="selectionEntry"/>
     <entryLink id="1a56-2716-1648-e954" name="Even in Death" hidden="false" collective="false" import="false" targetId="fc25-6786-d24b-0cc8" type="selectionEntry"/>
-    <entryLink id="69d5-8807-9616-b7eb" name="Weapons on Full" hidden="false" collective="false" import="false" targetId="174d-8530-d7b6-ff8e" type="selectionEntry"/>
-    <entryLink id="e5dd-7c46-3b97-26b8" name="Sacrificial Lock-On" hidden="false" collective="false" import="false" targetId="e7d9-c9e1-cfaf-1c18" type="selectionEntry">
+    <entryLink id="69d5-8807-9616-b7eb" name="Weapons to Full" hidden="false" collective="false" import="false" targetId="174d-8530-d7b6-ff8e" type="selectionEntry"/>
+    <entryLink id="e5dd-7c46-3b97-26b8" name="Sacrificial Lock-on" hidden="false" collective="false" import="false" targetId="e7d9-c9e1-cfaf-1c18" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="b01e-3702-17dc-7efa" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="b01e-3702-17dc-7efa" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="edca-6466-0531-f40f" name="Augmented Servitor Clades" hidden="false" collective="false" import="false" targetId="f303-73e9-fd41-6eda" type="selectionEntry"/>
     <entryLink id="6582-acb2-6791-9d08" name="Concealment Barrage" hidden="false" collective="false" import="false" targetId="1ad5-b9b3-0d8d-400d" type="selectionEntry"/>
     <entryLink id="dffb-cc77-bc1e-6479" name="MIU Link" hidden="false" collective="false" import="false" targetId="f809-8222-f211-054d" type="selectionEntry"/>
     <entryLink id="ed20-7f19-2b93-53b6" name="Veteran Princeps" hidden="false" collective="false" import="false" targetId="dcdc-1908-1c28-7f44" type="selectionEntry"/>
-    <entryLink id="c7e4-7e9b-2d9f-8d52" name="Shock mines" hidden="false" collective="false" import="false" targetId="0336-bb0f-b870-de7a" type="selectionEntry"/>
+    <entryLink id="c7e4-7e9b-2d9f-8d52" name="Shock Mines" hidden="false" collective="false" import="false" targetId="0336-bb0f-b870-de7a" type="selectionEntry"/>
     <entryLink id="1f2a-ee67-2d96-be19" name="Tracer Cloud" hidden="false" collective="false" import="false" targetId="1aba-1767-f646-5ebe" type="selectionEntry"/>
     <entryLink id="4254-bf37-74eb-4aa4" name="Perpetua Battleline Maniple" hidden="false" collective="false" import="false" targetId="fd1f-e255-c7bd-442b" type="selectionEntry"/>
     <entryLink id="4a69-59bf-2150-1e88" name="Extergimus Battleline Maniple" hidden="false" collective="false" import="false" targetId="9d50-e86f-4613-3e07" type="selectionEntry"/>
@@ -348,26 +348,26 @@
     <entryLink id="7740-08d6-29c3-9a3b" name="Last Ditch Effort" hidden="false" collective="false" import="false" targetId="a6f0-9aff-9834-89c7" type="selectionEntry"/>
     <entryLink id="a646-5285-6238-f2b7" name="Venerable Machine Spirit" hidden="false" collective="false" import="false" targetId="0f6c-856d-c4d3-13e3" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="1af2-716e-33ec-2f87" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="1af2-716e-33ec-2f87" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e895-90c4-04af-92e7" name="Precept Battleline Maniple" hidden="false" collective="false" import="false" targetId="6e74-335d-5467-0907" type="selectionEntry"/>
     <entryLink id="3516-5d57-8e42-97f0" name="Ignus Light Maniple" hidden="false" collective="false" import="false" targetId="ab5b-9a2c-91b9-35a2" type="selectionEntry"/>
     <entryLink id="bf58-e1b7-8ac6-933b" name="A Quick Kill" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="false" targetId="6f6c-982d-c8ed-5fb8" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="df5f-6558-167c-8032" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-        <categoryLink id="d2c6-0622-103b-5fa7" name="New CategoryLink" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
+        <categoryLink id="df5f-6558-167c-8032" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="d2c6-0622-103b-5fa7" name="Tertiary Objective" hidden="false" targetId="d198-6567-a9f9-a3fc" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6617-7324-c72a-e622" name="Earthshaker Mines" publicationId="975a-00f4-pubN89746" hidden="false" collective="false" import="false" targetId="eb24-c12a-7f9c-d4c1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="c3c7-67e9-9dad-ff76" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="c3c7-67e9-9dad-ff76" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="e956-b73a-ad9f-17db" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b47e-f0ce-71b0-d62c" name="Haywire Barrage" hidden="false" collective="false" import="false" targetId="e862-2a40-3c8f-1fd9" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="4f28-9118-c35f-a464" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="4f28-9118-c35f-a464" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="043b-3ccc-4983-3d48" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
     </entryLink>
@@ -377,34 +377,34 @@
     <entryLink id="b9d4-f9c7-26ec-9191" name="Penance" hidden="false" collective="false" import="false" targetId="10a5-6174-a6f3-0344" type="selectionEntry"/>
     <entryLink id="eb2d-2ee1-3fc1-3975" name="Scatterable Mines" hidden="false" collective="false" import="false" targetId="8738-12fd-ab3d-5ad5" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="dd9c-3717-20be-57c5" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="dd9c-3717-20be-57c5" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="d202-9f2c-7fad-13c0" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d5b0-29d4-ddfc-14c9" name="Static Rain" hidden="false" collective="false" import="false" targetId="33df-1682-cf66-5255" type="selectionEntry"/>
     <entryLink id="284c-caeb-2b2d-83b6" name="Strafing Run" hidden="false" collective="false" import="false" targetId="a3f1-5763-016d-21d3" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="ed9d-6eba-a53f-f9b3" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="ed9d-6eba-a53f-f9b3" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="4604-e945-05df-6046" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="d69f-4382-fafd-1e9a" name="Titan Hunter Infantry" page="" hidden="false" collective="false" import="false" targetId="af36-a2ad-3abf-2f12" type="selectionEntry"/>
+    <entryLink id="d69f-4382-fafd-1e9a" name="Titan Hunter Infantry" hidden="false" collective="false" import="false" targetId="af36-a2ad-3abf-2f12" type="selectionEntry"/>
     <entryLink id="7494-d040-547c-1a78" name="Titanic Decapitation" hidden="false" collective="false" import="false" targetId="a9b7-3d50-1282-ecb3" type="selectionEntry"/>
     <entryLink id="a76b-b826-3647-8c35" name="The Miracle of Mars" hidden="false" collective="false" import="false" targetId="dee9-1ba4-819a-306d" type="selectionEntry"/>
     <entryLink id="2065-a689-35f6-52c3" name="Forward Observers" hidden="false" collective="false" import="false" targetId="17f0-a74f-027f-c827" type="selectionEntry"/>
     <entryLink id="1d6a-6369-540b-f5cd" name="Outflank" hidden="false" collective="false" import="true" targetId="1ff9-2715-d0fa-8049" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="95b3-9276-34a5-9e74" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="95b3-9276-34a5-9e74" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f971-31dc-24ee-2d31" name="Dark Pledge" hidden="false" collective="false" import="true" targetId="a926-7329-163c-d9a6" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="9999-b755-371a-0a55" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="9999-b755-371a-0a55" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f55d-9951-227b-e8b2" name="Quake Shells" hidden="false" collective="false" import="true" targetId="2bd2-e1b7-69b5-b739" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="ea2c-1d43-9dfd-e7d4" name="Stratagem" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="ea2c-1d43-9dfd-e7d4" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="9225-42ed-7e94-34a8" name="Ranged Support" hidden="false" targetId="841e-1054-24aa-8eca" primary="false"/>
       </categoryLinks>
     </entryLink>
@@ -412,288 +412,288 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="99b7-5e2f-9ea4-bbdf" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="99b7-5e2f-9ea4-bbdf" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2057-fe4e-c273-b652" name="=Lysanda= Frontier Guard" hidden="true" collective="false" import="false" targetId="117e-1150-d95c-0c61" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7ada-d471-345c-f8a4" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7ada-d471-345c-f8a4" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="418d-8284-b516-cbaf" name="=Oberon= Decisive Action" hidden="true" collective="false" import="false" targetId="4db9-d3f5-c9e7-63b2" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7dc9-a722-55be-5f42" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7dc9-a722-55be-5f42" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="14c2-77f4-4acb-2bf2" name="=Praesagius= Precision Volley" hidden="true" collective="false" import="false" targetId="fa21-d04e-c23a-9d6a" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e62-72e2-a04f-9b86" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e62-72e2-a04f-9b86" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="358f-5483-de43-cf14" name="=Oberon= Strategiser" hidden="true" collective="false" import="false" targetId="86f7-1a40-382b-ae4b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7dc9-a722-55be-5f42" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7dc9-a722-55be-5f42" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="00f5-8d82-bcc2-9188" name="=Mordaxis= Unstoppable" hidden="true" collective="false" import="false" targetId="3426-e19b-771f-0d15" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7824-c714-a76f-84f5" name="=Atarus= Impetuous Machine Spirit" hidden="true" collective="false" import="false" targetId="b7bc-1a39-1fa8-bde4" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cfcc-e5c0-bb0b-db6f" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cfcc-e5c0-bb0b-db6f" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="87c4-07fe-5ea5-64c1" name="=Atarus= Maniple of One" hidden="true" collective="false" import="false" targetId="ffa3-89c9-f658-9a64" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cfcc-e5c0-bb0b-db6f" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cfcc-e5c0-bb0b-db6f" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="d004-4c2e-5fbb-f3f7" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="d004-4c2e-5fbb-f3f7" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="48bc-30f3-4ffd-547a" name="=Defensor= A Day of Retribution" hidden="true" collective="false" import="false" targetId="b96e-64b2-6f6c-2836" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b17-f14f-4709-e96c" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b17-f14f-4709-e96c" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8869-79bd-2524-552a" name="=Defensor= Blessings of the Emperor" hidden="true" collective="false" import="false" targetId="61a7-3fcd-5cb5-7014" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b17-f14f-4709-e96c" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b17-f14f-4709-e96c" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="202b-5047-b836-c377" name="=Fureans= Offensive Surge" hidden="true" collective="false" import="false" targetId="79c4-5f36-3c4b-8482" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72ba-4008-bf4b-fe3b" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72ba-4008-bf4b-fe3b" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9534-0eaa-8f14-3310" name="=Mortis= March of the Dead" hidden="true" collective="false" import="false" targetId="4699-f903-0c50-1e80" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f88f-e42d-38f7-bfa7" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f88f-e42d-38f7-bfa7" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ae8d-c57e-44ea-9093" name="=Solaria= Fog of War" hidden="true" collective="false" import="false" targetId="63d6-80e8-e266-00b0" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="56c0-1162-173d-b052" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="56c0-1162-173d-b052" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8867-35a8-38be-ee71" name="=Vulpa= No Pity for the Vanquished" hidden="true" collective="false" import="false" targetId="12c2-179b-3e38-04d0" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="561a-cb05-d4b5-94fd" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="561a-cb05-d4b5-94fd" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="cd7b-5bcd-a82c-a220" name="=Fortidus= For the Red Planet" hidden="true" collective="false" import="false" targetId="c88c-e5de-39a8-a14c" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8129-9843-a287-cd8e" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8129-9843-a287-cd8e" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0862-be2c-943f-9090" name="=Fortidus= Red Skies" hidden="true" collective="false" import="false" targetId="77b5-8263-66f7-7c67" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8129-9843-a287-cd8e" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8129-9843-a287-cd8e" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ee62-96c9-e7fa-813a" name="=Interfector= Tormented Machine Spirit" hidden="true" collective="false" import="false" targetId="8f50-2bbe-22c7-c81e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f0a4-f7dc-25cf-21c8" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f0a4-f7dc-25cf-21c8" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5552-c44d-7a80-8fb8" name="=Tempestus= Combat Drop" hidden="true" collective="false" import="false" targetId="a325-71b4-799f-daa1" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b247-402c-24c1-9186" name="=Vulcanum= Symbiotic Commands" hidden="true" collective="false" import="false" targetId="da32-bf28-85d1-9f9d" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4225-27f8-9c8b-e56e" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4225-27f8-9c8b-e56e" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5da6-82f5-7541-1024" name="=Osedax= Relentless March" hidden="true" collective="false" import="false" targetId="2807-7c6c-a62b-6732" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fc8c-656d-ffe8-69b6" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fc8c-656d-ffe8-69b6" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="fbca-90bf-d58c-53de" name="=Osedax= Blood Begets Blood" hidden="true" collective="false" import="false" targetId="99e9-5b47-5d7a-f6f7" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fc8c-656d-ffe8-69b6" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fc8c-656d-ffe8-69b6" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="de16-e3b4-01e5-1e6d" name="=Vulturum= Cull the Weak" hidden="true" collective="false" import="false" targetId="f805-d25f-6ece-e62a" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5a98-05b4-ed38-bbc4" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5a98-05b4-ed38-bbc4" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="027a-da58-97db-3df9" name="=Vulturum= Scent of Blood" hidden="true" collective="false" import="false" targetId="0942-9568-cbd3-aec6" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5a98-05b4-ed38-bbc4" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5a98-05b4-ed38-bbc4" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dbb1-ed4f-4c95-7c91" name="=Astraman= Stand Firm" hidden="true" collective="false" import="false" targetId="ab6a-2fba-dc15-e2ef" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="324b-8404-7509-9b36" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="324b-8404-7509-9b36" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="d960-4189-8cb1-9d61" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="d960-4189-8cb1-9d61" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="098b-2405-4339-e65b" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
         <categoryLink id="bcdb-aac0-0cc2-aac6" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
@@ -702,12 +702,12 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="324b-8404-7509-9b36" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="324b-8404-7509-9b36" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="ee58-c888-891f-64de" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="ee58-c888-891f-64de" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="c42b-9432-6577-10cd" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
         <categoryLink id="d817-81f8-4d56-621d" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
@@ -716,76 +716,76 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae2e-5751-1800-545a" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae2e-5751-1800-545a" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="1e07-d102-4de5-7273" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3.0"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3"/>
       </costs>
     </entryLink>
     <entryLink id="16c3-2c70-04ae-4df3" name="=Ignatum= Guard the Gates" hidden="true" collective="false" import="false" targetId="087c-a203-d1d4-bfcd" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5f7b-2051-3935-7637" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5f7b-2051-3935-7637" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2aa6-80ce-5c35-a605" name="=Ignatum= Punish their Folly" hidden="true" collective="false" import="false" targetId="ced4-b0c7-5d0f-3c30" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5f7b-2051-3935-7637" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5f7b-2051-3935-7637" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1182-1545-6fc1-e75e" name="=Kulisaetai= Methodical Advance" hidden="true" collective="false" import="false" targetId="88d4-a5e8-4929-8037" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6740-1e8a-8e25-88fd" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6740-1e8a-8e25-88fd" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4736-4fef-8991-fe87" name="=Kulisaetai= Steadfast Bastion " hidden="true" collective="false" import="false" targetId="cf5b-8f2e-8df3-7539" type="selectionEntry">
+    <entryLink id="4736-4fef-8991-fe87" name="=Kulisaetai= Steadfast Bastion" hidden="true" collective="false" import="false" targetId="cf5b-8f2e-8df3-7539" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6740-1e8a-8e25-88fd" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6740-1e8a-8e25-88fd" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8a6c-b6fe-d912-ad44" name="=Laniaskara= Heedless Charge" hidden="true" collective="false" import="false" targetId="5dd2-5a20-9a7a-c000" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4a24-73e7-556c-1bfd" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4a24-73e7-556c-1bfd" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="9c5c-00d9-c76c-f7f5" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
       </categoryLinks>
     </entryLink>
@@ -793,24 +793,24 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cd4a-3c69-5fc8-0773" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cd4a-3c69-5fc8-0773" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dd35-c9f9-16aa-8e3c" name="=Astorum= Bounty of Mars" hidden="true" collective="false" import="false" targetId="2992-c2ab-d138-890d" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="06c2-f93e-7bf5-9fd5" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="06c2-f93e-7bf5-9fd5" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="6838-a0ed-73fa-908b" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="6838-a0ed-73fa-908b" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="31cd-1273-0a50-bd48" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
       </categoryLinks>
     </entryLink>
@@ -818,12 +818,12 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="06c2-f93e-7bf5-9fd5" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="06c2-f93e-7bf5-9fd5" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="8790-133a-62e7-e793" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="8790-133a-62e7-e793" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
         <categoryLink id="432f-e748-1b98-2084" name="LegioAstorum" hidden="false" targetId="06c2-f93e-7bf5-9fd5" primary="false"/>
       </categoryLinks>
     </entryLink>
@@ -831,53 +831,53 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4cad-18cf-5711-5331" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4cad-18cf-5711-5331" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="365a-863a-a819-e263" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="365a-863a-a819-e263" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5985-6d0e-627f-ac88" name="=Magna= Spearhead Assault" hidden="true" collective="false" import="true" targetId="a0e1-b0c5-c4a3-ac4e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4cad-18cf-5711-5331" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4cad-18cf-5711-5331" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="20d8-6a5a-edbc-014e" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="20d8-6a5a-edbc-014e" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b9c9-93f8-ab40-7137" name="=Interfector= Portents of Doom" hidden="true" collective="false" import="true" targetId="a77a-601b-06c0-9ccc" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f0a4-f7dc-25cf-21c8" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f0a4-f7dc-25cf-21c8" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="74c9-f3a4-7280-a4fd" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="74c9-f3a4-7280-a4fd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2"/>
       </costs>
     </entryLink>
     <entryLink id="926c-2aa5-3b18-f873" name="=Tritonis= Stygian Veil" hidden="true" collective="false" import="false" targetId="ad64-ba43-1e95-87ca" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ccee-936e-87d6-bf29" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ccee-936e-87d6-bf29" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="ce07-431f-69fa-5dd6" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
         <categoryLink id="0500-1ee4-6dd0-8362" name="LegioTritonis" hidden="false" targetId="ccee-936e-87d6-bf29" primary="false"/>
-        <categoryLink id="d316-0996-34ef-a634" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="d316-0996-34ef-a634" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="02ae-1f94-83f2-f648" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" targetId="c45d-04e4-f35f-8b20" type="selectionEntry">
@@ -890,26 +890,26 @@
         <categoryLink id="ec0d-3c08-8cbc-7888" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6924-fe7d-2cb3-7473" name="Mechanicum Moirax Knight Banner" page="" hidden="false" collective="false" import="false" targetId="8be9-756b-a3a6-8622" type="selectionEntry">
+    <entryLink id="6924-fe7d-2cb3-7473" name="Moirax Knight Banner" hidden="false" collective="false" import="false" targetId="8be9-756b-a3a6-8622" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7481-4c0c-ca6a-ec46" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b539-98b2-4d19-2ed2" name="Acastus Knight Asterius Banner" hidden="false" collective="false" import="true" targetId="3997-93d3-81f3-8802" type="selectionEntry">
       <modifiers>
-        <modifier type="increment" field="d0b4-c318-58f4-43db" value="1.0">
+        <modifier type="increment" field="d0b4-c318-58f4-43db" value="1">
           <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="decrement" field="d0b4-c318-58f4-43db" value="1.0">
+        <modifier type="decrement" field="d0b4-c318-58f4-43db" value="1">
           <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b77-15d2-9ca8-5cf7" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b77-15d2-9ca8-5cf7" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b4-c318-58f4-43db" type="max"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b4-c318-58f4-43db" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="447d-74bf-dbd3-c004" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
@@ -917,7 +917,7 @@
     </entryLink>
     <entryLink id="abe4-c85c-73b6-1aaf" name="Cerastus Knight Atrapos Banner" hidden="false" collective="false" import="true" targetId="9167-7d32-6d19-739d" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="8b07-8368-d9c0-056e" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="8b07-8368-d9c0-056e" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="cd15-0d60-20eb-9426" name="Dire Wolf Titan" hidden="false" collective="false" import="true" targetId="76b8-ecdb-cbf6-0c45" type="selectionEntry">
@@ -932,7 +932,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -941,7 +941,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -950,7 +950,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2afb-401e-9ec9-28b2" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2afb-401e-9ec9-28b2" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -960,20 +960,20 @@
   <sharedSelectionEntries>
     <selectionEntry id="4c64-8a28-7368-156d" name="Auxiliary Titan" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="increment" field="24f8-e31a-7275-eab2" value="1.0">
+        <modifier type="increment" field="24f8-e31a-7275-eab2" value="1">
           <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="24f8-e31a-7275-eab2" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a0-1f89-67e9-af2b" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70e4-6146-61bf-1602" type="max"/>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="24f8-e31a-7275-eab2" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a0-1f89-67e9-af2b" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70e4-6146-61bf-1602" type="max"/>
       </constraints>
       <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
