@@ -21109,7 +21109,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </constraints>
         </entryLink>
         <entryLink id="ecde-54c8-cd51-7c3b" name="=Osedax= Plasma Channels" hidden="false" collective="false" import="false" targetId="eb8b-95ca-bf92-b3f9" type="selectionEntry"/>
-        <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="true" collective="true" import="false" targetId="146b-78b6-75ce-e17e" type="selectionEntry" defaultAmount="">
+        <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="true" collective="false" import="false" targetId="146b-78b6-75ce-e17e" type="selectionEntry" defaultAmount="">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -21122,9 +21122,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               </conditionGroups>
             </modifier>
           </modifiers>
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="5"/>
-          </costs>
         </entryLink>
         <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="true" collective="false" import="false" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
           <modifiers>
