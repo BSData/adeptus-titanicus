@@ -21105,9 +21105,9 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         </entryLink>
         <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="true" collective="false" import="false" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ae2e-5751-1800-545a" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ae2e-5751-1800-545a" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -21118,6 +21118,10 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <costs>
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="0a38-f9e9-4688-f6e5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="8cc2-3241-cf56-6779" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="true" collective="false" import="false" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry">
           <modifiers>
