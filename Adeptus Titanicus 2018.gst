@@ -20917,7 +20917,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bff-b758-cf1f-1433" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="81d8-7987-ad17-9804" name="=Atarus= Infernus Missiles" hidden="false" collective="false" import="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
+        <entryLink id="81d8-7987-ad17-9804" name="=Atarus= Infernus Missiles" hidden="true" collective="false" import="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -21059,7 +21059,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f063-e300-9d85-1e95" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="89ec-107f-748e-31b3" name="=Audax= Reinforced Plating" hidden="false" collective="false" import="false" targetId="69f2-0efb-9085-02cb" type="selectionEntry">
+        <entryLink id="89ec-107f-748e-31b3" name="=Audax= Reinforced Plating" hidden="true" collective="false" import="false" targetId="69f2-0efb-9085-02cb" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
