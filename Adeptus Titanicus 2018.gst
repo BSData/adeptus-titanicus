@@ -4305,27 +4305,8 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </costs>
     </selectionEntry>
     <selectionEntry id="1c7b-4247-5715-1d18" name="=Crucius= Bi-folded Power Containment" publicationId="3401-191e-1333-8a1d" page="120" hidden="true" collective="false" import="false" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="equalTo"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="atLeast"/>
-                    <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ee0-6284-c475-0f16" type="max"/>
+        <constraint field="selections" scope="model" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7ee0-6284-c475-0f16" type="max"/>
       </constraints>
       <rules>
         <rule id="e185-e37d-8ed8-63d9" name="Bi-folded Power Containment" publicationId="3401-191e-1333-8a1d" page="120" hidden="false">
@@ -4342,16 +4323,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </costs>
     </selectionEntry>
     <selectionEntry id="d169-c82c-a137-bb35" name="=Crucius= Terminus Override Mechanisms" publicationId="3401-191e-1333-8a1d" page="120" hidden="true" collective="false" import="false" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da6d-e379-1848-8c31" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1efd-3308-5b47-84cd" type="max"/>
-      </constraints>
       <rules>
         <rule id="fe76-9ecd-5abb-5e2c" name="Terminus Override Mechanisms" publicationId="3401-191e-1333-8a1d" page="120" hidden="false">
           <description>Any Legio Crucius Titan may be equipped with a Terminus Override Mechanism for +30 points. The first time a Legio Crucius Titan with a Terminus Override Mechanism would be required to roll on the Reactor Overload table (see the Adeptus Titanicus rulebook), instead of rolling, nothing happens – no roll is needed. Once triggered in this manner, a Terminus Override Mechanism has no further effect on the game.</description>
@@ -20890,21 +20861,28 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         </entryLink>
         <entryLink id="953c-dcfa-224e-58fd" name="=Crucius= Terminus Override Mechanisms" hidden="true" collective="false" import="false" targetId="d169-c82c-a137-bb35" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4501-ac6c-5b8c-1b03" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4501-ac6c-5b8c-1b03" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="b6b1-dcc0-fbf4-b68f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="a6dd-d40c-d09a-284c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="a6b9-74a0-12c3-4ab9" name="=Crucius= Bi-folded Power Containment" hidden="true" collective="false" import="false" targetId="1c7b-4247-5715-1d18" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4501-ac6c-5b8c-1b03" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4501-ac6c-5b8c-1b03" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="b669-ff10-99e2-5257" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="57d8-eb61-62ff-370a" name="=Vulcanum= Twinned Machine Spirits" hidden="true" collective="false" import="false" targetId="f9a9-0ee9-960e-960b" type="selectionEntry">
           <modifiers>
