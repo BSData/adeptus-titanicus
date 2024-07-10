@@ -20941,22 +20941,20 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         </entryLink>
         <entryLink id="81d8-7987-ad17-9804" name="=Atarus= Infernus Missiles" hidden="false" collective="false" import="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cfcc-e5c0-bb0b-db6f" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06ab-258d-46aa-3b1f" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8f5-826f-4bea-ee52" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6918-26e7-fbb2-1542" type="max"/>
+            <constraint field="selections" scope="model" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f8f5-826f-4bea-ee52" type="min"/>
+            <constraint field="selections" scope="model" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6918-26e7-fbb2-1542" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="0d03-0629-0cb0-6cb1" name="=Krytos= Earthbreaker Missiles" hidden="false" collective="false" import="false" targetId="4c8f-29c9-0c8e-67b6" type="selectionEntry">
