@@ -21107,7 +21107,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </constraints>
         </entryLink>
         <entryLink id="ecde-54c8-cd51-7c3b" name="=Osedax= Plasma Channels" hidden="false" collective="false" import="false" targetId="eb8b-95ca-bf92-b3f9" type="selectionEntry"/>
-        <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="true" collective="false" import="false" targetId="146b-78b6-75ce-e17e" type="selectionEntry" defaultAmount="">
+        <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="true" collective="false" import="false" targetId="146b-78b6-75ce-e17e" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -21120,6 +21120,10 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="e044-40f0-8310-528b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="d87d-a2f2-376c-af42" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="true" collective="false" import="false" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
           <modifiers>
@@ -21198,6 +21202,10 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="ed82-eddb-d321-bc2e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="3c78-05aa-9117-f409" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="c790-8ac8-fbc0-5856" name="=Metalica= Bastion Armor" hidden="true" collective="false" import="true" targetId="31ff-82f8-241d-7b29" type="selectionEntry">
           <modifiers>
