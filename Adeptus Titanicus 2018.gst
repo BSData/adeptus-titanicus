@@ -21113,16 +21113,23 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="5ad8-0ca8-4bb7-83b6" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="5ad8-0ca8-4bb7-83b6" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="e044-40f0-8310-528b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="d87d-a2f2-376c-af42" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="e044-40f0-8310-528b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="d87d-a2f2-376c-af42" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="true" collective="false" import="false" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
@@ -21208,16 +21215,23 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="5ad8-0ca8-4bb7-83b6" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="5ad8-0ca8-4bb7-83b6" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="ed82-eddb-d321-bc2e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="3c78-05aa-9117-f409" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="ed82-eddb-d321-bc2e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="3c78-05aa-9117-f409" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="c790-8ac8-fbc0-5856" name="=Metalica= Bastion Armor" hidden="true" collective="false" import="true" targetId="31ff-82f8-241d-7b29" type="selectionEntry">
