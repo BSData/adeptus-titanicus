@@ -21003,22 +21003,20 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         </entryLink>
         <entryLink id="b1b7-81d6-7559-1192" name="=Defensor= Devotional War Sirens" hidden="true" collective="false" import="false" targetId="9646-5ac3-8725-8523" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7103-9316-d4a5-8caa" type="instanceOf"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7b17-f14f-4709-e96c" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="7b17-f14f-4709-e96c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="7103-9316-d4a5-8caa" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a071-41f1-b392-d26a" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3e3-1fd3-fdd4-fb33" type="min"/>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="9439-9642-da26-8247" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="4754-a2ed-20ee-9ebe" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="b285-9a61-5285-0a39" name="=Lysanda= Mantel of Responsibility" hidden="false" collective="false" import="false" targetId="5f0a-2b12-1f44-a4b9" type="selectionEntry">
