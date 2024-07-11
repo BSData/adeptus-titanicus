@@ -17759,17 +17759,6 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       </costs>
     </selectionEntry>
     <selectionEntry id="8a7d-3ead-16e2-1979" name="=Honorum= Basilius Throne" publicationId="3401-191e-1333-8a1d" page="131" hidden="true" collective="false" import="true" type="upgrade">
-      <modifierGroups>
-        <modifierGroup>
-          <conditions>
-            <condition field="selections" scope="6982-2d18-55cb-61e5" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cd4a-3c69-5fc8-0773" type="instanceOf"/>
-          </conditions>
-          <modifiers>
-            <modifier type="set" field="1f21-002f-5510-587f" value="0"/>
-            <modifier type="set" field="hidden" value="false"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f21-002f-5510-587f" type="max"/>
       </constraints>
@@ -21117,12 +21106,16 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         </entryLink>
         <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="true" collective="false" import="false" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="5f7b-2051-3935-7637" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5f7b-2051-3935-7637" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="1d0e-9503-48d9-caab" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="3f57-fa28-acc6-bf89" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders" hidden="true" collective="false" import="false" targetId="7c51-55b9-4942-4061" type="selectionEntry">
           <modifiers>
@@ -21199,15 +21192,23 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="499b-3294-6b78-4417" name="=Honorum= Basilius Throne" hidden="false" collective="false" import="true" targetId="8a7d-3ead-16e2-1979" type="selectionEntry">
+        <entryLink id="499b-3294-6b78-4417" name="=Honorum= Basilius Throne" hidden="true" collective="false" import="true" targetId="8a7d-3ead-16e2-1979" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cd4a-3c69-5fc8-0773" type="atLeast"/>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="c130-1260-4c15-147a" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="cd4a-3c69-5fc8-0773" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="c130-1260-4c15-147a" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="dda0-cc8f-d3f3-db0b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="60e2-9720-c3bc-bbb2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="c725-815f-945b-712d" name="=Solaria= Cameleoline Shrouding" hidden="true" collective="false" import="true" targetId="1c9d-16db-f94b-c0ec" type="selectionEntry">
           <modifiers>
