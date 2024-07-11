@@ -20801,62 +20801,56 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <entryLinks>
         <entryLink id="cc8a-a05d-7ae9-a2b8" name="=Gryphonicus= Enhanced Auspex Relay" hidden="true" collective="false" import="false" targetId="46c7-de03-c901-4ecc" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="223f-6e71-9e4f-939e" type="instanceOf"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="0796-178c-50ce-2d1f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="223f-6e71-9e4f-939e" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e17a-b57c-f2d2-1cf9" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed93-826d-3e66-1934" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="1f68-b0c1-9212-09ac" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="dffb-8188-2df2-9df9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="5dfa-652d-7c21-a40f" name="=Gryphonicus= Gravatus Plating" hidden="true" collective="false" import="false" targetId="6646-91ea-1418-5c89" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d36f-5e44-2150-3428" type="instanceOf"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="0796-178c-50ce-2d1f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="d36f-5e44-2150-3428" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fd9-c384-b24b-4c79" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d264-fc8a-4e63-6958" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="deb9-dc0b-3555-099b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="2694-0f91-f324-7c60" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="a89b-5825-52a2-b2db" name="=Gryphonicus= Motive Sub-reactor" hidden="true" collective="false" import="false" targetId="b486-104f-536e-87f6" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0796-178c-50ce-2d1f" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d36f-5e44-2150-3428" type="instanceOf"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="0796-178c-50ce-2d1f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="d36f-5e44-2150-3428" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b0f-3b56-ec57-ab2c" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33e5-a40c-3e62-acd3" type="min"/>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="a4af-ab65-51c7-c8c5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="7dec-dc1c-1faf-6048" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="953c-dcfa-224e-58fd" name="=Crucius= Terminus Override Mechanisms" hidden="true" collective="false" import="false" targetId="d169-c82c-a137-bb35" type="selectionEntry">
@@ -20975,15 +20969,15 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         </entryLink>
         <entryLink id="a40a-3549-383a-bf44" name="=Fureans= Hunting Auspex" hidden="true" collective="false" import="false" targetId="0d56-2ed6-8229-739e" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="72ba-4008-bf4b-fe3b" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="72ba-4008-bf4b-fe3b" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a573-792d-bb3b-a8ae" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a49-7701-43f8-948d" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="06ae-abfc-0225-a8d5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="fa22-fc08-3daa-d4e4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="2292-032b-7b1a-5570" name="=Mortis= Remains of the Fallen" hidden="false" collective="false" import="false" targetId="f8aa-6108-4447-0e90" type="selectionEntry"/>
