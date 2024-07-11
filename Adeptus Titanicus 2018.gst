@@ -21059,8 +21059,8 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="2255-12f8-15c6-7872" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="0" field="selections" scope="model" shared="false" id="2ec8-ba58-1f9c-fc71" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="2255-12f8-15c6-7872" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="0" field="selections" scope="model-or-unit" shared="false" id="2ec8-ba58-1f9c-fc71" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="2281-11a9-8008-a263" name="=Infernus= Dark Blessing" hidden="false" collective="false" import="false" targetId="7689-d32b-cef1-edf0" type="selectionEntry">
@@ -21077,8 +21077,8 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="6f70-da06-edab-77bc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="614c-b29c-6332-9314" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="6f70-da06-edab-77bc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="614c-b29c-6332-9314" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="89ec-107f-748e-31b3" name="=Audax= Reinforced Plating" hidden="true" collective="false" import="false" targetId="69f2-0efb-9085-02cb" type="selectionEntry">
@@ -21148,14 +21148,19 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="true" collective="false" import="false" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5f7b-2051-3935-7637" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5f7b-2051-3935-7637" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="5f7b-2051-3935-7637" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="1d0e-9503-48d9-caab" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="3f57-fa28-acc6-bf89" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="1d0e-9503-48d9-caab" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="3f57-fa28-acc6-bf89" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders" hidden="true" collective="false" import="false" targetId="7c51-55b9-4942-4061" type="selectionEntry">
