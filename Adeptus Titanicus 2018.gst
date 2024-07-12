@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="77" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="76" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>Now no longer compatible with BS, please switch to NR.</comment>
-  <readme>IMPORTANT: If you are still using Battlescribe to edit your rosters, please switch to NewRecruit. NR introduces new features that allows us to fix longstanding issues with the data, which can&apos;t be fixed with BS. Apologies for the inconvenience but BS has been dead for years now. 
-
-
-If you really want to keep using BS, remove the repository from your data, and use &apos;import data from url&apos; using the following url: https://github.com/BSData/adeptus-titanicus/releases/download/v9.85.1/adeptus-titanicus.v9.85.1.bsi
+  <readme>IMPORTANT: If you are still using Battlescribe to edit your rosters, please switch to NewRecruit. NR introduces new features that allows us to fix longstanding issues with the data, which can&apos;t be fixed with BS.
+Apologies for the inconvenience but BS has been dead for years now.
 
 
 Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
-To create a Household Battlegroup add a Household to your Roster. Each Lance is a separate Force that needs to be added to your Household. Reinforcements can then be added directly to your Household, or each of your added Lance forces!</readme>
+To create a Household Battlegroup add a Household to your Roster. Each Lance is a separate Force that needs to be added to your Household. Reinforcements can then be added directly to your Household, or each of your added Lance forces!
+</readme>
   <publications>
     <publication id="975a-00f4-pubN65537" name="Adeptus Titanicus 2018"/>
     <publication id="975a-00f4-pubN87630" name="Titandeath"/>
