@@ -20906,16 +20906,23 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="model" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f8f5-826f-4bea-ee52" type="min"/>
-            <constraint field="selections" scope="model" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6918-26e7-fbb2-1542" type="max"/>
+            <constraint field="selections" scope="model-or-unit" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f8f5-826f-4bea-ee52" type="min"/>
+            <constraint field="selections" scope="model-or-unit" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6918-26e7-fbb2-1542" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="0d03-0629-0cb0-6cb1" name="=Krytos= Earthbreaker Missiles" hidden="false" collective="false" import="false" targetId="4c8f-29c9-0c8e-67b6" type="selectionEntry">
@@ -21086,14 +21093,17 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="223f-6e71-9e4f-939e" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="d173-87e6-9f1b-1aaa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model-or-unit" childId="223f-6e71-9e4f-939e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model-or-unit" childId="d173-87e6-9f1b-1aaa" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -21102,8 +21112,8 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="model" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cbe9-af8e-306d-add5" type="max"/>
-            <constraint field="selections" scope="model" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dbd-fe5b-1bc0-1862" type="min"/>
+            <constraint field="selections" scope="model-or-unit" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cbe9-af8e-306d-add5" type="max"/>
+            <constraint field="selections" scope="model-or-unit" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6dbd-fe5b-1bc0-1862" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="ecde-54c8-cd51-7c3b" name="=Osedax= Plasma Channels" hidden="false" collective="false" import="false" targetId="eb8b-95ca-bf92-b3f9" type="selectionEntry"/>
