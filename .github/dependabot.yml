@@ -1,0 +1,12 @@
+---
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    ignore: # Only suggest major updates for built-in actions
+      - dependency-name: "github/*"
+        update-types: ["version-update:semver-patch", "version-update:semver-minor"]
+      - dependency-name: "actions/*"
+        update-types: ["version-update:semver-patch", "version-update:semver-minor"]
