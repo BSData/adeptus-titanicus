@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="78" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="79" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -890,7 +890,7 @@
         <categoryLink id="ec0d-3c08-8cbc-7888" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6924-fe7d-2cb3-7473" name="Mechanicum Moirax Knight Banner" page="" hidden="false" collective="false" import="false" targetId="8be9-756b-a3a6-8622" type="selectionEntry">
+    <entryLink id="6924-fe7d-2cb3-7473" name="Moirax Knight Banner" page="" hidden="false" collective="false" import="false" targetId="8be9-756b-a3a6-8622" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7481-4c0c-ca6a-ec46" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
@@ -956,6 +956,26 @@
       </modifiers>
     </entryLink>
     <entryLink id="b794-3768-8a75-3a14" name="Battle Level" hidden="false" collective="false" import="true" targetId="270a-cdcc-91b8-0787" type="selectionEntry"/>
+    <entryLink id="5485-f347-e1be-24f8" name="Serperos Stalker Banner" hidden="false" collective="false" import="false" targetId="5fe1-6d10-b045-c3f0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="baba-93aa-c085-8f14" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2561-a4f8-b7c6-0486" name="Errax Stalker Banner" hidden="false" collective="false" import="false" targetId="31b1-e699-268e-99cd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2abf-9e86-1298-8d6f" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="91e4-0ab7-21bb-ac08" name="Tenebrax Stalker Banner" hidden="false" collective="false" import="false" targetId="5aed-482a-3dd7-8e40" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7e19-4c14-f2e7-96c4" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bd3f-4cf3-0585-a7af" name="Scintillax Stalker Banner" hidden="false" collective="false" import="false" targetId="706a-06cc-ab47-61a4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b923-86f9-bddc-b107" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4c64-8a28-7368-156d" name="Auxiliary Titan" hidden="false" collective="false" import="true" type="upgrade">
