@@ -20877,7 +20877,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">-</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Rapid</characteristic>
@@ -20908,7 +20908,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Bypass</characteristic>
-            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">9</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
