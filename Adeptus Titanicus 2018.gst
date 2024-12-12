@@ -17520,6 +17520,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       </categoryLinks>
       <entryLinks>
         <entryLink id="77d3-4fb2-1c06-318c" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="20aa-161c-c847-ad76" name="=Magna= Directed Pressure Outlet" hidden="false" collective="false" import="true" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="70.0"/>
@@ -18723,6 +18724,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
       </categoryLinks>
       <entryLinks>
         <entryLink id="d99b-53d7-0a3d-6b1c" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="943f-2a4b-e9bb-68cf" name="=Magna= Directed Pressure Outlet" hidden="false" collective="false" import="true" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="50.0"/>
@@ -18758,6 +18760,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d1cc-97ab-a150-63dd" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="12f9-dad5-debe-c9bb" name="=Magna= Directed Pressure Outlet" hidden="false" collective="false" import="true" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
@@ -20611,6 +20614,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       </categoryLinks>
       <entryLinks>
         <entryLink id="6208-97b6-0cfa-66ac" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink id="c49f-c7d2-c141-c87a" name="=Magna= Directed Pressure Outlet" hidden="false" collective="false" import="true" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
