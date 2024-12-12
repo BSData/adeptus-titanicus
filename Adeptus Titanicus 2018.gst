@@ -20951,7 +20951,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
     </selectionEntry>
     <selectionEntry id="3f24-0535-a742-7557" name="Serperos Stalker" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="f04d-de8a-b9f2-d55a" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="4990-e3e1-bd84-a9c3">
+        <selectionEntryGroup id="f04d-de8a-b9f2-d55a" name="Loadout" hidden="false" collective="false" import="true" defaultSelectionEntryId="4990-e3e1-bd84-a9c3">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fe1-89b0-58c8-76b6" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f228-e072-d348-4c2d" type="max"/>
@@ -21080,13 +21080,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
     </selectionEntry>
     <selectionEntry id="4180-e86b-7940-c9ed" name="Errax Stalker" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="eed5-d9ec-4b71-9f41" name="Upgrades" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="eed5-d9ec-4b71-9f41" name="Loadout" hidden="false" collective="false" import="true" defaultSelectionEntryId="2685-acff-233c-6718">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abcd-78d9-3dbe-9b75" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11ad-0141-2173-17d9" type="min"/>
+          </constraints>
           <entryLinks>
             <entryLink id="5fe5-a913-97c5-67d1" name="Stalker Meltagun" hidden="false" collective="false" import="true" targetId="16ff-829f-1685-14eb" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a2a-0136-c3dd-a3fa" type="max"/>
-              </constraints>
+              <costs>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
+              </costs>
             </entryLink>
+            <entryLink id="2685-acff-233c-6718" name="Stalker Lascutter" hidden="false" collective="false" import="true" targetId="ff12-80e5-7476-d71b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -21138,14 +21143,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0c9-d337-c6cd-c117" type="min"/>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a2f-5762-86b8-cf4b" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="90f8-b8ef-ec6e-612c" name="Stalker Lascutter" hidden="false" collective="false" import="true" targetId="ff12-80e5-7476-d71b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83e9-e3f7-67c1-d02c" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdad-2a5c-a5cd-957e" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -21266,10 +21263,10 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
     </selectionEntry>
     <selectionEntry id="7bf6-3d95-6b1d-6d26" name="Scintillax Stalker" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="16ab-043d-fc59-a3b2" name="Upgrades" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="16ab-043d-fc59-a3b2" name="Loadout" hidden="false" collective="false" import="true" defaultSelectionEntryId="89ca-1c82-4f22-7b7b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="828d-60a2-d8ba-f516" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74fa-7afa-1b9b-6249" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74fa-7afa-1b9b-6249" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="7a8a-f128-33a6-0f5e" name="Exo-Planar Cannon" hidden="false" collective="false" import="true" targetId="3f74-44f3-7949-3bb7" type="selectionEntry">
@@ -21282,6 +21279,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                 <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
               </costs>
             </entryLink>
+            <entryLink id="89ca-1c82-4f22-7b7b" name="Stalker Lascutter" hidden="false" collective="false" import="true" targetId="ff12-80e5-7476-d71b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -21333,14 +21331,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74e0-51d8-c4a8-eddc" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="570a-8e42-c79f-498e" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="4f11-2916-fad7-7397" name="Stalker Lascutter" hidden="false" collective="false" import="true" targetId="ff12-80e5-7476-d71b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88e7-ea99-8064-4c74" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1963-a7ae-abcd-1cac" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
