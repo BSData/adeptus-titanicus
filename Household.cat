@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="78" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="79" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="abef-007d-766a-b940" name="Seneschal" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
       <rules>
@@ -1504,6 +1504,26 @@
         <categoryLink id="b416-7d3e-0ce1-88ab" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="bd48-ab3c-a7a4-cf3b" name="Errax Stalker Banner" hidden="false" collective="false" import="true" targetId="31b1-e699-268e-99cd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="56b8-48d4-3f04-5e42" name="Freeblades" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2b4e-9d9c-bec2-1841" name="Serperos Stalker Banner" hidden="false" collective="false" import="true" targetId="5fe1-6d10-b045-c3f0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0593-e476-45bf-1304" name="Freeblades" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eb9b-1c84-525c-2227" name="Scintillax Stalker Banner" hidden="false" collective="false" import="true" targetId="706a-06cc-ab47-61a4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4536-d7e8-8483-9675" name="Freeblades" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b4f8-054d-add4-a9fc" name="Tenebrax Stalker Banner" hidden="false" collective="false" import="true" targetId="5aed-482a-3dd7-8e40" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9902-4ee3-aed5-6bd5" name="Freeblades" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2d80-35d6-4ab0-19ca" name="Seneschal" hidden="false" collective="false" import="true" type="upgrade">
@@ -1544,7 +1564,7 @@
         </profile>
         <profile id="d5df-e8ec-369a-dd70" name="1 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -1554,7 +1574,7 @@
         </profile>
         <profile id="442c-d3d0-5303-7ec4" name="2 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -1564,7 +1584,7 @@
         </profile>
         <profile id="2202-232e-8c84-1578" name="3+ Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">3+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">3+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -1651,7 +1671,7 @@
         </profile>
         <profile id="ef42-022a-8e22-7e64" name="1 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -1661,7 +1681,7 @@
         </profile>
         <profile id="2e3f-ad31-6a30-7c12" name="2 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -1671,7 +1691,7 @@
         </profile>
         <profile id="7276-df18-960e-82b3" name="3+ Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">3+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">3+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -1781,7 +1801,7 @@
         </profile>
         <profile id="f7dd-7bc8-9685-fb7c" name="1 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -1791,7 +1811,7 @@
         </profile>
         <profile id="7d36-fb63-e94d-4240" name="2 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -1801,7 +1821,7 @@
         </profile>
         <profile id="ba24-adca-8800-5bf2" name="3+ Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">3+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">3+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -1888,7 +1908,7 @@
         </profile>
         <profile id="0bcd-1e73-7dd0-f274" name="1 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -1898,7 +1918,7 @@
         </profile>
         <profile id="35d3-9c52-e623-4d6a" name="2 Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -1908,7 +1928,7 @@
         </profile>
         <profile id="2913-3295-3970-3871" name="3+ Cerastus Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">3+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">3+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -2000,7 +2020,7 @@
         </profile>
         <profile id="5a2f-9d95-7d73-3ffb" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -2010,7 +2030,7 @@
         </profile>
         <profile id="7d8d-966c-d979-1f34" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -2020,7 +2040,7 @@
         </profile>
         <profile id="85a0-94a2-c426-9802" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -2153,7 +2173,7 @@
         </profile>
         <profile id="75e8-2b9a-8b0b-a417" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -2163,7 +2183,7 @@
         </profile>
         <profile id="9a14-db29-d8aa-71b2" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -2173,7 +2193,7 @@
         </profile>
         <profile id="48f9-146a-3cba-7a4c" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -2296,7 +2316,7 @@
         </profile>
         <profile id="d1c2-84af-bd0e-8be4" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -2306,7 +2326,7 @@
         </profile>
         <profile id="44da-8877-8d9f-a3df" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -2316,7 +2336,7 @@
         </profile>
         <profile id="a421-b701-0425-25b7" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -2439,7 +2459,7 @@
         </profile>
         <profile id="3aa7-8620-8fc9-930e" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -2449,7 +2469,7 @@
         </profile>
         <profile id="57bd-2af4-e30b-6c60" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -2459,7 +2479,7 @@
         </profile>
         <profile id="3312-c8b8-6f81-31f4" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -2592,7 +2612,7 @@
         </profile>
         <profile id="1e99-523a-b5d0-8c8f" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -2602,7 +2622,7 @@
         </profile>
         <profile id="835a-98c7-067d-51f5" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -2612,7 +2632,7 @@
         </profile>
         <profile id="97d1-71f1-a0bd-867d" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -2745,7 +2765,7 @@
         </profile>
         <profile id="ebb2-3fc3-22ab-bba2" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -2755,7 +2775,7 @@
         </profile>
         <profile id="19a9-5528-5145-6a99" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -2765,7 +2785,7 @@
         </profile>
         <profile id="59a9-1838-ba32-cf06" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -2888,7 +2908,7 @@
         </profile>
         <profile id="a967-bc38-9329-3540" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -2898,7 +2918,7 @@
         </profile>
         <profile id="9d8b-5e6e-ace1-fb5a" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -2908,7 +2928,7 @@
         </profile>
         <profile id="a5d9-2417-cb29-33d5" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -3041,7 +3061,7 @@
         </profile>
         <profile id="370f-9d4e-2adb-ed05" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -3051,7 +3071,7 @@
         </profile>
         <profile id="59a6-138b-7c63-278c" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -3061,7 +3081,7 @@
         </profile>
         <profile id="9157-e1db-73d9-0552" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -3184,7 +3204,7 @@
         </profile>
         <profile id="65b3-0cec-b97a-f11c" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -3194,7 +3214,7 @@
         </profile>
         <profile id="dc01-84ff-3dcb-041b" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -3204,7 +3224,7 @@
         </profile>
         <profile id="a4b5-84d9-9818-b7a7" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -3358,7 +3378,7 @@
         </profile>
         <profile id="3b6d-10a9-43be-59d8" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -3368,7 +3388,7 @@
         </profile>
         <profile id="039b-016f-4e97-d8f5" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -3378,7 +3398,7 @@
         </profile>
         <profile id="425e-63f8-e48d-d151" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -3522,7 +3542,7 @@
         </profile>
         <profile id="9903-c37d-2e0a-00fe" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -3532,7 +3552,7 @@
         </profile>
         <profile id="c9ec-777f-7f37-a566" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -3542,7 +3562,7 @@
         </profile>
         <profile id="256b-e9e3-00c1-cda0" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -3686,7 +3706,7 @@
         </profile>
         <profile id="141a-79ad-7159-b7e5" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -3696,7 +3716,7 @@
         </profile>
         <profile id="39b6-6a30-4ab4-3679" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -3706,7 +3726,7 @@
         </profile>
         <profile id="a372-c299-8a65-ebaf" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -3860,7 +3880,7 @@
         </profile>
         <profile id="70e2-dcdc-2284-67ae" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -3870,7 +3890,7 @@
         </profile>
         <profile id="e977-d0db-6ff6-8464" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -3880,7 +3900,7 @@
         </profile>
         <profile id="24b1-e522-2234-5504" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -4024,7 +4044,7 @@
         </profile>
         <profile id="5d53-ea61-68ef-fef9" name="1 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf"/>
@@ -4034,7 +4054,7 @@
         </profile>
         <profile id="786c-e574-6472-3479" name="2-3 Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -4044,7 +4064,7 @@
         </profile>
         <profile id="1ae0-e3f3-3f34-08a4" name="4+ Questoris Support Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">4+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -4181,7 +4201,7 @@
         </profile>
         <profile id="7886-e840-4e6e-a00c" name="1 Moirax Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">-</characteristic>
@@ -4191,7 +4211,7 @@
         </profile>
         <profile id="2b23-0f08-f277-ac0e" name="2-4 Moirax Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -4201,7 +4221,7 @@
         </profile>
         <profile id="bc23-f315-d1fb-58c8" name="5+ Moirax Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -4265,7 +4285,7 @@
         </profile>
         <profile id="d39e-c254-89c6-561a" name="1 Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">-</characteristic>
@@ -4275,7 +4295,7 @@
         </profile>
         <profile id="633f-91d0-4d41-b5d4" name="2-4 Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -4285,7 +4305,7 @@
         </profile>
         <profile id="cfd7-2724-0718-2475" name="5+ Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -4343,7 +4363,7 @@
         </profile>
         <profile id="c9de-a244-425f-0e44" name="1 Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">-</characteristic>
@@ -4353,7 +4373,7 @@
         </profile>
         <profile id="24fe-6e2a-b4b8-966e" name="2-4 Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -4363,7 +4383,7 @@
         </profile>
         <profile id="22a8-a49d-c7e3-9368" name="5+ Armiger Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
@@ -4421,7 +4441,7 @@
         </profile>
         <profile id="39e5-82a6-8e7e-f266" name="1 Moirax Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">5+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">6+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">-</characteristic>
@@ -4431,7 +4451,7 @@
         </profile>
         <profile id="1e35-aac7-6a6d-dbe4" name="2-4 Moirax Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">2-4</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">5+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">6+</characteristic>
@@ -4441,7 +4461,7 @@
         </profile>
         <profile id="b240-b575-c511-7c79" name="5+ Moirax Knight Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
           <characteristics>
-            <characteristic name="Knights in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
+            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">5+</characteristic>
             <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
             <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
             <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">5+</characteristic>
