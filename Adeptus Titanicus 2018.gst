@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="79" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="80" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>This data is now no longer actively maintained</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -18753,14 +18753,16 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       <categoryLinks>
         <categoryLink id="e5c3-ce86-4e62-3c7e" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="38b6-b9fa-42c3-dcc7" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
-        <categoryLink id="14f4-7f55-347f-de41" name="New CategoryLink" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
         <categoryLink id="c8fa-8df5-ca39-61fe" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="8d64-e06b-8238-7fb4" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
         <categoryLink id="5a71-d40b-f6ab-329a" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink id="f6b3-f333-1f0a-f5c3" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false"/>
+        <categoryLink id="e33b-0111-6109-36c6" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+        <categoryLink id="a030-f3fa-6d45-0dfb" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
+        <categoryLink id="2d35-08f4-1eb0-fd53" name="Ordnance" hidden="false" targetId="5ad8-0ca8-4bb7-83b6" primary="false"/>
+        <categoryLink id="ce6a-95fc-1afd-afd7" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d1cc-97ab-a150-63dd" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink id="12f9-dad5-debe-c9bb" name="=Magna= Directed Pressure Outlet" hidden="false" collective="false" import="true" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="60.0"/>
