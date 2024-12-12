@@ -21013,16 +21013,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">16+</characteristic>
           </characteristics>
         </profile>
-        <profile id="d3e5-2720-c2f4-68b9" name="Serperos Stalker Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1+</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">3+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">3+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">3+</characteristic>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">3+</characteristic>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">3+</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="4482-4891-2548-3fbb" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
@@ -21111,16 +21101,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c"/>
             <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538"/>
             <characteristic name="Scale" typeId="5359-4d2b-082b-546a">3 (Grandis)</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3cda-e47e-d397-dfc9" name="Errax Stalker Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1+</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">4+</characteristic>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">4+</characteristic>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">4+</characteristic>
           </characteristics>
         </profile>
         <profile id="447b-0e34-0715-adf4" name="Errax Stalker Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
@@ -21299,16 +21279,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c"/>
             <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538"/>
             <characteristic name="Scale" typeId="5359-4d2b-082b-546a">3 (Grandis)</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="71a4-d67b-2033-1b25" name="Scintillax Stalker Banner Ion Shields" hidden="false" typeId="fcf7-bbb7-c944-2eb2" typeName="Ion Shields">
-          <characteristics>
-            <characteristic name="Models in Banner" typeId="4788-fa46-8c0e-2db8">1+</characteristic>
-            <characteristic name="Attack Strength 1-6" typeId="da0b-4753-babc-ff5c">4+</characteristic>
-            <characteristic name="Attack Strength 7" typeId="98f9-171c-acdd-7313">4+</characteristic>
-            <characteristic name="Attack Strength 8" typeId="0cf0-9891-2cf4-ecbf">4+</characteristic>
-            <characteristic name="Attack Strength 9" typeId="73b3-c9cf-ac6b-792f">4+</characteristic>
-            <characteristic name="Attack Strength 10+" typeId="ec4f-9282-64c7-c7b4">4+</characteristic>
           </characteristics>
         </profile>
         <profile id="113a-0ec3-561e-2e2d" name="Scintillax Stalker Banner Location Table" hidden="false" typeId="b72e-0b77-ebb5-507d" typeName="Location Table">
