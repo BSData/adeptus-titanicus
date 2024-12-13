@@ -9744,6 +9744,9 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <entryLinks>
             <entryLink id="b436-4279-e2cd-3a2c" name="Cerastus Knight Banner" hidden="false" collective="false" import="false" targetId="3900-cfb6-52f2-c83c" type="selectionEntry"/>
             <entryLink id="38bb-4276-eafd-63b6" name="Questoris Knight Banner" hidden="false" collective="false" import="false" targetId="812b-786b-9435-cd20" type="selectionEntry"/>
+            <entryLink id="b36c-9b82-e1cf-1854" name="Cerastus Knight Atrapos Banner" hidden="false" collective="false" import="true" targetId="9167-7d32-6d19-739d" type="selectionEntry"/>
+            <entryLink id="eff7-8062-e98b-ba07" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="true" targetId="1a0a-5e72-9752-c32d" type="selectionEntry"/>
+            <entryLink id="2fcf-6e35-c488-fa8b" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="true" targetId="dec1-8a16-1df5-e112" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="96fc-f52e-c501-659e" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="false">
