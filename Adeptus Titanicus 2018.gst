@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="80" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <comment>This data is now no longer actively maintained</comment>
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="81" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <comment></comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
 To create a Household Battlegroup add a Household to your Roster. Each Lance is a separate Force that needs to be added to your Household. Reinforcements can then be added directly to your Household, or each of your added Lance forces!
@@ -14500,6 +14500,26 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
               </modifiers>
             </entryLink>
             <entryLink id="8f1d-3561-f086-7d3b" name="Armiger Knight" hidden="false" collective="false" import="true" targetId="7df5-f56c-c89a-ee52" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="fddd-f814-5853-a700" name="Errax Stalker" hidden="false" collective="false" import="true" targetId="4180-e86b-7940-c9ed" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="7f7e-f4d0-8b6a-260b" name="Scintillax Stalker" hidden="false" collective="false" import="true" targetId="7bf6-3d95-6b1d-6d26" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="c270-f77d-06e3-4bd8" name="Serperos Stalker" hidden="false" collective="false" import="true" targetId="3f24-0535-a742-7557" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="93e7-934a-1060-466c" name="Tenebrax Stalker" hidden="false" collective="false" import="true" targetId="c730-e1a9-2f27-494b" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
               </modifiers>
