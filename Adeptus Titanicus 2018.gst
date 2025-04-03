@@ -18090,7 +18090,7 @@ After assembling their battlegroup, the player should pick one Titan in their ma
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2133-dad8-77a1-472c" type="max"/>
+        <constraint field="selections" scope="parent" value="24.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2133-dad8-77a1-472c" type="max"/>
       </constraints>
       <rules>
         <rule id="c58b-ac0c-f7de-adbd" name="Hunter Shells" hidden="false">
