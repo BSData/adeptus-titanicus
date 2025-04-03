@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="81" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <comment></comment>
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="82" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
 To create a Household Battlegroup add a Household to your Roster. Each Lance is a separate Force that needs to be added to your Household. Reinforcements can then be added directly to your Household, or each of your added Lance forces!
@@ -18083,6 +18082,8 @@ After assembling their battlegroup, the player should pick one Titan in their ma
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa7a-74f4-180e-3b5e" type="atLeast"/>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cea-d272-fa57-5553" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfdb-4953-f838-7d21" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08fc-3215-ee7f-68bb" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -18459,20 +18460,6 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ae4c-fe6c-3b47-c673" name="Corrosive Payload" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a351-869b-2725-02f3" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="a3be-83a8-192e-9e28" name="Corrosive Payload" publicationId="bf8b-27d7-039e-5df9" page="171" hidden="false">
-          <description>Any Traitor Titan equipped with a weapon with the Ordnance or Rapid trait can be upgraded with a Corrosive Payload for a cost equal to a points cost of 5 x the weapon’s Dice value (e.g., a Warhound’s Vulcan mega-bolter would be +30 points), so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Once per game, a weapon with this upgrade can fire its Corrosive Payload. When it does so, add 1 to all Armour rolls for that attack.</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a00e-f16d-89bf-b013" name="Unholy Benedictions" hidden="false" collective="false" import="true" type="upgrade">
@@ -20468,9 +20455,9 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="acd5-32cf-09c2-f234" name="Corrupted Payload" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="acd5-32cf-09c2-f234" name="Corrosive Payload" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
-        <rule id="b992-b5cc-d8b2-e9cb" name="Corrupted Payload" publicationId="bf8b-27d7-039e-5df9" page="171" hidden="false">
+        <rule id="b992-b5cc-d8b2-e9cb" name="Corrosive Payload" publicationId="bf8b-27d7-039e-5df9" page="171" hidden="false">
           <description>Any Traitor Titan equipped with a weapon with the Ordnance or Rapid trait can be upgraded with a Corrosive Payload for a cost equal to a points cost of 5x the weapon’s Dice value (e.g., a Warhound’s Vulcan mega-bolter would be +30 points), so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Once per game, a weapon with this upgrade can fire its Corrosive Payload. When it does so, add 1 to all Armour rolls for that attack.</description>
         </rule>
       </rules>
