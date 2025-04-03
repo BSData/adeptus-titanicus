@@ -17610,7 +17610,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <entryLink id="8adf-0ace-ba97-fe5e" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -17618,7 +17618,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       <profiles>
         <profile id="10b9-a4d6-6acc-0f35" name="Melta Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
-            <modifier type="set" field="8320-f9a1-68a0-47c2" value="15&apos;&apos;">
+            <modifier type="set" field="8320-f9a1-68a0-47c2" value="8&apos;&apos;">
               <conditions>
                 <condition field="selections" scope="39de-6938-1a9c-3ea6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f488-be0f-7490-948b" type="equalTo"/>
               </conditions>
@@ -17626,10 +17626,10 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
-            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">11</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
-            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">16&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
@@ -17716,7 +17716,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <entryLink id="8cc6-206d-ae93-a902" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
