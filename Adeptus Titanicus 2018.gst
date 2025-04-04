@@ -18085,6 +18085,7 @@ After assembling their battlegroup, the player should pick one Titan in their ma
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfdb-4953-f838-7d21" type="atLeast"/>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08fc-3215-ee7f-68bb" type="atLeast"/>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="230c-f352-c94a-ee82" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0ae-adc7-c079-d005" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
