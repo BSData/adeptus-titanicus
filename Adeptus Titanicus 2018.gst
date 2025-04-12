@@ -10716,7 +10716,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="365e-d892-5c42-f7a3" name="Ferrox Light Maniple" publicationId="975a-00f4-pubN89746" page="31" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="365e-d892-5c42-f7a3" name="Ferrox Light Maniple" publicationId="975a-00f4-pubN89746" page="31" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="ac90-5085-5650-2ad6" name="Knife Fighters" publicationId="975a-00f4-pubN89746" page="31" hidden="false">
           <description>When a Titan in a Ferrox Light maniple makes attacks against a target that is no further away than its Scale in inches (i.e. with 10&quot; of a Warlord, 8&quot; of a Reaver, etc), they add 1 to any Armour rolls they cause.  Titans in a Ferrox Light maniple may also choose to use either their EWeapons Skill or Ballistic Skill when within 2&quot; of an enemy</description>
@@ -13519,7 +13519,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ab5b-9a2c-91b9-35a2" name="Ignus Light Maniple" publicationId="ce02-a882-fdad-dd36" page="56" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="ab5b-9a2c-91b9-35a2" name="Ignus Light Maniple" publicationId="ce02-a882-fdad-dd36" page="56" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="3b40-aa65-1afd-b2cd" name="Ignus Light Maniple" publicationId="ce02-a882-fdad-dd36" page="56" hidden="false">
           <description>Scorched Earth. add 1 dice to all firestorm weapons, and reroll armour rolls of one.
@@ -21286,7 +21286,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="706a-06cc-ab47-61a4" name="Scintillax Stalker Banner" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="706a-06cc-ab47-61a4" name="Scintillax Stalker Banner" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="2b86-16dc-81dc-8de8" name="Scintillax Stalker Banner" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
