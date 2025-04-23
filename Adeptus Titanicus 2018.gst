@@ -15783,7 +15783,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8363-23e4-9244-93f2" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4994-4e39-e7fe-57d5" name="Legio-Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="4994-4e39-e7fe-57d5" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
         <entryLink id="17e5-7a1d-0467-27c1" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
           <categoryLinks>
             <categoryLink id="ca6e-73da-5c0f-e2e3" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
@@ -21666,6 +21666,10 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d00b-3a91-28e4-307e" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe54-bf89-05e8-4278" type="min"/>
+          </constraints>
         </entryLink>
         <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders " hidden="true" collective="false" import="false" targetId="7c51-55b9-4942-4061" type="selectionEntry">
           <modifiers>
