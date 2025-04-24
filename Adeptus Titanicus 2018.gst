@@ -4625,7 +4625,6 @@ The fire then goes out.</description>
         <categoryLink id="dfc1-4e5f-d102-c5ac" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="5.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -17112,7 +17111,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11-14</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Carapace, Draining</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">15+</characteristic>
           </characteristics>
@@ -17466,6 +17465,15 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
                         <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="5a34-e1e0-44f1-76d5" name="=Tempestus= Chasmata Turbo Laser Destructor [WM]" hidden="false" collective="false" import="true" targetId="c449-8cea-53cb-b6b6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -18600,6 +18608,15 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
                         <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="cff0-db52-38a6-bc95" name="=Tempestus= Chasmata Turbo Laser Destructor [WM]" hidden="false" collective="false" import="true" targetId="c449-8cea-53cb-b6b6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -21362,6 +21379,40 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c449-8cea-53cb-b6b6" name="=Tempestus= Chasmata Turbo Laser Destructor [WM]" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="true" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="243a-4c82-d2bc-7cb0" name="Chasmata Turbo Laser Destructor" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">22&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">35&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"/>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b4fb-4242-4cdf-5743" name="New CategoryLink" hidden="false" targetId="87c1-d39e-fbdf-1ae7" primary="false"/>
+        <categoryLink id="497f-99f7-30a8-6972" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink id="5b6c-20c0-8f7b-e69f" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="69eb-1c33-1d5e-16ff" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="8991-c0ae-494c-dc7f" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="4399-8872-aa58-825f" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a424-16a7-0a9d-fce4" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="40.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -21553,9 +21604,24 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <entryLink id="f302-c072-c072-82ea" name="=Vulpa= Shikarian Conduits" hidden="false" collective="false" import="false" targetId="ac1f-504e-5a1c-6a95" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="561a-cb05-d4b5-94fd" type="atLeast"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="561a-cb05-d4b5-94fd" type="atLeast"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d36f-5e44-2150-3428" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c37f-5ca9-9d98-5cf0" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7103-9316-d4a5-8caa" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -21599,9 +21665,21 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <entryLink id="fca3-c846-32aa-484d" name="=Infernus= Clinging Phosphex" hidden="false" collective="false" import="false" targetId="2133-4929-2061-f585" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="99b7-5e2f-9ea4-bbdf" type="atLeast"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="99b7-5e2f-9ea4-bbdf" type="atLeast"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c7aa-80e5-43d2-0cfd" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab89-eea6-1e3a-84dd" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -21627,6 +21705,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               <conditions>
                 <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" type="atLeast"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="223f-6e71-9e4f-939e" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d173-87e6-9f1b-1aaa" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -21642,9 +21732,9 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                 <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="324b-8404-7509-9b36" type="atLeast"/>
               </conditions>
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="324b-8404-7509-9b36" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ad8-0ca8-4bb7-83b6" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -21659,6 +21749,10 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ad7-ffa2-3622-b997" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="419c-27ce-dd66-cd08" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="44ba-d4da-ccb1-640e" name="New CategoryLink" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
             <categoryLink id="1816-e9d6-db43-44ad" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
@@ -21686,8 +21780,27 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               <conditions>
                 <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6740-1e8a-8e25-88fd" type="atLeast"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="06ab-258d-46aa-3b1f" type="atLeast"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d36f-5e44-2150-3428" type="instanceOf"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7103-9316-d4a5-8caa" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="827c-1993-d786-5fd0" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d25-e3d5-5b88-66c5" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="e047-4e0c-0839-6efd" name="Strategum" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
           </categoryLinks>
@@ -21700,6 +21813,10 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f5b-1362-1940-f5b9" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f951-7290-3d7a-27e0" type="min"/>
+          </constraints>
         </entryLink>
         <entryLink id="621c-b697-04b8-7517" name="=Tritonis= Radiative Warheads" hidden="true" collective="false" import="false" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry">
           <modifiers>
@@ -21707,8 +21824,27 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               <conditions>
                 <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ccee-936e-87d6-bf29" type="atLeast"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="06ab-258d-46aa-3b1f" type="atLeast"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d36f-5e44-2150-3428" type="instanceOf"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7103-9316-d4a5-8caa" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f91f-f3bc-ecdf-7a84" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ed2-afc9-2832-f46d" type="min"/>
+          </constraints>
         </entryLink>
         <entryLink id="e0d5-c856-00c2-92c4" name="=Venator= Blind Launchers" hidden="true" collective="false" import="false" targetId="1582-9f6b-0e82-c228" type="selectionEntry">
           <modifiers>
@@ -21726,9 +21862,9 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                 <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="324b-8404-7509-9b36" type="atLeast"/>
               </conditions>
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="324b-8404-7509-9b36" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ad8-0ca8-4bb7-83b6" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -21758,7 +21894,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cd4a-3c69-5fc8-0773" type="atLeast"/>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="c130-1260-4c15-147a" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="c130-1260-4c15-147a" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -22112,7 +22248,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="15.0"/>
           </costs>
         </entryLink>
-        <entryLink id="5169-2027-214d-f6d5" name="Corrupted Payload" hidden="false" collective="false" import="true" targetId="acd5-32cf-09c2-f234" type="selectionEntry"/>
+        <entryLink id="5169-2027-214d-f6d5" name="Corrosive Payload" hidden="false" collective="false" import="true" targetId="acd5-32cf-09c2-f234" type="selectionEntry"/>
         <entryLink id="1825-cf45-e251-9b7d" name="Focused Capacitors" hidden="false" collective="false" import="true" targetId="3159-88a9-3acf-c133" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
