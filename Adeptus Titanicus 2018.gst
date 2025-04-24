@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="83" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="84" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
 To create a Household Battlegroup add a Household to your Roster. Each Lance is a separate Force that needs to be added to your Household. Reinforcements can then be added directly to your Household, or each of your added Lance forces!
@@ -16052,7 +16052,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Shieldbane(Draining)</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Shieldbane (Draining)</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -16107,7 +16107,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
     </selectionEntry>
     <selectionEntry id="0b27-6d01-57d3-0e9d" name="Turbo Laser Destructor [RVR]" publicationId="3401-191e-1333-8a1d" page="168" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="d790-65c0-7f6c-708f" name="Turbo Laser Destructor (Reaver)" publicationId="3401-191e-1333-8a1d" page="168" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="d790-65c0-7f6c-708f" name="Turbo Laser Destructor" publicationId="3401-191e-1333-8a1d" page="168" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -16179,7 +16179,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="b627-6f89-9463-8a14" name="Vulcan Megabolter (Reaver)" publicationId="7236-e1d8-c886-f5fd" page="38" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="b627-6f89-9463-8a14" name="Vulcan Megabolter" publicationId="7236-e1d8-c886-f5fd" page="38" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
             <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
               <conditions>
@@ -16225,7 +16225,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
     </selectionEntry>
     <selectionEntry id="2165-2206-85af-b273" name="Turbo Laser Destructor [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="46f4-f06b-9149-ebca" name="Turbo Laser Destructor  (Warhound)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="46f4-f06b-9149-ebca" name="Turbo Laser Destructor" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -16434,7 +16434,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Concussive</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Concussive, Quake</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -16445,6 +16445,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="62fe-8f16-1bd5-5254" name="New CategoryLink" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
         <categoryLink id="e88c-fda5-0109-909d" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="ed33-27bc-886f-1fe9" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
+        <categoryLink id="c481-fbd5-aa35-d173" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b747-4979-9ec0-5205" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -16456,7 +16457,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
     </selectionEntry>
     <selectionEntry id="bd35-3f71-8bea-7e42" name="Plasma Blast Gun [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="f969-ff69-e466-aa5f" name="Plasma Blast Gun (Warhound)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="f969-ff69-e466-aa5f" name="Plasma Blast Gun" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -16856,7 +16857,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="9e0d-d5fd-c251-904b" name="Vulcan Megabolter (Warhound)" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="9e0d-d5fd-c251-904b" name="Vulcan Megabolter" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
             <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
               <conditions>
@@ -17047,8 +17048,8 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab3f-6a86-e945-7fda" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="060e-316f-b376-d504" name="Bellicosa Volcano Cannon (Warbringer)" hidden="false" collective="false" import="false" targetId="02fe-12bb-3cc6-2dcf" type="selectionEntry"/>
-                <entryLink id="d65c-716e-feb9-e21a" name="Mori Quake Cannon (Warmonger)" hidden="false" collective="false" import="false" targetId="304a-a91b-5b0f-116e" type="selectionEntry"/>
+                <entryLink id="060e-316f-b376-d504" name="Bellicosa Volcano Cannon" hidden="false" collective="false" import="false" targetId="02fe-12bb-3cc6-2dcf" type="selectionEntry"/>
+                <entryLink id="d65c-716e-feb9-e21a" name="Mori Quake Cannon" hidden="false" collective="false" import="false" targetId="304a-a91b-5b0f-116e" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -17111,18 +17112,18 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11-14</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Draining</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Carapace, Draining</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">15+</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="8fc8-bbc1-c6a2-a242" name="New CategoryLink" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="b622-2c2f-1738-1318" name="New CategoryLink" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
         <categoryLink id="d3cd-d17c-64dc-6968" name="New CategoryLink" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
-        <categoryLink id="c02a-8b6a-734a-bc5b" name="New CategoryLink" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="768d-0cfc-9a53-fa70" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="28be-3452-c36e-44fe" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="false"/>
+        <categoryLink id="9d57-674c-dfea-595a" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3b7f-aa92-4cd2-e209" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -17145,7 +17146,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11-14</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Concussive</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Carapace, Concussive, Quake</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">15+</characteristic>
           </characteristics>
         </profile>
@@ -17156,6 +17157,8 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="dec1-9d93-136e-b475" name="New CategoryLink" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
         <categoryLink id="219c-1f30-6fdb-36fd" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="6dc2-3e2e-cadf-636a" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
+        <categoryLink id="ff1f-670e-4df8-48b4" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="false"/>
+        <categoryLink id="509f-acb5-b92d-a976" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b44a-29bc-48ed-5ba3" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -17657,7 +17660,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
     </selectionEntry>
     <selectionEntry id="0f5d-e59f-3d5f-21c3" name="Plasma Blast Gun [WM]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="135f-3527-5519-5011" name="Plasma Blast Gun (WM)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="135f-3527-5519-5011" name="Plasma Blast Gun" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
@@ -17729,7 +17732,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="a3d3-b4ed-b546-1fb3" name="Vulcan Megabolter (Warmonger)" publicationId="7236-e1d8-c886-f5fd" page="38" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="a3d3-b4ed-b546-1fb3" name="Vulcan Megabolter" publicationId="7236-e1d8-c886-f5fd" page="38" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
             <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
               <conditions>
@@ -18284,7 +18287,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
     </selectionEntry>
     <selectionEntry id="2f29-8298-5888-bcc6" name="Volkite Eradicator [WH]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="5f78-03b9-5494-fec4" name="Volkite Eradicator WH" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="5f78-03b9-5494-fec4" name="Volkite Eradicator" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
@@ -18318,7 +18321,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
     </selectionEntry>
     <selectionEntry id="4f49-0fb1-426f-c152" name="Volkite Eradicator [RVR]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="063c-efe9-9689-3cd2" name="Volkite Eradicator R" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="063c-efe9-9689-3cd2" name="Volkite Eradicator" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
@@ -18329,7 +18332,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">(2)</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2), Beam (2) {Draining}</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Voidbreaker (2), Beam (2) {Draining}</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">2+</characteristic>
           </characteristics>
         </profile>
@@ -18661,11 +18664,17 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">No</characteristic>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Ordnance, Corridor Arc</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Ordnance</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="f836-7bc1-d722-fb34" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="false"/>
+        <categoryLink id="e7fc-9d4f-dcda-812b" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
+        <categoryLink id="b13b-2354-7cb0-bd4b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="2ada-da6c-e43f-388a" name="Ordnance" hidden="false" targetId="5ad8-0ca8-4bb7-83b6" primary="false"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="1c90-cd4a-2ce0-b3b2" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
@@ -20361,7 +20370,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
     </selectionEntry>
     <selectionEntry id="7093-9a5b-12c0-f7ed" name="Graviton Destructor [RVR]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3c0e-3b09-7b86-cd74" name="Graviton Destructor [RVR]" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="3c0e-3b09-7b86-cd74" name="Graviton Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
@@ -20372,7 +20381,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Concussive, Rending</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Concussive, Rending</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -20393,7 +20402,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
     </selectionEntry>
     <selectionEntry id="cfff-d280-9b0e-aadb" name="Graviton Destructor [WH]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3824-e129-9812-a54f" name="Graviton Destructor [WH]" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="3824-e129-9812-a54f" name="Graviton Destructor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
@@ -20485,7 +20494,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
     </selectionEntry>
     <selectionEntry id="8bc9-6a75-d799-0d56" name="Conversion Beam Dissolutor [WH]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="136d-68e5-76be-e938" name="Conversion Beam Dissolutor [WH]" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="136d-68e5-76be-e938" name="Conversion Beam Dissolutor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9/11*</characteristic>
@@ -20517,7 +20526,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
     </selectionEntry>
     <selectionEntry id="22d3-59fd-2b09-5980" name="Conversion Beam Dissolutor [RVR]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="e789-df00-9888-c320" name="Conversion Beam Dissolutor [RVR]" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="e789-df00-9888-c320" name="Conversion Beam Dissolutor" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9/11*</characteristic>
