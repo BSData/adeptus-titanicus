@@ -1007,6 +1007,36 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1f2-3837-f728-bdb9" type="max"/>
       </constraints>
     </entryLink>
+    <entryLink id="c2a3-65e3-161c-e980" name="Lucius Pretorian" hidden="false" collective="false" import="true" targetId="9a79-b4ca-f1af-9ff4" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c03-5a24-923a-384a" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2002-3d7b-edce-4adb" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="5707-e4a5-5089-0438" name="Dawn of Enlightenment" hidden="false" collective="false" import="true" targetId="e368-c20b-6009-416b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfb1-0c10-155a-a083" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbc0-a34e-894c-31e5" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="565f-b9e5-705f-854b" name="Ignis Ferrus" hidden="false" collective="false" import="true" targetId="7e69-9799-8091-e039" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea7-17ae-71a7-2e5a" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1540-a2d9-461b-ab03" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="ae5a-8923-43d4-618e" name="Iracundos" hidden="false" collective="false" import="true" targetId="e0ce-f480-9599-4999" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8d2-ef7d-7ab5-8326" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e908-9d98-4cb1-d945" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="c0c4-04ee-a4e6-5612" name="Bellator Magno" hidden="false" collective="false" import="true" targetId="1c27-70c7-14cb-362c" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20b7-f33d-90fc-743b" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8e7-5fa1-6cf1-c492" type="max"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4c64-8a28-7368-156d" name="Auxiliary Titan" hidden="false" collective="false" import="true" type="upgrade">
