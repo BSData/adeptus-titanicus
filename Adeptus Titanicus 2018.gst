@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="86" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="85" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
 To create a Household Battlegroup add a Household to your Roster. Each Lance is a separate Force that needs to be added to your Household. Reinforcements can then be added directly to your Household, or each of your added Lance forces!
@@ -21039,14 +21039,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5fe1-6d10-b045-c3f0" name="Serperos Stalker Banner" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="5fe1-6d10-b045-c3f0" name="Serperos Stalker Banner" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="dfaf-f043-9b37-5eba" name="Serperos Stalker" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -21143,14 +21136,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="31b1-e699-268e-99cd" name="Errax Stalker Banner" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="31b1-e699-268e-99cd" name="Errax Stalker Banner" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="733f-bccd-a373-e7a0" name="Errax Stalker Banner" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -21196,14 +21182,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5aed-482a-3dd7-8e40" name="Tenebrax Stalker Banner" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="5aed-482a-3dd7-8e40" name="Tenebrax Stalker Banner" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="23a8-2a6c-5341-5f7f" name="Tenebrax Stalker" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -21335,14 +21314,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="706a-06cc-ab47-61a4" name="Scintillax Stalker Banner" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="706a-06cc-ab47-61a4" name="Scintillax Stalker Banner" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="2b86-16dc-81dc-8de8" name="Scintillax Stalker Banner" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
