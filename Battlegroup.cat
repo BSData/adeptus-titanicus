@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="86" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -112,7 +112,14 @@
         <entryLink id="6aa3-6d2a-1c55-5f2a" name="Auxiliary Titan" hidden="false" collective="false" import="true" targetId="4c64-8a28-7368-156d" type="selectionEntry"/>
       </entryLinks>
     </entryLink>
-    <entryLink id="sinister-support-battlegroup" name="Warlord-Sinister Titan" hidden="false" collective="false" import="false" targetId="dfeb-83af-7b26-622a" type="selectionEntry">
+    <entryLink id="sinister-support-battlegroup" name="Warlord-Sinister Titan" hidden="true" collective="false" import="false" targetId="dfeb-83af-7b26-622a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="3542-a0f1-8d51-4ad7" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
@@ -957,81 +964,179 @@
       </modifiers>
     </entryLink>
     <entryLink id="b794-3768-8a75-3a14" name="Battle Level" hidden="false" collective="false" import="true" targetId="270a-cdcc-91b8-0787" type="selectionEntry"/>
-    <entryLink id="5485-f347-e1be-24f8" name="Serperos Stalker Banner" hidden="false" collective="false" import="false" targetId="5fe1-6d10-b045-c3f0" type="selectionEntry">
+    <entryLink id="5485-f347-e1be-24f8" name="Serperos Stalker Banner" hidden="true" collective="false" import="false" targetId="5fe1-6d10-b045-c3f0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="baba-93aa-c085-8f14" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2561-a4f8-b7c6-0486" name="Errax Stalker Banner" hidden="false" collective="false" import="false" targetId="31b1-e699-268e-99cd" type="selectionEntry">
+    <entryLink id="2561-a4f8-b7c6-0486" name="Errax Stalker Banner" hidden="true" collective="false" import="false" targetId="31b1-e699-268e-99cd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2abf-9e86-1298-8d6f" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="91e4-0ab7-21bb-ac08" name="Tenebrax Stalker Banner" hidden="false" collective="false" import="false" targetId="5aed-482a-3dd7-8e40" type="selectionEntry">
+    <entryLink id="91e4-0ab7-21bb-ac08" name="Tenebrax Stalker Banner" hidden="true" collective="false" import="false" targetId="5aed-482a-3dd7-8e40" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7e19-4c14-f2e7-96c4" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="bd3f-4cf3-0585-a7af" name="Scintillax Stalker Banner" hidden="false" collective="false" import="false" targetId="706a-06cc-ab47-61a4" type="selectionEntry">
+    <entryLink id="bd3f-4cf3-0585-a7af" name="Scintillax Stalker Banner" hidden="true" collective="false" import="false" targetId="706a-06cc-ab47-61a4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="b923-86f9-bddc-b107" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a2d1-6430-e20c-ec56" name="Hammer of Tyrants" hidden="false" collective="false" import="true" targetId="7f27-f455-f570-ac1c" type="selectionEntry">
+    <entryLink id="a2d1-6430-e20c-ec56" name="Hammer of Tyrants" hidden="true" collective="false" import="true" targetId="7f27-f455-f570-ac1c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="736a-b695-9d61-7da2" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ce2-f79a-381e-4514" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="991d-e956-30a5-9316" name="Iben Faruk" hidden="false" collective="false" import="true" targetId="7cdf-d525-43fd-4663" type="selectionEntry">
+    <entryLink id="991d-e956-30a5-9316" name="Iben Faruk" hidden="true" collective="false" import="true" targetId="7cdf-d525-43fd-4663" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aea8-cfa7-f01f-32c8" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bc7-5ca5-2439-72fb" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="6c25-c35b-b09b-6484" name="Mantellum Fulmen" hidden="false" collective="false" import="true" targetId="7ec8-d0d0-6e97-317d" type="selectionEntry">
+    <entryLink id="6c25-c35b-b09b-6484" name="Mantellum Fulmen" hidden="true" collective="false" import="true" targetId="7ec8-d0d0-6e97-317d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1116-8697-9d0f-6bf3" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccf2-c5ca-ea92-58e2" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="f8ed-d5bf-633f-23a8" name="Vestiti Ferrus" hidden="false" collective="false" import="true" targetId="12ca-6070-4630-3121" type="selectionEntry">
+    <entryLink id="f8ed-d5bf-633f-23a8" name="Vestiti Ferrus" hidden="true" collective="false" import="true" targetId="12ca-6070-4630-3121" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="456d-66e4-26ec-c35a" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="253b-46b6-691e-ee5c" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="698f-a5ef-6a11-b607" name="Penumbral Reaper" hidden="false" collective="false" import="true" targetId="60e5-8070-52af-35a8" type="selectionEntry">
+    <entryLink id="698f-a5ef-6a11-b607" name="Penumbral Reaper" hidden="true" collective="false" import="true" targetId="60e5-8070-52af-35a8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a173-e22f-3411-a152" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1f2-3837-f728-bdb9" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="c2a3-65e3-161c-e980" name="Lucius Pretorian" hidden="false" collective="false" import="true" targetId="9a79-b4ca-f1af-9ff4" type="selectionEntry">
+    <entryLink id="c2a3-65e3-161c-e980" name="Lucius Pretorian" hidden="true" collective="false" import="true" targetId="9a79-b4ca-f1af-9ff4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c03-5a24-923a-384a" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2002-3d7b-edce-4adb" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="5707-e4a5-5089-0438" name="Dawn of Enlightenment" hidden="false" collective="false" import="true" targetId="e368-c20b-6009-416b" type="selectionEntry">
+    <entryLink id="5707-e4a5-5089-0438" name="Dawn of Enlightenment" hidden="true" collective="false" import="true" targetId="e368-c20b-6009-416b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfb1-0c10-155a-a083" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbc0-a34e-894c-31e5" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="565f-b9e5-705f-854b" name="Ignis Ferrus" hidden="false" collective="false" import="true" targetId="7e69-9799-8091-e039" type="selectionEntry">
+    <entryLink id="565f-b9e5-705f-854b" name="Ignis Ferrus" hidden="true" collective="false" import="true" targetId="7e69-9799-8091-e039" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea7-17ae-71a7-2e5a" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1540-a2d9-461b-ab03" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="ae5a-8923-43d4-618e" name="Iracundos" hidden="false" collective="false" import="true" targetId="e0ce-f480-9599-4999" type="selectionEntry">
+    <entryLink id="ae5a-8923-43d4-618e" name="Iracundos" hidden="true" collective="false" import="true" targetId="e0ce-f480-9599-4999" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8d2-ef7d-7ab5-8326" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e908-9d98-4cb1-d945" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="c0c4-04ee-a4e6-5612" name="Bellator Magno" hidden="false" collective="false" import="true" targetId="1c27-70c7-14cb-362c" type="selectionEntry">
+    <entryLink id="c0c4-04ee-a4e6-5612" name="Bellator Magno" hidden="true" collective="false" import="true" targetId="1c27-70c7-14cb-362c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20b7-f33d-90fc-743b" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8e7-5fa1-6cf1-c492" type="max"/>

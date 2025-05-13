@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="85" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="86" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
 To create a Household Battlegroup add a Household to your Roster. Each Lance is a separate Force that needs to be added to your Household. Reinforcements can then be added directly to your Household, or each of your added Lance forces!
@@ -21415,14 +21415,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7f27-f455-f570-ac1c" name="Hammer of Tyrants" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="7f27-f455-f570-ac1c" name="Hammer of Tyrants" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="3306-909c-6edd-23e1" name="Warlord Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -21506,14 +21499,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7cdf-d525-43fd-4663" name="Iben Faruk" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="7cdf-d525-43fd-4663" name="Iben Faruk" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="8dc5-bb94-40d6-329e" name="Warhound Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -21585,14 +21571,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7ec8-d0d0-6e97-317d" name="Mantellum Fulmen" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="7ec8-d0d0-6e97-317d" name="Mantellum Fulmen" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="fbe2-ec89-5911-2323" name="Warhound Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -21673,14 +21652,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="12ca-6070-4630-3121" name="Vestiti Ferrus" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="12ca-6070-4630-3121" name="Vestiti Ferrus" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="dee2-1941-49c9-721f" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -21761,14 +21733,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="60e5-8070-52af-35a8" name="Penumbral Reaper" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="60e5-8070-52af-35a8" name="Penumbral Reaper" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="da41-e642-1b2d-4361" name="Warlord Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -21849,14 +21814,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9a79-b4ca-f1af-9ff4" name="Lucius Pretorian" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="9a79-b4ca-f1af-9ff4" name="Lucius Pretorian" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="a038-d81f-e904-2a49" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -21937,14 +21895,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e368-c20b-6009-416b" name="Dawn of Enlightenment" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="e368-c20b-6009-416b" name="Dawn of Enlightenment" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="24a5-af1b-292b-17d5" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -22026,14 +21977,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7e69-9799-8091-e039" name="Ignis Ferrus" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="7e69-9799-8091-e039" name="Ignis Ferrus" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="4b5e-f207-bfcc-a3f0" name="Warlord Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -22117,14 +22061,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e0ce-f480-9599-4999" name="Iracundos" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="e0ce-f480-9599-4999" name="Iracundos" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="bf53-f616-fcf9-dee6" name="Reaver Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -22202,14 +22139,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1c27-70c7-14cb-362c" name="Bellator Magno" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="1c27-70c7-14cb-362c" name="Bellator Magno" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="7526-c7f0-55fc-caae" name="Warlord Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
