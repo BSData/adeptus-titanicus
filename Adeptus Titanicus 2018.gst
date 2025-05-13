@@ -3493,9 +3493,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="a271-bbde-1b23-fd30" name="New CategoryLink" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
         <categoryLink id="a0c0-49c1-1633-3848" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="c58e-22a5-8294-f8ec" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink id="ba85-4a6e-946e-48d7" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="af24-dd9d-cfa8-fdbf" name="Questoris Knight Lord Scion" hidden="false" collective="false" import="false" targetId="9570-2851-584c-62e9" type="selectionEntry">
