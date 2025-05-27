@@ -6890,11 +6890,11 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b32-e2a3-6c9d-86d4" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="8432-2b51-c1ba-9e0d" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce27-ba03-c1c2-c22f" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="ad0f-bb49-a5e9-a52a" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
@@ -7966,11 +7966,11 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="8b79-c28b-2c9d-b806" name="Heavy Scout Titan" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3301-d943-92a4-d5b6" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="8b60-39ad-ef1f-66e5" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3324-7744-5f20-a4d0" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="8d7a-93c8-860c-ea0f" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
@@ -8764,11 +8764,11 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5daa-9bb4-c9fd-425e" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="b7c1-fd0e-1f98-32b8" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e9d-e151-d6a2-34ad" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="ff35-5b66-01e6-d6b3" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
@@ -9180,11 +9180,11 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="ca80-0f26-ed79-22cd" name="Heavy Scout Titan" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab2b-6a55-0a58-b21e" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="1aa6-b49e-ac23-f06d" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d98f-53bc-008d-f89b" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="062f-d9c1-cee9-469f" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
@@ -9535,11 +9535,11 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="24df-93de-077a-0344" name="Heavy Scout Titan" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="66ce-0827-17e6-3ee2" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="2f6f-c0f2-daf5-0517" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b51-8579-26c2-99c6" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="0502-c325-cea5-dd42" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
@@ -9917,11 +9917,11 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="fb59-d1ee-ae72-5bc8" name="Heavy Scout Titan" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f839-bda9-1b91-b441" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="c158-5bb4-31ec-ac58" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4797-d5fd-18fa-fb3e" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="fb6f-b405-8c67-fbd9" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
@@ -10890,11 +10890,11 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d28f-aa15-2cc0-324b" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="a384-e0d7-5317-45bb" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf40-dd2e-571e-8c66" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="9129-f4c9-b6f7-0e28" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
@@ -11268,11 +11268,11 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="6b3c-3245-361b-c4bf" name="Heavy Scout Titan" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="925c-797e-8d75-aee8" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="95e1-829e-6cc0-61bf" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a3f-76c4-f409-45e3" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="5f35-c04d-c014-58e5" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
@@ -12040,11 +12040,11 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="ede6-8dbb-68e1-d7e9" name="Heavy Scout Titan" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f0b-ae54-0444-9271" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="ce8f-1768-eac9-2712" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dde2-ee04-8eb2-d3db" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="2e4d-5d92-5c04-68d4" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
@@ -12329,11 +12329,11 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="062f-b182-011e-e7ab" name="Heavy Scout Titan" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a248-bd7d-8290-e3bd" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="9916-e361-4184-0a6e" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3028-b764-20dd-6c37" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="3b83-1604-cd94-a040" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
@@ -13304,9 +13304,6 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="57f9-e1dc-8567-1437" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="39a3-dc4a-4f25-9aca" name="Replace Reaver with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -13318,6 +13315,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19fc-4457-8b24-6b15" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ea8-ce4c-9b23-af89" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="fd67-8116-4689-2422" name="Replace Reaver with Dire Wolf" hidden="false" targetId="fbd3-5e33-6755-835f" primary="false"/>
@@ -13618,11 +13616,11 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="3b58-ff47-661c-8c02" name="Heavy Scout Titan" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5784-fb04-8b6d-cff5" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="3724-4078-b4cd-29ba" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a018-d7ae-6fcf-64eb" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="dd3b-1e52-cbd9-58c9" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
@@ -13994,11 +13992,11 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="c52d-f95b-549b-d948" name="Heavy Scout Titan" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3792-662e-916f-f5bc" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="aeee-4ccb-9611-0e99" name="Replace optional Warhound with Dire Wolf" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6e70-50e4-166e-5678" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="b762-8d06-aeae-575e" name="Replace optional Warhound with Dire Wolf" hidden="false" targetId="e1ea-4e6f-d353-2cc4" primary="false"/>
               </categoryLinks>
