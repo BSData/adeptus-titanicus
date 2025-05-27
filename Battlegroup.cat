@@ -975,6 +975,9 @@
       <categoryLinks>
         <categoryLink id="baba-93aa-c085-8f14" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="84d2-2482-6ae9-dcd3" name="Stalker Banner" hidden="false" collective="false" import="true" targetId="abd1-9b4c-19ca-c350" type="selectionEntry"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="2561-a4f8-b7c6-0486" name="Errax Stalker Banner" hidden="true" collective="false" import="false" targetId="31b1-e699-268e-99cd" type="selectionEntry">
       <modifiers>
@@ -987,6 +990,9 @@
       <categoryLinks>
         <categoryLink id="2abf-9e86-1298-8d6f" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="29ef-fce3-68b1-e4bb" name="Stalker Banner" hidden="false" collective="false" import="true" targetId="abd1-9b4c-19ca-c350" type="selectionEntry"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="91e4-0ab7-21bb-ac08" name="Tenebrax Stalker Banner" hidden="true" collective="false" import="false" targetId="5aed-482a-3dd7-8e40" type="selectionEntry">
       <modifiers>
@@ -999,6 +1005,9 @@
       <categoryLinks>
         <categoryLink id="7e19-4c14-f2e7-96c4" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="4e74-78ac-548d-9d4c" name="Stalker Banner" hidden="false" collective="false" import="true" targetId="abd1-9b4c-19ca-c350" type="selectionEntry"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="bd3f-4cf3-0585-a7af" name="Scintillax Stalker Banner" hidden="true" collective="false" import="false" targetId="706a-06cc-ab47-61a4" type="selectionEntry">
       <modifiers>
@@ -1011,6 +1020,9 @@
       <categoryLinks>
         <categoryLink id="b923-86f9-bddc-b107" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="8c6d-f5c0-d999-a9c9" name="Stalker Banner" hidden="false" collective="false" import="true" targetId="abd1-9b4c-19ca-c350" type="selectionEntry"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="a2d1-6430-e20c-ec56" name="Hammer of Tyrants" hidden="true" collective="false" import="true" targetId="7f27-f455-f570-ac1c" type="selectionEntry">
       <modifiers>
@@ -1156,6 +1168,24 @@
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="24f8-e31a-7275-eab2" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a0-1f89-67e9-af2b" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70e4-6146-61bf-1602" type="max"/>
+      </constraints>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="abd1-9b4c-19ca-c350" name="Stalker Banner" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="increment" field="7d9c-f1eb-4b34-1697" value="2.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7d9c-f1eb-4b34-1697" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb3b-a302-f8d0-f5ab" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7962-de56-1667-560b" type="max"/>
       </constraints>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
