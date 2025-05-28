@@ -577,6 +577,11 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
     <categoryEntry id="8f5a-1d94-c145-8707" name="Replace Warlord with Ignis Ferrus" hidden="false"/>
     <categoryEntry id="9730-26ab-b9b6-6080" name="Replace Reaver with Iracundos" hidden="false"/>
     <categoryEntry id="2fd5-20c9-201d-9dba" name="Replace Reaver with Lucius Pretorian" hidden="false"/>
+    <categoryEntry id="7b5f-f251-5aff-d34a" name="Replace Warlord with Hammer of Tyrants" hidden="false"/>
+    <categoryEntry id="b2ab-bb13-d756-4e3d" name="Replace Warhound with Iben Faruk" hidden="false"/>
+    <categoryEntry id="513b-2790-6686-a296" name="Replace Warhound with Mantellum Fulmen" hidden="false"/>
+    <categoryEntry id="d609-0e66-df62-df75" name="Replace Warlord with Penumbral Reaper" hidden="false"/>
+    <categoryEntry id="c908-6027-0d03-2644" name="Replace Reaver with Vestiti Ferrus" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -8122,6 +8127,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               <categoryLinks>
                 <categoryLink id="16c1-68be-ffff-6351" name="Replace Reaver with Dawn of Enlightenment" hidden="false" targetId="277b-cfd9-af34-526f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e37a-1899-3cef-2479" name="Replace Warlord with Ignis Ferrus" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -8142,6 +8151,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               <categoryLinks>
                 <categoryLink id="9b57-7741-483b-63cf" name="Replace Warlord with Ignis Ferrus" hidden="false" targetId="8f5a-1d94-c145-8707" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="060b-6f84-fd2b-d6f0" name="Replace Reaver with Iracundos" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -8162,6 +8175,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               <categoryLinks>
                 <categoryLink id="3603-0f80-50c6-6f0d" name="Replace Reaver with Iracundos" hidden="false" targetId="9730-26ab-b9b6-6080" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e419-52cb-f241-db92" name="Replace Reaver with Lucius Pretorian" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -8182,6 +8199,130 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               <categoryLinks>
                 <categoryLink id="9fb7-0f58-b26a-2133" name="Replace Reaver with Lucius Pretorian" hidden="false" targetId="2fd5-20c9-201d-9dba" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f0bf-df74-316b-deda" name="Replace Warlord with Hammer of Tyrants" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="95e8-3d8e-a0ad-4ad3" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="986d-68ba-c782-3f40" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="4597-9369-f89e-03a5" name="Replace Warlord with Hammer of Tyrants" hidden="false" targetId="7b5f-f251-5aff-d34a" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="945a-4cc7-ef0f-81f9" name="Replace Warhound with Mantellum Fulmen" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ef2-21ad-356d-4264" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="7974-1ec4-5f53-41e4" name="Replace Warhound with Mantellum Fulmen" hidden="false" targetId="513b-2790-6686-a296" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2744-c123-d27b-9f13" name="Replace Warhound with Iben Faruk" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="72ba-4008-bf4b-fe3b" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e0b0-c256-602e-0a39" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="6603-831e-2d77-f632" name="Replace Warhound with Iben Faruk" hidden="false" targetId="b2ab-bb13-d756-4e3d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="88e3-7d07-56f7-3433" name="Replace Warlord with Penumbral Reaper" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f88f-e42d-38f7-bfa7" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7cb0-2285-a559-0576" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="95ab-bf53-cc30-fec8" name="Replace Warlord with Penumbral Reaper" hidden="false" targetId="d609-0e66-df62-df75" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a0da-1842-6e28-1823" name="Replace Reaver with Vestiti Ferrus" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="561a-cb05-d4b5-94fd" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="352f-13af-7d69-d3a1" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="2962-a455-5eaf-7309" name="Replace Reaver with Vestiti Ferrus" hidden="false" targetId="c908-6027-0d03-2644" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+                <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -8198,6 +8339,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="277b-cfd9-af34-526f" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9730-26ab-b9b6-6080" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fd5-20c9-201d-9dba" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c908-6027-0d03-2644" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3a16-e37f-de62-e329" value="1.0">
@@ -8210,6 +8352,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9730-26ab-b9b6-6080" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fd5-20c9-201d-9dba" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="277b-cfd9-af34-526f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c908-6027-0d03-2644" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="9aa0-2e76-da99-3f1a" value="1.0">
@@ -8279,6 +8422,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6dd9-e00c-6387-8178" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f5a-1d94-c145-8707" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b5f-f251-5aff-d34a" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d609-0e66-df62-df75" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="72f4-ef46-bd95-4ba9" value="1.0">
@@ -8289,6 +8434,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6dd9-e00c-6387-8178" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f5a-1d94-c145-8707" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b5f-f251-5aff-d34a" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d609-0e66-df62-df75" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -8305,6 +8452,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="513b-2790-6686-a296" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b2ab-bb13-d756-4e3d" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="d011-abe9-ffd9-10b6" value="1.0">
@@ -8314,6 +8463,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b2ab-bb13-d756-4e3d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="513b-2790-6686-a296" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="d011-abe9-ffd9-10b6" value="1.0">
@@ -8527,6 +8678,121 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b2d-a7f3-2b6d-9913" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ade1-e204-3935-50e7" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4557-f3ae-36bb-0b60" name="Hammer of Tyrants" hidden="true" collective="false" import="true" targetId="7f27-f455-f570-ac1c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b5f-f251-5aff-d34a" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5e11-15d7-83de-07c8" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b5f-f251-5aff-d34a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="8e08-1eb2-41fb-095a" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f0bf-df74-316b-deda" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e08-1eb2-41fb-095a" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e11-15d7-83de-07c8" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a565-5c86-5887-21c3" name="Iben Faruk" hidden="true" collective="false" import="true" targetId="7cdf-d525-43fd-4663" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2ab-bb13-d756-4e3d" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9c4b-d603-029f-3c50" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2744-c123-d27b-9f13" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3055-89fc-37d0-e71f" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2744-c123-d27b-9f13" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c4b-d603-029f-3c50" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3055-89fc-37d0-e71f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6c6d-5e25-d655-4cfa" name="Vestiti Ferrus" hidden="true" collective="false" import="true" targetId="12ca-6070-4630-3121" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c908-6027-0d03-2644" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="6a45-60ea-584a-094f" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c908-6027-0d03-2644" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7887-a0bd-95bd-739f" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a0da-1842-6e28-1823" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a45-60ea-584a-094f" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7887-a0bd-95bd-739f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e424-64f6-5587-8785" name="Mantellum Fulmen" hidden="true" collective="false" import="true" targetId="7ec8-d0d0-6e97-317d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="513b-2790-6686-a296" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="1783-edd0-9fe8-8316" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="513b-2790-6686-a296" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="35f6-fe40-328e-ef52" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="513b-2790-6686-a296" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35f6-fe40-328e-ef52" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1783-edd0-9fe8-8316" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="73b9-4a17-c638-5dd5" name="Penumbral Reaper" hidden="true" collective="false" import="true" targetId="60e5-8070-52af-35a8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d609-0e66-df62-df75" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="1f13-9124-974d-f2c1" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="88e3-7d07-56f7-3433" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b15d-95d1-802d-49e2" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="88e3-7d07-56f7-3433" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b15d-95d1-802d-49e2" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f13-9124-974d-f2c1" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
