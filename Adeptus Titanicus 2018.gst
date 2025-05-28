@@ -22051,7 +22051,12 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c2b3-c9b0-c220-f846" name="Legio Specific Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="c2b3-c9b0-c220-f846" name="Legio Specific Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4267-549d-4577-fa51" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c651-8916-e72a-a725" type="min"/>
+          </constraints>
+        </entryLink>
         <entryLink id="d352-cd90-7acf-7f49" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
           <categoryLinks>
             <categoryLink id="7995-6302-5182-2db3" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
@@ -22903,11 +22908,6 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="72ba-4008-bf4b-fe3b" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="a573-792d-bb3b-a8ae" value="1.0">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cdf-d525-43fd-4663" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
