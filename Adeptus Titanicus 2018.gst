@@ -15936,7 +15936,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="decrement" field="e28f-47ce-7c9c-e45a" value="1.0">
+            <modifier type="decrement" field="10e3-d657-4ea1-db2f" value="1.0">
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
