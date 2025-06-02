@@ -119,19 +119,13 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="3bca-430f-56fa-0809" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="279c-716a-4a10-954a" type="min"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bca-430f-56fa-0809" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="3542-a0f1-8d51-4ad7" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="f716-eec7-363c-5b80" name="Auxiliary Titan" hidden="false" collective="false" import="true" targetId="4c64-8a28-7368-156d" type="selectionEntry"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="warmaster-support-battlegroup" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry">
       <entryLinks>
