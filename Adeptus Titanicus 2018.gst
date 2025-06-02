@@ -22621,7 +22621,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       <selectionEntryGroups>
         <selectionEntryGroup id="25b0-37d3-2ac2-2a2a" name="Weapons" hidden="false" collective="false" import="false">
           <selectionEntryGroups>
-            <selectionEntryGroup id="397b-afe8-38ba-4186" name="Arm A" hidden="false" collective="false" import="false">
+            <selectionEntryGroup id="397b-afe8-38ba-4186" name="Right Arm" hidden="false" collective="false" import="false">
               <modifiers>
                 <modifier type="set" field="e727-e9f7-8353-89a5" value="0.0">
                   <conditions>
@@ -22682,7 +22682,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="2ef2-a185-9def-9e73" name="Arm B" hidden="false" collective="false" import="false">
+            <selectionEntryGroup id="2ef2-a185-9def-9e73" name="Left Arm" hidden="false" collective="false" import="false">
               <entryLinks>
                 <entryLink id="cfc1-f569-5c24-317b" name="Sinistraamanus Tenebrae" hidden="false" collective="false" import="false" targetId="fdb3-1081-0f93-7b0c" type="selectionEntry">
                   <modifiers>
@@ -22706,7 +22706,6 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e567-79a0-2397-8b15" name="Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
         <entryLink id="21e5-616b-0e01-800a" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
         <entryLink id="e127-fa59-df52-fa3d" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
       </entryLinks>
