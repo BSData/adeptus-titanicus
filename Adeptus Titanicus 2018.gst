@@ -582,6 +582,11 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
     <categoryEntry id="513b-2790-6686-a296" name="Replace Warhound with Mantellum Fulmen" hidden="false"/>
     <categoryEntry id="d609-0e66-df62-df75" name="Replace Warlord with Penumbral Reaper" hidden="false"/>
     <categoryEntry id="c908-6027-0d03-2644" name="Replace Reaver with Vestiti Ferrus" hidden="false"/>
+    <categoryEntry id="ee51-fa29-5d5e-1134" name="Super Auxilary Titan" hidden="false">
+      <infoLinks>
+        <infoLink id="13c1-67a6-2cba-27ba" name="Super Auxilary Titan" hidden="false" targetId="ad84-6505-4533-aa63" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -27587,6 +27592,67 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="fb67-1918-d9b1-b946" name="Warbreaker Titan" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8f86-7fe9-d8cd-8281" name="Warbreaker Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">3&quot;/5&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">2+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/2</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">7</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">15</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="89cd-6d64-a99c-08e1" name="Super Auxilary Titan" hidden="false" targetId="ad84-6505-4533-aa63" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2164-760b-764e-76ee" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
+        <categoryLink id="4d95-f218-b5ff-97ef" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c094-8979-8da9-8c77" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f719-7369-e535-6d08" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32db-cf23-7398-9483" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="61b8-b4d7-e6c0-e282" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink id="d93f-0f7f-5952-aad5" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb8f-55c9-9407-d95c" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20b6-554d-a677-7da4" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4aa9-b88b-020d-75fa" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f569-025e-3f2b-4bd5" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7b4c-a424-ae47-977f" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="3336-ee9c-737b-b7fe" name="Legio Specific Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="d3be-7349-f502-f39c" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink id="373f-fc69-0a18-5e9f" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink id="11ee-3fbc-6ae1-3545" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="1500.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b2f9-459e-7b84-812e" name="Warbreaker War Horn" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="9d8a-84d9-6ced-549a" name="Warbreaker War Horn" hidden="false">
+          <description>Activate in the Strategy Phase. The sight and sound of a Warbreaker fills even the most experienced Prineps with fear. For the remainder of the round enemy units suffer -2 to all command checks if they are within 15&quot; of the Warbreaker. Flip this card over after use.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0591-acc6-e6bd-d539" name="Ancillary Reactor System" hidden="false" targetId="3b8b-38d1-147a-f99d" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -28390,6 +28456,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb67-1918-d9b1-b946" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -28800,6 +28867,20 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
         <entryLink id="fc4c-01c8-6889-f1c3" name="Dedicated Void Shunts" hidden="false" collective="false" import="true" targetId="59ac-39c7-b7b9-ecb6" type="selectionEntry"/>
         <entryLink id="e3bb-5f52-88ce-a3ed" name="Infusive Supercoolant" hidden="false" collective="false" import="true" targetId="9850-b19f-11e0-2b54" type="selectionEntry"/>
         <entryLink id="9b3b-9bbb-845d-f383" name="Plasmatic Locomotors" hidden="false" collective="false" import="true" targetId="d152-f92c-fa32-dcfd" type="selectionEntry"/>
+        <entryLink id="d29d-751f-0caa-fe32" name="Warbreaker War Horn" hidden="false" collective="false" import="true" targetId="b2f9-459e-7b84-812e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="aa6b-a665-b907-234e" name="Personal Trait" publicationId="975a-00f4-pubN65537" page="55" hidden="true" collective="false" import="true">
@@ -30991,6 +31072,9 @@ result of a single D6.</description>
     </rule>
     <rule id="06a9-3744-bb42-ba59" name="Heavy Scout Titan" hidden="false">
       <description>Each maniple in a battlegroup may replace a single optional Warhound Titan with a Dire Wolf Titan. Legio Audax maniples may replace a single mandatory Reaver or a single optional Warhound Titan with a Dire Wolf Titan instead; this allows the fielding of Legio Audax maniples that were previously inaccessible to the Legio, such as Ferrox or Venator maniples, so long as the maniple includes no Titan of Scale 7 or more when assembled. Dire Wolf Titans count as the Warhound or Reaver they replace for the purposes of maniple rules.</description>
+    </rule>
+    <rule id="ad84-6505-4533-aa63" name="Super Auxilary Titan" hidden="false">
+      <description>A Legio Battlegroup can include a maximum of one Warbreaker as reinforcements. This is in addition to other Auxilary Titans.</description>
     </rule>
   </sharedRules>
 </gameSystem>
