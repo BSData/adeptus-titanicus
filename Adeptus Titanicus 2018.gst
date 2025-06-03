@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="87" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="88" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
 To create a Household Battlegroup add a Household to your Roster. Each Lance is a separate Force that needs to be added to your Household. Reinforcements can then be added directly to your Household, or each of your added Lance forces!
@@ -28204,6 +28204,46 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       </entryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="84c8-b5c0-9cc1-2ab7" name="Titan Guard Infantry" page="" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fb67-1918-d9b1-b946" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b47-b4bd-2f08-9b18" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="bf1f-690c-945b-1a7d" name="Titan Guard Infantry" page="" hidden="false">
+          <description>Titan Guard Infantry are not deployed during the deployment phase, instead they start inside the Warbreaker. Activate in the combat phase during the Warbreaker&apos;s activation. Deploy 6 Titan Guard Infantry stands (each stand is a 25-28mm base) within 3&quot; of the Warbreaker and may attack immediately. Titan Guard Infantry are a single unit and have a 2&quot; coherency. They can be moved over by Titans but not Knights. In subsequent rounds Titan Guard Infantry act independantly as a separate unit.
+
+BS/WS: 4+
+Arc: 360
+Short: 5&quot;, +1 To Hit
+Long: 10&quot;
+Dice: 1
+Strength: 4
+
+Scale: 0 (Exciguus)
+Speed: 4&quot;
+Command 7+
+Structure Point: 1
+7-9 Direct Hit
+10-11: Devastating Hit
+12+: Critical Hit</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f14e-b375-18c1-94f6" name="New CategoryLink" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink id="23d6-21d6-5d19-9620" name="Tactical Support" hidden="false" targetId="b477-7f02-0efe-637c" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
