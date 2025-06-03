@@ -31243,8 +31243,7 @@ immediately push their reactor to make an attack with one of its weapons.</descr
             <selectionEntry id="7a1a-a086-f627-b1cd" name="2 Iron-clad Tyrant" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
                 <rule id="3fde-41f6-001e-4633" name="Iron-clad Tyrant" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
-                  <description>Once per turn, when issuing orders to a Titan in the Princeps Seniores&apos; maniple, the Command check
-can be re-rolled.</description>
+                  <description>Once per turn, when issuing orders to a Titan in the Princeps Seniores&apos; maniple, the Command check can be re-rolled.</description>
                 </rule>
               </rules>
               <costs>
@@ -31255,7 +31254,7 @@ can be re-rolled.</description>
             <selectionEntry id="0c2c-a59d-9b0f-9fd7" name="3 Swift Killer" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
                 <rule id="4780-e414-9e39-7e80" name="Swift Killer" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
-                  <description>Once per round, before the Princeps Seniores&apos; Titan makes an anack, it can turn up to 45°. Subtract I from the result of any Hit rolls it makes for the rest of the phase.</description>
+                  <description>Once per round, before the Princeps Seniores&apos; Titan makes an attack, it can turn up to 45°. Subtract 1 from the result of any Hit rolls it makes for the rest of the phase.</description>
                 </rule>
               </rules>
               <costs>
@@ -31266,8 +31265,7 @@ can be re-rolled.</description>
             <selectionEntry id="0a0d-0e8c-5464-d9ef" name="4 Devoted Servant of the Machine" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
                 <rule id="858b-b4a8-e6ff-4ff2" name="Devoted Servant of the Machine" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
-                  <description>When making a Repair roll for the Princeps Seniores&apos; Titan, the controlling player can add I to the
-result of a single D6.</description>
+                  <description>When making a Repair roll for the Princeps Seniores&apos; Titan, the controlling player can add 1 to the result of a single D6.</description>
                 </rule>
               </rules>
               <costs>
@@ -31289,7 +31287,7 @@ result of a single D6.</description>
             <selectionEntry id="fe50-544f-7164-4547" name="6 Will of Iron" publicationId="975a-00f4-pubN65537" page="55" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
                 <rule id="9cd6-512b-79d7-7077" name="Will of Iron" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
-                  <description>The first time a Catastrophic Damage roll is made for the Princeps Seniores&apos; Titan, roll a Dro. If the score equals or beats the result of the Catastrophic Damage roll, it is ignored and has no effect. </description>
+                  <description>The first time a Catastrophic Damage roll is made for the Princeps Seniores&apos; Titan, roll a D10. If the score equals or beats the result of the Catastrophic Damage roll, it is ignored and has no effect. </description>
                 </rule>
               </rules>
               <costs>
@@ -31369,7 +31367,7 @@ result of a single D6.</description>
             <selectionEntry id="5b1b-1e87-b6e0-c37c" name="6 Shackled" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
                 <rule id="d2f6-7978-5ea0-7508" name="Shackled" hidden="false">
-                  <description>When the Princeps’ Titan is required to roll on the Awakened Entity table, they may roll two dice and pick which result applies. Thesame result can be rolled twice</description>
+                  <description>When the Princeps’ Titan is required to roll on the Awakened Entity table, they may roll two dice and pick which result applies. The same result can be rolled twice.</description>
                 </rule>
               </rules>
               <costs>
