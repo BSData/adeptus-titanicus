@@ -27627,8 +27627,40 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
             <selectionEntryGroup id="939b-e2de-527b-325c" name="Primary Forward Turrets" hidden="false" collective="false" import="true"/>
             <selectionEntryGroup id="b0ab-4363-ab46-bad1" name="Primary Carapace Turret" hidden="false" collective="false" import="true"/>
             <selectionEntryGroup id="d914-5a94-1fed-6849" name="Arms" hidden="false" collective="false" import="true"/>
-            <selectionEntryGroup id="fbac-44e9-5d8f-213c" name="Forward Side Turret" hidden="false" collective="false" import="true"/>
-            <selectionEntryGroup id="5b86-7dd5-3af8-7ad1" name="Rear Side Turret" hidden="false" collective="false" import="true"/>
+            <selectionEntryGroup id="fbac-44e9-5d8f-213c" name="Forward Side Turret" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="571f-0d1a-ca0d-b020" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="571f-0d1a-ca0d-b020" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa0e-54c6-c0e6-f557" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="4e9e-b02f-41be-bcf3" name="Apocalypse Missile Array [WB]" hidden="false" collective="false" import="true" targetId="c6f7-4a23-e22f-7b56" type="selectionEntry"/>
+                <entryLink id="dabe-c877-69fd-1c9f" name="Eruption Lance" hidden="false" collective="false" import="true" targetId="324e-03cc-a25d-6dea" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5b86-7dd5-3af8-7ad1" name="Rear Side Turret" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="d522-edd1-13bd-61f0" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d522-edd1-13bd-61f0" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6947-eba8-1f5f-70ce" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="2f9b-7c1e-858a-9010" name="Apocalypse Missile Array [WB]" hidden="false" collective="false" import="true" targetId="c6f7-4a23-e22f-7b56" type="selectionEntry"/>
+                <entryLink id="f278-37ed-fd67-1607" name="Eruption Lance" hidden="false" collective="false" import="true" targetId="324e-03cc-a25d-6dea" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="75dd-649c-0849-41cf" name="Ardex Defensor Cannon (WB)" hidden="false" collective="false" import="true" targetId="9986-ede0-3cdc-856a" type="selectionEntry"/>
@@ -27697,6 +27729,72 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       </rules>
       <costs>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c6f7-4a23-e22f-7b56" name="Apocalypse Missile Array [WB]" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3d16-65f5-6351-3038" name="Apocalypse Missile Array" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">5</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"> Carapace, Barrage</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1870-a074-3000-8ea3" name="New CategoryLink" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="fff6-584e-f865-dc03" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="2062-74c9-bf3d-bc8e" name="JanusQualifier" hidden="false" targetId="06ab-258d-46aa-3b1f" primary="false"/>
+        <categoryLink id="1799-4d5d-5c46-7480" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="b37d-a698-f760-4e18" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="360a-a5a1-5225-9066" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="324e-03cc-a25d-6dea" name="Eruption Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3bb5-0a8c-48f7-68f1" name="Eruption Lance" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">60&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"> Carapace, Blast, Fusion (Draining)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1f3e-4b51-1fc8-191e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="6111-825e-5274-1196" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="fde1-12de-6705-3030" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
+        <categoryLink id="2ba9-37a0-462c-1d45" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="473b-8c61-f32e-d901" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c647-ca77-cada-e9fc" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
