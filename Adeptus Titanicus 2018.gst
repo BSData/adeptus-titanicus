@@ -27613,11 +27613,28 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       </profiles>
       <infoLinks>
         <infoLink id="89cd-6d64-a99c-08e1" name="Super Auxilary Titan" hidden="false" targetId="ad84-6505-4533-aa63" type="rule"/>
+        <infoLink id="5e28-f61a-a5b5-36b0" name="Grandmaster" hidden="false" targetId="f5de-a455-805f-b6bd" type="rule"/>
+        <infoLink id="bfc6-fdd6-7514-9ef7" name="Inexorable" hidden="false" targetId="f467-724a-558c-c10d" type="rule"/>
+        <infoLink id="c84e-11fb-5192-c107" name="Independent Fire" hidden="false" targetId="34ec-48a0-32ee-5be8" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2164-760b-764e-76ee" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
         <categoryLink id="4d95-f218-b5ff-97ef" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3e0b-1f4e-50dc-144b" name="Weapons" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="939b-e2de-527b-325c" name="Primary Forward Turrets" hidden="false" collective="false" import="true"/>
+            <selectionEntryGroup id="b0ab-4363-ab46-bad1" name="Primary Carapace Turret" hidden="false" collective="false" import="true"/>
+            <selectionEntryGroup id="d914-5a94-1fed-6849" name="Arms" hidden="false" collective="false" import="true"/>
+            <selectionEntryGroup id="fbac-44e9-5d8f-213c" name="Forward Side Turret" hidden="false" collective="false" import="true"/>
+            <selectionEntryGroup id="5b86-7dd5-3af8-7ad1" name="Rear Side Turret" hidden="false" collective="false" import="true"/>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="75dd-649c-0849-41cf" name="Ardex Defensor Cannon (WB)" hidden="false" collective="false" import="true" targetId="9986-ede0-3cdc-856a" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c094-8979-8da9-8c77" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup">
           <constraints>
@@ -27666,6 +27683,21 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9986-ede0-3cdc-856a" name="Ardex Defensor Cannon [WB]" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c4c-8c27-0b36-45ea" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f38f-337b-68a4-8a2e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5e17-3114-eaf6-2ecf" name="Ardex Defensor Cannon" hidden="false">
+          <description>When the Titan is activated in the Combat phase, each enemy unit that is within its Front or Rear arc, and within 6&quot;, suffers 3xD3 Strength 5 hits.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -30866,6 +30898,15 @@ result of a single D6.</description>
     </rule>
     <rule id="ad84-6505-4533-aa63" name="Super Auxilary Titan" hidden="false">
       <description>A Legio Battlegroup can include a maximum of one Warbreaker as reinforcements. This is in addition to other Auxilary Titans.</description>
+    </rule>
+    <rule id="f5de-a455-805f-b6bd" name="Grandmaster" hidden="false">
+      <description>The Warbreaker will often walk with the Grandmaster of the Legio as its princeps. The Warbreaker may take its own Princeps Trait and adds +2 to Order command checks. All friendly units gain +1 to command rolls within 8&quot;.</description>
+    </rule>
+    <rule id="f467-724a-558c-c10d" name="Inexorable" hidden="false">
+      <description>The Titan never suffers movement penalties due to Difficult Terrain or Quake and never suffers involuntary movement as a result of Concussion. Impale requires 3+ units as part of a Coordinated Strike to invoke such movement.</description>
+    </rule>
+    <rule id="34ec-48a0-32ee-5be8" name="Independent Fire" hidden="false">
+      <description>Both Forward and Rear Side Turret weapons can be fired independently, without needing a Split Fire order. If a Split Fire order is given to this Titan, then all weapons become independent. All shots must be declared before rolling.</description>
     </rule>
   </sharedRules>
 </gameSystem>
