@@ -582,6 +582,18 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
     <categoryEntry id="513b-2790-6686-a296" name="Replace Warhound with Mantellum Fulmen" hidden="false"/>
     <categoryEntry id="d609-0e66-df62-df75" name="Replace Warlord with Penumbral Reaper" hidden="false"/>
     <categoryEntry id="c908-6027-0d03-2644" name="Replace Reaver with Vestiti Ferrus" hidden="false"/>
+    <categoryEntry id="ee51-fa29-5d5e-1134" name="Super Auxilary Titan" hidden="false">
+      <infoLinks>
+        <infoLink id="13c1-67a6-2cba-27ba" name="Super Auxilary Titan" hidden="false" targetId="ad84-6505-4533-aa63" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="1666-7d5c-32bf-7517" name="Mortar" hidden="false">
+      <rules>
+        <rule id="7c73-ebfc-c1c0-7be9" name="Mortar" hidden="false">
+          <description>Weapons with this rule can fire at targets within the Titans scale with the carapace rule.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -4417,7 +4429,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
     <selectionEntry id="f9a9-0ee9-960e-960b" name="=Vulcanum= Twinned Machine Spirits" publicationId="975a-00f4-pubN89746" page="23" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="60b2-ad77-9e97-d0d8" name="Twinned Machine Spirits" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
-          <description>Any two Legio Vulcanum Titans may upgraded with twinned machine spirits for +20 points each.  Legio Vulcanum Titans with twinned machine spirits count as being part of a squadron with each other (see page 45 of the Adpetus Titanicus rulebook) – these Titans may not join another squadron. However, should a Titan with a twinned machine spirit roll the Machine Spirit symbol on the Reactor dice, both it and its paried Titan must make a Command check to see if their Titan&apos;s machine spirit awakens.  Note that multiple pairs of Titans in a Legio Vulcanum Battlegroup may be equipped to have twinned machine spirits, each forming their onw swuadron of two. A Titan with this upgrade cannot otherwise be part of a Squadron</description>
+          <description>Any two Legio Vulcanum Titans may upgraded with twinned machine spirits for +20 points each.  Legio Vulcanum Titans with twinned machine spirits count as being part of a squadron with each other (see page 45 of the Adeptus Titanicus rulebook) – these Titans may not join another squadron. However, should a Titan with a twinned machine spirit roll the Machine Spirit symbol on the Reactor dice, both it and its paired Titan must make a Command check to see if their Titan&apos;s machine spirit awakens.  Note that multiple pairs of Titans in a Legio Vulcanum Battlegroup may be equipped to have twinned machine spirits, each forming their own squadron of two. A Titan with this upgrade cannot otherwise be part of a Squadron</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -23280,9 +23292,19 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
     <selectionEntry id="2dc5-e9bf-6f6e-39a5" name="Princeps Seniores" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="notInstanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb67-1918-d9b1-b946" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="2337-45e1-87e4-f282" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb67-1918-d9b1-b946" repeats="1" roundUp="false"/>
+          </repeats>
         </modifier>
       </modifiers>
       <constraints>
@@ -27586,6 +27608,605 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="fb67-1918-d9b1-b946" name="Warbreaker Titan" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8f86-7fe9-d8cd-8281" name="Warbreaker Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">3&quot;/5&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">2+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/2</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">7</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">15</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="89cd-6d64-a99c-08e1" name="Super Auxilary Titan" hidden="false" targetId="ad84-6505-4533-aa63" type="rule"/>
+        <infoLink id="5e28-f61a-a5b5-36b0" name="Grandmaster" hidden="false" targetId="f5de-a455-805f-b6bd" type="rule"/>
+        <infoLink id="bfc6-fdd6-7514-9ef7" name="Inexorable" hidden="false" targetId="f467-724a-558c-c10d" type="rule"/>
+        <infoLink id="c84e-11fb-5192-c107" name="Independent Fire" hidden="false" targetId="34ec-48a0-32ee-5be8" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2164-760b-764e-76ee" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
+        <categoryLink id="4d95-f218-b5ff-97ef" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3e0b-1f4e-50dc-144b" name="Weapons" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="939b-e2de-527b-325c" name="Primary Forward Turrets" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="4b1d-1cdb-b244-3c4f" name="Turbo Laster Battery" hidden="false" collective="false" import="true" targetId="49fe-7262-05d3-fae5" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="bbb1-68c0-aa51-3e77" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ca-8cb2-617d-b4ac" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbb1-68c0-aa51-3e77" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="b0ab-4363-ab46-bad1" name="Primary Carapace Turret" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="390a-0436-7cfe-0298" name="Fissure Bombards" hidden="false" collective="false" import="true" targetId="8688-9aca-db83-1113" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="3476-c1d4-9293-dda3" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba58-a911-5d59-b3c7" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3476-c1d4-9293-dda3" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="d914-5a94-1fed-6849" name="Arms" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="a127-78bd-fd74-223c" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5554-c561-0056-217a" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a127-78bd-fd74-223c" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="9d2c-0864-d9a1-afca" name="Plasma Eclipse Battery" hidden="false" collective="false" import="true" targetId="6100-1e75-3503-69a2" type="selectionEntry"/>
+                <entryLink id="b710-1120-86c9-6f2f" name="Magma Lance" hidden="false" collective="false" import="true" targetId="4e71-eb85-69c2-5484" type="selectionEntry"/>
+                <entryLink id="5b73-88a7-16ed-bcdc" name="Radial Missile Array" hidden="false" collective="false" import="true" targetId="5d0f-8510-c720-7c25" type="selectionEntry"/>
+                <entryLink id="625b-d0b7-7866-cf59" name="Aftershock Warheads" hidden="false" collective="false" import="true" targetId="b998-2e3a-0eac-371a" type="selectionEntry"/>
+                <entryLink id="188c-2d35-098e-d4c6" name="Void Cascade Warheads" hidden="false" collective="false" import="true" targetId="634c-a92c-31ae-1bfb" type="selectionEntry"/>
+                <entryLink id="b8d7-47ee-1c07-db21" name="Leviathan Laser Annhilator" hidden="false" collective="false" import="true" targetId="540e-8898-3b76-68e9" type="selectionEntry"/>
+                <entryLink id="80b4-2056-db33-b50d" name="Warp Storm Warheads" hidden="false" collective="false" import="true" targetId="0b43-142f-9f0a-b7ca" type="selectionEntry"/>
+                <entryLink id="3072-4099-893b-c50a" name="The Silence Singularity Warheads" hidden="false" collective="false" import="true" targetId="a83f-06cd-e095-972f" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="fbac-44e9-5d8f-213c" name="Forward Side Turret" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="571f-0d1a-ca0d-b020" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="571f-0d1a-ca0d-b020" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa0e-54c6-c0e6-f557" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="4e9e-b02f-41be-bcf3" name="Apocalypse Missile Array [WB]" hidden="false" collective="false" import="true" targetId="c6f7-4a23-e22f-7b56" type="selectionEntry"/>
+                <entryLink id="dabe-c877-69fd-1c9f" name="Eruption Lance" hidden="false" collective="false" import="true" targetId="324e-03cc-a25d-6dea" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5b86-7dd5-3af8-7ad1" name="Rear Side Turret" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="d522-edd1-13bd-61f0" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d522-edd1-13bd-61f0" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6947-eba8-1f5f-70ce" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="2f9b-7c1e-858a-9010" name="Apocalypse Missile Array [WB]" hidden="false" collective="false" import="true" targetId="c6f7-4a23-e22f-7b56" type="selectionEntry"/>
+                <entryLink id="f278-37ed-fd67-1607" name="Eruption Lance" hidden="false" collective="false" import="true" targetId="324e-03cc-a25d-6dea" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="75dd-649c-0849-41cf" name="Ardex Defensor Cannon (WB)" hidden="false" collective="false" import="true" targetId="9986-ede0-3cdc-856a" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c094-8979-8da9-8c77" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f719-7369-e535-6d08" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32db-cf23-7398-9483" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="61b8-b4d7-e6c0-e282" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink id="d93f-0f7f-5952-aad5" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb8f-55c9-9407-d95c" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20b6-554d-a677-7da4" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4aa9-b88b-020d-75fa" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f569-025e-3f2b-4bd5" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7b4c-a424-ae47-977f" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="3336-ee9c-737b-b7fe" name="Legio Specific Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink id="d3be-7349-f502-f39c" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink id="373f-fc69-0a18-5e9f" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink id="11ee-3fbc-6ae1-3545" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink id="4aff-d4f6-9ab7-f2e8" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="f9b4-17e8-aa62-d379" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="6d26-48d2-7401-0be8" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="1500.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b2f9-459e-7b84-812e" name="Warbreaker War Horn" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="9d8a-84d9-6ced-549a" name="Warbreaker War Horn" hidden="false">
+          <description>Activate in the Strategy Phase. The sight and sound of a Warbreaker fills even the most experienced Prineps with fear. For the remainder of the round enemy units suffer -2 to all command checks if they are within 15&quot; of the Warbreaker. Flip this card over after use.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0591-acc6-e6bd-d539" name="Ancillary Reactor System" hidden="false" targetId="3b8b-38d1-147a-f99d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9986-ede0-3cdc-856a" name="Ardex Defensor Cannon [WB]" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c4c-8c27-0b36-45ea" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f38f-337b-68a4-8a2e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5e17-3114-eaf6-2ecf" name="Ardex Defensor Cannon" hidden="false">
+          <description>When the Titan is activated in the Combat phase, each enemy unit that is within its Front or Rear arc, and within 6&quot;, suffers 3xD3 Strength 5 hits.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c6f7-4a23-e22f-7b56" name="Apocalypse Missile Array [WB]" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3d16-65f5-6351-3038" name="Apocalypse Missile Array" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">5</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"> Carapace, Barrage</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1870-a074-3000-8ea3" name="New CategoryLink" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="fff6-584e-f865-dc03" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="2062-74c9-bf3d-bc8e" name="JanusQualifier" hidden="false" targetId="06ab-258d-46aa-3b1f" primary="false"/>
+        <categoryLink id="1799-4d5d-5c46-7480" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="b37d-a698-f760-4e18" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="360a-a5a1-5225-9066" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="324e-03cc-a25d-6dea" name="Eruption Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3bb5-0a8c-48f7-68f1" name="Eruption Lance" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">60&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"> Carapace, Blast, Fusion (Draining)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1f3e-4b51-1fc8-191e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="6111-825e-5274-1196" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="fde1-12de-6705-3030" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
+        <categoryLink id="2ba9-37a0-462c-1d45" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="473b-8c61-f32e-d901" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c647-ca77-cada-e9fc" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6100-1e75-3503-69a2" name="Plasma Eclipse Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="bc0b-9782-bc32-06b2" name="Plasma Eclipse Battery" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2*/4</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">13</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">30&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion (Draining), Blast (Draining), Maximal Fire</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b24a-ede7-0872-e332" name="New CategoryLink" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="2c6d-2499-de05-5ddc" name="New CategoryLink" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
+        <categoryLink id="23e5-7b50-4a6a-2f66" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="5ecd-87a0-c219-feff" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="5d50-6c14-8a46-3be3" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="7e3e-77cc-51a3-bd97" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dc00-cd85-05d9-f519" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e71-eb85-69c2-5484" name="Magma Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="fd7a-f4d9-fd58-75b8" name="Magma Lance" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">12</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Draining (2 dice)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="93be-f083-82bb-a894" name="New CategoryLink" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="dff7-4b51-d8b5-8cc9" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="8d4d-365e-1887-d3b8" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="8ddf-21d4-57cd-ad1c" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="aaab-d2e1-105d-760c" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a26c-f0ed-5dc4-e3d1" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5d0f-8510-c720-7c25" name="Radial Missile Array" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d72d-7c33-807d-0f82" name="Radial Missile Array" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">12</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">4</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Rapid, Limited</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f385-e524-3f9c-e063" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="b35d-8066-a7ec-b793" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="a676-6ae2-7e92-ba79" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="6920-94e0-fd7a-2e8c" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="e6e0-92a9-fc48-b472" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
+        <categoryLink id="062d-8296-389a-3d8c" name="Limited" hidden="false" targetId="4f0a-1f44-e3b2-5d17" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e1aa-9cac-9de3-9596" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b998-2e3a-0eac-371a" name="Aftershock Warheads" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1048-3767-ddec-7f16" name="Aftershock Warheads" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">7</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">4</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Limited, Barrage, Blast, Quake, Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8c30-0a8b-e4f2-566c" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="0a00-cfe9-79e5-6f6a" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="421f-fa29-9981-bb83" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="1984-4f12-5139-0055" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="f4b1-05a1-bd2e-00fa" name="Limited" hidden="false" targetId="4f0a-1f44-e3b2-5d17" primary="false"/>
+        <categoryLink id="80a2-4ec2-b596-a7a9" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="e5c9-b9d3-1ff8-23fd" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
+        <categoryLink id="9841-0309-a347-bbee" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f873-56b2-ac8c-4677" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="634c-a92c-31ae-1bfb" name="Void Cascade Warheads" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8db1-3e43-5043-ac5b" name="Void Cascade Warheads" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">8</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">2</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">4</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Limited, Barrage, Rapid, Void Breaker (2)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8d01-b0b2-0ae2-9e16" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="e2a2-77b7-8ce6-10c2" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="9f7c-9484-62c0-4e20" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="b277-80c8-7e9d-47c4" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
+        <categoryLink id="4cd6-6935-c7f0-5ca9" name="Limited" hidden="false" targetId="4f0a-1f44-e3b2-5d17" primary="false"/>
+        <categoryLink id="c1c8-5b10-10a5-5034" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+        <categoryLink id="a561-ac96-d396-c68f" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8f15-f1e4-6dfa-61f8" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="540e-8898-3b76-68e9" name="Leviathan Laser Annhilator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4227-968b-441b-49c9" name="Leviathan Laser Annhilator" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">5</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">11</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">18&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">36&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Shieldbane (Draining), Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2e6b-5a53-9e5d-a9b9" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="8ef8-3908-3c6a-a02f" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="ff6b-ba18-e4e1-4b4f" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="5b86-5405-703a-e306" name="Shieldbane" hidden="false" targetId="87c1-d39e-fbdf-1ae7" primary="false"/>
+        <categoryLink id="b31a-fa4b-3228-4a9f" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0d9b-d8da-222e-3926" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0b43-142f-9f0a-b7ca" name="Warp Storm Warheads" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="73a3-d29b-c0d6-0264" name="Warp Storm Warheads" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">X</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">X</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">4</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Limited, Bypass, Warp, Concussive</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c062-c30d-cde5-4bfe" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="5bf2-3040-f9db-7bca" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="34bc-4e27-e1fa-1bb1" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="fb2d-076a-c44f-bca9" name="Limited" hidden="false" targetId="4f0a-1f44-e3b2-5d17" primary="false"/>
+        <categoryLink id="7d5b-2f23-be30-8c1c" name="Bypass" hidden="false" targetId="719c-7b89-a08d-4acc" primary="false"/>
+        <categoryLink id="97a8-e8dc-8dad-b061" name="Warp" hidden="false" targetId="7130-bbeb-02e3-de28" primary="false"/>
+        <categoryLink id="ee62-560e-d948-b3aa" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b484-1b3f-c38e-4d43" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a83f-06cd-e095-972f" name="The Silence Singularity Warheads" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2832-3522-ccef-7c8b" name="The Silence Singularity Warheads" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">X</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">X</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">1</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Limited, Bypass, Vortex, Blast</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1710-5f87-397e-bc52" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="16f9-9c10-8d34-30bc" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="a8e1-3432-489c-fd9e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="e311-8312-10d0-43f6" name="Limited" hidden="false" targetId="4f0a-1f44-e3b2-5d17" primary="false"/>
+        <categoryLink id="df96-f0b8-2b33-0c43" name="Bypass" hidden="false" targetId="719c-7b89-a08d-4acc" primary="false"/>
+        <categoryLink id="4030-24a0-c8ad-5ad8" name="Vortex" hidden="false" targetId="3ac7-c1bd-98ce-fdb8" primary="false"/>
+        <categoryLink id="3846-0b2f-08b8-547a" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0423-290e-4671-47d8" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8688-9aca-db83-1113" name="Fissure Bombards" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="24e9-4219-e811-8f19" name="Fissure Bombards" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">12</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">24&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">36&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Blast, Mortar, Barrage, Concussive, Quake</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e5d5-ac76-568b-0fca" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="51db-6a12-586b-957c" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="7122-c8fc-5d30-db42" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
+        <categoryLink id="553e-1dd6-2089-367a" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="832d-7857-b70e-e85c" name="Mortar" hidden="false" targetId="1666-7d5c-32bf-7517" primary="false"/>
+        <categoryLink id="c731-acc6-ccdb-b63d" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="ac15-eace-0a61-731f" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
+        <categoryLink id="8662-eade-b219-74fa" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7de4-556f-5212-a7e0" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="49fe-7262-05d3-fae5" name="Turbo Laster Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="97c0-23e8-d0d1-1d93" name="Turbo Laster Battery" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">16&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">32&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Paired, Shieldbane (Draining)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8f74-ec04-1ff3-952b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="5122-a629-ae4f-e8d4" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="095c-3799-44de-2eb6" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
+        <categoryLink id="7783-a96c-0802-5f05" name="Paired" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false"/>
+        <categoryLink id="f960-0bc6-fe5f-51ab" name="Shieldbane" hidden="false" targetId="87c1-d39e-fbdf-1ae7" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1f45-eadb-e7db-85e8" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -28389,6 +29010,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb67-1918-d9b1-b946" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -28799,6 +29421,20 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
         <entryLink id="fc4c-01c8-6889-f1c3" name="Dedicated Void Shunts" hidden="false" collective="false" import="true" targetId="59ac-39c7-b7b9-ecb6" type="selectionEntry"/>
         <entryLink id="e3bb-5f52-88ce-a3ed" name="Infusive Supercoolant" hidden="false" collective="false" import="true" targetId="9850-b19f-11e0-2b54" type="selectionEntry"/>
         <entryLink id="9b3b-9bbb-845d-f383" name="Plasmatic Locomotors" hidden="false" collective="false" import="true" targetId="d152-f92c-fa32-dcfd" type="selectionEntry"/>
+        <entryLink id="d29d-751f-0caa-fe32" name="Warbreaker War Horn" hidden="false" collective="false" import="true" targetId="b2f9-459e-7b84-812e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="aa6b-a665-b907-234e" name="Personal Trait" publicationId="975a-00f4-pubN65537" page="55" hidden="true" collective="false" import="true">
@@ -28821,18 +29457,11 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -28880,18 +29509,11 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02ce-a62d-4e4b-d7cc" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02ce-a62d-4e4b-d7cc" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02ce-a62d-4e4b-d7cc" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -28939,18 +29561,11 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d02-6c17-cd84-a92f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d02-6c17-cd84-a92f" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d02-6c17-cd84-a92f" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29000,18 +29615,11 @@ to its Body, bypassing void shields</description>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3d0-92f8-3bf7-4799" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3d0-92f8-3bf7-4799" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3d0-92f8-3bf7-4799" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29060,18 +29668,11 @@ to its Body, bypassing void shields</description>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbd6-65fd-6354-a154" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbd6-65fd-6354-a154" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbd6-65fd-6354-a154" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29119,18 +29720,11 @@ to its Body, bypassing void shields</description>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63e1-fca8-5023-12d6" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63e1-fca8-5023-12d6" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63e1-fca8-5023-12d6" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29178,18 +29772,11 @@ to its Body, bypassing void shields</description>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf14-af1e-5d72-7c8b" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf14-af1e-5d72-7c8b" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf14-af1e-5d72-7c8b" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29238,18 +29825,11 @@ Note, Shutdown orders and other effects that change a Titan’s current Order ar
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="14a9-163a-83aa-7520" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="14a9-163a-83aa-7520" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="14a9-163a-83aa-7520" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29319,18 +29899,11 @@ when making Repair actions. </comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29400,18 +29973,11 @@ lower, increase the Strength of any hits by 2. </comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a92-f760-bf0e-ce26" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a92-f760-bf0e-ce26" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a92-f760-bf0e-ce26" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29460,18 +30026,11 @@ lower, increase the Strength of any hits by 2. </comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7093-f8b3-b5f9-d38d" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7093-f8b3-b5f9-d38d" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7093-f8b3-b5f9-d38d" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29519,18 +30078,11 @@ lower, increase the Strength of any hits by 2. </comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd39-c2b7-a515-da8a" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd39-c2b7-a515-da8a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd39-c2b7-a515-da8a" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29578,18 +30130,11 @@ lower, increase the Strength of any hits by 2. </comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a11-763b-6a82-bc29" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a11-763b-6a82-bc29" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a11-763b-6a82-bc29" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29637,18 +30182,11 @@ lower, increase the Strength of any hits by 2. </comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2acb-2c7d-5ba6-77ff" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2acb-2c7d-5ba6-77ff" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2acb-2c7d-5ba6-77ff" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29697,18 +30235,11 @@ phase or Combat phase of that round as normal.</description>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d2d-07be-eb8c-6cce" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d2d-07be-eb8c-6cce" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d2d-07be-eb8c-6cce" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29756,18 +30287,11 @@ phase or Combat phase of that round as normal.</description>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="621d-d3d2-41c9-5052" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="621d-d3d2-41c9-5052" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="621d-d3d2-41c9-5052" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29815,18 +30339,11 @@ phase or Combat phase of that round as normal.</description>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dddd-cc44-e662-51a6" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dddd-cc44-e662-51a6" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dddd-cc44-e662-51a6" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29877,18 +30394,11 @@ After resolving all the effects of the attack that caused the Critical Damage, t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fb5-613c-cbb2-90df" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fb5-613c-cbb2-90df" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fb5-613c-cbb2-90df" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29936,18 +30446,11 @@ After resolving all the effects of the attack that caused the Critical Damage, t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6da-1530-1bdd-276a" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6da-1530-1bdd-276a" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6da-1530-1bdd-276a" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -29995,18 +30498,11 @@ After resolving all the effects of the attack that caused the Critical Damage, t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dee5-885d-fc38-08ce" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dee5-885d-fc38-08ce" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dee5-885d-fc38-08ce" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30055,18 +30551,11 @@ After resolving all the effects of the attack that caused the Critical Damage, t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f808-ec75-4a31-8a29" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f808-ec75-4a31-8a29" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f808-ec75-4a31-8a29" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30116,18 +30605,11 @@ After resolving all the effects of the attack that caused the Critical Damage, t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd79-8c5d-3949-d89d" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd79-8c5d-3949-d89d" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd79-8c5d-3949-d89d" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30175,18 +30657,11 @@ After resolving all the effects of the attack that caused the Critical Damage, t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9a0-229e-7cfb-4def" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9a0-229e-7cfb-4def" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9a0-229e-7cfb-4def" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30234,18 +30709,11 @@ After resolving all the effects of the attack that caused the Critical Damage, t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0986-9b84-b734-e9c8" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0986-9b84-b734-e9c8" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0986-9b84-b734-e9c8" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30293,18 +30761,11 @@ After resolving all the effects of the attack that caused the Critical Damage, t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbc6-216c-8a22-c1b4" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbc6-216c-8a22-c1b4" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbc6-216c-8a22-c1b4" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30352,18 +30813,11 @@ After resolving all the effects of the attack that caused the Critical Damage, t
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3009-299d-5b6d-7a0e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3009-299d-5b6d-7a0e" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3009-299d-5b6d-7a0e" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30412,18 +30866,11 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30471,18 +30918,11 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="158f-4cf2-be7e-6c75" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="158f-4cf2-be7e-6c75" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="158f-4cf2-be7e-6c75" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30530,18 +30970,11 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="523b-21dd-9c2f-96fe" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b8d-55ad-53af-7f9d" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="523b-21dd-9c2f-96fe" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30589,18 +31022,11 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30648,18 +31074,11 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30709,18 +31128,11 @@ If the Princeps’ Titan is a Corrupted Titan, it instead rolls two dice, re-rol
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e6f-c618-89f4-d690" type="instanceOf"/>
+                    <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e6f-c618-89f4-d690" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c130-1260-4c15-147a" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e6f-c618-89f4-d690" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -30990,6 +31402,18 @@ result of a single D6.</description>
     </rule>
     <rule id="06a9-3744-bb42-ba59" name="Heavy Scout Titan" hidden="false">
       <description>Each maniple in a battlegroup may replace a single optional Warhound Titan with a Dire Wolf Titan. Legio Audax maniples may replace a single mandatory Reaver or a single optional Warhound Titan with a Dire Wolf Titan instead; this allows the fielding of Legio Audax maniples that were previously inaccessible to the Legio, such as Ferrox or Venator maniples, so long as the maniple includes no Titan of Scale 7 or more when assembled. Dire Wolf Titans count as the Warhound or Reaver they replace for the purposes of maniple rules.</description>
+    </rule>
+    <rule id="ad84-6505-4533-aa63" name="Super Auxilary Titan" hidden="false">
+      <description>A Legio Battlegroup can include a maximum of one Warbreaker as reinforcements. This is in addition to other Auxilary Titans.</description>
+    </rule>
+    <rule id="f5de-a455-805f-b6bd" name="Grandmaster" hidden="false">
+      <description>The Warbreaker will often walk with the Grandmaster of the Legio as its princeps. The Warbreaker may take its own Princeps Trait and adds +2 to Order command checks. All friendly units gain +1 to command rolls within 8&quot;.</description>
+    </rule>
+    <rule id="f467-724a-558c-c10d" name="Inexorable" hidden="false">
+      <description>The Titan never suffers movement penalties due to Difficult Terrain or Quake and never suffers involuntary movement as a result of Concussion. Impale requires 3+ units as part of a Coordinated Strike to invoke such movement.</description>
+    </rule>
+    <rule id="34ec-48a0-32ee-5be8" name="Independent Fire" hidden="false">
+      <description>Both Forward and Rear Side Turret weapons can be fired independently, without needing a Split Fire order. If a Split Fire order is given to this Titan, then all weapons become independent. All shots must be declared before rolling.</description>
     </rule>
   </sharedRules>
 </gameSystem>
