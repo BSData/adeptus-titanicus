@@ -23,6 +23,7 @@ NOTE 2: If after this you can see the Lance,but can&apos;t add any banners to it
     <publication id="3401-191e-1333-8a1d" name="Loyalist Legios"/>
     <publication id="3f10-4381-6c37-a2f9" name="Adeptus Titanicus 2018 Errata v1.2"/>
     <publication id="bf8b-27d7-039e-5df9" name="Traitor Legios" publisher=""/>
+    <publication id="1bfe-3b2b-9b73-19ed" name="Wrath &amp; Fury"/>
   </publications>
   <costTypes>
     <costType id="a731-e220-2d8a-41bf" name=" Points" defaultCostLimit="-1.0" hidden="false"/>
@@ -27608,7 +27609,8 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fb67-1918-d9b1-b946" name="Warbreaker Titan" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="fb67-1918-d9b1-b946" name="Warbreaker Titan" publicationId="1bfe-3b2b-9b73-19ed" page="49" hidden="false" collective="false" import="true" type="model">
+      <comment>v10.0</comment>
       <profiles>
         <profile id="8f86-7fe9-d8cd-8281" name="Warbreaker Titan" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
           <characteristics>
@@ -27629,8 +27631,8 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <infoLink id="c84e-11fb-5192-c107" name="Independent Fire" hidden="false" targetId="34ec-48a0-32ee-5be8" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="2164-760b-764e-76ee" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
         <categoryLink id="4d95-f218-b5ff-97ef" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="fbb3-d5ed-b7eb-c931" name="Super Auxilary Titan" hidden="false" targetId="ee51-fa29-5d5e-1134" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3e0b-1f4e-50dc-144b" name="Weapons" hidden="false" collective="false" import="true">
