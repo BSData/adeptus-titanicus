@@ -27876,7 +27876,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion (Draining), Blast (Draining), Maximal Fire</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion (Draining), *Blast 5&quot; (Draining), Maximal Fire</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
