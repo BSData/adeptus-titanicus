@@ -587,6 +587,13 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
         <infoLink id="13c1-67a6-2cba-27ba" name="Super Auxilary Titan" hidden="false" targetId="ad84-6505-4533-aa63" type="rule"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry id="1666-7d5c-32bf-7517" name="Mortar" hidden="false">
+      <rules>
+        <rule id="7c73-ebfc-c1c0-7be9" name="Mortar" hidden="false">
+          <description>Weapons with this rule can fire at targets within the Titans scale with the carapace rule.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" name=" " hidden="true">
@@ -27626,7 +27633,29 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
           <selectionEntryGroups>
             <selectionEntryGroup id="939b-e2de-527b-325c" name="Primary Forward Turrets" hidden="false" collective="false" import="true"/>
             <selectionEntryGroup id="b0ab-4363-ab46-bad1" name="Primary Carapace Turret" hidden="false" collective="false" import="true"/>
-            <selectionEntryGroup id="d914-5a94-1fed-6849" name="Arms" hidden="false" collective="false" import="true"/>
+            <selectionEntryGroup id="d914-5a94-1fed-6849" name="Arms" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="a127-78bd-fd74-223c" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5554-c561-0056-217a" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a127-78bd-fd74-223c" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="9d2c-0864-d9a1-afca" name="Plasma Eclipse Battery" hidden="false" collective="false" import="true" targetId="6100-1e75-3503-69a2" type="selectionEntry"/>
+                <entryLink id="b710-1120-86c9-6f2f" name="Magma Lance" hidden="false" collective="false" import="true" targetId="4e71-eb85-69c2-5484" type="selectionEntry"/>
+                <entryLink id="5b73-88a7-16ed-bcdc" name="Radial Missile Array" hidden="false" collective="false" import="true" targetId="5d0f-8510-c720-7c25" type="selectionEntry"/>
+                <entryLink id="625b-d0b7-7866-cf59" name="Aftershock Warheads" hidden="false" collective="false" import="true" targetId="b998-2e3a-0eac-371a" type="selectionEntry"/>
+                <entryLink id="188c-2d35-098e-d4c6" name="Void Cascade Warheads" hidden="false" collective="false" import="true" targetId="634c-a92c-31ae-1bfb" type="selectionEntry"/>
+                <entryLink id="b8d7-47ee-1c07-db21" name="Leviathan Laser Annhilator" hidden="false" collective="false" import="true" targetId="540e-8898-3b76-68e9" type="selectionEntry"/>
+                <entryLink id="80b4-2056-db33-b50d" name="Warp Storm Warheads" hidden="false" collective="false" import="true" targetId="0b43-142f-9f0a-b7ca" type="selectionEntry"/>
+                <entryLink id="3072-4099-893b-c50a" name="The Silence Singularity Warheads" hidden="false" collective="false" import="true" targetId="a83f-06cd-e095-972f" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
             <selectionEntryGroup id="fbac-44e9-5d8f-213c" name="Forward Side Turret" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="571f-0d1a-ca0d-b020" value="0.0">
@@ -27739,7 +27768,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">5</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
@@ -27761,8 +27790,8 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <entryLink id="360a-a5a1-5225-9066" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="324e-03cc-a25d-6dea" name="Eruption Lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -27772,9 +27801,9 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">60&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
@@ -27794,8 +27823,283 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <entryLink id="c647-ca77-cada-e9fc" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="10.0"/>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6100-1e75-3503-69a2" name="Plasma Eclipse Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="bc0b-9782-bc32-06b2" name="Plasma Eclipse Battery" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2*/4</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">13</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">30&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion (Draining), Blast (Draining), Maximal Fire</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b24a-ede7-0872-e332" name="New CategoryLink" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="2c6d-2499-de05-5ddc" name="New CategoryLink" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
+        <categoryLink id="23e5-7b50-4a6a-2f66" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="5ecd-87a0-c219-feff" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="5d50-6c14-8a46-3be3" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="7e3e-77cc-51a3-bd97" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dc00-cd85-05d9-f519" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e71-eb85-69c2-5484" name="Magma Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="fd7a-f4d9-fd58-75b8" name="Magma Lance" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">12</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Draining (2 dice)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="93be-f083-82bb-a894" name="New CategoryLink" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="dff7-4b51-d8b5-8cc9" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="8d4d-365e-1887-d3b8" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="8ddf-21d4-57cd-ad1c" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="aaab-d2e1-105d-760c" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a26c-f0ed-5dc4-e3d1" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5d0f-8510-c720-7c25" name="Radial Missile Array" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d72d-7c33-807d-0f82" name="Radial Missile Array" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">12</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">4</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Rapid, Limited</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f385-e524-3f9c-e063" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="b35d-8066-a7ec-b793" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="a676-6ae2-7e92-ba79" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="6920-94e0-fd7a-2e8c" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="e6e0-92a9-fc48-b472" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
+        <categoryLink id="062d-8296-389a-3d8c" name="Limited" hidden="false" targetId="4f0a-1f44-e3b2-5d17" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e1aa-9cac-9de3-9596" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b998-2e3a-0eac-371a" name="Aftershock Warheads" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1048-3767-ddec-7f16" name="Aftershock Warheads" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">7</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">4</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Limited, Barrage, Blast, Quake, Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8c30-0a8b-e4f2-566c" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="0a00-cfe9-79e5-6f6a" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="421f-fa29-9981-bb83" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="1984-4f12-5139-0055" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="f4b1-05a1-bd2e-00fa" name="Limited" hidden="false" targetId="4f0a-1f44-e3b2-5d17" primary="false"/>
+        <categoryLink id="80a2-4ec2-b596-a7a9" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="e5c9-b9d3-1ff8-23fd" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
+        <categoryLink id="9841-0309-a347-bbee" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f873-56b2-ac8c-4677" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="634c-a92c-31ae-1bfb" name="Void Cascade Warheads" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8db1-3e43-5043-ac5b" name="Void Cascade Warheads" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">8</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">2</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">4</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Limited, Barrage, Rapid, Void Breaker (2)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8d01-b0b2-0ae2-9e16" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="e2a2-77b7-8ce6-10c2" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="9f7c-9484-62c0-4e20" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="b277-80c8-7e9d-47c4" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
+        <categoryLink id="4cd6-6935-c7f0-5ca9" name="Limited" hidden="false" targetId="4f0a-1f44-e3b2-5d17" primary="false"/>
+        <categoryLink id="c1c8-5b10-10a5-5034" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+        <categoryLink id="a561-ac96-d396-c68f" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8f15-f1e4-6dfa-61f8" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="540e-8898-3b76-68e9" name="Leviathan Laser Annhilator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4227-968b-441b-49c9" name="Leviathan Laser Annhilator" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">5</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">11</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">18&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">36&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Shieldbane (Draining), Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2e6b-5a53-9e5d-a9b9" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="8ef8-3908-3c6a-a02f" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="ff6b-ba18-e4e1-4b4f" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="5b86-5405-703a-e306" name="Shieldbane" hidden="false" targetId="87c1-d39e-fbdf-1ae7" primary="false"/>
+        <categoryLink id="b31a-fa4b-3228-4a9f" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0d9b-d8da-222e-3926" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0b43-142f-9f0a-b7ca" name="Warp Storm Warheads" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="73a3-d29b-c0d6-0264" name="Warp Storm Warheads" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">X</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">X</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">4</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Limited, Bypass, Warp, Concussive</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c062-c30d-cde5-4bfe" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="5bf2-3040-f9db-7bca" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="34bc-4e27-e1fa-1bb1" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="fb2d-076a-c44f-bca9" name="Limited" hidden="false" targetId="4f0a-1f44-e3b2-5d17" primary="false"/>
+        <categoryLink id="7d5b-2f23-be30-8c1c" name="Bypass" hidden="false" targetId="719c-7b89-a08d-4acc" primary="false"/>
+        <categoryLink id="97a8-e8dc-8dad-b061" name="Warp" hidden="false" targetId="7130-bbeb-02e3-de28" primary="false"/>
+        <categoryLink id="ee62-560e-d948-b3aa" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b484-1b3f-c38e-4d43" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a83f-06cd-e095-972f" name="The Silence Singularity Warheads" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2832-3522-ccef-7c8b" name="The Silence Singularity Warheads" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">X</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">X</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">1</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Limited, Bypass, Vortex, Blast</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1710-5f87-397e-bc52" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="16f9-9c10-8d34-30bc" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
+        <categoryLink id="a8e1-3432-489c-fd9e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+        <categoryLink id="e311-8312-10d0-43f6" name="Limited" hidden="false" targetId="4f0a-1f44-e3b2-5d17" primary="false"/>
+        <categoryLink id="df96-f0b8-2b33-0c43" name="Bypass" hidden="false" targetId="719c-7b89-a08d-4acc" primary="false"/>
+        <categoryLink id="4030-24a0-c8ad-5ad8" name="Vortex" hidden="false" targetId="3ac7-c1bd-98ce-fdb8" primary="false"/>
+        <categoryLink id="3846-0b2f-08b8-547a" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0423-290e-4671-47d8" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
