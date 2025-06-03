@@ -28177,11 +28177,11 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">16&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">32&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Paired, Shieldbane (Draining)</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
