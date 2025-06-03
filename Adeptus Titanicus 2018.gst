@@ -588,9 +588,9 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
         <infoLink id="13c1-67a6-2cba-27ba" name="Super Auxilary Titan" hidden="false" targetId="ad84-6505-4533-aa63" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="1666-7d5c-32bf-7517" name="Mortar" hidden="false">
+    <categoryEntry id="1666-7d5c-32bf-7517" name="Mortar" publicationId="1bfe-3b2b-9b73-19ed" page="53" hidden="false">
       <rules>
-        <rule id="7c73-ebfc-c1c0-7be9" name="Mortar" hidden="false">
+        <rule id="7c73-ebfc-c1c0-7be9" name="Mortar" publicationId="1bfe-3b2b-9b73-19ed" page="53" hidden="false">
           <description>Weapons with this rule can fire at targets within the Titans scale with the carapace rule.</description>
         </rule>
       </rules>
@@ -27625,10 +27625,10 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="89cd-6d64-a99c-08e1" name="Super Auxilary Titan" hidden="false" targetId="ad84-6505-4533-aa63" type="rule"/>
-        <infoLink id="5e28-f61a-a5b5-36b0" name="Grandmaster" hidden="false" targetId="f5de-a455-805f-b6bd" type="rule"/>
-        <infoLink id="bfc6-fdd6-7514-9ef7" name="Inexorable" hidden="false" targetId="f467-724a-558c-c10d" type="rule"/>
-        <infoLink id="c84e-11fb-5192-c107" name="Independent Fire" hidden="false" targetId="34ec-48a0-32ee-5be8" type="rule"/>
+        <infoLink id="89cd-6d64-a99c-08e1" name="Super Auxilary Titan" publicationId="1bfe-3b2b-9b73-19ed" page="53" hidden="false" targetId="ad84-6505-4533-aa63" type="rule"/>
+        <infoLink id="5e28-f61a-a5b5-36b0" name="Grandmaster" publicationId="1bfe-3b2b-9b73-19ed" page="53" hidden="false" targetId="f5de-a455-805f-b6bd" type="rule"/>
+        <infoLink id="bfc6-fdd6-7514-9ef7" name="Inexorable" publicationId="1bfe-3b2b-9b73-19ed" page="53" hidden="false" targetId="f467-724a-558c-c10d" type="rule"/>
+        <infoLink id="c84e-11fb-5192-c107" name="Independent Fire" publicationId="1bfe-3b2b-9b73-19ed" page="53" hidden="false" targetId="34ec-48a0-32ee-5be8" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4d95-f218-b5ff-97ef" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
@@ -27770,9 +27770,9 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="1500.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b2f9-459e-7b84-812e" name="Warbreaker War Horn" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b2f9-459e-7b84-812e" name="Warbreaker War Horn" publicationId="1bfe-3b2b-9b73-19ed" page="56" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
-        <rule id="9d8a-84d9-6ced-549a" name="Warbreaker War Horn" hidden="false">
+        <rule id="9d8a-84d9-6ced-549a" name="Warbreaker War Horn" publicationId="1bfe-3b2b-9b73-19ed" page="56" hidden="false">
           <description>Activate in the Strategy Phase. The sight and sound of a Warbreaker fills even the most experienced Prineps with fear. For the remainder of the round enemy units suffer -2 to all command checks if they are within 15&quot; of the Warbreaker. Flip this card over after use.</description>
         </rule>
       </rules>
@@ -27790,7 +27790,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f38f-337b-68a4-8a2e" type="max"/>
       </constraints>
       <rules>
-        <rule id="5e17-3114-eaf6-2ecf" name="Ardex Defensor Cannon" hidden="false">
+        <rule id="5e17-3114-eaf6-2ecf" name="Ardex Defensor Cannon" publicationId="1bfe-3b2b-9b73-19ed" page="53" hidden="false">
           <description>When the Titan is activated in the Combat phase, each enemy unit that is within its Front or Rear arc, and within 6&quot;, suffers 3xD3 Strength 5 hits.</description>
         </rule>
       </rules>
@@ -31443,16 +31443,16 @@ immediately push their reactor to make an attack with one of its weapons.</descr
     <rule id="06a9-3744-bb42-ba59" name="Heavy Scout Titan" hidden="false">
       <description>Each maniple in a battlegroup may replace a single optional Warhound Titan with a Dire Wolf Titan. Legio Audax maniples may replace a single mandatory Reaver or a single optional Warhound Titan with a Dire Wolf Titan instead; this allows the fielding of Legio Audax maniples that were previously inaccessible to the Legio, such as Ferrox or Venator maniples, so long as the maniple includes no Titan of Scale 7 or more when assembled. Dire Wolf Titans count as the Warhound or Reaver they replace for the purposes of maniple rules.</description>
     </rule>
-    <rule id="ad84-6505-4533-aa63" name="Super Auxilary Titan" hidden="false">
+    <rule id="ad84-6505-4533-aa63" name="Super Auxilary Titan" publicationId="1bfe-3b2b-9b73-19ed" page="53" hidden="false">
       <description>A Legio Battlegroup can include a maximum of one Warbreaker as reinforcements. This is in addition to other Auxilary Titans.</description>
     </rule>
-    <rule id="f5de-a455-805f-b6bd" name="Grandmaster" hidden="false">
+    <rule id="f5de-a455-805f-b6bd" name="Grandmaster" publicationId="1bfe-3b2b-9b73-19ed" page="53" hidden="false">
       <description>The Warbreaker will often walk with the Grandmaster of the Legio as its princeps. The Warbreaker may take its own Princeps Trait and adds +2 to Order command checks. All friendly units gain +1 to command rolls within 8&quot;.</description>
     </rule>
-    <rule id="f467-724a-558c-c10d" name="Inexorable" hidden="false">
+    <rule id="f467-724a-558c-c10d" name="Inexorable" publicationId="1bfe-3b2b-9b73-19ed" page="53" hidden="false">
       <description>The Titan never suffers movement penalties due to Difficult Terrain or Quake and never suffers involuntary movement as a result of Concussion. Impale requires 3+ units as part of a Coordinated Strike to invoke such movement.</description>
     </rule>
-    <rule id="34ec-48a0-32ee-5be8" name="Independent Fire" hidden="false">
+    <rule id="34ec-48a0-32ee-5be8" name="Independent Fire" publicationId="1bfe-3b2b-9b73-19ed" page="53" hidden="false">
       <description>Both Forward and Rear Side Turret weapons can be fired independently, without needing a Split Fire order. If a Split Fire order is given to this Titan, then all weapons become independent. All shots must be declared before rolling.</description>
     </rule>
   </sharedRules>
