@@ -28176,9 +28176,9 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="49fe-7262-05d3-fae5" name="Turbo Laster Battery" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="49fe-7262-05d3-fae5" name="Turbo Laser Battery" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="97c0-23e8-d0d1-1d93" name="Turbo Laster Battery" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="97c0-23e8-d0d1-1d93" name="Turbo Laser Battery" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
