@@ -27631,8 +27631,40 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <selectionEntryGroups>
         <selectionEntryGroup id="3e0b-1f4e-50dc-144b" name="Weapons" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
-            <selectionEntryGroup id="939b-e2de-527b-325c" name="Primary Forward Turrets" hidden="false" collective="false" import="true"/>
-            <selectionEntryGroup id="b0ab-4363-ab46-bad1" name="Primary Carapace Turret" hidden="false" collective="false" import="true"/>
+            <selectionEntryGroup id="939b-e2de-527b-325c" name="Primary Forward Turrets" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="4b1d-1cdb-b244-3c4f" name="Turbo Laster Battery" hidden="false" collective="false" import="true" targetId="49fe-7262-05d3-fae5" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="bbb1-68c0-aa51-3e77" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ca-8cb2-617d-b4ac" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbb1-68c0-aa51-3e77" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="b0ab-4363-ab46-bad1" name="Primary Carapace Turret" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="390a-0436-7cfe-0298" name="Fissure Bombards" hidden="false" collective="false" import="true" targetId="8688-9aca-db83-1113" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="3476-c1d4-9293-dda3" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba58-a911-5d59-b3c7" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3476-c1d4-9293-dda3" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
             <selectionEntryGroup id="d914-5a94-1fed-6849" name="Arms" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="a127-78bd-fd74-223c" value="0.0">
@@ -27905,7 +27937,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">4</characteristic>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Rapid, Limited</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
@@ -28006,12 +28038,12 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">5</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">11</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">18&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">36&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"></characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"></characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Shieldbane (Draining), Rending</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
@@ -28043,7 +28075,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">X</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">4</characteristic>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Limited, Bypass, Warp, Concussive</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
@@ -28096,6 +28128,75 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       </categoryLinks>
       <entryLinks>
         <entryLink id="0423-290e-4671-47d8" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8688-9aca-db83-1113" name="Fissure Bombards" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="24e9-4219-e811-8f19" name="Fissure Bombards" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">12</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">24&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">36&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Blast, Mortar, Barrage, Concussive, Quake</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e5d5-ac76-568b-0fca" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="51db-6a12-586b-957c" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="7122-c8fc-5d30-db42" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
+        <categoryLink id="553e-1dd6-2089-367a" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
+        <categoryLink id="832d-7857-b70e-e85c" name="Mortar" hidden="false" targetId="1666-7d5c-32bf-7517" primary="false"/>
+        <categoryLink id="c731-acc6-ccdb-b63d" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
+        <categoryLink id="ac15-eace-0a61-731f" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
+        <categoryLink id="8662-eade-b219-74fa" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7de4-556f-5212-a7e0" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="49fe-7262-05d3-fae5" name="Turbo Laster Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="97c0-23e8-d0d1-1d93" name="Turbo Laster Battery" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">4</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">16&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"></characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">32&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"></characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Paired, Shieldbane (Draining)</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8f74-ec04-1ff3-952b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
+        <categoryLink id="5122-a629-ae4f-e8d4" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
+        <categoryLink id="095c-3799-44de-2eb6" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
+        <categoryLink id="7783-a96c-0802-5f05" name="Paired" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false"/>
+        <categoryLink id="f960-0bc6-fe5f-51ab" name="Shieldbane" hidden="false" targetId="87c1-d39e-fbdf-1ae7" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1f45-eadb-e7db-85e8" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
