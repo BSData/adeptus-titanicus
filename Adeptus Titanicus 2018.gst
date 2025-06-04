@@ -23302,15 +23302,9 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" field="2337-45e1-87e4-f282" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb67-1918-d9b1-b946" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52f0-7a81-15a5-b780" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2337-45e1-87e4-f282" type="max"/>
       </constraints>
       <rules>
         <rule id="69df-cbc9-f278-290d" name="Princeps Seniores" publicationId="975a-00f4-pubN65537" page="55" hidden="false">
