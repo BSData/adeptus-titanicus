@@ -22727,9 +22727,9 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fdb3-1081-0f93-7b0c" name="Sinistraamanus Tenebrae" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="fdb3-1081-0f93-7b0c" name="Sinistramanus Tenebrae" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
-        <profile id="ccf8-e211-f916-44f9" name="Sinistraamanus Tenebrae" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+        <profile id="ccf8-e211-f916-44f9" name="Sinistramanus Tenebrae" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
