@@ -356,7 +356,7 @@ Attacks made by Impale weapons bypass void shields.</description>
     <categoryEntry id="d3e0-093e-a13d-3deb" name="Shock" hidden="false">
       <rules>
         <rule id="ba56-ef3a-5e94-2516" name="Shock" publicationId="bf8b-27d7-039e-5df9" page="167" hidden="false">
-          <description>If an attack from a Shock weapon causes a Direct, Devastating or Critical Hit on a Titan, roll a D6. On a 3+, the Titan is immediately issued a Shutdown order, replacing any order it already has. If an attack from a Shock weapon causes a Superficial Hit, then roll a D6. On a 6+, the target Titan is immediately issued a Shutdown order. Any Shutdown order received due to an atack from a Shock weapon is removed during the End phase of the round it was issued.</description>
+          <description>If an attack from a Shock weapon causes a Direct, Devastating or Critical Hit on a Titan, roll a D6. On a 3+, the Titan is immediately issued a Shutdown order, replacing any order it already has. If an attack from a Shock weapon causes a Superficial Hit, then roll a D6. On a 6+, the target Titan is immediately issued a Shutdown order. Any Shutdown order received due to an attack from a Shock weapon is removed during the End phase of the round it was issued.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -552,8 +552,8 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="3cd7-d638-7285-f93b" name="Serperos Construct Shields" hidden="false">
       <rules>
         <rule id="5a97-666e-1250-7f80" name="Construct Shields" hidden="false">
-          <description>Serperos Stalker Banners have an Ion Shield level of 3+, which is unchanged by weapon strength or Banner size. They have a Construct shield level of 1 times the starting numer of Stalkers in the Banner.
-Each time a Save roll is failed, decrease the Construct Shield level by 1 - you still make Armour rolls for these Hits. When a Construct Shield level is 0 or less, the Banner cannot make Ion Shield saves for teh remained of the battle.</description>
+          <description>Serperos Stalker Banners have an Ion Shield level of 3+, which is unchanged by weapon strength or Banner size. They have a Construct shield level of 1 times the starting number of Stalkers in the Banner.
+Each time a Save roll is failed, decrease the Construct Shield level by 1 - you still make Armour rolls for these Hits. When a Construct Shield level is 0 or less, the Banner cannot make Ion Shield saves for the remained of the battle.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -567,8 +567,8 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
     <categoryEntry id="d9bb-c1d0-78c7-f88e" name="Errax Scintillax Construct Shields" hidden="false">
       <rules>
         <rule id="9238-13f8-fbbb-1557" name="Construct Shields" hidden="false">
-          <description>Stalker Banners have an Ion Shield level of 4+, which is unchanged by weapon strength or Banner size. They have a Construct shield level of 1 times the starting numer of Stalkers in the Banner.
-Each time a Save roll is failed, decrease the Construct Shield level by 1 - you still make Armour rolls for these Hits. When a Construct Shield level is 0 or less, the Banner cannot make Ion Shield saves for teh remained of the battle.</description>
+          <description>Stalker Banners have an Ion Shield level of 4+, which is unchanged by weapon strength or Banner size. They have a Construct shield level of 1 times the starting number of Stalkers in the Banner.
+Each time a Save roll is failed, decrease the Construct Shield level by 1 - you still make Armour rolls for these Hits. When a Construct Shield level is 0 or less, the Banner cannot make Ion Shield saves for the remained of the battle.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -659,7 +659,7 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
       </constraints>
       <rules>
         <rule id="3b5a-cbb2-e42b-3ead" name="Auspex Bafflers" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this Stratagem in any Stratagy phase. The player chooses one of their Titans or Knight Banners. Until the end of the round, the chosen unit increases the To Hit roll penalty for being obscured by 1, i.e., -2 To Hit if at least 25% of the unit is obscured, or -3 To Hit if at least 50% of the unit is obscured.</description>
+          <description>Play this Stratagem in any Strategy phase. The player chooses one of their Titans or Knight Banners. Until the end of the round, the chosen unit increases the To Hit roll penalty for being obscured by 1, i.e., -2 To Hit if at least 25% of the unit is obscured, or -3 To Hit if at least 50% of the unit is obscured.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -677,7 +677,7 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
       </constraints>
       <rules>
         <rule id="d289-a08c-7084-5177" name="Ablative Armour" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this Stratagem in any Stratagy phase. The player chooses one of their Titans and places a marker next to its Command Terminal. The first Direct, Devastating or Critical Hit suffered by the Titan is ignored. Then discard this stratagem.</description>
+          <description>Play this Stratagem in any Strategy phase. The player chooses one of their Titans and places a marker next to its Command Terminal. The first Direct, Devastating or Critical Hit suffered by the Titan is ignored. Then discard this stratagem.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -720,7 +720,7 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
       </constraints>
       <rules>
         <rule id="c5fd-928f-6592-7f3e" name="Cursed Earth" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this Stratagem in the first Stratagy phase of the game. The battlefield is heavily irradiated, making shields less effective. Titans must roll an extra dice when making Void Shield saves, while Knight Banners count the Strength of attacks as one higher for the purposes of working out their Ion Shield saves.</description>
+          <description>Play this Stratagem in the first Strategy phase of the game. The battlefield is heavily irradiated, making shields less effective. Titans must roll an extra dice when making Void Shield saves, while Knight Banners count the Strength of attacks as one higher for the purposes of working out their Ion Shield saves.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -738,7 +738,7 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
       </constraints>
       <rules>
         <rule id="90ee-05f6-621a-1b33" name="Dawn Attack" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this Stratagem in the first Stratagy phase of the game. For the first two rounds of the game, darkness cloaks the battlefield. Titans must roll (D6+1) x 5 to determine how many inches they can see - only enemies within this range can be targeted. Titans that shot earlier in the round can be targeted, regardless of the distance an attacker can see.</description>
+          <description>Play this Stratagem in the first Strategy phase of the game. For the first two rounds of the game, darkness cloaks the battlefield. Titans must roll (D6+1) x 5 to determine how many inches they can see - only enemies within this range can be targeted. Titans that shot earlier in the round can be targeted, regardless of the distance an attacker can see.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -781,7 +781,7 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
       </constraints>
       <rules>
         <rule id="93f0-6127-7745-5f27" name="Experimental Weapon" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this Stratagem in the first Stratagy phase of the game. The player chooses one of their Titans and places a marker next to its Command Terminal. Then, randomly choose one of the Titan&apos;s weapons. For the duration of this battle, the selected weapon gains the Maximal Fire trait, though must always declare that it is using this trait each time it fires. If the wepon already has the Maximal Fire trait, select another weapon.</description>
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans and places a marker next to its Command Terminal. Then, randomly choose one of the Titan&apos;s weapons. For the duration of this battle, the selected weapon gains the Maximal Fire trait, though must always declare that it is using this trait each time it fires. If the weapon already has the Maximal Fire trait, select another weapon.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1021,7 +1021,7 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
       </constraints>
       <rules>
         <rule id="1c9e-d57d-35be-80f5" name="Vox Blackout" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this Stratagem in any Strategy phase. The Stratagy phase immediately ends and all Orders are removed, with the exception of Shutdown orders.</description>
+          <description>Play this Stratagem in any Strategy phase. The Strategy phase immediately ends and all Orders are removed, with the exception of Shutdown orders.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1046,7 +1046,7 @@ Each time a Save roll is failed, decrease the Construct Shield level by 1 - you 
       </constraints>
       <rules>
         <rule id="7721-0e26-60a5-66e6" name="Wages of Betrayal" publicationId="3401-191e-1333-8a1d" page="173" hidden="false">
-          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Stratagy phase. For the duration of the round, enemy Titans suffer a -2 penalty to Command checks. Any enemy Priceps Senioris suffers a -3 penalty to Command checks instead.</description>
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Strategy phase. For the duration of the round, enemy Titans suffer a -2 penalty to Command checks. Any enemy Priceps Senioris suffers a -3 penalty to Command checks instead.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1445,7 +1445,7 @@ Arc: 360
 Short Range: 12&quot;
 Long Range: 24&quot;, -1 To Hit
 Dice: 2
-Strngth: 10
+Strength: 10
 Traits: Ordnance</description>
         </rule>
       </rules>
@@ -1679,7 +1679,7 @@ Traits: Ordnance</description>
       </constraints>
       <rules>
         <rule id="54a4-548f-531d-b55d" name="Sacrificial Lock-on" publicationId="3401-191e-1333-8a1d" page="175" hidden="false">
-          <description>This Stratagem can be purchased by any Loyalist player. Play this at the start of any Combat phase. Place the 5&quot; Blast marker so that the central hole is entirely over a friendly model’s base. Any unit touched by the marker suffers D3 Strength 10 hits, or 2D3 Strength 10 hits if the central hole of the Blast marker is entirely over its base. This attack does not ignore void shields, even if the friendly model the marker is centred over is within 2&quot; of a Titan with active shields.</description>
+          <description>This Stratagem can be purchased by any Loyalist player. Play this at the start of any Combat phase. Place the 5&quot; Blast marker so that the central hole is entirely over a friendly model’s base. Any unit touched by the marker suffers D3 Strength 10 hits, or 2D3 Strength 10 hits if the central hole of the Blast marker is entirely over its base. This attack does not ignore void shields, even if the friendly model the marker is centered over is within 2&quot; of a Titan with active shields.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1848,7 +1848,7 @@ Traits: Ordnance</description>
       </constraints>
       <rules>
         <rule id="093a-50ca-f8b5-8a31" name="MIU Link" publicationId="bf8b-27d7-039e-5df9" page="175" hidden="false">
-          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses two of their Titans to link MIU. For the remainder of the game, when making a weapon attack, you may measure from either linked Titan for the purposes of determining the Accuracy value for Short or Long range. If either of the linked Titans suffers the MIU Feedback Critical Damage effect, both Titans suffer it and the MIU Link Stratagem is cancelled for the remainder of the game, even if the damage is repaired.</description>
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses two of their Titans to link MIU. For the remainder of the game, when making a weapon attack, you may measure from either linked Titan for the purposes of determining the Accuracy value for Short or Long range. If either of the linked Titans suffers the MIU Feedback Critical Damage effect, both Titans suffer it and the MIU Link Stratagem is canceled for the remainder of the game, even if the damage is repaired.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2117,7 +2117,7 @@ Traits: Ordnance</description>
       </constraints>
       <rules>
         <rule id="5dd2-0ea9-7f01-7e61" name="Scatterable Mines" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this Stratagem during any Stratagy phase. Place a marker anywhere on the battlefield then scatter it D10&quot;. The area within 6&quot; of this marker counts as Dangerous Terrain. Remove the marker at the end of the round.</description>
+          <description>Play this Stratagem during any Strategy phase. Place a marker anywhere on the battlefield then scatter it D10&quot;. The area within 6&quot; of this marker counts as Dangerous Terrain. Remove the marker at the end of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2135,7 +2135,7 @@ Traits: Ordnance</description>
       </constraints>
       <rules>
         <rule id="e0f3-d1af-fa51-e08c" name="Strafing Run" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this Stratagem during any Strategy phase. A squadron of fighter-bombers scream across the battlefield, attacking everything in their path. Choose one of the four edges of the battlefield and pick a point on that edge. Then pick a point on any other edge of the battlefield and draw an imaginary line 1mm wide between the two. Any unit under this line, or within 2&quot; of it, takes D3 Strength 6 hits. The arc from which the hits originate is determined by the direction the line is travelling. Determine which arc the first chosen point is within for each unit hit and resolve the hits against that arc.</description>
+          <description>Play this Stratagem during any Strategy phase. A squadron of fighter-bombers scream across the battlefield, attacking everything in their path. Choose one of the four edges of the battlefield and pick a point on that edge. Then pick a point on any other edge of the battlefield and draw an imaginary line 1mm wide between the two. Any unit under this line, or within 2&quot; of it, takes D3 Strength 6 hits. The arc from which the hits originate is determined by the direction the line is traveling. Determine which arc the first chosen point is within for each unit hit and resolve the hits against that arc.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2153,7 +2153,7 @@ Traits: Ordnance</description>
       </constraints>
       <rules>
         <rule id="e7ea-a719-fe23-3fb8" name="Quake Shells" publicationId="bf8b-27d7-039e-5df9" page="174" hidden="false">
-          <description>Play this during any Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield then scatter it D10&quot;. Any unit touched by the marker where iteventually lands suffers D3 Strength 6 hits, or D6 Strength 6 hits in the central hole of the Blast marker is entirely over its base. In addition, the unit is then moved D6&quot; in a direction determined by the Scatter dice (this may result in a Collision - see the Adeptus Titanicus rulebook). This does not change the unit&apos;s facing.</description>
+          <description>Play this during any Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield then scatter it D10&quot;. Any unit touched by the marker where it eventually lands suffers D3 Strength 6 hits, or D6 Strength 6 hits in the central hole of the Blast marker is entirely over its base. In addition, the unit is then moved D6&quot; in a direction determined by the Scatter dice (this may result in a Collision - see the Adeptus Titanicus rulebook). This does not change the unit&apos;s facing.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2227,7 +2227,7 @@ Traits: Ordnance</description>
       </constraints>
       <rules>
         <rule id="7e35-af3b-ac34-7abc" name="Titan Hunter Infantry" publicationId="975a-00f4-pubN89746" page="80" hidden="false">
-          <description>This Stratagem may be played once in each Strataegy phase of the game. When this Stratagem is played, place two markers anywhere on the table wholly within a piece of terrain (this does not need to be the same piece of terrain). Instead of activating a Titan or Knight Banner, a player may fire with these markers as if they were units, following all the rules for making attacks and using the profile below.
+          <description>This Stratagem may be played once in each Strategy phase of the game. When this Stratagem is played, place two markers anywhere on the table wholly within a piece of terrain (this does not need to be the same piece of terrain). Instead of activating a Titan or Knight Banner, a player may fire with these markers as if they were units, following all the rules for making attacks and using the profile below.
 
 BS/WS: 5+
 Arc: 360
@@ -2290,7 +2290,7 @@ If more than one player has this Stratagem, players take turns when placing thei
       </constraints>
       <rules>
         <rule id="b696-effb-e43a-3cd9" name="Forward Observers" publicationId="975a-00f4-pubN89746" page="80" hidden="false">
-          <description>Play this Stratagem before making an attack with a weapon with the Barrage trait. Place a command bastion or communication relay anywhere on the board to represent a forward observer team position that has been camoflaged up until this point. While the Asset is on the board, when a friendly unit makes an attack with the Barrage trait, they may draw line of sight, though not range, from this model, thus ignoring the -2 penalty for firing indirectly.</description>
+          <description>Play this Stratagem before making an attack with a weapon with the Barrage trait. Place a command bastion or communication relay anywhere on the board to represent a forward observer team position that has been camouflaged up until this point. While the Asset is on the board, when a friendly unit makes an attack with the Barrage trait, they may draw line of sight, though not range, from this model, thus ignoring the -2 penalty for firing indirectly.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4445,7 +4445,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
     <selectionEntry id="3dfc-85e0-9496-60ec" name="=Vulcanum= Janus Pattern Missiles" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="a8c6-6592-fa07-3c94" name="Janus Pattern Missiles" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
-          <description>Any Legio Vulcanum Titan with an Apocalypse missile launcher, Apocalypse missile array or paired Apocalypse missile launchers may take Janus pattern missiles for +20points. Legio Vulcanum Titans with Janus pattern missiles may split the dice of their missile launches between more than one target as the Janus warheads disperse in flight. The titan chooses a main target for its missiles, which will either be the same target as the rest of its weapons or one of its targets if has the Split Fire order, At least one dice must then be allocated to the Titan’s main target, The rest of the missile launcher’s dice can then either be applied to the main target or any other target within 12” of the main target, provided the new target(s) are eligible
+          <description>Any Legio Vulcanum Titan with an Apocalypse missile launcher, Apocalypse missile array or paired Apocalypse missile launchers may take Janus pattern missiles for +20 points. Legio Vulcanum Titans with Janus pattern missiles may split the dice of their missile launches between more than one target as the Janus warheads disperse in flight. The titan chooses a main target for its missiles, which will either be the same target as the rest of its weapons or one of its targets if has the Split Fire order, At least one dice must then be allocated to the Titan’s main target, The rest of the missile launcher’s dice can then either be applied to the main target or any other target within 12” of the main target, provided the new target(s) are eligible
 targets (within the weapon’s firing arc, within range etc). Each target counts as a separate attack for the purpose of calculating modifiers to Hit rolls, etc.</description>
         </rule>
       </rules>
@@ -4918,12 +4918,12 @@ In addition, when fielding a Fortis maniple, a Legio Krytos player may take a si
     <selectionEntry id="1a92-f760-bf0e-ce26" name="Legio Fureans (Tiger Eyes)" publicationId="975a-00f4-pubN87630" page="49" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="ae03-90bb-549c-18cc" name="Machine Rage" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
-          <description>When rolling the Reactor dice (see page 43 of the Adeptus Titanicus rulebook) a Tiger Eyes player counds both the Machine Spirit symbol and the blank facing on the dice as a trigger for awakening their Titan&apos;s machine spiri; the blank face does not increase the Reactor level.
+          <description>When rolling the Reactor dice (see page 43 of the Adeptus Titanicus rulebook) a Tiger Eyes player counts both the Machine Spirit symbol and the blank facing on the dice as a trigger for awakening their Titan&apos;s machine spirit; the blank face does not increase the Reactor level.
 However, if a Tiger Eyes player fails the Command check to quell the machine spirit, they may choose the result from the Awakened Machine Spirit table, rather than rolling randomly
 If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Entity table when called upon to do so, and chooses one of the results.</description>
         </rule>
         <rule id="3956-1d81-32e8-2797" name="Many Faces of the Omnissiah" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
-          <description>In the first round of the game, any Tiger Eyes TItan may choose to forgo its activation in either the Movement phase and/or the Combat phase - in essence doing nothing for that phase but counting as one of the Tiger Eyes Player&apos;s activiations.  For each phase sacrificed by a Titan, either 1 or2, that Titan may re-roll any one dice later in the game. A Titan chooses if it is sacrificing its phase when activated in that phase.</description>
+          <description>In the first round of the game, any Tiger Eyes Titan may choose to forgo its activation in either the Movement phase and/or the Combat phase - in essence doing nothing for that phase but counting as one of the Tiger Eyes Player&apos;s activations.  For each phase sacrificed by a Titan, either 1 or 2, that Titan may re-roll any one dice later in the game. A Titan chooses if it is sacrificing its phase when activated in that phase.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5106,7 +5106,7 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
           <description>When a Legio Interfector Titan is activaed in the Movement phase, it&apos;s player may choose to allows the madness of its Princeps to take over.  When this madness takes over, roll (a D3) on the table below:
 
                         1 - Dark Embrace:  The Titan gains the Charge order. It must move toward the nearest visible enemy Titan or Knight Banner by the shortest route possible, stopping if it reaches base contact with another model, and then make a smash attack, or attack with a single weapon with the Melee trait.
-                        2 - Weapon Overload:  The Titan gains the First Fire order. When the Titan would fire in the Movement phase, randomly choose one of the Titan&apos;s weapons without the Melee trait and make an atack with this weapon against the nearest enemy Titan or Knight Banner, counting the weapon&apos;s Strength as 2 higher than normal and its Dice as 1 higher than normal.  After the attack has be resolved, disable the chosen weapon.
+                        2 - Weapon Overload:  The Titan gains the First Fire order. When the Titan would fire in the Movement phase, randomly choose one of the Titan&apos;s weapons without the Melee trait and make an attack with this weapon against the nearest enemy Titan or Knight Banner, counting the weapon&apos;s Strength as 2 higher than normal and its Dice as 1 higher than normal.  After the attack has be resolved, disable the chosen weapon.
                         3 - Static Scream: All Titans and Knight Banners, both friendly and foe, within 12&quot;of the Titan must remove their Orders, except Emergency Repair orders. Titans who lost their Orders before activated are not subject to any of the lost Order&apos;s restrictions
                     </description>
         </rule>
@@ -5360,7 +5360,7 @@ A model can only be affected by this rule once per round and Legio Mordaxis Tita
         </rule>
         <rule id="4944-52b2-9a41-b0a2" name="Wolves Among Prey" publicationId="bf8b-27d7-039e-5df9" page="111" hidden="false">
           <description>A Legio Audax maniple can consist only of Titans of Scale 6 or lower; any maniple which has a Mandatory or Optional components containing Titans of Scale 7 or higher cannot contain Legio Audax Titans. Any reinforcement Titans declared as Legio Audax must be of Scale 6 or lower. 
-All Legio Audax Titans gain the Squadron special rule if they do not already have it and may always form Squadrons with other Legio Audax Titan of any type. Thisincludes Titans that belong to another Legio Audax Maniple or Legio Audax reinforcement Titans.
+All Legio Audax Titans gain the Squadron special rule if they do not already have it and may always form Squadrons with other Legio Audax Titan of any type. This includes Titans that belong to another Legio Audax Maniple or Legio Audax reinforcement Titans.
 Legio Audax Squadrons can contain up to five Titans, unless they can normally contain more.</description>
         </rule>
       </rules>
@@ -5438,7 +5438,7 @@ Legio Audax Squadrons can contain up to five Titans, unless they can normally co
       </constraints>
       <rules>
         <rule id="65c0-1d08-d380-1b64" name="Blessings of the Emperor" publicationId="3401-191e-1333-8a1d" page="51" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Defensor player. Reveal this Stratagem when a hit would result in one of your Titans rolling on the Catestrophic Damage table. The hit is ignored and this Stratagem has no further effect.</description>
+          <description>This Stratagem can be purchased by any Legio Defensor player. Reveal this Stratagem when a hit would result in one of your Titans rolling on the Catastrophic Damage table. The hit is ignored and this Stratagem has no further effect.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5464,7 +5464,7 @@ Legio Audax Squadrons can contain up to five Titans, unless they can normally co
       </constraints>
       <rules>
         <rule id="ece4-92f5-0d83-388e" name="Impetuous Machine Spirit" publicationId="3401-191e-1333-8a1d" page="71" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Atarus player. Reveal this Stratagem when a Legio Atarus Titan would be required to make a roll on the Awakend Machine Spirit table. Rather than rolling, the Legio Atarus player may instead choose to automaticlly apply the Impetuous result, rolling D6+2&quot; rather than D6&quot; to determine the distance moved.</description>
+          <description>This Stratagem can be purchased by any Legio Atarus player. Reveal this Stratagem when a Legio Atarus Titan would be required to make a roll on the Awakend Machine Spirit table. Rather than rolling, the Legio Atarus player may instead choose to automatically apply the Impetuous result, rolling D6+2&quot; rather than D6&quot; to determine the distance moved.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5591,7 +5591,7 @@ Legio Audax Squadrons can contain up to five Titans, unless they can normally co
       </constraints>
       <rules>
         <rule id="3fa0-9cf5-0414-0e4f" name="No Pity for the Vanquished" publicationId="bf8b-27d7-039e-5df9" page="61" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Vulpa player. Play this Stratagem when an enemy Titan is destroyed (i.e. when it makes a roll on the Catestrophic Damage table). The Titan who infliced the killing attack may immediately make another attack with the same weapon system against a fresh target within 12&quot; of the destroyed Titan. For all intents and purposes, this is a new attack requiring a dice roll, any increases to the Titan&apos;s reactor level, etc.</description>
+          <description>This Stratagem can be purchased by any Legio Vulpa player. Play this Stratagem when an enemy Titan is destroyed (i.e. when it makes a roll on the Catastrophic Damage table). The Titan who inflicted the killing attack may immediately make another attack with the same weapon system against a fresh target within 12&quot; of the destroyed Titan. For all intents and purposes, this is a new attack requiring a dice roll, any increases to the Titan&apos;s reactor level, etc.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5673,7 +5673,7 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
       </constraints>
       <rules>
         <rule id="8593-357d-0c57-fca0" name="Red Skies" publicationId="3401-191e-1333-8a1d" page="111" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Fortidus player. The Legio Fortidus Player may reveal this Stratagem when one of their Titans suffers a Magazine Detonation or Catastrophic Meltdown result on the Catestrophic Damage table. When resolving the Catestrophic Damage effects, add 5 to the Titan&apos;s scale.</description>
+          <description>This Stratagem can be purchased by any Legio Fortidus player. The Legio Fortidus Player may reveal this Stratagem when one of their Titans suffers a Magazine Detonation or Catastrophic Meltdown result on the Catastrophic Damage table. When resolving the Catastrophic Damage effects, add 5 to the Titan&apos;s scale.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6176,7 +6176,7 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
       </constraints>
       <rules>
         <rule id="446b-334d-7306-47b4" name="Steadfast Bastion " publicationId="bf8b-27d7-039e-5df9" page="147" hidden="false">
-          <description>ThisStratagem can be purchased by any Legio Kulisaetai player. Play this Strategem during any Shooting phase. Add 6&quot; to the Short Range (but not the Long Range) characteristic of all weapons without the Melee trait carried by a Legio Kulisaetai Titan during the Combat phase, so long as it has not moved (voluntarily or involuntarily) already this round.</description>
+          <description>This Stratagem can be purchased by any Legio Kulisaetai player. Play this Stratagem during any Shooting phase. Add 6&quot; to the Short Range (but not the Long Range) characteristic of all weapons without the Melee trait carried by a Legio Kulisaetai Titan during the Combat phase, so long as it has not moved (voluntarily or involuntarily) already this round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6586,7 +6586,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
       </modifiers>
       <rules>
         <rule id="58ef-c3dc-5473-01f0" name="Burned Ones" publicationId="bf8b-27d7-039e-5df9" page="91" hidden="false">
-          <description>This Strratagem may be purchased by any Legio Infernus player. Reveal this Stratagem in any Combat phase. Choose any piece of Blocking terrain withing 12” of a friendly Legio Infernus Titan and remove it, replacing it with an area of Difficult terrain of the same approximate size. This Stratagem can be purchased multiple times.</description>
+          <description>This Stratagem may be purchased by any Legio Infernus player. Reveal this Stratagem in any Combat phase. Choose any piece of Blocking terrain withing 12” of a friendly Legio Infernus Titan and remove it, replacing it with an area of Difficult terrain of the same approximate size. This Stratagem can be purchased multiple times.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -6743,7 +6743,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
     <selectionEntry id="fcfd-d034-1395-9eea" name="Venator Light Maniple" publicationId="975a-00f4-pubN65537" page="61" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="2d42-3c90-4547-c5f5" name="Opportunistic Strike" publicationId="975a-00f4-pubN65537" page="61" hidden="false">
-          <description>If an enemy unit&apos;s shields are collapsed by an attack made by a Warhound Titan from this maniple, the Reaver Titan in this maniple can immediately make an attack against it with one of its weapons, following the Combat Sequence on page 33. This means that the Reaver can potentially attack several times in same phase, as well as attacking normally when it is activated. However, if the Reaver is preventd from attacking in the Combat phase - it has Striking Speed of Shutdown orders, for example - it cannot make these bonus attacks.</description>
+          <description>If an enemy unit&apos;s shields are collapsed by an attack made by a Warhound Titan from this maniple, the Reaver Titan in this maniple can immediately make an attack against it with one of its weapons, following the Combat Sequence on page 33. This means that the Reaver can potentially attack several times in same phase, as well as attacking normally when it is activated. However, if the Reaver is prevented from attacking in the Combat phase - it has Striking Speed of Shutdown orders, for example - it cannot make these bonus attacks.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -7481,7 +7481,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
     <selectionEntry id="740e-52e8-27ed-bf22" name="Myrmidon Battleline Maniple" publicationId="975a-00f4-pubN65537" page="59" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="5124-eab1-8902-5b78" name="Overwhelming Firepower" publicationId="975a-00f4-pubN65537" page="59" hidden="false">
-          <description>When issuing a First Fire or Split Fire order to Titans from this maniple, the Command check will always succeed on a rolle of 2+, regardless of modifiers.</description>
+          <description>When issuing a First Fire or Split Fire order to Titans from this maniple, the Command check will always succeed on a roll of 2+, regardless of modifiers.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -9512,7 +9512,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
     <selectionEntry id="241d-3394-9612-08c7" name="Corsair Battleline Maniple" publicationId="975a-00f4-pubN87630" page="60" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="a5a0-3929-799d-a62b" name="Fighting Withdrawal" publicationId="975a-00f4-pubN87630" page="60" hidden="false">
-          <description>Titans in this maniple can choose to move outside og their forward arc (see Sidestepping and Backing Up on p.30 of the AT2018 Rulebook) at their full movement rather then having to use 2&quot; of movement for every 1&quot; moved. Titans may not use their boosted speed with moving outside of their Front arc.</description>
+          <description>Titans in this maniple can choose to move outside of their forward arc (see Sidestepping and Backing Up on p.30 of the AT2018 Rulebook) at their full movement rather then having to use 2&quot; of movement for every 1&quot; moved. Titans may not use their boosted speed with moving outside of their Front arc.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -11462,7 +11462,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
     <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" publicationId="975a-00f4-pubN87630" page="66" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="6068-bc44-f6a2-c418" name="Hunting Pack" publicationId="975a-00f4-pubN87630" page="66" hidden="false">
-          <description>Working closely together, the Warhound Titans can surround and pick off foes many times their size. At the beggining of each round, any or all of the Warhounds within the maniple may be formed into a Squadron with other members of their maniple. These squadrons last until the end of the round.</description>
+          <description>Working closely together, the Warhound Titans can surround and pick off foes many times their size. At the beginning of each round, any or all of the Warhounds within the maniple may be formed into a Squadron with other members of their maniple. These squadrons last until the end of the round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -12808,7 +12808,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
     <selectionEntry id="2004-6a18-7dac-156c" name="Fortis Battle Maniple" publicationId="975a-00f4-pubN89746" page="30" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="94df-2dae-9885-b47d" name="Titanic Fortress" publicationId="975a-00f4-pubN89746" page="30" hidden="false">
-          <description>When a Titan in a Fortis Battle maniple is in base contact with another Titan in the maniple, and neither Titan moved in the Movement phase, the Titan ignores Armour roll modifiers resulting from Structural Damage or being attacked in the flank or rear (see page 34 of the Adeptus Titanicus rulebook).  In addition, Titans in a Fortis Battle maniple may merge their void shields (see page 45 of te Adeptus Titanicus rulebook)
+          <description>When a Titan in a Fortis Battle maniple is in base contact with another Titan in the maniple, and neither Titan moved in the Movement phase, the Titan ignores Armour roll modifiers resulting from Structural Damage or being attacked in the flank or rear (see page 34 of the Adeptus Titanicus rulebook).  In addition, Titans in a Fortis Battle maniple may merge their void shields (see page 45 of the Adeptus Titanicus rulebook)
                     </description>
         </rule>
       </rules>
@@ -13718,7 +13718,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
     <selectionEntry id="365e-d892-5c42-f7a3" name="Ferrox Light Maniple" publicationId="975a-00f4-pubN89746" page="31" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="ac90-5085-5650-2ad6" name="Knife Fighters" publicationId="975a-00f4-pubN89746" page="31" hidden="false">
-          <description>When a Titan in a Ferrox Light maniple makes attacks against a target that is no further away than its Scale in inches (i.e. with 10&quot; of a Warlord, 8&quot; of a Reaver, etc), they add 1 to any Armour rolls they cause.  Titans in a Ferrox Light maniple may also choose to use either their EWeapons Skill or Ballistic Skill when within 2&quot; of an enemy</description>
+          <description>When a Titan in a Ferrox Light maniple makes attacks against a target that is no further away than its Scale in inches (i.e. with 10&quot; of a Warlord, 8&quot; of a Reaver, etc), they add 1 to any Armour rolls they cause.  Titans in a Ferrox Light maniple may also choose to use either their Weapons Skill or Ballistic Skill when within 2&quot; of an enemy</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -14936,7 +14936,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
       <rules>
         <rule id="517f-c0a3-8933-9b01" name="Artillery Bastion" publicationId="3265-f408-cc9b-bfa3" page="42" hidden="false">
           <description>Once per round, a Reaver Titan in this maniple can declare Power to Locomotives without pushing their reactor. In addition, when an enemy unit suffers Catastrophic Damage as a result of an attack made by a Warbringer-Nemesis Titan from this maniple, each Reaver Titan from this maniple can immediately make a move as if it was the Movement phase.
-                        A Reaver Titan cannot benefit from this ability if it is prevented from moving this turn – for example, due to Emergency Repair orders or the Immobilised Damage Effect.</description>
+                        A Reaver Titan cannot benefit from this ability if it is prevented from moving this turn – for example, due to Emergency Repair orders or the Immobilized Damage Effect.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -19808,7 +19808,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
       </modifiers>
       <rules>
         <rule id="379f-458f-52f0-f90c" name="Outflank" publicationId="bf8b-27d7-039e-5df9" page="172" hidden="false">
-          <description>When this Stratagem is chosen, the player secretly writes down one of their units. The cost of the Stratagem is equal to half the unit&apos;s Scale, rounding up. Play this Stratagem at the start of deployment to set that unit to one side and state that it is outflanking (it is not deployed with the rest ofits battlegroup). Write down which of the battlefield&apos;s neutral flanks it will arrive on, but do not reveal this to the opposing player. While the unit is not on the board, it cannot be activated, and so cannot be issued orders.
+          <description>When this Stratagem is chosen, the player secretly writes down one of their units. The cost of the Stratagem is equal to half the unit&apos;s Scale, rounding up. Play this Stratagem at the start of deployment to set that unit to one side and state that it is outflanking (it is not deployed with the rest of its battlegroup). Write down which of the battlefield&apos;s neutral flanks it will arrive on, but do not reveal this to the opposing player. While the unit is not on the board, it cannot be activated, and so cannot be issued orders.
 
 At the start of the Movement phase of the first round, the unit appears on long range auspex - reveal to the opposing player which neutral flank was chosen. During the Movement phase of the second round, the outflanking unit can be activated. When it is, it is set up so that the Rear arc of its base is touching the chosen flank. It cannot move any further during the phase.
 
@@ -20174,7 +20174,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   </constraints>
                   <rules>
                     <rule id="6afa-38db-bcf7-1cf4" name="Fuelled by Hatred" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
-                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio that is issued with a Charge order destroys an enemy unit in the Movement phase due to a Melee weapon or Smash attack made as part of the Order – they may immediately make a new Charge move. TheTitan can make a single turn before moving as part of this second Charge move and can move no more than 5&quot; during it.</description>
+                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio that is issued with a Charge order destroys an enemy unit in the Movement phase due to a Melee weapon or Smash attack made as part of the Order – they may immediately make a new Charge move. The Titan can make a single turn before moving as part of this second Charge move and can move no more than 5&quot; during it.</description>
                     </rule>
                   </rules>
                   <categoryLinks>
@@ -20191,7 +20191,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   </constraints>
                   <rules>
                     <rule id="399e-5ca3-4223-269d" name="Target Lock" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
-                      <description>Play this Stratagem when activating a Titan from this Crusade Legio in the Combat phase. Choose an enemy unit within 12&quot; of the activating Titan. For the remainder of the phase, any attacks made against the chosen enemy unit suffer no penalties to their Hit rolls for obscured line of sight or for making Targeted Attacks. Thiscounts as the activating Titan’s activation for this phase. If the activated Titan is destroyed before the end of the phase, this Stratagem has no effect for the remainder of the phase.</description>
+                      <description>Play this Stratagem when activating a Titan from this Crusade Legio in the Combat phase. Choose an enemy unit within 12&quot; of the activating Titan. For the remainder of the phase, any attacks made against the chosen enemy unit suffer no penalties to their Hit rolls for obscured line of sight or for making Targeted Attacks. This counts as the activating Titan’s activation for this phase. If the activated Titan is destroyed before the end of the phase, this Stratagem has no effect for the remainder of the phase.</description>
                     </rule>
                   </rules>
                   <categoryLinks>
@@ -20225,7 +20225,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   </constraints>
                   <rules>
                     <rule id="3182-6dd7-0c60-bc94" name="Reactionary Fire" publicationId="2988-f24d-39ef-352e" page="96" hidden="false">
-                      <description>Play this Stratagem during any Movement phase, when an enemy Titan issued with a Charge order is activated. A friendly Titan from this Crusade Legio that has not been activated this phase may immediately make an attack with one of its weapons, or two if the chosen Titan is issued with the First Fire order. Theseattacks must be made against the activated enemy Titan and count as the chosen Titan’s activation for that phase.</description>
+                      <description>Play this Stratagem during any Movement phase, when an enemy Titan issued with a Charge order is activated. A friendly Titan from this Crusade Legio that has not been activated this phase may immediately make an attack with one of its weapons, or two if the chosen Titan is issued with the First Fire order. These attacks must be made against the activated enemy Titan and count as the chosen Titan’s activation for that phase.</description>
                     </rule>
                   </rules>
                   <categoryLinks>
@@ -20242,7 +20242,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   </constraints>
                   <rules>
                     <rule id="e06e-f791-79bb-df58" name="Electromagnetic Overload" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
-                      <description>Play this Stratagem during any Combat phase, when activating a friendly Titan from this Crusade Legio that has active void shields. Any unit, friend or foe, with active void shields within 3&quot; of the activated Titan must immediately make a number of Save rolls equal to the number of remaining holes on the Titan’s Void Shield status tracker, as if hit by a weapon with the Shieldbane trait. Theactivated Titan’s Void Shield level then immediately drops to X and the Titan takes a Critical Hit to its Body. This counts as the Titan’s activation this phase.</description>
+                      <description>Play this Stratagem during any Combat phase, when activating a friendly Titan from this Crusade Legio that has active void shields. Any unit, friend or foe, with active void shields within 3&quot; of the activated Titan must immediately make a number of Save rolls equal to the number of remaining holes on the Titan’s Void Shield status tracker, as if hit by a weapon with the Shieldbane trait. The activated Titan’s Void Shield level then immediately drops to X and the Titan takes a Critical Hit to its Body. This counts as the Titan’s activation this phase.</description>
                     </rule>
                   </rules>
                   <categoryLinks>
@@ -20310,7 +20310,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   </constraints>
                   <rules>
                     <rule id="1e37-5134-40da-5250" name="Directed Radburst" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
-                      <description>Play this Stratagem during any Movement phase when activating a Titan from this Legio. Increase the activating Titan’s Reactor Status level by 1. Place a 5&quot; Blast marker on the table, with the central hole anywhere within 2&quot; of the activating Titan. Thiscounts as the Titan’s activation for that phase. For the remainder of the round, any Titan underneath the Blast marker must roll an extra dice when making Void Shield saves, while Knight Banners count the Strength of attacks as one higher for the purposes of working out their Ion Shield saves. At the end of the round, remove the Blast marker. ThisStratagem can be purchased multiple times, however it can only be played once per activation.</description>
+                      <description>Play this Stratagem during any Movement phase when activating a Titan from this Legio. Increase the activating Titan’s Reactor Status level by 1. Place a 5&quot; Blast marker on the table, with the central hole anywhere within 2&quot; of the activating Titan. This counts as the Titan’s activation for that phase. For the remainder of the round, any Titan underneath the Blast marker must roll an extra dice when making Void Shield saves, while Knight Banners count the Strength of attacks as one higher for the purposes of working out their Ion Shield saves. At the end of the round, remove the Blast marker. This Stratagem can be purchased multiple times, however it can only be played once per activation.</description>
                     </rule>
                   </rules>
                   <categoryLinks>
@@ -20327,7 +20327,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   </constraints>
                   <rules>
                     <rule id="7f03-2a32-d566-51c0" name="Scouting Run" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
-                      <description>Play this Stratagem after both players have deployed but before rolling to determine who is the First Player. A Titan from this Crusade Legio with a Scale of 6 or lower may immediately make a move. TheTitan cannot declare Power to Locomotors! or Power to Stabilisers! during this move and cannot move more than 6&quot;. ThisStratagem can be purchased multiple times.</description>
+                      <description>Play this Stratagem after both players have deployed but before rolling to determine who is the First Player. A Titan from this Crusade Legio with a Scale of 6 or lower may immediately make a move. The Titan cannot declare Power to Locomotors! or Power to Stabilisers! during this move and cannot move more than 6&quot;. This Stratagem can be purchased multiple times.</description>
                     </rule>
                   </rules>
                   <categoryLinks>
@@ -20344,7 +20344,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
                   </constraints>
                   <rules>
                     <rule id="f318-1d42-d15d-52a3" name="Power Reserves" publicationId="2988-f24d-39ef-352e" page="97" hidden="false">
-                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio pushes their reactor, before rolling the Reactor dice. Do not roll the dice; the result is treated as if a blank face was rolled. ThisStratagem can be purchased multiple times, but a Titan can only be the target of this Stratagem once per round.</description>
+                      <description>Play this Stratagem when a friendly Titan from this Crusade Legio pushes their reactor, before rolling the Reactor dice. Do not roll the dice; the result is treated as if a blank face was rolled. This Stratagem can be purchased multiple times, but a Titan can only be the target of this Stratagem once per round.</description>
                     </rule>
                   </rules>
                   <categoryLinks>
@@ -20554,7 +20554,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   </constraints>
                   <rules>
                     <rule id="656c-c424-f1a7-fbe2" name="Noble Lineage" publicationId="2988-f24d-39ef-352e" page="94" hidden="false">
-                      <description>During deployment, before any units have been deployed, Reaver Battle Titans from this Legio can be paired; to do this, choose two Reaver Titans from the Legio within your battlegroup – these do not have to be part of the same maniple and a battlegroup can contain one or more pairs of Reavers. At the beginning of each round, paired Reaver Titans may be formed into a Squadron with each other (see the Adeptus Titanicus rulebook). TheseSquadrons last until the end of the round. However, paired Reaver Titans in a Squadron may not merge void shields.</description>
+                      <description>During deployment, before any units have been deployed, Reaver Battle Titans from this Legio can be paired; to do this, choose two Reaver Titans from the Legio within your battlegroup – these do not have to be part of the same maniple and a battlegroup can contain one or more pairs of Reavers. At the beginning of each round, paired Reaver Titans may be formed into a Squadron with each other (see the Adeptus Titanicus rulebook). These Squadrons last until the end of the round. However, paired Reaver Titans in a Squadron may not merge void shields.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -20624,7 +20624,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   </constraints>
                   <rules>
                     <rule id="d93d-0e95-a1a3-853e" name="Masters of Defence" publicationId="2988-f24d-39ef-352e" page="95" hidden="false">
-                      <description>Titans from this Legio can move at full speed when Backing Up (see the Adeptus Titanicus rulebook). In addition, when a Titan from this Legio is attacked as part of a Charge order, it may immediately move backwards up to 3&quot; and make a single weapon attack at the unit that attacked them. If they do this, increase the Titan’s Reactor Status level by 1. Each Titan can only do this once per round. Thismove and attack is resolved after the effects of the Charge order and the subsequent attack have been resolved.</description>
+                      <description>Titans from this Legio can move at full speed when Backing Up (see the Adeptus Titanicus rulebook). In addition, when a Titan from this Legio is attacked as part of a Charge order, it may immediately move backwards up to 3&quot; and make a single weapon attack at the unit that attacked them. If they do this, increase the Titan’s Reactor Status level by 1. Each Titan can only do this once per round. This move and attack is resolved after the effects of the Charge order and the subsequent attack have been resolved.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -23484,7 +23484,7 @@ After assembling their battlegroup, the player should pick one Titan in their ma
         <rule id="c58b-ac0c-f7de-adbd" name="Hunter Shells" hidden="false">
           <description>Any Loyalist Titan equipped with a weapon with the Ordnance trait can be upgraded with Hunter Shells for +5 points x the Dice value of the weapon (e.g., a Reaver Gatling Blaster would be +30 points), so long as that Titan does not already have an upgrade  affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Once per game, a weapon upgraded with Hunter Shells may fire a hunter salvo rather than firing as normal. When firing a hunter salvo, the Titan does not apply a -2 modifier to the Hit roll when making a Targeted Attack.
 
-Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections for +30 pts.</description>
+Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections for +30 points.</description>
         </rule>
       </rules>
       <costs>
@@ -23782,7 +23782,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </constraints>
       <rules>
         <rule id="7500-6453-f05a-c22d" name="Civilisation&apos;s Ruin" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Krytos player. Reveal this Stratagem in any Strategy phase. For the duration of that round, enemy units hit by at attack made by a friendly Legio Krytos Titan with a weapon with the Quake trait suffer the effects of the Quake trait even if the hit was deflected by the target&apos;s shields. This Strategem does not effect Legio Krytos Titans issued with a Split Fire order, even if the Order was issued after the Stratagem was played.</description>
+          <description>This Stratagem can be purchased by any Legio Krytos player. Reveal this Stratagem in any Strategy phase. For the duration of that round, enemy units hit by at attack made by a friendly Legio Krytos Titan with a weapon with the Quake trait suffer the effects of the Quake trait even if the hit was deflected by the target&apos;s shields. This Stratagem does not effect Legio Krytos Titans issued with a Split Fire order, even if the Order was issued after the Stratagem was played.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -29129,7 +29129,7 @@ Structure Point: 1
         <selectionEntry id="4797-4d85-5da3-7076" name="Warp Conduit" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="dea3-8d78-382f-bcce" name="Warp Conduit" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
-              <description>A Titan may be upgraded with this Base Mutation for +20 points. Once per game, during the Combat phase, a Titan with this mutation may conjure an Aetheric Tempest. If they do so, choose a unit within 12&quot; of the Titan – the chosen unit can be a different unit to one chosen as a target of the Titan’s weapon but must be within the Titan’s Front arc and within its line of sight. Thatunit suffers a single S10 hit against a location of your choice, ignoring Void and Ion Shields.</description>
+              <description>A Titan may be upgraded with this Base Mutation for +20 points. Once per game, during the Combat phase, a Titan with this mutation may conjure an Aetheric Tempest. If they do so, choose a unit within 12&quot; of the Titan – the chosen unit can be a different unit to one chosen as a target of the Titan’s weapon but must be within the Titan’s Front arc and within its line of sight. That unit suffers a single S10 hit against a location of your choice, ignoring Void and Ion Shields.</description>
             </rule>
           </rules>
           <costs>
@@ -30000,7 +30000,7 @@ on weapons), increase the Strength of any weapons
 with the Melee trait and their Smash Attacks by r,
 to a maximum of +3.
 3 Cruel: The Princeps has no pity for weaklings. Unworthy foes
-are swiftly crushed underfoot with little thought of honour or
+are swiftly crushed underfoot with little thought of honor or
 mercy- after all, what mercy does the boot give the ant?
 When making attacks against units with a Scale of 5 or
 lower, increase the Strength of any hits by 2. </comment>
@@ -31350,7 +31350,7 @@ immediately push their reactor to make an attack with one of its weapons.</descr
             <selectionEntry id="34ac-710a-5116-733d" name="5 Distorted Form" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
                 <rule id="ec19-6b3a-2269-5823" name="Distorted Form" hidden="false">
-                  <description>At the start of each round’s Movement phase, the Princeps Titan may distort its form. When it does so, the Titan may increase its base speed characteristic by 1&quot; or increase its base manoeuvre characteristic by 1. Thiseffect lasts until the end of the phase.</description>
+                  <description>At the start of each round’s Movement phase, the Princeps Titan may distort its form. When it does so, the Titan may increase its base speed characteristic by 1&quot; or increase its base manoeuvre characteristic by 1. This effect lasts until the end of the phase.</description>
                 </rule>
               </rules>
               <costs>
@@ -31409,7 +31409,7 @@ immediately push their reactor to make an attack with one of its weapons.</descr
       <description>The Titan&apos;s void shield generators have burned out -  its void shields collapse immediately. The Titan cannot use &apos;Raise Shields&apos; Repair actions until this damage has been repaired.</description>
     </rule>
     <rule id="17b3-c01c-7edc-82da" name="Stabilizers Damaged" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
-      <description>The Titan staggers as its stabilizers struggle to keep it upright. In each End phase, roll a D6 for the Titan. On a 1-3, it turns 45 degrees to the left. On a 4-6, it turns 45 degrees to the right.</description>
+      <description>The Titan staggers as its stabilisers struggle to keep it upright. In each End phase, roll a D6 for the Titan. On a 1-3, it turns 45 degrees to the left. On a 4-6, it turns 45 degrees to the right.</description>
     </rule>
     <rule id="933b-ea98-5684-890f" name="Locomotors Seized" publicationId="975a-00f4-pubN65537" page="35" hidden="false">
       <description>Massive gears within the Titan&apos;s legs grind as it tries to move. The Titan&apos;s Speed and Manoeuver characteristics (both the normal and boosted values) are halved, rounding down. If this reduces a normal value to 0, the Titan must push the reactor to use the boosted value it it wishes to move/turn. </description>
@@ -31427,7 +31427,7 @@ immediately push their reactor to make an attack with one of its weapons.</descr
       <description>A battlegroup may include a single Banner of Retainers as Reinforcements for every non-Retainer Knight Banner in the battlegroup. Banners of Retainers cannot be taken as part of a maniple, while Knight Lances can only include a maximum of one Retainer Banner. Banners of Retainers do not count towards the maximum number of Knight Banners allowed per maniple in a Legio battlegroup.</description>
     </rule>
     <rule id="c349-f29d-fbef-76c9" name="Stalker" hidden="false">
-      <description>This Titan is deployed after all other units. Players take it in turns, starting with the player who has control of the battlefield, to deploy one Titan with the Stalker rule anywhere on the battlefield. The Titan must be at least 8&quot;, and at least 50% obscured, from enemy units - these conditions do not apply if it is deployed in the controlling player&apos;s deployment zone. This Titan counts as deployed for the purposes of detemining which player finished deploying first.</description>
+      <description>This Titan is deployed after all other units. Players take it in turns, starting with the player who has control of the battlefield, to deploy one Titan with the Stalker rule anywhere on the battlefield. The Titan must be at least 8&quot;, and at least 50% obscured, from enemy units - these conditions do not apply if it is deployed in the controlling player&apos;s deployment zone. This Titan counts as deployed for the purposes of determining which player finished deploying first.</description>
     </rule>
     <rule id="8e9d-aea7-06fc-55f7" name="Auxiliary Titan" hidden="false">
       <description>This Titan is an Auxiliary Titan. A battlegroup can include a maximum of 1 Auxiliary Titan as Reinforcements per maniple or Knight Lance in the battlegroup.</description>
