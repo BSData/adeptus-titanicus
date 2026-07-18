@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="91" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="92" battleScribeVersion="2.03" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
 To create a Household Battlegroup add a Household to your Roster. Each Lance is a separate Force that needs to be added to your Household. Reinforcements can then be added directly to your Household, or each of your added Lance forces!
@@ -377,7 +377,7 @@ Attacks made by Impale weapons bypass void shields.</description>
     <categoryEntry id="1875-e91f-1789-465f" name="Beam (X)" hidden="false">
       <rules>
         <rule id="3882-2805-b80e-d019" name="Beam (X)" publicationId="3265-f408-cc9b-bfa3" page="94" hidden="false">
-          <description>When resolving an attack from a Beam weapon, do not roll To Hit. Instead, pick a target and draw an imaginary, 1mm wide, straight line from the weapon to its maximum range; the line must cross the base of the target at the point closest to the firing model. The closes unit to the firing unit whose base is under the line suffers a number of hits equal to the weapon&apos;s Dice value. If that unit is destroyed, the next closest unit suffers aa number of hits equal to the weapon&apos;s Dice value minus the number in brackets after the trait, to a minimum of 0.
+          <description>When resolving an attack from a Beam weapon, do not roll To Hit. Instead, pick a target and draw an imaginary, 1mm wide, straight line from the weapon to its maximum range; the line must cross the base of the target at the point closest to the firing model. The closes unit to the firing unit whose base is under the line suffers a number of hits equal to the weapon&apos;s Dice value. If that unit is destroyed, the next closest unit suffers a number of hits equal to the weapon&apos;s Dice value minus the number in brackets after the trait, to a minimum of 0.
 Continue these steps until a unit is not destroyed, there are no units left underneath the line, or the weapon&apos;s Dice value has been reduced to 0. Beam weapons can only make Targeted Attacks against the closest unit - randomly determine the location for any subsequent unit hit by a Beam weapon.
 When determining the closest unit to be hit, any piece of terrain underneath the line counts as a unit. If a piece of terrain underneath the line is the closest &apos;unit&apos;, the beam carries on as if it had destroyed an enemy unit, i.e, reduce the Dice value and resolve hits against the next unit down the line.
 If the Destroying Terrain special rule is in use, the terrain takes hits as normal however the beam carries on after resolving these even if the building is not destroyed, reducing the Dice value as if it had destroyed an enemy unit.</description>
@@ -20939,7 +20939,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               <entryLinks>
                 <entryLink id="ffc4-7867-fadc-12d2" name="Gatling Blaster" hidden="false" collective="false" import="false" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
                 <entryLink id="834c-1d9b-ca95-b3de" name="Laser Blaster" hidden="false" collective="false" import="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
-                <entryLink id="aa0f-65f8-494d-1c21" name="Melta Cannon" hidden="false" collective="false" import="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
+                <entryLink id="aa0f-65f8-494d-1c21" name="Melta Cannon [RVR]" hidden="false" collective="false" import="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
                 <entryLink id="efad-f00d-3202-591f" name="Reaver Titan Chainfist" hidden="false" collective="false" import="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
                 <entryLink id="b8f6-c8f4-a641-e19c" name="Reaver Titan Power Fist" hidden="false" collective="false" import="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
                 <entryLink id="5b29-3b36-2460-e090" name="Volcano Cannon" hidden="false" collective="false" import="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
@@ -20970,6 +20970,8 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="519a-fa6e-e285-7e95" name="Graviton Obliterator" hidden="false" collective="false" import="true" targetId="6c00-d9c4-d892-61de" type="selectionEntry"/>
+                <entryLink id="48a6-0832-a437-f500" name="Volkite Annihilator" hidden="false" collective="false" import="true" targetId="4fe7-d86f-6e82-5376" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="27cf-b4d5-20b6-9032" name="Carapace" hidden="false" collective="false" import="false">
@@ -23721,7 +23723,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </profiles>
       <categoryLinks>
         <categoryLink id="e248-b9d3-c22d-3a26" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
-        <categoryLink id="4dae-813a-858f-d2a5" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="false"/>
+        <categoryLink id="4dae-813a-858f-d2a5" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
         <categoryLink id="4aef-7f11-00ba-89f9" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
         <categoryLink id="6695-5bb0-714c-7190" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
         <categoryLink id="f382-ccb5-69e0-a8d2" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
@@ -28235,6 +28237,70 @@ Structure Point: 1
       <costs>
         <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2.0"/>
         <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6c00-d9c4-d892-61de" name="Graviton Obliterator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="97f0-ef9d-045a-bc43" name="Graviton Obliterator" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">20&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">40&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Concussive, Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="896c-0f8b-ae9f-6fdb" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="false"/>
+        <categoryLink id="7421-6471-28fc-7ccc" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
+        <categoryLink id="a5d6-032b-548d-5ac0" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
+        <categoryLink id="0e0a-f15c-61bc-e270" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0dde-e52e-4b48-90be" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4fe7-d86f-6e82-5376" name="Volkite Annihilator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0242-3a5c-e400-4a14" name="Volkite Annihilator" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">(1)</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Voidbreaker (2), Beam (1) {Draining}</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="bb36-e9b9-bc23-7c83" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
+        <categoryLink id="ea40-7fdf-2ebd-e9cb" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
+        <categoryLink id="ddac-4e62-d9b3-401d" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink id="d398-8f3b-2532-3323" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0d8b-b1d5-85a4-c3c6" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
